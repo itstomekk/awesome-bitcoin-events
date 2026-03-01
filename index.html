@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Awesome Bitcoin Events 2025</title>
+  <meta name="description" content="A curated calendar of international Bitcoin conferences and events in 2025." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>₿</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-symbol">₿</span>
+        <div>
+          <span class="logo-title">Bitcoin Events</span>
+          <span class="logo-sub">2025 Global Calendar</span>
+        </div>
+      </div>
+      <div class="header-actions">
+        <a href="https://github.com/itstomekk/awesome-bitcoin-events" target="_blank" rel="noopener" class="btn-ghost">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1>Global Bitcoin Events</h1>
+        <p class="hero-sub">The complete 2025 conference calendar — from major summits to developer deep-dives, across every continent.</p>
+        <div class="hero-stats" id="heroStats">
+          <div class="stat">
+            <span class="stat-value" id="statTotal">–</span>
+            <span class="stat-label">Events</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-value" id="statCountries">–</span>
+            <span class="stat-label">Countries</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-value" id="statRegions">–</span>
+            <span class="stat-label">Regions</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-symbol" aria-hidden="true">₿</div>
+    </div>
+  </section>
+
+  <!-- SCRAPER NOTICE BANNER -->
+  <div class="scraper-banner" id="scraperBanner">
+    <span class="scraper-icon">✦</span>
+    Run <code>npm run scrape</code> to enrich cards with event images &amp; descriptions fetched from each website.
+    <button class="scraper-close" onclick="this.parentElement.remove()" aria-label="Dismiss">×</button>
+  </div>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- FILTERS -->
+    <div class="filters-bar" id="filtersBar">
+      <div class="filters-inner">
+
+        <!-- Search -->
+        <div class="search-wrap">
+          <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <input type="search" id="searchInput" class="search-input" placeholder="Search events or locations…" autocomplete="off" />
+        </div>
+
+        <!-- Status -->
+        <div class="filter-group">
+          <button class="filter-chip active" data-filter="status" data-value="all">All</button>
+          <button class="filter-chip" data-filter="status" data-value="upcoming">Upcoming</button>
+          <button class="filter-chip" data-filter="status" data-value="past">Past</button>
+        </div>
+
+        <!-- Region -->
+        <select id="regionSelect" class="filter-select">
+          <option value="">All Regions</option>
+          <option value="Americas">Americas</option>
+          <option value="Europe">Europe</option>
+          <option value="Asia Pacific">Asia Pacific</option>
+          <option value="Africa">Africa</option>
+          <option value="Middle East">Middle East</option>
+          <option value="Online">Online</option>
+        </select>
+
+        <!-- Month -->
+        <select id="monthSelect" class="filter-select">
+          <option value="">All Months</option>
+          <option value="1">January</option>
+          <option value="2">February</option>
+          <option value="3">March</option>
+          <option value="4">April</option>
+          <option value="5">May</option>
+          <option value="6">June</option>
+          <option value="7">July</option>
+          <option value="8">August</option>
+          <option value="9">September</option>
+          <option value="10">October</option>
+          <option value="11">November</option>
+          <option value="12">December</option>
+        </select>
+
+        <!-- Results count -->
+        <span class="results-count" id="resultsCount"></span>
+
+      </div>
+    </div>
+
+    <!-- MONTH TIMELINE NAV -->
+    <div class="month-nav-wrap">
+      <div class="month-nav" id="monthNav">
+        <!-- populated by JS -->
+      </div>
+    </div>
+
+    <!-- EVENTS GRID -->
+    <div class="events-section">
+      <div class="events-grid" id="eventsGrid">
+        <!-- populated by JS -->
+      </div>
+      <div class="empty-state hidden" id="emptyState">
+        <div class="empty-icon">₿</div>
+        <p>No events match your filters.</p>
+        <button class="btn-secondary" onclick="clearFilters()">Clear filters</button>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-symbol small">₿</span>
+        <span>Awesome Bitcoin Events</span>
+      </div>
+      <p class="footer-note">
+        Data sourced from <a href="https://github.com/itstomekk/awesome-bitcoin-events" target="_blank" rel="noopener">awesome-bitcoin-events</a>.
+        Event details enriched via website metadata scraping.
+      </p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
