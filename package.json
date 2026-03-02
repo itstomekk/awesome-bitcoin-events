@@ -1,0 +1,15 @@
+{
+  "name": "awesome-bitcoin-events",
+  "version": "1.0.0",
+  "description": "Website aggregator for international Bitcoin conferences and events",
+  "scripts": {
+    "scrape": "node scraper.js",
+    "scrape:force": "node scraper.js --force",
+    "start": "python3 -m http.server 8080"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["bitcoin", "events", "conferences"],
+  "license": "MIT"
+}
