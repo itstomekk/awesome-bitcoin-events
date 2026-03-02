@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>₿ Bitcoin Events 2026</title>
+  <meta name="description" content="Calendar of international Bitcoin conferences and events in 2026." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>₿</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --orange:       #F7931A;
+      --orange-bg:    #FFF3E0;
+      --orange-dark:  #D97B0F;
+      --bg:           #F5F4F1;
+      --card:         #FFFFFF;
+      --border:       #E6E4DF;
+      --text:         #111111;
+      --muted:        #6B6B6B;
+      --radius:       12px;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(160deg, #FFFBF5 0%, #FEF5E7 100%);
+      border-bottom: 1px solid #EDE0CC;
+      padding: 40px 24px 32px;
+      text-align: center;
+    }
+    .header-symbol {
+      font-size: 52px;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+    header h1 {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px;
+    }
+    header p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    header p strong { color: var(--orange); }
+
+    /* ── Sticky controls ── */
+    .controls {
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 20px;
+    }
+    .controls-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .month-tabs {
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+    .month-tabs::-webkit-scrollbar { display: none; }
+    .month-tab {
+      flex-shrink: 0;
+      padding: 5px 13px;
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 500;
+      font-family: inherit;
+      cursor: pointer;
+      border: 1.5px solid var(--border);
+      background: transparent;
+      color: var(--muted);
+      transition: all 0.15s;
+      white-space: nowrap;
+    }
+    .month-tab:hover { border-color: var(--orange); color: var(--orange); }
+    .month-tab.active { background: var(--orange); border-color: var(--orange); color: #fff; }
+
+    .search-wrap { position: relative; max-width: 380px; }
+    .search-wrap svg {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+      color: #aaa;
+    }
+    .search-input {
+      width: 100%;
+      padding: 9px 14px 9px 36px;
+      border: 1.5px solid var(--border);
+      border-radius: 100px;
+      font-size: 13px;
+      font-family: inherit;
+      outline: none;
+      background: var(--bg);
+      color: var(--text);
+      transition: border-color 0.15s;
+    }
+    .search-input:focus { border-color: var(--orange); background: #fff; }
+    .search-input::placeholder { color: #bbb; }
+
+    /* ── Main ── */
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 24px 20px 48px;
+    }
+    .results-meta {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+    .results-meta strong { color: var(--text); }
+
+    /* ── Cards ── */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(268px, 1fr));
+      gap: 14px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      transition: box-shadow 0.15s, transform 0.15s;
+    }
+    .card:hover {
+      box-shadow: 0 6px 24px rgba(247,147,26,0.13);
+      transform: translateY(-2px);
+    }
+    .card-date {
+      display: inline-flex;
+      align-items: center;
+      background: var(--orange-bg);
+      color: var(--orange-dark);
+      font-size: 10.5px;
+      font-weight: 700;
+      padding: 3px 9px;
+      border-radius: 100px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      align-self: flex-start;
+    }
+    .card-name {
+      font-size: 14.5px;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.4;
+    }
+    .card-location {
+      font-size: 12.5px;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .card-location svg { flex-shrink: 0; }
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 12.5px;
+      font-weight: 500;
+      color: var(--orange);
+      text-decoration: none;
+      margin-top: 2px;
+      transition: color 0.15s;
+    }
+    .card-link:hover { color: var(--orange-dark); }
+    .no-results {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 72px 24px;
+      color: var(--muted);
+    }
+    .no-results .icon { font-size: 36px; margin-bottom: 10px; }
+
+    /* ── Map section ── */
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 18px;
+      font-weight: 700;
+      margin: 44px 0 14px;
+    }
+    .map-note {
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+    #map {
+      height: 460px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      overflow: hidden;
+    }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 20px;
+      text-align: center;
+      font-size: 12.5px;
+      color: var(--muted);
+    }
+    footer a { color: var(--orange); text-decoration: none; }
+    footer a:hover { color: var(--orange-dark); }
+
+    @media (max-width: 560px) {
+      header h1 { font-size: 21px; }
+      .cards-grid { grid-template-columns: 1fr; }
+      .search-wrap { max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-symbol">₿</div>
+  <h1>Awesome Bitcoin Events 2026</h1>
+  <p>International conferences &amp; summits &nbsp;·&nbsp; <strong id="header-count">…</strong> upcoming events worldwide</p>
+</header>
+
+<div class="controls">
+  <div class="controls-inner">
+    <div class="month-tabs" id="month-tabs"></div>
+    <div class="search-wrap">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input class="search-input" id="search" type="text" placeholder="Filter by location (e.g. Prague, USA, AUS…)" />
+    </div>
+  </div>
+</div>
+
+<main>
+  <p class="results-meta" id="results-meta"></p>
+  <div class="cards-grid" id="cards-grid"></div>
+
+  <h2 class="section-header">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F7931A" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+    Event Locations
+  </h2>
+  <p class="map-note">Virtual events are not shown. Click a marker to see event details.</p>
+  <div id="map"></div>
+</main>
+
+<footer>
+  <a href="https://github.com/itstomekk/awesome-bitcoin-events" target="_blank" rel="noopener">awesome-bitcoin-events</a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/itstomekk/awesome-bitcoin-events" target="_blank" rel="noopener">Contribute on GitHub</a>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const MONTHS = ['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+const events = [
+  // ── March ──
+  { month:3,  date:'Mar 4–5',    name:'Women in Bitcoin Summit',                url:'https://womenofbitcoin.io/',                                     where:'Virtual',              lat:null,     lng:null     },
+  { month:3,  date:'Mar 4–8',    name:'Bitcoin Ski Summit',                     url:'https://www.monolithic.tech/v5-bitcoin-ski-summit-2026',         where:'Teton Village, WY',    lat:43.5876,  lng:-110.8278 },
+  { month:3,  date:'Mar 4–22',   name:'Bitcoins @ Infinite Games',              url:'https://bitcoingames.lovable.app/',                              where:'Roatan, HND',          lat:16.3199,  lng:-86.5318  },
+  { month:3,  date:'Mar 7',      name:'Bitkiwi XV',                             url:'https://kiwibitcoinguide.org/home/bitkiwi-meetups/bitkiwi-xv-february-28th-2025-christchurch/', where:'Christchurch, NZL', lat:-43.5321, lng:172.6362 },
+  { month:3,  date:'Mar 12',     name:'The Real Estate Standard Digital Conf.', url:null,                                                             where:'Virtual',              lat:null,     lng:null     },
+  { month:3,  date:'Mar 13–15',  name:'Bitcoin Bush Bash – Beechworth',         url:'https://bitcoinbushbash.info/beechworth/',                       where:'Beechworth, AUS',      lat:-36.3573, lng:146.6841  },
+  { month:3,  date:'Mar 19',     name:'Bitcoin Treasuries Digital Conference',  url:'https://bitcointreasuries.media',                               where:'Virtual',              lat:null,     lng:null     },
+  { month:3,  date:'Mar 20–22',  name:'Satoship',                               url:'https://bitcoinblock.study/satoship/',                           where:'Rapperswil-Jona, CHE', lat:47.2264,  lng:8.8194   },
+  { month:3,  date:'Mar 26–29',  name:'CheatCode',                              url:'https://www.cheatcode.co.uk/',                                  where:'Bedford, GBR',         lat:52.1363,  lng:-0.4660  },
+  // ── April ──
+  { month:4,  date:'Apr 9–12',   name:'BitBlockBoom',                           url:'https://bitblockboom.com/',                                     where:'Ft Worth, TX',         lat:32.7555,  lng:-97.3308  },
+  { month:4,  date:'Apr 11–12',  name:'MIT Bitcoin Expo',                       url:'https://mitbitcoinexpo.org/',                                   where:'Cambridge, MA',        lat:42.3736,  lng:-71.1097  },
+  { month:4,  date:'Apr 15–16',  name:'OPNEXT',                                 url:'https://opnext.dev',                                            where:'New York City, NY',    lat:40.7128,  lng:-74.0060  },
+  { month:4,  date:'Apr 16–25',  name:'Bitchill S03',                           url:'https://luma.com/wkoxeb9m',                                     where:'Roatan, HND',          lat:16.3199,  lng:-86.5318  },
+  { month:4,  date:'Apr 17–19',  name:'Muslim Bitcoin Summit',                  url:'https://mslmbtcsummit.com/',                                    where:'Dallas, TX',           lat:32.7767,  lng:-96.7970  },
+  { month:4,  date:'Apr 23–24',  name:'bitcoin++ stirs controversy',            url:'https://btcplusplus.dev/conf/vegas',                            where:'Hoover Dam, NV',       lat:36.0161,  lng:-114.7377 },
+  { month:4,  date:'Apr 23–26',  name:'Swiss Bitcoin Conference',               url:'https://swiss-bitcoin-conference.com/',                         where:'Kreuzlingen, CHE',     lat:47.6468,  lng:9.1749   },
+  { month:4,  date:'Apr 27',     name:'Unconfiscatable',                        url:'https://unconfiscatable.com/',                                  where:'Las Vegas, NV',        lat:36.1699,  lng:-115.1398 },
+  { month:4,  date:'Apr 27–29',  name:'Bitcoin 2026',                           url:'https://b.tc/conference/2026',                                  where:'Las Vegas, NV',        lat:36.1699,  lng:-115.1398 },
+  // ── May ──
+  { month:5,  date:'May 8',      name:'Bitcoin Burgenland',                     url:'https://www.rettedeingeld.at/bitcoin-burgenland-2025/',          where:'AUT',                  lat:47.6965,  lng:16.5000  },
+  { month:5,  date:'May 8–9',    name:'Labitconf B2B CDMX',                     url:'https://labitcoinf.com',                                        where:'CDMX, MEX',            lat:19.4326,  lng:-99.1332  },
+  { month:5,  date:'May 9–12',   name:'MAD Bitcoin Summit',                     url:'https://MadBitcoinSummit.com',                                  where:'Madrid, ESP',          lat:40.4168,  lng:-3.7038   },
+  { month:5,  date:'May 12–13',  name:'Tuscany Lightning Summit 2026',          url:'https://tuscanysummit.com/',                                    where:'Viareggio, ITA',       lat:43.8676,  lng:10.2554   },
+  { month:5,  date:'May 15–17',  name:'Bitcoin Bay Bash – Byron Bay',           url:'https://bitcoinbushbash.info/byron-bay/',                       where:'Byron Bay, AUS',       lat:-28.6474, lng:153.6020  },
+  { month:5,  date:'May 15–17',  name:'Bitcoin Economic Forum',                 url:'https://www.breizhbitcoin.com/bitcoin-economic-forum/',         where:'Bretagne, FRA',        lat:48.2020,  lng:-2.9326   },
+  { month:5,  date:'May 22–23',  name:'Bitcoin is for Everyone',                url:'https://bitcoinisforeveryone.com/',                             where:'Portland, OR',         lat:45.5051,  lng:-122.6750 },
+  { month:5,  date:'May 22–25',  name:'Bitcoin Ireland',                        url:'https://www.bitcoinireland.eu',                                 where:'Dublin, IRE',          lat:53.3498,  lng:-6.2603   },
+  { month:5,  date:'May 23',     name:'Bitcare Forum',                          url:'https://bitcareforum.it/',                                      where:'Brescia, ITA',         lat:45.5416,  lng:10.2118   },
+  { month:5,  date:'May 27–28',  name:'bitcoin++ talks economically',           url:'https://btcplusplus.dev/conf/vienna',                           where:'Vienna, AUT',          lat:48.2082,  lng:16.3738   },
+  { month:5,  date:'May 29–30',  name:'Bitcoin Treasuries Unconference UK',     url:'https://www.smarterwebcompany.co.uk/Bitcoin-Treasuries-Unconference-UK/', where:'Bristol, GBR', lat:51.4545, lng:-2.5879 },
+  // ── June ──
+  { month:6,  date:'Jun 1–3',    name:'Oslo Freedom Forum',                     url:'https://oslofreedomforum.com/',                                 where:'Oslo, NOR',            lat:59.9139,  lng:10.7522   },
+  { month:6,  date:'Jun 4–7',    name:'Bitcoin Film Festival',                  url:'https://bitcoinfilmfest.com',                                   where:'Warsaw, POL',          lat:52.2297,  lng:21.0122   },
+  { month:6,  date:'Jun 10',     name:'Bitcoin Corporate Day',                  url:'https://www.bitcoincorporateday.com/',                          where:'Prague, CZE',          lat:50.0755,  lng:14.4378   },
+  { month:6,  date:'Jun 11–13',  name:'BTC Prague 2026',                        url:'https://btcprague.com/',                                        where:'Prague, CZE',          lat:50.0755,  lng:14.4378   },
+  { month:6,  date:'Jun 17–20',  name:'bitcoin++ works in public',              url:'https://btcplusplus.dev/conf/nairobi',                          where:'Nairobi, KEN',         lat:-1.2921,  lng:36.8219   },
+  { month:6,  date:'Jun 18–21',  name:'Camp Nakamoto',                          url:'https://www.campnakamoto.com/',                                 where:'Winnipesaukee, NH',    lat:43.6173,  lng:-71.4223  },
+  { month:6,  date:'Jun 25–26',  name:'The Bitcoin Rodeo',                      url:'https://BitcoinRodeo.com/',                                     where:'Calgary, AB',          lat:51.0447,  lng:-114.0719 },
+  { month:6,  date:'Jun 26–27',  name:'Le Paradigme Bitcoin',                   url:'https://leparadigmebitcoin.ch/',                                where:'Neuchâtel, CHE',       lat:46.9900,  lng:6.9293    },
+  // ── July ──
+  { month:7,  date:'Jul 1–6',    name:'Bitcoin Alaska',                         url:'https://bitcoinalaska.org/',                                    where:'Juneau, AK',           lat:58.3005,  lng:-134.4197 },
+  { month:7,  date:'Jul 9–12',   name:'Mallorca Blockchain Days',               url:'https://mallorcablockchaindays.com/',                           where:'Palma, ESP',           lat:39.5696,  lng:2.6502    },
+  { month:7,  date:'Jul 21–23',  name:'Mining Disrupt',                         url:'https://miningdisrupt.com/',                                    where:'Miami, FL',            lat:25.7617,  lng:-80.1918  },
+  { month:7,  date:'Jul 22–24',  name:'bitcoin++ finds consensus',              url:'https://btcplusplus.dev/conf/toronto',                          where:'Toronto, CA',          lat:43.6532,  lng:-79.3832  },
+  { month:7,  date:'Jul 24–26',  name:'Bitcoin Bush Bash – Palm Cove',          url:'https://bitcoinbushbash.info/palm-cove/',                       where:'Palm Cove, AUS',       lat:-16.7381, lng:145.6724  },
+  { month:7,  date:'Jul 31–Aug 2', name:'Lake Satoshi Retreat',                 url:'https://www.lakesatoshi.com/annual-lake-satoshi-retreat',       where:'MI, USA',              lat:44.3148,  lng:-85.6024  },
+  // ── August ──
+  { month:8,  date:'Aug 12–13',  name:'Acelerando Bitcoin',                     url:'https://acelerandobitcoin.com/',                                where:'Asunción, PRY',        lat:-25.2867, lng:-57.6470  },
+  { month:8,  date:'Aug 14–15',  name:'Bitcoin Beyond 66',                      url:'https://bitcoinbeyond66.com',                                   where:'Bodø, NOR',            lat:67.2804,  lng:14.4049   },
+  { month:8,  date:'Aug 21',     name:'Bitcoin Infinity Day',                   url:'https://thebitcoindistrict.com/events',                         where:'Roatan, HND',          lat:16.3199,  lng:-86.5318  },
+  { month:8,  date:'Aug 27–28',  name:'Bitcoin Asia',                           url:'https://asia.b.tc/2026',                                        where:'Hong Kong, CHN',       lat:22.3193,  lng:114.1694  },
+  // ── September ──
+  { month:9,  date:'Sep 1–2',    name:'BTCinDC',                                url:'https://btcindc.com',                                           where:'Washington, DC',       lat:38.9072,  lng:-77.0369  },
+  { month:9,  date:'Sep 4–5',    name:'Bitcoin Indonesia Conference',           url:null,                                                            where:'TBD, IDN',             lat:-2.5489,  lng:118.0149  },
+  { month:9,  date:'Sep 12',     name:'BSE: Bitcoin – Sovereignty – Economics', url:'https://www.bsebtc.co.uk/bseconf',                             where:'Bury St Edmunds, ENG', lat:52.2466,  lng:0.7146    },
+  { month:9,  date:'Sep 17',     name:'Bitcoin Treasuries Unconference NYC',    url:'https://bitcointreasuries.media',                               where:'New York City, NY',    lat:40.7128,  lng:-74.0060  },
+  { month:9,  date:'Sep 23',     name:'European Mining Summit',                 url:null,                                                            where:'Helsinki, FIN',        lat:60.1699,  lng:24.9384   },
+  { month:9,  date:'Sep 23–24',  name:'Midwest Bitcoin Summit',                 url:'https://midwestbtc.com',                                        where:'Columbus, OH',         lat:39.9612,  lng:-82.9988  },
+  { month:9,  date:'Sep 25–26',  name:'BTC HEL',                                url:'https://btchel.com/',                                           where:'Helsinki, FIN',        lat:60.1699,  lng:24.9384   },
+  // ── October ──
+  { month:10, date:'Oct 1–3',    name:'bitcoin++ gets paid',                    url:'https://btcplusplus.dev/conf/berlin26',                         where:'Berlin, DEU',          lat:52.5200,  lng:13.4050   },
+  { month:10, date:'Oct 2–4',    name:'Watch Out, Bitcoin!',                    url:'https://wobitcoin.org/',                                        where:'Madrid, ESP',          lat:40.4168,  lng:-3.7038   },
+  { month:10, date:'Oct 12–15',  name:'TABConf',                                url:'https://7.tabconf.com/',                                        where:'Atlanta, GA',          lat:33.7490,  lng:-84.3880  },
+  { month:10, date:'Oct 16–18',  name:'Bitcoin Bush Bash – Busselton',          url:'https://bitcoinbushbash.info/busselton/',                       where:'Busselton, AUS',       lat:-33.6545, lng:115.3468  },
+  { month:10, date:'Oct 23–24',  name:'Lugano Plan B Forum',                    url:'https://planb.lugano.ch/planb-forum/',                          where:'Lugano, CHE',          lat:46.0050,  lng:8.9520    },
+  // ── November ──
+  { month:11, date:'Nov 4',      name:'Bitcoin for Corporations Symposium',     url:'https://www.bitcoin.amsterdam/bfc-symposium',                  where:'Amsterdam, NED',       lat:52.3676,  lng:4.9041    },
+  { month:11, date:'Nov 5–6',    name:'Bitcoin Amsterdam',                      url:'https://www.bitcoin.amsterdam/2026',                            where:'Amsterdam, NED',       lat:52.3676,  lng:4.9041    },
+  { month:11, date:'Nov 7–8',    name:'LABITCONF',                              url:'https://labitconf.com/',                                        where:'Buenos Aires, ARG',    lat:-34.6037, lng:-58.3816  },
+  { month:11, date:'Nov 13',     name:'Bitcoin: A Competitive Advantage',       url:'https://bitcoincollective.co/',                                 where:'Derby, GBR',           lat:52.9225,  lng:-1.4746   },
+  // ── December ──
+  { month:12, date:'Dec 7–8',    name:'Bitcoin MENA',                           url:'https://tickets.b.tc/event/bitcoin-mena-2026',                 where:'Abu Dhabi, UAE',       lat:24.4539,  lng:54.3773   },
+];
+
+// ── State ──
+let activeMonth = 0;
+let searchQuery  = '';
+let map, mapMarkers = [];
+
+function filtered() {
+  return events.filter(e => {
+    const mOk = activeMonth === 0 || e.month === activeMonth;
+    const sOk = !searchQuery || e.where.toLowerCase().includes(searchQuery.toLowerCase());
+    return mOk && sOk;
+  });
+}
+
+// ── Tabs ──
+function buildTabs() {
+  const container = document.getElementById('month-tabs');
+  const months = [...new Set(events.map(e => e.month))].sort((a,b) => a-b);
+  let html = `<button class="month-tab active" data-month="0">All (${events.length})</button>`;
+  months.forEach(m => {
+    const cnt = events.filter(e => e.month === m).length;
+    html += `<button class="month-tab" data-month="${m}">${MONTHS[m]} <span style="opacity:.65">(${cnt})</span></button>`;
+  });
+  container.innerHTML = html;
+}
+
+// ── Cards ──
+const PIN_ICON = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#F7931A" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>`;
+const GLOBE_ICON = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#F7931A" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>`;
+const EXT_ICON  = `<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>`;
+
+function renderCards() {
+  const list = filtered();
+  document.getElementById('results-meta').innerHTML =
+    `Showing <strong>${list.length}</strong> event${list.length !== 1 ? 's' : ''}`;
+
+  if (!list.length) {
+    document.getElementById('cards-grid').innerHTML =
+      `<div class="no-results"><div class="icon">🔍</div><p>No events match your filter.</p></div>`;
+    return;
+  }
+
+  document.getElementById('cards-grid').innerHTML = list.map(e => {
+    const isVirtual = !e.lat;
+    return `
+      <div class="card">
+        <span class="card-date">${e.date}</span>
+        <div class="card-name">${e.name}</div>
+        <div class="card-location">${isVirtual ? GLOBE_ICON : PIN_ICON} ${e.where}</div>
+        ${e.url ? `<a class="card-link" href="${e.url}" target="_blank" rel="noopener">Visit website ${EXT_ICON}</a>` : ''}
+      </div>`;
+  }).join('');
+}
+
+// ── Map ──
+function groupByLocation(list) {
+  const groups = {};
+  list.filter(e => e.lat !== null).forEach(e => {
+    const key = `${e.lat.toFixed(2)},${e.lng.toFixed(2)}`;
+    if (!groups[key]) groups[key] = { lat: e.lat, lng: e.lng, where: e.where, evts: [] };
+    groups[key].evts.push(e);
+  });
+  return Object.values(groups);
+}
+
+function buildPopup(group) {
+  const rows = group.evts.map((e, i) => `
+    <div style="${i ? 'margin-top:10px;padding-top:10px;border-top:1px solid #f0f0f0' : ''}">
+      <div style="font-size:10.5px;font-weight:700;color:#F7931A;text-transform:uppercase;letter-spacing:.05em">${e.date}</div>
+      <div style="font-size:13px;font-weight:600;color:#111;margin-top:3px;line-height:1.35">
+        ${e.url
+          ? `<a href="${e.url}" target="_blank" rel="noopener" style="color:#111;text-decoration:none;border-bottom:1.5px solid #F7931A">${e.name}</a>`
+          : e.name}
+      </div>
+    </div>`).join('');
+  return `<div style="font-family:system-ui,sans-serif;min-width:180px;max-width:260px">
+    <div style="font-size:11px;font-weight:700;color:#999;text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px">${group.where}</div>
+    ${rows}
+  </div>`;
+}
+
+function updateMap() {
+  mapMarkers.forEach(m => map.removeLayer(m));
+  mapMarkers = [];
+  groupByLocation(filtered()).forEach(group => {
+    const n = group.evts.length;
+    const m = L.circleMarker([group.lat, group.lng], {
+      radius: n > 2 ? 11 : n > 1 ? 9 : 7,
+      fillColor: '#F7931A',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.88,
+    }).bindPopup(buildPopup(group))
+      .bindTooltip(group.where, { direction:'top', offset:[0,-4] });
+    m.addTo(map);
+    mapMarkers.push(m);
+  });
+}
+
+function initMap() {
+  map = L.map('map', { scrollWheelZoom: false }).setView([20, 15], 2);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+  updateMap();
+}
+
+// ── Event listeners ──
+document.getElementById('month-tabs').addEventListener('click', e => {
+  const btn = e.target.closest('.month-tab');
+  if (!btn) return;
+  document.querySelectorAll('.month-tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  activeMonth = parseInt(btn.dataset.month);
+  renderCards();
+  updateMap();
+});
+
+document.getElementById('search').addEventListener('input', e => {
+  searchQuery = e.target.value.trim();
+  renderCards();
+  updateMap();
+});
+
+// ── Init ──
+document.getElementById('header-count').textContent = events.length;
+buildTabs();
+renderCards();
+initMap();
+</script>
+</body>
+</html>
