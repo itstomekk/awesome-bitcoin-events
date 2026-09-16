@@ -69,11 +69,12 @@ class MigrateLegacyEventsTests(unittest.TestCase):
         self.assertEqual(event["dates"], {
             "start": "2025-05-23",
             "end": "2025-05-25",
-            "timezone": None,
+            "timezone": "Europe/Warsaw",
             "precision": "day",
         })
         self.assertEqual(event["location"]["city"], "Warsaw")
         self.assertEqual(event["location"]["country_code"], "PL")
+        self.assertEqual(event["classification"]["delivery_mode"], "in_person")
         self.assertEqual(event["lifecycle"]["status"], "past")
         self.assertEqual(event["verification"]["state"], "legacy_imported")
         self.assertEqual(event["links"]["official_url"], "https://bitcoinfilmfest.com/")

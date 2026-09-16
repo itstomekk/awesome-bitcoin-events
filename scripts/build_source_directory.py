@@ -52,6 +52,12 @@ def role_from_notion_tags(tags: list[str]) -> str:
     return "discovery"
 
 
+def quality_score(role: str, reviewed: bool) -> int:
+    if not reviewed:
+        return 1
+    return {"canonical": 5, "community": 4, "editorial": 3, "discovery": 2, "dead_or_archived": 1}.get(role, 1)
+
+
 def source_id(name: str, normalized_url: str) -> str:
     suffix = hashlib.sha256(normalized_url.encode("utf-8")).hexdigest()[:8]
     return f"source-{slugify(name)}-{suffix}"
@@ -74,7 +80,7 @@ def empty_source(identifier: str, name: str, homepage: str) -> dict[str, Any]:
             "last_checked": None,
             "decision_reason": None,
         },
-        "quality": {"ratings": [], "notes": None},
+        "quality": {"score": 1, "ratings": [], "notes": None},
         "provenance": [],
         "extensions": {"notion_type_tags": []},
     }
@@ -101,6 +107,7 @@ def add_registry_sources(result: dict[str, dict[str, Any]], registry: dict[str, 
         source["urls"]["event_feed_url"] = item.get("feed_url")
         source["source_role"] = item.get("role", "discovery")
         source["source_type"] = item.get("type", "unreviewed")
+        source["quality"]["score"] = quality_score(source["source_role"], True)
         source["geographic_coverage"] = item.get("geo")
         source["topic_coverage"] = list_value(item.get("topics"))
         source["access"] = {"adapter": item.get("adapter", "not_reviewed"), "status": "configured"}
@@ -144,6 +151,7 @@ def add_notion_sources(result: dict[str, dict[str, Any]], notion_export: dict[st
         source["extensions"]["notion_type_tags"] = sorted(set(source["extensions"]["notion_type_tags"]).union(tags))
         if source["source_type"] == "unreviewed":
             source["source_role"] = role_from_notion_tags(tags)
+            source["quality"]["score"] = quality_score(source["source_role"], False)
         rating = row.get("quality_rating", row.get("How good is it"))
         if isinstance(rating, str) and rating and rating not in source["quality"]["ratings"]:
             source["quality"]["ratings"].append(rating)
@@ -161,16 +169,65 @@ def add_notion_sources(result: dict[str, dict[str, Any]], notion_export: dict[st
     return len(rows)
 
 
-def build_directory(registry: dict[str, Any], notion_export: dict[str, Any], generated_at: str) -> dict[str, Any]:
+def add_scan_sources(result: dict[str, dict[str, Any]], scan_exports: list[tuple[dict[str, Any], str]]) -> int:
+    total = 0
+    for scan, scan_ref in scan_exports:
+        sources = scan.get("sources")
+        if not isinstance(sources, list):
+            raise ValueError("scan sources must be an array")
+        observed_urls: dict[str, set[str]] = {}
+        for candidate in scan.get("candidates", []):
+            if not isinstance(candidate, dict):
+                continue
+            for observation in candidate.get("source_observations", []):
+                if not isinstance(observation, dict):
+                    continue
+                source_id = observation.get("source_id")
+                source_url = observation.get("source_url")
+                if isinstance(source_id, str) and isinstance(source_url, str) and source_url:
+                    observed_urls.setdefault(source_id, set()).add(normalize_url(source_url))
+        for item in sources:
+            if not isinstance(item, dict) or not isinstance(item.get("source_id"), str):
+                continue
+            total += 1
+            source_id = item["source_id"]
+            urls = sorted(observed_urls.get(source_id, set()))
+            if not urls:
+                continue
+            homepage = urls[0]
+            source = result.setdefault(homepage, empty_source(source_id, source_id.replace("-", " ").title(), homepage))
+            source["source_role"] = "canonical"
+            source["source_type"] = "review_scan"
+            source["access"] = {"adapter": "review_scan", "status": item.get("access_method", "observed")}
+            source["quality"]["score"] = quality_score("canonical", True)
+            source["monitoring"] = {
+                "status": "review_pending",
+                "cadence_days": 7,
+                "last_checked": scan.get("reviewed_at"),
+                "decision_reason": "Official source observed during automated event verification; cadence remains provisional.",
+            }
+            source["provenance"].append(
+                {
+                    "kind": "review_scan",
+                    "record_ref": scan_ref,
+                    "scan_source_id": source_id,
+                    "observed_urls": urls,
+                }
+            )
+    return total
+
+
+def build_directory(registry: dict[str, Any], notion_export: dict[str, Any], generated_at: str, scan_exports: list[tuple[dict[str, Any], str]] | None = None) -> dict[str, Any]:
     datetime.fromisoformat(generated_at.replace("Z", "+00:00"))
     sources_by_url: dict[str, dict[str, Any]] = {}
     registry_total = add_registry_sources(sources_by_url, registry)
     notion_total = add_notion_sources(sources_by_url, notion_export)
+    scan_total = add_scan_sources(sources_by_url, scan_exports or [])
     sources = sorted(sources_by_url.values(), key=lambda source: (source["name"].lower(), source["id"]))
     return {
         "schema_version": "source-dataset-1.0",
         "generated_at": generated_at,
-        "source_records_total": registry_total + notion_total,
+        "source_records_total": registry_total + notion_total + scan_total,
         "unique_sources_total": len(sources),
         "sources": sources,
     }
@@ -181,12 +238,14 @@ def main() -> int:
     parser.add_argument("--registry", type=Path, required=True)
     parser.add_argument("--notion-export", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--scan", type=Path, action="append", default=[])
     parser.add_argument("--generated-at", default=utc_now())
     args = parser.parse_args()
     try:
         registry = json.loads(args.registry.read_text(encoding="utf-8"))
         notion_export = json.loads(args.notion_export.read_text(encoding="utf-8"))
-        result = build_directory(registry, notion_export, args.generated_at)
+        scan_exports = [(json.loads(path.read_text(encoding="utf-8")), str(path)) for path in args.scan]
+        result = build_directory(registry, notion_export, args.generated_at, scan_exports)
         args.output.parent.mkdir(parents=True, exist_ok=True)
         args.output.write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     except (OSError, ValueError, json.JSONDecodeError) as error:

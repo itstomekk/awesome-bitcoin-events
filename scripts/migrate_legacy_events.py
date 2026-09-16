@@ -7,12 +7,53 @@ import argparse
 import json
 import re
 import sys
+import unicodedata
 from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Any
 
 SCHEMA_VERSION = "event-dataset-1.0"
 LEGACY_SOURCE_ID = "legacy-repo-2025"
+CITY_TIMEZONES = {
+    "abu dhabi": "Asia/Dubai",
+    "amsterdam": "Europe/Amsterdam",
+    "atlanta": "America/New_York",
+    "berlin": "Europe/Berlin",
+    "hong kong": "Asia/Hong_Kong",
+    "lugano": "Europe/Zurich",
+    "madrid": "Europe/Madrid",
+    "miami": "America/New_York",
+    "new york": "America/New_York",
+    "prague": "Europe/Prague",
+    "praha": "Europe/Prague",
+    "warsaw": "Europe/Warsaw",
+}
+COUNTRY_TIMEZONES = {
+    "AE": "Asia/Dubai",
+    "AT": "Europe/Vienna",
+    "AU": "Australia/Sydney",
+    "BE": "Europe/Brussels",
+    "CH": "Europe/Zurich",
+    "CZ": "Europe/Prague",
+    "DE": "Europe/Berlin",
+    "DK": "Europe/Copenhagen",
+    "ES": "Europe/Madrid",
+    "FI": "Europe/Helsinki",
+    "FR": "Europe/Paris",
+    "GB": "Europe/London",
+    "HK": "Asia/Hong_Kong",
+    "IE": "Europe/Dublin",
+    "IN": "Asia/Kolkata",
+    "IT": "Europe/Rome",
+    "JP": "Asia/Tokyo",
+    "NL": "Europe/Amsterdam",
+    "NO": "Europe/Oslo",
+    "PL": "Europe/Warsaw",
+    "PT": "Europe/Lisbon",
+    "SE": "Europe/Stockholm",
+    "SG": "Asia/Singapore",
+    "ZA": "Africa/Johannesburg",
+}
 
 
 def parse_day(value: Any, field: str) -> date:
@@ -37,6 +78,22 @@ def build_id(record: dict[str, Any], start: date) -> str:
     city = record.get("location")
     city_part = slugify(city) if isinstance(city, str) and city.strip() else "unknown-location"
     return f"evt-{slugify(title)}-{start.isoformat()}-{city_part}"
+
+
+def inferred_timezone(city: Any, country_code: str | None) -> str | None:
+    if isinstance(city, str):
+        normalized = unicodedata.normalize("NFKD", city).encode("ascii", "ignore").decode("ascii").strip().lower()
+        if normalized in CITY_TIMEZONES:
+            return CITY_TIMEZONES[normalized]
+    return COUNTRY_TIMEZONES.get(country_code or "")
+
+
+def inferred_delivery_mode(city: Any) -> str:
+    if isinstance(city, str) and city.strip().lower() in {"online", "virtual", "remote", "digital"}:
+        return "online"
+    if isinstance(city, str) and city.strip():
+        return "in_person"
+    return "unknown"
 
 
 def utc_now() -> str:
@@ -68,7 +125,7 @@ def migrate_event(record: dict[str, Any], legacy_metadata: dict[str, Any], gener
         "dates": {
             "start": start.isoformat(),
             "end": end.isoformat(),
-            "timezone": None,
+            "timezone": inferred_timezone(record.get("location"), country_code),
             "precision": "day",
         },
         "location": {
@@ -85,6 +142,7 @@ def migrate_event(record: dict[str, Any], legacy_metadata: dict[str, Any], gener
             "event_type": None,
             "topics": [],
             "bitcoin_relevance": "bitcoin_focused",
+            "delivery_mode": inferred_delivery_mode(record.get("location")),
         },
         "organizer": {"name": None, "urls": []},
         "links": {

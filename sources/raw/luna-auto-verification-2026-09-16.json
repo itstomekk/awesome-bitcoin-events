@@ -1,0 +1,374 @@
+{
+  "schema_version": "research-source-scan-1.0",
+  "reviewer": "luna-auto-verification",
+  "reviewed_at": "2026-09-16T20:45:00Z",
+  "cutoff_date": "2026-09-16",
+  "sources": [
+    {"source_id": "official-bitcointreasuries-media", "access_method": "web_search+web_extract"},
+    {"source_id": "official-bitcointreasuries-conference", "access_method": "web_search+web_extract"},
+    {"source_id": "official-noderunners", "access_method": "web_search+web_extract"},
+    {"source_id": "official-noderunners-tickets", "access_method": "web_search+web_extract"},
+    {"source_id": "official-european-mining-summit", "access_method": "web_search+web_extract"},
+    {"source_id": "official-midwest-bitcoin-summit", "access_method": "web_search+web_extract"},
+    {"source_id": "official-bitdevs-nyc", "access_method": "web_search+web_extract"},
+    {"source_id": "official-btchel", "access_method": "web_search+web_extract"},
+    {"source_id": "official-bitchill", "access_method": "web_search+web_extract"},
+    {"source_id": "official-watch-out-bitcoin", "access_method": "web_search+web_extract"},
+    {"source_id": "official-bitcoin-poland", "access_method": "web_search+web_extract"},
+    {"source_id": "official-imagine-if", "access_method": "web_search+web_extract"},
+    {"source_id": "official-bitcoin-bush-bash", "access_method": "web_search+web_extract"},
+    {"source_id": "official-mita-techtalks", "access_method": "web_search+web_extract"},
+    {"source_id": "official-bitcoin-korea", "access_method": "web_search+web_extract"},
+    {"source_id": "official-bitcoin-historico", "access_method": "web_search+web_extract"},
+    {"source_id": "official-bitcoin-beach", "access_method": "web_search+web_extract"},
+    {"source_id": "official-bitfest", "access_method": "web_search+web_extract"},
+    {"source_id": "official-bitblockboom", "access_method": "web_search+web_extract"},
+    {"source_id": "official-btc-prague", "access_method": "web_search+web_extract"}
+  ],
+  "candidates": [
+    {
+      "title": "Noderunners Conference 2026",
+      "series": null,
+      "start_date": "2026-09-19",
+      "end_date": "2026-09-19",
+      "timezone": null,
+      "delivery_mode": "in_person",
+      "event_type": "conference",
+      "topics": ["Bitcoin", "mining", "nodes"],
+      "description": "A Bitcoin-focused conference for builders, artists, node runners, and privacy-minded plebs.",
+      "organizer": "Noderunners",
+      "official_url": "https://noderunners.network/en/conference",
+      "registration_url": "https://pay02.lnc.direct/plugins/AybVCCr2AcoKsMs36k42TKKUTn83rAEh4eFXm1mjKCK3/ticket/public/event/85ca4e46-daa1-4f4d-a6a1-8635b56f8054/summary/tickets",
+      "location": {"venue": "Koepelgevangenis Arnhem", "city": "Arnhem", "region": null, "country": "Netherlands", "country_code": "NL"},
+      "source_observations": [
+        {"source_id": "official-noderunners-tickets", "source_url": "https://pay02.lnc.direct/plugins/AybVCCr2AcoKsMs36k42TKKUTn83rAEh4eFXm1mjKCK3/ticket/public/event/85ca4e46-daa1-4f4d-a6a1-8635b56f8054/summary/tickets", "event_url": "https://noderunners.network/en/conference", "observed_at": "2026-09-16T20:45:00Z", "raw_excerpt": "This pass grants you entry to We Are All Going to Jail! — Noderunners Conference 2026 at Koepelgevangenis Arnhem on September 19."}
+      ],
+      "verification_state": "official_page_seen",
+      "confidence": "high"
+    },
+    {
+      "title": "European Mining Summit 2026",
+      "series": null,
+      "start_date": "2026-09-23",
+      "end_date": "2026-09-23",
+      "timezone": null,
+      "delivery_mode": "in_person",
+      "event_type": "conference",
+      "topics": ["Bitcoin", "mining", "energy"],
+      "description": "A one-day Bitcoin mining and Nordic energy summit focused on grid stability, decarbonized heat, and surplus power.",
+      "organizer": "BTC HEL in cooperation with the European Bitcoin Energy Association",
+      "official_url": "https://miningsummit.eu/",
+      "registration_url": null,
+      "location": {"venue": "Tanssin Talo · Kaapelitehdas", "city": "Helsinki", "region": null, "country": "Finland", "country_code": "FI"},
+      "source_observations": [
+        {"source_id": "official-european-mining-summit", "source_url": "https://miningsummit.eu/", "event_url": "https://miningsummit.eu/", "observed_at": "2026-09-16T20:45:00Z", "raw_excerpt": "Date Wednesday, 23 September 2026\nVenue Tanssin Talo · Kaapelitehdas, Helsinki\nFormat Single-track conference + networking"}
+      ],
+      "verification_state": "official_page_seen",
+      "confidence": "high"
+    },
+    {
+      "title": "Midwest Bitcoin Summit 2026",
+      "series": null,
+      "start_date": "2026-09-23",
+      "end_date": "2026-09-24",
+      "timezone": null,
+      "delivery_mode": "in_person",
+      "event_type": "conference",
+      "topics": ["Bitcoin"],
+      "description": "A Bitcoin-only summit in Columbus bringing together builders, investors, and the wider Bitcoin community.",
+      "organizer": "Midwest Bitcoin Summit",
+      "official_url": "https://www.midwestbtc.com/",
+      "registration_url": "https://tickets.midwestbtc.com/event/midwest-bitcoin-summit-2026",
+      "location": {"venue": "Greater Columbus Convention Center", "city": "Columbus", "region": "Ohio", "country": "United States", "country_code": "US"},
+      "source_observations": [
+        {"source_id": "official-midwest-bitcoin-summit", "source_url": "https://www.midwestbtc.com/", "event_url": "https://www.midwestbtc.com/", "observed_at": "2026-09-16T20:45:00Z", "raw_excerpt": "MIDWEST BITCOIN SUMMIT 2026\nSeptember 23-24, 2026\nColumbus, Ohio\nGreater Columbus Convention Center"}
+      ],
+      "verification_state": "official_page_seen",
+      "confidence": "high"
+    },
+    {
+      "title": "Socratic Seminar 162",
+      "series": null,
+      "start_date": "2026-09-24",
+      "end_date": "2026-09-24",
+      "timezone": null,
+      "delivery_mode": "in_person",
+      "event_type": "meetup",
+      "topics": ["Bitcoin", "developers", "protocols"],
+      "description": "A New York BitDevs technical discussion event about Bitcoin and related protocols.",
+      "organizer": "New York BitDevs",
+      "official_url": "https://bitdevs.org/2026-09-24-socratic-seminar-162",
+      "registration_url": "https://luma.com/4l4jywq0",
+      "location": {"venue": null, "city": "New York City", "region": "New York", "country": "USA", "country_code": null},
+      "source_observations": [
+        {"source_id": "official-bitdevs-nyc", "source_url": "https://bitdevs.org/2026-09-24-socratic-seminar-162", "event_url": "https://bitdevs.org/2026-09-24-socratic-seminar-162", "observed_at": "2026-09-16T20:45:00Z", "raw_excerpt": "# Socratic Seminar 162\n\n24 Sep 2026 Links for this event: Meetup Luma"}
+      ],
+      "verification_state": "official_page_seen",
+      "confidence": "high"
+    },
+    {
+      "title": "BTC HEL 2026",
+      "series": null,
+      "start_date": "2026-09-25",
+      "end_date": "2026-09-26",
+      "timezone": null,
+      "delivery_mode": "in_person",
+      "event_type": "conference",
+      "topics": ["Bitcoin"],
+      "description": "The Nordic Bitcoin conference focused on Bitcoin payments, finance, mining, and Nordic adoption.",
+      "organizer": null,
+      "official_url": "https://btchel.com/",
+      "registration_url": null,
+      "location": {"venue": "Kaapelitehdas", "city": "Helsinki", "region": null, "country": "Finland", "country_code": "FI"},
+      "source_observations": [
+        {"source_id": "official-btchel", "source_url": "https://agenda.btchel.com/", "event_url": "https://btchel.com/", "observed_at": "2026-09-16T20:45:00Z", "raw_excerpt": "BTCHEL 2026 — The Nordic Bitcoin Conference. The Nordic Bitcoin Conference. Kaapelitehdas, Helsinki, 25–26 September 2026."}
+      ],
+      "verification_state": "official_page_seen",
+      "confidence": "high"
+    },
+    {
+      "title": "Bitchill s04",
+      "series": null,
+      "start_date": "2026-10-01",
+      "end_date": "2026-10-11",
+      "timezone": null,
+      "delivery_mode": "in_person",
+      "event_type": "retreat",
+      "topics": ["Bitcoin"],
+      "description": "A 10-day Bitcoin-oriented retreat in Próspera, Roatan with social activities, workshops, and community time.",
+      "organizer": "Bitcoin District",
+      "official_url": "https://thebitcoindistrict.com/bitchill",
+      "registration_url": null,
+      "location": {"venue": null, "city": "Roatan", "region": null, "country": "Honduras", "country_code": "HN"},
+      "source_observations": [
+        {"source_id": "official-bitchill", "source_url": "https://bitchillplan.lovable.app/", "event_url": "https://thebitcoindistrict.com/bitchill", "observed_at": "2026-09-16T20:45:00Z", "raw_excerpt": "Bitchill S04 — Caribbean Bitcoin Retreat in Próspera, Roatan, October 1–11, 2026"}
+      ],
+      "verification_state": "official_page_seen",
+      "confidence": "high"
+    },
+    {
+      "title": "Watch Out, Bitcoin! 2026",
+      "series": null,
+      "start_date": "2026-10-02",
+      "end_date": "2026-10-04",
+      "timezone": "Europe/Madrid",
+      "delivery_mode": "in_person",
+      "event_type": "conference",
+      "topics": ["Bitcoin"],
+      "description": "Spain's Bitcoin-only event with workshops, debates, and networking in Madrid.",
+      "organizer": "Watch Out, Freedom!",
+      "official_url": "http://wobitcoin.org/",
+      "registration_url": "https://www.tickettailor.com/events/wobitcoin/1892339",
+      "location": {"venue": "Espacio Pablo VI", "city": "Madrid", "region": null, "country": "Spain", "country_code": "ES"},
+      "source_observations": [
+        {"source_id": "official-watch-out-bitcoin", "source_url": "https://www.tickettailor.com/events/wobitcoin/1892339", "event_url": "http://wobitcoin.org/", "observed_at": "2026-09-16T20:45:00Z", "raw_excerpt": "Watch Out, Bitcoin! '26\nFri 2 Oct 2026 15:30 - Sun 4 Oct 2026 18:30 Espacio Pablo VI, P.º de Juan XXIII, 3, MADRID, 28047"}
+      ],
+      "verification_state": "official_page_seen",
+      "confidence": "high"
+    },
+    {
+      "title": "Bitcoin Poland 2026",
+      "series": null,
+      "start_date": "2026-10-05",
+      "end_date": "2026-10-06",
+      "timezone": null,
+      "delivery_mode": "in_person",
+      "event_type": "conference",
+      "topics": ["Bitcoin"],
+      "description": "Poland's Bitcoin-only conference focused on education, networking, freedom technology, and the future of finance.",
+      "organizer": null,
+      "official_url": "https://www.bitcoin-poland.com/",
+      "registration_url": "https://tobilet.pl/kongres-invest-cuffs-poznan-2026.html",
+      "location": {"venue": "Poznan Congress Center", "city": "Poznan", "region": null, "country": "Poland", "country_code": "PL"},
+      "source_observations": [
+        {"source_id": "official-bitcoin-poland", "source_url": "https://www.bitcoin-poland.com/", "event_url": "https://www.bitcoin-poland.com/", "observed_at": "2026-09-16T20:45:00Z", "raw_excerpt": "October 5-6, 2026. Poznań Congress Center\nPoland’s 1st major Bitcoin-Only Conference"}
+      ],
+      "verification_state": "official_page_seen",
+      "confidence": "high"
+    },
+    {
+      "title": "Imagine IF 2026",
+      "series": null,
+      "start_date": "2026-10-05",
+      "end_date": "2026-10-06",
+      "timezone": null,
+      "delivery_mode": "in_person",
+      "event_type": "conference",
+      "topics": ["AI", "Bitcoin", "energy", "freedom tech"],
+      "description": "An invite-only summit where Bitcoin, AI, energy, and open-source technology meet in Nashville.",
+      "organizer": null,
+      "official_url": "https://www.imagineifnashville.com/",
+      "registration_url": null,
+      "location": {"venue": "Fisher Center", "city": "Nashville", "region": "Tennessee", "country": "USA", "country_code": "US"},
+      "source_observations": [
+        {"source_id": "official-imagine-if", "source_url": "https://www.imagineifnashville.com/", "event_url": "https://www.imagineifnashville.com/", "observed_at": "2026-09-16T20:45:00Z", "raw_excerpt": "Imagine IF 2026 Oct 5–6, 2026 · Fisher Center · Nashville"}
+      ],
+      "verification_state": "official_page_seen",
+      "confidence": "high"
+    },
+    {
+      "title": "Bitcoin Bush Bash - Busselton",
+      "series": null,
+      "start_date": "2026-10-16",
+      "end_date": "2026-10-18",
+      "timezone": null,
+      "delivery_mode": "in_person",
+      "event_type": "conference",
+      "topics": ["Bitcoin"],
+      "description": "A grassroots Bitcoin-only weekend gathering in Busselton with discussions, workshops, and relaxed community activities.",
+      "organizer": "Bitcoin Bush Bash",
+      "official_url": "https://bitcoinbushbash.info/",
+      "registration_url": null,
+      "location": {"venue": null, "city": "Busselton", "region": "Western Australia", "country": "Australia", "country_code": "AU"},
+      "source_observations": [
+        {"source_id": "official-bitcoin-bush-bash", "source_url": "https://bitcoinbushbash.info/", "event_url": "https://bitcoinbushbash.info/", "observed_at": "2026-09-16T20:45:00Z", "raw_excerpt": "Connect with fellow Aussie Bitcoiners in Busselton, WA from 16–18 October 2026."}
+      ],
+      "verification_state": "official_page_seen",
+      "confidence": "high"
+    },
+    {
+      "title": "Mita Tech Talks 2026",
+      "series": null,
+      "start_date": "2026-10-25",
+      "end_date": "2026-10-27",
+      "timezone": null,
+      "delivery_mode": "in_person",
+      "event_type": "conference",
+      "topics": ["Bitcoin", "technology"],
+      "description": "An invitation-only gathering exploring the intersection of capital, Bitcoin, AI, and energy.",
+      "organizer": "Base Layer Advisors and Build With Bitcoin",
+      "official_url": "https://2026.mitatechtalks.com/",
+      "registration_url": "https://forms.gle/FSsT3m45cDApHobh7",
+      "location": {"venue": "Punta Mita private resort community", "city": "Punta Mita", "region": null, "country": "Mexico", "country_code": "MX"},
+      "source_observations": [
+        {"source_id": "official-mita-techtalks", "source_url": "https://2026.mitatechtalks.com/", "event_url": "https://2026.mitatechtalks.com/", "observed_at": "2026-09-16T20:45:00Z", "raw_excerpt": "MITA TechTalks 2026\nOctober\n25–27, 2026 Punta Mita, Mexico\nThe Future of Capital: Bitcoin, AI, and Energy"}
+      ],
+      "verification_state": "official_page_seen",
+      "confidence": "high"
+    },
+    {
+      "title": "Bitcoin Korea Conference",
+      "series": null,
+      "start_date": "2026-11-07",
+      "end_date": "2026-11-08",
+      "timezone": null,
+      "delivery_mode": "in_person",
+      "event_type": "conference",
+      "topics": ["Bitcoin"],
+      "description": "A two-day Bitcoin conference with talks, workshops, a Lightning market, and community events in Seoul.",
+      "organizer": "Bitcoin Korea Conference",
+      "official_url": "https://www.bitcoinkoreaconference.com/en",
+      "registration_url": null,
+      "location": {"venue": "COEX (Nov 7); Korea Federation of Banks (Nov 8)", "city": "Seoul", "region": null, "country": "South Korea", "country_code": "KR"},
+      "source_observations": [
+        {"source_id": "official-bitcoin-korea", "source_url": "https://www.bitcoinkoreaconference.com/en", "event_url": "https://www.bitcoinkoreaconference.com/en", "observed_at": "2026-09-16T20:45:00Z", "raw_excerpt": "Bitcoin Korea Conference\nNov 7 · COEX Samsung\n|\nNov 8 · Korea Federation of Banks"}
+      ],
+      "verification_state": "official_page_seen",
+      "confidence": "high"
+    },
+    {
+      "title": "Bitcoin Histórico 2026",
+      "series": null,
+      "start_date": "2026-11-11",
+      "end_date": "2026-11-12",
+      "timezone": null,
+      "delivery_mode": "in_person",
+      "event_type": "conference",
+      "topics": ["Bitcoin"],
+      "description": "A two-day Bitcoin conference celebrating financial freedom and El Salvador's transformation across historic San Salvador landmarks.",
+      "organizer": "National Bitcoin Office of El Salvador and CUBO+",
+      "official_url": "https://bitcoinhistorico.com/",
+      "registration_url": null,
+      "location": {"venue": "Centro Histórico (multiple venues)", "city": "San Salvador", "region": null, "country": "El Salvador", "country_code": "SV"},
+      "source_observations": [
+        {"source_id": "official-bitcoin-historico", "source_url": "https://bitcoinhistorico.com/", "event_url": "https://bitcoinhistorico.com/", "observed_at": "2026-09-16T20:45:00Z", "raw_excerpt": "A Conference by the National Bitcoin Office of El Salvador\n11–12 November 2026\nCentro Histórico, San Salvador"}
+      ],
+      "verification_state": "official_page_seen",
+      "confidence": "high"
+    },
+    {
+      "title": "Global Bitcoin Circular Economies Summit",
+      "series": null,
+      "start_date": "2026-11-19",
+      "end_date": "2026-11-20",
+      "timezone": null,
+      "delivery_mode": "in_person",
+      "event_type": "conference",
+      "topics": ["Bitcoin", "circular economies"],
+      "description": "A public Bitcoin conference about circular economies, merchant adoption, education, and practical community use.",
+      "organizer": "Bitcoin Beach",
+      "official_url": "https://www.bitcoinbeach.com/summit-blog/bitcoin-circular-economies-summit-2026",
+      "registration_url": "https://www.satlantis.io/events/2311/global-bitcoin-circular-economies-summit",
+      "location": {"venue": null, "city": "El Zonte", "region": null, "country": "El Salvador", "country_code": "SV"},
+      "source_observations": [
+        {"source_id": "official-bitcoin-beach", "source_url": "https://www.bitcoinbeach.com/summit-blog/bitcoin-circular-economies-summit-2026", "event_url": "https://www.bitcoinbeach.com/summit-blog/bitcoin-circular-economies-summit-2026", "observed_at": "2026-09-16T20:45:00Z", "raw_excerpt": "On November 19-20, 2026, the Global Bitcoin Circular Economies Summit becomes a public conference for the first time, and it's happening in El Zonte."}
+      ],
+      "verification_state": "official_page_seen",
+      "confidence": "high"
+    },
+    {
+      "title": "BitFest 2026",
+      "series": null,
+      "start_date": "2026-11-19",
+      "end_date": "2026-11-22",
+      "timezone": null,
+      "delivery_mode": "in_person",
+      "event_type": "festival",
+      "topics": ["Bitcoin"],
+      "description": "The official page expands the existing start date to November 19: Bitfest is the UK's flagship Bitcoin festival running 19–22 November, with the main Bitfest day on November 21.",
+      "organizer": "Bitfest",
+      "official_url": "https://bitfest.uk/",
+      "registration_url": "https://lnbits.bitfest.uk/events/Bs3V7Q6YPW7V4x2Dfaoype",
+      "location": {"venue": "Pendulum Hotel", "city": "Manchester", "region": null, "country": "United Kingdom", "country_code": "GB"},
+      "source_observations": [
+        {"source_id": "official-bitfest", "source_url": "https://bitfest.uk/", "event_url": "https://bitfest.uk/", "observed_at": "2026-09-16T20:45:00Z", "raw_excerpt": "Bitfest 2026 runs from 19–22 November 2026, with different events taking place across the long weekend. Where is Bitfest? The Pendulum Hotel in Manchester"}
+      ],
+      "verification_state": "official_page_seen",
+      "confidence": "high"
+    },
+    {
+      "title": "BitBlockBoom! 2027",
+      "series": null,
+      "start_date": "2027-04-01",
+      "end_date": "2027-04-04",
+      "timezone": null,
+      "delivery_mode": "in_person",
+      "event_type": "conference",
+      "topics": ["Bitcoin"],
+      "description": "A Bitcoin event in Fort Worth with talks, panels, workshops, and networking.",
+      "organizer": "BitBlockBoom, LLC",
+      "official_url": "https://www.bitblockboom.com/",
+      "registration_url": "https://www.bitblockboom.com/ticket",
+      "location": {"venue": "Fort Worth Stockyard Station, Stampede Ballroom", "city": "Fort Worth", "region": "Texas", "country": "United States", "country_code": "US"},
+      "source_observations": [
+        {"source_id": "official-bitblockboom", "source_url": "https://www.bitblockboom.com/", "event_url": "https://www.bitblockboom.com/", "observed_at": "2026-09-16T20:45:00Z", "raw_excerpt": "The True Bitcoin Event\nApril 1–4, 2027 | Fort Worth, TX\nFort Worth Stockyard Station, Stampede Ballroom"}
+      ],
+      "verification_state": "official_page_seen",
+      "confidence": "high"
+    },
+    {
+      "title": "BTC Prague 2027",
+      "series": null,
+      "start_date": "2027-05-06",
+      "end_date": "2027-05-08",
+      "timezone": null,
+      "delivery_mode": "in_person",
+      "event_type": "conference",
+      "topics": ["Bitcoin"],
+      "description": "A Bitcoin-focused conference and expo in Prague.",
+      "organizer": "BTC Prague",
+      "official_url": "https://btcprague.com/",
+      "registration_url": null,
+      "location": {"venue": null, "city": "Prague", "region": null, "country": "Czech Republic", "country_code": "CZ"},
+      "source_observations": [
+        {"source_id": "official-btc-prague", "source_url": "https://btcprague.com/", "event_url": "https://btcprague.com/", "observed_at": "2026-09-16T20:45:00Z", "raw_excerpt": "May 6 — 8\nBTC PRAGUE 2027"}
+      ],
+      "verification_state": "official_page_seen",
+      "confidence": "high"
+    }
+  ],
+  "unresolved": [
+    {"event_id": "evt-bitcoin-treasuries-unconference-nyc-2026-2026-09-17-new-york", "title": "Bitcoin Treasuries Unconference NYC 2026", "reason": "official pages conflict or omit the exact date: the official Unconference page says only September 2026, while the official Bitcoin Treasuries conference page proves a differently titled event on September 28, 2026"},
+    {"event_id": "evt-copa-bitcoin-2026-2026-09-18-huanchaco", "title": "Copa Bitcoin 2026", "reason": "no official URL found"}
+  ]
+}

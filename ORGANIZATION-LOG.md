@@ -19,3 +19,10 @@ files and `events.json` remain in place and unchanged; `data/events.json` carrie
 Added official and historical confirmation scans from BTC Inc, TABConf, Lugano's Plan B Forum, and
 Bitcoin Events South Africa. The importer now promotes later official evidence, records verification
 timestamps, separates past events, and merges title-year variants without deleting source observations.
+
+## 2026-09-16 - Automatic verification and interface fields
+
+Added the sequential Luna verification scan and its raw snapshot. The data contract now includes
+delivery mode, inferred IANA timezone, source quality score, unresolved-review state, and official
+date correction handling. Source references from review scans are added to the public source directory
+only when a real observed URL exists.

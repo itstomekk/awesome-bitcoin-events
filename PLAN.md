@@ -19,9 +19,10 @@ verification state, and review history.
 - [x] Create a source registry with source roles and monitoring policy.
 - [x] Review the first submitted source: Bitcoin Bundesverband.
 - [x] Define the canonical event schema and the immutable raw-snapshot schema.
-- [x] Map 102 Notion source records and the repository registry into 113 unique public source records.
+- [x] Map 102 Notion source records, the repository registry, and reviewed scan sources into 130 unique public source records.
 - [x] Losslessly migrate all 61 legacy event records into the interface-neutral dataset.
 - [x] Import reviewed collection scans: 47 candidate or historical events, with raw snapshots and source provenance.
+- [x] Automatically verify candidates against official URLs and preserve unresolved cases for review.
 - [ ] Add 20-30 manually verified events from 5-8 representative source types.
 - [x] Classify mapped sources as canonical, discovery, community, editorial, or unreviewed.
 

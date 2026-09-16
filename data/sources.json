@@ -1,8 +1,8 @@
 {
   "schema_version": "source-dataset-1.0",
-  "generated_at": "2026-09-16T20:27:57Z",
-  "source_records_total": 119,
-  "unique_sources_total": 113,
+  "generated_at": "2026-09-16T21:01:52Z",
+  "source_records_total": 139,
+  "unique_sources_total": 130,
   "sources": [
     {
       "id": "source-10-times-venues-ec3c0ad0",
@@ -29,6 +29,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★★"
         ],
@@ -78,6 +79,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "💀"
         ],
@@ -127,6 +129,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★"
         ],
@@ -176,6 +179,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★"
         ],
@@ -225,6 +229,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★★"
         ],
@@ -274,6 +279,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★"
         ],
@@ -323,6 +329,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "💀"
         ],
@@ -372,6 +379,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [],
         "notes": "Read-only provenance for the original 61-record 2025 dataset. It is retained for auditability, not monitored for new events."
       },
@@ -416,6 +424,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★"
         ],
@@ -465,6 +474,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★★★"
         ],
@@ -514,6 +524,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★"
         ],
@@ -565,6 +576,7 @@
         "decision_reason": "Keep as a monthly German discovery source. Upgrade to weekly only after it yields a current, unique event or a working structured feed."
       },
       "quality": {
+        "score": 2,
         "ratings": [],
         "notes": "German Bitcoin association. The page advertises iCal export, but the supplied export route returned 404 on 2026-09-16; use the event page until a working feed is confirmed."
       },
@@ -611,6 +623,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★★"
         ],
@@ -662,6 +675,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 5,
         "ratings": [],
         "notes": "Official organizer site. Broad blockchain scope; Bitcoin relevance and individual event details should be reviewed."
       },
@@ -708,6 +722,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★"
         ],
@@ -759,6 +774,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 3,
         "ratings": [
           "★★★★"
         ],
@@ -818,6 +834,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [],
         "notes": null
       },
@@ -865,6 +882,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★"
         ],
@@ -914,6 +932,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★"
         ],
@@ -963,6 +982,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★"
         ],
@@ -1012,6 +1032,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★★"
         ],
@@ -1062,6 +1083,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 5,
         "ratings": [],
         "notes": "Technical Bitcoin conference series. 17+ editions."
       },
@@ -1107,6 +1129,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★"
         ],
@@ -1158,6 +1181,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 5,
         "ratings": [
           "★★★"
         ],
@@ -1217,6 +1241,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "💀"
         ],
@@ -1266,6 +1291,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★"
         ],
@@ -1319,6 +1345,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 2,
         "ratings": [
           "★★★★"
         ],
@@ -1380,6 +1407,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★"
         ],
@@ -1431,6 +1459,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 2,
         "ratings": [],
         "notes": "Decentralised network of local Bitcoin dev meetups. Each city has own site + RSS."
       },
@@ -1477,6 +1506,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★"
         ],
@@ -1526,6 +1556,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★"
         ],
@@ -1575,6 +1606,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★"
         ],
@@ -1626,6 +1658,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 2,
         "ratings": [
           "★★★★★"
         ],
@@ -1685,6 +1718,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 5,
         "ratings": [],
         "notes": "Flagship series: Bitcoin Conference, Bitcoin Asia, Bitcoin Amsterdam, Bitcoin MENA."
       },
@@ -1729,6 +1763,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★"
         ],
@@ -1778,6 +1813,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★★"
         ],
@@ -1827,6 +1863,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★★"
         ],
@@ -1876,6 +1913,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★"
         ],
@@ -1925,6 +1963,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★★"
         ],
@@ -1974,6 +2013,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★★★"
         ],
@@ -2023,6 +2063,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★"
         ],
@@ -2072,6 +2113,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★★"
         ],
@@ -2121,6 +2163,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★"
         ],
@@ -2170,6 +2213,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★★"
         ],
@@ -2219,6 +2263,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★"
         ],
@@ -2268,6 +2313,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★"
         ],
@@ -2317,6 +2363,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★"
         ],
@@ -2366,6 +2413,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★★"
         ],
@@ -2415,6 +2463,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★★"
         ],
@@ -2464,6 +2513,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★"
         ],
@@ -2513,6 +2563,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 2,
         "ratings": [],
         "notes": "Broad crypto/Web3 directory. Retain only clearly Bitcoin-relevant candidates and verify them elsewhere."
       },
@@ -2557,6 +2608,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★★"
         ],
@@ -2606,6 +2658,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★"
         ],
@@ -2655,6 +2708,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★★"
         ],
@@ -2704,6 +2758,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★"
         ],
@@ -2753,6 +2808,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★"
         ],
@@ -2802,6 +2858,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★"
         ],
@@ -2851,6 +2908,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★"
         ],
@@ -2900,6 +2958,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [],
         "notes": null
       },
@@ -2947,6 +3006,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★★★"
         ],
@@ -2996,6 +3056,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★"
         ],
@@ -3047,6 +3108,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 2,
         "ratings": [],
         "notes": "Massive reach. Mostly small local meetups and online courses."
       },
@@ -3093,6 +3155,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★★"
         ],
@@ -3142,6 +3205,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★"
         ],
@@ -3191,6 +3255,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★"
         ],
@@ -3240,6 +3305,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★★"
         ],
@@ -3289,6 +3355,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★"
         ],
@@ -3338,6 +3405,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★★"
         ],
@@ -3391,6 +3459,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 2,
         "ratings": [
           "★★★★"
         ],
@@ -3452,6 +3521,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★"
         ],
@@ -3501,6 +3571,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★"
         ],
@@ -3550,6 +3621,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [],
         "notes": null
       },
@@ -3597,6 +3669,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★"
         ],
@@ -3646,6 +3719,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★"
         ],
@@ -3695,6 +3769,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★"
         ],
@@ -3744,6 +3819,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★"
         ],
@@ -3793,6 +3869,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★"
         ],
@@ -3842,6 +3919,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★"
         ],
@@ -3891,6 +3969,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "💀"
         ],
@@ -3940,6 +4019,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★"
         ],
@@ -3989,6 +4069,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★"
         ],
@@ -4038,6 +4119,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★★"
         ],
@@ -4087,6 +4169,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★★"
         ],
@@ -4136,6 +4219,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★★★"
         ],
@@ -4188,6 +4272,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 5,
         "ratings": [],
         "notes": "Official Lugano Plan B Forum page and ticketing links."
       },
@@ -4235,6 +4320,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 2,
         "ratings": [],
         "notes": "638 events, 38K subscribers. High noise, good coverage."
       },
@@ -4279,6 +4365,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★"
         ],
@@ -4328,6 +4415,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★★"
         ],
@@ -4377,6 +4465,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★"
         ],
@@ -4426,6 +4515,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★"
         ],
@@ -4448,6 +4538,703 @@
         "notion_type_tags": [
           "BTC | info & events"
         ]
+      }
+    },
+    {
+      "id": "official-bitblockboom",
+      "name": "Official Bitblockboom",
+      "urls": {
+        "homepage": "https://www.bitblockboom.com/",
+        "event_feed_url": null
+      },
+      "source_role": "canonical",
+      "source_type": "review_scan",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [],
+      "access": {
+        "adapter": "review_scan",
+        "status": "web_search+web_extract"
+      },
+      "monitoring": {
+        "status": "review_pending",
+        "cadence_days": 7,
+        "last_checked": "2026-09-16T20:45:00Z",
+        "decision_reason": "Official source observed during automated event verification; cadence remains provisional."
+      },
+      "quality": {
+        "score": 5,
+        "ratings": [],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "review_scan",
+          "record_ref": "research\\luna-auto-verification-2026-09-16.json",
+          "scan_source_id": "official-bitblockboom",
+          "observed_urls": [
+            "https://www.bitblockboom.com/"
+          ]
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": []
+      }
+    },
+    {
+      "id": "official-bitchill",
+      "name": "Official Bitchill",
+      "urls": {
+        "homepage": "https://bitchillplan.lovable.app/",
+        "event_feed_url": null
+      },
+      "source_role": "canonical",
+      "source_type": "review_scan",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [],
+      "access": {
+        "adapter": "review_scan",
+        "status": "web_search+web_extract"
+      },
+      "monitoring": {
+        "status": "review_pending",
+        "cadence_days": 7,
+        "last_checked": "2026-09-16T20:45:00Z",
+        "decision_reason": "Official source observed during automated event verification; cadence remains provisional."
+      },
+      "quality": {
+        "score": 5,
+        "ratings": [],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "review_scan",
+          "record_ref": "research\\luna-auto-verification-2026-09-16.json",
+          "scan_source_id": "official-bitchill",
+          "observed_urls": [
+            "https://bitchillplan.lovable.app/"
+          ]
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": []
+      }
+    },
+    {
+      "id": "official-bitcoin-beach",
+      "name": "Official Bitcoin Beach",
+      "urls": {
+        "homepage": "https://www.bitcoinbeach.com/summit-blog/bitcoin-circular-economies-summit-2026",
+        "event_feed_url": null
+      },
+      "source_role": "canonical",
+      "source_type": "review_scan",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [],
+      "access": {
+        "adapter": "review_scan",
+        "status": "web_search+web_extract"
+      },
+      "monitoring": {
+        "status": "review_pending",
+        "cadence_days": 7,
+        "last_checked": "2026-09-16T20:45:00Z",
+        "decision_reason": "Official source observed during automated event verification; cadence remains provisional."
+      },
+      "quality": {
+        "score": 5,
+        "ratings": [],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "review_scan",
+          "record_ref": "research\\luna-auto-verification-2026-09-16.json",
+          "scan_source_id": "official-bitcoin-beach",
+          "observed_urls": [
+            "https://www.bitcoinbeach.com/summit-blog/bitcoin-circular-economies-summit-2026"
+          ]
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": []
+      }
+    },
+    {
+      "id": "official-bitcoin-bush-bash",
+      "name": "Official Bitcoin Bush Bash",
+      "urls": {
+        "homepage": "https://bitcoinbushbash.info/",
+        "event_feed_url": null
+      },
+      "source_role": "canonical",
+      "source_type": "review_scan",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [],
+      "access": {
+        "adapter": "review_scan",
+        "status": "web_search+web_extract"
+      },
+      "monitoring": {
+        "status": "review_pending",
+        "cadence_days": 7,
+        "last_checked": "2026-09-16T20:45:00Z",
+        "decision_reason": "Official source observed during automated event verification; cadence remains provisional."
+      },
+      "quality": {
+        "score": 5,
+        "ratings": [],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "review_scan",
+          "record_ref": "research\\luna-auto-verification-2026-09-16.json",
+          "scan_source_id": "official-bitcoin-bush-bash",
+          "observed_urls": [
+            "https://bitcoinbushbash.info/"
+          ]
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": []
+      }
+    },
+    {
+      "id": "official-bitcoin-historico",
+      "name": "Official Bitcoin Historico",
+      "urls": {
+        "homepage": "https://bitcoinhistorico.com/",
+        "event_feed_url": null
+      },
+      "source_role": "canonical",
+      "source_type": "review_scan",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [],
+      "access": {
+        "adapter": "review_scan",
+        "status": "web_search+web_extract"
+      },
+      "monitoring": {
+        "status": "review_pending",
+        "cadence_days": 7,
+        "last_checked": "2026-09-16T20:45:00Z",
+        "decision_reason": "Official source observed during automated event verification; cadence remains provisional."
+      },
+      "quality": {
+        "score": 5,
+        "ratings": [],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "review_scan",
+          "record_ref": "research\\luna-auto-verification-2026-09-16.json",
+          "scan_source_id": "official-bitcoin-historico",
+          "observed_urls": [
+            "https://bitcoinhistorico.com/"
+          ]
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": []
+      }
+    },
+    {
+      "id": "official-bitcoin-korea",
+      "name": "Official Bitcoin Korea",
+      "urls": {
+        "homepage": "https://www.bitcoinkoreaconference.com/en",
+        "event_feed_url": null
+      },
+      "source_role": "canonical",
+      "source_type": "review_scan",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [],
+      "access": {
+        "adapter": "review_scan",
+        "status": "web_search+web_extract"
+      },
+      "monitoring": {
+        "status": "review_pending",
+        "cadence_days": 7,
+        "last_checked": "2026-09-16T20:45:00Z",
+        "decision_reason": "Official source observed during automated event verification; cadence remains provisional."
+      },
+      "quality": {
+        "score": 5,
+        "ratings": [],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "review_scan",
+          "record_ref": "research\\luna-auto-verification-2026-09-16.json",
+          "scan_source_id": "official-bitcoin-korea",
+          "observed_urls": [
+            "https://www.bitcoinkoreaconference.com/en"
+          ]
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": []
+      }
+    },
+    {
+      "id": "official-bitcoin-poland",
+      "name": "Official Bitcoin Poland",
+      "urls": {
+        "homepage": "https://www.bitcoin-poland.com/",
+        "event_feed_url": null
+      },
+      "source_role": "canonical",
+      "source_type": "review_scan",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [],
+      "access": {
+        "adapter": "review_scan",
+        "status": "web_search+web_extract"
+      },
+      "monitoring": {
+        "status": "review_pending",
+        "cadence_days": 7,
+        "last_checked": "2026-09-16T20:45:00Z",
+        "decision_reason": "Official source observed during automated event verification; cadence remains provisional."
+      },
+      "quality": {
+        "score": 5,
+        "ratings": [],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "review_scan",
+          "record_ref": "research\\luna-auto-verification-2026-09-16.json",
+          "scan_source_id": "official-bitcoin-poland",
+          "observed_urls": [
+            "https://www.bitcoin-poland.com/"
+          ]
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": []
+      }
+    },
+    {
+      "id": "official-bitdevs-nyc",
+      "name": "Official Bitdevs Nyc",
+      "urls": {
+        "homepage": "https://bitdevs.org/2026-09-24-socratic-seminar-162",
+        "event_feed_url": null
+      },
+      "source_role": "canonical",
+      "source_type": "review_scan",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [],
+      "access": {
+        "adapter": "review_scan",
+        "status": "web_search+web_extract"
+      },
+      "monitoring": {
+        "status": "review_pending",
+        "cadence_days": 7,
+        "last_checked": "2026-09-16T20:45:00Z",
+        "decision_reason": "Official source observed during automated event verification; cadence remains provisional."
+      },
+      "quality": {
+        "score": 5,
+        "ratings": [],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "review_scan",
+          "record_ref": "research\\luna-auto-verification-2026-09-16.json",
+          "scan_source_id": "official-bitdevs-nyc",
+          "observed_urls": [
+            "https://bitdevs.org/2026-09-24-socratic-seminar-162"
+          ]
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": []
+      }
+    },
+    {
+      "id": "official-bitfest",
+      "name": "Official Bitfest",
+      "urls": {
+        "homepage": "https://bitfest.uk/",
+        "event_feed_url": null
+      },
+      "source_role": "canonical",
+      "source_type": "review_scan",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [],
+      "access": {
+        "adapter": "review_scan",
+        "status": "web_search+web_extract"
+      },
+      "monitoring": {
+        "status": "review_pending",
+        "cadence_days": 7,
+        "last_checked": "2026-09-16T20:45:00Z",
+        "decision_reason": "Official source observed during automated event verification; cadence remains provisional."
+      },
+      "quality": {
+        "score": 5,
+        "ratings": [],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "review_scan",
+          "record_ref": "research\\luna-auto-verification-2026-09-16.json",
+          "scan_source_id": "official-bitfest",
+          "observed_urls": [
+            "https://bitfest.uk/"
+          ]
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": []
+      }
+    },
+    {
+      "id": "official-btc-prague",
+      "name": "Official Btc Prague",
+      "urls": {
+        "homepage": "https://btcprague.com/",
+        "event_feed_url": null
+      },
+      "source_role": "canonical",
+      "source_type": "review_scan",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [],
+      "access": {
+        "adapter": "review_scan",
+        "status": "web_search+web_extract"
+      },
+      "monitoring": {
+        "status": "review_pending",
+        "cadence_days": 7,
+        "last_checked": "2026-09-16T20:45:00Z",
+        "decision_reason": "Official source observed during automated event verification; cadence remains provisional."
+      },
+      "quality": {
+        "score": 5,
+        "ratings": [],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "review_scan",
+          "record_ref": "research\\luna-auto-verification-2026-09-16.json",
+          "scan_source_id": "official-btc-prague",
+          "observed_urls": [
+            "https://btcprague.com/"
+          ]
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": []
+      }
+    },
+    {
+      "id": "official-btchel",
+      "name": "Official Btchel",
+      "urls": {
+        "homepage": "https://agenda.btchel.com/",
+        "event_feed_url": null
+      },
+      "source_role": "canonical",
+      "source_type": "review_scan",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [],
+      "access": {
+        "adapter": "review_scan",
+        "status": "web_search+web_extract"
+      },
+      "monitoring": {
+        "status": "review_pending",
+        "cadence_days": 7,
+        "last_checked": "2026-09-16T20:45:00Z",
+        "decision_reason": "Official source observed during automated event verification; cadence remains provisional."
+      },
+      "quality": {
+        "score": 5,
+        "ratings": [],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "review_scan",
+          "record_ref": "research\\luna-auto-verification-2026-09-16.json",
+          "scan_source_id": "official-btchel",
+          "observed_urls": [
+            "https://agenda.btchel.com/"
+          ]
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": []
+      }
+    },
+    {
+      "id": "official-european-mining-summit",
+      "name": "Official European Mining Summit",
+      "urls": {
+        "homepage": "https://miningsummit.eu/",
+        "event_feed_url": null
+      },
+      "source_role": "canonical",
+      "source_type": "review_scan",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [],
+      "access": {
+        "adapter": "review_scan",
+        "status": "web_search+web_extract"
+      },
+      "monitoring": {
+        "status": "review_pending",
+        "cadence_days": 7,
+        "last_checked": "2026-09-16T20:45:00Z",
+        "decision_reason": "Official source observed during automated event verification; cadence remains provisional."
+      },
+      "quality": {
+        "score": 5,
+        "ratings": [],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "review_scan",
+          "record_ref": "research\\luna-auto-verification-2026-09-16.json",
+          "scan_source_id": "official-european-mining-summit",
+          "observed_urls": [
+            "https://miningsummit.eu/"
+          ]
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": []
+      }
+    },
+    {
+      "id": "official-imagine-if",
+      "name": "Official Imagine If",
+      "urls": {
+        "homepage": "https://www.imagineifnashville.com/",
+        "event_feed_url": null
+      },
+      "source_role": "canonical",
+      "source_type": "review_scan",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [],
+      "access": {
+        "adapter": "review_scan",
+        "status": "web_search+web_extract"
+      },
+      "monitoring": {
+        "status": "review_pending",
+        "cadence_days": 7,
+        "last_checked": "2026-09-16T20:45:00Z",
+        "decision_reason": "Official source observed during automated event verification; cadence remains provisional."
+      },
+      "quality": {
+        "score": 5,
+        "ratings": [],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "review_scan",
+          "record_ref": "research\\luna-auto-verification-2026-09-16.json",
+          "scan_source_id": "official-imagine-if",
+          "observed_urls": [
+            "https://www.imagineifnashville.com/"
+          ]
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": []
+      }
+    },
+    {
+      "id": "official-midwest-bitcoin-summit",
+      "name": "Official Midwest Bitcoin Summit",
+      "urls": {
+        "homepage": "https://www.midwestbtc.com/",
+        "event_feed_url": null
+      },
+      "source_role": "canonical",
+      "source_type": "review_scan",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [],
+      "access": {
+        "adapter": "review_scan",
+        "status": "web_search+web_extract"
+      },
+      "monitoring": {
+        "status": "review_pending",
+        "cadence_days": 7,
+        "last_checked": "2026-09-16T20:45:00Z",
+        "decision_reason": "Official source observed during automated event verification; cadence remains provisional."
+      },
+      "quality": {
+        "score": 5,
+        "ratings": [],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "review_scan",
+          "record_ref": "research\\luna-auto-verification-2026-09-16.json",
+          "scan_source_id": "official-midwest-bitcoin-summit",
+          "observed_urls": [
+            "https://www.midwestbtc.com/"
+          ]
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": []
+      }
+    },
+    {
+      "id": "official-mita-techtalks",
+      "name": "Official Mita Techtalks",
+      "urls": {
+        "homepage": "https://2026.mitatechtalks.com/",
+        "event_feed_url": null
+      },
+      "source_role": "canonical",
+      "source_type": "review_scan",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [],
+      "access": {
+        "adapter": "review_scan",
+        "status": "web_search+web_extract"
+      },
+      "monitoring": {
+        "status": "review_pending",
+        "cadence_days": 7,
+        "last_checked": "2026-09-16T20:45:00Z",
+        "decision_reason": "Official source observed during automated event verification; cadence remains provisional."
+      },
+      "quality": {
+        "score": 5,
+        "ratings": [],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "review_scan",
+          "record_ref": "research\\luna-auto-verification-2026-09-16.json",
+          "scan_source_id": "official-mita-techtalks",
+          "observed_urls": [
+            "https://2026.mitatechtalks.com/"
+          ]
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": []
+      }
+    },
+    {
+      "id": "official-noderunners-tickets",
+      "name": "Official Noderunners Tickets",
+      "urls": {
+        "homepage": "https://pay02.lnc.direct/plugins/AybVCCr2AcoKsMs36k42TKKUTn83rAEh4eFXm1mjKCK3/ticket/public/event/85ca4e46-daa1-4f4d-a6a1-8635b56f8054/summary/tickets",
+        "event_feed_url": null
+      },
+      "source_role": "canonical",
+      "source_type": "review_scan",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [],
+      "access": {
+        "adapter": "review_scan",
+        "status": "web_search+web_extract"
+      },
+      "monitoring": {
+        "status": "review_pending",
+        "cadence_days": 7,
+        "last_checked": "2026-09-16T20:45:00Z",
+        "decision_reason": "Official source observed during automated event verification; cadence remains provisional."
+      },
+      "quality": {
+        "score": 5,
+        "ratings": [],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "review_scan",
+          "record_ref": "research\\luna-auto-verification-2026-09-16.json",
+          "scan_source_id": "official-noderunners-tickets",
+          "observed_urls": [
+            "https://pay02.lnc.direct/plugins/AybVCCr2AcoKsMs36k42TKKUTn83rAEh4eFXm1mjKCK3/ticket/public/event/85ca4e46-daa1-4f4d-a6a1-8635b56f8054/summary/tickets"
+          ]
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": []
+      }
+    },
+    {
+      "id": "official-watch-out-bitcoin",
+      "name": "Official Watch Out Bitcoin",
+      "urls": {
+        "homepage": "https://www.tickettailor.com/events/wobitcoin/1892339",
+        "event_feed_url": null
+      },
+      "source_role": "canonical",
+      "source_type": "review_scan",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [],
+      "access": {
+        "adapter": "review_scan",
+        "status": "web_search+web_extract"
+      },
+      "monitoring": {
+        "status": "review_pending",
+        "cadence_days": 7,
+        "last_checked": "2026-09-16T20:45:00Z",
+        "decision_reason": "Official source observed during automated event verification; cadence remains provisional."
+      },
+      "quality": {
+        "score": 5,
+        "ratings": [],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "review_scan",
+          "record_ref": "research\\luna-auto-verification-2026-09-16.json",
+          "scan_source_id": "official-watch-out-bitcoin",
+          "observed_urls": [
+            "https://www.tickettailor.com/events/wobitcoin/1892339"
+          ]
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": []
       }
     },
     {
@@ -4475,6 +5262,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★★★"
         ],
@@ -4527,6 +5315,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 2,
         "ratings": [
           "★★★★★"
         ],
@@ -4587,6 +5376,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★★★"
         ],
@@ -4636,6 +5426,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★"
         ],
@@ -4685,6 +5476,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★"
         ],
@@ -4734,6 +5526,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★"
         ],
@@ -4783,6 +5576,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★"
         ],
@@ -4832,6 +5626,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★"
         ],
@@ -4881,6 +5676,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [],
         "notes": null
       },
@@ -4928,6 +5724,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★★★"
         ],
@@ -4977,6 +5774,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★"
         ],
@@ -5026,6 +5824,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★"
         ],
@@ -5075,6 +5874,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★"
         ],
@@ -5126,6 +5926,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 5,
         "ratings": [],
         "notes": "Volunteer-driven technical Bitcoin conference. Current edition pages are hosted under versioned subdomains."
       },
@@ -5172,6 +5973,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★"
         ],
@@ -5221,6 +6023,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★"
         ],
@@ -5270,6 +6073,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★"
         ],
@@ -5319,6 +6123,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [],
         "notes": null
       },
@@ -5366,6 +6171,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★★★"
         ],
@@ -5415,6 +6221,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★"
         ],
@@ -5464,6 +6271,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★"
         ],
@@ -5513,6 +6321,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★"
         ],
@@ -5562,6 +6371,7 @@
         "decision_reason": null
       },
       "quality": {
+        "score": 1,
         "ratings": [
           "★★★"
         ],

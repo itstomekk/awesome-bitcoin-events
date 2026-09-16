@@ -11,27 +11,32 @@ SCRIPT = ROOT / "scripts" / "build_source_directory.py"
 
 
 class BuildSourceDirectoryTests(unittest.TestCase):
-    def run_builder(self, registry, notion_rows):
+    def run_builder(self, registry, notion_rows, scan=None):
         with tempfile.TemporaryDirectory() as directory:
             directory = Path(directory)
             registry_path = directory / "registry.json"
             notion_path = directory / "notion.json"
             output_path = directory / "sources.json"
+            scan_path = directory / "scan.json"
             registry_path.write_text(json.dumps(registry), encoding="utf-8")
             notion_path.write_text(json.dumps({"rows": notion_rows}), encoding="utf-8")
+            command = [
+                sys.executable,
+                str(SCRIPT),
+                "--registry",
+                str(registry_path),
+                "--notion-export",
+                str(notion_path),
+                "--output",
+                str(output_path),
+                "--generated-at",
+                "2026-09-16T18:10:00Z",
+            ]
+            if scan is not None:
+                scan_path.write_text(json.dumps(scan), encoding="utf-8")
+                command.extend(["--scan", str(scan_path)])
             result = subprocess.run(
-                [
-                    sys.executable,
-                    str(SCRIPT),
-                    "--registry",
-                    str(registry_path),
-                    "--notion-export",
-                    str(notion_path),
-                    "--output",
-                    str(output_path),
-                    "--generated-at",
-                    "2026-09-16T18:10:00Z",
-                ],
+                command,
                 cwd=ROOT,
                 check=True,
                 capture_output=True,
@@ -83,6 +88,7 @@ class BuildSourceDirectoryTests(unittest.TestCase):
         self.assertEqual(source["source_role"], "canonical")
         self.assertEqual(source["urls"]["homepage"], "https://example.org/events")
         self.assertEqual(source["urls"]["event_feed_url"], "https://example.org/feed.ics")
+        self.assertEqual(source["quality"]["score"], 5)
         self.assertEqual(source["languages"], ["EN", "PL"])
         self.assertEqual(source["monitoring"]["cadence_days"], 7)
         self.assertEqual(len(source["provenance"]), 2)
@@ -108,6 +114,25 @@ class BuildSourceDirectoryTests(unittest.TestCase):
 
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("url", result.stderr)
+
+    def test_adds_sources_observed_in_scan(self):
+        output, result = self.run_builder(
+            {"sources": []},
+            [],
+            {
+                "schema_version": "research-source-scan-1.0",
+                "sources": [{"source_id": "official-example", "access_method": "web_extract"}],
+                "candidates": [{"source_observations": [{"source_id": "official-example", "source_url": "https://official.example.org/event", "event_url": "https://official.example.org/event"}]}],
+            },
+        )
+
+        self.assertEqual(result.returncode, 0)
+        self.assertEqual(output["unique_sources_total"], 1)
+        source = output["sources"][0]
+        self.assertEqual(source["id"], "official-example")
+        self.assertEqual(source["urls"]["homepage"], "https://official.example.org/event")
+        self.assertEqual(source["source_role"], "canonical")
+        self.assertEqual(source["quality"]["score"], 5)
 
 
 if __name__ == "__main__":

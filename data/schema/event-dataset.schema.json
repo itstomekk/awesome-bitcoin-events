@@ -48,11 +48,12 @@
         },
         "classification": {
           "type": "object",
-          "required": ["event_type", "topics", "bitcoin_relevance"],
+          "required": ["event_type", "topics", "bitcoin_relevance", "delivery_mode"],
           "properties": {
             "event_type": {"type": ["string", "null"]},
             "topics": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
-            "bitcoin_relevance": {"type": "string"}
+            "bitcoin_relevance": {"type": "string"},
+            "delivery_mode": {"enum": ["in_person", "online", "hybrid", "unknown"]}
           },
           "additionalProperties": false
         },

@@ -11,13 +11,14 @@ The legacy frontend and its `events.json` were deliberately left untouched.
 The new versioned data layer is ready:
 
 - `data/events.json` contains 108 normalized records: 61 lossless legacy migrations and 47 reviewed source-scan records.
-- `data/sources.json` contains 113 unique sources built from 119 public source records, including all 102 exported Notion source records.
+- `data/sources.json` contains 130 unique sources built from 139 public source records, including all 102 exported Notion source records and observed URLs from automatic verification scans.
 - `data/schema/event-dataset.schema.json` defines the UI-neutral contract.
 - `sources/raw/luna-source-scan-2026-09-16.json` is byte-identical to the review scan stored in `research/`.
 - Additional reviewed scans are preserved in `sources/raw/standalone-scan-2026-09-16.json` and `sources/raw/historical-confirmation-scan-2026-09-16.json`.
+- `sources/raw/luna-auto-verification-2026-09-16.json` records the automatic official-URL review: 17 confirmed candidates and 2 unresolved cases.
 
 The 47 imported records retain their original source evidence. Their present verification split is
-9 `official_page_seen`, 19 `discovery_only`, and 19 `needs_review`. Discovery and review candidates
+26 `official_page_seen`, 19 `discovery_only`, and 2 `needs_review`. Discovery and review candidates
 must not be presented as confirmed organizer listings.
 
 ## First source verdict
@@ -31,7 +32,7 @@ must not be presented as confirmed organizer listings.
 
 ## Verification performed
 
-- Thirteen unit tests pass: legacy migration, source-directory construction, candidate import, raw snapshot retention, source-ID resolution, verification downgrade, date handling, and duplicate merging.
+- Fifteen unit tests pass: legacy migration, source-directory construction, candidate import, raw snapshot retention, source-ID resolution, verification downgrade, date/timezone handling, and duplicate merging.
 - `data/events.json` validates against its JSON Schema.
 - Every imported source observation resolves to an ID in `data/sources.json`.
 - Duplicate title variants are merged using normalized title, date range, and city; a later official scan can promote an existing discovery record.
@@ -39,6 +40,6 @@ must not be presented as confirmed organizer listings.
 
 ## Next action
 
-Review the 19 `needs_review` candidates against organizer-owned pages, then create thin calendar
-and map consumers from `data/events.json`. Luna collection attempts currently hit the provider's
-HTTP 429 usage limit; direct web research remains available.
+Review the 2 unresolved candidates against organizer-owned pages, then create thin calendar and map
+consumers from `data/events.json`. Luna's sequential automatic verifier works; parallel fan-out hit
+the provider's HTTP 429 usage limit, so collection should stay sequential or use a separate provider.

@@ -1,6 +1,6 @@
 {
   "schema_version": "event-dataset-1.0",
-  "generated_at": "2026-09-16T20:27:57Z",
+  "generated_at": "2026-09-16T21:01:52Z",
   "records_total": 108,
   "dataset_scope": "legacy-import+source-candidates",
   "events": [
@@ -27,7 +27,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -60,7 +61,7 @@
           "source_url": "events.json",
           "event_url": "https://bitcoinmedellin.com",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 1,
           "fields_observed": [
@@ -122,7 +123,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -155,7 +157,7 @@
           "source_url": "events.json",
           "event_url": "https://bitcoinday.io",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 2,
           "fields_observed": [
@@ -201,7 +203,7 @@
       "dates": {
         "start": "2025-01-24",
         "end": "2025-01-25",
-        "timezone": null,
+        "timezone": "Africa/Johannesburg",
         "precision": "day"
       },
       "location": {
@@ -217,7 +219,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -250,7 +253,7 @@
           "source_url": "events.json",
           "event_url": "https://za25.adoptingbitcoin.org/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 3,
           "fields_observed": [
@@ -312,7 +315,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -345,7 +349,7 @@
           "source_url": "events.json",
           "event_url": "https://www.meetup.com/bitcoinpark/events/304092624/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 4,
           "fields_observed": [
@@ -407,7 +411,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -440,7 +445,7 @@
           "source_url": "events.json",
           "event_url": "https://www.bitcoinfreedomfestival.com/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 5,
           "fields_observed": [
@@ -502,7 +507,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -535,7 +541,7 @@
           "source_url": "events.json",
           "event_url": "https://btcplusplus.dev/conf/floripa",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 6,
           "fields_observed": [
@@ -597,7 +603,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -630,7 +637,7 @@
           "source_url": "events.json",
           "event_url": "https://lu.ma/bitcoininvestorweek",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 7,
           "fields_observed": [
@@ -692,7 +699,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -725,7 +733,7 @@
           "source_url": "events.json",
           "event_url": "https://bitcoin-renaissance.com/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 8,
           "fields_observed": [
@@ -787,7 +795,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -820,7 +829,7 @@
           "source_url": "events.json",
           "event_url": "https://www.apres.tech/bitcoin-ski-summit-2024",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 9,
           "fields_observed": [
@@ -866,7 +875,7 @@
       "dates": {
         "start": "2025-03-08",
         "end": "2025-03-08",
-        "timezone": null,
+        "timezone": "Australia/Sydney",
         "precision": "day"
       },
       "location": {
@@ -882,7 +891,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -915,7 +925,7 @@
           "source_url": "events.json",
           "event_url": "https://bitcoinalive.io/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 10,
           "fields_observed": [
@@ -977,7 +987,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -1010,7 +1021,7 @@
           "source_url": "events.json",
           "event_url": "https://btcvortex.com",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 11,
           "fields_observed": [
@@ -1072,7 +1083,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -1105,7 +1117,7 @@
           "source_url": "events.json",
           "event_url": "https://bitcointakeover.org/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 12,
           "fields_observed": [
@@ -1151,7 +1163,7 @@
       "dates": {
         "start": "2025-03-28",
         "end": "2025-03-30",
-        "timezone": null,
+        "timezone": "Australia/Sydney",
         "precision": "day"
       },
       "location": {
@@ -1167,7 +1179,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -1200,7 +1213,7 @@
           "source_url": "events.json",
           "event_url": "https://bitcoinbushbash.info/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 13,
           "fields_observed": [
@@ -1262,7 +1275,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -1295,7 +1309,7 @@
           "source_url": "events.json",
           "event_url": "https://optoutconf.com/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 14,
           "fields_observed": [
@@ -1357,7 +1371,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -1390,7 +1405,7 @@
           "source_url": "events.json",
           "event_url": "https://bitblockboom.com/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 15,
           "fields_observed": [
@@ -1452,7 +1467,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -1485,7 +1501,7 @@
           "source_url": "events.json",
           "event_url": "https://mitbtcexpo.org/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 16,
           "fields_observed": [
@@ -1531,7 +1547,7 @@
       "dates": {
         "start": "2025-04-11",
         "end": "2025-04-13",
-        "timezone": null,
+        "timezone": "Europe/London",
         "precision": "day"
       },
       "location": {
@@ -1547,7 +1563,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -1580,7 +1597,7 @@
           "source_url": "events.json",
           "event_url": "https://www.cheatcode.co.uk/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 18,
           "fields_observed": [
@@ -1642,7 +1659,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -1675,7 +1693,7 @@
           "source_url": "events.json",
           "event_url": "https://opnext.dev/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 17,
           "fields_observed": [
@@ -1737,7 +1755,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "online"
       },
       "organizer": {
         "name": null,
@@ -1770,7 +1789,7 @@
           "source_url": "events.json",
           "event_url": "https://bitcoinreservesummit.com/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 19,
           "fields_observed": [
@@ -1816,7 +1835,7 @@
       "dates": {
         "start": "2025-04-24",
         "end": "2025-04-27",
-        "timezone": null,
+        "timezone": "Europe/Zurich",
         "precision": "day"
       },
       "location": {
@@ -1832,7 +1851,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -1865,7 +1885,7 @@
           "source_url": "events.json",
           "event_url": "https://swiss-bitcoin-conference.com/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 20,
           "fields_observed": [
@@ -1911,7 +1931,7 @@
       "dates": {
         "start": "2025-04-28",
         "end": "2025-04-29",
-        "timezone": null,
+        "timezone": "Asia/Dubai",
         "precision": "day"
       },
       "location": {
@@ -1927,7 +1947,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -1960,7 +1981,7 @@
           "source_url": "events.json",
           "event_url": "http://www.bitcoin-oasis.com",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 21,
           "fields_observed": [
@@ -2022,7 +2043,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -2055,7 +2077,7 @@
           "source_url": "events.json",
           "event_url": "https://www.microstrategy.com/en/world/bitcoin-for-corporations",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 22,
           "fields_observed": [
@@ -2117,7 +2139,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -2150,7 +2173,7 @@
           "source_url": "events.json",
           "event_url": "https://btcplusplus.dev/conf/atx25",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 24,
           "fields_observed": [
@@ -2196,7 +2219,7 @@
       "dates": {
         "start": "2025-05-07",
         "end": "2025-05-08",
-        "timezone": null,
+        "timezone": "Europe/Rome",
         "precision": "day"
       },
       "location": {
@@ -2212,7 +2235,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -2245,7 +2269,7 @@
           "source_url": "events.json",
           "event_url": "https://tuscanysummit.com/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 23,
           "fields_observed": [
@@ -2291,7 +2315,7 @@
       "dates": {
         "start": "2025-05-10",
         "end": "2025-05-10",
-        "timezone": null,
+        "timezone": "Europe/Rome",
         "precision": "day"
       },
       "location": {
@@ -2307,7 +2331,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -2340,7 +2365,7 @@
           "source_url": "events.json",
           "event_url": "https://bitcareforum.it/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 25,
           "fields_observed": [
@@ -2386,7 +2411,7 @@
       "dates": {
         "start": "2025-05-22",
         "end": "2025-05-22",
-        "timezone": null,
+        "timezone": "Europe/Prague",
         "precision": "day"
       },
       "location": {
@@ -2402,7 +2427,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -2435,7 +2461,7 @@
           "source_url": "events.json",
           "event_url": "https://pizzaday.cz/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 26,
           "fields_observed": [
@@ -2481,7 +2507,7 @@
       "dates": {
         "start": "2025-05-23",
         "end": "2025-05-25",
-        "timezone": null,
+        "timezone": "Europe/Warsaw",
         "precision": "day"
       },
       "location": {
@@ -2497,7 +2523,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -2530,7 +2557,7 @@
           "source_url": "events.json",
           "event_url": "https://bitcoinfilmfest.com/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 27,
           "fields_observed": [
@@ -2576,7 +2603,7 @@
       "dates": {
         "start": "2025-05-24",
         "end": "2025-05-24",
-        "timezone": null,
+        "timezone": "Europe/Dublin",
         "precision": "day"
       },
       "location": {
@@ -2592,7 +2619,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -2625,7 +2653,7 @@
           "source_url": "events.json",
           "event_url": "https://www.bitcoinireland.eu/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 28,
           "fields_observed": [
@@ -2671,7 +2699,7 @@
       "dates": {
         "start": "2025-05-26",
         "end": "2025-05-28",
-        "timezone": null,
+        "timezone": "Europe/Oslo",
         "precision": "day"
       },
       "location": {
@@ -2687,7 +2715,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -2720,7 +2749,7 @@
           "source_url": "events.json",
           "event_url": "https://oslofreedomforum.com/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 29,
           "fields_observed": [
@@ -2782,7 +2811,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -2815,7 +2845,7 @@
           "source_url": "events.json",
           "event_url": "https://b.tc/conference/2025",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 30,
           "fields_observed": [
@@ -2861,7 +2891,7 @@
       "dates": {
         "start": "2025-05-30",
         "end": "2025-06-01",
-        "timezone": null,
+        "timezone": "Europe/Paris",
         "precision": "day"
       },
       "location": {
@@ -2877,7 +2907,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -2910,7 +2941,7 @@
           "source_url": "events.json",
           "event_url": "https://www.breizhbitcoin.com/bitcoin-economic-forum/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 31,
           "fields_observed": [
@@ -2972,7 +3003,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -3005,7 +3037,7 @@
           "source_url": "events.json",
           "event_url": "http://bitcoinseoul.kr",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 32,
           "fields_observed": [
@@ -3067,7 +3099,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -3100,7 +3133,7 @@
           "source_url": "events.json",
           "event_url": "https://bitcoinday.io",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 33,
           "fields_observed": [
@@ -3162,7 +3195,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -3195,7 +3229,7 @@
           "source_url": "events.json",
           "event_url": "https://www.bitcoinbay.live/sound-money-soiree",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 34,
           "fields_observed": [
@@ -3241,7 +3275,7 @@
       "dates": {
         "start": "2025-06-19",
         "end": "2025-06-21",
-        "timezone": null,
+        "timezone": "Europe/Prague",
         "precision": "day"
       },
       "location": {
@@ -3257,7 +3291,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -3290,7 +3325,7 @@
           "source_url": "events.json",
           "event_url": "https://btcprague.com/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 35,
           "fields_observed": [
@@ -3336,7 +3371,7 @@
       "dates": {
         "start": "2025-06-20",
         "end": "2025-06-20",
-        "timezone": null,
+        "timezone": "Europe/Prague",
         "precision": "day"
       },
       "location": {
@@ -3352,7 +3387,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -3385,7 +3421,7 @@
           "source_url": "events.json",
           "event_url": "https://www.bitcoincorporateday.com/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 36,
           "fields_observed": [
@@ -3447,7 +3483,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -3480,7 +3517,7 @@
           "source_url": "events.json",
           "event_url": "https://www.btcpolicysummit.org/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 37,
           "fields_observed": [
@@ -3542,7 +3579,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -3575,7 +3613,7 @@
           "source_url": "events.json",
           "event_url": "https://bitcoinrodeo.com",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 38,
           "fields_observed": [
@@ -3621,7 +3659,7 @@
       "dates": {
         "start": "2025-07-10",
         "end": "2025-07-13",
-        "timezone": null,
+        "timezone": "Europe/Madrid",
         "precision": "day"
       },
       "location": {
@@ -3637,7 +3675,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -3670,7 +3709,7 @@
           "source_url": "events.json",
           "event_url": "https://mallorcablockchaindays.com/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 39,
           "fields_observed": [
@@ -3716,7 +3755,7 @@
       "dates": {
         "start": "2025-07-24",
         "end": "2025-07-27",
-        "timezone": null,
+        "timezone": "Europe/Berlin",
         "precision": "day"
       },
       "location": {
@@ -3732,7 +3771,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -3765,7 +3805,7 @@
           "source_url": "events.json",
           "event_url": "https://x.com/BTCZitadelle",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 40,
           "fields_observed": [
@@ -3827,7 +3867,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -3860,7 +3901,7 @@
           "source_url": "events.json",
           "event_url": "http://www.bitcoinisforeveryone.com",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 41,
           "fields_observed": [
@@ -3922,7 +3963,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -3955,7 +3997,7 @@
           "source_url": "events.json",
           "event_url": "https://twitter.com/LakeSatoshi",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 42,
           "fields_observed": [
@@ -4017,7 +4059,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -4050,7 +4093,7 @@
           "source_url": "events.json",
           "event_url": "https://btcplusplus.dev/conf/riga",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 43,
           "fields_observed": [
@@ -4112,7 +4155,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -4145,7 +4189,7 @@
           "source_url": "events.json",
           "event_url": "https://budapestbitcoin.com/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 44,
           "fields_observed": [
@@ -4207,7 +4251,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -4240,7 +4285,7 @@
           "source_url": "events.json",
           "event_url": "https://baltichoneybadger.com/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 45,
           "fields_observed": [
@@ -4286,7 +4331,7 @@
       "dates": {
         "start": "2025-08-15",
         "end": "2025-08-16",
-        "timezone": null,
+        "timezone": "Europe/Helsinki",
         "precision": "day"
       },
       "location": {
@@ -4302,7 +4347,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -4335,7 +4381,7 @@
           "source_url": "events.json",
           "event_url": "https://btchel.com/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 46,
           "fields_observed": [
@@ -4397,7 +4443,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -4430,7 +4477,7 @@
           "source_url": "events.json",
           "event_url": "https://www.learningbitcoin.ca/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 47,
           "fields_observed": [
@@ -4476,7 +4523,7 @@
       "dates": {
         "start": "2025-08-28",
         "end": "2025-08-29",
-        "timezone": null,
+        "timezone": "Asia/Hong_Kong",
         "precision": "day"
       },
       "location": {
@@ -4492,7 +4539,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -4525,7 +4573,7 @@
           "source_url": "events.json",
           "event_url": "https://b.tc/conference/asia",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 48,
           "fields_observed": [
@@ -4587,7 +4635,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -4620,7 +4669,7 @@
           "source_url": "events.json",
           "event_url": "https://btcplusplus.dev/conf/istanbul",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 50,
           "fields_observed": [
@@ -4682,7 +4731,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -4715,7 +4765,7 @@
           "source_url": "events.json",
           "event_url": "http://bitcoinweekbali.xyz",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 49,
           "fields_observed": [
@@ -4777,7 +4827,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -4810,7 +4861,7 @@
           "source_url": "events.json",
           "event_url": "https://bitcoinday.io",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 51,
           "fields_observed": [
@@ -4872,7 +4923,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -4905,7 +4957,7 @@
           "source_url": "events.json",
           "event_url": "https://btcindc.com",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 52,
           "fields_observed": [
@@ -4951,7 +5003,7 @@
       "dates": {
         "start": "2025-10-02",
         "end": "2025-10-04",
-        "timezone": null,
+        "timezone": "Europe/Berlin",
         "precision": "day"
       },
       "location": {
@@ -4967,7 +5019,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -5000,7 +5053,7 @@
           "source_url": "events.json",
           "event_url": "https://btcplusplus.dev/conf/berlin25",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 53,
           "fields_observed": [
@@ -5046,7 +5099,7 @@
       "dates": {
         "start": "2025-10-03",
         "end": "2025-10-05",
-        "timezone": null,
+        "timezone": "Europe/Madrid",
         "precision": "day"
       },
       "location": {
@@ -5062,7 +5115,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -5095,7 +5149,7 @@
           "source_url": "events.json",
           "event_url": "https://wobitcoin.org/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 54,
           "fields_observed": [
@@ -5157,7 +5211,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -5190,7 +5245,7 @@
           "source_url": "events.json",
           "event_url": "https://www.campnakamoto.com/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 55,
           "fields_observed": [
@@ -5252,7 +5307,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -5285,7 +5341,7 @@
           "source_url": "events.json",
           "event_url": "https://tabconf.com/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 56,
           "fields_observed": [
@@ -5331,7 +5387,7 @@
       "dates": {
         "start": "2025-10-24",
         "end": "2025-10-25",
-        "timezone": null,
+        "timezone": "Europe/Zurich",
         "precision": "day"
       },
       "location": {
@@ -5347,7 +5403,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -5380,7 +5437,7 @@
           "source_url": "events.json",
           "event_url": "https://planb.lugano.ch/planb-forum/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 57,
           "fields_observed": [
@@ -5442,7 +5499,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -5475,7 +5533,7 @@
           "source_url": "events.json",
           "event_url": "http://satsconf.com.br/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 58,
           "fields_observed": [
@@ -5537,7 +5595,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -5570,7 +5629,7 @@
           "source_url": "events.json",
           "event_url": "https://sv25.adoptingbitcoin.org",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 59,
           "fields_observed": [
@@ -5632,7 +5691,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -5665,7 +5725,7 @@
           "source_url": "events.json",
           "event_url": "https://www.afrobitcoin.org/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 60,
           "fields_observed": [
@@ -5727,7 +5787,8 @@
       "classification": {
         "event_type": null,
         "topics": [],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -5760,7 +5821,7 @@
           "source_url": "events.json",
           "event_url": "https://btcplusplus.dev/conf/taipei",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T20:27:57Z",
+          "observed_at": "2026-09-16T21:01:52Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 61,
           "fields_observed": [
@@ -5806,7 +5867,7 @@
       "dates": {
         "start": "2026-06-10",
         "end": "2026-06-13",
-        "timezone": null,
+        "timezone": "Europe/Prague",
         "precision": "day"
       },
       "location": {
@@ -5825,7 +5886,8 @@
           "adoption",
           "prague"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": "BTC Prague",
@@ -5877,7 +5939,7 @@
       "dates": {
         "start": "2026-08-27",
         "end": "2026-08-28",
-        "timezone": null,
+        "timezone": "Asia/Hong_Kong",
         "precision": "day"
       },
       "location": {
@@ -5896,7 +5958,8 @@
           "adoption",
           "asian-community"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": "BTC Inc",
@@ -5948,7 +6011,7 @@
       "dates": {
         "start": "2026-09-17",
         "end": "2026-09-17",
-        "timezone": null,
+        "timezone": "America/New_York",
         "precision": "day"
       },
       "location": {
@@ -5967,7 +6030,8 @@
           "Bitcoin",
           "treasuries"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -6046,7 +6110,8 @@
         "topics": [
           "Bitcoin"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -6111,11 +6176,11 @@
         "precision": "day"
       },
       "location": {
-        "venue": null,
+        "venue": "Koepelgevangenis Arnhem",
         "city": "Arnhem",
         "region": null,
         "country": "Netherlands",
-        "country_code": null,
+        "country_code": "NL",
         "latitude": null,
         "longitude": null,
         "coordinates_precision": null
@@ -6127,19 +6192,20 @@
           "mining",
           "nodes"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
-        "name": null,
+        "name": "Noderunners",
         "urls": []
       },
       "links": {
-        "official_url": null,
-        "registration_url": null,
+        "official_url": "https://noderunners.network/en/conference",
+        "registration_url": "https://pay02.lnc.direct/plugins/AybVCCr2AcoKsMs36k42TKKUTn83rAEh4eFXm1mjKCK3/ticket/public/event/85ca4e46-daa1-4f4d-a6a1-8635b56f8054/summary/tickets",
         "livestream_url": null,
         "social_urls": []
       },
-      "description": null,
+      "description": "A Bitcoin-focused conference for builders, artists, node runners, and privacy-minded plebs.",
       "media": {
         "image_url": null
       },
@@ -6149,9 +6215,9 @@
         "cancelled": false
       },
       "verification": {
-        "state": "needs_review",
-        "confidence": "medium",
-        "last_verified_at": null,
+        "state": "official_page_seen",
+        "confidence": "high",
+        "last_verified_at": "2026-09-16T20:45:00Z",
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
       },
       "source_observations": [
@@ -6181,6 +6247,15 @@
           "access_method": "web_extract",
           "observed_at": "2026-09-16T00:00:00Z",
           "raw_excerpt": "Sep 19 2026\nNoderunners Conference 2026 Arnhem\nArnhem"
+        },
+        {
+          "source_id": "official-noderunners-tickets",
+          "reported_source_id": "official-noderunners-tickets",
+          "source_url": "https://pay02.lnc.direct/plugins/AybVCCr2AcoKsMs36k42TKKUTn83rAEh4eFXm1mjKCK3/ticket/public/event/85ca4e46-daa1-4f4d-a6a1-8635b56f8054/summary/tickets",
+          "event_url": "https://noderunners.network/en/conference",
+          "access_method": "web_search+web_extract",
+          "observed_at": "2026-09-16T20:45:00Z",
+          "raw_excerpt": "This pass grants you entry to We Are All Going to Jail! — Noderunners Conference 2026 at Koepelgevangenis Arnhem on September 19."
         }
       ],
       "aliases": [],
@@ -6217,7 +6292,8 @@
           "freedom tech",
           "policy"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -6273,11 +6349,11 @@
         "precision": "day"
       },
       "location": {
-        "venue": null,
+        "venue": "Tanssin Talo · Kaapelitehdas",
         "city": "Helsinki",
         "region": null,
         "country": "Finland",
-        "country_code": null,
+        "country_code": "FI",
         "latitude": null,
         "longitude": null,
         "coordinates_precision": null
@@ -6288,19 +6364,20 @@
           "Bitcoin",
           "mining"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
-        "name": null,
+        "name": "BTC HEL in cooperation with the European Bitcoin Energy Association",
         "urls": []
       },
       "links": {
-        "official_url": null,
+        "official_url": "https://miningsummit.eu/",
         "registration_url": null,
         "livestream_url": null,
         "social_urls": []
       },
-      "description": null,
+      "description": "A one-day Bitcoin mining and Nordic energy summit focused on grid stability, decarbonized heat, and surplus power.",
       "media": {
         "image_url": null
       },
@@ -6310,9 +6387,9 @@
         "cancelled": false
       },
       "verification": {
-        "state": "needs_review",
-        "confidence": "medium",
-        "last_verified_at": null,
+        "state": "official_page_seen",
+        "confidence": "high",
+        "last_verified_at": "2026-09-16T20:45:00Z",
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
       },
       "source_observations": [
@@ -6342,6 +6419,15 @@
           "access_method": "web_extract",
           "observed_at": "2026-09-16T00:00:00Z",
           "raw_excerpt": "Sep 23 2026\nEuropean Mining Summit 2026 Helsinki\nHelsinki"
+        },
+        {
+          "source_id": "official-european-mining-summit",
+          "reported_source_id": "official-european-mining-summit",
+          "source_url": "https://miningsummit.eu/",
+          "event_url": "https://miningsummit.eu/",
+          "access_method": "web_search+web_extract",
+          "observed_at": "2026-09-16T20:45:00Z",
+          "raw_excerpt": "Date Wednesday, 23 September 2026\nVenue Tanssin Talo · Kaapelitehdas, Helsinki\nFormat Single-track conference + networking"
         }
       ],
       "aliases": [],
@@ -6362,11 +6448,11 @@
         "precision": "day"
       },
       "location": {
-        "venue": null,
+        "venue": "Greater Columbus Convention Center",
         "city": "Columbus",
         "region": "Ohio",
         "country": "USA",
-        "country_code": null,
+        "country_code": "US",
         "latitude": null,
         "longitude": null,
         "coordinates_precision": null
@@ -6376,19 +6462,20 @@
         "topics": [
           "Bitcoin"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
-        "name": null,
+        "name": "Midwest Bitcoin Summit",
         "urls": []
       },
       "links": {
-        "official_url": null,
-        "registration_url": null,
+        "official_url": "https://www.midwestbtc.com/",
+        "registration_url": "https://tickets.midwestbtc.com/event/midwest-bitcoin-summit-2026",
         "livestream_url": null,
         "social_urls": []
       },
-      "description": null,
+      "description": "A Bitcoin-only summit in Columbus bringing together builders, investors, and the wider Bitcoin community.",
       "media": {
         "image_url": null
       },
@@ -6398,9 +6485,9 @@
         "cancelled": false
       },
       "verification": {
-        "state": "needs_review",
-        "confidence": "medium",
-        "last_verified_at": null,
+        "state": "official_page_seen",
+        "confidence": "high",
+        "last_verified_at": "2026-09-16T20:45:00Z",
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
       },
       "source_observations": [
@@ -6430,6 +6517,15 @@
           "access_method": "web_extract",
           "observed_at": "2026-09-16T00:00:00Z",
           "raw_excerpt": "Sep 23-24 2026\nMidwest Bitcoin Summit 2026\nColumbus, OH"
+        },
+        {
+          "source_id": "official-midwest-bitcoin-summit",
+          "reported_source_id": "official-midwest-bitcoin-summit",
+          "source_url": "https://www.midwestbtc.com/",
+          "event_url": "https://www.midwestbtc.com/",
+          "access_method": "web_search+web_extract",
+          "observed_at": "2026-09-16T20:45:00Z",
+          "raw_excerpt": "MIDWEST BITCOIN SUMMIT 2026\nSeptember 23-24, 2026\nColumbus, Ohio\nGreater Columbus Convention Center"
         }
       ],
       "aliases": [],
@@ -6466,19 +6562,20 @@
           "developers",
           "protocols"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
-        "name": null,
+        "name": "New York BitDevs",
         "urls": []
       },
       "links": {
-        "official_url": null,
-        "registration_url": null,
+        "official_url": "https://bitdevs.org/2026-09-24-socratic-seminar-162",
+        "registration_url": "https://luma.com/4l4jywq0",
         "livestream_url": null,
         "social_urls": []
       },
-      "description": null,
+      "description": "A New York BitDevs technical discussion event about Bitcoin and related protocols.",
       "media": {
         "image_url": null
       },
@@ -6488,9 +6585,9 @@
         "cancelled": false
       },
       "verification": {
-        "state": "needs_review",
-        "confidence": "low",
-        "last_verified_at": null,
+        "state": "official_page_seen",
+        "confidence": "high",
+        "last_verified_at": "2026-09-16T20:45:00Z",
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
       },
       "source_observations": [
@@ -6502,6 +6599,15 @@
           "access_method": "web_search+web_extract",
           "observed_at": "2026-09-16T00:00:00Z",
           "raw_excerpt": "Upcoming and Recent Events in New York City: 24 Sep 2026 » Socratic Seminar 162"
+        },
+        {
+          "source_id": "official-bitdevs-nyc",
+          "reported_source_id": "official-bitdevs-nyc",
+          "source_url": "https://bitdevs.org/2026-09-24-socratic-seminar-162",
+          "event_url": "https://bitdevs.org/2026-09-24-socratic-seminar-162",
+          "access_method": "web_search+web_extract",
+          "observed_at": "2026-09-16T20:45:00Z",
+          "raw_excerpt": "# Socratic Seminar 162\n\n24 Sep 2026 Links for this event: Meetup Luma"
         }
       ],
       "aliases": [],
@@ -6522,11 +6628,11 @@
         "precision": "day"
       },
       "location": {
-        "venue": null,
+        "venue": "Kaapelitehdas",
         "city": "Helsinki",
         "region": null,
         "country": "Finland",
-        "country_code": null,
+        "country_code": "FI",
         "latitude": null,
         "longitude": null,
         "coordinates_precision": null
@@ -6536,19 +6642,20 @@
         "topics": [
           "Bitcoin"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
         "urls": []
       },
       "links": {
-        "official_url": null,
+        "official_url": "https://btchel.com/",
         "registration_url": null,
         "livestream_url": null,
         "social_urls": []
       },
-      "description": null,
+      "description": "The Nordic Bitcoin conference focused on Bitcoin payments, finance, mining, and Nordic adoption.",
       "media": {
         "image_url": null
       },
@@ -6558,9 +6665,9 @@
         "cancelled": false
       },
       "verification": {
-        "state": "needs_review",
-        "confidence": "medium",
-        "last_verified_at": null,
+        "state": "official_page_seen",
+        "confidence": "high",
+        "last_verified_at": "2026-09-16T20:45:00Z",
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
       },
       "source_observations": [
@@ -6590,6 +6697,15 @@
           "access_method": "web_extract",
           "observed_at": "2026-09-16T00:00:00Z",
           "raw_excerpt": "Sep 25-26 2026\nBTCHEL 2026\nHelsinki"
+        },
+        {
+          "source_id": "official-btchel",
+          "reported_source_id": "official-btchel",
+          "source_url": "https://agenda.btchel.com/",
+          "event_url": "https://btchel.com/",
+          "access_method": "web_search+web_extract",
+          "observed_at": "2026-09-16T20:45:00Z",
+          "raw_excerpt": "BTCHEL 2026 — The Nordic Bitcoin Conference. The Nordic Bitcoin Conference. Kaapelitehdas, Helsinki, 25–26 September 2026."
         }
       ],
       "aliases": [],
@@ -6626,7 +6742,8 @@
           "financial sovereignty",
           "privacy"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -6697,7 +6814,8 @@
           "Bitcoin",
           "treasuries"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -6757,7 +6875,7 @@
         "city": "Roatan",
         "region": null,
         "country": "Honduras",
-        "country_code": null,
+        "country_code": "HN",
         "latitude": null,
         "longitude": null,
         "coordinates_precision": null
@@ -6767,19 +6885,20 @@
         "topics": [
           "Bitcoin"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
-        "name": null,
+        "name": "Bitcoin District",
         "urls": []
       },
       "links": {
-        "official_url": null,
+        "official_url": "https://thebitcoindistrict.com/bitchill",
         "registration_url": null,
         "livestream_url": null,
         "social_urls": []
       },
-      "description": null,
+      "description": "A 10-day Bitcoin-oriented retreat in Próspera, Roatan with social activities, workshops, and community time.",
       "media": {
         "image_url": null
       },
@@ -6789,9 +6908,9 @@
         "cancelled": false
       },
       "verification": {
-        "state": "needs_review",
-        "confidence": "medium",
-        "last_verified_at": null,
+        "state": "official_page_seen",
+        "confidence": "high",
+        "last_verified_at": "2026-09-16T20:45:00Z",
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
       },
       "source_observations": [
@@ -6812,6 +6931,15 @@
           "access_method": "web_extract",
           "observed_at": "2026-09-16T00:00:00Z",
           "raw_excerpt": "Bitchill s04\nOctober 1, 2026 - October 11, 2026\nRoatan, Honduras"
+        },
+        {
+          "source_id": "official-bitchill",
+          "reported_source_id": "official-bitchill",
+          "source_url": "https://bitchillplan.lovable.app/",
+          "event_url": "https://thebitcoindistrict.com/bitchill",
+          "access_method": "web_search+web_extract",
+          "observed_at": "2026-09-16T20:45:00Z",
+          "raw_excerpt": "Bitchill S04 — Caribbean Bitcoin Retreat in Próspera, Roatan, October 1–11, 2026"
         }
       ],
       "aliases": [],
@@ -6828,7 +6956,7 @@
       "dates": {
         "start": "2026-10-01",
         "end": "2026-10-03",
-        "timezone": null,
+        "timezone": "Europe/Berlin",
         "precision": "day"
       },
       "location": {
@@ -6849,7 +6977,8 @@
           "hackathon",
           "payments"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -6946,7 +7075,8 @@
         "topics": [
           "Bitcoin"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -6998,15 +7128,15 @@
       "dates": {
         "start": "2026-10-02",
         "end": "2026-10-04",
-        "timezone": null,
+        "timezone": "Europe/Madrid",
         "precision": "day"
       },
       "location": {
-        "venue": null,
+        "venue": "Espacio Pablo VI",
         "city": "Madrid",
         "region": null,
         "country": "Spain",
-        "country_code": null,
+        "country_code": "ES",
         "latitude": null,
         "longitude": null,
         "coordinates_precision": null
@@ -7016,19 +7146,20 @@
         "topics": [
           "Bitcoin"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
-        "name": null,
+        "name": "Watch Out, Freedom!",
         "urls": []
       },
       "links": {
-        "official_url": null,
-        "registration_url": null,
+        "official_url": "http://wobitcoin.org/",
+        "registration_url": "https://www.tickettailor.com/events/wobitcoin/1892339",
         "livestream_url": null,
         "social_urls": []
       },
-      "description": null,
+      "description": "Spain's Bitcoin-only event with workshops, debates, and networking in Madrid.",
       "media": {
         "image_url": null
       },
@@ -7038,9 +7169,9 @@
         "cancelled": false
       },
       "verification": {
-        "state": "needs_review",
-        "confidence": "medium",
-        "last_verified_at": null,
+        "state": "official_page_seen",
+        "confidence": "high",
+        "last_verified_at": "2026-09-16T20:45:00Z",
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
       },
       "source_observations": [
@@ -7061,6 +7192,15 @@
           "access_method": "web_extract",
           "observed_at": "2026-09-16T00:00:00Z",
           "raw_excerpt": "Watch Out, Bitcoin! 2026\nOctober 2, 2026 - October 4, 2026\nMadrid, Spain"
+        },
+        {
+          "source_id": "official-watch-out-bitcoin",
+          "reported_source_id": "official-watch-out-bitcoin",
+          "source_url": "https://www.tickettailor.com/events/wobitcoin/1892339",
+          "event_url": "http://wobitcoin.org/",
+          "access_method": "web_search+web_extract",
+          "observed_at": "2026-09-16T20:45:00Z",
+          "raw_excerpt": "Watch Out, Bitcoin! '26\nFri 2 Oct 2026 15:30 - Sun 4 Oct 2026 18:30 Espacio Pablo VI, P.º de Juan XXIII, 3, MADRID, 28047"
         }
       ],
       "aliases": [],
@@ -7081,11 +7221,11 @@
         "precision": "day"
       },
       "location": {
-        "venue": null,
+        "venue": "Poznan Congress Center",
         "city": "Poznan",
         "region": null,
         "country": "Poland",
-        "country_code": null,
+        "country_code": "PL",
         "latitude": null,
         "longitude": null,
         "coordinates_precision": null
@@ -7095,19 +7235,20 @@
         "topics": [
           "Bitcoin"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
         "urls": []
       },
       "links": {
-        "official_url": null,
-        "registration_url": null,
+        "official_url": "https://www.bitcoin-poland.com/",
+        "registration_url": "https://tobilet.pl/kongres-invest-cuffs-poznan-2026.html",
         "livestream_url": null,
         "social_urls": []
       },
-      "description": null,
+      "description": "Poland's Bitcoin-only conference focused on education, networking, freedom technology, and the future of finance.",
       "media": {
         "image_url": null
       },
@@ -7117,9 +7258,9 @@
         "cancelled": false
       },
       "verification": {
-        "state": "needs_review",
-        "confidence": "medium",
-        "last_verified_at": null,
+        "state": "official_page_seen",
+        "confidence": "high",
+        "last_verified_at": "2026-09-16T20:45:00Z",
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
       },
       "source_observations": [
@@ -7140,6 +7281,15 @@
           "access_method": "web_extract",
           "observed_at": "2026-09-16T00:00:00Z",
           "raw_excerpt": "Oct 5-6 2026\nBitcoin Poland 2026 Poznań\nPoznan"
+        },
+        {
+          "source_id": "official-bitcoin-poland",
+          "reported_source_id": "official-bitcoin-poland",
+          "source_url": "https://www.bitcoin-poland.com/",
+          "event_url": "https://www.bitcoin-poland.com/",
+          "access_method": "web_search+web_extract",
+          "observed_at": "2026-09-16T20:45:00Z",
+          "raw_excerpt": "October 5-6, 2026. Poznań Congress Center\nPoland’s 1st major Bitcoin-Only Conference"
         }
       ],
       "aliases": [],
@@ -7160,11 +7310,11 @@
         "precision": "day"
       },
       "location": {
-        "venue": null,
+        "venue": "Fisher Center",
         "city": "Nashville",
         "region": "Tennessee",
         "country": "USA",
-        "country_code": null,
+        "country_code": "US",
         "latitude": null,
         "longitude": null,
         "coordinates_precision": null
@@ -7177,19 +7327,20 @@
           "energy",
           "freedom tech"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
         "urls": []
       },
       "links": {
-        "official_url": null,
+        "official_url": "https://www.imagineifnashville.com/",
         "registration_url": null,
         "livestream_url": null,
         "social_urls": []
       },
-      "description": null,
+      "description": "An invite-only summit where Bitcoin, AI, energy, and open-source technology meet in Nashville.",
       "media": {
         "image_url": null
       },
@@ -7199,9 +7350,9 @@
         "cancelled": false
       },
       "verification": {
-        "state": "needs_review",
-        "confidence": "medium",
-        "last_verified_at": null,
+        "state": "official_page_seen",
+        "confidence": "high",
+        "last_verified_at": "2026-09-16T20:45:00Z",
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
       },
       "source_observations": [
@@ -7231,6 +7382,15 @@
           "access_method": "web_extract",
           "observed_at": "2026-09-16T00:00:00Z",
           "raw_excerpt": "Oct 5-6 2026\nImagine IF 2026 Nashville\nNashville, TN"
+        },
+        {
+          "source_id": "official-imagine-if",
+          "reported_source_id": "official-imagine-if",
+          "source_url": "https://www.imagineifnashville.com/",
+          "event_url": "https://www.imagineifnashville.com/",
+          "access_method": "web_search+web_extract",
+          "observed_at": "2026-09-16T20:45:00Z",
+          "raw_excerpt": "Imagine IF 2026 Oct 5–6, 2026 · Fisher Center · Nashville"
         }
       ],
       "aliases": [],
@@ -7265,7 +7425,8 @@
         "topics": [
           "Bitcoin"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -7317,7 +7478,7 @@
       "dates": {
         "start": "2026-10-12",
         "end": "2026-10-15",
-        "timezone": null,
+        "timezone": "America/New_York",
         "precision": "day"
       },
       "location": {
@@ -7337,7 +7498,8 @@
           "developers",
           "workshops"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": "TABConf",
@@ -7434,7 +7596,8 @@
         "topics": [
           "Bitcoin"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -7486,7 +7649,7 @@
       "dates": {
         "start": "2026-10-15",
         "end": "2026-10-15",
-        "timezone": null,
+        "timezone": "Africa/Johannesburg",
         "precision": "day"
       },
       "location": {
@@ -7504,7 +7667,8 @@
         "topics": [
           "african-community"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": "Bitcoin Events",
@@ -7562,9 +7726,9 @@
       "location": {
         "venue": null,
         "city": "Busselton",
-        "region": null,
+        "region": "Western Australia",
         "country": "Australia",
-        "country_code": null,
+        "country_code": "AU",
         "latitude": null,
         "longitude": null,
         "coordinates_precision": null
@@ -7574,19 +7738,20 @@
         "topics": [
           "Bitcoin"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
-        "name": null,
+        "name": "Bitcoin Bush Bash",
         "urls": []
       },
       "links": {
-        "official_url": null,
+        "official_url": "https://bitcoinbushbash.info/",
         "registration_url": null,
         "livestream_url": null,
         "social_urls": []
       },
-      "description": null,
+      "description": "A grassroots Bitcoin-only weekend gathering in Busselton with discussions, workshops, and relaxed community activities.",
       "media": {
         "image_url": null
       },
@@ -7596,9 +7761,9 @@
         "cancelled": false
       },
       "verification": {
-        "state": "needs_review",
-        "confidence": "medium",
-        "last_verified_at": null,
+        "state": "official_page_seen",
+        "confidence": "high",
+        "last_verified_at": "2026-09-16T20:45:00Z",
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
       },
       "source_observations": [
@@ -7628,6 +7793,15 @@
           "access_method": "web_extract",
           "observed_at": "2026-09-16T00:00:00Z",
           "raw_excerpt": "Oct 16-18 2026\nBusselton Bitcoin WA 2026\nBusselton, WA"
+        },
+        {
+          "source_id": "official-bitcoin-bush-bash",
+          "reported_source_id": "official-bitcoin-bush-bash",
+          "source_url": "https://bitcoinbushbash.info/",
+          "event_url": "https://bitcoinbushbash.info/",
+          "access_method": "web_search+web_extract",
+          "observed_at": "2026-09-16T20:45:00Z",
+          "raw_excerpt": "Connect with fellow Aussie Bitcoiners in Busselton, WA from 16–18 October 2026."
         }
       ],
       "aliases": [],
@@ -7644,7 +7818,7 @@
       "dates": {
         "start": "2026-10-22",
         "end": "2026-10-22",
-        "timezone": null,
+        "timezone": "Europe/Zurich",
         "precision": "day"
       },
       "location": {
@@ -7663,7 +7837,8 @@
           "Bitcoin",
           "capital markets"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -7715,7 +7890,7 @@
       "dates": {
         "start": "2026-10-23",
         "end": "2026-10-24",
-        "timezone": null,
+        "timezone": "Europe/Zurich",
         "precision": "day"
       },
       "location": {
@@ -7733,7 +7908,8 @@
         "topics": [
           "Bitcoin"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": "Lugano's Plan B",
@@ -7830,7 +8006,8 @@
         "topics": [
           "Bitcoin"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -7886,11 +8063,11 @@
         "precision": "day"
       },
       "location": {
-        "venue": null,
+        "venue": "Punta Mita private resort community",
         "city": "Punta Mita",
         "region": null,
         "country": "Mexico",
-        "country_code": null,
+        "country_code": "MX",
         "latitude": null,
         "longitude": null,
         "coordinates_precision": null
@@ -7901,19 +8078,20 @@
           "Bitcoin",
           "technology"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
-        "name": null,
+        "name": "Base Layer Advisors and Build With Bitcoin",
         "urls": []
       },
       "links": {
-        "official_url": null,
-        "registration_url": null,
+        "official_url": "https://2026.mitatechtalks.com/",
+        "registration_url": "https://forms.gle/FSsT3m45cDApHobh7",
         "livestream_url": null,
         "social_urls": []
       },
-      "description": null,
+      "description": "An invitation-only gathering exploring the intersection of capital, Bitcoin, AI, and energy.",
       "media": {
         "image_url": null
       },
@@ -7923,9 +8101,9 @@
         "cancelled": false
       },
       "verification": {
-        "state": "needs_review",
-        "confidence": "medium",
-        "last_verified_at": null,
+        "state": "official_page_seen",
+        "confidence": "high",
+        "last_verified_at": "2026-09-16T20:45:00Z",
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
       },
       "source_observations": [
@@ -7946,6 +8124,15 @@
           "access_method": "web_extract",
           "observed_at": "2026-09-16T00:00:00Z",
           "raw_excerpt": "Mita Tech Talks\nOctober 25, 2026 - October 27, 2026\nPunta Mita, Mexico"
+        },
+        {
+          "source_id": "official-mita-techtalks",
+          "reported_source_id": "official-mita-techtalks",
+          "source_url": "https://2026.mitatechtalks.com/",
+          "event_url": "https://2026.mitatechtalks.com/",
+          "access_method": "web_search+web_extract",
+          "observed_at": "2026-09-16T20:45:00Z",
+          "raw_excerpt": "MITA TechTalks 2026\nOctober\n25–27, 2026 Punta Mita, Mexico\nThe Future of Capital: Bitcoin, AI, and Energy"
         }
       ],
       "aliases": [],
@@ -7982,7 +8169,8 @@
           "custody",
           "treasuries"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -8052,7 +8240,8 @@
         "topics": [
           "Bitcoin"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -8122,7 +8311,8 @@
         "topics": [
           "Bitcoin"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -8174,7 +8364,7 @@
       "dates": {
         "start": "2026-11-04",
         "end": "2026-11-04",
-        "timezone": null,
+        "timezone": "Europe/Amsterdam",
         "precision": "day"
       },
       "location": {
@@ -8194,7 +8384,8 @@
           "corporate adoption",
           "treasuries"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -8246,7 +8437,7 @@
       "dates": {
         "start": "2026-11-05",
         "end": "2026-11-06",
-        "timezone": null,
+        "timezone": "Europe/Amsterdam",
         "precision": "day"
       },
       "location": {
@@ -8264,7 +8455,8 @@
         "topics": [
           "Bitcoin"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": "BTC Inc",
@@ -8361,7 +8553,8 @@
         "topics": [
           "Bitcoin"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -8417,11 +8610,11 @@
         "precision": "day"
       },
       "location": {
-        "venue": null,
+        "venue": "COEX (Nov 7); Korea Federation of Banks (Nov 8)",
         "city": "Seoul",
         "region": null,
         "country": "South Korea",
-        "country_code": null,
+        "country_code": "KR",
         "latitude": null,
         "longitude": null,
         "coordinates_precision": null
@@ -8431,19 +8624,20 @@
         "topics": [
           "Bitcoin"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
-        "name": null,
+        "name": "Bitcoin Korea Conference",
         "urls": []
       },
       "links": {
-        "official_url": null,
+        "official_url": "https://www.bitcoinkoreaconference.com/en",
         "registration_url": null,
         "livestream_url": null,
         "social_urls": []
       },
-      "description": null,
+      "description": "A two-day Bitcoin conference with talks, workshops, a Lightning market, and community events in Seoul.",
       "media": {
         "image_url": null
       },
@@ -8453,9 +8647,9 @@
         "cancelled": false
       },
       "verification": {
-        "state": "needs_review",
-        "confidence": "medium",
-        "last_verified_at": null,
+        "state": "official_page_seen",
+        "confidence": "high",
+        "last_verified_at": "2026-09-16T20:45:00Z",
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
       },
       "source_observations": [
@@ -8476,6 +8670,15 @@
           "access_method": "web_extract",
           "observed_at": "2026-09-16T00:00:00Z",
           "raw_excerpt": "Bitcoin Korea Conference\nNovember 7, 2026 - November 8, 2026\nSeoul, South Korea"
+        },
+        {
+          "source_id": "official-bitcoin-korea",
+          "reported_source_id": "official-bitcoin-korea",
+          "source_url": "https://www.bitcoinkoreaconference.com/en",
+          "event_url": "https://www.bitcoinkoreaconference.com/en",
+          "access_method": "web_search+web_extract",
+          "observed_at": "2026-09-16T20:45:00Z",
+          "raw_excerpt": "Bitcoin Korea Conference\nNov 7 · COEX Samsung\n|\nNov 8 · Korea Federation of Banks"
         }
       ],
       "aliases": [],
@@ -8496,11 +8699,11 @@
         "precision": "day"
       },
       "location": {
-        "venue": null,
+        "venue": "Centro Histórico (multiple venues)",
         "city": "San Salvador",
         "region": null,
         "country": "El Salvador",
-        "country_code": null,
+        "country_code": "SV",
         "latitude": null,
         "longitude": null,
         "coordinates_precision": null
@@ -8510,19 +8713,20 @@
         "topics": [
           "Bitcoin"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
-        "name": null,
+        "name": "National Bitcoin Office of El Salvador and CUBO+",
         "urls": []
       },
       "links": {
-        "official_url": null,
+        "official_url": "https://bitcoinhistorico.com/",
         "registration_url": null,
         "livestream_url": null,
         "social_urls": []
       },
-      "description": null,
+      "description": "A two-day Bitcoin conference celebrating financial freedom and El Salvador's transformation across historic San Salvador landmarks.",
       "media": {
         "image_url": null
       },
@@ -8532,9 +8736,9 @@
         "cancelled": false
       },
       "verification": {
-        "state": "needs_review",
-        "confidence": "medium",
-        "last_verified_at": null,
+        "state": "official_page_seen",
+        "confidence": "high",
+        "last_verified_at": "2026-09-16T20:45:00Z",
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
       },
       "source_observations": [
@@ -8555,6 +8759,15 @@
           "access_method": "web_extract",
           "observed_at": "2026-09-16T00:00:00Z",
           "raw_excerpt": "Bitcoin Histórico\nNovember 11, 2026 - November 12, 2026\nSan Salvador, El Salvador"
+        },
+        {
+          "source_id": "official-bitcoin-historico",
+          "reported_source_id": "official-bitcoin-historico",
+          "source_url": "https://bitcoinhistorico.com/",
+          "event_url": "https://bitcoinhistorico.com/",
+          "access_method": "web_search+web_extract",
+          "observed_at": "2026-09-16T20:45:00Z",
+          "raw_excerpt": "A Conference by the National Bitcoin Office of El Salvador\n11–12 November 2026\nCentro Histórico, San Salvador"
         }
       ],
       "aliases": [],
@@ -8590,7 +8803,8 @@
           "Bitcoin",
           "business"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -8636,101 +8850,21 @@
       }
     },
     {
-      "id": "evt-global-bitcoin-circular-economies-summit-2026-11-19-el-zonte",
-      "title": "Global Bitcoin Circular Economies Summit",
-      "series": null,
-      "dates": {
-        "start": "2026-11-19",
-        "end": "2026-11-20",
-        "timezone": null,
-        "precision": "day"
-      },
-      "location": {
-        "venue": null,
-        "city": "El Zonte",
-        "region": null,
-        "country": "El Salvador",
-        "country_code": null,
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
-      },
-      "classification": {
-        "event_type": "conference",
-        "topics": [
-          "Bitcoin",
-          "circular economies"
-        ],
-        "bitcoin_relevance": "bitcoin_focused"
-      },
-      "organizer": {
-        "name": null,
-        "urls": []
-      },
-      "links": {
-        "official_url": null,
-        "registration_url": null,
-        "livestream_url": null,
-        "social_urls": []
-      },
-      "description": null,
-      "media": {
-        "image_url": null
-      },
-      "lifecycle": {
-        "status": "announced",
-        "published": null,
-        "cancelled": false
-      },
-      "verification": {
-        "state": "needs_review",
-        "confidence": "medium",
-        "last_verified_at": null,
-        "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
-      },
-      "source_observations": [
-        {
-          "source_id": "btc-events-map",
-          "reported_source_id": "btceventsmap",
-          "source_url": "https://btceventsmap.com/",
-          "event_url": null,
-          "access_method": "web_extract",
-          "observed_at": "2026-09-16T00:00:00Z",
-          "raw_excerpt": "Nov 19-20 2026 El Zonte Global Bitcoin Circular Economies 2026 Conference"
-        },
-        {
-          "source_id": "francis-mars-events",
-          "reported_source_id": "francismars",
-          "source_url": "https://www.francismars.com/events/",
-          "event_url": null,
-          "access_method": "web_extract",
-          "observed_at": "2026-09-16T00:00:00Z",
-          "raw_excerpt": "Global Bitcoin Circular Economies Summit\nNovember 19, 2026 - November 20, 2026\nEl Zonte, El Salvador"
-        }
-      ],
-      "aliases": [],
-      "extensions": {
-        "source_scan": {
-          "schema_version": "research-source-scan-1.0"
-        }
-      }
-    },
-    {
-      "id": "evt-bitfest-2026-2026-11-20-manchester",
+      "id": "evt-bitfest-2026-2026-11-19-manchester",
       "title": "BitFest 2026",
       "series": null,
       "dates": {
-        "start": "2026-11-20",
+        "start": "2026-11-19",
         "end": "2026-11-22",
-        "timezone": null,
+        "timezone": "Europe/London",
         "precision": "day"
       },
       "location": {
-        "venue": null,
+        "venue": "Pendulum Hotel",
         "city": "Manchester",
         "region": null,
         "country": "UK",
-        "country_code": null,
+        "country_code": "GB",
         "latitude": null,
         "longitude": null,
         "coordinates_precision": null
@@ -8740,19 +8874,20 @@
         "topics": [
           "Bitcoin"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
-        "name": null,
+        "name": "Bitfest",
         "urls": []
       },
       "links": {
-        "official_url": null,
-        "registration_url": null,
+        "official_url": "https://bitfest.uk/",
+        "registration_url": "https://lnbits.bitfest.uk/events/Bs3V7Q6YPW7V4x2Dfaoype",
         "livestream_url": null,
         "social_urls": []
       },
-      "description": null,
+      "description": "The official page expands the existing start date to November 19: Bitfest is the UK's flagship Bitcoin festival running 19–22 November, with the main Bitfest day on November 21.",
       "media": {
         "image_url": null
       },
@@ -8762,9 +8897,9 @@
         "cancelled": false
       },
       "verification": {
-        "state": "needs_review",
-        "confidence": "medium",
-        "last_verified_at": null,
+        "state": "official_page_seen",
+        "confidence": "high",
+        "last_verified_at": "2026-09-16T20:45:00Z",
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
       },
       "source_observations": [
@@ -8785,6 +8920,108 @@
           "access_method": "web_extract",
           "observed_at": "2026-09-16T00:00:00Z",
           "raw_excerpt": "BitFest\nNovember 20, 2026 - November 22, 2026\nManchester, UK"
+        },
+        {
+          "source_id": "official-bitfest",
+          "reported_source_id": "official-bitfest",
+          "source_url": "https://bitfest.uk/",
+          "event_url": "https://bitfest.uk/",
+          "access_method": "web_search+web_extract",
+          "observed_at": "2026-09-16T20:45:00Z",
+          "raw_excerpt": "Bitfest 2026 runs from 19–22 November 2026, with different events taking place across the long weekend. Where is Bitfest? The Pendulum Hotel in Manchester"
+        }
+      ],
+      "aliases": [],
+      "extensions": {
+        "source_scan": {
+          "schema_version": "research-source-scan-1.0"
+        },
+        "previous_ids": [
+          "evt-bitfest-2026-2026-11-20-manchester"
+        ]
+      }
+    },
+    {
+      "id": "evt-global-bitcoin-circular-economies-summit-2026-11-19-el-zonte",
+      "title": "Global Bitcoin Circular Economies Summit",
+      "series": null,
+      "dates": {
+        "start": "2026-11-19",
+        "end": "2026-11-20",
+        "timezone": null,
+        "precision": "day"
+      },
+      "location": {
+        "venue": null,
+        "city": "El Zonte",
+        "region": null,
+        "country": "El Salvador",
+        "country_code": "SV",
+        "latitude": null,
+        "longitude": null,
+        "coordinates_precision": null
+      },
+      "classification": {
+        "event_type": "conference",
+        "topics": [
+          "Bitcoin",
+          "circular economies"
+        ],
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
+      },
+      "organizer": {
+        "name": "Bitcoin Beach",
+        "urls": []
+      },
+      "links": {
+        "official_url": "https://www.bitcoinbeach.com/summit-blog/bitcoin-circular-economies-summit-2026",
+        "registration_url": "https://www.satlantis.io/events/2311/global-bitcoin-circular-economies-summit",
+        "livestream_url": null,
+        "social_urls": []
+      },
+      "description": "A public Bitcoin conference about circular economies, merchant adoption, education, and practical community use.",
+      "media": {
+        "image_url": null
+      },
+      "lifecycle": {
+        "status": "announced",
+        "published": null,
+        "cancelled": false
+      },
+      "verification": {
+        "state": "official_page_seen",
+        "confidence": "high",
+        "last_verified_at": "2026-09-16T20:45:00Z",
+        "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
+      },
+      "source_observations": [
+        {
+          "source_id": "btc-events-map",
+          "reported_source_id": "btceventsmap",
+          "source_url": "https://btceventsmap.com/",
+          "event_url": null,
+          "access_method": "web_extract",
+          "observed_at": "2026-09-16T00:00:00Z",
+          "raw_excerpt": "Nov 19-20 2026 El Zonte Global Bitcoin Circular Economies 2026 Conference"
+        },
+        {
+          "source_id": "francis-mars-events",
+          "reported_source_id": "francismars",
+          "source_url": "https://www.francismars.com/events/",
+          "event_url": null,
+          "access_method": "web_extract",
+          "observed_at": "2026-09-16T00:00:00Z",
+          "raw_excerpt": "Global Bitcoin Circular Economies Summit\nNovember 19, 2026 - November 20, 2026\nEl Zonte, El Salvador"
+        },
+        {
+          "source_id": "official-bitcoin-beach",
+          "reported_source_id": "official-bitcoin-beach",
+          "source_url": "https://www.bitcoinbeach.com/summit-blog/bitcoin-circular-economies-summit-2026",
+          "event_url": "https://www.bitcoinbeach.com/summit-blog/bitcoin-circular-economies-summit-2026",
+          "access_method": "web_search+web_extract",
+          "observed_at": "2026-09-16T20:45:00Z",
+          "raw_excerpt": "On November 19-20, 2026, the Global Bitcoin Circular Economies Summit becomes a public conference for the first time, and it's happening in El Zonte."
         }
       ],
       "aliases": [],
@@ -8819,7 +9056,8 @@
         "topics": [
           "Bitcoin"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -8871,7 +9109,7 @@
       "dates": {
         "start": "2026-12-07",
         "end": "2026-12-08",
-        "timezone": null,
+        "timezone": "Asia/Dubai",
         "precision": "day"
       },
       "location": {
@@ -8890,7 +9128,8 @@
           "Bitcoin",
           "MENA"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": "BTC Inc",
@@ -9006,7 +9245,8 @@
           "Bitcoin",
           "sovereignty"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -9062,11 +9302,11 @@
         "precision": "day"
       },
       "location": {
-        "venue": null,
+        "venue": "Fort Worth Stockyard Station, Stampede Ballroom",
         "city": "Fort Worth",
-        "region": null,
-        "country": null,
-        "country_code": null,
+        "region": "Texas",
+        "country": "United States",
+        "country_code": "US",
         "latitude": null,
         "longitude": null,
         "coordinates_precision": null
@@ -9076,19 +9316,20 @@
         "topics": [
           "Bitcoin"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
-        "name": null,
+        "name": "BitBlockBoom, LLC",
         "urls": []
       },
       "links": {
-        "official_url": null,
-        "registration_url": null,
+        "official_url": "https://www.bitblockboom.com/",
+        "registration_url": "https://www.bitblockboom.com/ticket",
         "livestream_url": null,
         "social_urls": []
       },
-      "description": null,
+      "description": "A Bitcoin event in Fort Worth with talks, panels, workshops, and networking.",
       "media": {
         "image_url": null
       },
@@ -9098,9 +9339,9 @@
         "cancelled": false
       },
       "verification": {
-        "state": "needs_review",
-        "confidence": "medium",
-        "last_verified_at": null,
+        "state": "official_page_seen",
+        "confidence": "high",
+        "last_verified_at": "2026-09-16T20:45:00Z",
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
       },
       "source_observations": [
@@ -9121,6 +9362,15 @@
           "access_method": "web_extract",
           "observed_at": "2026-09-16T00:00:00Z",
           "raw_excerpt": "BitBlockBoom\nApril 1, 2027 - April 4, 2027\nFort Worth, Texas, USA"
+        },
+        {
+          "source_id": "official-bitblockboom",
+          "reported_source_id": "official-bitblockboom",
+          "source_url": "https://www.bitblockboom.com/",
+          "event_url": "https://www.bitblockboom.com/",
+          "access_method": "web_search+web_extract",
+          "observed_at": "2026-09-16T20:45:00Z",
+          "raw_excerpt": "The True Bitcoin Event\nApril 1–4, 2027 | Fort Worth, TX\nFort Worth Stockyard Station, Stampede Ballroom"
         }
       ],
       "aliases": [],
@@ -9156,7 +9406,8 @@
           "Bitcoin",
           "sovereignty"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -9208,7 +9459,7 @@
       "dates": {
         "start": "2027-05-06",
         "end": "2027-05-08",
-        "timezone": null,
+        "timezone": "Europe/Prague",
         "precision": "day"
       },
       "location": {
@@ -9216,7 +9467,7 @@
         "city": "Prague",
         "region": null,
         "country": "Czech Republic",
-        "country_code": null,
+        "country_code": "CZ",
         "latitude": null,
         "longitude": null,
         "coordinates_precision": null
@@ -9226,19 +9477,20 @@
         "topics": [
           "Bitcoin"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
-        "name": null,
+        "name": "BTC Prague",
         "urls": []
       },
       "links": {
-        "official_url": null,
+        "official_url": "https://btcprague.com/",
         "registration_url": null,
         "livestream_url": null,
         "social_urls": []
       },
-      "description": null,
+      "description": "A Bitcoin-focused conference and expo in Prague.",
       "media": {
         "image_url": null
       },
@@ -9248,9 +9500,9 @@
         "cancelled": false
       },
       "verification": {
-        "state": "needs_review",
-        "confidence": "low",
-        "last_verified_at": null,
+        "state": "official_page_seen",
+        "confidence": "high",
+        "last_verified_at": "2026-09-16T20:45:00Z",
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
       },
       "source_observations": [
@@ -9271,6 +9523,15 @@
           "access_method": "web_extract",
           "observed_at": "2026-09-16T00:00:00Z",
           "raw_excerpt": "BTC Prague 2027 will take place May 6-8 in Prague, Czech Republic"
+        },
+        {
+          "source_id": "official-btc-prague",
+          "reported_source_id": "official-btc-prague",
+          "source_url": "https://btcprague.com/",
+          "event_url": "https://btcprague.com/",
+          "access_method": "web_search+web_extract",
+          "observed_at": "2026-09-16T20:45:00Z",
+          "raw_excerpt": "May 6 — 8\nBTC PRAGUE 2027"
         }
       ],
       "aliases": [],
@@ -9306,7 +9567,8 @@
           "Bitcoin",
           "treasuries"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -9358,7 +9620,7 @@
       "dates": {
         "start": "2027-06-24",
         "end": "2027-06-27",
-        "timezone": null,
+        "timezone": "Europe/Warsaw",
         "precision": "day"
       },
       "location": {
@@ -9377,7 +9639,8 @@
           "Bitcoin",
           "film"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,
@@ -9447,7 +9710,8 @@
         "topics": [
           "Bitcoin"
         ],
-        "bitcoin_relevance": "bitcoin_focused"
+        "bitcoin_relevance": "bitcoin_focused",
+        "delivery_mode": "in_person"
       },
       "organizer": {
         "name": null,

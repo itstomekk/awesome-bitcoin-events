@@ -13,6 +13,8 @@ from pathlib import Path
 from typing import Any
 from urllib.parse import urlsplit, urlunsplit
 
+from migrate_legacy_events import inferred_delivery_mode, inferred_timezone
+
 
 def utc_now() -> str:
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
@@ -50,6 +52,14 @@ def event_merge_key(event: dict[str, Any]) -> tuple[str, str, str, str] | None:
         return None
     title_without_year = re.sub(r"\b20\d{2}\b", "", title)
     return (slugify(title_without_year), start, end, slugify(city))
+
+
+def event_soft_merge_key(event: dict[str, Any]) -> tuple[str, str, str] | None:
+    exact_key = event_merge_key(event)
+    if exact_key is None:
+        return None
+    title_key, start, _, city = exact_key
+    return (title_key, start[:4], city)
 
 
 VERIFICATION_STATE_RANK = {
@@ -142,6 +152,12 @@ def candidate_to_event(candidate: dict[str, Any], cutoff: date, as_of: date, sou
         country_code = country_code.strip().upper()
     else:
         country_code = None
+    timezone_name = candidate.get("timezone")
+    if not isinstance(timezone_name, str) or not timezone_name.strip():
+        timezone_name = inferred_timezone(location.get("city"), country_code)
+    delivery_mode = candidate.get("delivery_mode")
+    if delivery_mode not in {"in_person", "online", "hybrid", "unknown"}:
+        delivery_mode = inferred_delivery_mode(location.get("city"))
     observations = candidate_observations(candidate, source_access, source_lookup)
     topics = candidate.get("topics")
     if not isinstance(topics, list):
@@ -170,7 +186,7 @@ def candidate_to_event(candidate: dict[str, Any], cutoff: date, as_of: date, sou
         "dates": {
             "start": start.isoformat(),
             "end": end.isoformat(),
-            "timezone": candidate.get("timezone"),
+            "timezone": timezone_name,
             "precision": candidate.get("date_precision", "day"),
         },
         "location": {
@@ -187,6 +203,7 @@ def candidate_to_event(candidate: dict[str, Any], cutoff: date, as_of: date, sou
             "event_type": candidate.get("event_type"),
             "topics": sorted(set(topics)),
             "bitcoin_relevance": "bitcoin_focused",
+            "delivery_mode": delivery_mode,
         },
         "organizer": {"name": candidate.get("organizer"), "urls": []},
         "links": {
@@ -231,6 +248,19 @@ def merge_event(existing: dict[str, Any], incoming: dict[str, Any]) -> None:
         existing["series"] = incoming["series"]
     existing_verification = existing["verification"]
     incoming_verification = incoming["verification"]
+    if (
+        incoming_verification["state"] == "official_page_seen"
+        and existing_verification["state"] != "official_page_seen"
+        and event_merge_key(existing) != event_merge_key(incoming)
+    ):
+        previous_id = existing.get("id")
+        if isinstance(previous_id, str) and previous_id != incoming.get("id"):
+            previous_ids = existing.setdefault("extensions", {}).setdefault("previous_ids", [])
+            if previous_id not in previous_ids:
+                previous_ids.append(previous_id)
+        existing["dates"] = incoming["dates"]
+        existing["id"] = incoming["id"]
+        existing["lifecycle"] = incoming["lifecycle"]
     if VERIFICATION_STATE_RANK.get(incoming_verification["state"], 0) > VERIFICATION_STATE_RANK.get(existing_verification["state"], 0):
         existing["verification"] = incoming_verification
     elif (
@@ -262,6 +292,11 @@ def import_scan(dataset: dict[str, Any], scan: dict[str, Any], generated_at: str
         for record in records
         if isinstance(record, dict) and event_merge_key(record) is not None
     }
+    by_soft_merge_key = {
+        event_soft_merge_key(record): record
+        for record in records
+        if isinstance(record, dict) and event_soft_merge_key(record) is not None
+    }
     candidates = scan.get("candidates")
     if not isinstance(candidates, list):
         raise ValueError("scan candidates must be an array")
@@ -270,13 +305,23 @@ def import_scan(dataset: dict[str, Any], scan: dict[str, Any], generated_at: str
             raise ValueError("scan candidate must be an object")
         event = candidate_to_event(candidate, cutoff, generated_datetime.date(), source_access, source_lookup, scan["schema_version"])
         existing = by_id.get(event["id"]) or by_merge_key.get(event_merge_key(event))
+        if existing is None and event["verification"]["state"] == "official_page_seen":
+            existing = by_soft_merge_key.get(event_soft_merge_key(event))
         if existing is not None:
+            previous_id = existing.get("id")
             merge_event(existing, event)
+            if previous_id != existing.get("id"):
+                by_id.pop(previous_id, None)
+                by_id[existing["id"]] = existing
+                by_merge_key[event_merge_key(existing)] = existing
+                by_soft_merge_key[event_soft_merge_key(existing)] = existing
         else:
             records.append(event)
             by_id[event["id"]] = event
             if event_merge_key(event) is not None:
                 by_merge_key[event_merge_key(event)] = event
+            if event_soft_merge_key(event) is not None:
+                by_soft_merge_key[event_soft_merge_key(event)] = event
     records.sort(key=lambda event: (event["dates"]["start"], event["id"]))
     dataset["events"] = records
     dataset["records_total"] = len(records)

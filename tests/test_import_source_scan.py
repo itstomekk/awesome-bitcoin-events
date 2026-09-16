@@ -232,6 +232,8 @@ class ImportSourceScanTests(unittest.TestCase):
 
         event = output["events"][0]
         self.assertEqual(event["lifecycle"]["status"], "past")
+        self.assertEqual(event["dates"]["timezone"], "Europe/Prague")
+        self.assertEqual(event["classification"]["delivery_mode"], "in_person")
         self.assertEqual(event["verification"]["last_verified_at"], "2026-06-01T12:00:00Z")
 
     def test_merges_year_suffix_variant_using_date_and_city(self):
@@ -265,6 +267,38 @@ class ImportSourceScanTests(unittest.TestCase):
         self.assertEqual(output["events"][0]["verification"]["state"], "official_page_seen")
         self.assertEqual(output["events"][0]["links"]["official_url"], "https://planb.lugano.ch/planb-forum/")
         self.assertEqual(len(output["events"][0]["source_observations"]), 2)
+
+    def test_official_date_correction_merges_same_year_and_city(self):
+        existing = {
+            "id": "evt-bitfest-2026-2026-11-20-manchester",
+            "title": "BitFest 2026",
+            "series": None,
+            "dates": {"start": "2026-11-20", "end": "2026-11-22", "timezone": None, "precision": "day"},
+            "location": {"venue": None, "city": "Manchester", "region": None, "country": "United Kingdom", "country_code": "GB", "latitude": None, "longitude": None, "coordinates_precision": None},
+            "classification": {"event_type": "conference", "topics": ["Bitcoin"], "bitcoin_relevance": "bitcoin_focused", "delivery_mode": "in_person"},
+            "organizer": {"name": None, "urls": []},
+            "links": {"official_url": None, "registration_url": None, "livestream_url": None, "social_urls": []},
+            "description": None,
+            "media": {"image_url": None},
+            "lifecycle": {"status": "announced", "published": None, "cancelled": False},
+            "verification": {"state": "needs_review", "confidence": "medium", "last_verified_at": None, "notes": "Directory listing conflict."},
+            "source_observations": [{"source_id": "directory", "source_url": "https://directory.example.org", "event_url": None, "access_method": "static_html", "observed_at": "2026-09-16T00:00:00Z", "raw_excerpt": "20-22 November"}],
+            "aliases": [],
+        }
+        dataset = {"schema_version": "event-dataset-1.0", "generated_at": "2026-09-16T18:00:00Z", "records_total": 1, "dataset_scope": "legacy-import+source-candidates", "events": [existing]}
+        scan = {
+            "schema_version": "research-source-scan-1.0",
+            "cutoff_date": "2026-09-16",
+            "sources": [{"source_id": "official-bitfest", "access_method": "static_html"}],
+            "candidates": [{"title": "BitFest 2026", "start_date": "2026-11-19", "end_date": "2026-11-22", "location": {"city": "Manchester", "country": "United Kingdom", "country_code": "GB"}, "official_url": "https://bitfest.uk/", "source_observations": [{"source_id": "official-bitfest", "source_url": "https://bitfest.uk/", "event_url": "https://bitfest.uk/", "observed_at": "2026-09-16T18:05:00Z", "raw_excerpt": "Official dates 19-22 November 2026"}], "verification_state": "official_page_seen", "confidence": "high"}],
+        }
+
+        output, _, _ = self.run_import(dataset, scan)
+
+        self.assertEqual(output["records_total"], 1)
+        self.assertEqual(output["events"][0]["dates"]["start"], "2026-11-19")
+        self.assertEqual(output["events"][0]["verification"]["state"], "official_page_seen")
+        self.assertIn("evt-bitfest-2026-2026-11-20-manchester", output["events"][0]["extensions"]["previous_ids"])
 
     def test_rejects_candidate_that_ended_before_scan_cutoff(self):
         dataset = {"schema_version": "event-dataset-1.0", "generated_at": "2026-09-16T18:00:00Z", "records_total": 0, "dataset_scope": "legacy-import", "events": []}
