@@ -1,0 +1,1335 @@
+{
+  "schema_version": "notion-source-inventory-1.0",
+  "exported_at": "2026-09-16T18:09:18Z",
+  "source_database": "Lists of events",
+  "source_records_total": 102,
+  "privacy_note": "Public source metadata only. Private operational comments, contact instructions, submission statuses, and Notion page URLs are intentionally excluded.",
+  "rows": [
+    {
+      "notion_record_id": "34a16b48-2292-8160-a555-eef21914fe5a",
+      "name": "10 times venues",
+      "source_url": "https://10times.com/venues",
+      "type_tags": [
+        "reg aggregator"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★★",
+      "last_edited_at": "2026-04-29 12:13:56Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-817b-bbed-c6b1dc993ae7",
+      "name": "21 bitcoin wines",
+      "source_url": "https://www.21bitcoinwines.com/",
+      "type_tags": [
+        "BTC | shop (with listed events as well)"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "💀",
+      "last_edited_at": "2026-04-29 12:27:18Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-81a8-87ae-dfa60a0356ec",
+      "name": "21 DE",
+      "source_url": "https://portal.einundzwanzig.space/de/event/overview?l=de&year=2026",
+      "type_tags": [
+        "BTC | info & events"
+      ],
+      "languages": [
+        "GE"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-04-29 13:01:53Z"
+    },
+    {
+      "notion_record_id": "f8359ff7-b6c3-4729-9b1e-a834ab8ff1b1",
+      "name": "Access Tribe (jan 24)",
+      "source_url": "https://www.accesstribe.com/bitcoin-events",
+      "type_tags": [
+        "BTC | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★",
+      "last_edited_at": "2026-04-27 14:39:30Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-813e-872b-dfc36892381d",
+      "name": "All Events (per cities/countries)",
+      "source_url": "https://allevents.in/",
+      "type_tags": [
+        "reg aggregator"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★★",
+      "last_edited_at": "2026-04-29 11:48:39Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-813c-9211-f36cf0fd1db8",
+      "name": "AllConferenceAlert",
+      "source_url": "https://www.allconferencealert.com/",
+      "type_tags": [
+        "reg aggregator"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★",
+      "last_edited_at": "2026-04-29 08:22:14Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-81a1-81c6-dbb2ee80e5ef",
+      "name": "AllConferences.com",
+      "source_url": "https://www.allconferences.com/",
+      "type_tags": [
+        "reg aggregator"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "💀",
+      "last_edited_at": "2026-04-29 09:16:02Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-8171-ae05-ece136ce4b39",
+      "name": "BeInCrypto Events",
+      "source_url": "https://beincrypto.com/events",
+      "type_tags": [
+        "crypto/blockchain | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-04-27 18:02:12Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-8164-ae17-d5ca7e59325b",
+      "name": "Big Event",
+      "source_url": "https://bigevent.io/events/",
+      "type_tags": [
+        "crypto/blockchain | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★★★",
+      "last_edited_at": "2026-04-29 12:15:12Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-8179-9c45-ec74e7f36196",
+      "name": "BitBo | Bitcoin Tools/Conferences",
+      "source_url": "https://tools.bitbo.io/conferences/",
+      "type_tags": [
+        "BTC | info base"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★",
+      "last_edited_at": "2026-04-29 08:23:09Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-818d-8ac7-f8425569a4d1",
+      "name": "Bitcoin Conferences",
+      "source_url": "https://bitcoinconferences.info/",
+      "type_tags": [
+        "BTC | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★★",
+      "last_edited_at": "2026-05-13 06:49:08Z"
+    },
+    {
+      "notion_record_id": "30dba953-0eeb-41d5-9cd2-dab36386e77c",
+      "name": "Bitcoin Forum",
+      "source_url": "https://bitcointalk.org/index.php",
+      "type_tags": [
+        "BTC | info base"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★",
+      "last_edited_at": "2026-05-12 15:05:23Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-810f-95f5-dee019b0cec8",
+      "name": "Bitcoin Market Journal",
+      "source_url": "https://www.bitcoinmarketjournal.com/submit-conference/",
+      "type_tags": [
+        "crypto/blockchain | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": null,
+      "last_edited_at": "2026-04-29 11:36:18Z"
+    },
+    {
+      "notion_record_id": "19f16b48-2292-803d-8ac5-f4d45c8daa15",
+      "name": "Bitcoin Only",
+      "source_url": "https://bitcoinonly.io/pages/local-bitcoin-events?srsltid=AfmBOoopGWHtAFpl2AF7LjJ6fS5aAT3X7d3TanEXq8pIwvWTDNgiYir1",
+      "type_tags": [
+        "BTC | info base"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★",
+      "last_edited_at": "2026-04-27 15:33:29Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-81fc-9ee2-fffb0f5271f0",
+      "name": "Bitcoin Only",
+      "source_url": "https://bitcoin-only.com/meetups",
+      "type_tags": [
+        "BTC | info base"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★",
+      "last_edited_at": "2026-05-13 07:27:45Z"
+    },
+    {
+      "notion_record_id": "6b9ba40b-9698-4f26-9e8a-d6634343629b",
+      "name": "Bitcoin Org",
+      "source_url": "https://bitcoin.org/en/events",
+      "type_tags": [
+        "BTC | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-05-12 15:10:03Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-81dd-8c96-ce89836ecf48",
+      "name": "Bitcoin Park",
+      "source_url": "https://bitcoinpark.com/",
+      "type_tags": [
+        "BTC | space / community"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-04-27 18:14:31Z"
+    },
+    {
+      "notion_record_id": "25b16b48-2292-80ed-8489-efc3c71765be",
+      "name": "Bitcoin Review",
+      "source_url": "https://bitcoin.review/bitcoin-events/",
+      "type_tags": [
+        "BTC | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★★",
+      "last_edited_at": "2026-04-27 17:25:43Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-816e-b637-d2850a457d87",
+      "name": "Bitcoin.com Conferences",
+      "source_url": "https://www.bitcoin.com/conferences/",
+      "type_tags": [
+        "BTC | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-04-29 09:00:45Z"
+    },
+    {
+      "notion_record_id": "63f1242e-af59-4152-8754-4fbe2a3f1755",
+      "name": "Bitcoiner Events",
+      "source_url": "https://www.bitcoinerevents.com/",
+      "type_tags": [
+        "BTC | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "💀",
+      "last_edited_at": "2026-04-27 14:52:00Z"
+    },
+    {
+      "notion_record_id": "f9ecbb1b-cd35-4b9c-bd33-bc09b441c7ea",
+      "name": "Bitcoinist",
+      "source_url": "https://bitcoinist.com/events-page/",
+      "type_tags": [
+        "crypto/blockchain | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★",
+      "last_edited_at": "2026-04-27 14:49:17Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-8143-96ba-dc431551e8fe",
+      "name": "Bitcoinonly Events",
+      "source_url": "https://bitcoinonly.events/",
+      "type_tags": [
+        "BTC | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★★",
+      "last_edited_at": "2026-05-13 06:33:37Z"
+    },
+    {
+      "notion_record_id": "23b16b48-2292-80dc-8ec4-c2aa688295e1",
+      "name": "BitcoinSV",
+      "source_url": "https://www.bitcoinsv.com/events",
+      "type_tags": [
+        "crypto/blockchain | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-04-27 15:37:07Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-81ed-b44c-db2346343a6b",
+      "name": "Bleap Finance Events",
+      "source_url": "https://www.bleap.finance/en-us/events",
+      "type_tags": [
+        "crypto/blockchain | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-05-13 13:05:05Z"
+    },
+    {
+      "notion_record_id": "25b16b48-2292-8094-bf24-e229b97157dc",
+      "name": "Braiins",
+      "source_url": "https://braiins.com/blog/bitcoin-conference-calendar-2025#contribute-to-the-list-of-bitcoin-conferences",
+      "type_tags": [
+        "BTC | info base"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-04-27 17:34:30Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-817e-a843-f58034309409",
+      "name": "Brave New Coin",
+      "source_url": "https://bravenewcoin.com/events",
+      "type_tags": [
+        "crypto/blockchain | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-05-13 06:40:40Z"
+    },
+    {
+      "notion_record_id": "24d16b48-2292-8082-af43-cbe4fa2edc15",
+      "name": "BTC Events map",
+      "source_url": "https://btceventsmap.com/",
+      "type_tags": [
+        "BTC | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★★★",
+      "last_edited_at": "2026-08-12 15:11:26Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-81ad-bf0a-cecc7c1aed34",
+      "name": "Carni Fest",
+      "source_url": "https://www.carnifest.com",
+      "type_tags": [
+        "reg aggregator | festivals around the world"
+      ],
+      "languages": [
+        "many"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-04-29 13:12:09Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-8166-be1e-e01ed96f9a0f",
+      "name": "Coindar",
+      "source_url": "https://coindar.org/",
+      "type_tags": [
+        "crypto/blockchain | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★★",
+      "last_edited_at": "2026-04-29 08:45:45Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-8159-9b62-ca694dd31789",
+      "name": "CoinDesk Events",
+      "source_url": "https://events.coindesk.com/",
+      "type_tags": [
+        "crypto/blockchain | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★★",
+      "last_edited_at": "2026-04-25 15:51:35Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-8100-95bc-c8dbdc767fdb",
+      "name": "CoinGabbar",
+      "source_url": "https://www.coingabbar.com/en/coin-events-calendar",
+      "type_tags": [
+        "crypto/blockchain | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-04-22 14:44:34Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-81ab-8eee-ef4e7701e235",
+      "name": "CoinMarket Cap (!)",
+      "source_url": "https://coinmarketcap.com/events/",
+      "type_tags": [
+        "crypto/blockchain | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★★",
+      "last_edited_at": "2026-05-13 13:34:01Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-81a8-b4d0-d0170bc0323d",
+      "name": "CoinPedia",
+      "source_url": "https://events.coinpedia.org/",
+      "type_tags": [
+        "crypto/blockchain | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★★★",
+      "last_edited_at": "2026-05-13 07:03:51Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-8167-8748-f446d13467d2",
+      "name": "Coinspeaker",
+      "source_url": "https://www.coinspeaker.com/events/",
+      "type_tags": [
+        "crypto/blockchain | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★",
+      "last_edited_at": "2026-04-29 12:25:23Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-818d-83d1-e6f3108af0d1",
+      "name": "CoinTelegraph Events",
+      "source_url": "https://cointelegraph-events.com/",
+      "type_tags": [
+        "crypto/blockchain | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★★",
+      "last_edited_at": "2026-04-27 18:10:22Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-81c1-9dcd-ecfe6c93f972",
+      "name": "Conference Index",
+      "source_url": "https://conferenceindex.org/conferences",
+      "type_tags": [
+        "reg aggregator"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-05-13 07:17:35Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-81db-9aad-f0c25d638237",
+      "name": "Conference Locate",
+      "source_url": "https://www.clocate.com/international-conferences/",
+      "type_tags": [
+        "reg aggregator"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★★",
+      "last_edited_at": "2026-04-22 14:45:01Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-81af-a831-c807e3fbe80f",
+      "name": "ConferenceInc",
+      "source_url": "https://conferenceinc.net/",
+      "type_tags": [
+        "reg aggregator"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★",
+      "last_edited_at": "2026-08-12 15:50:02Z"
+    },
+    {
+      "notion_record_id": "fc3e6eca-841a-45e8-8b8e-2447f620262b",
+      "name": "Craigslist",
+      "source_url": "https://www.craigslist.org/about/sites",
+      "type_tags": [
+        "reg aggregator"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★",
+      "last_edited_at": "2026-05-12 14:53:45Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-8123-a64d-d7e775c17ec4",
+      "name": "Cross Web",
+      "source_url": "https://crossweb.pl/wydarzenia/",
+      "type_tags": [
+        "reg aggregator | TECH"
+      ],
+      "languages": [
+        "PL"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-04-28 17:52:39Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-8165-848b-db85beea9422",
+      "name": "Crypto NewsZ",
+      "source_url": "https://www.cryptonewsz.com/events/",
+      "type_tags": [
+        "crypto/blockchain | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★★",
+      "last_edited_at": "2026-04-29 12:21:10Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-8172-bb10-e7fa8ddffce4",
+      "name": "CryptoCalendar.pro",
+      "source_url": "https://cryptocalendar.pro/events/bitcoin",
+      "type_tags": [
+        "crypto/blockchain | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★★",
+      "last_edited_at": "2026-04-27 18:04:11Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-81c7-9476-d9dc4dcb9c9f",
+      "name": "CryptoCraft Calendar",
+      "source_url": "https://www.cryptocraft.com/calendar",
+      "type_tags": [
+        "crypto/blockchain | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-04-29 09:30:29Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-818e-8091-faff31070cd1",
+      "name": "CryptoEvents Global",
+      "source_url": "https://cryptoevents.global/bitcoin-blockchain-conferences-in-europe/",
+      "type_tags": [
+        "crypto/blockchain | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★★",
+      "last_edited_at": "2026-05-13 13:24:43Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-8135-87a3-c12c60751af3",
+      "name": "CryptoJobsList Events",
+      "source_url": "https://cryptojobslist.com/crypto-events",
+      "type_tags": [
+        "crypto/blockchain | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-08-12 15:43:01Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-810d-b177-ed5b7bd721b4",
+      "name": "CryptoNews",
+      "source_url": "https://crypto.news/events/",
+      "type_tags": [
+        "crypto/blockchain | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★★",
+      "last_edited_at": "2026-05-13 13:08:37Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-8119-ab94-c08b92289cab",
+      "name": "CryptoNomads",
+      "source_url": "https://cryptonomads.org/",
+      "type_tags": [
+        "crypto/blockchain | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-08-12 15:09:57Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-81cc-9c5f-de5f5c831b65",
+      "name": "Cyfrowa Ekonomia",
+      "source_url": "https://cyfrowaekonomia.pl/",
+      "type_tags": [
+        "crypto/blockchain | info & events"
+      ],
+      "languages": [
+        "PL"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-04-29 13:31:18Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-819e-8de1-e6af365ddd61",
+      "name": "DevEvents",
+      "source_url": "https://dev.events/blockchain",
+      "type_tags": [
+        "BTC | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★",
+      "last_edited_at": "2026-08-12 15:41:22Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-8158-aca5-f34f5f39c535",
+      "name": "Devpost",
+      "source_url": "https://devpost.com/c/blockchain",
+      "type_tags": [
+        "reg aggregator | TECH"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-04-29 08:35:14Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-81c2-a938-f1ce33b9f1d7",
+      "name": "Documenting ₿itcoin",
+      "source_url": "https://twitter.com/DocumentingBTC",
+      "type_tags": [
+        "BTC | social noise"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": null,
+      "last_edited_at": "2026-04-29 13:16:09Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-8118-a0df-ce090ccb0272",
+      "name": "EB (!)",
+      "source_url": "https://europeanbitcoiners.com/events/",
+      "type_tags": [
+        "BTC | space / community"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★★★",
+      "last_edited_at": "2026-08-12 15:36:03Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-81d4-8dfc-c9161358a3f0",
+      "name": "Eventbrite",
+      "source_url": "https://www.eventbrite.com/",
+      "type_tags": [
+        "reg aggregator"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-04-29 13:58:00Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-810a-8574-eebe55105888",
+      "name": "Evento.so",
+      "source_url": "https://app.evento.so",
+      "type_tags": [
+        "BTC | social app"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★★",
+      "last_edited_at": "2026-05-13 12:26:01Z"
+    },
+    {
+      "notion_record_id": "7137cdbb-a695-473c-b6b9-cba74833d755",
+      "name": "Events",
+      "source_url": "https://events.org/",
+      "type_tags": [
+        "BTC | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-04-27 14:15:23Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-814d-8575-d4f0a5eac062",
+      "name": "Facebook Events",
+      "source_url": "https://www.facebook.com/events/",
+      "type_tags": [
+        "reg aggregator"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-04-29 08:27:02Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-81a0-8c16-fad4b2c78330",
+      "name": "Festhome",
+      "source_url": "https://festhome.com/",
+      "type_tags": [
+        "reg aggregator | FILM / CULTURE"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★★",
+      "last_edited_at": "2026-04-29 09:12:34Z"
+    },
+    {
+      "notion_record_id": "d49ee98f-1953-478f-9db5-cd8d43ffeba5",
+      "name": "Festival Finder",
+      "source_url": "https://www.festivalfinder.eu/",
+      "type_tags": [
+        "reg aggregator | FILM / CULTURE"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-04-27 14:32:21Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-8113-9270-f553c096cce8",
+      "name": "Film Freeway",
+      "source_url": "https://filmfreeway.com/festivals",
+      "type_tags": [
+        "reg aggregator | FILM / CULTURE"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★★",
+      "last_edited_at": "2026-04-29 11:36:47Z"
+    },
+    {
+      "notion_record_id": "25b16b48-2292-80b7-b112-d2641d2d96d7",
+      "name": "Francismars",
+      "source_url": "https://www.francismars.com/events/",
+      "type_tags": [
+        "BTC | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★★",
+      "last_edited_at": "2026-05-12 15:42:15Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-817c-b6dd-cde7b5befb15",
+      "name": "FunCheap",
+      "source_url": "https://sf.funcheap.com/events/",
+      "type_tags": [
+        "BTC | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-05-13 13:21:17Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-81cb-9675-eca5202c540f",
+      "name": "GameOn Bitcoin",
+      "source_url": "https://gameonbitcoin.com/meetups-%26-groups",
+      "type_tags": [
+        "BTC | info base"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-04-29 13:23:20Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-813a-97d1-f42ca183f204",
+      "name": "Go Out",
+      "source_url": "https://goout.net/en/",
+      "type_tags": [
+        "BTC | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": null,
+      "last_edited_at": "2026-04-29 11:41:41Z"
+    },
+    {
+      "notion_record_id": "8db33281-3232-40c0-819e-608c695726b0",
+      "name": "Go to a bitcoin conference",
+      "source_url": "https://seedsigner.github.io/gotoabitcoinconference.github.io/",
+      "type_tags": [
+        "BTC | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★",
+      "last_edited_at": "2026-04-27 14:52:34Z"
+    },
+    {
+      "notion_record_id": "26016b48-2292-8070-b812-f0128034b27d",
+      "name": "Grow Nostr Initiative (Looks Dead)",
+      "source_url": "https://grownostr.org/events",
+      "type_tags": [
+        "BTC | social app"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-04-27 17:41:22Z"
+    },
+    {
+      "notion_record_id": "24d16b48-2292-808d-bda3-e9298d20f771",
+      "name": "Hi Events",
+      "source_url": "https://app.hi.events/manage/organizer/1924/events",
+      "type_tags": [
+        "reg aggregator"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★",
+      "last_edited_at": "2026-05-12 15:28:12Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-8190-86db-fc48647c5da7",
+      "name": "Incrypted Calendar",
+      "source_url": "https://incrypted.com/en/calendar/",
+      "type_tags": [
+        "crypto/blockchain | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-04-29 09:12:00Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-814b-8e9b-ea27d70a3998",
+      "name": "Industry Events by Bitcoin Magazine",
+      "source_url": "https://bitcoinmagazine.com/industry-events",
+      "type_tags": [
+        "BTC | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★★",
+      "last_edited_at": "2026-04-29 11:56:59Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-8188-8436-de02820ef7f0",
+      "name": "IQ wiki",
+      "source_url": "https://iq.wiki/events",
+      "type_tags": [
+        "crypto/blockchain | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★",
+      "last_edited_at": "2026-05-13 08:02:53Z"
+    },
+    {
+      "notion_record_id": "3860f44f-5d9b-4190-a53b-1bb1e43aee71",
+      "name": "Itez",
+      "source_url": "https://itez.com/events",
+      "type_tags": [
+        "crypto/blockchain | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★",
+      "last_edited_at": "2026-04-27 14:35:31Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-818f-91e2-fdf09138abdd",
+      "name": "KIWI",
+      "source_url": "https://www.kiwiportal.pl/",
+      "type_tags": [
+        "reg aggregator"
+      ],
+      "languages": [
+        "PL"
+      ],
+      "quality_rating": "💀",
+      "last_edited_at": "2026-04-29 12:36:33Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-81ad-901b-e2af296f1e0b",
+      "name": "Krypto Narod",
+      "source_url": "https://krypto-narod.pl/events/",
+      "type_tags": [
+        "crypto/blockchain | info & events"
+      ],
+      "languages": [
+        "PL"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-04-29 13:06:52Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-8181-8c0d-eb119209b7c1",
+      "name": "Kryptowaluty",
+      "source_url": "https://kryptowaluty.info.pl/wydarzenia/",
+      "type_tags": [
+        "crypto/blockchain | info & events"
+      ],
+      "languages": [
+        "PL"
+      ],
+      "quality_rating": "★★",
+      "last_edited_at": "2026-04-29 12:35:08Z"
+    },
+    {
+      "notion_record_id": "24d16b48-2292-802e-bd66-fcad5d2a3776",
+      "name": "LinkedIn",
+      "source_url": "https://www.linkedin.com/events/",
+      "type_tags": [
+        "reg aggregator"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★★",
+      "last_edited_at": "2026-05-12 15:35:19Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-8123-b52a-dc9f193b7567",
+      "name": "Lowcy Krypto",
+      "source_url": "https://lowcykrypto.pl/kryptowaluty-wydarzenia-polska/",
+      "type_tags": [
+        "crypto/blockchain | info & events"
+      ],
+      "languages": [
+        "PL"
+      ],
+      "quality_rating": "★★★★",
+      "last_edited_at": "2026-05-13 07:34:05Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-8169-9754-ee3f593361f1",
+      "name": "Lu.ma",
+      "source_url": "https://lu.ma/crypto",
+      "type_tags": [
+        "BTC | social app"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★★★",
+      "last_edited_at": "2026-05-13 12:41:17Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-8178-b26b-da3fd6c40650",
+      "name": "MarketAcross Events",
+      "source_url": "https://marketacross.com/crypto-events/",
+      "type_tags": [
+        "crypto/blockchain | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-05-13 12:47:58Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-81bb-b9a3-da6e7559a7bb",
+      "name": "Meetup.com",
+      "source_url": "https://www.meetup.com/topics/bitcoin/",
+      "type_tags": [
+        "reg aggregator"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★★",
+      "last_edited_at": "2026-04-29 09:21:41Z"
+    },
+    {
+      "notion_record_id": "fc72ff26-9d60-4ae9-9e7c-a610276ebf42",
+      "name": "Merehead",
+      "source_url": "https://merehead.com/blog/top-crypto-events-and-conferences-2025/",
+      "type_tags": [
+        "BTC | info base"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★",
+      "last_edited_at": "2026-04-27 15:29:59Z"
+    },
+    {
+      "notion_record_id": "29316b48-2292-8099-9e53-e5dfc2513359",
+      "name": "Newhedge",
+      "source_url": "https://newhedge.io/tools/conferences",
+      "type_tags": [
+        "BTC | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-05-13 06:11:17Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-811e-b97a-d538041aaeaf",
+      "name": "OPA / Club Orange",
+      "source_url": "https://www.theorangepillapp.com",
+      "type_tags": [
+        "BTC | social app"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★★★",
+      "last_edited_at": "2026-04-29 11:40:37Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-81df-9a63-e68f5b82f7fc",
+      "name": "PlanB Network",
+      "source_url": "https://planb.network/en/events",
+      "type_tags": [
+        "BTC | info base"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★★★",
+      "last_edited_at": "2026-04-29 13:58:51Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-8173-a60f-e402d9417f8b",
+      "name": "Plektos (Nostr)",
+      "source_url": "https://plektos.app",
+      "type_tags": [
+        "BTC | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★★★",
+      "last_edited_at": "2026-05-13 07:51:24Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-814e-80d1-c3c879f442e3",
+      "name": "Polska Zaprasza",
+      "source_url": "http://polska.zaprasza.eu/",
+      "type_tags": [
+        "reg aggregator"
+      ],
+      "languages": [
+        "PL"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-05-13 07:34:20Z"
+    },
+    {
+      "notion_record_id": "2e716b48-2292-80e6-b2d0-f30dce51957e",
+      "name": "Proof of Conference",
+      "source_url": "https://www.proofofconference.com/",
+      "type_tags": [
+        "BTC | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-05-13 06:14:37Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-811e-9623-cd0513ec68df",
+      "name": "Qubika",
+      "source_url": "https://qubika.com/blog/list-of-blockchain-cryptocurrency-conferences/",
+      "type_tags": [
+        "crypto/blockchain | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★",
+      "last_edited_at": "2026-04-27 18:17:59Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-818f-9469-ef10d16eee90",
+      "name": "ReadWrite",
+      "source_url": "https://readwrite.com/cryptocurrency/best-crypto-conferences/",
+      "type_tags": [
+        "reg aggregator"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★",
+      "last_edited_at": "2026-04-29 12:37:56Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-812c-82be-cfe8d1a919b6",
+      "name": "Reddit - Bitcoin",
+      "source_url": "https://www.reddit.com/r/Bitcoin/",
+      "type_tags": [
+        "BTC | social noise"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★",
+      "last_edited_at": "2026-04-22 05:46:05Z"
+    },
+    {
+      "notion_record_id": "c6d39046-5a0a-4b39-8991-e3caf0ff3baa",
+      "name": "RIVER",
+      "source_url": "https://river.com/learn/bitcoin-events-and-conferences/",
+      "type_tags": [
+        "BTC | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": null,
+      "last_edited_at": "2026-04-27 15:27:13Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-81b9-887d-edf9f13e5c5f",
+      "name": "Satlantis",
+      "source_url": "https://www.satlantis.io/",
+      "type_tags": [
+        "BTC | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★★★",
+      "last_edited_at": "2026-05-13 08:21:08Z"
+    },
+    {
+      "notion_record_id": "2bf16b48-2292-80eb-b57c-d7962e1262ae",
+      "name": "Stacker News",
+      "source_url": "https://stacker.news/",
+      "type_tags": [
+        "BTC | space / community"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-05-13 05:58:02Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-8133-8526-f1e7d37990de",
+      "name": "Submittable",
+      "source_url": "https://www.submittable.com/",
+      "type_tags": [
+        "reg aggregator | FILM / CULTURE"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★",
+      "last_edited_at": "2026-04-29 08:03:49Z"
+    },
+    {
+      "notion_record_id": "34216b48-2292-80e8-b0fa-fc16ae6404fd",
+      "name": "Substr",
+      "source_url": "https://substr.network/s/events",
+      "type_tags": [
+        "BTC | social noise"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-05-13 06:19:42Z"
+    },
+    {
+      "notion_record_id": "2b62477c-f877-4ae9-b8ea-0e316255e18e",
+      "name": "Technopedia",
+      "source_url": "https://www.techopedia.com/best-crypto-conferences-to-attend",
+      "type_tags": [
+        "BTC | info base"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★",
+      "last_edited_at": "2026-08-12 15:01:02Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-81cd-af72-cdff314e00ed",
+      "name": "The Finance Data",
+      "source_url": "https://thefinancedata.com/events-and-conferences/",
+      "type_tags": [
+        "crypto/blockchain | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★",
+      "last_edited_at": "2026-04-29 13:43:48Z"
+    },
+    {
+      "notion_record_id": "07b34fe8-75d4-4f01-b629-fe5112a7b815",
+      "name": "Time Out",
+      "source_url": "https://www.timeout.com/europe",
+      "type_tags": [
+        "reg aggregator | FILM / CULTURE"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-04-27 14:18:34Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-814b-8f6b-effaa0153121",
+      "name": "Tryp",
+      "source_url": "https://www.tryp.com/en",
+      "type_tags": [
+        "reg aggregator | FILM / CULTURE"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": null,
+      "last_edited_at": "2026-04-29 12:00:48Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-8196-afdd-e7589a67b9da",
+      "name": "Visit Europe",
+      "source_url": "https://visiteurope.com/en/events/",
+      "type_tags": [
+        "BTC | info & events"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★★★",
+      "last_edited_at": "2026-04-29 12:49:28Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-815e-a88c-f3e4bf446c4c",
+      "name": "WawF4Free",
+      "source_url": "https://waw4free.pl/?wydarzenia=dzisiaj&kolejne_dni=tak",
+      "type_tags": [
+        "BTC | social app"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-04-27 18:23:02Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-81f8-8a6c-e6c9303f9b86",
+      "name": "WFCN",
+      "source_url": "https://www.wfcn.co/",
+      "type_tags": [
+        "reg aggregator | FILM / CULTURE"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-04-29 11:32:21Z"
+    },
+    {
+      "notion_record_id": "2fe719bb-1d4c-4d18-a823-83c9f6fcbbe3",
+      "name": "Wiki BTC",
+      "source_url": "https://en.bitcoin.it/wiki/Meetups",
+      "type_tags": [
+        "BTC | info base"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★",
+      "last_edited_at": "2026-05-12 14:51:05Z"
+    },
+    {
+      "notion_record_id": "34a16b48-2292-81c9-966a-cc0d06259e49",
+      "name": "Youreventfree",
+      "source_url": "https://www.youreventfree.com/",
+      "type_tags": [
+        "reg aggregator"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "quality_rating": "★★★",
+      "last_edited_at": "2026-08-12 15:59:23Z"
+    }
+  ]
+}

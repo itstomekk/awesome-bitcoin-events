@@ -1,0 +1,5444 @@
+{
+  "schema_version": "source-dataset-1.0",
+  "generated_at": "2026-09-16T18:34:07Z",
+  "source_records_total": 116,
+  "unique_sources_total": 110,
+  "sources": [
+    {
+      "id": "source-10-times-venues-ec3c0ad0",
+      "name": "10 times venues",
+      "urls": {
+        "homepage": "https://10times.com/venues",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-8160-a555-eef21914fe5a",
+          "notion_metadata": {
+            "type_tags": [
+              "reg aggregator"
+            ],
+            "quality_rating": "★★★★",
+            "last_edited_at": "2026-04-29 12:13:56Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "reg aggregator"
+        ]
+      }
+    },
+    {
+      "id": "source-21-bitcoin-wines-97c7e901",
+      "name": "21 bitcoin wines",
+      "urls": {
+        "homepage": "https://www.21bitcoinwines.com/",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "💀"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-817b-bbed-c6b1dc993ae7",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | shop (with listed events as well)"
+            ],
+            "quality_rating": "💀",
+            "last_edited_at": "2026-04-29 12:27:18Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | shop (with listed events as well)"
+        ]
+      }
+    },
+    {
+      "id": "source-21-de-7aa4aeb3",
+      "name": "21 DE",
+      "urls": {
+        "homepage": "https://portal.einundzwanzig.space/de/event/overview?l=de&year=2026",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "GE"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-81a8-87ae-dfa60a0356ec",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | info & events"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-04-29 13:01:53Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-access-tribe-jan-24-3656cf22",
+      "name": "Access Tribe (jan 24)",
+      "urls": {
+        "homepage": "https://www.accesstribe.com/bitcoin-events",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "f8359ff7-b6c3-4729-9b1e-a834ab8ff1b1",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | info & events"
+            ],
+            "quality_rating": "★★",
+            "last_edited_at": "2026-04-27 14:39:30Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-all-events-per-cities-countries-58920527",
+      "name": "All Events (per cities/countries)",
+      "urls": {
+        "homepage": "https://allevents.in/",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-813e-872b-dfc36892381d",
+          "notion_metadata": {
+            "type_tags": [
+              "reg aggregator"
+            ],
+            "quality_rating": "★★★★",
+            "last_edited_at": "2026-04-29 11:48:39Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "reg aggregator"
+        ]
+      }
+    },
+    {
+      "id": "source-allconferencealert-aadbc9d4",
+      "name": "AllConferenceAlert",
+      "urls": {
+        "homepage": "https://www.allconferencealert.com/",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-813c-9211-f36cf0fd1db8",
+          "notion_metadata": {
+            "type_tags": [
+              "reg aggregator"
+            ],
+            "quality_rating": "★★",
+            "last_edited_at": "2026-04-29 08:22:14Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "reg aggregator"
+        ]
+      }
+    },
+    {
+      "id": "source-allconferences-com-e7b26fc8",
+      "name": "AllConferences.com",
+      "urls": {
+        "homepage": "https://www.allconferences.com/",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "💀"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-81a1-81c6-dbb2ee80e5ef",
+          "notion_metadata": {
+            "type_tags": [
+              "reg aggregator"
+            ],
+            "quality_rating": "💀",
+            "last_edited_at": "2026-04-29 09:16:02Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "reg aggregator"
+        ]
+      }
+    },
+    {
+      "id": "legacy-repo-2025",
+      "name": "awesome-bitcoin-events legacy dataset",
+      "urls": {
+        "homepage": "https://github.com/itstomekk/awesome-bitcoin-events/blob/main/events.json",
+        "event_feed_url": null
+      },
+      "source_role": "dead_or_archived",
+      "source_type": "repository_json",
+      "geographic_coverage": "global",
+      "topic_coverage": [
+        "all"
+      ],
+      "languages": [],
+      "access": {
+        "adapter": "legacy-import",
+        "status": "configured"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [],
+        "notes": "Read-only provenance for the original 61-record 2025 dataset. It is retained for auditability, not monitored for new events."
+      },
+      "provenance": [
+        {
+          "kind": "source_registry",
+          "record_ref": "sources/registry.json",
+          "registry_metadata": {
+            "priority": 0,
+            "topics": [
+              "all"
+            ]
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": []
+      }
+    },
+    {
+      "id": "source-beincrypto-events-2a800fb7",
+      "name": "BeInCrypto Events",
+      "urls": {
+        "homepage": "https://beincrypto.com/events",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-8171-ae05-ece136ce4b39",
+          "notion_metadata": {
+            "type_tags": [
+              "crypto/blockchain | info & events"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-04-27 18:02:12Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "crypto/blockchain | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-big-event-cbec19e5",
+      "name": "Big Event",
+      "urls": {
+        "homepage": "https://bigevent.io/events",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-8164-ae17-d5ca7e59325b",
+          "notion_metadata": {
+            "type_tags": [
+              "crypto/blockchain | info & events"
+            ],
+            "quality_rating": "★★★★★",
+            "last_edited_at": "2026-04-29 12:15:12Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "crypto/blockchain | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-bitbo-bitcoin-tools-conferences-1b256da8",
+      "name": "BitBo | Bitcoin Tools/Conferences",
+      "urls": {
+        "homepage": "https://tools.bitbo.io/conferences",
+        "event_feed_url": null
+      },
+      "source_role": "editorial",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-8179-9c45-ec74e7f36196",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | info base"
+            ],
+            "quality_rating": "★★",
+            "last_edited_at": "2026-04-29 08:23:09Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | info base"
+        ]
+      }
+    },
+    {
+      "id": "bitcoin-bundesverband",
+      "name": "Bitcoin Bundesverband",
+      "urls": {
+        "homepage": "https://bitcoin-bundesverband.de/en/events",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "html_calendar",
+      "geographic_coverage": "Germany",
+      "topic_coverage": [
+        "meetup",
+        "conference",
+        "workshop"
+      ],
+      "languages": [],
+      "access": {
+        "adapter": "pending",
+        "status": "configured"
+      },
+      "monitoring": {
+        "status": "low_yield_probe",
+        "cadence_days": 30,
+        "last_checked": "2026-09-16",
+        "decision_reason": "Keep as a monthly German discovery source. Upgrade to weekly only after it yields a current, unique event or a working structured feed."
+      },
+      "quality": {
+        "ratings": [],
+        "notes": "German Bitcoin association. The page advertises iCal export, but the supplied export route returned 404 on 2026-09-16; use the event page until a working feed is confirmed."
+      },
+      "provenance": [
+        {
+          "kind": "source_registry",
+          "record_ref": "sources/registry.json",
+          "registry_metadata": {
+            "priority": 3,
+            "topics": [
+              "meetup",
+              "conference",
+              "workshop"
+            ]
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": []
+      }
+    },
+    {
+      "id": "source-bitcoin-conferences-6152ba03",
+      "name": "Bitcoin Conferences",
+      "urls": {
+        "homepage": "https://bitcoinconferences.info/",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-818d-8ac7-f8425569a4d1",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | info & events"
+            ],
+            "quality_rating": "★★★★",
+            "last_edited_at": "2026-05-13 06:49:08Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-bitcoin-forum-45bbde19",
+      "name": "Bitcoin Forum",
+      "urls": {
+        "homepage": "https://bitcointalk.org/index.php",
+        "event_feed_url": null
+      },
+      "source_role": "editorial",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "30dba953-0eeb-41d5-9cd2-dab36386e77c",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | info base"
+            ],
+            "quality_rating": "★",
+            "last_edited_at": "2026-05-12 15:05:23Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | info base"
+        ]
+      }
+    },
+    {
+      "id": "bitcoin-magazine",
+      "name": "Bitcoin Magazine Industry Events",
+      "urls": {
+        "homepage": "https://bitcoinmagazine.com/industry-events",
+        "event_feed_url": null
+      },
+      "source_role": "editorial",
+      "source_type": "static_html",
+      "geographic_coverage": "global",
+      "topic_coverage": [
+        "all"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "bitcoin-magazine",
+        "status": "configured"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★★"
+        ],
+        "notes": "Editorial coverage, not a structured calendar. Useful for discovery."
+      },
+      "provenance": [
+        {
+          "kind": "source_registry",
+          "record_ref": "sources/registry.json",
+          "registry_metadata": {
+            "priority": 3,
+            "topics": [
+              "all"
+            ]
+          }
+        },
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-814b-8e9b-ea27d70a3998",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | info & events"
+            ],
+            "quality_rating": "★★★★",
+            "last_edited_at": "2026-04-29 11:56:59Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-bitcoin-market-journal-6826860f",
+      "name": "Bitcoin Market Journal",
+      "urls": {
+        "homepage": "https://www.bitcoinmarketjournal.com/submit-conference",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-810f-95f5-dee019b0cec8",
+          "notion_metadata": {
+            "type_tags": [
+              "crypto/blockchain | info & events"
+            ],
+            "quality_rating": null,
+            "last_edited_at": "2026-04-29 11:36:18Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "crypto/blockchain | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-bitcoin-only-4595b107",
+      "name": "Bitcoin Only",
+      "urls": {
+        "homepage": "https://bitcoinonly.io/pages/local-bitcoin-events?srsltid=AfmBOoopGWHtAFpl2AF7LjJ6fS5aAT3X7d3TanEXq8pIwvWTDNgiYir1",
+        "event_feed_url": null
+      },
+      "source_role": "editorial",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "19f16b48-2292-803d-8ac5-f4d45c8daa15",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | info base"
+            ],
+            "quality_rating": "★★",
+            "last_edited_at": "2026-04-27 15:33:29Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | info base"
+        ]
+      }
+    },
+    {
+      "id": "source-bitcoin-only-e1723c5d",
+      "name": "Bitcoin Only",
+      "urls": {
+        "homepage": "https://bitcoin-only.com/meetups",
+        "event_feed_url": null
+      },
+      "source_role": "editorial",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-81fc-9ee2-fffb0f5271f0",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | info base"
+            ],
+            "quality_rating": "★",
+            "last_edited_at": "2026-05-13 07:27:45Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | info base"
+        ]
+      }
+    },
+    {
+      "id": "source-bitcoin-park-0cdaaf09",
+      "name": "Bitcoin Park",
+      "urls": {
+        "homepage": "https://bitcoinpark.com/",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-81dd-8c96-ce89836ecf48",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | space / community"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-04-27 18:14:31Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | space / community"
+        ]
+      }
+    },
+    {
+      "id": "source-bitcoin-review-9c0d7210",
+      "name": "Bitcoin Review",
+      "urls": {
+        "homepage": "https://bitcoin.review/bitcoin-events",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "25b16b48-2292-80ed-8489-efc3c71765be",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | info & events"
+            ],
+            "quality_rating": "★★★★",
+            "last_edited_at": "2026-04-27 17:25:43Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | info & events"
+        ]
+      }
+    },
+    {
+      "id": "bitcoin-plus",
+      "name": "bitcoin++",
+      "urls": {
+        "homepage": "https://btcpp.dev/",
+        "event_feed_url": null
+      },
+      "source_role": "canonical",
+      "source_type": "static_html",
+      "geographic_coverage": "global",
+      "topic_coverage": [
+        "developer",
+        "technical"
+      ],
+      "languages": [],
+      "access": {
+        "adapter": "btcpp",
+        "status": "configured"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [],
+        "notes": "Technical Bitcoin conference series. 17+ editions."
+      },
+      "provenance": [
+        {
+          "kind": "source_registry",
+          "record_ref": "sources/registry.json",
+          "registry_metadata": {
+            "priority": 2,
+            "topics": [
+              "developer",
+              "technical"
+            ]
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": []
+      }
+    },
+    {
+      "id": "source-bitcoin-com-conferences-31eb65e0",
+      "name": "Bitcoin.com Conferences",
+      "urls": {
+        "homepage": "https://www.bitcoin.com/conferences",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-816e-b637-d2850a457d87",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | info & events"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-04-29 09:00:45Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | info & events"
+        ]
+      }
+    },
+    {
+      "id": "bitcoin-org",
+      "name": "Bitcoin.org Events",
+      "urls": {
+        "homepage": "https://bitcoin.org/en/events",
+        "event_feed_url": null
+      },
+      "source_role": "canonical",
+      "source_type": "static_html",
+      "geographic_coverage": "global",
+      "topic_coverage": [
+        "all"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "bitcoin-org",
+        "status": "configured"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": "Community-maintained, GitHub issue submissions. Gold standard reference."
+      },
+      "provenance": [
+        {
+          "kind": "source_registry",
+          "record_ref": "sources/registry.json",
+          "registry_metadata": {
+            "priority": 1,
+            "topics": [
+              "all"
+            ]
+          }
+        },
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "6b9ba40b-9698-4f26-9e8a-d6634343629b",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | info & events"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-05-12 15:10:03Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-bitcoiner-events-da9a5482",
+      "name": "Bitcoiner Events",
+      "urls": {
+        "homepage": "https://www.bitcoinerevents.com/",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "💀"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "63f1242e-af59-4152-8754-4fbe2a3f1755",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | info & events"
+            ],
+            "quality_rating": "💀",
+            "last_edited_at": "2026-04-27 14:52:00Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-bitcoinist-6c103ecd",
+      "name": "Bitcoinist",
+      "urls": {
+        "homepage": "https://bitcoinist.com/events-page",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "f9ecbb1b-cd35-4b9c-bd33-bc09b441c7ea",
+          "notion_metadata": {
+            "type_tags": [
+              "crypto/blockchain | info & events"
+            ],
+            "quality_rating": "★★",
+            "last_edited_at": "2026-04-27 14:49:17Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "crypto/blockchain | info & events"
+        ]
+      }
+    },
+    {
+      "id": "bitcoinonly-events",
+      "name": "BitcoinOnly Events",
+      "urls": {
+        "homepage": "https://bitcoinonly.events/",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "static_html",
+      "geographic_coverage": "global",
+      "topic_coverage": [
+        "conference",
+        "meetup",
+        "workshop"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "pending",
+        "status": "configured"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★★"
+        ],
+        "notes": "Bitcoin-only directory with affiliate content. Useful for discovery; dates and links require official-source verification."
+      },
+      "provenance": [
+        {
+          "kind": "source_registry",
+          "record_ref": "sources/registry.json",
+          "registry_metadata": {
+            "priority": 2,
+            "topics": [
+              "conference",
+              "meetup",
+              "workshop"
+            ]
+          }
+        },
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-8143-96ba-dc431551e8fe",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | info & events"
+            ],
+            "quality_rating": "★★★★",
+            "last_edited_at": "2026-05-13 06:33:37Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-bitcoinsv-38a70e09",
+      "name": "BitcoinSV",
+      "urls": {
+        "homepage": "https://www.bitcoinsv.com/events",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "23b16b48-2292-80dc-8ec4-c2aa688295e1",
+          "notion_metadata": {
+            "type_tags": [
+              "crypto/blockchain | info & events"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-04-27 15:37:07Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "crypto/blockchain | info & events"
+        ]
+      }
+    },
+    {
+      "id": "bitdevs",
+      "name": "BitDevs Network",
+      "urls": {
+        "homepage": "https://bitdevs.org/",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "static_html",
+      "geographic_coverage": "global",
+      "topic_coverage": [
+        "developer",
+        "protocol",
+        "socratic"
+      ],
+      "languages": [],
+      "access": {
+        "adapter": "bitdevs",
+        "status": "configured"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [],
+        "notes": "Decentralised network of local Bitcoin dev meetups. Each city has own site + RSS."
+      },
+      "provenance": [
+        {
+          "kind": "source_registry",
+          "record_ref": "sources/registry.json",
+          "registry_metadata": {
+            "priority": 2,
+            "topics": [
+              "developer",
+              "protocol",
+              "socratic"
+            ]
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": []
+      }
+    },
+    {
+      "id": "source-bleap-finance-events-450150d9",
+      "name": "Bleap Finance Events",
+      "urls": {
+        "homepage": "https://www.bleap.finance/en-us/events",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-81ed-b44c-db2346343a6b",
+          "notion_metadata": {
+            "type_tags": [
+              "crypto/blockchain | info & events"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-05-13 13:05:05Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "crypto/blockchain | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-braiins-5e4bbffd",
+      "name": "Braiins",
+      "urls": {
+        "homepage": "https://braiins.com/blog/bitcoin-conference-calendar-2025",
+        "event_feed_url": null
+      },
+      "source_role": "editorial",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "25b16b48-2292-8094-bf24-e229b97157dc",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | info base"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-04-27 17:34:30Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | info base"
+        ]
+      }
+    },
+    {
+      "id": "source-brave-new-coin-4ef22e79",
+      "name": "Brave New Coin",
+      "urls": {
+        "homepage": "https://bravenewcoin.com/events",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-817e-a843-f58034309409",
+          "notion_metadata": {
+            "type_tags": [
+              "crypto/blockchain | info & events"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-05-13 06:40:40Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "crypto/blockchain | info & events"
+        ]
+      }
+    },
+    {
+      "id": "btc-events-map",
+      "name": "BTC Events Map",
+      "urls": {
+        "homepage": "https://btceventsmap.com/",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "static_html",
+      "geographic_coverage": "global",
+      "topic_coverage": [
+        "all"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "btc-events-map",
+        "status": "configured"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★★★"
+        ],
+        "notes": "Community map. Good for discovery, needs verification."
+      },
+      "provenance": [
+        {
+          "kind": "source_registry",
+          "record_ref": "sources/registry.json",
+          "registry_metadata": {
+            "priority": 3,
+            "topics": [
+              "all"
+            ]
+          }
+        },
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "24d16b48-2292-8082-af43-cbe4fa2edc15",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | info & events"
+            ],
+            "quality_rating": "★★★★★",
+            "last_edited_at": "2026-08-12 15:11:26Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | info & events"
+        ]
+      }
+    },
+    {
+      "id": "btc-inc",
+      "name": "BTC Inc / The Bitcoin Conference",
+      "urls": {
+        "homepage": "https://www.b.tc/conference",
+        "event_feed_url": "https://tickets.b.tc/event"
+      },
+      "source_role": "canonical",
+      "source_type": "static_html",
+      "geographic_coverage": "global",
+      "topic_coverage": [
+        "conference"
+      ],
+      "languages": [],
+      "access": {
+        "adapter": "btc-inc",
+        "status": "configured"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [],
+        "notes": "Flagship series: Bitcoin Conference, Bitcoin Asia, Bitcoin Amsterdam, Bitcoin MENA."
+      },
+      "provenance": [
+        {
+          "kind": "source_registry",
+          "record_ref": "sources/registry.json",
+          "registry_metadata": {
+            "priority": 1,
+            "topics": [
+              "conference"
+            ]
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": []
+      }
+    },
+    {
+      "id": "source-carni-fest-5ad6f465",
+      "name": "Carni Fest",
+      "urls": {
+        "homepage": "https://www.carnifest.com/",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "many"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-81ad-bf0a-cecc7c1aed34",
+          "notion_metadata": {
+            "type_tags": [
+              "reg aggregator | festivals around the world"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-04-29 13:12:09Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "reg aggregator | festivals around the world"
+        ]
+      }
+    },
+    {
+      "id": "source-coindar-6ac8df6b",
+      "name": "Coindar",
+      "urls": {
+        "homepage": "https://coindar.org/",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-8166-be1e-e01ed96f9a0f",
+          "notion_metadata": {
+            "type_tags": [
+              "crypto/blockchain | info & events"
+            ],
+            "quality_rating": "★★★★",
+            "last_edited_at": "2026-04-29 08:45:45Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "crypto/blockchain | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-coindesk-events-ee186666",
+      "name": "CoinDesk Events",
+      "urls": {
+        "homepage": "https://events.coindesk.com/",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-8159-9b62-ca694dd31789",
+          "notion_metadata": {
+            "type_tags": [
+              "crypto/blockchain | info & events"
+            ],
+            "quality_rating": "★★★★",
+            "last_edited_at": "2026-04-25 15:51:35Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "crypto/blockchain | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-coingabbar-95231df7",
+      "name": "CoinGabbar",
+      "urls": {
+        "homepage": "https://www.coingabbar.com/en/coin-events-calendar",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-8100-95bc-c8dbdc767fdb",
+          "notion_metadata": {
+            "type_tags": [
+              "crypto/blockchain | info & events"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-04-22 14:44:34Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "crypto/blockchain | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-coinmarket-cap-72ea47a1",
+      "name": "CoinMarket Cap (!)",
+      "urls": {
+        "homepage": "https://coinmarketcap.com/events",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-81ab-8eee-ef4e7701e235",
+          "notion_metadata": {
+            "type_tags": [
+              "crypto/blockchain | info & events"
+            ],
+            "quality_rating": "★★★★",
+            "last_edited_at": "2026-05-13 13:34:01Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "crypto/blockchain | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-coinpedia-dbc421df",
+      "name": "CoinPedia",
+      "urls": {
+        "homepage": "https://events.coinpedia.org/",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-81a8-b4d0-d0170bc0323d",
+          "notion_metadata": {
+            "type_tags": [
+              "crypto/blockchain | info & events"
+            ],
+            "quality_rating": "★★★★★",
+            "last_edited_at": "2026-05-13 07:03:51Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "crypto/blockchain | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-coinspeaker-cf7fdc60",
+      "name": "Coinspeaker",
+      "urls": {
+        "homepage": "https://www.coinspeaker.com/events",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-8167-8748-f446d13467d2",
+          "notion_metadata": {
+            "type_tags": [
+              "crypto/blockchain | info & events"
+            ],
+            "quality_rating": "★",
+            "last_edited_at": "2026-04-29 12:25:23Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "crypto/blockchain | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-cointelegraph-events-b2ba68c3",
+      "name": "CoinTelegraph Events",
+      "urls": {
+        "homepage": "https://cointelegraph-events.com/",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-818d-83d1-e6f3108af0d1",
+          "notion_metadata": {
+            "type_tags": [
+              "crypto/blockchain | info & events"
+            ],
+            "quality_rating": "★★★★",
+            "last_edited_at": "2026-04-27 18:10:22Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "crypto/blockchain | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-conference-index-d3fd7bbe",
+      "name": "Conference Index",
+      "urls": {
+        "homepage": "https://conferenceindex.org/conferences",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-81c1-9dcd-ecfe6c93f972",
+          "notion_metadata": {
+            "type_tags": [
+              "reg aggregator"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-05-13 07:17:35Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "reg aggregator"
+        ]
+      }
+    },
+    {
+      "id": "source-conference-locate-f42a66d6",
+      "name": "Conference Locate",
+      "urls": {
+        "homepage": "https://www.clocate.com/international-conferences",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-81db-9aad-f0c25d638237",
+          "notion_metadata": {
+            "type_tags": [
+              "reg aggregator"
+            ],
+            "quality_rating": "★★★★",
+            "last_edited_at": "2026-04-22 14:45:01Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "reg aggregator"
+        ]
+      }
+    },
+    {
+      "id": "source-conferenceinc-6946cba0",
+      "name": "ConferenceInc",
+      "urls": {
+        "homepage": "https://conferenceinc.net/",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-81af-a831-c807e3fbe80f",
+          "notion_metadata": {
+            "type_tags": [
+              "reg aggregator"
+            ],
+            "quality_rating": "★★",
+            "last_edited_at": "2026-08-12 15:50:02Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "reg aggregator"
+        ]
+      }
+    },
+    {
+      "id": "source-craigslist-50b30bd6",
+      "name": "Craigslist",
+      "urls": {
+        "homepage": "https://www.craigslist.org/about/sites",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "fc3e6eca-841a-45e8-8b8e-2447f620262b",
+          "notion_metadata": {
+            "type_tags": [
+              "reg aggregator"
+            ],
+            "quality_rating": "★★",
+            "last_edited_at": "2026-05-12 14:53:45Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "reg aggregator"
+        ]
+      }
+    },
+    {
+      "id": "source-cross-web-bfc20a3b",
+      "name": "Cross Web",
+      "urls": {
+        "homepage": "https://crossweb.pl/wydarzenia",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "PL"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-8123-a64d-d7e775c17ec4",
+          "notion_metadata": {
+            "type_tags": [
+              "reg aggregator | TECH"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-04-28 17:52:39Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "reg aggregator | TECH"
+        ]
+      }
+    },
+    {
+      "id": "source-crypto-newsz-5e0a04f0",
+      "name": "Crypto NewsZ",
+      "urls": {
+        "homepage": "https://www.cryptonewsz.com/events",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-8165-848b-db85beea9422",
+          "notion_metadata": {
+            "type_tags": [
+              "crypto/blockchain | info & events"
+            ],
+            "quality_rating": "★★★★",
+            "last_edited_at": "2026-04-29 12:21:10Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "crypto/blockchain | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-cryptocalendar-pro-1f424097",
+      "name": "CryptoCalendar.pro",
+      "urls": {
+        "homepage": "https://cryptocalendar.pro/events/bitcoin",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-8172-bb10-e7fa8ddffce4",
+          "notion_metadata": {
+            "type_tags": [
+              "crypto/blockchain | info & events"
+            ],
+            "quality_rating": "★★★★",
+            "last_edited_at": "2026-04-27 18:04:11Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "crypto/blockchain | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-cryptocraft-calendar-19c861af",
+      "name": "CryptoCraft Calendar",
+      "urls": {
+        "homepage": "https://www.cryptocraft.com/calendar",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-81c7-9476-d9dc4dcb9c9f",
+          "notion_metadata": {
+            "type_tags": [
+              "crypto/blockchain | info & events"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-04-29 09:30:29Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "crypto/blockchain | info & events"
+        ]
+      }
+    },
+    {
+      "id": "crypto-events-global",
+      "name": "CryptoEvents Global",
+      "urls": {
+        "homepage": "https://cryptoevents.global/",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "static_html",
+      "geographic_coverage": "global",
+      "topic_coverage": [
+        "all"
+      ],
+      "languages": [],
+      "access": {
+        "adapter": "pending",
+        "status": "configured"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [],
+        "notes": "Broad crypto/Web3 directory. Retain only clearly Bitcoin-relevant candidates and verify them elsewhere."
+      },
+      "provenance": [
+        {
+          "kind": "source_registry",
+          "record_ref": "sources/registry.json",
+          "registry_metadata": {
+            "priority": 3,
+            "topics": [
+              "all"
+            ]
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": []
+      }
+    },
+    {
+      "id": "source-cryptoevents-global-cd04443e",
+      "name": "CryptoEvents Global",
+      "urls": {
+        "homepage": "https://cryptoevents.global/bitcoin-blockchain-conferences-in-europe",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-818e-8091-faff31070cd1",
+          "notion_metadata": {
+            "type_tags": [
+              "crypto/blockchain | info & events"
+            ],
+            "quality_rating": "★★★★",
+            "last_edited_at": "2026-05-13 13:24:43Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "crypto/blockchain | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-cryptojobslist-events-c8df91c3",
+      "name": "CryptoJobsList Events",
+      "urls": {
+        "homepage": "https://cryptojobslist.com/crypto-events",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-8135-87a3-c12c60751af3",
+          "notion_metadata": {
+            "type_tags": [
+              "crypto/blockchain | info & events"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-08-12 15:43:01Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "crypto/blockchain | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-cryptonews-9d4d3d49",
+      "name": "CryptoNews",
+      "urls": {
+        "homepage": "https://crypto.news/events",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-810d-b177-ed5b7bd721b4",
+          "notion_metadata": {
+            "type_tags": [
+              "crypto/blockchain | info & events"
+            ],
+            "quality_rating": "★★★★",
+            "last_edited_at": "2026-05-13 13:08:37Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "crypto/blockchain | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-cryptonomads-e857f848",
+      "name": "CryptoNomads",
+      "urls": {
+        "homepage": "https://cryptonomads.org/",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-8119-ab94-c08b92289cab",
+          "notion_metadata": {
+            "type_tags": [
+              "crypto/blockchain | info & events"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-08-12 15:09:57Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "crypto/blockchain | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-cyfrowa-ekonomia-ed485764",
+      "name": "Cyfrowa Ekonomia",
+      "urls": {
+        "homepage": "https://cyfrowaekonomia.pl/",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "PL"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-81cc-9c5f-de5f5c831b65",
+          "notion_metadata": {
+            "type_tags": [
+              "crypto/blockchain | info & events"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-04-29 13:31:18Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "crypto/blockchain | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-devevents-adb30224",
+      "name": "DevEvents",
+      "urls": {
+        "homepage": "https://dev.events/blockchain",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-819e-8de1-e6af365ddd61",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | info & events"
+            ],
+            "quality_rating": "★",
+            "last_edited_at": "2026-08-12 15:41:22Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-devpost-d50a5292",
+      "name": "Devpost",
+      "urls": {
+        "homepage": "https://devpost.com/c/blockchain",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-8158-aca5-f34f5f39c535",
+          "notion_metadata": {
+            "type_tags": [
+              "reg aggregator | TECH"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-04-29 08:35:14Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "reg aggregator | TECH"
+        ]
+      }
+    },
+    {
+      "id": "source-documenting-itcoin-f1dc0e33",
+      "name": "Documenting ₿itcoin",
+      "urls": {
+        "homepage": "https://twitter.com/DocumentingBTC",
+        "event_feed_url": null
+      },
+      "source_role": "community",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-81c2-a938-f1ce33b9f1d7",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | social noise"
+            ],
+            "quality_rating": null,
+            "last_edited_at": "2026-04-29 13:16:09Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | social noise"
+        ]
+      }
+    },
+    {
+      "id": "source-eb-7f4ea627",
+      "name": "EB (!)",
+      "urls": {
+        "homepage": "https://europeanbitcoiners.com/events",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-8118-a0df-ce090ccb0272",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | space / community"
+            ],
+            "quality_rating": "★★★★★",
+            "last_edited_at": "2026-08-12 15:36:03Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | space / community"
+        ]
+      }
+    },
+    {
+      "id": "source-eventbrite-0d966d3d",
+      "name": "Eventbrite",
+      "urls": {
+        "homepage": "https://www.eventbrite.com/",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-81d4-8dfc-c9161358a3f0",
+          "notion_metadata": {
+            "type_tags": [
+              "reg aggregator"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-04-29 13:58:00Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "reg aggregator"
+        ]
+      }
+    },
+    {
+      "id": "eventbrite-bitcoin",
+      "name": "Eventbrite Bitcoin",
+      "urls": {
+        "homepage": "https://www.eventbrite.com/d/online/bitcoin",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "static_html",
+      "geographic_coverage": "global",
+      "topic_coverage": [
+        "meetup",
+        "workshop",
+        "course"
+      ],
+      "languages": [],
+      "access": {
+        "adapter": "eventbrite",
+        "status": "configured"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [],
+        "notes": "Massive reach. Mostly small local meetups and online courses."
+      },
+      "provenance": [
+        {
+          "kind": "source_registry",
+          "record_ref": "sources/registry.json",
+          "registry_metadata": {
+            "priority": 3,
+            "topics": [
+              "meetup",
+              "workshop",
+              "course"
+            ]
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": []
+      }
+    },
+    {
+      "id": "source-evento-so-619f1c97",
+      "name": "Evento.so",
+      "urls": {
+        "homepage": "https://app.evento.so/",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-810a-8574-eebe55105888",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | social app"
+            ],
+            "quality_rating": "★★★★",
+            "last_edited_at": "2026-05-13 12:26:01Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | social app"
+        ]
+      }
+    },
+    {
+      "id": "source-events-2ed8bbd2",
+      "name": "Events",
+      "urls": {
+        "homepage": "https://events.org/",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "7137cdbb-a695-473c-b6b9-cba74833d755",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | info & events"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-04-27 14:15:23Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-facebook-events-f8f046f8",
+      "name": "Facebook Events",
+      "urls": {
+        "homepage": "https://www.facebook.com/events",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-814d-8575-d4f0a5eac062",
+          "notion_metadata": {
+            "type_tags": [
+              "reg aggregator"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-04-29 08:27:02Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "reg aggregator"
+        ]
+      }
+    },
+    {
+      "id": "source-festhome-c19a5e43",
+      "name": "Festhome",
+      "urls": {
+        "homepage": "https://festhome.com/",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-81a0-8c16-fad4b2c78330",
+          "notion_metadata": {
+            "type_tags": [
+              "reg aggregator | FILM / CULTURE"
+            ],
+            "quality_rating": "★★★★",
+            "last_edited_at": "2026-04-29 09:12:34Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "reg aggregator | FILM / CULTURE"
+        ]
+      }
+    },
+    {
+      "id": "source-festival-finder-e0d668b4",
+      "name": "Festival Finder",
+      "urls": {
+        "homepage": "https://www.festivalfinder.eu/",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "d49ee98f-1953-478f-9db5-cd8d43ffeba5",
+          "notion_metadata": {
+            "type_tags": [
+              "reg aggregator | FILM / CULTURE"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-04-27 14:32:21Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "reg aggregator | FILM / CULTURE"
+        ]
+      }
+    },
+    {
+      "id": "source-film-freeway-2f82ba8f",
+      "name": "Film Freeway",
+      "urls": {
+        "homepage": "https://filmfreeway.com/festivals",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-8113-9270-f553c096cce8",
+          "notion_metadata": {
+            "type_tags": [
+              "reg aggregator | FILM / CULTURE"
+            ],
+            "quality_rating": "★★★★",
+            "last_edited_at": "2026-04-29 11:36:47Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "reg aggregator | FILM / CULTURE"
+        ]
+      }
+    },
+    {
+      "id": "francis-mars-events",
+      "name": "Francis Mars Bitcoin Events",
+      "urls": {
+        "homepage": "https://www.francismars.com/events",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "static_html",
+      "geographic_coverage": "global",
+      "topic_coverage": [
+        "conference",
+        "meetup",
+        "retreat"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "pending",
+        "status": "configured"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★★"
+        ],
+        "notes": "Community-built Bitcoin event catalogue. Discovery evidence only until each event has an official page."
+      },
+      "provenance": [
+        {
+          "kind": "source_registry",
+          "record_ref": "sources/registry.json",
+          "registry_metadata": {
+            "priority": 2,
+            "topics": [
+              "conference",
+              "meetup",
+              "retreat"
+            ]
+          }
+        },
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "25b16b48-2292-80b7-b112-d2641d2d96d7",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | info & events"
+            ],
+            "quality_rating": "★★★★",
+            "last_edited_at": "2026-05-12 15:42:15Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-funcheap-5d4ff920",
+      "name": "FunCheap",
+      "urls": {
+        "homepage": "https://sf.funcheap.com/events",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-817c-b6dd-cde7b5befb15",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | info & events"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-05-13 13:21:17Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-gameon-bitcoin-15e71e2c",
+      "name": "GameOn Bitcoin",
+      "urls": {
+        "homepage": "https://gameonbitcoin.com/meetups-%26-groups",
+        "event_feed_url": null
+      },
+      "source_role": "editorial",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-81cb-9675-eca5202c540f",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | info base"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-04-29 13:23:20Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | info base"
+        ]
+      }
+    },
+    {
+      "id": "source-go-out-3c22e6b4",
+      "name": "Go Out",
+      "urls": {
+        "homepage": "https://goout.net/en",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-813a-97d1-f42ca183f204",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | info & events"
+            ],
+            "quality_rating": null,
+            "last_edited_at": "2026-04-29 11:41:41Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-go-to-a-bitcoin-conference-ef5635cb",
+      "name": "Go to a bitcoin conference",
+      "urls": {
+        "homepage": "https://seedsigner.github.io/gotoabitcoinconference.github.io",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "8db33281-3232-40c0-819e-608c695726b0",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | info & events"
+            ],
+            "quality_rating": "★",
+            "last_edited_at": "2026-04-27 14:52:34Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-grow-nostr-initiative-looks-dead-9faa06c3",
+      "name": "Grow Nostr Initiative (Looks Dead)",
+      "urls": {
+        "homepage": "https://grownostr.org/events",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "26016b48-2292-8070-b812-f0128034b27d",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | social app"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-04-27 17:41:22Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | social app"
+        ]
+      }
+    },
+    {
+      "id": "source-hi-events-25147935",
+      "name": "Hi Events",
+      "urls": {
+        "homepage": "https://app.hi.events/manage/organizer/1924/events",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "24d16b48-2292-808d-bda3-e9298d20f771",
+          "notion_metadata": {
+            "type_tags": [
+              "reg aggregator"
+            ],
+            "quality_rating": "★",
+            "last_edited_at": "2026-05-12 15:28:12Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "reg aggregator"
+        ]
+      }
+    },
+    {
+      "id": "source-incrypted-calendar-f4f290c2",
+      "name": "Incrypted Calendar",
+      "urls": {
+        "homepage": "https://incrypted.com/en/calendar",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-8190-86db-fc48647c5da7",
+          "notion_metadata": {
+            "type_tags": [
+              "crypto/blockchain | info & events"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-04-29 09:12:00Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "crypto/blockchain | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-iq-wiki-2f1983ed",
+      "name": "IQ wiki",
+      "urls": {
+        "homepage": "https://iq.wiki/events",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-8188-8436-de02820ef7f0",
+          "notion_metadata": {
+            "type_tags": [
+              "crypto/blockchain | info & events"
+            ],
+            "quality_rating": "★",
+            "last_edited_at": "2026-05-13 08:02:53Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "crypto/blockchain | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-itez-27234940",
+      "name": "Itez",
+      "urls": {
+        "homepage": "https://itez.com/events",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "3860f44f-5d9b-4190-a53b-1bb1e43aee71",
+          "notion_metadata": {
+            "type_tags": [
+              "crypto/blockchain | info & events"
+            ],
+            "quality_rating": "★",
+            "last_edited_at": "2026-04-27 14:35:31Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "crypto/blockchain | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-kiwi-04283ada",
+      "name": "KIWI",
+      "urls": {
+        "homepage": "https://www.kiwiportal.pl/",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "PL"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "💀"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-818f-91e2-fdf09138abdd",
+          "notion_metadata": {
+            "type_tags": [
+              "reg aggregator"
+            ],
+            "quality_rating": "💀",
+            "last_edited_at": "2026-04-29 12:36:33Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "reg aggregator"
+        ]
+      }
+    },
+    {
+      "id": "source-krypto-narod-0da10802",
+      "name": "Krypto Narod",
+      "urls": {
+        "homepage": "https://krypto-narod.pl/events",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "PL"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-81ad-901b-e2af296f1e0b",
+          "notion_metadata": {
+            "type_tags": [
+              "crypto/blockchain | info & events"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-04-29 13:06:52Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "crypto/blockchain | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-kryptowaluty-a26ab284",
+      "name": "Kryptowaluty",
+      "urls": {
+        "homepage": "https://kryptowaluty.info.pl/wydarzenia",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "PL"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-8181-8c0d-eb119209b7c1",
+          "notion_metadata": {
+            "type_tags": [
+              "crypto/blockchain | info & events"
+            ],
+            "quality_rating": "★★",
+            "last_edited_at": "2026-04-29 12:35:08Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "crypto/blockchain | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-linkedin-568e0ec9",
+      "name": "LinkedIn",
+      "urls": {
+        "homepage": "https://www.linkedin.com/events",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "24d16b48-2292-802e-bd66-fcad5d2a3776",
+          "notion_metadata": {
+            "type_tags": [
+              "reg aggregator"
+            ],
+            "quality_rating": "★★★★",
+            "last_edited_at": "2026-05-12 15:35:19Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "reg aggregator"
+        ]
+      }
+    },
+    {
+      "id": "source-lowcy-krypto-a8715927",
+      "name": "Lowcy Krypto",
+      "urls": {
+        "homepage": "https://lowcykrypto.pl/kryptowaluty-wydarzenia-polska",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "PL"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-8123-b52a-dc9f193b7567",
+          "notion_metadata": {
+            "type_tags": [
+              "crypto/blockchain | info & events"
+            ],
+            "quality_rating": "★★★★",
+            "last_edited_at": "2026-05-13 07:34:05Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "crypto/blockchain | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-lu-ma-e790b914",
+      "name": "Lu.ma",
+      "urls": {
+        "homepage": "https://lu.ma/crypto",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-8169-9754-ee3f593361f1",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | social app"
+            ],
+            "quality_rating": "★★★★★",
+            "last_edited_at": "2026-05-13 12:41:17Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | social app"
+        ]
+      }
+    },
+    {
+      "id": "luma-crypto",
+      "name": "Luma Crypto",
+      "urls": {
+        "homepage": "https://luma.com/crypto",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "static_html",
+      "geographic_coverage": "global",
+      "topic_coverage": [
+        "all"
+      ],
+      "languages": [],
+      "access": {
+        "adapter": "luma",
+        "status": "configured"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [],
+        "notes": "638 events, 38K subscribers. High noise, good coverage."
+      },
+      "provenance": [
+        {
+          "kind": "source_registry",
+          "record_ref": "sources/registry.json",
+          "registry_metadata": {
+            "priority": 3,
+            "topics": [
+              "all"
+            ]
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": []
+      }
+    },
+    {
+      "id": "source-marketacross-events-185c65bd",
+      "name": "MarketAcross Events",
+      "urls": {
+        "homepage": "https://marketacross.com/crypto-events",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-8178-b26b-da3fd6c40650",
+          "notion_metadata": {
+            "type_tags": [
+              "crypto/blockchain | info & events"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-05-13 12:47:58Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "crypto/blockchain | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-meetup-com-9efd2905",
+      "name": "Meetup.com",
+      "urls": {
+        "homepage": "https://www.meetup.com/topics/bitcoin",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-81bb-b9a3-da6e7559a7bb",
+          "notion_metadata": {
+            "type_tags": [
+              "reg aggregator"
+            ],
+            "quality_rating": "★★★★",
+            "last_edited_at": "2026-04-29 09:21:41Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "reg aggregator"
+        ]
+      }
+    },
+    {
+      "id": "source-merehead-514fa347",
+      "name": "Merehead",
+      "urls": {
+        "homepage": "https://merehead.com/blog/top-crypto-events-and-conferences-2025",
+        "event_feed_url": null
+      },
+      "source_role": "editorial",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "fc72ff26-9d60-4ae9-9e7c-a610276ebf42",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | info base"
+            ],
+            "quality_rating": "★★",
+            "last_edited_at": "2026-04-27 15:29:59Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | info base"
+        ]
+      }
+    },
+    {
+      "id": "source-newhedge-c502d681",
+      "name": "Newhedge",
+      "urls": {
+        "homepage": "https://newhedge.io/tools/conferences",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "29316b48-2292-8099-9e53-e5dfc2513359",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | info & events"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-05-13 06:11:17Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-opa-club-orange-62d717ed",
+      "name": "OPA / Club Orange",
+      "urls": {
+        "homepage": "https://www.theorangepillapp.com/",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-811e-b97a-d538041aaeaf",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | social app"
+            ],
+            "quality_rating": "★★★★★",
+            "last_edited_at": "2026-04-29 11:40:37Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | social app"
+        ]
+      }
+    },
+    {
+      "id": "planb-network",
+      "name": "Plan ₿ Network",
+      "urls": {
+        "homepage": "https://planb.network/en/events",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "static_html",
+      "geographic_coverage": "global",
+      "topic_coverage": [
+        "education",
+        "conference"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "planb-network",
+        "status": "configured"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★★★"
+        ],
+        "notes": "Global Bitcoin education network. Events + courses."
+      },
+      "provenance": [
+        {
+          "kind": "source_registry",
+          "record_ref": "sources/registry.json",
+          "registry_metadata": {
+            "priority": 2,
+            "topics": [
+              "education",
+              "conference"
+            ]
+          }
+        },
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-81df-9a63-e68f5b82f7fc",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | info base"
+            ],
+            "quality_rating": "★★★★★",
+            "last_edited_at": "2026-04-29 13:58:51Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | info base"
+        ]
+      }
+    },
+    {
+      "id": "source-plektos-nostr-581aedae",
+      "name": "Plektos (Nostr)",
+      "urls": {
+        "homepage": "https://plektos.app/",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-8173-a60f-e402d9417f8b",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | info & events"
+            ],
+            "quality_rating": "★★★★★",
+            "last_edited_at": "2026-05-13 07:51:24Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-polska-zaprasza-4d6c9b68",
+      "name": "Polska Zaprasza",
+      "urls": {
+        "homepage": "http://polska.zaprasza.eu/",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "PL"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-814e-80d1-c3c879f442e3",
+          "notion_metadata": {
+            "type_tags": [
+              "reg aggregator"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-05-13 07:34:20Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "reg aggregator"
+        ]
+      }
+    },
+    {
+      "id": "source-proof-of-conference-7cd4ac38",
+      "name": "Proof of Conference",
+      "urls": {
+        "homepage": "https://www.proofofconference.com/",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "2e716b48-2292-80e6-b2d0-f30dce51957e",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | info & events"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-05-13 06:14:37Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-qubika-eab880d9",
+      "name": "Qubika",
+      "urls": {
+        "homepage": "https://qubika.com/blog/list-of-blockchain-cryptocurrency-conferences",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-811e-9623-cd0513ec68df",
+          "notion_metadata": {
+            "type_tags": [
+              "crypto/blockchain | info & events"
+            ],
+            "quality_rating": "★★",
+            "last_edited_at": "2026-04-27 18:17:59Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "crypto/blockchain | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-readwrite-f3e047e5",
+      "name": "ReadWrite",
+      "urls": {
+        "homepage": "https://readwrite.com/cryptocurrency/best-crypto-conferences",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-818f-9469-ef10d16eee90",
+          "notion_metadata": {
+            "type_tags": [
+              "reg aggregator"
+            ],
+            "quality_rating": "★",
+            "last_edited_at": "2026-04-29 12:37:56Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "reg aggregator"
+        ]
+      }
+    },
+    {
+      "id": "source-reddit-bitcoin-8f79fa17",
+      "name": "Reddit - Bitcoin",
+      "urls": {
+        "homepage": "https://www.reddit.com/r/Bitcoin",
+        "event_feed_url": null
+      },
+      "source_role": "community",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-812c-82be-cfe8d1a919b6",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | social noise"
+            ],
+            "quality_rating": "★★",
+            "last_edited_at": "2026-04-22 05:46:05Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | social noise"
+        ]
+      }
+    },
+    {
+      "id": "source-river-60c6b64d",
+      "name": "RIVER",
+      "urls": {
+        "homepage": "https://river.com/learn/bitcoin-events-and-conferences",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "c6d39046-5a0a-4b39-8991-e3caf0ff3baa",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | info & events"
+            ],
+            "quality_rating": null,
+            "last_edited_at": "2026-04-27 15:27:13Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-satlantis-5080afd5",
+      "name": "Satlantis",
+      "urls": {
+        "homepage": "https://www.satlantis.io/",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-81b9-887d-edf9f13e5c5f",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | info & events"
+            ],
+            "quality_rating": "★★★★★",
+            "last_edited_at": "2026-05-13 08:21:08Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-stacker-news-11f29943",
+      "name": "Stacker News",
+      "urls": {
+        "homepage": "https://stacker.news/",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "2bf16b48-2292-80eb-b57c-d7962e1262ae",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | space / community"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-05-13 05:58:02Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | space / community"
+        ]
+      }
+    },
+    {
+      "id": "source-submittable-e8b48705",
+      "name": "Submittable",
+      "urls": {
+        "homepage": "https://www.submittable.com/",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-8133-8526-f1e7d37990de",
+          "notion_metadata": {
+            "type_tags": [
+              "reg aggregator | FILM / CULTURE"
+            ],
+            "quality_rating": "★★",
+            "last_edited_at": "2026-04-29 08:03:49Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "reg aggregator | FILM / CULTURE"
+        ]
+      }
+    },
+    {
+      "id": "source-substr-8b56cbf7",
+      "name": "Substr",
+      "urls": {
+        "homepage": "https://substr.network/s/events",
+        "event_feed_url": null
+      },
+      "source_role": "community",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34216b48-2292-80e8-b0fa-fc16ae6404fd",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | social noise"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-05-13 06:19:42Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | social noise"
+        ]
+      }
+    },
+    {
+      "id": "source-technopedia-cce73f0c",
+      "name": "Technopedia",
+      "urls": {
+        "homepage": "https://www.techopedia.com/best-crypto-conferences-to-attend",
+        "event_feed_url": null
+      },
+      "source_role": "editorial",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "2b62477c-f877-4ae9-b8ea-0e316255e18e",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | info base"
+            ],
+            "quality_rating": "★★",
+            "last_edited_at": "2026-08-12 15:01:02Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | info base"
+        ]
+      }
+    },
+    {
+      "id": "source-the-finance-data-4b2c1dca",
+      "name": "The Finance Data",
+      "urls": {
+        "homepage": "https://thefinancedata.com/events-and-conferences",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-81cd-af72-cdff314e00ed",
+          "notion_metadata": {
+            "type_tags": [
+              "crypto/blockchain | info & events"
+            ],
+            "quality_rating": "★★",
+            "last_edited_at": "2026-04-29 13:43:48Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "crypto/blockchain | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-time-out-6f7fe335",
+      "name": "Time Out",
+      "urls": {
+        "homepage": "https://www.timeout.com/europe",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "07b34fe8-75d4-4f01-b629-fe5112a7b815",
+          "notion_metadata": {
+            "type_tags": [
+              "reg aggregator | FILM / CULTURE"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-04-27 14:18:34Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "reg aggregator | FILM / CULTURE"
+        ]
+      }
+    },
+    {
+      "id": "source-tryp-0137002d",
+      "name": "Tryp",
+      "urls": {
+        "homepage": "https://www.tryp.com/en",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-814b-8f6b-effaa0153121",
+          "notion_metadata": {
+            "type_tags": [
+              "reg aggregator | FILM / CULTURE"
+            ],
+            "quality_rating": null,
+            "last_edited_at": "2026-04-29 12:00:48Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "reg aggregator | FILM / CULTURE"
+        ]
+      }
+    },
+    {
+      "id": "source-visit-europe-e8e1cc6c",
+      "name": "Visit Europe",
+      "urls": {
+        "homepage": "https://visiteurope.com/en/events",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-8196-afdd-e7589a67b9da",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | info & events"
+            ],
+            "quality_rating": "★★★★★",
+            "last_edited_at": "2026-04-29 12:49:28Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | info & events"
+        ]
+      }
+    },
+    {
+      "id": "source-wawf4free-74665c99",
+      "name": "WawF4Free",
+      "urls": {
+        "homepage": "https://waw4free.pl/?wydarzenia=dzisiaj&kolejne_dni=tak",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-815e-a88c-f3e4bf446c4c",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | social app"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-04-27 18:23:02Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | social app"
+        ]
+      }
+    },
+    {
+      "id": "source-wfcn-5bec0169",
+      "name": "WFCN",
+      "urls": {
+        "homepage": "https://www.wfcn.co/",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-81f8-8a6c-e6c9303f9b86",
+          "notion_metadata": {
+            "type_tags": [
+              "reg aggregator | FILM / CULTURE"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-04-29 11:32:21Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "reg aggregator | FILM / CULTURE"
+        ]
+      }
+    },
+    {
+      "id": "source-wiki-btc-a933d473",
+      "name": "Wiki BTC",
+      "urls": {
+        "homepage": "https://en.bitcoin.it/wiki/Meetups",
+        "event_feed_url": null
+      },
+      "source_role": "editorial",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "2fe719bb-1d4c-4d18-a823-83c9f6fcbbe3",
+          "notion_metadata": {
+            "type_tags": [
+              "BTC | info base"
+            ],
+            "quality_rating": "★",
+            "last_edited_at": "2026-05-12 14:51:05Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "BTC | info base"
+        ]
+      }
+    },
+    {
+      "id": "source-youreventfree-bc9d06fe",
+      "name": "Youreventfree",
+      "urls": {
+        "homepage": "https://www.youreventfree.com/",
+        "event_feed_url": null
+      },
+      "source_role": "discovery",
+      "source_type": "unreviewed",
+      "geographic_coverage": null,
+      "topic_coverage": [],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "not_reviewed",
+        "status": "unreviewed"
+      },
+      "monitoring": {
+        "status": "unreviewed",
+        "cadence_days": null,
+        "last_checked": null,
+        "decision_reason": null
+      },
+      "quality": {
+        "ratings": [
+          "★★★"
+        ],
+        "notes": null
+      },
+      "provenance": [
+        {
+          "kind": "notion_source_inventory",
+          "record_ref": "34a16b48-2292-81c9-966a-cc0d06259e49",
+          "notion_metadata": {
+            "type_tags": [
+              "reg aggregator"
+            ],
+            "quality_rating": "★★★",
+            "last_edited_at": "2026-08-12 15:59:23Z"
+          }
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": [
+          "reg aggregator"
+        ]
+      }
+    }
+  ]
+}

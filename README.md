@@ -1,5 +1,22 @@
 # awesome-bitcoin-events
-Calendar of international bitcoin events (not local meetups)
+Calendar and source-aware dataset for international Bitcoin events.
+
+## Versioned data: GitHub is the source of truth
+
+There is no cPanel database. Interfaces consume the versioned JSON files in this repository:
+
+- `data/events.json` - 105 normalized records: 61 losslessly migrated legacy records and 44 current/future candidates collected from reviewed sources.
+- `data/sources.json` - 110 unique source records, mapped from the 102-record Notion inventory plus the repository source registry.
+- `data/schema/event-dataset.schema.json` - interface-neutral JSON Schema.
+- `sources/raw/` - immutable research/collection snapshots; each event retains its source observation and verification state.
+
+The event dataset records dates, location, type, topics, organizer, official and registration links, lifecycle status, verification confidence, source observations, and the untouched legacy payload. A calendar, map, search page, API, or future submission workflow can all use the same contract. Discovery records are deliberately not presented as confirmed official events.
+
+See `data/README.md` for the contract and `sources/SOURCE-INTAKE.md` for the URL-review workflow.
+
+## Legacy editor table
+
+The table below is preserved from the legacy frontend. It is not the canonical data layer.
 
 | When            | Conference                                                                                                                     | Website                                               | Where                    |
 |-----------------|-------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------|--------------------------|

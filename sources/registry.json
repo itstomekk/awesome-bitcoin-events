@@ -1,0 +1,212 @@
+{
+  "version": "1.0",
+  "description": "Source registry for Bitcoin events ingestion. Each source has an adapter that knows how to parse it.",
+  "sources": [
+    {
+      "id": "bitcoin-org",
+      "name": "Bitcoin.org Events",
+      "url": "https://bitcoin.org/en/events",
+      "type": "static_html",
+      "role": "canonical",
+      "adapter": "bitcoin-org",
+      "priority": 1,
+      "geo": "global",
+      "topics": ["all"],
+      "feed_url": null,
+      "notes": "Community-maintained, GitHub issue submissions. Gold standard reference."
+    },
+    {
+      "id": "btc-inc",
+      "name": "BTC Inc / The Bitcoin Conference",
+      "url": "https://www.b.tc/conference",
+      "type": "static_html",
+      "role": "canonical",
+      "adapter": "btc-inc",
+      "priority": 1,
+      "geo": "global",
+      "topics": ["conference"],
+      "feed_url": "https://tickets.b.tc/event",
+      "notes": "Flagship series: Bitcoin Conference, Bitcoin Asia, Bitcoin Amsterdam, Bitcoin MENA."
+    },
+    {
+      "id": "bitcoin-bundesverband",
+      "name": "Bitcoin Bundesverband",
+      "url": "https://bitcoin-bundesverband.de/en/events/",
+      "type": "html_calendar",
+      "role": "discovery",
+      "adapter": "pending",
+      "priority": 3,
+      "geo": "Germany",
+      "topics": ["meetup", "conference", "workshop"],
+      "feed_url": null,
+      "notes": "German Bitcoin association. The page advertises iCal export, but the supplied export route returned 404 on 2026-09-16; use the event page until a working feed is confirmed.",
+      "monitoring": {
+        "status": "low_yield_probe",
+        "cadence_days": 30,
+        "last_checked": "2026-09-16",
+        "last_result": {
+          "events_found": 1,
+          "upcoming_events": 0,
+          "unique_events": 0,
+          "stale_event": "BTC Prague 2026 ended 2026-06-13"
+        },
+        "decision_reason": "Keep as a monthly German discovery source. Upgrade to weekly only after it yields a current, unique event or a working structured feed."
+      }
+    },
+    {
+      "id": "planb-network",
+      "name": "Plan ₿ Network",
+      "url": "https://planb.network/en/events",
+      "type": "static_html",
+      "role": "discovery",
+      "adapter": "planb-network",
+      "priority": 2,
+      "geo": "global",
+      "topics": ["education", "conference"],
+      "feed_url": null,
+      "notes": "Global Bitcoin education network. Events + courses."
+    },
+    {
+      "id": "bitdevs",
+      "name": "BitDevs Network",
+      "url": "https://bitdevs.org/",
+      "type": "static_html",
+      "role": "discovery",
+      "adapter": "bitdevs",
+      "priority": 2,
+      "geo": "global",
+      "topics": ["developer", "protocol", "socratic"],
+      "feed_url": null,
+      "notes": "Decentralised network of local Bitcoin dev meetups. Each city has own site + RSS."
+    },
+    {
+      "id": "bitcoin-plus",
+      "name": "bitcoin++",
+      "url": "https://btcpp.dev/",
+      "type": "static_html",
+      "role": "canonical",
+      "adapter": "btcpp",
+      "priority": 2,
+      "geo": "global",
+      "topics": ["developer", "technical"],
+      "feed_url": null,
+      "notes": "Technical Bitcoin conference series. 17+ editions."
+    },
+    {
+      "id": "btc-events-map",
+      "name": "BTC Events Map",
+      "url": "https://btceventsmap.com/",
+      "type": "static_html",
+      "role": "discovery",
+      "adapter": "btc-events-map",
+      "priority": 3,
+      "geo": "global",
+      "topics": ["all"],
+      "feed_url": null,
+      "notes": "Community map. Good for discovery, needs verification."
+    },
+    {
+      "id": "bitcoin-magazine",
+      "name": "Bitcoin Magazine Industry Events",
+      "url": "https://bitcoinmagazine.com/industry-events",
+      "type": "static_html",
+      "role": "editorial",
+      "adapter": "bitcoin-magazine",
+      "priority": 3,
+      "geo": "global",
+      "topics": ["all"],
+      "feed_url": null,
+      "notes": "Editorial coverage, not a structured calendar. Useful for discovery."
+    },
+    {
+      "id": "luma-crypto",
+      "name": "Luma Crypto",
+      "url": "https://luma.com/crypto",
+      "type": "static_html",
+      "role": "discovery",
+      "adapter": "luma",
+      "priority": 3,
+      "geo": "global",
+      "topics": ["all"],
+      "feed_url": null,
+      "notes": "638 events, 38K subscribers. High noise, good coverage."
+    },
+    {
+      "id": "eventbrite-bitcoin",
+      "name": "Eventbrite Bitcoin",
+      "url": "https://www.eventbrite.com/d/online/bitcoin/",
+      "type": "static_html",
+      "role": "discovery",
+      "adapter": "eventbrite",
+      "priority": 3,
+      "geo": "global",
+      "topics": ["meetup", "workshop", "course"],
+      "feed_url": null,
+      "notes": "Massive reach. Mostly small local meetups and online courses."
+    },
+    {
+      "id": "francis-mars-events",
+      "name": "Francis Mars Bitcoin Events",
+      "url": "https://www.francismars.com/events/",
+      "type": "static_html",
+      "role": "discovery",
+      "adapter": "pending",
+      "priority": 2,
+      "geo": "global",
+      "topics": ["conference", "meetup", "retreat"],
+      "feed_url": null,
+      "notes": "Community-built Bitcoin event catalogue. Discovery evidence only until each event has an official page."
+    },
+    {
+      "id": "bitcoinonly-events",
+      "name": "BitcoinOnly Events",
+      "url": "https://bitcoinonly.events/",
+      "type": "static_html",
+      "role": "discovery",
+      "adapter": "pending",
+      "priority": 2,
+      "geo": "global",
+      "topics": ["conference", "meetup", "workshop"],
+      "feed_url": null,
+      "notes": "Bitcoin-only directory with affiliate content. Useful for discovery; dates and links require official-source verification."
+    },
+    {
+      "id": "crypto-events-global",
+      "name": "CryptoEvents Global",
+      "url": "https://cryptoevents.global/",
+      "type": "static_html",
+      "role": "discovery",
+      "adapter": "pending",
+      "priority": 3,
+      "geo": "global",
+      "topics": ["all"],
+      "feed_url": null,
+      "notes": "Broad crypto/Web3 directory. Retain only clearly Bitcoin-relevant candidates and verify them elsewhere."
+    },
+    {
+      "id": "legacy-repo-2025",
+      "name": "awesome-bitcoin-events legacy dataset",
+      "url": "https://github.com/itstomekk/awesome-bitcoin-events/blob/main/events.json",
+      "type": "repository_json",
+      "role": "dead_or_archived",
+      "adapter": "legacy-import",
+      "priority": 0,
+      "geo": "global",
+      "topics": ["all"],
+      "feed_url": null,
+      "notes": "Read-only provenance for the original 61-record 2025 dataset. It is retained for auditability, not monitored for new events."
+    }
+  ],
+  "monitoring": {
+    "policy_version": "1.0",
+    "default_cadence_days": 7,
+    "cadence_rules": {
+      "1_day": "Canonical source with a structured feed, a confirmed update in the last 30 days, or an event starting within 30 days.",
+      "7_days": "Healthy source with at least one current, verified, unique event in the last two checks.",
+      "14_days": "Useful but low-volume source, or a source with no unique event in its last two checks.",
+      "30_days": "Stale, past-only, inaccessible, or low-yield source kept for future recovery."
+    },
+    "upgrade_rule": "A source moves up one cadence tier only after a successful fetch produces at least one current, unique event with an official event URL.",
+    "downgrade_rule": "A source moves down one cadence tier after two consecutive no-change checks; after three, mark it dormant but retain its history."
+  }
+}
