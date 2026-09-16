@@ -67,6 +67,19 @@
       "notes": "Global Bitcoin education network. Events + courses."
     },
     {
+      "id": "lugano-plan-b",
+      "name": "Lugano's Plan B Forum",
+      "url": "https://planb.lugano.ch/planb-forum/",
+      "type": "static_html",
+      "role": "canonical",
+      "adapter": "planb-forum",
+      "priority": 1,
+      "geo": "Switzerland",
+      "topics": ["conference", "adoption", "policy", "economics"],
+      "feed_url": null,
+      "notes": "Official Lugano Plan B Forum page and ticketing links."
+    },
+    {
       "id": "bitdevs",
       "name": "BitDevs Network",
       "url": "https://bitdevs.org/",
@@ -91,6 +104,19 @@
       "topics": ["developer", "technical"],
       "feed_url": null,
       "notes": "Technical Bitcoin conference series. 17+ editions."
+    },
+    {
+      "id": "tabconf",
+      "name": "TABConf",
+      "url": "https://tabconf.com/",
+      "type": "static_html",
+      "role": "canonical",
+      "adapter": "tabconf",
+      "priority": 1,
+      "geo": "global",
+      "topics": ["developer", "technical", "community"],
+      "feed_url": "https://schedule.tabconf.com/",
+      "notes": "Volunteer-driven technical Bitcoin conference. Current edition pages are hosted under versioned subdomains."
     },
     {
       "id": "btc-events-map",
@@ -195,6 +221,19 @@
       "topics": ["all"],
       "feed_url": null,
       "notes": "Read-only provenance for the original 61-record 2025 dataset. It is retained for auditability, not monitored for new events."
+    },
+    {
+      "id": "bitcoin-events-south-africa",
+      "name": "Bitcoin Events South Africa",
+      "url": "https://bitcoinevents.co.za/",
+      "type": "static_html",
+      "role": "canonical",
+      "adapter": "bitcoin-events",
+      "priority": 2,
+      "geo": "South Africa",
+      "topics": ["conference", "africa", "blockchain"],
+      "feed_url": null,
+      "notes": "Official organizer site. Broad blockchain scope; Bitcoin relevance and individual event details should be reviewed."
     }
   ],
   "monitoring": {

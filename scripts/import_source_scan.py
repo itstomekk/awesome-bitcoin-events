@@ -37,6 +37,30 @@ def canonical_id(title: str, start: date, city: str | None) -> str:
     return f"evt-{slugify(title)}-{start.isoformat()}-{location}"
 
 
+def event_merge_key(event: dict[str, Any]) -> tuple[str, str, str, str] | None:
+    title = event.get("title")
+    dates = event.get("dates")
+    location = event.get("location")
+    if not isinstance(title, str) or not isinstance(dates, dict) or not isinstance(location, dict):
+        return None
+    start = dates.get("start")
+    end = dates.get("end")
+    city = location.get("city")
+    if not all(isinstance(value, str) and value for value in (start, end, city)):
+        return None
+    title_without_year = re.sub(r"\b20\d{2}\b", "", title)
+    return (slugify(title_without_year), start, end, slugify(city))
+
+
+VERIFICATION_STATE_RANK = {
+    "legacy_imported": 0,
+    "discovery_only": 1,
+    "needs_review": 1,
+    "official_page_seen": 2,
+}
+CONFIDENCE_RANK = {"unverified": 0, "low": 1, "medium": 2, "high": 3}
+
+
 def normalize_url(value: str) -> str:
     parsed = urlsplit(value)
     path = parsed.path.rstrip("/") or "/"
@@ -100,7 +124,7 @@ def candidate_observations(candidate: dict[str, Any], source_access: dict[str, s
     return output
 
 
-def candidate_to_event(candidate: dict[str, Any], cutoff: date, source_access: dict[str, str], source_lookup: dict[str, str], scan_schema: str) -> dict[str, Any]:
+def candidate_to_event(candidate: dict[str, Any], cutoff: date, as_of: date, source_access: dict[str, str], source_lookup: dict[str, str], scan_schema: str) -> dict[str, Any]:
     title = candidate.get("title")
     if not isinstance(title, str) or not title.strip():
         raise ValueError("candidate title must be a non-empty string")
@@ -130,6 +154,14 @@ def candidate_to_event(candidate: dict[str, Any], cutoff: date, source_access: d
     if verification_state == "official_page_seen" and not official_url:
         verification_state = "needs_review"
         confidence = "low"
+    elif verification_state == "discovery_only" and not official_url:
+        distinct_sources = {observation["source_id"] for observation in observations}
+        if len(distinct_sources) >= 2:
+            verification_state = "needs_review"
+            confidence = "medium" if CONFIDENCE_RANK.get(confidence, 0) < CONFIDENCE_RANK["medium"] else confidence
+    last_verified_at = None
+    if verification_state == "official_page_seen":
+        last_verified_at = max(observation["observed_at"] for observation in observations)
 
     return {
         "id": canonical_id(title, start, location.get("city")),
@@ -165,11 +197,11 @@ def candidate_to_event(candidate: dict[str, Any], cutoff: date, source_access: d
         },
         "description": candidate.get("description"),
         "media": {"image_url": None},
-        "lifecycle": {"status": "announced", "published": None, "cancelled": False},
+        "lifecycle": {"status": "past" if end < as_of else "announced", "published": None, "cancelled": False},
         "verification": {
             "state": verification_state,
             "confidence": confidence,
-            "last_verified_at": None,
+            "last_verified_at": last_verified_at,
             "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical.",
         },
         "source_observations": observations,
@@ -195,6 +227,17 @@ def merge_event(existing: dict[str, Any], incoming: dict[str, Any]) -> None:
                 existing[group][key] = value
     if existing.get("description") is None and incoming.get("description") is not None:
         existing["description"] = incoming["description"]
+    if existing.get("series") is None and incoming.get("series") is not None:
+        existing["series"] = incoming["series"]
+    existing_verification = existing["verification"]
+    incoming_verification = incoming["verification"]
+    if VERIFICATION_STATE_RANK.get(incoming_verification["state"], 0) > VERIFICATION_STATE_RANK.get(existing_verification["state"], 0):
+        existing["verification"] = incoming_verification
+    elif (
+        VERIFICATION_STATE_RANK.get(incoming_verification["state"], 0) == VERIFICATION_STATE_RANK.get(existing_verification["state"], 0)
+        and CONFIDENCE_RANK.get(incoming_verification["confidence"], 0) > CONFIDENCE_RANK.get(existing_verification["confidence"], 0)
+    ):
+        existing_verification["confidence"] = incoming_verification["confidence"]
 
 
 def import_scan(dataset: dict[str, Any], scan: dict[str, Any], generated_at: str, source_directory: dict[str, Any] | None = None) -> dict[str, Any]:
@@ -202,7 +245,7 @@ def import_scan(dataset: dict[str, Any], scan: dict[str, Any], generated_at: str
         raise ValueError("dataset schema_version must be event-dataset-1.0")
     if scan.get("schema_version") != "research-source-scan-1.0":
         raise ValueError("scan schema_version must be research-source-scan-1.0")
-    datetime.fromisoformat(generated_at.replace("Z", "+00:00"))
+    generated_datetime = datetime.fromisoformat(generated_at.replace("Z", "+00:00"))
     cutoff = parse_day(scan.get("cutoff_date"), "cutoff_date")
     source_access = {
         source["source_id"]: source.get("access_method", "unknown")
@@ -214,18 +257,26 @@ def import_scan(dataset: dict[str, Any], scan: dict[str, Any], generated_at: str
     if not isinstance(records, list):
         raise ValueError("dataset events must be an array")
     by_id = {record.get("id"): record for record in records if isinstance(record, dict) and isinstance(record.get("id"), str)}
+    by_merge_key = {
+        event_merge_key(record): record
+        for record in records
+        if isinstance(record, dict) and event_merge_key(record) is not None
+    }
     candidates = scan.get("candidates")
     if not isinstance(candidates, list):
         raise ValueError("scan candidates must be an array")
     for candidate in candidates:
         if not isinstance(candidate, dict):
             raise ValueError("scan candidate must be an object")
-        event = candidate_to_event(candidate, cutoff, source_access, source_lookup, scan["schema_version"])
-        if event["id"] in by_id:
-            merge_event(by_id[event["id"]], event)
+        event = candidate_to_event(candidate, cutoff, generated_datetime.date(), source_access, source_lookup, scan["schema_version"])
+        existing = by_id.get(event["id"]) or by_merge_key.get(event_merge_key(event))
+        if existing is not None:
+            merge_event(existing, event)
         else:
             records.append(event)
             by_id[event["id"]] = event
+            if event_merge_key(event) is not None:
+                by_merge_key[event_merge_key(event)] = event
     records.sort(key=lambda event: (event["dates"]["start"], event["id"]))
     dataset["events"] = records
     dataset["records_total"] = len(records)

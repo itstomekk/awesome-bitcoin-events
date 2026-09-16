@@ -14,7 +14,7 @@
 - Unknown is `null`, never a guess.
 - Every event has at least one `source_observations` item.
 - `official_url` means an organizer-owned or organizer-confirmed page. A listing URL belongs in the source observation.
-- Discovery records are kept but must use `verification.state: "discovery_only"`; public UIs can hide or label them.
+- Discovery records are kept but must use `verification.state: "discovery_only"`; public UIs can hide or label them. Multiple directory matches without an organizer-owned `official_url` use `needs_review`, not official confirmation.
 - Source observations use a stable `source_id` from `sources.json`; `reported_source_id`, when present, preserves the identifier used by the original scan.
 - The `legacy_payload` object holds every original `events.json` field verbatim, so the migration is lossless.
 - Future source-specific attributes belong under `extensions`, not in a UI component or a one-off page.

@@ -1,0 +1,41 @@
+{
+  "schema_version": "research-source-scan-1.0",
+  "reviewer": "hermes-standalone-research",
+  "reviewed_at": "2026-09-16T14:30:00Z",
+  "cutoff_date": "2026-06-01",
+  "sources": [{"source_id": "bitcoin-bundesverband", "access_method": "web_extract"}, {"source_id": "btc-inc", "access_method": "web_extract"}],
+  "candidates": [
+    {
+      "title": "BTC Prague 2026",
+      "series": "BTC Prague",
+      "start_date": "2026-06-10",
+      "end_date": "2026-06-13",
+      "event_type": "conference",
+      "topics": ["adoption", "prague"],
+      "description": "BTC Prague 2026, confirmed as a historical event from the Bitcoin Bundesverband listing and detail page.",
+      "organizer": "BTC Prague",
+      "official_url": "https://btcprague.com/",
+      "registration_url": null,
+      "location": {"venue": "BTC Prague, Beranových 667", "city": "Praha", "region": null, "country": "Czech Republic", "country_code": "CZ"},
+      "source_observations": [{"source_id": "bitcoin-bundesverband", "source_url": "https://bitcoin-bundesverband.de/en/events/", "event_url": "https://bitcoin-bundesverband.de/en/event/btc-prague-2026/", "observed_at": "2026-09-16T00:00:00Z", "raw_excerpt": "BTC Prague 2026, 10–13 June 2026, Praha, Czech Republic."}],
+      "verification_state": "official_page_seen",
+      "confidence": "high"
+    },
+    {
+      "title": "Bitcoin Asia 2026",
+      "series": "Bitcoin Asia",
+      "start_date": "2026-08-27",
+      "end_date": "2026-08-28",
+      "event_type": "conference",
+      "topics": ["adoption", "asian-community"],
+      "description": "Bitcoin Asia 2026, confirmed as a historical event from BTC Inc's official conference listing.",
+      "organizer": "BTC Inc",
+      "official_url": "https://asia.b.tc/2026",
+      "registration_url": "https://tickets.b.tc/event/bitcoin-hong-kong-2026/tickets",
+      "location": {"venue": "Hong Kong Convention and Exhibition Centre", "city": "Hong Kong", "region": null, "country": "Hong Kong SAR", "country_code": "HK"},
+      "source_observations": [{"source_id": "btc-inc", "source_url": "https://www.b.tc/conference", "event_url": "https://asia.b.tc/2026", "observed_at": "2026-09-16T14:28:00Z", "raw_excerpt": "Bitcoin Asia, Hong Kong Convention Centre, August 27–28, 2026"}],
+      "verification_state": "official_page_seen",
+      "confidence": "high"
+    }
+  ]
+}

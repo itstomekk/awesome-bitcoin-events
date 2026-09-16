@@ -1,7 +1,7 @@
 {
   "schema_version": "event-dataset-1.0",
-  "generated_at": "2026-09-16T18:30:51Z",
-  "records_total": 105,
+  "generated_at": "2026-09-16T20:27:57Z",
+  "records_total": 108,
   "dataset_scope": "legacy-import+source-candidates",
   "events": [
     {
@@ -60,7 +60,7 @@
           "source_url": "events.json",
           "event_url": "https://bitcoinmedellin.com",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 1,
           "fields_observed": [
@@ -155,7 +155,7 @@
           "source_url": "events.json",
           "event_url": "https://bitcoinday.io",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 2,
           "fields_observed": [
@@ -250,7 +250,7 @@
           "source_url": "events.json",
           "event_url": "https://za25.adoptingbitcoin.org/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 3,
           "fields_observed": [
@@ -345,7 +345,7 @@
           "source_url": "events.json",
           "event_url": "https://www.meetup.com/bitcoinpark/events/304092624/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 4,
           "fields_observed": [
@@ -440,7 +440,7 @@
           "source_url": "events.json",
           "event_url": "https://www.bitcoinfreedomfestival.com/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 5,
           "fields_observed": [
@@ -535,7 +535,7 @@
           "source_url": "events.json",
           "event_url": "https://btcplusplus.dev/conf/floripa",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 6,
           "fields_observed": [
@@ -630,7 +630,7 @@
           "source_url": "events.json",
           "event_url": "https://lu.ma/bitcoininvestorweek",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 7,
           "fields_observed": [
@@ -725,7 +725,7 @@
           "source_url": "events.json",
           "event_url": "https://bitcoin-renaissance.com/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 8,
           "fields_observed": [
@@ -820,7 +820,7 @@
           "source_url": "events.json",
           "event_url": "https://www.apres.tech/bitcoin-ski-summit-2024",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 9,
           "fields_observed": [
@@ -915,7 +915,7 @@
           "source_url": "events.json",
           "event_url": "https://bitcoinalive.io/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 10,
           "fields_observed": [
@@ -1010,7 +1010,7 @@
           "source_url": "events.json",
           "event_url": "https://btcvortex.com",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 11,
           "fields_observed": [
@@ -1105,7 +1105,7 @@
           "source_url": "events.json",
           "event_url": "https://bitcointakeover.org/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 12,
           "fields_observed": [
@@ -1200,7 +1200,7 @@
           "source_url": "events.json",
           "event_url": "https://bitcoinbushbash.info/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 13,
           "fields_observed": [
@@ -1295,7 +1295,7 @@
           "source_url": "events.json",
           "event_url": "https://optoutconf.com/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 14,
           "fields_observed": [
@@ -1390,7 +1390,7 @@
           "source_url": "events.json",
           "event_url": "https://bitblockboom.com/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 15,
           "fields_observed": [
@@ -1485,7 +1485,7 @@
           "source_url": "events.json",
           "event_url": "https://mitbtcexpo.org/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 16,
           "fields_observed": [
@@ -1580,7 +1580,7 @@
           "source_url": "events.json",
           "event_url": "https://www.cheatcode.co.uk/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 18,
           "fields_observed": [
@@ -1675,7 +1675,7 @@
           "source_url": "events.json",
           "event_url": "https://opnext.dev/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 17,
           "fields_observed": [
@@ -1770,7 +1770,7 @@
           "source_url": "events.json",
           "event_url": "https://bitcoinreservesummit.com/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 19,
           "fields_observed": [
@@ -1865,7 +1865,7 @@
           "source_url": "events.json",
           "event_url": "https://swiss-bitcoin-conference.com/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 20,
           "fields_observed": [
@@ -1960,7 +1960,7 @@
           "source_url": "events.json",
           "event_url": "http://www.bitcoin-oasis.com",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 21,
           "fields_observed": [
@@ -2055,7 +2055,7 @@
           "source_url": "events.json",
           "event_url": "https://www.microstrategy.com/en/world/bitcoin-for-corporations",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 22,
           "fields_observed": [
@@ -2150,7 +2150,7 @@
           "source_url": "events.json",
           "event_url": "https://btcplusplus.dev/conf/atx25",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 24,
           "fields_observed": [
@@ -2245,7 +2245,7 @@
           "source_url": "events.json",
           "event_url": "https://tuscanysummit.com/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 23,
           "fields_observed": [
@@ -2340,7 +2340,7 @@
           "source_url": "events.json",
           "event_url": "https://bitcareforum.it/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 25,
           "fields_observed": [
@@ -2435,7 +2435,7 @@
           "source_url": "events.json",
           "event_url": "https://pizzaday.cz/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 26,
           "fields_observed": [
@@ -2530,7 +2530,7 @@
           "source_url": "events.json",
           "event_url": "https://bitcoinfilmfest.com/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 27,
           "fields_observed": [
@@ -2625,7 +2625,7 @@
           "source_url": "events.json",
           "event_url": "https://www.bitcoinireland.eu/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 28,
           "fields_observed": [
@@ -2720,7 +2720,7 @@
           "source_url": "events.json",
           "event_url": "https://oslofreedomforum.com/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 29,
           "fields_observed": [
@@ -2815,7 +2815,7 @@
           "source_url": "events.json",
           "event_url": "https://b.tc/conference/2025",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 30,
           "fields_observed": [
@@ -2910,7 +2910,7 @@
           "source_url": "events.json",
           "event_url": "https://www.breizhbitcoin.com/bitcoin-economic-forum/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 31,
           "fields_observed": [
@@ -3005,7 +3005,7 @@
           "source_url": "events.json",
           "event_url": "http://bitcoinseoul.kr",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 32,
           "fields_observed": [
@@ -3100,7 +3100,7 @@
           "source_url": "events.json",
           "event_url": "https://bitcoinday.io",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 33,
           "fields_observed": [
@@ -3195,7 +3195,7 @@
           "source_url": "events.json",
           "event_url": "https://www.bitcoinbay.live/sound-money-soiree",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 34,
           "fields_observed": [
@@ -3290,7 +3290,7 @@
           "source_url": "events.json",
           "event_url": "https://btcprague.com/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 35,
           "fields_observed": [
@@ -3385,7 +3385,7 @@
           "source_url": "events.json",
           "event_url": "https://www.bitcoincorporateday.com/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 36,
           "fields_observed": [
@@ -3480,7 +3480,7 @@
           "source_url": "events.json",
           "event_url": "https://www.btcpolicysummit.org/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 37,
           "fields_observed": [
@@ -3575,7 +3575,7 @@
           "source_url": "events.json",
           "event_url": "https://bitcoinrodeo.com",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 38,
           "fields_observed": [
@@ -3670,7 +3670,7 @@
           "source_url": "events.json",
           "event_url": "https://mallorcablockchaindays.com/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 39,
           "fields_observed": [
@@ -3765,7 +3765,7 @@
           "source_url": "events.json",
           "event_url": "https://x.com/BTCZitadelle",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 40,
           "fields_observed": [
@@ -3860,7 +3860,7 @@
           "source_url": "events.json",
           "event_url": "http://www.bitcoinisforeveryone.com",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 41,
           "fields_observed": [
@@ -3955,7 +3955,7 @@
           "source_url": "events.json",
           "event_url": "https://twitter.com/LakeSatoshi",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 42,
           "fields_observed": [
@@ -4050,7 +4050,7 @@
           "source_url": "events.json",
           "event_url": "https://btcplusplus.dev/conf/riga",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 43,
           "fields_observed": [
@@ -4145,7 +4145,7 @@
           "source_url": "events.json",
           "event_url": "https://budapestbitcoin.com/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 44,
           "fields_observed": [
@@ -4240,7 +4240,7 @@
           "source_url": "events.json",
           "event_url": "https://baltichoneybadger.com/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 45,
           "fields_observed": [
@@ -4335,7 +4335,7 @@
           "source_url": "events.json",
           "event_url": "https://btchel.com/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 46,
           "fields_observed": [
@@ -4430,7 +4430,7 @@
           "source_url": "events.json",
           "event_url": "https://www.learningbitcoin.ca/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 47,
           "fields_observed": [
@@ -4525,7 +4525,7 @@
           "source_url": "events.json",
           "event_url": "https://b.tc/conference/asia",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 48,
           "fields_observed": [
@@ -4620,7 +4620,7 @@
           "source_url": "events.json",
           "event_url": "https://btcplusplus.dev/conf/istanbul",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 50,
           "fields_observed": [
@@ -4715,7 +4715,7 @@
           "source_url": "events.json",
           "event_url": "http://bitcoinweekbali.xyz",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 49,
           "fields_observed": [
@@ -4810,7 +4810,7 @@
           "source_url": "events.json",
           "event_url": "https://bitcoinday.io",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 51,
           "fields_observed": [
@@ -4905,7 +4905,7 @@
           "source_url": "events.json",
           "event_url": "https://btcindc.com",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 52,
           "fields_observed": [
@@ -5000,7 +5000,7 @@
           "source_url": "events.json",
           "event_url": "https://btcplusplus.dev/conf/berlin25",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 53,
           "fields_observed": [
@@ -5095,7 +5095,7 @@
           "source_url": "events.json",
           "event_url": "https://wobitcoin.org/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 54,
           "fields_observed": [
@@ -5190,7 +5190,7 @@
           "source_url": "events.json",
           "event_url": "https://www.campnakamoto.com/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 55,
           "fields_observed": [
@@ -5285,7 +5285,7 @@
           "source_url": "events.json",
           "event_url": "https://tabconf.com/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 56,
           "fields_observed": [
@@ -5380,7 +5380,7 @@
           "source_url": "events.json",
           "event_url": "https://planb.lugano.ch/planb-forum/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 57,
           "fields_observed": [
@@ -5475,7 +5475,7 @@
           "source_url": "events.json",
           "event_url": "http://satsconf.com.br/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 58,
           "fields_observed": [
@@ -5570,7 +5570,7 @@
           "source_url": "events.json",
           "event_url": "https://sv25.adoptingbitcoin.org",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 59,
           "fields_observed": [
@@ -5665,7 +5665,7 @@
           "source_url": "events.json",
           "event_url": "https://www.afrobitcoin.org/",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 60,
           "fields_observed": [
@@ -5760,7 +5760,7 @@
           "source_url": "events.json",
           "event_url": "https://btcplusplus.dev/conf/taipei",
           "access_method": "repository_json",
-          "observed_at": "2026-09-16T18:30:51Z",
+          "observed_at": "2026-09-16T20:27:57Z",
           "reported_at": "2025-01-01",
           "legacy_record_id": 61,
           "fields_observed": [
@@ -5797,6 +5797,148 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      }
+    },
+    {
+      "id": "evt-btc-prague-2026-2026-06-10-praha",
+      "title": "BTC Prague 2026",
+      "series": "BTC Prague",
+      "dates": {
+        "start": "2026-06-10",
+        "end": "2026-06-13",
+        "timezone": null,
+        "precision": "day"
+      },
+      "location": {
+        "venue": "BTC Prague, Beranových 667",
+        "city": "Praha",
+        "region": null,
+        "country": "Czech Republic",
+        "country_code": "CZ",
+        "latitude": null,
+        "longitude": null,
+        "coordinates_precision": null
+      },
+      "classification": {
+        "event_type": "conference",
+        "topics": [
+          "adoption",
+          "prague"
+        ],
+        "bitcoin_relevance": "bitcoin_focused"
+      },
+      "organizer": {
+        "name": "BTC Prague",
+        "urls": []
+      },
+      "links": {
+        "official_url": "https://btcprague.com/",
+        "registration_url": null,
+        "livestream_url": null,
+        "social_urls": []
+      },
+      "description": "BTC Prague 2026, confirmed as a historical event from the Bitcoin Bundesverband listing and detail page.",
+      "media": {
+        "image_url": null
+      },
+      "lifecycle": {
+        "status": "past",
+        "published": null,
+        "cancelled": false
+      },
+      "verification": {
+        "state": "official_page_seen",
+        "confidence": "high",
+        "last_verified_at": "2026-09-16T00:00:00Z",
+        "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
+      },
+      "source_observations": [
+        {
+          "source_id": "bitcoin-bundesverband",
+          "reported_source_id": "bitcoin-bundesverband",
+          "source_url": "https://bitcoin-bundesverband.de/en/events/",
+          "event_url": "https://bitcoin-bundesverband.de/en/event/btc-prague-2026/",
+          "access_method": "web_extract",
+          "observed_at": "2026-09-16T00:00:00Z",
+          "raw_excerpt": "BTC Prague 2026, 10–13 June 2026, Praha, Czech Republic."
+        }
+      ],
+      "aliases": [],
+      "extensions": {
+        "source_scan": {
+          "schema_version": "research-source-scan-1.0"
+        }
+      }
+    },
+    {
+      "id": "evt-bitcoin-asia-2026-2026-08-27-hong-kong",
+      "title": "Bitcoin Asia 2026",
+      "series": "Bitcoin Asia",
+      "dates": {
+        "start": "2026-08-27",
+        "end": "2026-08-28",
+        "timezone": null,
+        "precision": "day"
+      },
+      "location": {
+        "venue": "Hong Kong Convention and Exhibition Centre",
+        "city": "Hong Kong",
+        "region": null,
+        "country": "Hong Kong SAR",
+        "country_code": "HK",
+        "latitude": null,
+        "longitude": null,
+        "coordinates_precision": null
+      },
+      "classification": {
+        "event_type": "conference",
+        "topics": [
+          "adoption",
+          "asian-community"
+        ],
+        "bitcoin_relevance": "bitcoin_focused"
+      },
+      "organizer": {
+        "name": "BTC Inc",
+        "urls": []
+      },
+      "links": {
+        "official_url": "https://asia.b.tc/2026",
+        "registration_url": "https://tickets.b.tc/event/bitcoin-hong-kong-2026/tickets",
+        "livestream_url": null,
+        "social_urls": []
+      },
+      "description": "Bitcoin Asia 2026, confirmed as a historical event from BTC Inc's official conference listing.",
+      "media": {
+        "image_url": null
+      },
+      "lifecycle": {
+        "status": "past",
+        "published": null,
+        "cancelled": false
+      },
+      "verification": {
+        "state": "official_page_seen",
+        "confidence": "high",
+        "last_verified_at": "2026-09-16T14:28:00Z",
+        "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
+      },
+      "source_observations": [
+        {
+          "source_id": "btc-inc",
+          "reported_source_id": "btc-inc",
+          "source_url": "https://www.b.tc/conference",
+          "event_url": "https://asia.b.tc/2026",
+          "access_method": "web_extract",
+          "observed_at": "2026-09-16T14:28:00Z",
+          "raw_excerpt": "Bitcoin Asia, Hong Kong Convention Centre, August 27–28, 2026"
+        }
+      ],
+      "aliases": [],
+      "extensions": {
+        "source_scan": {
+          "schema_version": "research-source-scan-1.0"
+        }
       }
     },
     {
@@ -5847,7 +5989,7 @@
         "cancelled": false
       },
       "verification": {
-        "state": "discovery_only",
+        "state": "needs_review",
         "confidence": "medium",
         "last_verified_at": null,
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
@@ -5926,7 +6068,7 @@
         "cancelled": false
       },
       "verification": {
-        "state": "discovery_only",
+        "state": "needs_review",
         "confidence": "medium",
         "last_verified_at": null,
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
@@ -6007,7 +6149,7 @@
         "cancelled": false
       },
       "verification": {
-        "state": "discovery_only",
+        "state": "needs_review",
         "confidence": "medium",
         "last_verified_at": null,
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
@@ -6168,7 +6310,7 @@
         "cancelled": false
       },
       "verification": {
-        "state": "discovery_only",
+        "state": "needs_review",
         "confidence": "medium",
         "last_verified_at": null,
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
@@ -6256,7 +6398,7 @@
         "cancelled": false
       },
       "verification": {
-        "state": "discovery_only",
+        "state": "needs_review",
         "confidence": "medium",
         "last_verified_at": null,
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
@@ -6416,7 +6558,7 @@
         "cancelled": false
       },
       "verification": {
-        "state": "discovery_only",
+        "state": "needs_review",
         "confidence": "medium",
         "last_verified_at": null,
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
@@ -6647,7 +6789,7 @@
         "cancelled": false
       },
       "verification": {
-        "state": "discovery_only",
+        "state": "needs_review",
         "confidence": "medium",
         "last_verified_at": null,
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
@@ -6731,7 +6873,7 @@
       "verification": {
         "state": "official_page_seen",
         "confidence": "medium",
-        "last_verified_at": null,
+        "last_verified_at": "2026-09-16T00:00:00Z",
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
       },
       "source_observations": [
@@ -6896,7 +7038,7 @@
         "cancelled": false
       },
       "verification": {
-        "state": "discovery_only",
+        "state": "needs_review",
         "confidence": "medium",
         "last_verified_at": null,
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
@@ -6975,7 +7117,7 @@
         "cancelled": false
       },
       "verification": {
-        "state": "discovery_only",
+        "state": "needs_review",
         "confidence": "medium",
         "last_verified_at": null,
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
@@ -7057,7 +7199,7 @@
         "cancelled": false
       },
       "verification": {
-        "state": "discovery_only",
+        "state": "needs_review",
         "confidence": "medium",
         "last_verified_at": null,
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
@@ -7171,7 +7313,7 @@
     {
       "id": "evt-tabconf-8-2026-10-12-atlanta",
       "title": "TABConf 8",
-      "series": null,
+      "series": "TABConf",
       "dates": {
         "start": "2026-10-12",
         "end": "2026-10-15",
@@ -7179,11 +7321,11 @@
         "precision": "day"
       },
       "location": {
-        "venue": null,
+        "venue": "Georgia Tech Exhibition Hall",
         "city": "Atlanta",
         "region": "Georgia",
         "country": "USA",
-        "country_code": null,
+        "country_code": "US",
         "latitude": null,
         "longitude": null,
         "coordinates_precision": null
@@ -7198,16 +7340,16 @@
         "bitcoin_relevance": "bitcoin_focused"
       },
       "organizer": {
-        "name": null,
+        "name": "TABConf",
         "urls": []
       },
       "links": {
-        "official_url": null,
-        "registration_url": null,
+        "official_url": "https://tabconf.com/",
+        "registration_url": "https://8.tabconf.com/",
         "livestream_url": null,
         "social_urls": []
       },
-      "description": null,
+      "description": "8th edition of the volunteer-driven technical Bitcoin conference.",
       "media": {
         "image_url": null
       },
@@ -7217,9 +7359,9 @@
         "cancelled": false
       },
       "verification": {
-        "state": "discovery_only",
-        "confidence": "medium",
-        "last_verified_at": null,
+        "state": "official_page_seen",
+        "confidence": "high",
+        "last_verified_at": "2026-09-16T14:28:00Z",
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
       },
       "source_observations": [
@@ -7249,6 +7391,15 @@
           "access_method": "web_extract",
           "observed_at": "2026-09-16T00:00:00Z",
           "raw_excerpt": "Oct 12-15 2026\nTABConf 2026\nAtlanta, GA"
+        },
+        {
+          "source_id": "tabconf",
+          "reported_source_id": "tabconf",
+          "source_url": "https://8.tabconf.com/venue",
+          "event_url": "https://8.tabconf.com/venue",
+          "access_method": "web_extract",
+          "observed_at": "2026-09-16T14:28:00Z",
+          "raw_excerpt": "Dates: October 12–15, 2026. Venue: Georgia Tech Exhibition Hall, Atlanta, Georgia."
         }
       ],
       "aliases": [],
@@ -7329,6 +7480,76 @@
       }
     },
     {
+      "id": "evt-blockchain-africa-conference-2026-2026-10-15-gauteng",
+      "title": "Blockchain Africa Conference 2026",
+      "series": "Blockchain Africa Conference",
+      "dates": {
+        "start": "2026-10-15",
+        "end": "2026-10-15",
+        "timezone": null,
+        "precision": "day"
+      },
+      "location": {
+        "venue": null,
+        "city": "Gauteng",
+        "region": null,
+        "country": "South Africa",
+        "country_code": "ZA",
+        "latitude": null,
+        "longitude": null,
+        "coordinates_precision": null
+      },
+      "classification": {
+        "event_type": "conference",
+        "topics": [
+          "african-community"
+        ],
+        "bitcoin_relevance": "bitcoin_focused"
+      },
+      "organizer": {
+        "name": "Bitcoin Events",
+        "urls": []
+      },
+      "links": {
+        "official_url": "https://bitcoinevents.co.za/",
+        "registration_url": null,
+        "livestream_url": null,
+        "social_urls": []
+      },
+      "description": "Annual Bitcoin and blockchain conference by Bitcoin Events Pty Ltd.",
+      "media": {
+        "image_url": null
+      },
+      "lifecycle": {
+        "status": "announced",
+        "published": null,
+        "cancelled": false
+      },
+      "verification": {
+        "state": "official_page_seen",
+        "confidence": "medium",
+        "last_verified_at": "2026-09-16T14:28:00Z",
+        "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
+      },
+      "source_observations": [
+        {
+          "source_id": "bitcoin-events-south-africa",
+          "reported_source_id": "bitcoin-events-south-africa",
+          "source_url": "https://bitcoinevents.co.za/",
+          "event_url": null,
+          "access_method": "web_extract",
+          "observed_at": "2026-09-16T14:28:00Z",
+          "raw_excerpt": "Upcoming Event: Blockchain Africa Conference 2026, 15 October, 2026, Gauteng, South Africa."
+        }
+      ],
+      "aliases": [],
+      "extensions": {
+        "source_scan": {
+          "schema_version": "research-source-scan-1.0"
+        }
+      }
+    },
+    {
       "id": "evt-bitcoin-bush-bash-busselton-2026-10-16-busselton",
       "title": "Bitcoin Bush Bash - Busselton",
       "series": null,
@@ -7375,7 +7596,7 @@
         "cancelled": false
       },
       "verification": {
-        "state": "discovery_only",
+        "state": "needs_review",
         "confidence": "medium",
         "last_verified_at": null,
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
@@ -7490,7 +7711,7 @@
     {
       "id": "evt-plan-forum-lugano-2026-2026-10-23-lugano",
       "title": "Plan ₿ Forum Lugano 2026",
-      "series": null,
+      "series": "Plan ₿ Forum",
       "dates": {
         "start": "2026-10-23",
         "end": "2026-10-24",
@@ -7498,11 +7719,11 @@
         "precision": "day"
       },
       "location": {
-        "venue": null,
+        "venue": "Palazzo dei Congressi / Villa Ciani",
         "city": "Lugano",
-        "region": null,
+        "region": "LU",
         "country": "Switzerland",
-        "country_code": null,
+        "country_code": "CH",
         "latitude": null,
         "longitude": null,
         "coordinates_precision": null
@@ -7515,16 +7736,16 @@
         "bitcoin_relevance": "bitcoin_focused"
       },
       "organizer": {
-        "name": null,
+        "name": "Lugano's Plan B",
         "urls": []
       },
       "links": {
-        "official_url": null,
-        "registration_url": null,
+        "official_url": "https://planb.lugano.ch/planb-forum/",
+        "registration_url": "https://planb.lugano.ch/product/peer-pass-2026/",
         "livestream_url": null,
         "social_urls": []
       },
-      "description": null,
+      "description": "Premier Bitcoin conference on nation-state Bitcoin adoption, economics, and financial freedom.",
       "media": {
         "image_url": null
       },
@@ -7534,9 +7755,9 @@
         "cancelled": false
       },
       "verification": {
-        "state": "discovery_only",
-        "confidence": "medium",
-        "last_verified_at": null,
+        "state": "official_page_seen",
+        "confidence": "high",
+        "last_verified_at": "2026-09-16T14:28:00Z",
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
       },
       "source_observations": [
@@ -7566,6 +7787,15 @@
           "access_method": "web_extract",
           "observed_at": "2026-09-16T00:00:00Z",
           "raw_excerpt": "Oct 23-24 2026\nPlan ₿ Forum 2026 Lugano\nLugano"
+        },
+        {
+          "source_id": "lugano-plan-b",
+          "reported_source_id": "lugano-plan-b",
+          "source_url": "https://planb.lugano.ch/planb-forum",
+          "event_url": "https://planb.lugano.ch/planb-forum",
+          "access_method": "web_extract",
+          "observed_at": "2026-09-16T14:28:00Z",
+          "raw_excerpt": "PLAN ₿ FORUM, 23-24 OCTOBER 2026, LUGANO. Two-day Conference at Convention Centre, Villa Ciani."
         }
       ],
       "aliases": [],
@@ -7693,7 +7923,7 @@
         "cancelled": false
       },
       "verification": {
-        "state": "discovery_only",
+        "state": "needs_review",
         "confidence": "medium",
         "last_verified_at": null,
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
@@ -8012,7 +8242,7 @@
     {
       "id": "evt-bitcoin-amsterdam-2026-2026-11-05-amsterdam",
       "title": "Bitcoin Amsterdam 2026",
-      "series": null,
+      "series": "Bitcoin Amsterdam",
       "dates": {
         "start": "2026-11-05",
         "end": "2026-11-06",
@@ -8020,11 +8250,11 @@
         "precision": "day"
       },
       "location": {
-        "venue": null,
+        "venue": "Sugar Factory",
         "city": "Amsterdam",
         "region": null,
         "country": "Netherlands",
-        "country_code": null,
+        "country_code": "NL",
         "latitude": null,
         "longitude": null,
         "coordinates_precision": null
@@ -8037,7 +8267,7 @@
         "bitcoin_relevance": "bitcoin_focused"
       },
       "organizer": {
-        "name": null,
+        "name": "BTC Inc",
         "urls": []
       },
       "links": {
@@ -8046,7 +8276,7 @@
         "livestream_url": null,
         "social_urls": []
       },
-      "description": null,
+      "description": "Bitcoin Amsterdam 2026, part of BTC Inc's international Bitcoin Conference series.",
       "media": {
         "image_url": null
       },
@@ -8057,8 +8287,8 @@
       },
       "verification": {
         "state": "official_page_seen",
-        "confidence": "medium",
-        "last_verified_at": null,
+        "confidence": "high",
+        "last_verified_at": "2026-09-16T00:00:00Z",
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
       },
       "source_observations": [
@@ -8088,6 +8318,15 @@
           "access_method": "web_search+web_extract",
           "observed_at": "2026-09-16T00:00:00Z",
           "raw_excerpt": "Sugar Factory November 5-6, 2026 Visit Website https://www.bitcoin.amsterdam/2026 Get Tickets https://www.bitcoin.amsterdam/tickets"
+        },
+        {
+          "source_id": "btc-inc",
+          "reported_source_id": "btc-inc",
+          "source_url": "https://www.b.tc/conference",
+          "event_url": "https://www.bitcoin.amsterdam/2026",
+          "access_method": "web_extract",
+          "observed_at": "2026-09-16T14:28:00Z",
+          "raw_excerpt": "Bitcoin Amsterdam, Sugar Factory, November 5–6, 2026"
         }
       ],
       "aliases": [],
@@ -8214,7 +8453,7 @@
         "cancelled": false
       },
       "verification": {
-        "state": "discovery_only",
+        "state": "needs_review",
         "confidence": "medium",
         "last_verified_at": null,
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
@@ -8293,7 +8532,7 @@
         "cancelled": false
       },
       "verification": {
-        "state": "discovery_only",
+        "state": "needs_review",
         "confidence": "medium",
         "last_verified_at": null,
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
@@ -8444,7 +8683,7 @@
         "cancelled": false
       },
       "verification": {
-        "state": "discovery_only",
+        "state": "needs_review",
         "confidence": "medium",
         "last_verified_at": null,
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
@@ -8523,7 +8762,7 @@
         "cancelled": false
       },
       "verification": {
-        "state": "discovery_only",
+        "state": "needs_review",
         "confidence": "medium",
         "last_verified_at": null,
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
@@ -8628,7 +8867,7 @@
     {
       "id": "evt-bitcoin-mena-2026-2026-12-07-abu-dhabi",
       "title": "Bitcoin MENA 2026",
-      "series": null,
+      "series": "Bitcoin MENA",
       "dates": {
         "start": "2026-12-07",
         "end": "2026-12-08",
@@ -8639,8 +8878,8 @@
         "venue": "ADNEC Center Abu Dhabi",
         "city": "Abu Dhabi",
         "region": null,
-        "country": null,
-        "country_code": null,
+        "country": "United Arab Emirates",
+        "country_code": "AE",
         "latitude": null,
         "longitude": null,
         "coordinates_precision": null
@@ -8654,7 +8893,7 @@
         "bitcoin_relevance": "bitcoin_focused"
       },
       "organizer": {
-        "name": null,
+        "name": "BTC Inc",
         "urls": []
       },
       "links": {
@@ -8663,7 +8902,7 @@
         "livestream_url": null,
         "social_urls": []
       },
-      "description": null,
+      "description": "Bitcoin MENA 2026, part of BTC Inc's international Bitcoin Conference series.",
       "media": {
         "image_url": null
       },
@@ -8674,8 +8913,8 @@
       },
       "verification": {
         "state": "official_page_seen",
-        "confidence": "medium",
-        "last_verified_at": null,
+        "confidence": "high",
+        "last_verified_at": "2026-09-16T00:00:00Z",
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
       },
       "source_observations": [
@@ -8714,6 +8953,24 @@
           "access_method": "web_extract+web_search",
           "observed_at": "2026-09-16T00:00:00Z",
           "raw_excerpt": "Bitcoin Abud Dhabi | MENA Conference 2026\nMon, Dec 7-8, 2026\nADNEC Centre Abu Dhabi"
+        },
+        {
+          "source_id": "btc-inc",
+          "reported_source_id": "btc-inc",
+          "source_url": "https://www.b.tc/conference",
+          "event_url": "https://tickets.b.tc/event/bitcoin-mena-2026",
+          "access_method": "web_extract",
+          "observed_at": "2026-09-16T14:28:00Z",
+          "raw_excerpt": "Bitcoin MENA, Abu Dhabi. [Get Tickets] https://tickets.b.tc/event/bitcoin-mena-2026/tickets"
+        },
+        {
+          "source_id": "btc-inc",
+          "reported_source_id": "btc-inc",
+          "source_url": "https://tickets.b.tc/event/bitcoin-mena-2026",
+          "event_url": "https://tickets.b.tc/event/bitcoin-mena-2026",
+          "access_method": "web_extract",
+          "observed_at": "2026-09-16T14:28:00Z",
+          "raw_excerpt": "Bitcoin MENA 2026, 12/7/2026 - 12/8/2026"
         }
       ],
       "aliases": [],
@@ -8841,7 +9098,7 @@
         "cancelled": false
       },
       "verification": {
-        "state": "discovery_only",
+        "state": "needs_review",
         "confidence": "medium",
         "last_verified_at": null,
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
@@ -9214,7 +9471,7 @@
       "verification": {
         "state": "official_page_seen",
         "confidence": "medium",
-        "last_verified_at": null,
+        "last_verified_at": "2026-09-16T00:00:00Z",
         "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
       },
       "source_observations": [

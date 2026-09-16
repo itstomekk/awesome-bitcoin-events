@@ -1,0 +1,99 @@
+{
+  "schema_version": "research-source-scan-1.0",
+  "reviewer": "hermes-standalone-research",
+  "reviewed_at": "2026-09-16T14:30:00Z",
+  "cutoff_date": "2026-09-16",
+  "sources": [
+    {"source_id": "tabconf", "access_method": "web_extract"},
+    {"source_id": "lugano-plan-b", "access_method": "web_extract"},
+    {"source_id": "btc-inc", "access_method": "web_extract"},
+    {"source_id": "bitcoin-events-south-africa", "access_method": "web_extract"},
+    {"source_id": "btc-events-map", "access_method": "web_extract"},
+    {"source_id": "bitcoin-only", "access_method": "web_extract"}
+  ],
+  "candidates": [
+    {
+      "title": "TABConf 8",
+      "series": "TABConf",
+      "start_date": "2026-10-12",
+      "end_date": "2026-10-15",
+      "event_type": "conference",
+      "topics": ["developer", "technical", "community"],
+      "description": "8th edition of the volunteer-driven technical Bitcoin conference.",
+      "organizer": "TABConf",
+      "official_url": "https://tabconf.com/",
+      "registration_url": "https://8.tabconf.com/",
+      "location": {"venue": "Georgia Tech Exhibition Hall", "city": "Atlanta", "region": "GA", "country": "United States", "country_code": "US"},
+      "source_observations": [{"source_id": "tabconf", "source_url": "https://8.tabconf.com/venue", "event_url": "https://8.tabconf.com/venue", "observed_at": "2026-09-16T14:28:00Z", "raw_excerpt": "Dates: October 12–15, 2026. Venue: Georgia Tech Exhibition Hall, Atlanta, Georgia."}],
+      "verification_state": "official_page_seen",
+      "confidence": "high"
+    },
+    {
+      "title": "Plan ₿ Forum Lugano",
+      "series": "Plan ₿ Forum",
+      "start_date": "2026-10-23",
+      "end_date": "2026-10-24",
+      "event_type": "conference",
+      "topics": ["adoption", "policy", "economics"],
+      "description": "Premier Bitcoin conference on nation-state Bitcoin adoption, economics, and financial freedom.",
+      "organizer": "Lugano's Plan B",
+      "official_url": "https://planb.lugano.ch/planb-forum/",
+      "registration_url": "https://planb.lugano.ch/product/peer-pass-2026/",
+      "location": {"venue": "Palazzo dei Congressi / Villa Ciani", "city": "Lugano", "region": "LU", "country": "Switzerland", "country_code": "CH"},
+      "source_observations": [{"source_id": "lugano-plan-b", "source_url": "https://planb.lugano.ch/planb-forum", "event_url": "https://planb.lugano.ch/planb-forum", "observed_at": "2026-09-16T14:28:00Z", "raw_excerpt": "PLAN ₿ FORUM, 23-24 OCTOBER 2026, LUGANO. Two-day Conference at Convention Centre, Villa Ciani."}],
+      "verification_state": "official_page_seen",
+      "confidence": "high"
+    },
+    {
+      "title": "Bitcoin MENA 2026",
+      "series": "Bitcoin MENA",
+      "start_date": "2026-12-07",
+      "end_date": "2026-12-08",
+      "event_type": "conference",
+      "topics": ["adoption", "institutional", "mining"],
+      "description": "Bitcoin MENA 2026, part of BTC Inc's international Bitcoin Conference series.",
+      "organizer": "BTC Inc",
+      "official_url": "https://mena.b.tc/",
+      "registration_url": "https://tickets.b.tc/event/bitcoin-mena-2026",
+      "location": {"venue": null, "city": "Abu Dhabi", "region": null, "country": "United Arab Emirates", "country_code": "AE"},
+      "source_observations": [
+        {"source_id": "btc-inc", "source_url": "https://www.b.tc/conference", "event_url": "https://tickets.b.tc/event/bitcoin-mena-2026", "observed_at": "2026-09-16T14:28:00Z", "raw_excerpt": "Bitcoin MENA, Abu Dhabi. [Get Tickets] https://tickets.b.tc/event/bitcoin-mena-2026/tickets"},
+        {"source_id": "btc-inc", "source_url": "https://tickets.b.tc/event/bitcoin-mena-2026", "event_url": "https://tickets.b.tc/event/bitcoin-mena-2026", "observed_at": "2026-09-16T14:28:00Z", "raw_excerpt": "Bitcoin MENA 2026, 12/7/2026 - 12/8/2026"}
+      ],
+      "verification_state": "official_page_seen",
+      "confidence": "high"
+    },
+    {
+      "title": "Bitcoin Amsterdam 2026",
+      "series": "Bitcoin Amsterdam",
+      "start_date": "2026-11-05",
+      "end_date": "2026-11-06",
+      "event_type": "conference",
+      "topics": ["adoption", "european-community"],
+      "description": "Bitcoin Amsterdam 2026, part of BTC Inc's international Bitcoin Conference series.",
+      "organizer": "BTC Inc",
+      "official_url": "https://www.bitcoin.amsterdam/2026",
+      "registration_url": "https://www.bitcoin.amsterdam/tickets",
+      "location": {"venue": "Sugar Factory", "city": "Amsterdam", "region": null, "country": "Netherlands", "country_code": "NL"},
+      "source_observations": [{"source_id": "btc-inc", "source_url": "https://www.b.tc/conference", "event_url": "https://www.bitcoin.amsterdam/2026", "observed_at": "2026-09-16T14:28:00Z", "raw_excerpt": "Bitcoin Amsterdam, Sugar Factory, November 5–6, 2026"}],
+      "verification_state": "official_page_seen",
+      "confidence": "high"
+    },
+    {
+      "title": "Blockchain Africa Conference 2026",
+      "series": "Blockchain Africa Conference",
+      "start_date": "2026-10-15",
+      "end_date": "2026-10-15",
+      "event_type": "conference",
+      "topics": ["african-community"],
+      "description": "Annual Bitcoin and blockchain conference by Bitcoin Events Pty Ltd.",
+      "organizer": "Bitcoin Events",
+      "official_url": "https://bitcoinevents.co.za/",
+      "registration_url": null,
+      "location": {"venue": null, "city": "Gauteng", "region": null, "country": "South Africa", "country_code": "ZA"},
+      "source_observations": [{"source_id": "bitcoin-events-south-africa", "source_url": "https://bitcoinevents.co.za/", "event_url": null, "observed_at": "2026-09-16T14:28:00Z", "raw_excerpt": "Upcoming Event: Blockchain Africa Conference 2026, 15 October, 2026, Gauteng, South Africa."}],
+      "verification_state": "official_page_seen",
+      "confidence": "medium"
+    }
+  ]
+}

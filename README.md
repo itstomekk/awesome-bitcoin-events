@@ -5,8 +5,8 @@ Calendar and source-aware dataset for international Bitcoin events.
 
 There is no cPanel database. Interfaces consume the versioned JSON files in this repository:
 
-- `data/events.json` - 105 normalized records: 61 losslessly migrated legacy records and 44 current/future candidates collected from reviewed sources.
-- `data/sources.json` - 110 unique source records, mapped from the 102-record Notion inventory plus the repository source registry.
+- `data/events.json` - 108 normalized records: 61 losslessly migrated legacy records and 47 current/future or historical candidates collected from reviewed sources.
+- `data/sources.json` - 113 unique source records, mapped from the 102-record Notion inventory plus the repository source registry.
 - `data/schema/event-dataset.schema.json` - interface-neutral JSON Schema.
 - `sources/raw/` - immutable research/collection snapshots; each event retains its source observation and verification state.
 
