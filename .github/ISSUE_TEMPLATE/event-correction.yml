@@ -1,0 +1,61 @@
+name: Report an event change
+description: Report a correction, cancellation, duplicate, or outdated event record
+title: "[Event correction] "
+labels:
+  - event-correction
+  - needs-review
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping maintain the calendar. Please report **one event change per issue** and include the public source that supports it.
+
+  - type: input
+    id: event
+    attributes:
+      label: Event name or page URL
+      description: Include the event title or its Awesome Bitcoin Events detail URL.
+      placeholder: LABITCONF 2026 or https://itstomekk.github.io/awesome-bitcoin-events/events/...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: change-type
+    attributes:
+      label: What changed?
+      options:
+        - Date or timezone
+        - Venue or location
+        - Official URL
+        - Registration URL
+        - Cancellation or postponement
+        - Duplicate record
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: correction
+    attributes:
+      label: What should change?
+      description: State the current value and the proposed value if possible.
+      placeholder: The official page now says the event ends on 2027-05-16, not 2027-05-15.
+    validations:
+      required: true
+
+  - type: input
+    id: source
+    attributes:
+      label: Supporting source URL
+      description: Use an organizer-owned or organizer-confirmed page when available.
+      placeholder: https://example.com/event-update
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Submission checks
+      options:
+        - label: I have not included passwords, private contact details, or other sensitive information.
+          required: true

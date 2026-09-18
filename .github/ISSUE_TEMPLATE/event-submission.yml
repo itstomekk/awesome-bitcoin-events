@@ -1,0 +1,148 @@
+name: Submit an event
+description: Suggest a Bitcoin event for the community calendar
+title: "[Event submission] "
+labels:
+  - event-submission
+  - needs-review
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping keep Awesome Bitcoin Events useful.
+
+        Submit **one event per issue**. Please use an organizer-owned page whenever possible. A submission is a review request, not an automatic publication.
+
+  - type: input
+    id: event-name
+    attributes:
+      label: Event name
+      description: Use the event's public name, including the year if it is part of the title.
+      placeholder: Bitcoin Example Summit 2027
+    validations:
+      required: true
+
+  - type: input
+    id: official-url
+    attributes:
+      label: Official event URL
+      description: Required. Use the organizer's event page, not a directory or search result.
+      placeholder: https://example.com/events/bitcoin-summit
+    validations:
+      required: true
+
+  - type: input
+    id: registration-url
+    attributes:
+      label: Registration or ticket URL
+      description: Optional. Leave blank if registration is not open or has no separate page.
+      placeholder: https://tickets.example.com/bitcoin-summit
+
+  - type: input
+    id: start-date
+    attributes:
+      label: Start date
+      description: Use ISO format YYYY-MM-DD.
+      placeholder: 2027-05-14
+    validations:
+      required: true
+
+  - type: input
+    id: end-date
+    attributes:
+      label: End date
+      description: Use ISO format YYYY-MM-DD. For a one-day event, repeat the start date or leave blank.
+      placeholder: 2027-05-16
+
+  - type: input
+    id: timezone
+    attributes:
+      label: Timezone
+      description: Optional IANA timezone if the organizer publishes it, for example Europe/Prague.
+      placeholder: Europe/Prague
+
+  - type: input
+    id: venue
+    attributes:
+      label: Venue
+      description: Optional. Add the public venue name, not a private address.
+      placeholder: Congress Center Example
+
+  - type: input
+    id: city
+    attributes:
+      label: City
+      description: The city where the event takes place. Use Online for a fully online event.
+      placeholder: Prague
+    validations:
+      required: true
+
+  - type: input
+    id: country
+    attributes:
+      label: Country
+      description: Use the country name, or Online for a fully online event.
+      placeholder: Czech Republic
+    validations:
+      required: true
+
+  - type: dropdown
+    id: event-type
+    attributes:
+      label: Event type
+      options:
+        - Conference
+        - Meetup
+        - Festival
+        - Retreat
+        - Unconference
+        - Workshop
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: attendance
+    attributes:
+      label: Attendance mode
+      options:
+        - In person
+        - Online
+        - Hybrid
+        - Unknown
+    validations:
+      required: true
+
+  - type: input
+    id: organizer
+    attributes:
+      label: Organizer
+      description: Optional public organizer name.
+      placeholder: Example Bitcoin Association
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Short description
+      description: Optional. Keep it factual and concise. We may edit it for consistency.
+      placeholder: A Bitcoin-only conference focused on self-custody and local adoption.
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Why should this be added?
+      description: Tell us what the official page confirms, and include any important uncertainty or date nuance.
+      placeholder: The organizer page confirms the dates, venue, and Bitcoin-only focus.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Submission checks
+      options:
+        - label: I checked that this is not already listed in the calendar.
+          required: true
+        - label: The URL above is public and does not require a login.
+          required: true
+        - label: I have not included passwords, private contact details, or other sensitive information.
+          required: true

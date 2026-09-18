@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Browse the live calendar
+    url: https://itstomekk.github.io/awesome-bitcoin-events/
+    about: Check whether an event is already listed before opening a submission.
+  - name: Read the contribution guide
+    url: https://github.com/itstomekk/awesome-bitcoin-events/blob/main/CONTRIBUTING.md
+    about: Learn how submissions are reviewed and published.

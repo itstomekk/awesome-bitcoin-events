@@ -20,6 +20,12 @@
 - Added raw evidence at `sources/raw/next-five-events-research-2026-09-18.json`.
 - Build and test verification: 111 static pages, 15 Python tests passed, map data contains 108 points.
 
+## 2026-09-18 — Community contribution workflow
+
+- Added GitHub issue forms for event submissions and event corrections.
+- Added `CONTRIBUTING.md`, `docs/REPOSITORY-GUIDE.md`, and `CODE_OF_CONDUCT.md`.
+- Rewrote `README.md` as the public project entry point with live links, contribution flow, data boundary, architecture, and maintainer commands.
+
 ## 2026-09-18 — LABITCONF 2026 verified import and live deployment
 
 - Researched the official LABITCONF 2026 site plus three independent corroborating sources.

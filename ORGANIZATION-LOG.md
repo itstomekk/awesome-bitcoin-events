@@ -24,6 +24,10 @@ timestamps, separates past events, and merges title-year variants without deleti
 
 Added an Astro static site under `src/`, generated detail pages for every normalized event, responsive filters, a source-confidence presentation, a branded 404 page, and a GitHub Pages Actions workflow. The build target is `dist/`; the legacy root-level frontend remains as a reference. `README.md`, `PLAN.md`, `HANDOFF.md`, `CHANGELOG.md`, and `BUILD-LOG.md` now describe the current source/build/deployment boundary.
 
+## 2026-09-18 - Community contribution workflow
+
+Added public GitHub issue forms for event submissions and corrections, a contributor guide, repository architecture guide, code of conduct, and a README that explains the community review-to-publication path.
+
 ## 2026-09-18 - Awesome Bitcoin Events map and next-five research
 
 Renamed the public product surface to Awesome Bitcoin Events, added the Leaflet/OpenStreetMap event map with venue/city precision, geocoded 108 of 109 records, and researched the next five uploaded events. The raw research and public geocoding cache are versioned under `sources/raw/next-five-events-research-2026-09-18.json` and `data/geo-cache.json`.

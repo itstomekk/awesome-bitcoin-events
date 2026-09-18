@@ -6,6 +6,7 @@
 - Added the Awesome Bitcoin Events map with 108 plotted records and OpenStreetMap attribution.
 - Researched and refreshed the next five uploaded events; kept Copa Bitcoin visibly under review because its date evidence conflicts.
 - Published the updated community repository through GitHub Pages Actions.
+- Added GitHub issue forms for event submissions and corrections, plus contributor, repository, and conduct documentation.
 
 ## 2026-09-16
 

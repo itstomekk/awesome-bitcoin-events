@@ -20,6 +20,8 @@ The Astro build adds:
 - `src/pages/events/[id].astro` — one static evidence/detail page for every event record.
 - `src/components/EventCard.astro`, `src/layouts/BaseLayout.astro`, and `src/lib/events.js` — shared rendering and display helpers.
 - `src/styles/global.css` — responsive Awesome Bitcoin Events visual system.
+- `.github/ISSUE_TEMPLATE/` — public event submission and correction forms.
+- `CONTRIBUTING.md` and `docs/REPOSITORY-GUIDE.md` — contributor and maintainer workflow documentation.
 - `.github/workflows/pages.yml` — Node 20 build and GitHub Pages deployment via Actions.
 
 ## Verification performed

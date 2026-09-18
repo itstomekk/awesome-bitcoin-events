@@ -46,7 +46,7 @@ A source is evidence, not truth. Every published event retains its source, raw s
 ## Phase 4 — monitoring and public contribution
 
 - [ ] Enable monitoring only for sources with proven value.
-- [ ] Add an intake queue for user-submitted URLs and event reports.
+- [x] Add an intake queue for user-submitted URLs and event reports.
 - [ ] Add a review workflow and change history.
 - [x] Keep the project GitHub-native: versioned JSON, raw snapshots, review history, and Pages deployment.
 - [x] Enable Pages in repository settings and verify the public HTTPS URL after the first push.
