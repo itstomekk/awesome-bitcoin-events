@@ -24,9 +24,9 @@ timestamps, separates past events, and merges title-year variants without deleti
 
 Added an Astro static site under `src/`, generated detail pages for every normalized event, responsive filters, a source-confidence presentation, a branded 404 page, and a GitHub Pages Actions workflow. The build target is `dist/`; the legacy root-level frontend remains as a reference. `README.md`, `PLAN.md`, `HANDOFF.md`, `CHANGELOG.md`, and `BUILD-LOG.md` now describe the current source/build/deployment boundary.
 
-## 2026-09-18 - LABITCONF 2026 verified
+## 2026-09-18 - Awesome Bitcoin Events map and next-five research
 
-Added the official LABITCONF 2026 source review, raw research snapshot, canonical source record, and normalized event record. The main conference is confirmed for 30–31 October in Buenos Aires; the catalog range includes the official Experience-program events on 29 October and 1 November. The live Astro site now generates the new detail route.
+Renamed the public product surface to Awesome Bitcoin Events, added the Leaflet/OpenStreetMap event map with venue/city precision, geocoded 108 of 109 records, and researched the next five uploaded events. The raw research and public geocoding cache are versioned under `sources/raw/next-five-events-research-2026-09-18.json` and `data/geo-cache.json`.
 
 ## 2026-09-16 - Automatic verification and interface fields
 

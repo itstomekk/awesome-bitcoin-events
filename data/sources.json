@@ -1,8 +1,8 @@
 {
   "schema_version": "source-dataset-1.0",
-  "generated_at": "2026-09-18T21:48:08Z",
-  "source_records_total": 140,
-  "unique_sources_total": 131,
+  "generated_at": "2026-09-18T22:27:39Z",
+  "source_records_total": 142,
+  "unique_sources_total": 133,
   "sources": [
     {
       "id": "source-10-times-venues-ec3c0ad0",
@@ -6439,6 +6439,102 @@
             "https://www.latamfintech.co/activities/labitconf",
             "https://inversorlatam.com/labitconf-elige-argentina-para-celebrar-su-14a-edicion/",
             "https://www.fxstreet.es/press-releases/llega-labitconf-2026-en-su-edicion-hodl-202609090653"
+          ]
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": []
+      }
+    },
+    {
+      "id": "official-motiv-peru",
+      "name": "Official Motiv Perú Copa Bitcoin",
+      "urls": {
+        "homepage": "https://motivperu.ngo/en/copa-bitcoin/",
+        "event_feed_url": null
+      },
+      "source_role": "canonical",
+      "source_type": "review_scan",
+      "geographic_coverage": "Peru",
+      "topic_coverage": [
+        "Bitcoin",
+        "surfing",
+        "adoption"
+      ],
+      "languages": [
+        "EN",
+        "ES"
+      ],
+      "access": {
+        "adapter": "review_scan",
+        "status": "web_search+web_extract"
+      },
+      "monitoring": {
+        "status": "review_pending",
+        "cadence_days": 7,
+        "last_checked": "2026-09-18T22:27:39Z",
+        "decision_reason": "Organizer page confirms the event and purpose; dates remain in review because public announcements conflict."
+      },
+      "quality": {
+        "score": 4,
+        "ratings": [],
+        "notes": "Official organizer page observed; date precision remains unresolved."
+      },
+      "provenance": [
+        {
+          "kind": "review_scan",
+          "record_ref": "sources/raw/next-five-events-research-2026-09-18.json",
+          "observed_urls": [
+            "https://motivperu.ngo/en/copa-bitcoin/",
+            "https://nostr.at/nevent1qqsx8pevynsfh6pmuqfmd00p5wk9mz2hw0uzd4as2z7h9qsw6f80v7czyq4yr0k8kasyzed0v9rg2ukc29cwq2aere342ktaw640yuxn9zajjupxhvn"
+          ]
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": []
+      }
+    },
+    {
+      "id": "official-noderunners-network",
+      "name": "Official Noderunners Network",
+      "urls": {
+        "homepage": "https://noderunners.network/en/conference",
+        "event_feed_url": null
+      },
+      "source_role": "canonical",
+      "source_type": "review_scan",
+      "geographic_coverage": "Netherlands",
+      "topic_coverage": [
+        "Bitcoin",
+        "mining",
+        "nodes",
+        "Nostr",
+        "art"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "access": {
+        "adapter": "review_scan",
+        "status": "web_search+web_extract"
+      },
+      "monitoring": {
+        "status": "review_pending",
+        "cadence_days": 7,
+        "last_checked": "2026-09-18T22:27:39Z",
+        "decision_reason": "Organizer-owned conference page confirms date, venue and program; cadence remains provisional."
+      },
+      "quality": {
+        "score": 5,
+        "ratings": [],
+        "notes": "Official conference page with detailed program and ticket path."
+      },
+      "provenance": [
+        {
+          "kind": "review_scan",
+          "record_ref": "sources/raw/next-five-events-research-2026-09-18.json",
+          "observed_urls": [
+            "https://noderunners.network/en/conference"
           ]
         }
       ],

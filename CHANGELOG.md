@@ -3,7 +3,9 @@
 ## 2026-09-18
 
 - Added the verified LABITCONF 2026 record and source evidence.
-- Published the updated 109-record calendar through GitHub Pages Actions.
+- Added the Awesome Bitcoin Events map with 108 plotted records and OpenStreetMap attribution.
+- Researched and refreshed the next five uploaded events; kept Copa Bitcoin visibly under review because its date evidence conflicts.
+- Published the updated community repository through GitHub Pages Actions.
 
 ## 2026-09-16
 

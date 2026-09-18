@@ -1,6 +1,6 @@
 {
   "schema_version": "event-dataset-1.0",
-  "generated_at": "2026-09-18T21:48:08Z",
+  "generated_at": "2026-09-18T22:27:39Z",
   "records_total": 109,
   "dataset_scope": "legacy-import+source-candidates",
   "events": [
@@ -20,9 +20,9 @@
         "region": "Americas",
         "country": "Colombia",
         "country_code": "CO",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 6.2697324,
+        "longitude": -75.6025597,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -98,6 +98,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -116,9 +122,9 @@
         "region": "Americas",
         "country": "United States",
         "country_code": "US",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 26.1421976,
+        "longitude": -81.7942944,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -194,6 +200,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -212,9 +224,9 @@
         "region": "Africa",
         "country": "South Africa",
         "country_code": "ZA",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": -33.9288301,
+        "longitude": 18.4172197,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -290,6 +302,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -308,9 +326,9 @@
         "region": "Americas",
         "country": "United States",
         "country_code": "US",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 36.1622767,
+        "longitude": -86.7742984,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -386,6 +404,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -404,9 +428,9 @@
         "region": "Americas",
         "country": "Costa Rica",
         "country_code": "CR",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 9.1730967,
+        "longitude": -83.7363979,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -482,6 +506,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -500,9 +530,9 @@
         "region": "Americas",
         "country": "Brazil",
         "country_code": "BR",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": -27.5973002,
+        "longitude": -48.5496098,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -578,6 +608,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -596,9 +632,9 @@
         "region": "Americas",
         "country": "United States",
         "country_code": "US",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 40.7127281,
+        "longitude": -74.0060152,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -674,6 +710,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -692,9 +734,9 @@
         "region": "Americas",
         "country": "United States",
         "country_code": "US",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 39.7392364,
+        "longitude": -104.984862,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -770,6 +812,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -788,9 +836,9 @@
         "region": "Americas",
         "country": "United States",
         "country_code": "US",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 43.587984,
+        "longitude": -110.827989,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -866,6 +914,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -884,9 +938,9 @@
         "region": "Asia Pacific",
         "country": "Australia",
         "country_code": "AU",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": -33.8698439,
+        "longitude": 151.2082848,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -962,6 +1016,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -980,9 +1040,9 @@
         "region": "Americas",
         "country": "United States",
         "country_code": "US",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 25.7741566,
+        "longitude": -80.1935973,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -1058,6 +1118,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -1076,9 +1142,9 @@
         "region": "Americas",
         "country": "United States",
         "country_code": "US",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 30.2711286,
+        "longitude": -97.7436995,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -1154,6 +1220,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -1172,9 +1244,9 @@
         "region": "Asia Pacific",
         "country": "Australia",
         "country_code": "AU",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": -36.3594929,
+        "longitude": 146.687012,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -1250,6 +1322,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -1268,9 +1346,9 @@
         "region": "Americas",
         "country": "Argentina",
         "country_code": "AR",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": -34.6095579,
+        "longitude": -58.3887904,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -1346,6 +1424,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -1364,9 +1448,9 @@
         "region": "Americas",
         "country": "United States",
         "country_code": "US",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 32.7762719,
+        "longitude": -96.7968559,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -1442,6 +1526,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -1460,9 +1550,9 @@
         "region": "Americas",
         "country": "United States",
         "country_code": "US",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 42.3656347,
+        "longitude": -71.1040018,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -1538,6 +1628,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -1556,9 +1652,9 @@
         "region": "Europe",
         "country": "United Kingdom",
         "country_code": "GB",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 52.1363806,
+        "longitude": -0.4675041,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -1634,6 +1730,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -1652,9 +1754,9 @@
         "region": "Americas",
         "country": "United States",
         "country_code": "US",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 38.9191272,
+        "longitude": -77.2229636,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -1730,6 +1832,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -1844,9 +1952,9 @@
         "region": "Europe",
         "country": "Switzerland",
         "country_code": "CH",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 47.6464362,
+        "longitude": 9.1725621,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -1922,6 +2030,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -1940,9 +2054,9 @@
         "region": "Middle East",
         "country": "United Arab Emirates",
         "country_code": "AE",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 25.0742823,
+        "longitude": 55.1885624,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -2018,6 +2132,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -2036,9 +2156,9 @@
         "region": "Americas",
         "country": "United States",
         "country_code": "US",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 36.1674263,
+        "longitude": -115.1484131,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -2114,6 +2234,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -2132,9 +2258,9 @@
         "region": "Americas",
         "country": "United States",
         "country_code": "US",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 30.2711286,
+        "longitude": -97.7436995,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -2210,6 +2336,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -2228,9 +2360,9 @@
         "region": "Europe",
         "country": "Italy",
         "country_code": "IT",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 43.8672392,
+        "longitude": 10.2506055,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -2306,6 +2438,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -2324,9 +2462,9 @@
         "region": "Europe",
         "country": "Italy",
         "country_code": "IT",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 45.7795805,
+        "longitude": 10.425873,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -2402,6 +2540,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -2420,9 +2564,9 @@
         "region": "Europe",
         "country": "Czech Republic",
         "country_code": "CZ",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 50.0874654,
+        "longitude": 14.4212535,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -2498,6 +2642,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -2516,9 +2666,9 @@
         "region": "Europe",
         "country": "Poland",
         "country_code": "PL",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 52.2333742,
+        "longitude": 21.0711489,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -2594,6 +2744,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -2612,9 +2768,9 @@
         "region": "Europe",
         "country": "Ireland",
         "country_code": "IE",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 53.3493795,
+        "longitude": -6.2605593,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -2690,6 +2846,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -2708,9 +2870,9 @@
         "region": "Europe",
         "country": "Norway",
         "country_code": "NO",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 59.9133301,
+        "longitude": 10.7389701,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -2786,6 +2948,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -2804,9 +2972,9 @@
         "region": "Americas",
         "country": "United States",
         "country_code": "US",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 36.1674263,
+        "longitude": -115.1484131,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -2882,6 +3050,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -2900,9 +3074,9 @@
         "region": "Europe",
         "country": "France",
         "country_code": "FR",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 48.2640845,
+        "longitude": -2.9202408,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -2978,6 +3152,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -2996,9 +3176,9 @@
         "region": "Asia Pacific",
         "country": "South Korea",
         "country_code": "KR",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 37.5666791,
+        "longitude": 126.9782914,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -3074,6 +3254,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -3092,9 +3278,9 @@
         "region": "Americas",
         "country": "United States",
         "country_code": "US",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 27.9449854,
+        "longitude": -82.4583107,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -3170,6 +3356,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -3188,9 +3380,9 @@
         "region": "Americas",
         "country": "United States",
         "country_code": "US",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 27.9449854,
+        "longitude": -82.4583107,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -3266,6 +3458,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -3284,9 +3482,9 @@
         "region": "Europe",
         "country": "Czech Republic",
         "country_code": "CZ",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 50.0874654,
+        "longitude": 14.4212535,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -3362,6 +3560,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -3380,9 +3584,9 @@
         "region": "Europe",
         "country": "Czech Republic",
         "country_code": "CZ",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 50.0874654,
+        "longitude": 14.4212535,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -3458,6 +3662,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -3476,9 +3686,9 @@
         "region": "Americas",
         "country": "United States",
         "country_code": "US",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 38.8950982,
+        "longitude": -77.0363849,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -3554,6 +3764,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -3572,9 +3788,9 @@
         "region": "Americas",
         "country": "Canada",
         "country_code": "CA",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 51.0456064,
+        "longitude": -114.057541,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -3650,6 +3866,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -3668,9 +3890,9 @@
         "region": "Europe",
         "country": "Spain",
         "country_code": "ES",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 39.5695818,
+        "longitude": 2.6500745,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -3746,6 +3968,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -3764,9 +3992,9 @@
         "region": "Europe",
         "country": "Germany",
         "country_code": "DE",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 52.3744779,
+        "longitude": 9.7385532,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -3842,6 +4070,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -3860,9 +4094,9 @@
         "region": "Americas",
         "country": "United States",
         "country_code": "US",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 45.5202471,
+        "longitude": -122.674194,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -3938,6 +4172,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -3956,9 +4196,9 @@
         "region": "Americas",
         "country": "United States",
         "country_code": "US",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 42.7338254,
+        "longitude": -84.5546295,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -4034,6 +4274,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -4052,9 +4298,9 @@
         "region": "Europe",
         "country": "Latvia",
         "country_code": "LV",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 56.9493977,
+        "longitude": 24.1051846,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -4130,6 +4376,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -4148,9 +4400,9 @@
         "region": "Europe",
         "country": "Hungary",
         "country_code": "HU",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 47.4978789,
+        "longitude": 19.0402383,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -4226,6 +4478,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -4244,9 +4502,9 @@
         "region": "Europe",
         "country": "Latvia",
         "country_code": "LV",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 56.9493977,
+        "longitude": 24.1051846,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -4322,6 +4580,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -4340,9 +4604,9 @@
         "region": "Europe",
         "country": "Finland",
         "country_code": "FI",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 60.1666204,
+        "longitude": 24.9435408,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -4418,6 +4682,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -4436,9 +4706,9 @@
         "region": "Americas",
         "country": "Canada",
         "country_code": "CA",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 49.2608724,
+        "longitude": -123.113952,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -4514,6 +4784,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -4532,9 +4808,9 @@
         "region": "Asia Pacific",
         "country": "Hong Kong",
         "country_code": "HK",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 22.2818333,
+        "longitude": 114.1582831,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -4610,6 +4886,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -4628,9 +4910,9 @@
         "region": "Europe",
         "country": "Turkey",
         "country_code": "TR",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 41.006381,
+        "longitude": 28.9758715,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -4706,6 +4988,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -4724,9 +5012,9 @@
         "region": "Asia Pacific",
         "country": "Indonesia",
         "country_code": "ID",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": -8.2271303,
+        "longitude": 115.1919203,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -4802,6 +5090,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -4820,9 +5114,9 @@
         "region": "Americas",
         "country": "United States",
         "country_code": "US",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 38.9191272,
+        "longitude": -77.2229636,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -4898,6 +5192,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -4916,9 +5216,9 @@
         "region": "Americas",
         "country": "United States",
         "country_code": "US",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 38.8950982,
+        "longitude": -77.0363849,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -4994,6 +5294,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -5012,9 +5318,9 @@
         "region": "Europe",
         "country": "Germany",
         "country_code": "DE",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 52.5173885,
+        "longitude": 13.3951309,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -5090,6 +5396,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -5108,9 +5420,9 @@
         "region": "Europe",
         "country": "Spain",
         "country_code": "ES",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 40.416782,
+        "longitude": -3.703507,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -5186,6 +5498,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -5204,9 +5522,9 @@
         "region": "Americas",
         "country": "United States",
         "country_code": "US",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 43.4849133,
+        "longitude": -71.6553992,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -5282,6 +5600,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -5300,9 +5624,9 @@
         "region": "Americas",
         "country": "United States",
         "country_code": "US",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 33.7544657,
+        "longitude": -84.3898151,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -5378,6 +5702,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -5396,9 +5726,9 @@
         "region": "Europe",
         "country": "Switzerland",
         "country_code": "CH",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 46.0038007,
+        "longitude": 8.9512275,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -5474,6 +5804,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -5492,9 +5828,9 @@
         "region": "Americas",
         "country": "Brazil",
         "country_code": "BR",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": -23.5506507,
+        "longitude": -46.6333824,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -5570,6 +5906,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -5588,9 +5930,9 @@
         "region": "Americas",
         "country": "El Salvador",
         "country_code": "SV",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 13.697629,
+        "longitude": -89.191156,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -5666,6 +6008,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -5684,9 +6032,9 @@
         "region": "Africa",
         "country": "Mauritius",
         "country_code": "MU",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": -20.2534998,
+        "longitude": 57.589573,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -5762,6 +6110,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -5780,9 +6134,9 @@
         "region": "Asia Pacific",
         "country": "Taiwan",
         "country_code": "TW",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 25.0375198,
+        "longitude": 121.5636796,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": null,
@@ -5858,6 +6212,12 @@
       "legacy_dataset": {
         "year": 2025,
         "updated": "2025-01-01"
+      },
+      "extensions": {
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -5876,9 +6236,9 @@
         "region": null,
         "country": "Czech Republic",
         "country_code": "CZ",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 50.0874654,
+        "longitude": 14.4212535,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -5929,6 +6289,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -5948,9 +6312,9 @@
         "region": null,
         "country": "Hong Kong SAR",
         "country_code": "HK",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 22.2818333,
+        "longitude": 114.1582831,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -6001,6 +6365,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -6020,9 +6388,9 @@
         "region": "New York",
         "country": "USA",
         "country_code": null,
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 40.7127281,
+        "longitude": -74.0060152,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "unconference",
@@ -6082,6 +6450,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -6092,7 +6464,7 @@
       "dates": {
         "start": "2026-09-18",
         "end": "2026-09-20",
-        "timezone": null,
+        "timezone": "America/Lima",
         "precision": "day"
       },
       "location": {
@@ -6100,10 +6472,10 @@
         "city": "Huanchaco",
         "region": null,
         "country": "Peru",
-        "country_code": null,
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "country_code": "PE",
+        "latitude": -8.0800318,
+        "longitude": -79.1204769,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -6114,16 +6486,18 @@
         "delivery_mode": "in_person"
       },
       "organizer": {
-        "name": null,
-        "urls": []
+        "name": "Motiv Perú",
+        "urls": [
+          "https://motivperu.ngo/"
+        ]
       },
       "links": {
-        "official_url": null,
+        "official_url": "https://motivperu.ngo/en/copa-bitcoin/",
         "registration_url": null,
         "livestream_url": null,
         "social_urls": []
       },
-      "description": null,
+      "description": "A Bitcoin adoption and surfing experience in Huanchaco, Peru, combining sport, tourism, culture, and technology on the Peruvian coast.",
       "media": {
         "image_url": null
       },
@@ -6135,8 +6509,8 @@
       "verification": {
         "state": "needs_review",
         "confidence": "medium",
-        "last_verified_at": null,
-        "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
+        "last_verified_at": "2026-09-18T22:27:39Z",
+        "notes": "Motiv Perú confirms the event and its Huanchaco location, but the organizer page does not publish dates in the extracted content. A public Motiv announcement says September 19–20 while the existing discovery records say September 18–20; retain the range pending direct date confirmation."
       },
       "source_observations": [
         {
@@ -6156,12 +6530,28 @@
           "access_method": "web_extract",
           "observed_at": "2026-09-16T00:00:00Z",
           "raw_excerpt": "Copa Bitcoin\nSeptember 18, 2026 - September 20, 2026\nHuanchaco, Peru"
+        },
+        {
+          "source_id": "official-motiv-peru",
+          "source_url": "https://motivperu.ngo/en/copa-bitcoin/",
+          "event_url": "https://motivperu.ngo/en/copa-bitcoin/",
+          "access_method": "web_search+web_extract",
+          "observed_at": "2026-09-18T22:27:39Z",
+          "fields_observed": [
+            "title",
+            "city",
+            "country",
+            "description",
+            "official_url"
+          ],
+          "raw_excerpt": "The COPA BITCOIN 2026 is the second major surfing tournament in Huanchaco, Peru, combining sports, tourism, culture, and technology to promote Bitcoin adoption."
         }
       ],
       "aliases": [],
       "extensions": {
         "source_scan": {
-          "schema_version": "research-source-scan-1.0"
+          "schema_version": "research-source-scan-1.0",
+          "raw_snapshot": "sources/raw/next-five-events-research-2026-09-18.json"
         }
       }
     },
@@ -6172,7 +6562,7 @@
       "dates": {
         "start": "2026-09-19",
         "end": "2026-09-19",
-        "timezone": null,
+        "timezone": "Europe/Amsterdam",
         "precision": "day"
       },
       "location": {
@@ -6181,9 +6571,9 @@
         "region": null,
         "country": "Netherlands",
         "country_code": "NL",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 51.9853971,
+        "longitude": 5.8792471,
+        "coordinates_precision": "venue"
       },
       "classification": {
         "event_type": "conference",
@@ -6197,7 +6587,9 @@
       },
       "organizer": {
         "name": "Noderunners",
-        "urls": []
+        "urls": [
+          "https://noderunners.network/en/conference"
+        ]
       },
       "links": {
         "official_url": "https://noderunners.network/en/conference",
@@ -6205,7 +6597,7 @@
         "livestream_url": null,
         "social_urls": []
       },
-      "description": "A Bitcoin-focused conference for builders, artists, node runners, and privacy-minded plebs.",
+      "description": "A Bitcoin-only day of talks, workshops, mining, nodes, Nostr, art, arcade games, and sound money at Koepelgevangenis Arnhem.",
       "media": {
         "image_url": null
       },
@@ -6217,8 +6609,8 @@
       "verification": {
         "state": "official_page_seen",
         "confidence": "high",
-        "last_verified_at": "2026-09-16T20:45:00Z",
-        "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
+        "last_verified_at": "2026-09-18T22:27:39Z",
+        "notes": "The organizer-owned conference page confirms September 19, 2026, Koepelgevangenis Arnhem, the Bitcoin-only program, and the ticket path."
       },
       "source_observations": [
         {
@@ -6256,12 +6648,30 @@
           "access_method": "web_search+web_extract",
           "observed_at": "2026-09-16T20:45:00Z",
           "raw_excerpt": "This pass grants you entry to We Are All Going to Jail! — Noderunners Conference 2026 at Koepelgevangenis Arnhem on September 19."
+        },
+        {
+          "source_id": "official-noderunners-network",
+          "source_url": "https://noderunners.network/en/conference",
+          "event_url": "https://noderunners.network/en/conference",
+          "access_method": "web_search+web_extract",
+          "observed_at": "2026-09-18T22:27:39Z",
+          "fields_observed": [
+            "title",
+            "start",
+            "venue",
+            "city",
+            "topics",
+            "official_url",
+            "registration_url"
+          ],
+          "raw_excerpt": "Join the Noderunners community on September 19th 2026 for a Bitcoin-only day at Koepelgevangenis Arnhem."
         }
       ],
       "aliases": [],
       "extensions": {
         "source_scan": {
-          "schema_version": "research-source-scan-1.0"
+          "schema_version": "research-source-scan-1.0",
+          "raw_snapshot": "sources/raw/next-five-events-research-2026-09-18.json"
         }
       }
     },
@@ -6281,9 +6691,9 @@
         "region": "DC",
         "country": "USA",
         "country_code": null,
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 38.8950982,
+        "longitude": -77.0363849,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -6335,6 +6745,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -6345,7 +6759,7 @@
       "dates": {
         "start": "2026-09-23",
         "end": "2026-09-23",
-        "timezone": null,
+        "timezone": "Europe/Helsinki",
         "precision": "day"
       },
       "location": {
@@ -6354,9 +6768,9 @@
         "region": null,
         "country": "Finland",
         "country_code": "FI",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 60.1618636,
+        "longitude": 24.9051528,
+        "coordinates_precision": "venue"
       },
       "classification": {
         "event_type": "conference",
@@ -6369,7 +6783,10 @@
       },
       "organizer": {
         "name": "BTC HEL in cooperation with the European Bitcoin Energy Association",
-        "urls": []
+        "urls": [
+          "https://miningsummit.eu/",
+          "https://ebea.work"
+        ]
       },
       "links": {
         "official_url": "https://miningsummit.eu/",
@@ -6377,7 +6794,7 @@
         "livestream_url": null,
         "social_urls": []
       },
-      "description": "A one-day Bitcoin mining and Nordic energy summit focused on grid stability, decarbonized heat, and surplus power.",
+      "description": "A one-day, single-track summit where Bitcoin mining and the Nordic energy sector meet around grid stability, decarbonized heat, and monetizing surplus power.",
       "media": {
         "image_url": null
       },
@@ -6389,8 +6806,8 @@
       "verification": {
         "state": "official_page_seen",
         "confidence": "high",
-        "last_verified_at": "2026-09-16T20:45:00Z",
-        "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
+        "last_verified_at": "2026-09-18T22:27:39Z",
+        "notes": "The organizer-owned page confirms Wednesday, September 23, 2026, Tanssin Talo at Kaapelitehdas in Helsinki, with a single-track conference and networking."
       },
       "source_observations": [
         {
@@ -6433,7 +6850,8 @@
       "aliases": [],
       "extensions": {
         "source_scan": {
-          "schema_version": "research-source-scan-1.0"
+          "schema_version": "research-source-scan-1.0",
+          "raw_snapshot": "sources/raw/next-five-events-research-2026-09-18.json"
         }
       }
     },
@@ -6444,7 +6862,7 @@
       "dates": {
         "start": "2026-09-23",
         "end": "2026-09-24",
-        "timezone": null,
+        "timezone": "America/New_York",
         "precision": "day"
       },
       "location": {
@@ -6453,9 +6871,9 @@
         "region": "Ohio",
         "country": "USA",
         "country_code": "US",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 39.971879,
+        "longitude": -83.0011456,
+        "coordinates_precision": "venue"
       },
       "classification": {
         "event_type": "conference",
@@ -6467,7 +6885,9 @@
       },
       "organizer": {
         "name": "Midwest Bitcoin Summit",
-        "urls": []
+        "urls": [
+          "https://www.midwestbtc.com/"
+        ]
       },
       "links": {
         "official_url": "https://www.midwestbtc.com/",
@@ -6475,7 +6895,7 @@
         "livestream_url": null,
         "social_urls": []
       },
-      "description": "A Bitcoin-only summit in Columbus bringing together builders, investors, and the wider Bitcoin community.",
+      "description": "The Heartland’s Bitcoin-only summit in Columbus, Ohio, bringing builders, investors, and the wider Bitcoin community together at the Greater Columbus Convention Center.",
       "media": {
         "image_url": null
       },
@@ -6487,8 +6907,8 @@
       "verification": {
         "state": "official_page_seen",
         "confidence": "high",
-        "last_verified_at": "2026-09-16T20:45:00Z",
-        "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
+        "last_verified_at": "2026-09-18T22:27:39Z",
+        "notes": "The organizer and ticket pages agree on September 23–24, 2026, Greater Columbus Convention Center, 400 N High St, Columbus, Ohio."
       },
       "source_observations": [
         {
@@ -6531,7 +6951,8 @@
       "aliases": [],
       "extensions": {
         "source_scan": {
-          "schema_version": "research-source-scan-1.0"
+          "schema_version": "research-source-scan-1.0",
+          "raw_snapshot": "sources/raw/next-five-events-research-2026-09-18.json"
         }
       }
     },
@@ -6551,9 +6972,9 @@
         "region": "New York",
         "country": "USA",
         "country_code": null,
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 40.7127281,
+        "longitude": -74.0060152,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "meetup",
@@ -6614,6 +7035,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -6624,7 +7049,7 @@
       "dates": {
         "start": "2026-09-25",
         "end": "2026-09-26",
-        "timezone": null,
+        "timezone": "Europe/Helsinki",
         "precision": "day"
       },
       "location": {
@@ -6633,29 +7058,36 @@
         "region": null,
         "country": "Finland",
         "country_code": "FI",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 60.1618636,
+        "longitude": 24.9051528,
+        "coordinates_precision": "venue"
       },
       "classification": {
         "event_type": "conference",
         "topics": [
-          "Bitcoin"
+          "Bitcoin",
+          "payments",
+          "finance",
+          "mining",
+          "human rights",
+          "Nordic sovereignty"
         ],
         "bitcoin_relevance": "bitcoin_focused",
         "delivery_mode": "in_person"
       },
       "organizer": {
-        "name": null,
-        "urls": []
+        "name": "BTCHEL",
+        "urls": [
+          "https://btchel.com/"
+        ]
       },
       "links": {
         "official_url": "https://btchel.com/",
-        "registration_url": null,
+        "registration_url": "https://btchel.com/tickets/",
         "livestream_url": null,
         "social_urls": []
       },
-      "description": "The Nordic Bitcoin conference focused on Bitcoin payments, finance, mining, and Nordic adoption.",
+      "description": "The Nordic Bitcoin conference at Kaapelitehdas, covering Bitcoin payments, finance, mining, human rights, and Nordic sovereignty across two days and three stages.",
       "media": {
         "image_url": null
       },
@@ -6667,8 +7099,8 @@
       "verification": {
         "state": "official_page_seen",
         "confidence": "high",
-        "last_verified_at": "2026-09-16T20:45:00Z",
-        "notes": "Imported from a reviewed discovery scan. Confirm against an organizer-owned page before treating dates as canonical."
+        "last_verified_at": "2026-09-18T22:27:39Z",
+        "notes": "The organizer site, agenda and press kit agree on September 25–26, 2026, Kaapelitehdas, Helsinki, Finland."
       },
       "source_observations": [
         {
@@ -6711,7 +7143,8 @@
       "aliases": [],
       "extensions": {
         "source_scan": {
-          "schema_version": "research-source-scan-1.0"
+          "schema_version": "research-source-scan-1.0",
+          "raw_snapshot": "sources/raw/next-five-events-research-2026-09-18.json"
         }
       }
     },
@@ -6731,9 +7164,9 @@
         "region": null,
         "country": "Lithuania",
         "country_code": null,
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 54.6870458,
+        "longitude": 25.2829111,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -6785,6 +7218,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -6804,9 +7241,9 @@
         "region": "NY",
         "country": null,
         "country_code": null,
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 40.7127281,
+        "longitude": -74.0060152,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -6857,6 +7294,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -6876,9 +7317,9 @@
         "region": null,
         "country": "Honduras",
         "country_code": "HN",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 16.3490211,
+        "longitude": -86.4977513,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "retreat",
@@ -6946,6 +7387,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -6965,9 +7410,9 @@
         "region": null,
         "country": "Germany",
         "country_code": null,
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 52.5173885,
+        "longitude": 13.3951309,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -7047,6 +7492,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -7066,9 +7515,9 @@
         "region": "Ontario",
         "country": "Canada",
         "country_code": null,
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 43.6534817,
+        "longitude": -79.3839347,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -7118,6 +7567,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -7137,9 +7590,9 @@
         "region": null,
         "country": "Spain",
         "country_code": "ES",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 40.416782,
+        "longitude": -3.703507,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -7207,6 +7660,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -7226,9 +7683,9 @@
         "region": null,
         "country": "Poland",
         "country_code": "PL",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 52.4082663,
+        "longitude": 16.9335199,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -7296,6 +7753,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -7315,9 +7776,9 @@
         "region": "Tennessee",
         "country": "USA",
         "country_code": "US",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 36.1622767,
+        "longitude": -86.7742984,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -7397,6 +7858,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -7416,9 +7881,9 @@
         "region": null,
         "country": null,
         "country_code": null,
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 51.5074456,
+        "longitude": -0.1277653,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -7468,6 +7933,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -7487,9 +7956,9 @@
         "region": "Georgia",
         "country": "USA",
         "country_code": "US",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 33.7544657,
+        "longitude": -84.3898151,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -7568,6 +8037,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -7587,9 +8060,9 @@
         "region": "California",
         "country": "USA",
         "country_code": null,
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 34.0194704,
+        "longitude": -118.491227,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -7639,6 +8112,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -7658,9 +8135,9 @@
         "region": null,
         "country": "South Africa",
         "country_code": "ZA",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": -25.9363439,
+        "longitude": 28.0813105,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -7710,6 +8187,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -7729,9 +8210,9 @@
         "region": "Western Australia",
         "country": "Australia",
         "country_code": "AU",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": -33.644499,
+        "longitude": 115.3488754,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -7808,6 +8289,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -7827,9 +8312,9 @@
         "region": null,
         "country": null,
         "country_code": null,
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 46.0038007,
+        "longitude": 8.9512275,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -7880,6 +8365,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -7899,9 +8388,9 @@
         "region": "LU",
         "country": "Switzerland",
         "country_code": "CH",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 46.0038007,
+        "longitude": 8.9512275,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -7978,6 +8467,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -7997,9 +8490,9 @@
         "region": null,
         "country": null,
         "country_code": null,
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": -41.2887953,
+        "longitude": 174.7772114,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "meetup",
@@ -8049,6 +8542,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -8068,9 +8565,9 @@
         "region": null,
         "country": "Mexico",
         "country_code": "MX",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 20.7813959,
+        "longitude": -105.529442,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -8139,6 +8636,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -8158,9 +8659,9 @@
         "region": "Tennessee",
         "country": "USA",
         "country_code": null,
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 36.1622767,
+        "longitude": -86.7742984,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -8212,6 +8713,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -8231,9 +8736,9 @@
         "region": null,
         "country": "Argentina",
         "country_code": "AR",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": -34.6095579,
+        "longitude": -58.3887904,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -8302,6 +8807,10 @@
         "source_scan": {
           "schema_version": "research-source-scan-1.0",
           "raw_snapshot": "sources/raw/labitconf-2026-research-2026-09-18.json"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -8321,9 +8830,9 @@
         "region": null,
         "country": null,
         "country_code": null,
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 26.9154576,
+        "longitude": 75.8189817,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -8373,6 +8882,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -8392,9 +8905,9 @@
         "region": null,
         "country": null,
         "country_code": null,
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 42.6977028,
+        "longitude": 23.3217359,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -8444,6 +8957,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -8463,9 +8980,9 @@
         "region": null,
         "country": "Netherlands",
         "country_code": null,
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 52.3730796,
+        "longitude": 4.8924534,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -8517,6 +9034,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -8536,9 +9057,9 @@
         "region": null,
         "country": "Netherlands",
         "country_code": "NL",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 52.3730796,
+        "longitude": 4.8924534,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -8615,6 +9136,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -8634,9 +9159,9 @@
         "region": "California",
         "country": "USA",
         "country_code": null,
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 37.9458253,
+        "longitude": -122.5598368,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -8686,6 +9211,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -8705,9 +9234,9 @@
         "region": null,
         "country": "South Korea",
         "country_code": "KR",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 37.5666791,
+        "longitude": 126.9782914,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -8775,6 +9304,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -8794,9 +9327,9 @@
         "region": null,
         "country": "El Salvador",
         "country_code": "SV",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 13.697629,
+        "longitude": -89.191156,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -8864,6 +9397,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -8883,9 +9420,9 @@
         "region": null,
         "country": "UK",
         "country_code": null,
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 51.5074456,
+        "longitude": -0.1277653,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -8936,6 +9473,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -8955,9 +9496,9 @@
         "region": null,
         "country": "UK",
         "country_code": "GB",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 53.4794892,
+        "longitude": -2.2451148,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "festival",
@@ -9028,7 +9569,11 @@
         },
         "previous_ids": [
           "evt-bitfest-2026-2026-11-20-manchester"
-        ]
+        ],
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
+        }
       }
     },
     {
@@ -9047,9 +9592,9 @@
         "region": null,
         "country": "El Salvador",
         "country_code": "SV",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 13.4977884,
+        "longitude": -89.4407366,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -9118,6 +9663,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -9137,9 +9686,9 @@
         "region": null,
         "country": null,
         "country_code": null,
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 13.7524938,
+        "longitude": 100.4935089,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -9189,6 +9738,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -9208,9 +9761,9 @@
         "region": null,
         "country": "United Arab Emirates",
         "country_code": "AE",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 24.4538352,
+        "longitude": 54.3774014,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -9306,6 +9859,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -9325,9 +9882,9 @@
         "region": null,
         "country": null,
         "country_code": null,
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 48.4049375,
+        "longitude": 2.7015872,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -9378,6 +9935,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -9397,9 +9958,9 @@
         "region": "Texas",
         "country": "United States",
         "country_code": "US",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 32.753177,
+        "longitude": -97.3327459,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -9467,6 +10028,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -9486,9 +10051,9 @@
         "region": null,
         "country": null,
         "country_code": null,
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": -45.0321923,
+        "longitude": 168.661,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -9539,6 +10104,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -9558,9 +10127,9 @@
         "region": null,
         "country": "Czech Republic",
         "country_code": "CZ",
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 50.0874654,
+        "longitude": 14.4212535,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -9628,6 +10197,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -9647,9 +10220,9 @@
         "region": null,
         "country": null,
         "country_code": null,
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 51.4430141,
+        "longitude": -2.5816622,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -9700,6 +10273,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -9719,9 +10296,9 @@
         "region": null,
         "country": null,
         "country_code": null,
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 52.2333742,
+        "longitude": 21.0711489,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "festival",
@@ -9772,6 +10349,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     },
@@ -9791,9 +10372,9 @@
         "region": "Tennessee",
         "country": "USA",
         "country_code": null,
-        "latitude": null,
-        "longitude": null,
-        "coordinates_precision": null
+        "latitude": 36.1622767,
+        "longitude": -86.7742984,
+        "coordinates_precision": "city_centroid"
       },
       "classification": {
         "event_type": "conference",
@@ -9879,6 +10460,10 @@
       "extensions": {
         "source_scan": {
           "schema_version": "research-source-scan-1.0"
+        },
+        "map": {
+          "coordinates_source": "OpenStreetMap Nominatim",
+          "geocoded_at": "2026-09-18T22:27:39Z"
         }
       }
     }

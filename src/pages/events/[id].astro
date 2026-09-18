@@ -14,7 +14,7 @@ const officialUrl = event.links?.official_url;
 const registrationUrl = event.links?.registration_url;
 const sourceUrls = [...new Set(event.source_observations.map((observation) => observation.source_url).filter((url) => url && url.startsWith('http')) )];
 ---
-<BaseLayout title={`${event.title} — Signal Atlas`} description={`${event.title}, ${formatDateRange(event)}. Source-aware Bitcoin event record.`}>
+<BaseLayout title={`${event.title} — Awesome Bitcoin Events`} description={`${event.title}, ${formatDateRange(event)}. Community event record with source evidence.`}>
   <main id="main-content" class="detail-page">
     <div class="shell">
       <a class="back-link" href={`${base}#calendar`}><span aria-hidden="true">←</span> Back to calendar</a>
@@ -23,7 +23,7 @@ const sourceUrls = [...new Set(event.source_observations.map((observation) => ob
           <div class="detail-kicker"><span class={`confidence-dot ${tone}`}></span>{verificationLabel(event)}<span class="detail-kicker-rule"></span>{status}</div>
           <h1>{event.title}</h1>
           {event.series && <p class="detail-series">{event.series}</p>}
-          <p class="detail-intro">{event.description || 'A Bitcoin-focused event in the Signal Atlas. Details are preserved as observed and labeled by their verification state.'}</p>
+          <p class="detail-intro">{event.description || 'A Bitcoin-focused community event record. Details are preserved as observed and labeled by their verification state.'}</p>
           <div class="detail-actions">
             {officialUrl && <a class="button button-primary" href={officialUrl} target="_blank" rel="noreferrer">Visit official page <span aria-hidden="true">↗</span></a>}
             {registrationUrl && <a class="button button-secondary" href={registrationUrl} target="_blank" rel="noreferrer">Registration <span aria-hidden="true">↗</span></a>}

@@ -11,12 +11,21 @@
 - `git diff --check` passed. Existing Python test suite passed: 15 tests.
 - `npm audit --omit=dev --audit-level=high` reported 0 production vulnerabilities.
 
+## 2026-09-18 — Map, name, and next-five research
+
+- Renamed the public product surface to **Awesome Bitcoin Events**, described as a community repository.
+- Added a Leaflet/OpenStreetMap map to the home page with venue/city precision styling, popups, links to detail pages, and OpenStreetMap attribution.
+- Geocoded 85 city-centre lookups and retained 5 previously researched venue points in `data/geo-cache.json`; 108 of 109 records now have map points.
+- Researched the next five uploaded events. Noderunners, Midwest Bitcoin Summit, European Mining Summit, and BTCHEL were refreshed against organizer-owned pages; Copa Bitcoin received organizer details but stays `needs_review` because date sources conflict.
+- Added raw evidence at `sources/raw/next-five-events-research-2026-09-18.json`.
+- Build and test verification: 111 static pages, 15 Python tests passed, map data contains 108 points.
+
 ## 2026-09-18 — LABITCONF 2026 verified import and live deployment
 
 - Researched the official LABITCONF 2026 site plus three independent corroborating sources.
 - Added `LABITCONF 2026` for 29 October–1 November 2026 in Buenos Aires, with the main conference dates (30–31 October) and extended Experience-program dates explained in the record.
 - Added the canonical source `official-labitconf` and raw evidence at `sources/raw/labitconf-2026-research-2026-09-18.json`.
-- Validated 109 event records, 131 sources, source-ID resolution, 15 tests, and a clean Astro build.
+- Validated 109 event records, 133 sources, source-ID resolution, 15 tests, and a clean Astro build.
 - Deployed successfully through GitHub Pages Actions; the live home and LABITCONF detail page were fetched over HTTPS.
 
 ## Verification notes

@@ -7,6 +7,7 @@
 - `events.json` - normalized event records. A view can filter by `lifecycle.status`, `verification.state`, delivery mode, type, topic, dates, timezone, or location without relying on display-specific fields.
 - `schema/event-dataset.schema.json` - JSON Schema for `events.json`.
 - `sources.json` - normalized source directory and monitoring decision history.
+- `geo-cache.json` - public OpenStreetMap Nominatim geocoding cache used for map points. Coordinates are approximate unless `coordinates_precision` says `venue`; keep the OSM attribution when reusing this cache.
 - `../sources/raw/` - immutable, dated source captures. A normalized record points to its source observations; raw input is never silently overwritten.
 
 ## Record rules

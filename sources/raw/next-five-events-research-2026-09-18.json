@@ -1,0 +1,66 @@
+{
+  "schema_version": "research-source-scan-1.0",
+  "scan_name": "next-five-events-2026-09-18",
+  "observed_at": "2026-09-18T22:27:39Z",
+  "scope": "The next five events in the uploaded dashboard listing, ordered by start date.",
+  "records": [
+    {
+      "event_id": "evt-copa-bitcoin-2026-2026-09-18-huanchaco",
+      "title": "Copa Bitcoin 2026",
+      "official_source": "https://motivperu.ngo/en/copa-bitcoin/",
+      "corroborating_sources": [
+        "https://www.francismars.com/events/",
+        "https://nostr.at/nevent1qqsx8pevynsfh6pmuqfmd00p5wk9mz2hw0uzd4as2z7h9qsw6f80v7czyq4yr0k8kasyzed0v9rg2ukc29cwq2aere342ktaw640yuxn9zajjupxhvn"
+      ],
+      "official_excerpt": "The COPA BITCOIN 2026 is the second major surfing tournament in Huanchaco, Peru, combining sports, tourism, culture, and technology with the goal of promoting Bitcoin adoption.",
+      "decision": "Keep the existing 18–20 September range as needs_review: the organizer page confirms the event but does not publish dates in the extracted page, while Motiv Perú's public Nostr announcement says the surfing edition is 19–20 September."
+    },
+    {
+      "event_id": "evt-noderunners-conference-2026-2026-09-19-arnhem",
+      "title": "Noderunners Conference 2026",
+      "official_source": "https://noderunners.network/en/conference",
+      "official_excerpt": "Join the orange-pilled Noderunners community on September 19th 2026 for a Bitcoin-only day of talks, workshops, mining, nodes, Nostr, art, arcade games and sound money.",
+      "venue": "Koepelgevangenis Arnhem",
+      "decision": "Promote to official_page_seen/high; date, venue, program and ticket path are confirmed on the organizer-owned page."
+    },
+    {
+      "event_id": "evt-midwest-bitcoin-summit-2026-2026-09-23-columbus",
+      "title": "Midwest Bitcoin Summit 2026",
+      "official_source": "https://www.midwestbtc.com/",
+      "registration_source": "https://tickets.midwestbtc.com/event/midwest-bitcoin-summit-2026",
+      "official_excerpt": "September 23-24, 2026; Columbus, Ohio; Greater Columbus Convention Center.",
+      "address": "400 N High St, Columbus, OH 43215",
+      "decision": "Confirm official_page_seen/high; dates, venue, address and ticket path agree across organizer and ticket pages."
+    },
+    {
+      "event_id": "evt-european-mining-summit-2026-2026-09-23-helsinki",
+      "title": "European Mining Summit 2026",
+      "official_source": "https://miningsummit.eu/",
+      "corroborating_sources": [
+        "https://ebea.work/european-mining-summit-btchel-and-ebea-are-working-together",
+        "https://events.coinpedia.org/european-mining-summit-2026-8723/"
+      ],
+      "official_excerpt": "Date Wednesday, 23 September 2026; Venue Tanssin Talo · Kaapelitehdas, Helsinki; Format Single-track conference + networking.",
+      "decision": "Confirm official_page_seen/high; official organizer page and independent corroboration agree."
+    },
+    {
+      "event_id": "evt-btc-hel-2026-2026-09-25-helsinki",
+      "title": "BTC HEL 2026",
+      "official_source": "https://btchel.com/",
+      "agenda_source": "https://agenda.btchel.com/",
+      "official_excerpt": "BTCHEL 2026 — The Nordic Bitcoin Conference; Helsinki, Kaapelitehdas; 25–26 September 2026.",
+      "decision": "Confirm official_page_seen/high; organizer site, agenda and press kit agree on dates and venue."
+    }
+  ],
+  "geocoding": {
+    "provider": "OpenStreetMap Nominatim",
+    "observed_at": "2026-09-18T22:27:39Z",
+    "license_note": "Coordinates are stored as approximate map points with attribution required by OpenStreetMap.",
+    "points": {
+      "Huanchaco, Peru": {"latitude": -8.0800318, "longitude": -79.1204769, "precision": "city_centroid"},
+      "Koepelgevangenis Arnhem": {"latitude": 51.9853971, "longitude": 5.8792471, "precision": "venue"},
+      "Greater Columbus Convention Center": {"latitude": 39.971879, "longitude": -83.0011456, "precision": "venue"},
+      "Tanssin Talo / Kaapelitehdas": {"latitude": 60.1618636, "longitude": 24.9051528, "precision": "venue"}
+    }
+  }
+}

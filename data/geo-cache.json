@@ -1,0 +1,1119 @@
+{
+  "schema_version": "event-geo-cache-1.0",
+  "generated_at": "2026-09-18T22:27:39Z",
+  "provider": "OpenStreetMap Nominatim",
+  "attribution": "Data © OpenStreetMap contributors, ODbL",
+  "locations": [
+    {
+      "query": "Medellin, Colombia",
+      "city": "Medellin",
+      "country": "Colombia",
+      "result": {
+        "latitude": 6.2697324,
+        "longitude": -75.6025597,
+        "display_name": "Medellín, Valle de Aburrá, Antioquia, RAP del Agua y la Montaña, 0500, Colombia",
+        "osm_type": "relation",
+        "osm_id": 1343264,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Naples, FL, United States",
+      "city": "Naples, FL",
+      "country": "United States",
+      "result": {
+        "latitude": 26.1421976,
+        "longitude": -81.7942944,
+        "display_name": "Naples, Collier County, Florida, United States",
+        "osm_type": "relation",
+        "osm_id": 1216778,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Cape Town, South Africa",
+      "city": "Cape Town",
+      "country": "South Africa",
+      "result": {
+        "latitude": -33.9288301,
+        "longitude": 18.4172197,
+        "display_name": "Cape Town, City of Cape Town, Western Cape, 8001, South Africa",
+        "osm_type": "node",
+        "osm_id": 32675806,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Nashville, TN, United States",
+      "city": "Nashville, TN",
+      "country": "United States",
+      "result": {
+        "latitude": 36.1622767,
+        "longitude": -86.7742984,
+        "display_name": "Nashville, Davidson County, Middle Tennessee, Tennessee, United States",
+        "osm_type": "relation",
+        "osm_id": 197472,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Uvita, Costa Rica",
+      "city": "Uvita",
+      "country": "Costa Rica",
+      "result": {
+        "latitude": 9.1730967,
+        "longitude": -83.7363979,
+        "display_name": "Uvita, Bahía Ballena, Osa, Puntarenas, 60504, Costa Rica",
+        "osm_type": "node",
+        "osm_id": 377777907,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Florianópolis, Brazil",
+      "city": "Florianópolis",
+      "country": "Brazil",
+      "result": {
+        "latitude": -27.5973002,
+        "longitude": -48.5496098,
+        "display_name": "Florianópolis, Santa Catarina, Região Sul, Brasil",
+        "osm_type": "relation",
+        "osm_id": 296561,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "New York, NY, United States",
+      "city": "New York, NY",
+      "country": "United States",
+      "result": {
+        "latitude": 40.7127281,
+        "longitude": -74.0060152,
+        "display_name": "New York, United States",
+        "osm_type": "relation",
+        "osm_id": 175905,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Denver, CO, United States",
+      "city": "Denver, CO",
+      "country": "United States",
+      "result": {
+        "latitude": 39.7392364,
+        "longitude": -104.984862,
+        "display_name": "Denver, Colorado, United States",
+        "osm_type": "relation",
+        "osm_id": 1411339,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Teton Village, WY, United States",
+      "city": "Teton Village, WY",
+      "country": "United States",
+      "result": {
+        "latitude": 43.587984,
+        "longitude": -110.827989,
+        "display_name": "Teton Village, Teton County, Wyoming, 83025, United States",
+        "osm_type": "relation",
+        "osm_id": 252390,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Sydney, Australia",
+      "city": "Sydney",
+      "country": "Australia",
+      "result": {
+        "latitude": -33.8698439,
+        "longitude": 151.2082848,
+        "display_name": "Sydney, New South Wales, Australia",
+        "osm_type": "relation",
+        "osm_id": 5750005,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Miami, FL, United States",
+      "city": "Miami, FL",
+      "country": "United States",
+      "result": {
+        "latitude": 25.7741566,
+        "longitude": -80.1935973,
+        "display_name": "Miami, Miami-Dade County, Florida, United States",
+        "osm_type": "relation",
+        "osm_id": 1216769,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Austin, TX, United States",
+      "city": "Austin, TX",
+      "country": "United States",
+      "result": {
+        "latitude": 30.2711286,
+        "longitude": -97.7436995,
+        "display_name": "Austin, Travis County, Texas, United States",
+        "osm_type": "relation",
+        "osm_id": 113314,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Beechworth, Australia",
+      "city": "Beechworth",
+      "country": "Australia",
+      "result": {
+        "latitude": -36.3594929,
+        "longitude": 146.687012,
+        "display_name": "Beechworth, Victoria, 3747, Australia",
+        "osm_type": "relation",
+        "osm_id": 2583191,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Buenos Aires, Argentina",
+      "city": "Buenos Aires",
+      "country": "Argentina",
+      "result": {
+        "latitude": -34.6095579,
+        "longitude": -58.3887904,
+        "display_name": "Buenos Aires, Comuna 1, Ciudad Autónoma de Buenos Aires, Argentina",
+        "osm_type": "relation",
+        "osm_id": 1224652,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Dallas, TX, United States",
+      "city": "Dallas, TX",
+      "country": "United States",
+      "result": {
+        "latitude": 32.7762719,
+        "longitude": -96.7968559,
+        "display_name": "Dallas, Dallas County, Texas, United States",
+        "osm_type": "relation",
+        "osm_id": 6571629,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Cambridge, MA, United States",
+      "city": "Cambridge, MA",
+      "country": "United States",
+      "result": {
+        "latitude": 42.3656347,
+        "longitude": -71.1040018,
+        "display_name": "Cambridge, Middlesex County, Massachusetts, United States",
+        "osm_type": "relation",
+        "osm_id": 1933745,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Bedford, United Kingdom",
+      "city": "Bedford",
+      "country": "United Kingdom",
+      "result": {
+        "latitude": 52.1363806,
+        "longitude": -0.4675041,
+        "display_name": "Bedford, England, MK40 1SU, United Kingdom",
+        "osm_type": "node",
+        "osm_id": 4085941,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Tysons, VA, United States",
+      "city": "Tysons, VA",
+      "country": "United States",
+      "result": {
+        "latitude": 38.9191272,
+        "longitude": -77.2229636,
+        "display_name": "Tysons, Fairfax County, Virginia, 22103, United States",
+        "osm_type": "relation",
+        "osm_id": 206744,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "",
+      "city": "Online",
+      "country": "Online",
+      "result": null
+    },
+    {
+      "query": "Kreuzlingen, Switzerland",
+      "city": "Kreuzlingen",
+      "country": "Switzerland",
+      "result": {
+        "latitude": 47.6464362,
+        "longitude": 9.1725621,
+        "display_name": "Kreuzlingen, Bezirk Kreuzlingen, Thurgau, Schweiz/Suisse/Svizzera/Svizra",
+        "osm_type": "relation",
+        "osm_id": 1684537,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Dubai, United Arab Emirates",
+      "city": "Dubai",
+      "country": "United Arab Emirates",
+      "result": {
+        "latitude": 25.0742823,
+        "longitude": 55.1885624,
+        "display_name": "دبي, الإمارات العربية المتحدة",
+        "osm_type": "relation",
+        "osm_id": 4479752,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Las Vegas, NV, United States",
+      "city": "Las Vegas, NV",
+      "country": "United States",
+      "result": {
+        "latitude": 36.1674263,
+        "longitude": -115.1484131,
+        "display_name": "Las Vegas, Clark County, Nevada, United States",
+        "osm_type": "relation",
+        "osm_id": 170117,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Viareggio, Italy",
+      "city": "Viareggio",
+      "country": "Italy",
+      "result": {
+        "latitude": 43.8672392,
+        "longitude": 10.2506055,
+        "display_name": "Viareggio, Unione dei comuni della Versilia, Lucca, Toscana, 55049, Italia",
+        "osm_type": "relation",
+        "osm_id": 42664,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Brescia, Italy",
+      "city": "Brescia",
+      "country": "Italy",
+      "result": {
+        "latitude": 45.7795805,
+        "longitude": 10.425873,
+        "display_name": "Brescia, Lombardia, Italia",
+        "osm_type": "relation",
+        "osm_id": 44882,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Prague, Czech Republic",
+      "city": "Prague",
+      "country": "Czech Republic",
+      "result": {
+        "latitude": 50.0874654,
+        "longitude": 14.4212535,
+        "display_name": "Praha, Česko",
+        "osm_type": "relation",
+        "osm_id": 435514,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Warsaw, Poland",
+      "city": "Warsaw",
+      "country": "Poland",
+      "result": {
+        "latitude": 52.2333742,
+        "longitude": 21.0711489,
+        "display_name": "Warszawa, województwo mazowieckie, Polska",
+        "osm_type": "relation",
+        "osm_id": 2907540,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Dublin, Ireland",
+      "city": "Dublin",
+      "country": "Ireland",
+      "result": {
+        "latitude": 53.3493795,
+        "longitude": -6.2605593,
+        "display_name": "Dublin, County Dublin, Leinster, Éire / Ireland",
+        "osm_type": "relation",
+        "osm_id": 1109531,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Oslo, Norway",
+      "city": "Oslo",
+      "country": "Norway",
+      "result": {
+        "latitude": 59.9133301,
+        "longitude": 10.7389701,
+        "display_name": "Oslo, Norge",
+        "osm_type": "relation",
+        "osm_id": 406091,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Bretagne, France",
+      "city": "Bretagne",
+      "country": "France",
+      "result": {
+        "latitude": 48.2640845,
+        "longitude": -2.9202408,
+        "display_name": "Bretagne, France métropolitaine, France",
+        "osm_type": "relation",
+        "osm_id": 102740,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Seoul, South Korea",
+      "city": "Seoul",
+      "country": "South Korea",
+      "result": {
+        "latitude": 37.5666791,
+        "longitude": 126.9782914,
+        "display_name": "서울특별시, 대한민국",
+        "osm_type": "relation",
+        "osm_id": 2297418,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Tampa, FL, United States",
+      "city": "Tampa, FL",
+      "country": "United States",
+      "result": {
+        "latitude": 27.9449854,
+        "longitude": -82.4583107,
+        "display_name": "Tampa, Hillsborough County, Florida, United States",
+        "osm_type": "relation",
+        "osm_id": 1216849,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Washington, DC, United States",
+      "city": "Washington, DC",
+      "country": "United States",
+      "result": {
+        "latitude": 38.8950982,
+        "longitude": -77.0363849,
+        "display_name": "Washington, District of Columbia, United States",
+        "osm_type": "relation",
+        "osm_id": 5396194,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Calgary, AB, Canada",
+      "city": "Calgary, AB",
+      "country": "Canada",
+      "result": {
+        "latitude": 51.0456064,
+        "longitude": -114.057541,
+        "display_name": "Calgary, Alberta, Canada",
+        "osm_type": "relation",
+        "osm_id": 3227127,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Palma, Spain",
+      "city": "Palma",
+      "country": "Spain",
+      "result": {
+        "latitude": 39.5695818,
+        "longitude": 2.6500745,
+        "display_name": "Palma, Illes Balears, España",
+        "osm_type": "relation",
+        "osm_id": 341321,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Hannover, Germany",
+      "city": "Hannover",
+      "country": "Germany",
+      "result": {
+        "latitude": 52.3744779,
+        "longitude": 9.7385532,
+        "display_name": "Hannover, Region Hannover, Niedersachsen, Deutschland",
+        "osm_type": "relation",
+        "osm_id": 59418,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Portland, OR, United States",
+      "city": "Portland, OR",
+      "country": "United States",
+      "result": {
+        "latitude": 45.5202471,
+        "longitude": -122.674194,
+        "display_name": "Portland, Multnomah County, Oregon, United States",
+        "osm_type": "relation",
+        "osm_id": 186579,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Lansing, MI, United States",
+      "city": "Lansing, MI",
+      "country": "United States",
+      "result": {
+        "latitude": 42.7338254,
+        "longitude": -84.5546295,
+        "display_name": "Lansing, Ingham County, Michigan, United States",
+        "osm_type": "relation",
+        "osm_id": 134997,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Riga, Latvia",
+      "city": "Riga",
+      "country": "Latvia",
+      "result": {
+        "latitude": 56.9493977,
+        "longitude": 24.1051846,
+        "display_name": "Rīga, Latvija",
+        "osm_type": "relation",
+        "osm_id": 13048688,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Budapest, Hungary",
+      "city": "Budapest",
+      "country": "Hungary",
+      "result": {
+        "latitude": 47.4978789,
+        "longitude": 19.0402383,
+        "display_name": "Budapest, Közép-Magyarország, Magyarország",
+        "osm_type": "relation",
+        "osm_id": 1244004,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Helsinki, Finland",
+      "city": "Helsinki",
+      "country": "Finland",
+      "result": {
+        "latitude": 60.1666204,
+        "longitude": 24.9435408,
+        "display_name": "Helsinki, Helsingin seutukunta, Uusimaa, Manner-Suomi, Suomi / Finland",
+        "osm_type": "relation",
+        "osm_id": 34914,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Vancouver, BC, Canada",
+      "city": "Vancouver, BC",
+      "country": "Canada",
+      "result": {
+        "latitude": 49.2608724,
+        "longitude": -123.113952,
+        "display_name": "Vancouver, Metro Vancouver Regional District, British Columbia, Canada",
+        "osm_type": "relation",
+        "osm_id": 1852574,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Hong Kong, Hong Kong",
+      "city": "Hong Kong",
+      "country": "Hong Kong",
+      "result": {
+        "latitude": 22.2818333,
+        "longitude": 114.1582831,
+        "display_name": "香港 Hong Kong, 中国",
+        "osm_type": "relation",
+        "osm_id": 20044132,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Istanbul, Turkey",
+      "city": "Istanbul",
+      "country": "Turkey",
+      "result": {
+        "latitude": 41.006381,
+        "longitude": 28.9758715,
+        "display_name": "İstanbul, Fatih, İstanbul, Marmara Bölgesi, 34122, Türkiye",
+        "osm_type": "node",
+        "osm_id": 1882099475,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Bali, Indonesia",
+      "city": "Bali",
+      "country": "Indonesia",
+      "result": {
+        "latitude": -8.2271303,
+        "longitude": 115.1919203,
+        "display_name": "Bali, Indonesia",
+        "osm_type": "relation",
+        "osm_id": 1615621,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Berlin, Germany",
+      "city": "Berlin",
+      "country": "Germany",
+      "result": {
+        "latitude": 52.5173885,
+        "longitude": 13.3951309,
+        "display_name": "Berlin, Deutschland",
+        "osm_type": "relation",
+        "osm_id": 62422,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Madrid, Spain",
+      "city": "Madrid",
+      "country": "Spain",
+      "result": {
+        "latitude": 40.416782,
+        "longitude": -3.703507,
+        "display_name": "Madrid, Comunidad de Madrid, España",
+        "osm_type": "relation",
+        "osm_id": 5326784,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "New Hampshire, United States",
+      "city": "New Hampshire",
+      "country": "United States",
+      "result": {
+        "latitude": 43.4849133,
+        "longitude": -71.6553992,
+        "display_name": "New Hampshire, United States",
+        "osm_type": "relation",
+        "osm_id": 67213,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Atlanta, GA, United States",
+      "city": "Atlanta, GA",
+      "country": "United States",
+      "result": {
+        "latitude": 33.7544657,
+        "longitude": -84.3898151,
+        "display_name": "Atlanta, Fulton County, Georgia, United States",
+        "osm_type": "relation",
+        "osm_id": 119557,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Lugano, Switzerland",
+      "city": "Lugano",
+      "country": "Switzerland",
+      "result": {
+        "latitude": 46.0038007,
+        "longitude": 8.9512275,
+        "display_name": "Lugano, Circolo di Lugano ovest, Distretto di Lugano, Ticino, Schweiz/Suisse/Svizzera/Svizra",
+        "osm_type": "relation",
+        "osm_id": 2888417,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "São Paulo, Brazil",
+      "city": "São Paulo",
+      "country": "Brazil",
+      "result": {
+        "latitude": -23.5506507,
+        "longitude": -46.6333824,
+        "display_name": "São Paulo, Região Sudeste, Brasil",
+        "osm_type": "relation",
+        "osm_id": 298285,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "San Salvador, El Salvador",
+      "city": "San Salvador",
+      "country": "El Salvador",
+      "result": {
+        "latitude": 13.697629,
+        "longitude": -89.191156,
+        "display_name": "San Salvador, San Salvador Centro, San Salvador, El Salvador",
+        "osm_type": "relation",
+        "osm_id": 6462027,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Mauritius, Mauritius",
+      "city": "Mauritius",
+      "country": "Mauritius",
+      "result": {
+        "latitude": -20.2534998,
+        "longitude": 57.589573,
+        "display_name": "Ile Maurice, Moka, Mauritius / Maurice",
+        "osm_type": "relation",
+        "osm_id": 1569926,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Taipei, Taiwan",
+      "city": "Taipei",
+      "country": "Taiwan",
+      "result": {
+        "latitude": 25.0375198,
+        "longitude": 121.5636796,
+        "display_name": "臺北市, 臺灣",
+        "osm_type": "relation",
+        "osm_id": 1293250,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Praha, Czech Republic",
+      "city": "Praha",
+      "country": "Czech Republic",
+      "result": {
+        "latitude": 50.0874654,
+        "longitude": 14.4212535,
+        "display_name": "Praha, Česko",
+        "osm_type": "relation",
+        "osm_id": 435514,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Hong Kong, Hong Kong SAR",
+      "city": "Hong Kong",
+      "country": "Hong Kong SAR",
+      "result": {
+        "latitude": 22.2818333,
+        "longitude": 114.1582831,
+        "display_name": "香港 Hong Kong, 中国",
+        "osm_type": "relation",
+        "osm_id": 20044132,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "New York, USA",
+      "city": "New York",
+      "country": "USA",
+      "result": {
+        "latitude": 40.7127281,
+        "longitude": -74.0060152,
+        "display_name": "New York, United States",
+        "osm_type": "relation",
+        "osm_id": 175905,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Washington, USA",
+      "city": "Washington",
+      "country": "USA",
+      "result": {
+        "latitude": 38.8950982,
+        "longitude": -77.0363849,
+        "display_name": "Washington, District of Columbia, United States",
+        "osm_type": "relation",
+        "osm_id": 5396194,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "New York City, USA",
+      "city": "New York City",
+      "country": "USA",
+      "result": {
+        "latitude": 40.7127281,
+        "longitude": -74.0060152,
+        "display_name": "New York, United States",
+        "osm_type": "relation",
+        "osm_id": 175905,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Vilnius, Lithuania",
+      "city": "Vilnius",
+      "country": "Lithuania",
+      "result": {
+        "latitude": 54.6870458,
+        "longitude": 25.2829111,
+        "display_name": "Vilnius, Vilniaus miesto savivaldybė, Vilniaus apskritis, Lietuva",
+        "osm_type": "relation",
+        "osm_id": 1529146,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "New York City",
+      "city": "New York City",
+      "country": null,
+      "result": {
+        "latitude": 40.7127281,
+        "longitude": -74.0060152,
+        "display_name": "New York, United States",
+        "osm_type": "relation",
+        "osm_id": 175905,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Roatan, Honduras",
+      "city": "Roatan",
+      "country": "Honduras",
+      "result": {
+        "latitude": 16.3490211,
+        "longitude": -86.4977513,
+        "display_name": "Roatán, Islas de la Bahía, Honduras",
+        "osm_type": "relation",
+        "osm_id": 5989963,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Toronto, Canada",
+      "city": "Toronto",
+      "country": "Canada",
+      "result": {
+        "latitude": 43.6534817,
+        "longitude": -79.3839347,
+        "display_name": "Toronto, Golden Horseshoe, Ontario, Canada",
+        "osm_type": "relation",
+        "osm_id": 324211,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Poznan, Poland",
+      "city": "Poznan",
+      "country": "Poland",
+      "result": {
+        "latitude": 52.4082663,
+        "longitude": 16.9335199,
+        "display_name": "Poznań, województwo wielkopolskie, Polska",
+        "osm_type": "relation",
+        "osm_id": 2456294,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Nashville, USA",
+      "city": "Nashville",
+      "country": "USA",
+      "result": {
+        "latitude": 36.1622767,
+        "longitude": -86.7742984,
+        "display_name": "Nashville, Davidson County, Middle Tennessee, Tennessee, United States",
+        "osm_type": "relation",
+        "osm_id": 197472,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "London",
+      "city": "London",
+      "country": null,
+      "result": {
+        "latitude": 51.5074456,
+        "longitude": -0.1277653,
+        "display_name": "Greater London, England, United Kingdom",
+        "osm_type": "relation",
+        "osm_id": 175342,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Atlanta, USA",
+      "city": "Atlanta",
+      "country": "USA",
+      "result": {
+        "latitude": 33.7544657,
+        "longitude": -84.3898151,
+        "display_name": "Atlanta, Fulton County, Georgia, United States",
+        "osm_type": "relation",
+        "osm_id": 119557,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Santa Monica, USA",
+      "city": "Santa Monica",
+      "country": "USA",
+      "result": {
+        "latitude": 34.0194704,
+        "longitude": -118.491227,
+        "display_name": "Santa Monica, Los Angeles County, California, United States",
+        "osm_type": "relation",
+        "osm_id": 3353288,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Gauteng, South Africa",
+      "city": "Gauteng",
+      "country": "South Africa",
+      "result": {
+        "latitude": -25.9363439,
+        "longitude": 28.0813105,
+        "display_name": "Gauteng, South Africa",
+        "osm_type": "relation",
+        "osm_id": 349344,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Busselton, Australia",
+      "city": "Busselton",
+      "country": "Australia",
+      "result": {
+        "latitude": -33.644499,
+        "longitude": 115.3488754,
+        "display_name": "Busselton, Western Australia, Australia",
+        "osm_type": "node",
+        "osm_id": 82448311,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Lugano",
+      "city": "Lugano",
+      "country": null,
+      "result": {
+        "latitude": 46.0038007,
+        "longitude": 8.9512275,
+        "display_name": "Lugano, Circolo di Lugano ovest, Distretto di Lugano, Ticino, Schweiz/Suisse/Svizzera/Svizra",
+        "osm_type": "relation",
+        "osm_id": 2888417,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Wellington",
+      "city": "Wellington",
+      "country": null,
+      "result": {
+        "latitude": -41.2887953,
+        "longitude": 174.7772114,
+        "display_name": "Wellington, Wellington City, Wellington, 6011, New Zealand / Aotearoa",
+        "osm_type": "node",
+        "osm_id": 204648,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Punta Mita, Mexico",
+      "city": "Punta Mita",
+      "country": "Mexico",
+      "result": {
+        "latitude": 20.7813959,
+        "longitude": -105.529442,
+        "display_name": "Punta Mita, Corral del Risco, Bahía de Banderas, Nayarit, México",
+        "osm_type": "node",
+        "osm_id": 3799736457,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Jaipur",
+      "city": "Jaipur",
+      "country": null,
+      "result": {
+        "latitude": 26.9154576,
+        "longitude": 75.8189817,
+        "display_name": "Jaipur, Jaipur Municipal Corporation, Jaipur Tehsil, Jaipur, Rajasthan, 302001, India",
+        "osm_type": "node",
+        "osm_id": 315734346,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Sofia",
+      "city": "Sofia",
+      "country": null,
+      "result": {
+        "latitude": 42.6977028,
+        "longitude": 23.3217359,
+        "display_name": "София, Средец, Столична, София-град, България",
+        "osm_type": "relation",
+        "osm_id": 4283101,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Amsterdam, Netherlands",
+      "city": "Amsterdam",
+      "country": "Netherlands",
+      "result": {
+        "latitude": 52.3730796,
+        "longitude": 4.8924534,
+        "display_name": "Amsterdam, Noord-Holland, Nederland",
+        "osm_type": "relation",
+        "osm_id": 271110,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Kentfield, USA",
+      "city": "Kentfield",
+      "country": "USA",
+      "result": {
+        "latitude": 37.9458253,
+        "longitude": -122.5598368,
+        "display_name": "Kentfield, Marin County, California, 94904, United States",
+        "osm_type": "relation",
+        "osm_id": 1260311,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "London, UK",
+      "city": "London",
+      "country": "UK",
+      "result": {
+        "latitude": 51.5074456,
+        "longitude": -0.1277653,
+        "display_name": "Greater London, England, United Kingdom",
+        "osm_type": "relation",
+        "osm_id": 175342,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Manchester, UK",
+      "city": "Manchester",
+      "country": "UK",
+      "result": {
+        "latitude": 53.4794892,
+        "longitude": -2.2451148,
+        "display_name": "Manchester, Lancashire, Greater Manchester, England, M60 2UH, United Kingdom",
+        "osm_type": "node",
+        "osm_id": 294001443,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "El Zonte, El Salvador",
+      "city": "El Zonte",
+      "country": "El Salvador",
+      "result": {
+        "latitude": 13.4977884,
+        "longitude": -89.4407366,
+        "display_name": "El Zonte, La Libertad Costa, La Libertad, 1511, El Salvador",
+        "osm_type": "way",
+        "osm_id": 958573446,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Bangkok",
+      "city": "Bangkok",
+      "country": null,
+      "result": {
+        "latitude": 13.7524938,
+        "longitude": 100.4935089,
+        "display_name": "กรุงเทพมหานคร, ประเทศไทย",
+        "osm_type": "relation",
+        "osm_id": 92277,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Abu Dhabi, United Arab Emirates",
+      "city": "Abu Dhabi",
+      "country": "United Arab Emirates",
+      "result": {
+        "latitude": 24.4538352,
+        "longitude": 54.3774014,
+        "display_name": "أبو ظبي, أبوظبي, أبو ظبي, الإمارات العربية المتحدة",
+        "osm_type": "relation",
+        "osm_id": 4479763,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Fontainebleau",
+      "city": "Fontainebleau",
+      "country": null,
+      "result": {
+        "latitude": 48.4049375,
+        "longitude": 2.7015872,
+        "display_name": "Fontainebleau, Seine-et-Marne, Île-de-France, France métropolitaine, 77300, France",
+        "osm_type": "relation",
+        "osm_id": 216359,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Fort Worth, United States",
+      "city": "Fort Worth",
+      "country": "United States",
+      "result": {
+        "latitude": 32.753177,
+        "longitude": -97.3327459,
+        "display_name": "Fort Worth, Tarrant County, Texas, United States",
+        "osm_type": "relation",
+        "osm_id": 115274,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Queenstown",
+      "city": "Queenstown",
+      "country": null,
+      "result": {
+        "latitude": -45.0321923,
+        "longitude": 168.661,
+        "display_name": "Queenstown, Queenstown-Lakes District, Otago, 9348, New Zealand / Aotearoa",
+        "osm_type": "node",
+        "osm_id": 175734291,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Bristol",
+      "city": "Bristol",
+      "country": null,
+      "result": {
+        "latitude": 51.4430141,
+        "longitude": -2.5816622,
+        "display_name": "City of Bristol, West of England, England, United Kingdom",
+        "osm_type": "relation",
+        "osm_id": 57539,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    },
+    {
+      "query": "Warsaw",
+      "city": "Warsaw",
+      "country": null,
+      "result": {
+        "latitude": 52.2333742,
+        "longitude": 21.0711489,
+        "display_name": "Warszawa, województwo mazowieckie, Polska",
+        "osm_type": "relation",
+        "osm_id": 2907540,
+        "license": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright"
+      }
+    }
+  ]
+}

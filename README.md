@@ -1,12 +1,12 @@
-# Awesome Bitcoin Events / Signal Atlas
+# Awesome Bitcoin Events
 
-Signal Atlas is a static, source-aware calendar for Bitcoin conferences, meetups, retreats, and related gatherings. It turns the normalized records in `data/events.json` into a fast GitHub Pages site with a browseable calendar and one generated detail page per event.
+Awesome Bitcoin Events is a community repository of Bitcoin conferences, meetups, retreats, and related gatherings. It turns the normalized records in `data/events.json` into a fast GitHub Pages site with a browseable calendar, map, and one generated detail page per event.
 
 ## Build stack
 
 - **Astro 5** generates static HTML at build time. There is no server and no runtime database.
-- **Plain CSS** in `src/styles/global.css` owns the visual system, responsive layout, and accessibility states.
-- A small browser script in `src/pages/index.astro` adds search and filtering after the HTML loads. The site still contains the full upcoming listing without JavaScript.
+- **Leaflet** renders the event map with OpenStreetMap tiles. `data/geo-cache.json` preserves the public geocoding cache and attribution; points are labeled as venue or city-centre approximations.
+- A small browser script in `src/pages/index.astro` adds search, filtering, and map popups after the HTML loads. The site still contains the full upcoming listing without JavaScript.
 - `.github/workflows/pages.yml` builds with Node 20 and deploys `dist/` through GitHub Pages Actions.
 
 ## Run it locally

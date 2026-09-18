@@ -92,6 +92,30 @@ button { cursor: pointer; }
 .signal-strip strong { color: var(--orange); font: 500 26px/1 var(--mono); letter-spacing: -.08em; }
 .signal-strip span { color: rgba(255,250,240,.5); font-size: 11px; line-height: 1.25; }
 
+.map-section { padding: 94px 0 98px; color: var(--cream); background: var(--blue); }
+.map-heading .kicker, .map-summary .eyebrow { color: var(--orange); }
+.map-heading h2 { color: var(--cream); }
+.map-heading .section-note { color: rgba(255,250,240,.56); }
+.map-layout { display: grid; grid-template-columns: minmax(0, 1fr) 245px; gap: 18px; align-items: stretch; }
+.map-frame { position: relative; min-height: 510px; overflow: hidden; background: #c8d5d0; border: 1px solid var(--dark-line); }
+#event-map { width: 100%; height: 510px; }
+.map-frame .leaflet-container { background: #d7e0db; font-family: var(--body); }
+.map-frame .leaflet-control-zoom a { color: var(--ink); }
+.map-frame .leaflet-popup-content-wrapper, .map-frame .leaflet-popup-tip { background: var(--cream); color: var(--ink); }
+.map-frame .leaflet-popup-content { margin: 13px 15px; font-size: 12px; line-height: 1.55; }
+.map-frame .leaflet-popup-content strong { display: block; margin-bottom: 3px; font: 600 15px/1.15 var(--display); }
+.map-frame .leaflet-popup-content a { display: inline-block; margin-top: 5px; color: var(--orange-deep); font-weight: 600; }
+.map-credit { position: absolute; right: 5px; bottom: 4px; z-index: 400; padding: 2px 5px; color: var(--muted); background: rgba(255,250,240,.82); font-size: 10px; }
+.map-credit a { text-decoration: underline; }
+.map-empty { display: grid; place-items: center; height: 100%; min-height: 510px; margin: 0; color: var(--muted); }
+.map-summary { display: flex; flex-direction: column; justify-content: center; padding: 27px; background: rgba(255,250,240,.08); border: 1px solid var(--dark-line); }
+.map-total { display: block; margin: 6px 0 4px; color: var(--orange); font: 500 clamp(48px, 6vw, 74px)/.9 var(--mono); letter-spacing: -.1em; }
+.map-summary > p:not(.eyebrow) { margin: 0 0 30px; color: rgba(255,250,240,.62); font-size: 13px; line-height: 1.5; }
+.map-key { display: flex; align-items: center; gap: 9px; margin: 9px 0; color: rgba(255,250,240,.7); font-size: 12px; }
+.map-key-dot { width: 10px; height: 10px; border: 2px solid var(--blue); border-radius: 50%; }
+.map-key-dot.venue { background: var(--orange); }.map-key-dot.city { background: #73b6a2; }
+.map-summary .text-link { margin-top: 28px; color: var(--orange); }
+
 .calendar-section { padding: 94px 0 118px; background: var(--paper); }
 .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 40px; margin-bottom: 38px; }
 .section-heading .kicker, .method-section .kicker { color: var(--orange-deep); }
@@ -228,6 +252,7 @@ button { cursor: pointer; }
   .header-inner { min-height: 66px; }.site-nav { gap: 12px; }.site-nav > a:not(.nav-github) { display: none; }.site-nav .nav-github { padding: 7px 9px; font-size: 11px; }
   .hero-grid { padding-top: 65px; padding-bottom: 55px; }.hero h1 { font-size: clamp(47px, 14vw, 70px); }.hero-lede { font-size: 16px; }.hero-aside { display: block; }.orbit-mark { display: none; }.next-events { margin-top: 35px; }
   .signal-strip { grid-template-columns: repeat(2, 1fr); gap: 19px 0; padding: 18px 0 22px; }.signal-strip div:nth-child(3) { padding-left: 0; border-left: 0; }.signal-strip strong { font-size: 21px; }.signal-strip span { font-size: 10px; }
+  .map-section { padding: 70px 0 75px; }.map-layout { grid-template-columns: 1fr; }.map-frame, #event-map { min-height: 390px; height: 390px; }.map-summary { min-height: 270px; }
   .calendar-section { padding: 70px 0 80px; }.section-heading { display: block; margin-bottom: 28px; }.section-note { max-width: 400px; margin-top: 16px; }.control-panel { display: flex; flex-wrap: wrap; }.search-field { flex: 1 1 100%; }.filter-tabs { flex: 1; overflow-x: auto; }.select-field { flex: 1 1 30%; }.verified-toggle { flex: 1 1 100%; }.filter-result { width: 100%; margin: 0; text-align: left; }
   .event-groups { margin-top: 45px; }.event-grid { grid-template-columns: 1fr; gap: 10px; }.event-card { min-height: 220px; }.event-card-content { margin-block: 19px 15px; }
   .method-section { padding: 75px 0 85px; }.method-grid { display: block; }.method-copy { margin-top: 35px; }.method-copy > p { font-size: 16px; }.method-points { grid-template-columns: 1fr; gap: 19px; }.method-points > div { grid-template-columns: 32px 1fr; }.method-points strong { grid-row: span 2; }.method-points p { grid-column: 2; }

@@ -13,8 +13,20 @@ const types = [...new Set(events.map((event) => event.classification.event_type)
 const countries = new Set(events.map((event) => event.location.country).filter(Boolean));
 const nextEvents = upcomingEvents.slice(0, 3);
 const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+const mapEvents = events.filter((event) => event.location.latitude !== null && event.location.longitude !== null).map((event) => ({
+  id: event.id,
+  title: event.title,
+  start: event.dates.start,
+  end: event.dates.end,
+  city: event.location.city || event.location.country || 'Location unknown',
+  country: event.location.country || '',
+  latitude: event.location.latitude,
+  longitude: event.location.longitude,
+  precision: event.location.coordinates_precision || 'approximate',
+  url: `${base}events/${event.id}/`
+}));
 ---
-<BaseLayout title="Bitcoin Events — Signal Atlas" description="A source-aware calendar of Bitcoin events around the world.">
+<BaseLayout title="Awesome Bitcoin Events — Community calendar" description="A community repository of Bitcoin events around the world.">
   <main id="main-content">
     <section class="hero-section">
       <div class="shell hero-grid">
@@ -27,7 +39,7 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
         <div class="hero-aside" aria-label="Dataset summary">
           <div class="orbit-mark" aria-hidden="true"><span>₿</span><i></i><i></i><i></i></div>
           <div class="next-events">
-            <p class="eyebrow">Next on the signal</p>
+            <p class="eyebrow">Next events</p>
             {nextEvents.map((event) => (
               <a class="next-event" href={`${base}events/${event.id}/`}>
                 <span class="next-event-date">{event.dates.start.slice(5).replace('-', ' /')}</span>
@@ -44,6 +56,30 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
         <div><strong>{countries.size}</strong><span>countries represented</span></div>
         <div><strong>{sourceDataset.unique_sources_total}</strong><span>source records mapped</span></div>
       </div>
+    </section>
+
+    <section class="map-section" id="map">
+      <div class="shell">
+        <div class="section-heading map-heading">
+          <div>
+            <p class="kicker"><span class="kicker-line"></span> The community, in place</p>
+            <h2>Where Bitcoin meets.</h2>
+          </div>
+          <p class="section-note">Dots use venue coordinates when available, otherwise a clearly marked city-centre point. Records without usable coordinates stay in the calendar.</p>
+        </div>
+        <div class="map-layout">
+          <div class="map-frame"><div id="event-map" role="img" aria-label="Map of Bitcoin events with location data"></div><div class="map-credit">Map data © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap contributors</a></div></div>
+          <aside class="map-summary">
+            <p class="eyebrow">Map coverage</p>
+            <strong class="map-total">{mapEvents.length}</strong>
+            <p>of {events.length} records currently have a usable map point.</p>
+            <div class="map-key"><span class="map-key-dot venue"></span><span>Venue / exact place</span></div>
+            <div class="map-key"><span class="map-key-dot city"></span><span>City-centre approximation</span></div>
+            <a class="text-link large" href="#calendar">Browse the full list <span aria-hidden="true">↘</span></a>
+          </aside>
+        </div>
+      </div>
+      <script type="application/json" id="map-data" set:html={JSON.stringify(mapEvents)}></script>
     </section>
 
     <section class="calendar-section" id="calendar">
@@ -104,7 +140,7 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
     <section class="method-section" id="method">
       <div class="shell method-grid">
         <div><p class="kicker"><span class="kicker-line"></span> A better calendar</p><h2>Evidence, not noise.</h2></div>
-        <div class="method-copy"><p>Signal Atlas keeps the useful mess of event discovery visible. Official pages, community leads, and legacy records are clearly labeled instead of flattened into one false level of certainty.</p><div class="method-points"><div><strong>01</strong><span>Source-aware</span><p>Every event retains the observation that put it on the map.</p></div><div><strong>02</strong><span>Open by default</span><p>The data is versioned in GitHub and can be inspected or extended.</p></div><div><strong>03</strong><span>Built to improve</span><p>Review states make the gaps visible without hiding useful leads.</p></div></div><a class="text-link large" href="https://github.com/itstomekk/awesome-bitcoin-events" target="_blank" rel="noreferrer">Read the data contract <span aria-hidden="true">↗</span></a></div>
+        <div class="method-copy"><p>Awesome Bitcoin Events keeps the useful mess of event discovery visible. Official pages, community leads, and legacy records are clearly labeled instead of flattened into one false level of certainty.</p><div class="method-points"><div><strong>01</strong><span>Source-aware</span><p>Every event retains the observation that put it on the map.</p></div><div><strong>02</strong><span>Open by default</span><p>The data is versioned in GitHub and can be inspected or extended.</p></div><div><strong>03</strong><span>Built to improve</span><p>Review states make the gaps visible without hiding useful leads.</p></div></div><a class="text-link large" href="https://github.com/itstomekk/awesome-bitcoin-events" target="_blank" rel="noreferrer">Read the data contract <span aria-hidden="true">↗</span></a></div>
       </div>
     </section>
   </main>
@@ -159,5 +195,34 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
       applyFilters();
     });
     applyFilters();
+
+    const mapDataNode = document.querySelector('#map-data');
+    const mapData = mapDataNode ? JSON.parse(mapDataNode.textContent) : [];
+    const mapNode = document.querySelector('#event-map');
+    if (mapNode && window.L && mapData.length) {
+      const eventMap = window.L.map(mapNode, { scrollWheelZoom: false, worldCopyJump: true });
+      window.L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: '&copy; OpenStreetMap contributors'
+      }).addTo(eventMap);
+      const bounds = [];
+      const escapeMap = (value) => String(value).replace(/[&<>\"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '\"': '&quot;', "'": '&#39;' })[char]);
+      const formatMapDate = (event) => event.start === event.end ? event.start : `${event.start} → ${event.end}`;
+      mapData.forEach((event) => {
+        const point = window.L.circleMarker([event.latitude, event.longitude], {
+          radius: event.precision === 'venue' ? 7 : 5,
+          color: event.precision === 'venue' ? '#f7931a' : '#73b6a2',
+          fillColor: event.precision === 'venue' ? '#f7931a' : '#73b6a2',
+          fillOpacity: .9,
+          weight: 2
+        }).addTo(eventMap);
+        point.bindPopup(`<strong>${escapeMap(event.title)}</strong><br><span>${escapeMap(formatMapDate(event))}</span><br><span>${escapeMap(event.city)}${event.country ? `, ${escapeMap(event.country)}` : ''}</span><br><a href="${escapeMap(event.url)}">Open event ↗</a>`);
+        bounds.push([event.latitude, event.longitude]);
+      });
+      eventMap.fitBounds(bounds, { padding: [24, 24], maxZoom: 4 });
+      window.addEventListener('resize', () => eventMap.invalidateSize(), { passive: true });
+    } else if (mapNode) {
+      mapNode.innerHTML = '<p class="map-empty">Map tiles could not load. The calendar remains available below.</p>';
+    }
   </script>
 </BaseLayout>

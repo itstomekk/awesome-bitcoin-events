@@ -11,7 +11,8 @@ A source is evidence, not truth. Every published event retains its source, raw s
 - The legacy website and root-level `events.json` remain preserved as a reference.
 - `data/events.json` is the canonical UI input: 109 normalized records, including legacy migrations and reviewed source candidates.
 - `data/sources.json` is the canonical source directory.
-- An Astro static site now consumes the data at build time and deploys through GitHub Pages Actions; no external database is enabled.
+- `data/geo-cache.json` stores map geocoding results and attribution for venue/city points.
+- An Astro static site now consumes the data at build time, renders a map, and deploys through GitHub Pages Actions; no external database is enabled.
 
 ## Phase 1 — source intake and data contract
 
@@ -40,7 +41,7 @@ A source is evidence, not truth. Every published event retains its source, raw s
 - [x] Add responsive search and year/region/type/status filters.
 - [x] Label discovery, legacy, review, and official records distinctly.
 - [ ] Review missing fields that block useful browsing and revise the schema before adding more interface surface.
-- [ ] Map prototype once records have usable coordinates; the current dataset has no coordinates.
+- [x] Map prototype with venue/city coordinates and an attribution-preserving public geocoding cache.
 
 ## Phase 4 — monitoring and public contribution
 
