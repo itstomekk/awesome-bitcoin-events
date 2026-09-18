@@ -24,6 +24,10 @@ timestamps, separates past events, and merges title-year variants without deleti
 
 Added an Astro static site under `src/`, generated detail pages for every normalized event, responsive filters, a source-confidence presentation, a branded 404 page, and a GitHub Pages Actions workflow. The build target is `dist/`; the legacy root-level frontend remains as a reference. `README.md`, `PLAN.md`, `HANDOFF.md`, `CHANGELOG.md`, and `BUILD-LOG.md` now describe the current source/build/deployment boundary.
 
+## 2026-09-18 - LABITCONF 2026 verified
+
+Added the official LABITCONF 2026 source review, raw research snapshot, canonical source record, and normalized event record. The main conference is confirmed for 30–31 October in Buenos Aires; the catalog range includes the official Experience-program events on 29 October and 1 November. The live Astro site now generates the new detail route.
+
 ## 2026-09-16 - Automatic verification and interface fields
 
 Added the sequential Luna verification scan and its raw snapshot. The data contract now includes

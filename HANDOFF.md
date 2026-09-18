@@ -1,6 +1,6 @@
 # Handoff
 
-Updated: 2026-09-16
+Updated: 2026-09-18
 
 ## Current truth
 
@@ -8,10 +8,10 @@ GitHub files are the source of truth. There is no cPanel database or scheduler. 
 
 The data layer remains:
 
-- `data/events.json` contains 108 normalized records: 61 lossless legacy migrations and 47 reviewed source-scan records.
-- `data/sources.json` contains 130 unique sources built from 139 public source records, including all 102 exported Notion source records and observed URLs from automatic verification scans.
+- `data/events.json` contains 109 normalized records: 61 lossless legacy migrations and 48 reviewed source-scan records.
+- `data/sources.json` contains 131 unique sources built from 140 public source records, including all 102 exported Notion source records and observed URLs from automatic verification scans.
 - `data/schema/event-dataset.schema.json` defines the UI-neutral contract.
-- `sources/raw/` preserves immutable research snapshots.
+- `sources/raw/` preserves immutable research snapshots, including the LABITCONF 2026 review at `sources/raw/labitconf-2026-research-2026-09-18.json`.
 
 The Astro build adds:
 
@@ -23,13 +23,15 @@ The Astro build adds:
 
 ## Verification performed
 
-- `npm run build` passes with no Astro warnings and generates 110 pages: home, 108 event routes, and 404.
+- `npm run build` passes with no Astro warnings and generates 111 pages: home, 109 event routes, and 404.
 - A build with `PUBLIC_BASE_PATH=/awesome-bitcoin-events` passes; generated links use `/awesome-bitcoin-events/events/.../` and no concatenated base-path links remain.
 - `python -m pytest -q` passes: 15 tests.
 - `npm audit --omit=dev --audit-level=high` reports 0 production vulnerabilities.
 - `git diff --check` passes.
-- The automated browser sandbox blocked localhost and the desktop preview pane was unavailable, so browser visual/interaction QA remains to be run from an interactive local session.
+- The new LABITCONF record validates against the JSON Schema, resolves its official source ID, and has a generated detail route.
+- GitHub Pages deployment is live at `https://itstomekk.github.io/awesome-bitcoin-events/`; the Actions run and Pages API both report success. Live home and LABITCONF detail content were fetched over HTTPS.
+- The automated browser sandbox timed out on the deployed page, so visual interaction QA remains unverified in this session.
 
 ## Next action
 
-Review the 2 unresolved candidates against organizer-owned pages, then continue adding 20–30 manually verified current/future events from representative source types. After that, evaluate whether coordinates are complete enough for a map consumer. When the repository is pushed, enable Pages with the workflow source and verify the public HTTPS URL and Actions run before calling the deployment live.
+Review the 2 unresolved candidates against organizer-owned pages, then continue adding 20–30 manually verified current/future events from representative source types. After that, evaluate whether coordinates are complete enough for a map consumer. GitHub Pages is already enabled and live; future data changes should be pushed through the same workflow and checked at the public HTTPS URL.

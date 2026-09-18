@@ -1,8 +1,8 @@
 {
   "schema_version": "source-dataset-1.0",
-  "generated_at": "2026-09-16T21:01:52Z",
-  "source_records_total": 139,
-  "unique_sources_total": 130,
+  "generated_at": "2026-09-18T21:48:08Z",
+  "source_records_total": 140,
+  "unique_sources_total": 131,
   "sources": [
     {
       "id": "source-10-times-venues-ec3c0ad0",
@@ -6394,6 +6394,56 @@
         "notion_type_tags": [
           "reg aggregator"
         ]
+      }
+    },
+    {
+      "id": "official-labitconf",
+      "name": "Official LABITCONF",
+      "urls": {
+        "homepage": "https://www.labitconf.com/",
+        "event_feed_url": null
+      },
+      "source_role": "canonical",
+      "source_type": "review_scan",
+      "geographic_coverage": "Argentina",
+      "topic_coverage": [
+        "Bitcoin",
+        "blockchain",
+        "artificial intelligence"
+      ],
+      "languages": [
+        "ES",
+        "EN"
+      ],
+      "access": {
+        "adapter": "review_scan",
+        "status": "web_search+web_extract"
+      },
+      "monitoring": {
+        "status": "review_pending",
+        "cadence_days": 7,
+        "last_checked": "2026-09-18T21:48:08Z",
+        "decision_reason": "Organizer-owned source confirms the 2026 event and its extended Experience-program dates; cadence remains provisional until the next check."
+      },
+      "quality": {
+        "score": 5,
+        "ratings": [],
+        "notes": "Official page confirms the main 30–31 October conference and the 29 October / 1 November Experience-program events."
+      },
+      "provenance": [
+        {
+          "kind": "review_scan",
+          "record_ref": "sources/raw/labitconf-2026-research-2026-09-18.json",
+          "observed_urls": [
+            "https://www.labitconf.com/",
+            "https://www.latamfintech.co/activities/labitconf",
+            "https://inversorlatam.com/labitconf-elige-argentina-para-celebrar-su-14a-edicion/",
+            "https://www.fxstreet.es/press-releases/llega-labitconf-2026-en-su-edicion-hodl-202609090653"
+          ]
+        }
+      ],
+      "extensions": {
+        "notion_type_tags": []
       }
     }
   ]

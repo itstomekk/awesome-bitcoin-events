@@ -9,7 +9,7 @@ A source is evidence, not truth. Every published event retains its source, raw s
 ## Current state
 
 - The legacy website and root-level `events.json` remain preserved as a reference.
-- `data/events.json` is the canonical UI input: 108 normalized records, including legacy migrations and reviewed source candidates.
+- `data/events.json` is the canonical UI input: 109 normalized records, including legacy migrations and reviewed source candidates.
 - `data/sources.json` is the canonical source directory.
 - An Astro static site now consumes the data at build time and deploys through GitHub Pages Actions; no external database is enabled.
 
@@ -48,7 +48,7 @@ A source is evidence, not truth. Every published event retains its source, raw s
 - [ ] Add an intake queue for user-submitted URLs and event reports.
 - [ ] Add a review workflow and change history.
 - [x] Keep the project GitHub-native: versioned JSON, raw snapshots, review history, and Pages deployment.
-- [ ] Enable Pages in repository settings and verify the public HTTPS URL after the first push.
+- [x] Enable Pages in repository settings and verify the public HTTPS URL after the first push.
 
 ## Operating rule
 

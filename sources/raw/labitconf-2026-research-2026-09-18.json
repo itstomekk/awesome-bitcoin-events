@@ -1,0 +1,45 @@
+{
+  "schema_version": "research-source-scan-1.0",
+  "source_id": "official-labitconf",
+  "observed_at": "2026-09-18T21:48:08Z",
+  "query": "LABITCONF 2026 October 29 November 1 Buenos Aires official",
+  "official_source": {
+    "url": "https://www.labitconf.com/",
+    "title": "LABITCONF 26 — ¿Por qué hodleás?",
+    "access_method": "web_search+web_extract",
+    "excerpts": [
+      "Latin American Bitcoin & Blockchain Conference",
+      "The event #1 of Latin America bringing together people, ideas, and projects redefining money, technology, and the economy through Bitcoin, Blockchain and Artificial Intelligence.",
+      "The Experience ticket includes the B2B Networking Event (29 October), Opening Show (29 October), and Speaker's Networking & Chill Out Full Day (1 November)."
+    ],
+    "observed_facts": {
+      "main_conference_dates": "2026-10-30/2026-10-31",
+      "extended_experience_dates": "2026-10-29/2026-11-01",
+      "venue": "Centro Costa Salguero / BAFerial",
+      "city": "Buenos Aires",
+      "country": "Argentina",
+      "topics": ["Bitcoin", "blockchain", "artificial intelligence"]
+    }
+  },
+  "corroborating_sources": [
+    {
+      "url": "https://www.latamfintech.co/activities/labitconf",
+      "observed_claim": "LABITCONF 2026 runs 29 October to 1 November at Costa Salguero, Buenos Aires, Argentina."
+    },
+    {
+      "url": "https://inversorlatam.com/labitconf-elige-argentina-para-celebrar-su-14a-edicion/",
+      "observed_claim": "The main conference opens 30–31 October 2026 at BAFerial, formerly Costa Salguero, Buenos Aires."
+    },
+    {
+      "url": "https://www.fxstreet.es/press-releases/llega-labitconf-2026-en-su-edicion-hodl-202609090653",
+      "observed_claim": "The 29 October executive networking and Satoshi monument event sits alongside the 30–31 October conference."
+    }
+  ],
+  "decision": {
+    "include": true,
+    "record_date_range": "2026-10-29/2026-11-01",
+    "verification_state": "official_page_seen",
+    "confidence": "high",
+    "reason": "The organizer-owned site confirms the 2026 edition, venue, main conference dates, and the additional 29 October and 1 November Experience events."
+  }
+}
