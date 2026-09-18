@@ -1,0 +1,163 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import EventCard from '../components/EventCard.astro';
+import { events, upcoming, groupByMonth, monthNames, yearOf } from '../lib/events.js';
+import sourceDataset from '../../data/sources.json';
+
+const upcomingEvents = upcoming();
+const upcomingGroups = groupByMonth(upcomingEvents);
+const allGroups = groupByMonth(events);
+const years = [...new Set(events.map(yearOf))].sort((a, b) => b - a);
+const regions = [...new Set(events.map((event) => event.location.region).filter(Boolean))].sort();
+const types = [...new Set(events.map((event) => event.classification.event_type).filter(Boolean))].sort();
+const countries = new Set(events.map((event) => event.location.country).filter(Boolean));
+const nextEvents = upcomingEvents.slice(0, 3);
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+---
+<BaseLayout title="Bitcoin Events — Signal Atlas" description="A source-aware calendar of Bitcoin events around the world.">
+  <main id="main-content">
+    <section class="hero-section">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="kicker"><span class="kicker-line"></span> The open Bitcoin events calendar</p>
+          <h1>Find your people<br /><em>in the Bitcoin world.</em></h1>
+          <p class="hero-lede">A clear view of the conferences, meetups, retreats, and deep dives shaping the year — with the source trail left intact.</p>
+          <a class="button button-primary" href="#calendar">Browse the calendar <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-aside" aria-label="Dataset summary">
+          <div class="orbit-mark" aria-hidden="true"><span>₿</span><i></i><i></i><i></i></div>
+          <div class="next-events">
+            <p class="eyebrow">Next on the signal</p>
+            {nextEvents.map((event) => (
+              <a class="next-event" href={`${base}events/${event.id}/`}>
+                <span class="next-event-date">{event.dates.start.slice(5).replace('-', ' /')}</span>
+                <span><strong>{event.title}</strong><small>{event.location.city || 'Online'}{event.location.country ? `, ${event.location.country}` : ''}</small></span>
+                <span class="arrow" aria-hidden="true">↗</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+      <div class="shell signal-strip">
+        <div><strong>{upcomingEvents.length}</strong><span>upcoming events</span></div>
+        <div><strong>{events.length}</strong><span>records in the atlas</span></div>
+        <div><strong>{countries.size}</strong><span>countries represented</span></div>
+        <div><strong>{sourceDataset.unique_sources_total}</strong><span>source records mapped</span></div>
+      </div>
+    </section>
+
+    <section class="calendar-section" id="calendar">
+      <div class="shell">
+        <div class="section-heading">
+          <div>
+            <p class="kicker"><span class="kicker-line"></span> Browse the atlas</p>
+            <h2>What’s happening next?</h2>
+          </div>
+          <p class="section-note">Filter by place, year, format, or confidence. Every card links back to its record.</p>
+        </div>
+
+        <div class="control-panel" aria-label="Calendar filters">
+          <label class="search-field">
+            <span class="sr-only">Search events</span>
+            <span aria-hidden="true">⌕</span>
+            <input id="event-search" type="search" placeholder="Search by event, city, or country" autocomplete="off" />
+          </label>
+          <div class="filter-tabs" role="group" aria-label="Event status">
+            <button class="filter-tab is-active" type="button" data-status-filter="upcoming">Upcoming <span>{upcomingEvents.length}</span></button>
+            <button class="filter-tab" type="button" data-status-filter="all">All <span>{events.length}</span></button>
+            <button class="filter-tab" type="button" data-status-filter="past">Past</button>
+          </div>
+          <label class="select-field">
+            <span class="sr-only">Filter by year</span>
+            <select id="year-filter"><option value="">Any year</option>{years.map((year) => <option value={year}>{year}</option>)}</select>
+          </label>
+          <label class="select-field">
+            <span class="sr-only">Filter by region</span>
+            <select id="region-filter"><option value="">Any region</option>{regions.map((region) => <option value={region}>{region}</option>)}</select>
+          </label>
+          <label class="select-field">
+            <span class="sr-only">Filter by event type</span>
+            <select id="type-filter"><option value="">Any format</option>{types.map((type) => <option value={type}>{type}</option>)}</select>
+          </label>
+          <label class="verified-toggle"><input id="verified-filter" type="checkbox" /><span class="toggle-box" aria-hidden="true"></span> Official pages only</label>
+          <p class="filter-result" id="filter-result" aria-live="polite">Showing upcoming events</p>
+        </div>
+
+        <noscript><p class="no-script">JavaScript is needed for search and filters. All upcoming events are listed below.</p></noscript>
+        <div class="event-groups" id="event-groups">
+          {allGroups.map(([key, group]) => {
+            const [year, month] = key.split('-');
+            return (
+              <section class:list={['event-month', { 'is-past-month': group.every((event) => event.lifecycle.status === 'past') }]} data-month-group>
+                <div class="month-heading"><h3>{monthNames[Number(month) - 1]}</h3><span>{year}</span><i></i><small data-month-count>{group.length} events</small></div>
+                <div class="event-grid">{group.map((event) => <EventCard event={event} />)}</div>
+              </section>
+            );
+          })}
+        </div>
+        <div class="empty-state" id="empty-state" hidden>
+          <span aria-hidden="true">∅</span><h3>No events match that view.</h3><p>Try widening your search or clearing one of the filters.</p><button class="button button-secondary" id="clear-filters" type="button">Clear filters</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="method-section" id="method">
+      <div class="shell method-grid">
+        <div><p class="kicker"><span class="kicker-line"></span> A better calendar</p><h2>Evidence, not noise.</h2></div>
+        <div class="method-copy"><p>Signal Atlas keeps the useful mess of event discovery visible. Official pages, community leads, and legacy records are clearly labeled instead of flattened into one false level of certainty.</p><div class="method-points"><div><strong>01</strong><span>Source-aware</span><p>Every event retains the observation that put it on the map.</p></div><div><strong>02</strong><span>Open by default</span><p>The data is versioned in GitHub and can be inspected or extended.</p></div><div><strong>03</strong><span>Built to improve</span><p>Review states make the gaps visible without hiding useful leads.</p></div></div><a class="text-link large" href="https://github.com/itstomekk/awesome-bitcoin-events" target="_blank" rel="noreferrer">Read the data contract <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+  </main>
+  <script>
+    const cards = [...document.querySelectorAll('[data-event-card]')];
+    const groups = [...document.querySelectorAll('[data-month-group]')];
+    const search = document.querySelector('#event-search');
+    const statusButtons = [...document.querySelectorAll('[data-status-filter]')];
+    const selects = [...document.querySelectorAll('.select-field select')];
+    const verified = document.querySelector('#verified-filter');
+    const result = document.querySelector('#filter-result');
+    const empty = document.querySelector('#empty-state');
+    let statusFilter = 'upcoming';
+
+    function applyFilters() {
+      const query = search.value.trim().toLowerCase();
+      const year = document.querySelector('#year-filter').value;
+      const region = document.querySelector('#region-filter').value;
+      const type = document.querySelector('#type-filter').value;
+      let visible = 0;
+      cards.forEach((card) => {
+        const matches = (!query || `${card.dataset.title} ${card.dataset.location}`.includes(query)) &&
+          (statusFilter === 'all' || card.dataset.status === statusFilter) &&
+          (!year || card.dataset.year === year) &&
+          (!region || card.dataset.region === region) &&
+          (!type || card.dataset.type === type) &&
+          (!verified.checked || card.dataset.verified === 'yes');
+        card.hidden = !matches;
+        if (matches) visible += 1;
+      });
+      groups.forEach((group) => {
+        const count = group.querySelectorAll('[data-event-card]:not([hidden])').length;
+        group.hidden = count === 0;
+        const countLabel = group.querySelector('[data-month-count]');
+        if (countLabel) countLabel.textContent = `${count} event${count === 1 ? '' : 's'}`;
+      });
+      empty.hidden = visible !== 0;
+      result.textContent = `Showing ${visible} event${visible === 1 ? '' : 's'}`;
+    }
+    statusButtons.forEach((button) => button.addEventListener('click', () => {
+      statusFilter = button.dataset.statusFilter;
+      statusButtons.forEach((item) => item.classList.toggle('is-active', item === button));
+      applyFilters();
+    }));
+    [search, verified, ...selects].forEach((control) => control.addEventListener('input', applyFilters));
+    document.querySelector('#clear-filters').addEventListener('click', () => {
+      search.value = '';
+      selects.forEach((select) => { select.value = ''; });
+      verified.checked = false;
+      statusFilter = 'upcoming';
+      statusButtons.forEach((item) => item.classList.toggle('is-active', item.dataset.statusFilter === 'upcoming'));
+      applyFilters();
+    });
+    applyFilters();
+  </script>
+</BaseLayout>

@@ -1,0 +1,53 @@
+---
+import { formatDateRange, locationLabel, statusLabel, verificationLabel, verificationTone } from '../lib/events.js';
+
+const { event } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+const status = statusLabel(event);
+const tone = verificationTone(event);
+const location = locationLabel(event);
+const hasOfficial = Boolean(event.links?.official_url);
+const titleId = `event-${event.id}`;
+const startDate = new Date(`${event.dates.start}T12:00:00Z`);
+const dateMonth = startDate.toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' });
+const dateDay = startDate.toLocaleDateString('en-US', { day: '2-digit', timeZone: 'UTC' });
+const dateYear = startDate.getUTCFullYear();
+---
+<article
+  class:list={['event-card', `is-${tone}`, { 'is-past': status === 'Past' }]}
+  data-event-card
+  data-title={`${event.title} ${event.series || ''}`.toLowerCase()}
+  data-location={`${location} ${event.location.region || ''} ${event.location.country || ''}`.toLowerCase()}
+  data-status={status === 'Past' ? 'past' : 'upcoming'}
+  data-region={event.location.region || 'Unspecified'}
+  data-year={dateYear}
+  data-month={startDate.getUTCMonth() + 1}
+  data-type={event.classification.event_type || 'Other'}
+  data-verified={event.verification.state === 'official_page_seen' ? 'yes' : 'no'}
+  aria-labelledby={titleId}
+>
+  <div class="event-card-topline">
+    <span class="confidence-dot" aria-hidden="true"></span>
+    <span>{verificationLabel(event)}</span>
+    <span class="topline-rule"></span>
+    <span>{event.classification.event_type || 'Event'}</span>
+  </div>
+  <div class="event-card-content">
+    <div class="date-block" aria-label={formatDateRange(event)}>
+      <span class="date-month">{dateMonth}</span>
+      <strong class="date-day">{dateDay}</strong>
+      <span class="date-year">{dateYear}</span>
+    </div>
+    <div class="event-copy">
+      <p class="event-status">{status}</p>
+      <h3 id={titleId}><a href={`${base}events/${event.id}/`}>{event.title}</a></h3>
+      {event.series && <p class="event-series">{event.series}</p>}
+      <p class="event-location"><span aria-hidden="true">⌖</span>{location}</p>
+    </div>
+  </div>
+  <div class="event-card-footer">
+    <span class="event-duration">{formatDateRange(event)}</span>
+    <a class="text-link" href={`${base}events/${event.id}/`}>Details <span aria-hidden="true">↗</span></a>
+  </div>
+  {!hasOfficial && <p class="card-disclaimer">No organizer-owned page recorded yet.</p>}
+</article>

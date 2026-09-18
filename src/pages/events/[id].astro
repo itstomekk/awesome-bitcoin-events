@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { events, formatDateRange, locationLabel, statusLabel, verificationLabel, verificationTone } from '../../lib/events.js';
+
+export function getStaticPaths() {
+  return events.map((event) => ({ params: { id: event.id }, props: { event } }));
+}
+
+const { event } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+const status = statusLabel(event);
+const tone = verificationTone(event);
+const officialUrl = event.links?.official_url;
+const registrationUrl = event.links?.registration_url;
+const sourceUrls = [...new Set(event.source_observations.map((observation) => observation.source_url).filter((url) => url && url.startsWith('http')) )];
+---
+<BaseLayout title={`${event.title} — Signal Atlas`} description={`${event.title}, ${formatDateRange(event)}. Source-aware Bitcoin event record.`}>
+  <main id="main-content" class="detail-page">
+    <div class="shell">
+      <a class="back-link" href={`${base}#calendar`}><span aria-hidden="true">←</span> Back to calendar</a>
+      <div class="detail-layout">
+        <article class="detail-main">
+          <div class="detail-kicker"><span class={`confidence-dot ${tone}`}></span>{verificationLabel(event)}<span class="detail-kicker-rule"></span>{status}</div>
+          <h1>{event.title}</h1>
+          {event.series && <p class="detail-series">{event.series}</p>}
+          <p class="detail-intro">{event.description || 'A Bitcoin-focused event in the Signal Atlas. Details are preserved as observed and labeled by their verification state.'}</p>
+          <div class="detail-actions">
+            {officialUrl && <a class="button button-primary" href={officialUrl} target="_blank" rel="noreferrer">Visit official page <span aria-hidden="true">↗</span></a>}
+            {registrationUrl && <a class="button button-secondary" href={registrationUrl} target="_blank" rel="noreferrer">Registration <span aria-hidden="true">↗</span></a>}
+          </div>
+          <dl class="facts-grid">
+            <div><dt>When</dt><dd>{formatDateRange(event)}{event.dates.timezone && <small>{event.dates.timezone}</small>}</dd></div>
+            <div><dt>Where</dt><dd>{locationLabel(event)}{event.location.venue && <small>{event.location.venue}</small>}</dd></div>
+            <div><dt>Format</dt><dd>{event.classification.delivery_mode.replace('_', ' ')}</dd></div>
+            <div><dt>Type</dt><dd>{event.classification.event_type || 'Not specified'}</dd></div>
+            <div><dt>Organizer</dt><dd>{event.organizer.name || 'Not specified'}</dd></div>
+            <div><dt>Topics</dt><dd>{event.classification.topics.length ? event.classification.topics.join(', ') : 'Not specified'}</dd></div>
+          </dl>
+          {event.classification.topics.length > 0 && <div class="topic-row">{event.classification.topics.map((topic) => <span>{topic}</span>)}</div>}
+        </article>
+        <aside class="evidence-card">
+          <p class="eyebrow">Record confidence</p>
+          <div class={`confidence-meter ${tone}`}><span></span><span></span><span></span><span></span></div>
+          <h2>{verificationLabel(event)}</h2>
+          <p>{event.verification.notes || 'Verification notes have not been added yet.'}</p>
+          {event.verification.last_verified_at && <p class="verified-date">Last checked {new Date(event.verification.last_verified_at).toLocaleDateString('en-US', { dateStyle: 'medium', timeZone: 'UTC' })}</p>}
+          <div class="evidence-divider"></div>
+          <p class="eyebrow">Source observations</p>
+          <ul class="source-list">
+            {event.source_observations.map((observation) => <li><span class="source-index">{observation.access_method}</span>{observation.event_url && observation.event_url.startsWith('http') ? <a href={observation.event_url} target="_blank" rel="noreferrer">Event page ↗</a> : observation.source_url && observation.source_url.startsWith('http') ? <a href={observation.source_url} target="_blank" rel="noreferrer">Source page ↗</a> : <span>Repository record</span>}</li>)}
+          </ul>
+          {sourceUrls.length > 0 && <p class="source-footnote">{sourceUrls.length} source page{sourceUrls.length === 1 ? '' : 's'} recorded.</p>}
+        </aside>
+      </div>
+    </div>
+  </main>
+</BaseLayout>

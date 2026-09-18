@@ -1,15 +1,21 @@
 {
   "name": "awesome-bitcoin-events",
-  "version": "1.0.0",
-  "description": "Website aggregator for international Bitcoin conferences and events",
+  "version": "2.0.0",
+  "description": "A source-aware, static calendar of Bitcoin events around the world",
+  "type": "module",
   "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
     "scrape": "node scraper.js",
-    "scrape:force": "node scraper.js --force",
-    "start": "python3 -m http.server 8080"
+    "scrape:force": "node scraper.js --force"
   },
   "engines": {
     "node": ">=18"
   },
-  "keywords": ["bitcoin", "events", "conferences"],
-  "license": "MIT"
+  "keywords": ["bitcoin", "events", "conferences", "astro"],
+  "license": "MIT",
+  "devDependencies": {
+    "astro": "^5.14.1"
+  }
 }

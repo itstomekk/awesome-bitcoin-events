@@ -1,86 +1,57 @@
-# awesome-bitcoin-events
-Calendar and source-aware dataset for international Bitcoin events.
+# Awesome Bitcoin Events / Signal Atlas
 
-## Versioned data: GitHub is the source of truth
+Signal Atlas is a static, source-aware calendar for Bitcoin conferences, meetups, retreats, and related gatherings. It turns the normalized records in `data/events.json` into a fast GitHub Pages site with a browseable calendar and one generated detail page per event.
 
-There is no cPanel database. Interfaces consume the versioned JSON files in this repository:
+## Build stack
 
-- `data/events.json` - 108 normalized records: 61 losslessly migrated legacy records and 47 current/future or historical candidates collected from reviewed sources.
-- `data/sources.json` - 130 unique source records, mapped from the 102-record Notion inventory, the repository source registry, and automatic verification scans.
-- `data/schema/event-dataset.schema.json` - interface-neutral JSON Schema.
-- `sources/raw/` - immutable research/collection snapshots; each event retains its source observation and verification state.
+- **Astro 5** generates static HTML at build time. There is no server and no runtime database.
+- **Plain CSS** in `src/styles/global.css` owns the visual system, responsive layout, and accessibility states.
+- A small browser script in `src/pages/index.astro` adds search and filtering after the HTML loads. The site still contains the full upcoming listing without JavaScript.
+- `.github/workflows/pages.yml` builds with Node 20 and deploys `dist/` through GitHub Pages Actions.
 
-The event dataset records dates, timezone, location, delivery mode, type, topics, organizer, official and registration links, lifecycle status, verification confidence, source observations, and the untouched legacy payload. A calendar, map, search page, API, or future submission workflow can all use the same contract. Discovery records are deliberately not presented as confirmed official events.
+## Run it locally
 
-See `data/README.md` for the contract and `sources/SOURCE-INTAKE.md` for the URL-review workflow.
+```bash
+npm install
+npm run dev
+```
 
-## Legacy editor table
+Open the local URL printed by Astro. For a production build:
 
-The table below is preserved from the legacy frontend. It is not the canonical data layer.
+```bash
+npm run build
+npm run preview
+```
 
-| When            | Conference                                                                                                                     | Website                                               | Where                    |
-|-----------------|-------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------|--------------------------|
-| <span style="color:orange">Mar 4-5</span>         | **[Women in Bitcoin Summit](https://womenofbitcoin.io/)**                                                                    | https://womenofbitcoin.io/                            | Virtual                  |
-| <span style="color:orange">Mar 4-8</span>         | **[Bitcoin Ski Summit](https://www.monolithic.tech/v5-bitcoin-ski-summit-2026)**                                             | https://www.monolithic.tech/v5-bitcoin-ski-summit-2026 | Teton Village, WY       |
-| <span style="color:orange">Mar 4-22</span>        | **[Bitcoins @ Infinite Games](https://bitcoingames.lovable.app/)**                                                           | https://bitcoingames.lovable.app/                     | Roatan, HND              |
-| <span style="color:orange">Mar 7</span>           | **[Bitkiwi XV](https://kiwibitcoinguide.org/home/bitkiwi-meetups/bitkiwi-xv-february-28th-2025-christchurch/)**             | https://kiwibitcoinguide.org/                         | Christchurch, NZL        |
-| <span style="color:orange">Mar 12</span>          | **The Real Estate Standard Digital Conference**                                                                              |                                                       | Virtual                  |
-| <span style="color:orange">Mar 13-15</span>       | **[Bitcoin Bush Bash - Beechworth](https://bitcoinbushbash.info/beechworth/)**                                               | https://bitcoinbushbash.info/beechworth/              | Beechworth, AUS          |
-| <span style="color:orange">Mar 19</span>          | **[Bitcoin Treasuries Digital Conference](https://bitcointreasuries.media)**                                                 | https://bitcointreasuries.media                       | Virtual                  |
-| <span style="color:orange">Mar 20-22</span>       | **[Satoship](https://bitcoinblock.study/satoship/)**                                                                         | https://bitcoinblock.study/satoship/                  | Rapperswil-Jona, CHE     |
-| <span style="color:orange">Mar 26-29</span>       | **[CheatCode](https://www.cheatcode.co.uk/)**                                                                                | https://www.cheatcode.co.uk/                          | Bedford, GBR             |
-| <span style="color:orange">Apr 9-12</span>        | **[BitBlockBoom](https://bitblockboom.com/)**                                                                                | https://bitblockboom.com/                             | Ft Worth, TX             |
-| <span style="color:orange">Apr 11-12</span>       | **[MIT Bitcoin Expo](https://mitbitcoinexpo.org/)**                                                                          | https://mitbitcoinexpo.org/                           | Cambridge, MA            |
-| <span style="color:orange">Apr 15-16</span>       | **[OPNEXT](https://opnext.dev)**                                                                                             | https://opnext.dev                                    | New York City, NY        |
-| <span style="color:orange">Apr 16-25</span>       | **[Bitchill S03](https://luma.com/wkoxeb9m)**                                                                                | https://luma.com/wkoxeb9m                             | Roatan, HND              |
-| <span style="color:orange">Apr 17-19</span>       | **[Muslim Bitcoin Summit](https://mslmbtcsummit.com/)**                                                                      | https://mslmbtcsummit.com/                            | Dallas, TX               |
-| <span style="color:orange">Apr 23-24</span>       | **[bitcoin++ stirs controversy](https://btcplusplus.dev/conf/vegas)**                                                        | https://btcplusplus.dev/conf/vegas                    | Hoover Dam, NV           |
-| <span style="color:orange">Apr 23-26</span>       | **[Swiss Bitcoin Conference](https://swiss-bitcoin-conference.com/)**                                                        | https://swiss-bitcoin-conference.com/                 | Kreuzlingen, CHE         |
-| <span style="color:orange">Apr 27</span>          | **[Unconfiscatable](https://unconfiscatable.com/)**                                                                          | https://unconfiscatable.com/                          | Las Vegas, NV            |
-| <span style="color:orange">Apr 27-29</span>       | **[Bitcoin 2026](https://b.tc/conference/2026)**                                                                             | https://b.tc/conference/2026                          | Las Vegas, NV            |
-| <span style="color:orange">May 8</span>           | **[Bitcoin Burgenland](https://www.rettedeingeld.at/bitcoin-burgenland-2025/)**                                              | https://www.rettedeingeld.at/bitcoin-burgenland-2025/ | AUT                      |
-| <span style="color:orange">May 8-9</span>         | **[Labitconf B2B CDMX](https://labitcoinf.com)**                                                                             | https://labitcoinf.com                                | CDMX, MEX                |
-| <span style="color:orange">May 9-12</span>        | **[MAD Bitcoin Summit](https://MadBitcoinSummit.com)**                                                                       | https://MadBitcoinSummit.com                          | Madrid, ESP              |
-| <span style="color:orange">May 12-13</span>       | **[Tuscany Lightning Summit 2026](https://tuscanysummit.com/)**                                                              | https://tuscanysummit.com/                            | Viareggio, ITA           |
-| <span style="color:orange">May 15-17</span>       | **[Bitcoin Bay Bash - Byron Bay](https://bitcoinbushbash.info/byron-bay/)**                                                  | https://bitcoinbushbash.info/byron-bay/               | Byron Bay, AUS           |
-| <span style="color:orange">May 15-17</span>       | **[Bitcoin Economic Forum](https://www.breizhbitcoin.com/bitcoin-economic-forum/)**                                          | https://www.breizhbitcoin.com/bitcoin-economic-forum/ | Bretagne, FRA            |
-| <span style="color:orange">May 22-23</span>       | **[Bitcoin is for Everyone](https://bitcoinisforeveryone.com/)**                                                             | https://bitcoinisforeveryone.com/                     | Portland, OR             |
-| <span style="color:orange">May 22-25</span>       | **[Bitcoin Ireland](https://www.bitcoinireland.eu)**                                                                         | https://www.bitcoinireland.eu                         | Dublin, IRE              |
-| <span style="color:orange">May 23</span>          | **[Bitcare Forum](https://bitcareforum.it/)**                                                                                | https://bitcareforum.it/                              | Brescia, ITA             |
-| <span style="color:orange">May 27-28</span>       | **[bitcoin++ talks economically](https://btcplusplus.dev/conf/vienna)**                                                      | https://btcplusplus.dev/conf/vienna                   | Vienna, AUT              |
-| <span style="color:orange">May 29-30</span>       | **[Bitcoin Treasuries Unconference UK](https://www.smarterwebcompany.co.uk/Bitcoin-Treasuries-Unconference-UK/)**            | https://www.smarterwebcompany.co.uk/Bitcoin-Treasuries-Unconference-UK/ | Bristol, GBR |
-| <span style="color:orange">Jun 1-3</span>         | **[Oslo Freedom Forum](https://oslofreedomforum.com/)**                                                                      | https://oslofreedomforum.com/                         | Oslo, NOR                |
-| <span style="color:orange">Jun 4-7</span>         | **[Bitcoin Film Festival](https://bitcoinfilmfest.com)**                                                                     | https://bitcoinfilmfest.com                           | Warsaw, POL              |
-| <span style="color:orange">Jun 10</span>          | **[Bitcoin Corporate Day](https://www.bitcoincorporateday.com/)**                                                            | https://www.bitcoincorporateday.com/                  | Prague, CZE              |
-| <span style="color:orange">Jun 11-13</span>       | **[BTC Prague 2026](https://btcprague.com/)**                                                                                | https://btcprague.com/                                | Prague, CZE              |
-| <span style="color:orange">Jun 17-20</span>       | **[bitcoin++ works in public](https://btcplusplus.dev/conf/nairobi)**                                                        | https://btcplusplus.dev/conf/nairobi                  | Nairobi, KEN             |
-| <span style="color:orange">Jun 18-21</span>       | **[Camp Nakamoto](https://www.campnakamoto.com/)**                                                                           | https://www.campnakamoto.com/                         | Winnipesaukee, NH        |
-| <span style="color:orange">Jun 25-26</span>       | **[The Bitcoin Rodeo](https://BitcoinRodeo.com/)**                                                                           | https://BitcoinRodeo.com/                             | Calgary, AB              |
-| <span style="color:orange">Jun 26-27</span>       | **[Le Paradigme Bitcoin](https://leparadigmebitcoin.ch/)**                                                                   | https://leparadigmebitcoin.ch/                        | Neuchâtel, CHE           |
-| <span style="color:orange">Jul 1-6</span>         | **[Bitcoin Alaska](https://bitcoinalaska.org/)**                                                                             | https://bitcoinalaska.org/                            | Juneau, AK               |
-| <span style="color:orange">Jul 9-12</span>        | **[Mallorca Blockchain Days](https://mallorcablockchaindays.com/)**                                                          | https://mallorcablockchaindays.com/                   | Palma, ESP               |
-| <span style="color:orange">Jul 21-23</span>       | **[Mining Disrupt](https://miningdisrupt.com/)**                                                                             | https://miningdisrupt.com/                            | Miami, FL                |
-| <span style="color:orange">Jul 22-24</span>       | **[bitcoin++ finds consensus](https://btcplusplus.dev/conf/toronto)**                                                        | https://btcplusplus.dev/conf/toronto                  | Toronto, CA              |
-| <span style="color:orange">Jul 24-26</span>       | **[Bitcoin Bush Bash - Palm Cove](https://bitcoinbushbash.info/palm-cove/)**                                                 | https://bitcoinbushbash.info/palm-cove/               | Palm Cove, AUS           |
-| <span style="color:orange">Jul 31-Aug 2</span>    | **[Lake Satoshi Retreat](https://www.lakesatoshi.com/annual-lake-satoshi-retreat)**                                          | https://www.lakesatoshi.com/annual-lake-satoshi-retreat | MI, USA               |
-| <span style="color:orange">Aug 12-13</span>       | **[Acelerando Bitcoin](https://acelerandobitcoin.com/)**                                                                     | https://acelerandobitcoin.com/                        | Asunción, PRY            |
-| <span style="color:orange">Aug 14-15</span>       | **[Bitcoin Beyond 66](https://bitcoinbeyond66.com)**                                                                         | https://bitcoinbeyond66.com                           | Bodø, NOR                |
-| <span style="color:orange">Aug 21</span>          | **[Bitcoin Infinity Day](https://thebitcoindistrict.com/events)**                                                            | https://thebitcoindistrict.com/events                 | Roatan, HND              |
-| <span style="color:orange">Aug 27-28</span>       | **[Bitcoin Asia](https://asia.b.tc/2026)**                                                                                   | https://asia.b.tc/2026                                | Hong Kong, CHN           |
-| <span style="color:orange">Sep 1-2</span>         | **[BTCinDC](https://btcindc.com)**                                                                                           | https://btcindc.com                                   | Washington, DC           |
-| <span style="color:orange">Sep 4-5</span>         | **Bitcoin Indonesia Conference**                                                                                             |                                                       | TBD, IDN                 |
-| <span style="color:orange">Sep 12</span>          | **[BSE: Bitcoin - Sovereignty - Economics](https://www.bsebtc.co.uk/bseconf)**                                               | https://www.bsebtc.co.uk/bseconf                      | Bury St Edmunds, ENG     |
-| <span style="color:orange">Sep 17</span>          | **[Bitcoin Treasuries Unconference NYC](https://bitcointreasuries.media)**                                                   | https://bitcointreasuries.media                       | New York City, NY        |
-| <span style="color:orange">Sep 23</span>          | **European Mining Summit**                                                                                                   |                                                       | Helsinki, FIN            |
-| <span style="color:orange">Sep 23-24</span>       | **[Midwest Bitcoin Summit](https://midwestbtc.com)**                                                                         | https://midwestbtc.com                                | Columbus, OH             |
-| <span style="color:orange">Sep 25-26</span>       | **[BTC HEL](https://btchel.com/)**                                                                                           | https://btchel.com/                                   | Helsinki, FIN            |
-| <span style="color:orange">Oct 1-3</span>         | **[bitcoin++ gets paid](https://btcplusplus.dev/conf/berlin26)**                                                             | https://btcplusplus.dev/conf/berlin26                 | Berlin, DEU              |
-| <span style="color:orange">Oct 2-4</span>         | **[Watch Out, Bitcoin!](https://wobitcoin.org/#brxe-78d8c4)**                                                                | https://wobitcoin.org/                                | Madrid, ESP              |
-| <span style="color:orange">Oct 12-15</span>       | **[TABConf](https://7.tabconf.com/)**                                                                                        | https://7.tabconf.com/                                | Atlanta, GA              |
-| <span style="color:orange">Oct 16-18</span>       | **[Bitcoin Bush Bash - Busselton](https://bitcoinbushbash.info/busselton/)**                                                 | https://bitcoinbushbash.info/busselton/               | Busselton, AUS           |
-| <span style="color:orange">Oct 23-24</span>       | **[Lugano Plan B Forum](https://planb.lugano.ch/planb-forum/)**                                                              | https://planb.lugano.ch/planb-forum/                  | Lugano, CHE              |
-| <span style="color:orange">Nov 4</span>           | **[Bitcoin for Corporations Symposium](https://www.bitcoin.amsterdam/bfc-symposium)**                                        | https://www.bitcoin.amsterdam/bfc-symposium           | Amsterdam, NED           |
-| <span style="color:orange">Nov 5-6</span>         | **[Bitcoin Amsterdam](https://www.bitcoin.amsterdam/2026)**                                                                  | https://www.bitcoin.amsterdam/2026                    | Amsterdam, NED           |
-| <span style="color:orange">Nov 7-8</span>         | **[LABITCONF](https://labitconf.com/)**                                                                                      | https://labitconf.com/                                | Buenos Aires, ARG        |
-| <span style="color:orange">Nov 13</span>          | **[Bitcoin: A Competitive Advantage](https://bitcoincollective.co/)**                                                        | https://bitcoincollective.co/                         | Derby, GBR               |
-| <span style="color:orange">Dec 7-8</span>         | **[Bitcoin MENA](https://tickets.b.tc/event/bitcoin-mena-2026)**                                                             | https://tickets.b.tc/event/bitcoin-mena-2026          | Abu Dhabi, UAE           |
+The build creates `dist/`; it is generated output and is intentionally ignored by Git.
+
+## Where to edit
+
+| Need | Edit |
+|---|---|
+| Add or correct event records | `data/events.json` through the documented ingestion/review workflow |
+| Add or review source records | `data/sources.json` and the evidence under `sources/` |
+| Change the data contract | `data/schema/event-dataset.schema.json` and `data/README.md` |
+| Change the home page structure or filters | `src/pages/index.astro` |
+| Change an event detail page | `src/pages/events/[id].astro` |
+| Change card markup | `src/components/EventCard.astro` |
+| Change shared header/footer/meta | `src/layouts/BaseLayout.astro` |
+| Change colors, type, spacing, responsive behavior | `src/styles/global.css` |
+| Change the GitHub Pages build | `.github/workflows/pages.yml` and `astro.config.mjs` |
+| Understand the current data/release state | `HANDOFF.md`, `PLAN.md`, `BUILD-LOG.md` |
+
+Event pages are generated from the stable event ID, so adding a record automatically creates a route under `events/<id>/` on the next build. The UI deliberately labels `official_page_seen`, `discovery_only`, `legacy_imported`, and `needs_review` records differently; discovery evidence is not presented as organizer confirmation.
+
+## Data boundary
+
+`data/events.json` and `data/sources.json` are the public, versioned inputs to the site. Anything committed to this repository is visible to anyone with repository access, even if it is outside `dist/`. Do not commit credentials, browser state, private contact lists, raw private exports, or secrets. Raw source snapshots are kept only when they are suitable for the repository's intended visibility.
+
+The canonical data layer is separate from the old root-level `events.json`, `index.html`, `app.js`, and `style.css`. Those files are retained as the legacy editor/frontend reference while the Astro site is the GitHub Pages build target.
+
+## GitHub Pages
+
+The workflow expects the repository project URL:
+
+`https://itstomekk.github.io/awesome-bitcoin-events/`
+
+It passes `PUBLIC_BASE_PATH=/awesome-bitcoin-events` so asset and detail links work when the site is served below the repository name. For a custom domain, set the production base path and Pages domain intentionally; do not add a `CNAME` or change DNS as part of a normal content update.

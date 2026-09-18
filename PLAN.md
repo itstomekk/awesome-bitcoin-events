@@ -1,68 +1,55 @@
-# Bitcoin events data plan
+# Bitcoin events data and site plan
 
 ## Goal
 
-Build a trustworthy, Bitcoin-focused events dataset before committing to a final interface.
+Build a trustworthy, Bitcoin-focused events dataset and a polished public calendar that can grow from the same interface-neutral contract.
 
-A source is evidence, not truth. Every published event must retain its source, raw snapshot,
-verification state, and review history.
+A source is evidence, not truth. Every published event retains its source, raw snapshot, verification state, and review history.
 
 ## Current state
 
-- Legacy website and `events.json` are preserved untouched.
-- `events.json` is stale: it identifies itself as 2025, while the README contains a 2026 list.
-- `sources/registry.json` is the new source registry and monitoring-policy home.
-- No automated polling or external database is enabled.
+- The legacy website and root-level `events.json` remain preserved as a reference.
+- `data/events.json` is the canonical UI input: 108 normalized records, including legacy migrations and reviewed source candidates.
+- `data/sources.json` is the canonical source directory.
+- An Astro static site now consumes the data at build time and deploys through GitHub Pages Actions; no external database is enabled.
 
-## Phase 1 - source intake and data contract
+## Phase 1 — source intake and data contract
 
 - [x] Create a source registry with source roles and monitoring policy.
 - [x] Review the first submitted source: Bitcoin Bundesverband.
-- [x] Define the canonical event schema and the immutable raw-snapshot schema.
-- [x] Map 102 Notion source records, the repository registry, and reviewed scan sources into 130 unique public source records.
-- [x] Losslessly migrate all 61 legacy event records into the interface-neutral dataset.
-- [x] Import reviewed collection scans: 47 candidate or historical events, with raw snapshots and source provenance.
-- [x] Automatically verify candidates against official URLs and preserve unresolved cases for review.
-- [ ] Add 20-30 manually verified events from 5-8 representative source types.
+- [x] Define the canonical event schema and immutable raw-snapshot schema.
+- [x] Map Notion, repository, and reviewed scan sources into unique public source records.
+- [x] Losslessly migrate legacy event records into the interface-neutral dataset.
+- [x] Import reviewed collection scans with raw snapshots and source provenance.
+- [x] Automatically verify candidates against official URLs and preserve unresolved cases.
+- [ ] Add 20–30 manually verified events from 5–8 representative source types.
 - [x] Classify mapped sources as canonical, discovery, community, editorial, or unreviewed.
 
-### Source health decision
-
-A review records:
-
-- access method: API, RSS, iCal, static HTML, JavaScript-only, or manual;
-- yield: events found, current events, unique events, and duplicates;
-- authority: official organiser, community body, or third-party directory;
-- freshness: new or changed events during successive checks;
-- parser cost and reliability.
-
-The result assigns a 1, 7, 14, or 30 day cadence. A source is never put on a cron before its
-manual review yields a stable access path.
-
-## Phase 2 - tested ingestion
+## Phase 2 — tested ingestion
 
 - [x] Write tests before an importer is implemented.
-- [x] Save immutable raw snapshots before normalisation.
-- [x] Emit normalised candidate records without modifying the legacy event list.
+- [x] Save immutable raw snapshots before normalization.
+- [x] Emit normalized candidate records without modifying the legacy event list.
 - [ ] Add deterministic deduplication using official URL, event series, date range, and location.
-- [x] Add validation that rejects missing source provenance, malformed dates, and past events presented as upcoming.
+- [x] Validate source provenance, dates, past-event status, and duplicate merging.
 
-## Phase 3 - small data prototypes
+## Phase 3 — public site and data prototypes
 
-Start after 20-30 verified current or future events, not after a complete database.
+- [x] Build an Astro static calendar/list consumer for dates, place, type, and source confidence.
+- [x] Generate a dedicated static detail page for every event record.
+- [x] Add responsive search and year/region/type/status filters.
+- [x] Label discovery, legacy, review, and official records distinctly.
+- [ ] Review missing fields that block useful browsing and revise the schema before adding more interface surface.
+- [ ] Map prototype once records have usable coordinates; the current dataset has no coordinates.
 
-- [ ] Calendar/list prototype for dates, topic, country, and source confidence.
-- [ ] Map prototype for location precision and clustering.
-- [ ] Review which missing fields block useful browsing, then revise schema before visual polish.
-
-## Phase 4 - monitoring and public contribution
+## Phase 4 — monitoring and public contribution
 
 - [ ] Enable monitoring only for sources with proven value.
 - [ ] Add an intake queue for user-submitted URLs and event reports.
 - [ ] Add a review workflow and change history.
-- [x] Keep the project GitHub-native: versioned JSON, raw snapshots, and review history. No cPanel database is planned.
+- [x] Keep the project GitHub-native: versioned JSON, raw snapshots, review history, and Pages deployment.
+- [ ] Enable Pages in repository settings and verify the public HTTPS URL after the first push.
 
 ## Operating rule
 
-When Tomek sends a source URL, assess it before automating it. The default output is a source review,
-not an unverified event import or a new cron job.
+When Tomek sends a source URL, assess it before automating it. The default output is a source review, not an unverified event import or a new cron job.

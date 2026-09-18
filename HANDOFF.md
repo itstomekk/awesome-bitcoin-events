@@ -4,42 +4,32 @@ Updated: 2026-09-16
 
 ## Current truth
 
-GitHub files are the source of truth. There is no cPanel database or scheduler; the latest local
-changes are ready to commit and push.
-The legacy frontend and its `events.json` were deliberately left untouched.
+GitHub files are the source of truth. There is no cPanel database or scheduler. The repository now has an Astro static frontend that builds from the versioned `data/` layer; the previous root-level frontend remains untouched as a legacy reference.
 
-The new versioned data layer is ready:
+The data layer remains:
 
 - `data/events.json` contains 108 normalized records: 61 lossless legacy migrations and 47 reviewed source-scan records.
 - `data/sources.json` contains 130 unique sources built from 139 public source records, including all 102 exported Notion source records and observed URLs from automatic verification scans.
 - `data/schema/event-dataset.schema.json` defines the UI-neutral contract.
-- `sources/raw/luna-source-scan-2026-09-16.json` is byte-identical to the review scan stored in `research/`.
-- Additional reviewed scans are preserved in `sources/raw/standalone-scan-2026-09-16.json` and `sources/raw/historical-confirmation-scan-2026-09-16.json`.
-- `sources/raw/luna-auto-verification-2026-09-16.json` records the automatic official-URL review: 17 confirmed candidates and 2 unresolved cases.
+- `sources/raw/` preserves immutable research snapshots.
 
-The 47 imported records retain their original source evidence. Their present verification split is
-26 `official_page_seen`, 19 `discovery_only`, and 2 `needs_review`. Discovery and review candidates
-must not be presented as confirmed organizer listings.
+The Astro build adds:
 
-## First source verdict
-
-`https://bitcoin-bundesverband.de/en/events/` was reviewed on 2026-09-16.
-
-- It exposed one event: BTC Prague 2026, June 10-13, Prague.
-- That event was already past at review time.
-- The page advertises iCal export, but the supplied list export URL returned HTTP 404; the event page itself is accessible.
-- Decision: retain as a German discovery source with a 30-day probe cadence. Upgrade only after a current, unique event or a working structured feed appears.
+- `src/pages/index.astro` — source-aware calendar with upcoming-first filtering, search, year/region/type filters, and official-page-only mode.
+- `src/pages/events/[id].astro` — one static evidence/detail page for every event record.
+- `src/components/EventCard.astro`, `src/layouts/BaseLayout.astro`, and `src/lib/events.js` — shared rendering and display helpers.
+- `src/styles/global.css` — responsive Signal Atlas visual system.
+- `.github/workflows/pages.yml` — Node 20 build and GitHub Pages deployment via Actions.
 
 ## Verification performed
 
-- Fifteen unit tests pass: legacy migration, source-directory construction, candidate import, raw snapshot retention, source-ID resolution, verification downgrade, date/timezone handling, and duplicate merging.
-- `data/events.json` validates against its JSON Schema.
-- Every imported source observation resolves to an ID in `data/sources.json`.
-- Duplicate title variants are merged using normalized title, date range, and city; a later official scan can promote an existing discovery record.
+- `npm run build` passes with no Astro warnings and generates 110 pages: home, 108 event routes, and 404.
+- A build with `PUBLIC_BASE_PATH=/awesome-bitcoin-events` passes; generated links use `/awesome-bitcoin-events/events/.../` and no concatenated base-path links remain.
+- `python -m pytest -q` passes: 15 tests.
+- `npm audit --omit=dev --audit-level=high` reports 0 production vulnerabilities.
 - `git diff --check` passes.
+- The automated browser sandbox blocked localhost and the desktop preview pane was unavailable, so browser visual/interaction QA remains to be run from an interactive local session.
 
 ## Next action
 
-Review the 2 unresolved candidates against organizer-owned pages, then create thin calendar and map
-consumers from `data/events.json`. Luna's sequential automatic verifier works; parallel fan-out hit
-the provider's HTTP 429 usage limit, so collection should stay sequential or use a separate provider.
+Review the 2 unresolved candidates against organizer-owned pages, then continue adding 20–30 manually verified current/future events from representative source types. After that, evaluate whether coordinates are complete enough for a map consumer. When the repository is pushed, enable Pages with the workflow source and verify the public HTTPS URL and Actions run before calling the deployment live.

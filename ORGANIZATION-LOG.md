@@ -20,6 +20,10 @@ Added official and historical confirmation scans from BTC Inc, TABConf, Lugano's
 Bitcoin Events South Africa. The importer now promotes later official evidence, records verification
 timestamps, separates past events, and merges title-year variants without deleting source observations.
 
+## 2026-09-16 - Astro Signal Atlas frontend
+
+Added an Astro static site under `src/`, generated detail pages for every normalized event, responsive filters, a source-confidence presentation, a branded 404 page, and a GitHub Pages Actions workflow. The build target is `dist/`; the legacy root-level frontend remains as a reference. `README.md`, `PLAN.md`, `HANDOFF.md`, `CHANGELOG.md`, and `BUILD-LOG.md` now describe the current source/build/deployment boundary.
+
 ## 2026-09-16 - Automatic verification and interface fields
 
 Added the sequential Luna verification scan and its raw snapshot. The data contract now includes
