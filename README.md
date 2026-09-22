@@ -1,132 +1,156 @@
-# Awesome Bitcoin Events
+# Awesome Bitcoin Events 🌍
 
 [![Deploy to GitHub Pages](https://github.com/itstomekk/awesome-bitcoin-events/actions/workflows/pages.yml/badge.svg)](https://github.com/itstomekk/awesome-bitcoin-events/actions/workflows/pages.yml)
 [![Live calendar](https://img.shields.io/badge/live-calendar-f7931a?logo=bitcoin&logoColor=111111)](https://itstomekk.github.io/awesome-bitcoin-events/)
 [![Community submissions](https://img.shields.io/badge/contributions-welcome-2f6f62)](https://github.com/itstomekk/awesome-bitcoin-events/issues/new?template=event-submission.yml)
 
-**A community repository of Bitcoin events around the world.**
+**A community-driven global calendar of Bitcoin conferences, meetups, retreats, festivals, and technical gatherings.**
 
-Browse conferences, meetups, retreats, festivals, and technical gatherings in one source-aware calendar. Every record keeps its evidence and verification state visible instead of presenting uncertain listings as confirmed facts.
+Whether you're a developer, investor, filmmaker, or just curious about Bitcoin, this repository helps you discover and connect with the Bitcoin community worldwide. Every event is sourced from organizers and verified by the community — not guessed or auto-promoted.
 
-## Explore the live calendar
+## 🗺️ Explore the live calendar
 
-https://itstomekk.github.io/awesome-bitcoin-events/
+**[Visit the interactive calendar →](https://itstomekk.github.io/awesome-bitcoin-events/)**
 
-The site includes:
+The live site features:
 
-- upcoming-first calendar browsing;
-- search and filters for year, region, format, and verification state;
-- an interactive Leaflet/OpenStreetMap map with 108 plotted records;
-- one detail page per event;
-- source and confidence labels for official, discovery, legacy, and review records;
-- responsive layout for desktop and mobile.
+- 📅 **Upcoming-first browsing** — see what's happening next
+- 🔍 **Smart filters** — search by year, region, format (conference/meetup/festival), and verification state
+- 🗺️ **Interactive map** — discover events by location with OpenStreetMap integration
+- 📍 **Event details** — organized, linked, and transparent sources for each listing
+- ✅ **Source labels** — know if an event is officially confirmed, community-discovered, or needs review
+- 📱 **Mobile-friendly** — full experience on phone, tablet, and desktop
 
-> This is a community directory, not an endorsement of every event. Check the verification label and the organizer's page before making travel or ticket decisions.
+> **This is a community directory, not an endorsement.** Always check the verification label and visit the organizer's official page before booking travel or tickets.
 
-## Add an event in under two minutes
+## Why this exists
 
-You do not need to edit JSON or open a pull request.
+Bitcoin events happen constantly — conferences, hackathons, film festivals, and community meetups across the globe. But they're scattered across Twitter, Discord, mailing lists, and personal blogs. **Awesome Bitcoin Events** brings them together in one honest, sourced, community-maintained calendar.
 
-1. Open the **[Submit an event form](https://github.com/itstomekk/awesome-bitcoin-events/issues/new?template=event-submission.yml)**.
-2. Submit one event per issue.
-3. Include the organizer-owned event page, dates, location, and a short evidence note.
-4. A maintainer checks the source, duplicate status, dates, and map location.
-5. Approved records are added to the canonical dataset and published by GitHub Actions.
+We believe:
+- **Sources matter.** Every event includes a link back to where it came from.
+- **Transparency beats completeness.** We'd rather say "we don't know if this is confirmed" than present guesses as facts.
+- **Community knows best.** You and your peers are the best judges of what events are worth listing.
 
-Found a change, cancellation, duplicate, or wrong date? Use the **[event correction form](https://github.com/itstomekk/awesome-bitcoin-events/issues/new?template=event-correction.yml)**.
+## 🚀 Add an event (2 minutes, no coding required)
 
-Read the full workflow in [`CONTRIBUTING.md`](CONTRIBUTING.md) or the maintainer-oriented [`docs/REPOSITORY-GUIDE.md`](docs/REPOSITORY-GUIDE.md).
+Got a Bitcoin event to share? Help the community discover it.
 
-## How the data works
+1. **[Open the event submission form →](https://github.com/itstomekk/awesome-bitcoin-events/issues/new?template=event-submission.yml)**
+2. Fill in the event name, dates, location, and organizer link
+3. Add a note about where you found it (official page, announcement, recommendation)
+4. Submit — a maintainer will review and merge within days
 
-The repository has a simple separation of responsibilities:
+Found a mistake, cancellation, or duplicate? **[Submit a correction →](https://github.com/itstomekk/awesome-bitcoin-events/issues/new?template=event-correction.yml)**
 
-```text
-community issue form
+For full details, see [`CONTRIBUTING.md`](CONTRIBUTING.md).
+
+## 📊 How the data works
+
+The repository keeps a clean separation between community input, verification, and publication:
+
+```
+community issue form (you)
         ↓
-source and duplicate review
+source & duplicate review (maintainers)
         ↓
-canonical JSON + source evidence
+canonical JSON + evidence links (data/)
         ↓
 Astro static build
         ↓
-GitHub Pages
+GitHub Pages (live calendar)
 ```
 
-A source is evidence, not truth. The public UI distinguishes these states:
+### Verification states
 
-| Verification state | Meaning |
+Every event shows its current verification status:
+
+| Label | Meaning |
 |---|---|
-| `official_page_seen` | An organizer-owned or organizer-confirmed page was checked. |
-| `discovery_only` | A useful event lead exists, but organizer confirmation is missing. |
-| `needs_review` | Sources conflict or an important field is unresolved. |
-| `legacy_imported` | Preserved from the older dataset and not yet re-confirmed. |
+| ✅ `official_page_seen` | Organizer's official page was checked; dates and location confirmed. |
+| 🔍 `discovery_only` | Found in a credible source (Reddit, Twitter, etc.), but organizer confirmation pending. |
+| ⚠️ `needs_review` | Sources conflict or key details are unclear; community input welcome. |
+| 📦 `legacy_imported` | From our earlier dataset; awaiting re-confirmation. |
 
-Unknown values remain `null`. Dates are not guessed. Directory pages and community calendars are retained as observations, not silently promoted to official sources.
+**No values are invented or guessed.** Dates are never assumed. If we don't know something, we say `null` — not make it up.
 
-## Repository map
+## 📁 Repository structure
 
-| Area | Responsibility |
+| Path | Purpose |
 |---|---|
-| `data/events.json` | Canonical normalized event records consumed by the site. |
-| `data/sources.json` | Source directory, roles, quality, and monitoring decisions. |
-| `data/geo-cache.json` | Public OpenStreetMap Nominatim geocoding cache and attribution. |
-| `data/schema/` | JSON Schema for the event dataset. |
-| `sources/raw/` | Immutable public research snapshots. |
-| `src/pages/index.astro` | Home page, filters, map, and community-facing content. |
-| `src/pages/events/[id].astro` | Generated evidence/detail route for each event. |
-| `src/components/` | Shared event card markup. |
-| `src/layouts/` | Shared document metadata, header, footer, and navigation. |
-| `src/styles/` | Visual system, responsive layout, focus states, and map presentation. |
-| `.github/ISSUE_TEMPLATE/` | Public event submission and correction forms. |
-| `.github/workflows/pages.yml` | Astro build and GitHub Pages deployment. |
+| `data/events.json` | **Canonical dataset** — what the site reads and publishes |
+| `data/sources.json` | **Source directory** — who runs what, quality notes, monitoring |
+| `data/geo-cache.json` | **Map cache** — OpenStreetMap coordinates and attribution |
+| `src/pages/` | **Astro site** — calendar UI, filters, map, event detail pages |
+| `src/components/` | **Event cards** — reusable markup for listings |
+| `src/styles/` | **Design system** — responsive layout, accessibility, map styling |
+| `.github/ISSUE_TEMPLATE/` | **Community forms** — event submission and correction templates |
+| `.github/workflows/pages.yml` | **Auto-deploy** — builds and publishes on each push to `main` |
 
-## Run it locally
+See [`docs/REPOSITORY-GUIDE.md`](docs/REPOSITORY-GUIDE.md) for maintainer details and [`data/README.md`](data/README.md) for the data contract.
 
-Requirements: Node.js 18+ and Python 3 for the existing data tests.
+## 💻 Run locally
+
+**Requirements:** Node.js 18+, Python 3 (optional, for tests)
 
 ```bash
+# Install and start dev server
 npm install
 npm run dev
 ```
 
-For a production build and local preview:
+Open http://localhost:3000 — the site hot-reloads as you edit.
+
+**For production build:**
 
 ```bash
 npm run build
-npm run preview
+npm run preview  # local static preview
 ```
 
-The generated `dist/` directory is ignored by Git. The site is static: there is no server, cPanel database, or runtime API.
-
-Before opening a code or data pull request:
+**Before opening a PR:**
 
 ```bash
 npm run build
-python -m pytest -q
+python -m pytest -q  # data integrity check
 git diff --check
 ```
 
-## Data and privacy boundary
+## 🔐 Privacy & security
 
-This is a public repository. Every committed file is visible to repository visitors, even when it is outside the generated site. Never commit passwords, API keys, browser sessions, private contact lists, private exports, or unpublished internal notes. Do not put private email addresses in event issues; use public organizer pages or public contact channels.
+This is a **public repository**. Never commit passwords, API keys, private email addresses, or internal notes. Use public organizer contact pages and channels only.
 
-The old root-level `events.json`, `index.html`, `app.js`, and `style.css` are retained as legacy reference files. The Astro site and the versioned `data/` layer are the current public build path.
+The Astro site in `src/` and versioned data in `data/` are the current build. Legacy files (`events.json`, `index.html`, `app.js`, `style.css` at root) are kept for reference but no longer maintained.
 
-## Deployment
+## 📢 Deployment
 
-A push to `main` runs `.github/workflows/pages.yml`. The workflow builds with Astro, uploads `dist/`, and deploys through GitHub Pages Actions.
+Every push to `main` triggers `.github/workflows/pages.yml`:
+1. Builds the Astro site
+2. Uploads to `dist/`
+3. Deploys live to GitHub Pages
 
-Repository Pages URL:
+**Live URL:** https://itstomekk.github.io/awesome-bitcoin-events/
 
-https://itstomekk.github.io/awesome-bitcoin-events/
+## 📚 Documentation
 
-## Project documents
+- **[`CONTRIBUTING.md`](CONTRIBUTING.md)** — how to add/update events
+- **[`docs/REPOSITORY-GUIDE.md`](docs/REPOSITORY-GUIDE.md)** — for maintainers and developers
+- **[`data/README.md`](data/README.md)** — data schema and field definitions
+- **[`PLAN.md`](PLAN.md)** — roadmap and planned features
+- **[`HANDOFF.md`](HANDOFF.md)** — current verified state and known issues
+- **[`BUILD-LOG.md`](BUILD-LOG.md)** — build history and deployment evidence
+- **[`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md)** — community standards
 
-- [`CONTRIBUTING.md`](CONTRIBUTING.md) — contributor workflow and review rules.
-- [`docs/REPOSITORY-GUIDE.md`](docs/REPOSITORY-GUIDE.md) — architecture and maintainer checklist.
-- [`data/README.md`](data/README.md) — data contract and record rules.
-- [`PLAN.md`](PLAN.md) — roadmap and current phase.
-- [`HANDOFF.md`](HANDOFF.md) — current verified state.
-- [`BUILD-LOG.md`](BUILD-LOG.md) — build and deployment evidence.
-- [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) — community standards.
+## 🤝 Community
+
+Join the Bitcoin event community:
+- **Submit events** via the issue form above
+- **Report problems** — broken links, outdated info, duplicates
+- **Suggest features** — better filters, new regions, data exports
+- **Share findings** — tell us what you discover in the data
+
+Questions? Open an issue or reach out to the maintainers.
+
+---
+
+Built with ❤️ for the Bitcoin community. Powered by [Astro](https://astro.build), [OpenStreetMap](https://www.openstreetmap.org/), and open-source principles.
