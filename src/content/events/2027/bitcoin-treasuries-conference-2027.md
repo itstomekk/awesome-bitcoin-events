@@ -2,7 +2,7 @@
 title: Bitcoin Treasuries Conference 2027
 start: '2027-05-28'
 end: '2027-05-28'
-location: Bristol
+location: Bristol, UK
 url: null
 format: conference
 maintainer:
@@ -18,8 +18,8 @@ maintainer:
     venue: null
     city: Bristol
     region: null
-    country: null
-    country_code: null
+    country: UK
+    country_code: GB
     latitude: 51.4430141
     longitude: -2.5816622
     coordinates_precision: city_centroid

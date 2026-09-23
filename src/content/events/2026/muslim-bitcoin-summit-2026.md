@@ -2,7 +2,7 @@
 title: Muslim Bitcoin Summit 2026
 start: '2026-10-10'
 end: '2026-10-11'
-location: London
+location: London, UK
 url: null
 format: conference
 maintainer:
@@ -18,8 +18,8 @@ maintainer:
     venue: null
     city: London
     region: null
-    country: null
-    country_code: null
+    country: UK
+    country_code: GB
     latitude: 51.5074456
     longitude: -0.1277653
     coordinates_precision: city_centroid

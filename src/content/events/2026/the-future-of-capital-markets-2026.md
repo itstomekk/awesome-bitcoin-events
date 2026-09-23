@@ -2,7 +2,7 @@
 title: The Future Of Capital Markets 2026
 start: '2026-10-22'
 end: '2026-10-22'
-location: Lugano
+location: Lugano, Switzerland
 url: null
 format: conference
 maintainer:
@@ -18,8 +18,8 @@ maintainer:
     venue: null
     city: Lugano
     region: null
-    country: null
-    country_code: null
+    country: Switzerland
+    country_code: CH
     latitude: 46.0038007
     longitude: 8.9512275
     coordinates_precision: city_centroid

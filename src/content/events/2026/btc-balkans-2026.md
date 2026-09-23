@@ -2,7 +2,7 @@
 title: BTC Balkans 2026
 start: '2026-10-31'
 end: '2026-11-01'
-location: Sofia
+location: Sofia, Bulgaria
 url: null
 format: conference
 maintainer:
@@ -18,8 +18,8 @@ maintainer:
     venue: null
     city: Sofia
     region: null
-    country: null
-    country_code: null
+    country: Bulgaria
+    country_code: BG
     latitude: 42.6977028
     longitude: 23.3217359
     coordinates_precision: city_centroid

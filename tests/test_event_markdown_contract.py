@@ -1,5 +1,6 @@
 import html
 import json
+import os
 import re
 import subprocess
 import sys
@@ -10,7 +11,7 @@ from tempfile import TemporaryDirectory
 ROOT = Path(__file__).resolve().parents[1]
 SCHEMA = ROOT / "src" / "content.config.ts"
 MIGRATION = ROOT / "scripts" / "migrate_events_to_markdown.py"
-ASTRO = ROOT / "node_modules" / ".bin" / "astro.cmd"
+ASTRO = ROOT / "node_modules" / ".bin" / ("astro.cmd" if os.name == "nt" else "astro")
 
 
 def run_astro_build(project_dir: Path) -> subprocess.CompletedProcess[str]:

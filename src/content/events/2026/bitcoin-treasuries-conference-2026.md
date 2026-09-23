@@ -2,7 +2,7 @@
 title: Bitcoin Treasuries Conference 2026
 start: '2026-09-28'
 end: '2026-09-28'
-location: New York City, NY
+location: New York City, New York, USA
 url: null
 format: conference
 maintainer:
@@ -17,9 +17,9 @@ maintainer:
   location:
     venue: null
     city: New York City
-    region: NY
-    country: null
-    country_code: null
+    region: New York
+    country: USA
+    country_code: US
     latitude: 40.7127281
     longitude: -74.0060152
     coordinates_precision: city_centroid

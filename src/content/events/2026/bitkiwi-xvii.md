@@ -2,7 +2,7 @@
 title: Bitkiwi XVII
 start: '2026-10-24'
 end: '2026-10-24'
-location: Wellington
+location: Wellington, New Zealand
 url: null
 format: meetup
 maintainer:
@@ -18,8 +18,8 @@ maintainer:
     venue: null
     city: Wellington
     region: null
-    country: null
-    country_code: null
+    country: New Zealand
+    country_code: NZ
     latitude: -41.2887953
     longitude: 174.7772114
     coordinates_precision: city_centroid

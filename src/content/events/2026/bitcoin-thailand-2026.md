@@ -2,7 +2,7 @@
 title: Bitcoin Thailand 2026
 start: '2026-11-28'
 end: '2026-11-29'
-location: Bangkok
+location: Bangkok, Thailand
 url: null
 format: conference
 maintainer:
@@ -18,8 +18,8 @@ maintainer:
     venue: null
     city: Bangkok
     region: null
-    country: null
-    country_code: null
+    country: Thailand
+    country_code: TH
     latitude: 13.7524938
     longitude: 100.4935089
     coordinates_precision: city_centroid
