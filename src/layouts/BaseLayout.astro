@@ -16,6 +16,8 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <link rel="icon" href={`${base}favicon.svg`} type="image/svg+xml" />
+    {/* Leaflet (map library) from the unpkg CDN. AUDIT NOTE: loaded on every page although
+        only the home page has a map, and without integrity (SRI) hashes. */}
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
   </head>

@@ -1,3 +1,15 @@
+// Adapter between the Astro content collection and the pages.
+//
+// Every event file in src/content/events/ is turned into one normalised "event" object
+// that the site renders. There are two kinds of file:
+//   1. Migrated/maintainer files (all 109 today): simple top-level fields PLUS a large
+//      `maintainer:` block (dates, location, verification, sources…). The site uses the
+//      maintainer block as-is.
+//   2. Contributor files: only title/start/end/location/url/format. contributorEvent()
+//      fills in the rest with defaults (marked `needs_review`).
+// The top-level fields and the maintainer block duplicate each other; nothing checks
+// that they stay in sync (see audit report).
+
 const ONLINE_LOCATION_RE = /^online$/i;
 const ISO_DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 const SAFE_RICH_EVENT_ID_RE = /^evt-[a-z0-9-]+$/;
@@ -44,6 +56,10 @@ function isOnlineLocation(value) {
   return ONLINE_LOCATION_RE.test(String(value || '').trim());
 }
 
+// Parses the contributor `location` string. Accepted shapes:
+//   "Online" | "City, Country" | "Venue, City, Country"
+// Anything else (e.g. "Columbus, Ohio, USA" is read as venue/city/country, or a bare
+// "Bangkok") yields partial or empty location data.
 export function parseLocation(value) {
   const raw = String(value || '').trim();
   if (!raw) return emptyLocation();
@@ -79,6 +95,7 @@ function ensureSafeReference(value, label) {
   return ensureHttpUrl(value, label);
 }
 
+// Rejects javascript:, data: and other non-web URLs before they reach an <a href>.
 function validateMaintainerUrls(maintainer) {
   const links = maintainer.links || {};
   ensureHttpUrl(links.official_url, 'Maintainer official URL');
@@ -93,6 +110,8 @@ function validateMaintainerUrls(maintainer) {
   });
 }
 
+// Turns a file path id (e.g. "2026/my-event") into URL-safe route segments and rejects
+// path tricks such as "..".
 function safeContentSegments(entry) {
   const raw = typeof entry?.id === 'string' ? entry.id : entry?.slug;
   if (typeof raw !== 'string' || !raw) {
@@ -117,6 +136,8 @@ function derivedId(entry) {
   return `content-${safeContentSegments(entry).join('-')}`;
 }
 
+// Upcoming vs past, computed from the dates at BUILD time. Only used for contributor
+// files. The site is static, so this is only as fresh as the last deploy.
 function derivedLifecycle(start, end) {
   if (!start || !end) return { status: 'unknown', published: null, cancelled: false };
   const today = new Date().toISOString().slice(0, 10);
@@ -185,6 +206,11 @@ function contributorEvent(entry) {
   };
 }
 
+// AUDIT NOTE (bug, not fixed in this PR): for maintainer files the stored
+// `maintainer.lifecycle.status` is used as-is and never recomputed from dates. Events
+// saved as "announced" stay "upcoming" on the site after they end (e.g. Noderunners
+// 2026, Copa Bitcoin 2026, Bitcoin Treasuries Unconference NYC). README.md does not
+// have this bug because build_event_lists.mjs compares dates directly.
 export function adaptEventEntry(entry) {
   const event = entry.data.maintainer ? { ...entry.data.maintainer } : contributorEvent(entry);
   if (entry.data.maintainer) {
@@ -217,6 +243,8 @@ export function adaptEventEntries(entries) {
   return assertUniqueRuntimeIds(events);
 }
 
+// Safely embeds JSON inside <script type="application/json"> (map data) by escaping
+// characters that could close the tag or break the script.
 export function serializeJsonForHtmlScript(value) {
   const serialized = JSON.stringify(value);
   if (serialized === undefined) throw new Error('Cannot serialize undefined JSON for an HTML script');

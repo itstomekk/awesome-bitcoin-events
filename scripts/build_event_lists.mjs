@@ -1,12 +1,33 @@
 #!/usr/bin/env node
 
+// Generates the human-readable lists from the per-event Markdown files.
+//
+// Data flow today (one direction only):
+//   src/content/events/<year>/*.md  ──►  README.md (upcoming table between the markers below)
+//                                   └──►  EVENTS.md (upcoming + past archive by year)
+//
+// AUDIT NOTE: README.md is an OUTPUT of this script, not an input. Anything typed by
+// hand between the EVENTS:UPCOMING markers is overwritten on the next run, and the
+// `--check` mode (run in CI) fails the build if README.md differs from what this
+// script would generate. That is the opposite of a classic "awesome list", where
+// README.md itself is the source of truth. See docs/audits/AUDIT-2026-09-23.md.
+//
+// Usage:
+//   npm run generate:event-lists   rewrite README.md + EVENTS.md using today's date
+//   npm run check:event-lists      verify they are up to date (reuses the as-of date
+//                                  stored in the files, so CI does not fail just
+//                                  because the calendar moved forward)
+
 import { readFile, readdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
 import YAML from 'yaml';
 
+// README.md must contain exactly one START/END pair; only the text between them is replaced.
 const START_MARKER = '<!-- EVENTS:UPCOMING:START -->';
 const END_MARKER = '<!-- EVENTS:UPCOMING:END -->';
+// The as-of marker records which "today" the tables were generated for, so --check
+// can reproduce the exact same output later.
 const AS_OF_MARKER_PREFIX = '<!-- EVENTS:GENERATED-AS-OF:';
 const AS_OF_MARKER_SUFFIX = ' -->';
 const AS_OF_MARKER_PATTERN = /<!-- EVENTS:GENERATED-AS-OF:([^ ]+) -->/g;
@@ -108,6 +129,9 @@ function validateHttpUrl(value, label) {
   return parsed.href;
 }
 
+// Reads one event file. Only the simple top-level frontmatter fields are needed for
+// the tables (title, start, end, location, url, format); the large `maintainer:`
+// block is used only as a fallback for the URL and type.
 function readEvent(filePath, content) {
   const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)/);
   if (!match) throw new Error(`Missing YAML frontmatter: ${filePath}`);
@@ -122,6 +146,8 @@ function readEvent(filePath, content) {
   const maintainerLinks = maintainer.links ?? {};
   const publicUrl = data.url || maintainerLinks.official_url || null;
   const url = validateHttpUrl(publicUrl, `official URL in ${filePath}`);
+  // AUDIT NOTE: legacy records store a delivery mode (`in_person`) in `format`, so the
+  // README "Type" column shows `in_person` for them instead of an event type.
   const type = textValue(
     data.format ?? data.type ?? maintainer.classification?.event_type ?? maintainer.event_type,
     '—',
@@ -151,6 +177,7 @@ async function loadEvents(root) {
   );
 }
 
+// Escapes characters that would break a Markdown table cell or inject formatting/HTML.
 function escapeTable(value) {
   return String(value ?? '—')
     .replaceAll('\\', '\\\\')
@@ -187,6 +214,7 @@ function renderTable(events) {
   return rows.join('\n');
 }
 
+// Replaces only the block between the markers; the rest of README.md is left as written.
 function renderReadme(readme, upcoming, today) {
   const start = readme.indexOf(START_MARKER);
   const end = readme.indexOf(END_MARKER);
@@ -200,6 +228,8 @@ function renderReadme(readme, upcoming, today) {
   return `${readme.slice(0, start)}${generated}${readme.slice(end + END_MARKER.length)}`;
 }
 
+// EVENTS.md is fully generated (no hand-written parts). An event counts as upcoming
+// until its end date has passed.
 function renderArchive(events, today) {
   const upcoming = events.filter((event) => event.end >= today);
   const past = events.filter((event) => event.end < today);
@@ -236,6 +266,7 @@ function renderArchive(events, today) {
   return `${lines.join('\n').replace(/\n{3,}/g, '\n\n').trimEnd()}\n`;
 }
 
+// Writes the file only if it changed; in --check mode it just records that it is stale.
 async function updateFile(filePath, expected, check, changedFiles) {
   let current;
   try {

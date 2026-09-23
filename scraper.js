@@ -1,4 +1,7 @@
 #!/usr/bin/env node
+// LEGACY (v1): enriches the old root events.json with og:image/description.
+// AUDIT NOTE: `npm run scrape` currently crashes, because package.json sets
+// "type": "module" and this file uses CommonJS require().
 /**
  * Bitcoin Events Scraper
  * ----------------------

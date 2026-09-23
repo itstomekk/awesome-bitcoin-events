@@ -1,8 +1,15 @@
 # Handoff
 
-Updated: 2026-09-18
+Updated: 2026-09-23
 
-## Current truth
+## Latest session — 2026-09-23 audit (comment-only PR)
+
+- Owner's goal: a classic awesome list where **README.md is the canonical source of truth**. Today the opposite is true: README's table is generated from `src/content/events/**/*.md` and CI rejects hand edits.
+- Branch `claude/bitcoin-events-audit-6piqnm`: audit report `docs/audits/AUDIT-2026-09-23.md` + `AUDIT NOTE` comments in code. No data or behaviour changed (a functional-fix commit `cf7c85b` was made then reverted at the owner's request; it is recoverable).
+- Next: owner picks migration option A (pure awesome list) or B (README + derived site), see report §4–5. Don't invest more in the Astro/content-collection pipeline until then.
+- Note: the section below is from 2026-09-18 and says `data/events.json` is canonical; since commit 095a89c the canonical data is the Markdown event files.
+
+## Current truth (as of 2026-09-18, partly superseded)
 
 GitHub files are the source of truth. There is no cPanel database or scheduler. The repository now has an Astro static frontend that builds from the versioned `data/` layer; the previous root-level frontend remains untouched as a legacy reference.
 

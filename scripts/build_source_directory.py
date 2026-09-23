@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """Build the public, interface-neutral source directory from registry and Notion inventory."""
 
+# Builds data/sources.json (the directory of calendars/aggregators used for research)
+# from sources/registry.json and the Notion export. Not used by the site build.
+
 from __future__ import annotations
 
 import argparse

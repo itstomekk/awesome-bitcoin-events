@@ -1,3 +1,6 @@
+// Small display helpers shared by the home page, the event cards and the detail pages.
+// Dates are handled at 12:00 UTC so a date never shifts by one day in any timezone.
+
 export const monthNames = [
   'January', 'February', 'March', 'April', 'May', 'June',
   'July', 'August', 'September', 'October', 'November', 'December'
@@ -50,6 +53,11 @@ export function statusLabel(event) {
   return 'Upcoming';
 }
 
+// Verification states come from the research pipeline:
+//   official_page_seen  a maintainer saw the organiser's own page
+//   discovery_only      found on an aggregator only; dates not confirmed
+//   legacy_imported     carried over from the first version of the list, not re-checked
+//   needs_review        conflicting or incomplete evidence
 export function verificationLabel(event) {
   const labels = {
     official_page_seen: 'Official page seen',
@@ -67,6 +75,8 @@ export function verificationTone(event) {
   return 'legacy';
 }
 
+// "Upcoming" = anything not marked past or cancelled. It trusts lifecycle.status rather
+// than checking dates (see the audit note in content-events.js).
 export function upcoming(eventsToFilter = []) {
   return eventsToFilter.filter((event) => event.lifecycle.status !== 'past' && !event.lifecycle.cancelled);
 }

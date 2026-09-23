@@ -1,3 +1,6 @@
+/* LEGACY (v1, March 2026): front-end for the old root index.html, reading root events.json.
+   Not used by the Astro site or any build step; kept only as a reference. */
+
 /* ===========================
    Awesome Bitcoin Events – app.js
 =========================== */

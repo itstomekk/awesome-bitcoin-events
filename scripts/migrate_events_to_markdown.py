@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """Migrate the canonical event JSON dataset into Markdown content files."""
 
+# Pipeline step 2 (historical, one-off): data/events.json -> src/content/events/<year>/*.md.
+# After this ran, the .md files became canonical and data/events.json a frozen snapshot.
+
 from __future__ import annotations
 
 import argparse
