@@ -1,17 +1,21 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import EventCard from '../components/EventCard.astro';
-import { events, upcoming, groupByMonth, monthNames, yearOf } from '../lib/events.js';
+import { getCollection } from 'astro:content';
+import { adaptEventEntries, serializeJsonForHtmlScript } from '../lib/content-events.js';
+import { upcoming, groupByMonth, monthNames, yearOf } from '../lib/events.js';
 import sourceDataset from '../../data/sources.json';
 
-const upcomingEvents = upcoming();
+const contentEntries = await getCollection('events');
+const events = adaptEventEntries(contentEntries);
+const upcomingEvents = upcoming(events);
 const upcomingGroups = groupByMonth(upcomingEvents);
 const allGroups = groupByMonth(events);
 const years = [...new Set(events.map(yearOf))].sort((a, b) => b - a);
 const regions = [...new Set(events.map((event) => event.location.region).filter(Boolean))].sort();
 const types = [...new Set(events.map((event) => event.classification.event_type).filter(Boolean))].sort();
 const countries = new Set(events.map((event) => event.location.country).filter(Boolean));
-const nextEvents = upcomingEvents.slice(0, 3);
+const nextEvents = [...upcomingEvents].sort((a, b) => a.dates.start.localeCompare(b.dates.start)).slice(0, 3);
 const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 const mapEvents = events.filter((event) => event.location.latitude !== null && event.location.longitude !== null).map((event) => ({
   id: event.id,
@@ -79,7 +83,7 @@ const mapEvents = events.filter((event) => event.location.latitude !== null && e
           </aside>
         </div>
       </div>
-      <script type="application/json" id="map-data" set:html={JSON.stringify(mapEvents)}></script>
+      <script type="application/json" id="map-data" set:html={serializeJsonForHtmlScript(mapEvents)}></script>
     </section>
 
     <section class="calendar-section" id="calendar">

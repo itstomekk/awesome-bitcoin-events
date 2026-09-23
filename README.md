@@ -1,156 +1,78 @@
-# Awesome Bitcoin Events 🌍
+# Awesome Bitcoin Events
 
 [![Deploy to GitHub Pages](https://github.com/itstomekk/awesome-bitcoin-events/actions/workflows/pages.yml/badge.svg)](https://github.com/itstomekk/awesome-bitcoin-events/actions/workflows/pages.yml)
-[![Live calendar](https://img.shields.io/badge/live-calendar-f7931a?logo=bitcoin&logoColor=111111)](https://itstomekk.github.io/awesome-bitcoin-events/)
-[![Community submissions](https://img.shields.io/badge/contributions-welcome-2f6f62)](https://github.com/itstomekk/awesome-bitcoin-events/issues/new?template=event-submission.yml)
 
-**A community-driven global calendar of Bitcoin conferences, meetups, retreats, festivals, and technical gatherings.**
+A community-maintained list of Bitcoin conferences, meetups, retreats, festivals, and other events around the world.
 
-Whether you're a developer, investor, filmmaker, or just curious about Bitcoin, this repository helps you discover and connect with the Bitcoin community worldwide. Every event is sourced from organizers and verified by the community — not guessed or auto-promoted.
+**[Browse the full archive](EVENTS.md)** · **[Add an event](https://github.com/itstomekk/awesome-bitcoin-events/issues/new?template=event-submission.yml)** · **[Report a correction](https://github.com/itstomekk/awesome-bitcoin-events/issues/new?template=event-correction.yml)**
 
-## 🗺️ Explore the live calendar
+## Upcoming events
 
-**[Visit the interactive calendar →](https://itstomekk.github.io/awesome-bitcoin-events/)**
+<!-- EVENTS:UPCOMING:START -->
+<!-- EVENTS:GENERATED-AS-OF:2026-09-22 -->
+| Date | Event | Location | Type | Link |
+| --- | --- | --- | --- | --- |
+| 2026-09-22 – 2026-09-23 | Freedom Tech DC 2026 | Washington, DC, USA | conference | — |
+| 2026-09-23 | European Mining Summit 2026 | Tanssin Talo · Kaapelitehdas, Helsinki, Finland | conference | [Official](https://miningsummit.eu/) |
+| 2026-09-23 – 2026-09-24 | Midwest Bitcoin Summit 2026 | Greater Columbus Convention Center, Columbus, Ohio, USA | conference | [Official](https://www.midwestbtc.com/) |
+| 2026-09-24 | Socratic Seminar 162 | New York City, New York, USA | meetup | [Official](https://bitdevs.org/2026-09-24-socratic-seminar-162) |
+| 2026-09-25 – 2026-09-26 | BTC HEL 2026 | Kaapelitehdas, Helsinki, Finland | conference | [Official](https://btchel.com/) |
+| 2026-09-27 | Proof Conference 2026 | Vilnius, Lithuania | conference | — |
+| 2026-09-28 | Bitcoin Treasuries Conference 2026 | New York City, NY | conference | — |
+| 2026-10-01 – 2026-10-03 | bitcoin++ Berlin, payments edition | w3.hub, Berlin, Germany | conference | [Official](https://btcpp.dev/berlin26) |
+| 2026-10-01 – 2026-10-03 | Canadian Bitcoin Conference 2026 | Toronto, Ontario, Canada | conference | — |
+| 2026-10-01 – 2026-10-11 | Bitchill s04 | Roatan, Honduras | retreat | [Official](https://thebitcoindistrict.com/bitchill) |
+| 2026-10-02 – 2026-10-04 | Watch Out, Bitcoin! 2026 | Espacio Pablo VI, Madrid, Spain | conference | [Official](http://wobitcoin.org/) |
+| 2026-10-05 – 2026-10-06 | Bitcoin Poland 2026 | Poznan Congress Center, Poznan, Poland | conference | [Official](https://www.bitcoin-poland.com/) |
+| 2026-10-05 – 2026-10-06 | Imagine IF 2026 | Fisher Center, Nashville, Tennessee, USA | conference | [Official](https://www.imagineifnashville.com/) |
+| 2026-10-10 – 2026-10-11 | Muslim Bitcoin Summit 2026 | London | conference | — |
+| 2026-10-12 – 2026-10-15 | TABConf 8 | Georgia Tech Exhibition Hall, Atlanta, Georgia, USA | conference | [Official](https://tabconf.com/) |
+| 2026-10-15 | Blockchain Africa Conference 2026 | Gauteng, South Africa | conference | [Official](https://bitcoinevents.co.za/) |
+| 2026-10-15 – 2026-10-17 | Bitcoin Alpha 2026 | Santa Monica, California, USA | conference | — |
+| 2026-10-16 – 2026-10-18 | Bitcoin Bush Bash - Busselton | Busselton, Western Australia, Australia | conference | [Official](https://bitcoinbushbash.info/) |
+| 2026-10-22 | The Future Of Capital Markets 2026 | Lugano | conference | — |
+| 2026-10-23 – 2026-10-24 | Plan ₿ Forum Lugano 2026 | Palazzo dei Congressi / Villa Ciani, Lugano, LU, Switzerland | conference | [Official](https://planb.lugano.ch/planb-forum/) |
+| 2026-10-24 | Bitkiwi XVII | Wellington | meetup | — |
+| 2026-10-25 – 2026-10-27 | Mita Tech Talks 2026 | Punta Mita private resort community, Punta Mita, Mexico | conference | [Official](https://2026.mitatechtalks.com/) |
+| 2026-10-28 – 2026-10-29 | Custody & Treasury Summit 2026 | Nashville, Tennessee, USA | conference | — |
+| 2026-10-29 – 2026-11-01 | LABITCONF 2026 | Centro Costa Salguero / BAFerial, Buenos Aires, Argentina | conference | [Official](https://www.labitconf.com/) |
+| 2026-10-30 – 2026-11-01 | Bitmela 2026 | Jaipur | conference | — |
+| 2026-10-31 – 2026-11-01 | BTC Balkans 2026 | Sofia | conference | — |
+| 2026-11-04 | Bitcoin for Corporations Symposium | Amsterdam, Netherlands | conference | — |
+| 2026-11-05 – 2026-11-06 | Bitcoin Amsterdam 2026 | Sugar Factory, Amsterdam, Netherlands | conference | [Official](https://www.bitcoin.amsterdam/2026) |
+| 2026-11-06 – 2026-11-07 | Golden Gate Bitcoin | Kentfield, California, USA | conference | — |
+| 2026-11-07 – 2026-11-08 | Bitcoin Korea Conference | COEX (Nov 7); Korea Federation of Banks (Nov 8), Seoul, South Korea | conference | [Official](https://www.bitcoinkoreaconference.com/en) |
+| 2026-11-11 – 2026-11-12 | Bitcoin Histórico 2026 | Centro Histórico (multiple venues), San Salvador, El Salvador | conference | [Official](https://bitcoinhistorico.com/) |
+| 2026-11-13 | Bitcoin: A Competitive Advantage | London, UK | conference | — |
+| 2026-11-19 – 2026-11-20 | Global Bitcoin Circular Economies Summit | El Zonte, El Salvador | conference | [Official](https://www.bitcoinbeach.com/summit-blog/bitcoin-circular-economies-summit-2026) |
+| 2026-11-19 – 2026-11-22 | BitFest 2026 | Pendulum Hotel, Manchester, UK | festival | [Official](https://bitfest.uk/) |
+| 2026-11-28 – 2026-11-29 | Bitcoin Thailand 2026 | Bangkok | conference | — |
+| 2026-12-07 – 2026-12-08 | Bitcoin MENA 2026 | ADNEC Center Abu Dhabi, Abu Dhabi, United Arab Emirates | conference | [Official](https://mena.b.tc/) |
+| 2027-02-04 – 2027-02-07 | The Sovereign Summit | Fontainebleau | conference | — |
+| 2027-04-01 – 2027-04-04 | BitBlockBoom! 2027 | Fort Worth Stockyard Station, Stampede Ballroom, Fort Worth, Texas, United States | conference | [Official](https://www.bitblockboom.com/) |
+| 2027-04-02 – 2027-04-03 | Sovereignty Summit 2027 | Queenstown | conference | — |
+| 2027-05-06 – 2027-05-08 | BTC Prague 2027 | Prague, Czech Republic | conference | [Official](https://btcprague.com/) |
+| 2027-05-28 | Bitcoin Treasuries Conference 2027 | Bristol | conference | — |
+| 2027-06-24 – 2027-06-27 | Bitcoin FilmFest 2027 | Warsaw | festival | — |
+| 2027-07-15 – 2027-07-17 | Bitcoin 2027 | Music City Center, Nashville, Tennessee, USA | conference | [Official](https://conference.b.tc/) |
+<!-- EVENTS:UPCOMING:END -->
 
-The live site features:
+## Add an event
 
-- 📅 **Upcoming-first browsing** — see what's happening next
-- 🔍 **Smart filters** — search by year, region, format (conference/meetup/festival), and verification state
-- 🗺️ **Interactive map** — discover events by location with OpenStreetMap integration
-- 📍 **Event details** — organized, linked, and transparent sources for each listing
-- ✅ **Source labels** — know if an event is officially confirmed, community-discovered, or needs review
-- 📱 **Mobile-friendly** — full experience on phone, tablet, and desktop
+The easiest path is the **[event submission issue form](https://github.com/itstomekk/awesome-bitcoin-events/issues/new?template=event-submission.yml)**. Include the organizer's official page, dates, location, event type, and any evidence that helps a maintainer check the listing. Use the **[correction form](https://github.com/itstomekk/awesome-bitcoin-events/issues/new?template=event-correction.yml)** for date changes, cancellations, duplicates, or missing details.
 
-> **This is a community directory, not an endorsement.** Always check the verification label and visit the organizer's official page before booking travel or tickets.
+If you prefer to contribute technically, add or update one Markdown file under [`src/content/events/`](src/content/events/) and open a pull request. The canonical public fields are documented in [`CONTRIBUTING.md`](CONTRIBUTING.md); generated list output should be refreshed with `npm run generate:event-lists`.
 
-## Why this exists
+## Optional map and filters
 
-Bitcoin events happen constantly — conferences, hackathons, film festivals, and community meetups across the globe. But they're scattered across Twitter, Discord, mailing lists, and personal blogs. **Awesome Bitcoin Events** brings them together in one honest, sourced, community-maintained calendar.
+The [live website](https://itstomekk.github.io/awesome-bitcoin-events/) is a secondary view for searching, filtering, and exploring events on a map. The Markdown list and archive remain the durable, reviewable source for contributors.
 
-We believe:
-- **Sources matter.** Every event includes a link back to where it came from.
-- **Transparency beats completeness.** We'd rather say "we don't know if this is confirmed" than present guesses as facts.
-- **Community knows best.** You and your peers are the best judges of what events are worth listing.
+> Listings preserve what public sources report; inclusion is not an endorsement. Check the organizer's page before relying on dates, locations, tickets, or travel plans.
 
-## 🚀 Add an event (2 minutes, no coding required)
+## Technical docs
 
-Got a Bitcoin event to share? Help the community discover it.
-
-1. **[Open the event submission form →](https://github.com/itstomekk/awesome-bitcoin-events/issues/new?template=event-submission.yml)**
-2. Fill in the event name, dates, location, and organizer link
-3. Add a note about where you found it (official page, announcement, recommendation)
-4. Submit — a maintainer will review and merge within days
-
-Found a mistake, cancellation, or duplicate? **[Submit a correction →](https://github.com/itstomekk/awesome-bitcoin-events/issues/new?template=event-correction.yml)**
-
-For full details, see [`CONTRIBUTING.md`](CONTRIBUTING.md).
-
-## 📊 How the data works
-
-The repository keeps a clean separation between community input, verification, and publication:
-
-```
-community issue form (you)
-        ↓
-source & duplicate review (maintainers)
-        ↓
-canonical JSON + evidence links (data/)
-        ↓
-Astro static build
-        ↓
-GitHub Pages (live calendar)
-```
-
-### Verification states
-
-Every event shows its current verification status:
-
-| Label | Meaning |
-|---|---|
-| ✅ `official_page_seen` | Organizer's official page was checked; dates and location confirmed. |
-| 🔍 `discovery_only` | Found in a credible source (Reddit, Twitter, etc.), but organizer confirmation pending. |
-| ⚠️ `needs_review` | Sources conflict or key details are unclear; community input welcome. |
-| 📦 `legacy_imported` | From our earlier dataset; awaiting re-confirmation. |
-
-**No values are invented or guessed.** Dates are never assumed. If we don't know something, we say `null` — not make it up.
-
-## 📁 Repository structure
-
-| Path | Purpose |
-|---|---|
-| `data/events.json` | **Canonical dataset** — what the site reads and publishes |
-| `data/sources.json` | **Source directory** — who runs what, quality notes, monitoring |
-| `data/geo-cache.json` | **Map cache** — OpenStreetMap coordinates and attribution |
-| `src/pages/` | **Astro site** — calendar UI, filters, map, event detail pages |
-| `src/components/` | **Event cards** — reusable markup for listings |
-| `src/styles/` | **Design system** — responsive layout, accessibility, map styling |
-| `.github/ISSUE_TEMPLATE/` | **Community forms** — event submission and correction templates |
-| `.github/workflows/pages.yml` | **Auto-deploy** — builds and publishes on each push to `main` |
-
-See [`docs/REPOSITORY-GUIDE.md`](docs/REPOSITORY-GUIDE.md) for maintainer details and [`data/README.md`](data/README.md) for the data contract.
-
-## 💻 Run locally
-
-**Requirements:** Node.js 18+, Python 3 (optional, for tests)
-
-```bash
-# Install and start dev server
-npm install
-npm run dev
-```
-
-Open http://localhost:3000 — the site hot-reloads as you edit.
-
-**For production build:**
-
-```bash
-npm run build
-npm run preview  # local static preview
-```
-
-**Before opening a PR:**
-
-```bash
-npm run build
-python -m pytest -q  # data integrity check
-git diff --check
-```
-
-## 🔐 Privacy & security
-
-This is a **public repository**. Never commit passwords, API keys, private email addresses, or internal notes. Use public organizer contact pages and channels only.
-
-The Astro site in `src/` and versioned data in `data/` are the current build. Legacy files (`events.json`, `index.html`, `app.js`, `style.css` at root) are kept for reference but no longer maintained.
-
-## 📢 Deployment
-
-Every push to `main` triggers `.github/workflows/pages.yml`:
-1. Builds the Astro site
-2. Uploads to `dist/`
-3. Deploys live to GitHub Pages
-
-**Live URL:** https://itstomekk.github.io/awesome-bitcoin-events/
-
-## 📚 Documentation
-
-- **[`CONTRIBUTING.md`](CONTRIBUTING.md)** — how to add/update events
-- **[`docs/REPOSITORY-GUIDE.md`](docs/REPOSITORY-GUIDE.md)** — for maintainers and developers
-- **[`data/README.md`](data/README.md)** — data schema and field definitions
-- **[`PLAN.md`](PLAN.md)** — roadmap and planned features
-- **[`HANDOFF.md`](HANDOFF.md)** — current verified state and known issues
-- **[`BUILD-LOG.md`](BUILD-LOG.md)** — build history and deployment evidence
-- **[`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md)** — community standards
-
-## 🤝 Community
-
-Join the Bitcoin event community:
-- **Submit events** via the issue form above
-- **Report problems** — broken links, outdated info, duplicates
-- **Suggest features** — better filters, new regions, data exports
-- **Share findings** — tell us what you discover in the data
-
-Questions? Open an issue or reach out to the maintainers.
-
----
-
-Built with ❤️ for the Bitcoin community. Powered by [Astro](https://astro.build), [OpenStreetMap](https://www.openstreetmap.org/), and open-source principles.
+- [`CONTRIBUTING.md`](CONTRIBUTING.md) — public event fields, location grammar, and review workflow.
+- [`docs/REPOSITORY-GUIDE.md`](docs/REPOSITORY-GUIDE.md) — maintainer workflow and repository map.
+- [`data/README.md`](data/README.md) — supporting data and migration/reference files.
+- [`PLAN.md`](PLAN.md) — project roadmap.
+- [`HANDOFF.md`](HANDOFF.md) — current implementation state.

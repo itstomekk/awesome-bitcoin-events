@@ -25,7 +25,7 @@ body:
     id: official-url
     attributes:
       label: Official event URL
-      description: Required. Use the organizer's event page, not a directory or search result.
+      description: Required. Use the organizer's public HTTP(S) event page, not a directory or search result.
       placeholder: https://example.com/events/bitcoin-summit
     validations:
       required: true

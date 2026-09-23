@@ -1,8 +1,3 @@
-import dataset from '../../data/events.json';
-
-export const events = dataset.events;
-export const datasetMeta = dataset;
-
 export const monthNames = [
   'January', 'February', 'March', 'April', 'May', 'June',
   'July', 'August', 'September', 'October', 'November', 'December'
@@ -72,7 +67,7 @@ export function verificationTone(event) {
   return 'legacy';
 }
 
-export function upcoming(eventsToFilter = events) {
+export function upcoming(eventsToFilter = []) {
   return eventsToFilter.filter((event) => event.lifecycle.status !== 'past' && !event.lifecycle.cancelled);
 }
 
