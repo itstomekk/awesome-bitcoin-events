@@ -1,12 +1,22 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { events, formatDateRange, locationLabel, statusLabel, verificationLabel, verificationTone } from '../../lib/events.js';
+import { getCollection, render } from 'astro:content';
+import { adaptEventEntry, adaptEventEntries } from '../../lib/content-events.js';
+import { formatDateRange, locationLabel, statusLabel, verificationLabel, verificationTone } from '../../lib/events.js';
 
-export function getStaticPaths() {
-  return events.map((event) => ({ params: { id: event.id }, props: { event } }));
+export async function getStaticPaths() {
+  const entries = await getCollection('events');
+  const events = adaptEventEntries(entries);
+  return entries.map((entry, index) => ({
+    params: { id: events[index].id },
+    props: { entry },
+  }));
 }
 
-const { event } = Astro.props;
+const { entry } = Astro.props;
+const event = adaptEventEntry(entry);
+const { Content } = await render(entry);
+const hasMarkdownBody = Boolean(entry.body?.trim());
 const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 const status = statusLabel(event);
 const tone = verificationTone(event);
@@ -23,7 +33,9 @@ const sourceUrls = [...new Set(event.source_observations.map((observation) => ob
           <div class="detail-kicker"><span class={`confidence-dot ${tone}`}></span>{verificationLabel(event)}<span class="detail-kicker-rule"></span>{status}</div>
           <h1>{event.title}</h1>
           {event.series && <p class="detail-series">{event.series}</p>}
-          <p class="detail-intro">{event.description || 'A Bitcoin-focused community event record. Details are preserved as observed and labeled by their verification state.'}</p>
+          <div class="detail-intro">
+            {hasMarkdownBody ? <Content /> : (event.description || 'A Bitcoin-focused community event record. Details are preserved as observed and labeled by their verification state.')}
+          </div>
           <div class="detail-actions">
             {officialUrl && <a class="button button-primary" href={officialUrl} target="_blank" rel="noreferrer">Visit official page <span aria-hidden="true">↗</span></a>}
             {registrationUrl && <a class="button button-secondary" href={registrationUrl} target="_blank" rel="noreferrer">Registration <span aria-hidden="true">↗</span></a>}

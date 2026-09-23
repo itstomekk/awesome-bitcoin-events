@@ -1,8 +1,11 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Browse the live calendar
+  - name: Browse README and the full EVENTS.md archive
+    url: https://github.com/itstomekk/awesome-bitcoin-events/blob/main/README.md
+    about: Start with the Awesome-style README; follow its EVENTS.md link for the full archive.
+  - name: Open the map, search, and filter view
     url: https://itstomekk.github.io/awesome-bitcoin-events/
-    about: Check whether an event is already listed before opening a submission.
+    about: Use the website as the secondary map/search/filter view.
   - name: Read the contribution guide
     url: https://github.com/itstomekk/awesome-bitcoin-events/blob/main/CONTRIBUTING.md
-    about: Learn how submissions are reviewed and published.
+    about: Learn the Markdown event format and review workflow.

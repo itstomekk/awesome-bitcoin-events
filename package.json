@@ -7,6 +7,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "generate:event-lists": "node scripts/build_event_lists.mjs",
+    "check:event-lists": "node scripts/build_event_lists.mjs --check",
     "scrape": "node scraper.js",
     "scrape:force": "node scraper.js --force"
   },
@@ -16,6 +18,7 @@
   "keywords": ["bitcoin", "events", "conferences", "astro"],
   "license": "MIT",
   "devDependencies": {
-    "astro": "^5.14.1"
+    "astro": "^5.14.1",
+    "yaml": "^2.9.1"
   }
 }
