@@ -2,7 +2,7 @@
 title: Sovereignty Summit 2027
 start: '2027-04-02'
 end: '2027-04-03'
-location: Queenstown, New Zealand
+location: Queenstown
 url: null
 format: conference
 maintainer:
@@ -18,8 +18,8 @@ maintainer:
     venue: null
     city: Queenstown
     region: null
-    country: New Zealand
-    country_code: NZ
+    country: null
+    country_code: null
     latitude: -45.0321923
     longitude: 168.661
     coordinates_precision: city_centroid

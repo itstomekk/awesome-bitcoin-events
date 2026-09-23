@@ -2,7 +2,7 @@
 title: Bitcoin FilmFest 2027
 start: '2027-06-24'
 end: '2027-06-27'
-location: Warsaw, Poland
+location: Warsaw
 url: null
 format: festival
 maintainer:
@@ -18,8 +18,8 @@ maintainer:
     venue: null
     city: Warsaw
     region: null
-    country: Poland
-    country_code: PL
+    country: null
+    country_code: null
     latitude: 52.2333742
     longitude: 21.0711489
     coordinates_precision: city_centroid

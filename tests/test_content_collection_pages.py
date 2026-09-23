@@ -9,7 +9,7 @@ from tempfile import TemporaryDirectory
 
 
 ROOT = Path(__file__).resolve().parents[1]
-ASTRO = ROOT / "node_modules" / ".bin" / ("astro.cmd" if os.name == "nt" else "astro")
+ASTRO = ROOT / "node_modules" / ".bin" / "astro.cmd"
 NODE = "node"
 
 
@@ -92,7 +92,7 @@ def test_built_detail_page_contains_markdown_body():
     env = os.environ.copy()
     env["PUBLIC_BASE_PATH"] = "/awesome-bitcoin-events"
     result = subprocess.run(
-        ["npm.cmd" if os.name == "nt" else "npm", "run", "build"],
+        ["npm.cmd", "run", "build"],
         cwd=ROOT,
         env=env,
         capture_output=True,

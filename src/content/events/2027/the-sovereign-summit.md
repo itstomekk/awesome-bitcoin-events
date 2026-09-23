@@ -2,7 +2,7 @@
 title: The Sovereign Summit
 start: '2027-02-04'
 end: '2027-02-07'
-location: Fontainebleau, France
+location: Fontainebleau
 url: null
 format: conference
 maintainer:
@@ -18,8 +18,8 @@ maintainer:
     venue: null
     city: Fontainebleau
     region: null
-    country: France
-    country_code: FR
+    country: null
+    country_code: null
     latitude: 48.4049375
     longitude: 2.7015872
     coordinates_precision: city_centroid

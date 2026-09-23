@@ -1,14 +1,8 @@
 # Handoff
 
-Updated: 2026-09-23
+Updated: 2026-09-18
 
-## Latest session — 2026-09-23 audit
-
-Full report: `docs/audits/AUDIT-2026-09-23.md`. Fixed: lifecycle now date-derived (site showed ended events as upcoming), daily scheduled Pages rebuild, pytest portable + run in CI (45 pass), Leaflet SRI, 11 events given countries. Open items A–L in the report await owner decisions (top: verify 19 upcoming discovery-only events; legacy file cleanup).
-
-**Correction to the section below:** since commit 095a89c the canonical source is the Markdown files in `src/content/events/<year>/` (109 files). `data/events.json` is a migration snapshot and is not read by the build.
-
-## Current truth (as of 2026-09-18, partly superseded)
+## Current truth
 
 GitHub files are the source of truth. There is no cPanel database or scheduler. The repository now has an Astro static frontend that builds from the versioned `data/` layer; the previous root-level frontend remains untouched as a legacy reference.
 
@@ -35,7 +29,7 @@ The Astro build adds:
 - `npm run build` passes with no Astro warnings and generates 111 pages: home, 109 event routes, and 404.
 - The home build includes a Leaflet map with 108 serialized event points; one online event has no geographic point.
 - A build with `PUBLIC_BASE_PATH=/awesome-bitcoin-events` passes; generated links use `/awesome-bitcoin-events/events/.../` and no concatenated base-path links remain.
-- `python -m pytest -q` passes: 45 tests (2026-09-23).
+- `python -m pytest -q` passes: 15 tests.
 - `npm audit --omit=dev --audit-level=high` reports 0 production vulnerabilities.
 - `git diff --check` passes.
 - The next five uploaded events were researched; four are promoted/confirmed as official-page records, while Copa Bitcoin remains `needs_review` because public date evidence conflicts.

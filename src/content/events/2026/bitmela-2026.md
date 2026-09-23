@@ -2,7 +2,7 @@
 title: Bitmela 2026
 start: '2026-10-30'
 end: '2026-11-01'
-location: Jaipur, India
+location: Jaipur
 url: null
 format: conference
 maintainer:
@@ -18,8 +18,8 @@ maintainer:
     venue: null
     city: Jaipur
     region: null
-    country: India
-    country_code: IN
+    country: null
+    country_code: null
     latitude: 26.9154576
     longitude: 75.8189817
     coordinates_precision: city_centroid

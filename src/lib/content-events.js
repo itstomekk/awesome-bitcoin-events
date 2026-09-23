@@ -127,14 +127,6 @@ function derivedLifecycle(start, end) {
   };
 }
 
-// Stored lifecycle status goes stale as soon as an event ends, so past/announced
-// is re-derived from dates at build time. Cancelled and postponed stay as stored.
-function refreshLifecycle(lifecycle, dates) {
-  const stored = lifecycle || {};
-  if (stored.cancelled || stored.status === 'cancelled' || stored.status === 'postponed') return stored;
-  return { ...stored, status: derivedLifecycle(dates.start, dates.end).status };
-}
-
 function contributorEvent(entry) {
   const { data } = entry;
   const start = dateString(data.start, 'Contributor start date');
@@ -201,7 +193,6 @@ export function adaptEventEntry(entry) {
     }
     assertDateRange(event.dates.start, event.dates.end, `Maintainer event ${event.id}`);
     validateMaintainerUrls(event);
-    event.lifecycle = refreshLifecycle(event.lifecycle, event.dates);
   }
   return {
     ...event,
