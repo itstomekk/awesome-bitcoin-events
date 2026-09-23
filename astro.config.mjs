@@ -1,3 +1,5 @@
+// Astro build settings: a fully static site (no server) written to ./dist and deployed
+// to GitHub Pages by .github/workflows/pages.yml.
 import { defineConfig } from 'astro/config';
 
 // GitHub project pages serve from /awesome-bitcoin-events. Override the base path

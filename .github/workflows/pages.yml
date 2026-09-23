@@ -1,5 +1,11 @@
 name: Deploy Signal Atlas to GitHub Pages
 
+# Builds the Astro site and publishes it to https://itstomekk.github.io/awesome-bitcoin-events/
+#   - pull_request: build + list check only (catches broken event files), no deploy
+#   - push to main / manual run: build and deploy
+# AUDIT NOTES: the Python test suite is not run here, and there is no scheduled run, so
+# the site's "upcoming" view only refreshes when something is pushed to main.
+
 on:
   push:
     branches: [main]
@@ -28,6 +34,8 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
+      # Fails if README.md / EVENTS.md were not regenerated after an event file changed,
+      # or if someone edited the generated README table by hand.
       - name: Check generated event lists
         run: npm run check:event-lists
       - name: Build Astro site

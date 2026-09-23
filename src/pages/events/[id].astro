@@ -4,6 +4,8 @@ import { getCollection, render } from 'astro:content';
 import { adaptEventEntry, adaptEventEntries } from '../../lib/content-events.js';
 import { formatDateRange, locationLabel, statusLabel, verificationLabel, verificationTone } from '../../lib/events.js';
 
+// One static page per event file at /events/<maintainer id>/. It shows dates, links,
+// verification state and every source observation behind the listing.
 export async function getStaticPaths() {
   const entries = await getCollection('events');
   const events = adaptEventEntries(entries);

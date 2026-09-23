@@ -6,17 +6,23 @@ import { adaptEventEntries, serializeJsonForHtmlScript } from '../lib/content-ev
 import { upcoming, groupByMonth, monthNames, yearOf } from '../lib/events.js';
 import sourceDataset from '../../data/sources.json';
 
+// Home page. Everything below runs once at build time: load every event file, normalise
+// it, split into upcoming/all, and build filter options + map points. The browser then
+// only shows or hides cards that are already in the HTML (see the <script> at the end).
 const contentEntries = await getCollection('events');
 const events = adaptEventEntries(contentEntries);
 const upcomingEvents = upcoming(events);
 const upcomingGroups = groupByMonth(upcomingEvents);
 const allGroups = groupByMonth(events);
 const years = [...new Set(events.map(yearOf))].sort((a, b) => b - a);
+// AUDIT NOTE: `region` mixes continents (Americas, Europe) with states and abbreviations
+// (Tennessee, NY, LU, DC), so the region dropdown shows a mixed list.
 const regions = [...new Set(events.map((event) => event.location.region).filter(Boolean))].sort();
 const types = [...new Set(events.map((event) => event.classification.event_type).filter(Boolean))].sort();
 const countries = new Set(events.map((event) => event.location.country).filter(Boolean));
 const nextEvents = [...upcomingEvents].sort((a, b) => a.dates.start.localeCompare(b.dates.start)).slice(0, 3);
 const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+// Only events with coordinates go on the Leaflet map (most are city centre points, not venues).
 const mapEvents = events.filter((event) => event.location.latitude !== null && event.location.longitude !== null).map((event) => ({
   id: event.id,
   title: event.title,

@@ -1,6 +1,8 @@
 ---
 import { formatDateRange, locationLabel, statusLabel, verificationLabel, verificationTone } from '../lib/events.js';
 
+// One card in the home-page calendar. The data-* attributes on <article> are what the
+// client-side search and filters read, so renaming them breaks filtering.
 const { event } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 const status = statusLabel(event);

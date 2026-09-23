@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """Import a reviewed source scan as provenance-preserving candidate event records."""
 
+# Research pipeline: turns a reviewed scan in sources/raw/ into candidate records in
+# data/events.json. Written before the Markdown migration; it does not write event .md files.
+
 from __future__ import annotations
 
 import argparse

@@ -1,6 +1,15 @@
 import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
+// Astro content collection: the schema every file in src/content/events/ must match.
+// `npm run build` fails if any event file breaks it, which makes this the effective
+// data validator for the repo.
+//
+// Two accepted shapes (see the z.union at the bottom):
+//   - contributorEventSchema: title, start, end?, location, url (required), format?
+//   - migratedEventSchema:    the same fields (url may be null) + a full `maintainer` block
+// Extra fields are allowed on contributor files (`.passthrough()`).
+
 const ISO_DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 const SAFE_RICH_EVENT_ID_RE = /^evt-[a-z0-9-]+$/;
 

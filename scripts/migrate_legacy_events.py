@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """Migrate the untouched legacy event calendar into the interface-neutral event dataset."""
 
+# Pipeline step 1 (historical, one-off): legacy root events.json -> data/events.json.
+# Kept for reproducibility; not part of the normal build.
+
 from __future__ import annotations
 
 import argparse

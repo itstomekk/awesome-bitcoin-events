@@ -9,6 +9,8 @@ from tempfile import TemporaryDirectory
 
 
 ROOT = Path(__file__).resolve().parents[1]
+# AUDIT NOTE: ".cmd" binaries exist only on Windows; on Linux/macOS these build tests fail
+# with FileNotFoundError (8 of 45 tests). CI does not run pytest, so this went unnoticed.
 ASTRO = ROOT / "node_modules" / ".bin" / "astro.cmd"
 NODE = "node"
 
