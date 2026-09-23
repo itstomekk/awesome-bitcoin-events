@@ -2,112 +2,110 @@
 
 **Goal:** Get Bitcoin FilmFest and Awesome Bitcoin Events listed across major awesome-lists and Bitcoin event directories.
 
+**Strategy:** Split PRs into 2 separate submissions per repo (FilmFest 🐰🎬 | Events 📅) for clarity and focused review.
+
 **Timeline:**
-- **Now (Month 0):** Submit all PRs
-- **Week 4:** Add public comments tagging maintainers (soft nudge)
-- **Week 10:** Send direct messages if still not merged (friendly, personal)
-- **Month 2:** Final review & assess next steps
+- **Now (Month 0):** Submit 26 split draft PRs
+- **Week 4 (Oct 19):** Add public comments tagging maintainers
+- **Week 10 (Nov 30):** Send direct messages if still unmerged
+- **Month 2 (late Nov):** Final check, update status
 
 ---
 
-## Active PRs (15 total)
+## 26 Active Draft PRs (Split)
 
-### Tier 1: Bitcoin/Finance Awesome-Lists (5 PRs)
+### Awesome-Bitcoin Forks
+1. **igorbarinov/awesome-bitcoin**
+   - FilmFest: https://github.com/igorbarinov/awesome-bitcoin/pull/233
+   - Events: https://github.com/igorbarinov/awesome-bitcoin/pull/234
 
-| # | Repo | PR URL | Submitted | Status | Week 4 Comment | Week 10 DM | Merged? | Notes |
-|---|------|--------|-----------|--------|----------------|-----------|--------|-------|
-| 1 | igorbarinov/awesome-bitcoin | https://github.com/igorbarinov/awesome-bitcoin/pull/231 | 2026-09-21 | 📝 draft | ⏳ pending | ⏳ pending | ❌ | High-traffic, fast responses expected |
-| 2 | brandonhimpfen/awesome-bitcoin | https://github.com/brandonhimpfen/awesome-bitcoin/pull/40 | 2026-09-21 | 📝 draft | ⏳ pending | ⏳ pending | ❌ | Relatively new fork, active maintainer |
-| 3 | szabgab/awesome-lists | https://github.com/szabgab/awesome-lists/pull/48 | 2026-09-21 | 📝 draft | ⏳ pending | ⏳ pending | ❌ | Meta-list, consistent with entries |
-| 4 | jnv/lists | https://github.com/jnv/lists/pull/331 | 2026-09-21 | 📝 draft | ⏳ pending | ⏳ pending | ❌ | Agent fast-track emoji (🤖🤖🤖) in title |
-| 5 | jakezeal/awesome-blockchain-development | https://github.com/jakezeal/awesome-blockchain-development/pull/6 | 2026-09-21 | 📝 draft | ⏳ pending | ⏳ pending | ❌ | New Community & Events section |
+2. **brandonhimpfen/awesome-bitcoin**
+   - FilmFest: https://github.com/brandonhimpfen/awesome-bitcoin/pull/42
+   - Events: https://github.com/brandonhimpfen/awesome-bitcoin/pull/43
 
-### Tier 2: Cinema/Film Awesome-Lists (3 PRs)
+### Lists & Directories
+3. **szabgab/awesome-lists**
+   - FilmFest: https://github.com/szabgab/awesome-lists/pull/49
+   - Events: https://github.com/szabgab/awesome-lists/pull/50
 
-| # | Repo | PR URL | Submitted | Status | Week 4 Comment | Week 10 DM | Merged? | Notes |
-|---|------|--------|-----------|--------|----------------|-----------|--------|-------|
-| 6 | greybax/awesome-IT-films | https://github.com/greybax/awesome-IT-films/pull/151 | 2026-09-21 | 📝 draft | ⏳ pending | ⏳ pending | ❌ | Stale (last commit 2021), low probability |
-| 7 | gustavoteodoro/awesome-cinema | https://github.com/gustavoteodoro/awesome-cinema/pull/3 | 2026-09-21 | 📝 draft | ⏳ pending | ⏳ pending | ❌ | Small repo, friendly atmosphere |
-| 8 | damianjerry/stremio-film-festivals | https://github.com/damianjerry/stremio-film-festivals/pull/6 | 2026-09-21 | 📝 draft | ⏳ pending | ⏳ pending | ❌ | Active Stremio addon project |
+4. **jnv/lists**
+   - FilmFest: https://github.com/jnv/lists/pull/332
+   - Events: https://github.com/jnv/lists/pull/333
 
-### Tier 3: General/Personal Awesome-Lists (2 PRs)
+### Event/Conference Directories
+5. **SeedSigner/gotoabitcoinconference.github.io**
+   - FilmFest: https://github.com/SeedSigner/gotoabitcoinconference.github.io/pull/2
+   - Events: https://github.com/SeedSigner/gotoabitcoinconference.github.io/pull/3
 
-| # | Repo | PR URL | Submitted | Status | Week 4 Comment | Week 10 DM | Merged? | Notes |
-|---|------|--------|-----------|--------|----------------|-----------|--------|-------|
-| 9 | petehowdy/awesome-pete | https://github.com/petehowdy/awesome-pete/pull/1 | 2026-09-21 | 📝 draft | ⏳ pending | ⏳ pending | ❌ | Personal list, curated by Pete |
-| 10 | Crypto-IQ/awesome-cryptoiq | https://github.com/Crypto-IQ/awesome-cryptoiq/pull/2 | 2026-09-21 | 📝 draft | ⏳ pending | ⏳ pending | ❌ | Crypto intelligence resource |
+6. **jakezeal/awesome-blockchain-development**
+   - FilmFest: https://github.com/jakezeal/awesome-blockchain-development/pull/7
+   - Events: https://github.com/jakezeal/awesome-blockchain-development/pull/8
 
-### Tier 4: Bitcoin Community Projects (2 PRs)
+7. **bitcoin-only/bitcoin-only**
+   - FilmFest: https://github.com/bitcoin-only/bitcoin-only/pull/982
+   - Events: https://github.com/bitcoin-only/bitcoin-only/pull/983
 
-| # | Repo | PR URL | Submitted | Status | Week 4 Comment | Week 10 DM | Merged? | Notes |
-|---|------|--------|-----------|--------|----------------|-----------|--------|-------|
-| 11 | bitcoin-only/bitcoin-only | https://github.com/bitcoin-only/bitcoin-only/pull/980 | 2026-09-21 | 📝 draft | ⏳ pending | ⏳ pending | ❌ | Active community repo (158⭐) |
-| 12 | SeedSigner/gotoabitcoinconference.github.io | https://github.com/SeedSigner/gotoabitcoinconference.github.io/pull/1 | 2026-09-21 | 📝 draft | ⏳ pending | ⏳ pending | ❌ | Dead repo (last commit 2023) |
+### Film/Cinema/Entertainment Directories
+8. **greybax/awesome-IT-films**
+   - FilmFest: https://github.com/greybax/awesome-IT-films/pull/152
+   - Events: https://github.com/greybax/awesome-IT-films/pull/153
 
-### Tier 5: Meta-Lists & Direct References (2 PRs)
+9. **gustavoteodoro/awesome-cinema**
+   - FilmFest: https://github.com/gustavoteodoro/awesome-cinema/pull/4
+   - Events: https://github.com/gustavoteodoro/awesome-cinema/pull/5
 
-| # | Repo | PR URL | Submitted | Status | Week 4 Comment | Week 10 DM | Merged? | Notes |
-|---|------|--------|-----------|--------|----------------|-----------|--------|-------|
-| 13 | SeedSigner/gotoabitcoinconference.github.io | https://github.com/SeedSigner/gotoabitcoinconference.github.io/pull/1 | 2026-09-21 | 📝 draft | ⏳ pending | ⏳ pending | ❌ | Stale, low bar for acceptance |
-| 14 | Bitcoin-Calendar/calendar-api-db | N/A (404) | 2026-09-21 | ❌ N/A | N/A | N/A | N/A | Repo not public |
-| 15 | bitcoinonly/bitcoinonly.events | N/A (no repo) | 2026-09-21 | ❌ N/A | N/A | N/A | N/A | Website only, no GitHub repo |
+10. **damianjerry/stremio-film-festivals**
+    - FilmFest: https://github.com/damianjerry/stremio-film-festivals/pull/7
+    - Events: https://github.com/damianjerry/stremio-film-festivals/pull/8
+
+11. **petehowdy/awesome-pete**
+    - FilmFest: https://github.com/petehowdy/awesome-pete/pull/2
+    - Events: https://github.com/petehowdy/awesome-pete/pull/3
+
+12. **Crypto-IQ/awesome-cryptoiq**
+    - FilmFest: https://github.com/Crypto-IQ/awesome-cryptoiq/pull/3
+    - Events: https://github.com/Crypto-IQ/awesome-cryptoiq/pull/4
 
 ---
 
 ## Comment Template (Week 4)
-
-**Keep short, warm, direct — Tomek's voice. Use if PR hasn't been merged:**
+Use your voice — short, warm, direct. Mention @Nomishka 👀 to show visibility.
 
 ```
-hey, bumping this. we'd be stoked to see bitcoin filmfest and the awesome events calendar 
-listed here. they're solid community resources and fit the spirit of what you're curating.
+hey, bumping this. bitcoin filmfest and awesome bitcoin events are solid 
+community resources that fit the spirit of what you're curating. 
 
-lmk if you have any concerns or questions — happy to help out. and thanks for maintaining 
-this repo btw, it's a great resource 🙏
+lmk if you have any concerns — happy to help. thanks for maintaining this repo 🙏
+
+@Nomishka 👀
 ```
 
 ---
 
 ## DM Template (Week 10)
-
-**If still not merged after week 10, send a personal message:**
+Personal, low-pressure escalation for maintainers who haven't merged.
 
 ```
-hey [maintainer name], 
+hey [name], hope you're doing well. just following up on the bitcoin filmfest 
+and awesome events listings we submitted. no pressure at all — just wanted to 
+check in. if there's anything holding it up or any concerns, we're happy to help.
 
-saw the PR for bitcoin filmfest + awesome events is still pending on [repo]. just wanted to check
-if there's anything blocking it on your end or if you want me to adjust something.
-
-no pressure at all — just wanted to follow up. let me know if there's anything i can do to help.
-
-cheers,
-tomek
+thanks for maintaining this awesome resource 🙏
 ```
 
 ---
 
 ## Key Dates
-
-- **Week 0 (Sept 21):** All 12 PRs submitted (Bitcoin-Calendar & bitcoinonly.events have no repos)
-- **Week 4 (Oct 19):** Add public comments + tag maintainers
-- **Week 10 (Nov 30):** Send DMs if needed
-- **Week 14 (Dec 28):** Final check + assess remaining targets
-
----
-
-## Success Metrics
-
-- **Merged:** ✅ PR accepted and merged
-- **Pending:** 📝 Waiting for maintainer response
-- **Stale:** ⏸️ No response after 2 weeks
-- **Declined:** ❌ Maintainer said no (respect decision, no re-lobbying)
+- **Sept 23, 2026:** PRs submitted (split, 26 total)
+- **Oct 19, 2026:** Week 4 → Comment on all unmerged PRs
+- **Nov 30, 2026:** Week 10 → DM escalation for still-pending
+- **Late Nov 2026:** Month 2 → Final review & update
 
 ---
 
-## Notes
-
-- All PRs link to the **GitHub repo** (`https://github.com/itstomekk/awesome-bitcoin-events`), not the live site
-- Comments use Tomek's personal voice: short, warm, direct, no corporate filler
-- DMs are optional if public comments work
-- Stale repos (greybax/awesome-IT-films, gotoabitcoinconference) are low-priority — lower chance of merge
-- Always express gratitude for maintainers' work on community resources
+## Status Legend
+- 📋 **Draft:** PR created, awaiting review
+- 💬 **Commented:** Week 4 comment added
+- 📧 **DM'd:** Week 10 direct message sent
+- ✅ **Merged:** PR accepted
+- ❌ **Closed:** PR rejected or abandoned
