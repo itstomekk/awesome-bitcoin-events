@@ -12,6 +12,11 @@ const days = Math.round((day(event.end) - day(event.start)) / 86400000) + 1;
 const fullDates = event.start === event.end ? long(event.start) : `${long(event.start)} – ${long(event.end)}`;
 const correctionUrl = `${repo}/issues/new?template=event-correction.yml&title=${encodeURIComponent(`[Correction] ${event.title}`)}`;
 const detailsId = `details-${event.id}`;
+const imageSrc = details?.image && /^https?:\/\//i.test(details.image)
+  ? details.image
+  : details?.image
+    ? `${import.meta.env.BASE_URL.replace(/\/?$/, '/')}${details.image.replace(/^\/+/, '')}`
+    : null;
 ---
 <li
   class:list={['row', { 'is-past': past }]}
@@ -55,6 +60,6 @@ const detailsId = `details-${event.id}`;
         <a class="action subtle" href={correctionUrl} target="_blank" rel="noreferrer">Report a correction</a>
       </p>
     </div>
-    {details?.image && <img class="details-image" src={details.image} alt="" loading="lazy" referrerpolicy="no-referrer" />}
+    {imageSrc && <img class="details-image" src={imageSrc} alt="" loading="lazy" referrerpolicy="no-referrer" />}
   </div>
 </li>
