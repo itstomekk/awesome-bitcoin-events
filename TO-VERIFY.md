@@ -18,6 +18,7 @@ To promote one, find its official page, add it to [README.md](README.md) as a ta
 | 2026-11-20 – 2026-11-21 | BitBlockMine 2026 | Fort Worth, USA | Conference | [source](https://bitcoinonly.events/bitblockmine-2026-fort-worth/) |
 | 2026-11-27 – 2026-11-28 | Bitcoin Japan 2026 | Tokyo, Japan | Conference | [source](https://bitcoinonly.events/bitcoin-japan-2026/) |
 | 2026-11-28 – 2026-11-29 | Bitcoin Thailand 2026 | Bangkok, Thailand | Conference | [source](https://btceventsmap.com/) |
+| 2026-12-07 – 2026-12-08 | Bitcoin MENA 2026 | Abu Dhabi, United Arab Emirates | Conference | [source](https://mena.b.tc/) |
 | 2027-01-16 | Bitcoin Day Naples 2027 | Naples, USA | Conference | [source](https://bitcoinonly.events/bitcoin-day-naples-2027/) |
 | 2027-05-28 | Bitcoin Treasuries Conference 2027 | Bristol, UK | Conference | [source](https://btceventsmap.com/) |
 | 2027-09-01 – 2027-09-03 | Origin Seoul 2027 | Seoul, South Korea | Conference | [source](https://bitcoinonly.events/origin-seoul-2027/) |

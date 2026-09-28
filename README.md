@@ -10,6 +10,7 @@ Dates and places change. Check the official page before you book travel. Being l
 
 - [2026](#2026)
 - [2027](#2027)
+- [Meetups](#meetups)
 - [Past events](#past-events)
 - [Not yet verified](#not-yet-verified)
 
@@ -38,7 +39,7 @@ Dates and places change. Check the official page before you book travel. Being l
 | Oct 24 | [Bitkiwi XVII](https://kiwibitcoinguide.org/home/bitkiwi-meetups/bitkiwi-xvii-october-2026-wellington/) | Wellington, New Zealand | Meetup |
 | Oct 25–27 | [Mita Tech Talks 2026](https://2026.mitatechtalks.com/) | Punta Mita, Mexico | Conference |
 | Oct 28–29 | [Custody & Treasury Summit 2026](https://www.meetup.com/bitcoinpark/events/314966347/) | Nashville, USA | Conference |
-| Oct 29 – Nov 1 | [LABITCONF 2026](https://www.labitconf.com/) | Buenos Aires, Argentina | Conference |
+| Oct 30–31 | [LABITCONF 2026](https://www.labitconf.com/) | Buenos Aires, Argentina | Conference |
 | Oct 31 – Nov 1 | [BTC Balkans 2026](https://btcbalkans.com/en) | Sofia, Bulgaria | Conference |
 
 ### November
@@ -58,7 +59,6 @@ Dates and places change. Check the official page before you book travel. Being l
 | Date | Event | Location | Type |
 | --- | --- | --- | --- |
 | Dec 2–5 | [Africa Bitcoin Conference 2026](https://www.afrobitcoin.org/) | Blantyre, Malawi | Conference |
-| Dec 7–8 | [Bitcoin MENA 2026](https://mena.b.tc/) | Abu Dhabi, United Arab Emirates | Conference |
 
 ## 2027
 
@@ -114,6 +114,10 @@ Dates and places change. Check the official page before you book travel. Being l
 | Date | Event | Location | Type |
 | --- | --- | --- | --- |
 | Aug 14 | [Bitcoin Beyond 66 2027](https://bitcoinbeyond66.com/) | Bodø, Norway | Conference |
+
+## Meetups
+
+Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more) are listed by region in **[MEETUPS.md](MEETUPS.md)**.
 
 ## Past events
 

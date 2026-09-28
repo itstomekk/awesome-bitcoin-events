@@ -21,6 +21,11 @@ README.md is the only source of truth. Never edit the website or generated files
 4. Run `npm run check && npm test`. Errors name the file and line.
 5. When promoting from TO-VERIFY.md, delete its row in the same commit.
 
+## Meetups and details
+
+- Recurring meetups go in `MEETUPS.md` (one table per region, `| City, Country | [Name](link) | About |`). Sources used so far: BitDevs city list, BTC Map community directory (`api.btcmap.org/v2/areas`, tags `contact:meetup`); bitcoinonly.events meetup pages have no outbound links.
+- `npm run enrich` fills `data/details.json` for upcoming events; in this sandbox run it with `NODE_USE_ENV_PROXY=1 NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt`. Always review: some og:descriptions are ticket text or last year's blurb. Fix them by hand with `"source": "manual"`.
+
 ## Housekeeping
 
 - `npm run archive` moves ended events from README.md to PAST.md. Review the diff and commit it.

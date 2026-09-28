@@ -7,7 +7,8 @@ const {
   title = 'Awesome Bitcoin Events',
   description = 'A curated list of Bitcoin conferences, meetups, festivals and retreats around the world.',
   map = false,
-  issueLine = '',
+  upcomingCount = null,
+  countryCount = null,
 } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 const repo = 'https://github.com/itstomekk/awesome-bitcoin-events';
@@ -32,11 +33,16 @@ const built = new Date().toISOString().slice(0, 10);
   <body>
     <a class="skip-link" href="#main-content">Skip to the list</a>
     <header class="nav-mast page">
-      <p class="mast-line">{issueLine || 'The community list of Bitcoin events'}</p>
+      <p class="mast-line">
+        {upcomingCount !== null
+          ? <><span data-upcoming-count>{upcomingCount}</span> upcoming · {countryCount} countries</>
+          : 'The community list of Bitcoin events'}
+      </p>
       <p class="mast-name"><a href={base}>Awesome Bitcoin Events<span class="mark">.</span></a></p>
       <nav class="mast-nav" aria-label="Primary">
         <ul>
-          <li><a href={`${base}#list`}>The list</a></li>
+          <li><a href={`${base}#list`}>Events</a></li>
+          <li><a href={`${base}#meetups`}>Meetups</a></li>
           <li><a href={`${base}#atlas`}>Map</a></li>
           <li><a href={`${base}#about`}>How it works</a></li>
           <li><a href={`${repo}/blob/main/CONTRIBUTING.md`}>Add an event ↗</a></li>

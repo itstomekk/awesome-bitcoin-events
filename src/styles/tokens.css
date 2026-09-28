@@ -19,6 +19,8 @@
   --color-accent-ink: oklch(50%   0.150 48);
   --color-focus:      oklch(50%   0.150 48);
   --color-past:       oklch(62%   0.012 245);
+  /* Meetup pins: cool slate-blue, clearly distinct from the orange event pins. */
+  --color-meetup:     oklch(55%   0.110 250);
 
   --font-display: "Newsreader", ui-serif, Georgia, serif;
   --font-body:    "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
@@ -54,7 +56,7 @@
   --measure: 64ch;
   --page-max: 72rem;
   --page-gutter: clamp(1rem, 4vw, 2.5rem);
-  --map-height: clamp(18rem, 42vw, 28rem);
+  --map-height: clamp(20rem, 48vw, 34rem);
 
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-in: cubic-bezier(0.7, 0, 0.84, 0);

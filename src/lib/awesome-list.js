@@ -187,3 +187,40 @@ export function renderSections(events, { newestYearFirst = false } = {}) {
   }
   return lines;
 }
+
+// --- Meetups (MEETUPS.md) ----------------------------------------------------------
+// Recurring meetups, one table per region:
+//
+//   ## Europe
+//
+//   | Where | Meetup | When |
+//   | --- | --- | --- |
+//   | Prague, Czech Republic | [Bitcoin Prague](https://…) | Monthly |
+//
+export const MEETUP_REGIONS = [
+  'Europe', 'North America', 'Latin America', 'Asia', 'Oceania', 'Africa', 'Middle East', 'Online',
+];
+const MEETUP_ROW_RE = /^\|\s*(?<where>[^|]+?)\s*\|\s*\[(?<name>[^\]]+)\]\((?<url>[^\s)]+)\)\s*\|\s*(?<schedule>[^|]+?)\s*\|$/;
+
+export function parseMeetups(text, file = 'MEETUPS.md') {
+  const meetups = [];
+  const errors = [];
+  let region = null;
+  text.split(/\r?\n/).forEach((raw, index) => {
+    const line = raw.trimEnd();
+    const fail = (message) => errors.push(`${file}:${index + 1}: ${message}`);
+    const heading = line.match(/^## (.+?)\s*$/);
+    if (heading) {
+      region = MEETUP_REGIONS.includes(heading[1]) ? heading[1] : null;
+      if (!region && !['Contents', 'Contributing'].includes(heading[1])) fail(`"${heading[1]}" is not a region (use one of: ${MEETUP_REGIONS.join(', ')})`);
+      return;
+    }
+    if (region === null || !line.startsWith('|') || /^\|\s*Where\s*\|/i.test(line) || DIVIDER_ROW_RE.test(line)) return;
+    const row = line.match(MEETUP_ROW_RE);
+    if (!row) return fail('row should be: | City, Country | [Meetup name](https://…) | Monthly |');
+    const { where, name, url, schedule } = row.groups;
+    if (!httpUrl(url)) return fail(`"${url}" is not an http(s) link`);
+    meetups.push({ id: `meetup-${slugify(name)}-${slugify(where)}`, name, url, where, schedule, region, ...splitLocation(where), file, line: index + 1 });
+  });
+  return { meetups, errors };
+}

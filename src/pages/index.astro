@@ -8,12 +8,17 @@
 // visitor's current date, so the site stays correct between deploys.
 import BaseLayout from '../layouts/BaseLayout.astro';
 import EventRow from '../components/EventRow.astro';
-import { loadEvents, loadPlaces } from '../lib/load-list.js';
+import { loadEvents, loadPlaces, loadMeetups, loadDetails } from '../lib/load-list.js';
 import { MONTHS } from '../lib/awesome-list.js';
 
 const { events, errors } = loadEvents();
 if (errors.length) throw new Error(`The event list has errors (run \`npm run check\`):\n${errors.join('\n')}`);
 const places = loadPlaces();
+const details = loadDetails();
+const meetupResult = loadMeetups();
+if (meetupResult.errors.length) throw new Error(`MEETUPS.md has errors (run \`npm run check\`):\n${meetupResult.errors.join('\n')}`);
+const meetups = meetupResult.meetups;
+const meetupRegions = [...new Set(meetups.map((m) => m.region))];
 
 const buildDay = new Date().toISOString().slice(0, 10);
 const sorted = [...events].sort((a, b) => a.start.localeCompare(b.start) || a.title.localeCompare(b.title));
@@ -21,9 +26,6 @@ const upcoming = sorted.filter((event) => event.end >= buildDay);
 const years = [...new Set(sorted.map((event) => event.start.slice(0, 4)))].sort().reverse();
 const countries = [...new Set(sorted.map((event) => event.country).filter(Boolean))].sort();
 const types = [...new Set(sorted.map((event) => event.type))].sort();
-const upcomingYears = [...new Set(upcoming.map((event) => event.start.slice(0, 4)))];
-const issueLine = `${upcomingYears.length ? upcomingYears.join('–') : buildDay.slice(0, 4)} · ${upcoming.length} upcoming · ${countries.length} countries`;
-
 // Group rows by month ("2026-10" -> events).
 const groups = new Map();
 for (const event of sorted) {
@@ -33,6 +35,8 @@ for (const event of sorted) {
 }
 
 const mapEvents = sorted.filter((event) => places[event.where]).map((event) => ({
+  id: event.id,
+  kind: 'event',
   title: event.title,
   url: event.url,
   dates: `${event.dateLabel}, ${event.start.slice(0, 4)}`,
@@ -41,18 +45,29 @@ const mapEvents = sorted.filter((event) => places[event.where]).map((event) => (
   latitude: places[event.where][0],
   longitude: places[event.where][1],
 }));
+const meetupPins = meetups.filter((m) => places[m.where]).map((m) => ({
+  id: m.id,
+  kind: 'meetup',
+  title: m.name,
+  url: m.url,
+  dates: m.schedule,
+  where: m.where,
+  latitude: places[m.where][0],
+  longitude: places[m.where][1],
+}));
 // Escapes "<" so the JSON can't close the <script> tag it is embedded in.
-const mapJson = JSON.stringify(mapEvents).replace(/</g, '\\u003C');
+const mapJson = JSON.stringify([...mapEvents, ...meetupPins]).replace(/</g, '\\u003C');
 const repo = 'https://github.com/itstomekk/awesome-bitcoin-events';
 ---
-<BaseLayout title="Awesome Bitcoin Events" description="A curated list of Bitcoin conferences, meetups, festivals and retreats around the world, each linked to its organizer." map issueLine={issueLine}>
-  <main id="main-content" class="page">
-    <section class="opening" aria-label="Introduction">
-      <p>Bitcoin conferences, meetups, festivals and retreats around the world. Each one links to its organizer, and the whole list is a single Markdown file anyone can edit.</p>
-      <p class="tally"><strong data-upcoming-count>{upcoming.length}</strong> upcoming · {sorted.length} listed since 2025 · {countries.length} countries</p>
-    </section>
+<BaseLayout title="Awesome Bitcoin Events" description="A curated list of Bitcoin conferences, meetups, festivals and retreats around the world, each linked to its organizer." map upcomingCount={upcoming.length} countryCount={countries.length}>
+  <main id="main-content">
+    <div class="page">
+    <div class="view-tabs" role="tablist" aria-label="What to show">
+      <button type="button" role="tab" id="tab-events" aria-controls="list" aria-selected="true" data-view="events">Events</button>
+      <button type="button" role="tab" id="tab-meetups" aria-controls="meetups" aria-selected="false" data-view="meetups">Meetups <span class="tab-count">{meetups.length}</span></button>
+    </div>
 
-    <section id="list" aria-label="Events">
+    <section id="list" role="tabpanel" aria-labelledby="tab-events">
       <div class="filters" role="search">
         <label class="sr-only" for="event-search">Search events</label>
         <input id="event-search" type="search" placeholder="Search event, city or country" autocomplete="off" />
@@ -75,32 +90,54 @@ const repo = 'https://github.com/itstomekk/awesome-bitcoin-events';
         {[...groups].map(([key, group]) => (
           <section class="month" data-month-group aria-label={`${MONTHS[Number(key.slice(5)) - 1]} ${key.slice(0, 4)}`}>
             <div class="month-label"><h2>{MONTHS[Number(key.slice(5)) - 1]}</h2><span>{key.slice(0, 4)}</span></div>
-            <ol class="rows">{group.map((event) => <EventRow event={event} buildDay={buildDay} />)}</ol>
+            <ol class="rows">{group.map((event) => <EventRow event={event} buildDay={buildDay} details={details[event.url] || null} hasPin={Boolean(places[event.where])} />)}</ol>
           </section>
         ))}
         <p class="empty" id="empty-state" hidden>No events match. <button type="button" id="clear-filters">Clear the filters</button></p>
       </div>
     </section>
 
-    <section class="atlas" id="atlas" aria-labelledby="atlas-title">
-      <div>
-        <h2 id="atlas-title">Map</h2>
-        <p class="atlas-note">{mapEvents.length} of {sorted.length} events, pinned to their city.</p>
-        <div class="atlas-key"><span><i></i>Upcoming</span><span><i class="past"></i>Past</span></div>
+    <section id="meetups" role="tabpanel" aria-labelledby="tab-meetups" hidden>
+      <p class="meetups-intro">Recurring Bitcoin meetups: turn up, meet people, learn. Times change, so check the link before you go.</p>
+      <div class="index">
+        {meetupRegions.map((region) => (
+          <section class="month">
+            <div class="month-label"><h2>{region}</h2><span>{meetups.filter((m) => m.region === region).length} meetups</span></div>
+            <ol class="rows">
+              {meetups.filter((m) => m.region === region).map((m) => (
+                <li class="row meetup-row" id={m.id}>
+                  <span class="row-date">{m.schedule}</span>
+                  <span class="row-title"><a href={m.url} target="_blank" rel="noreferrer">{m.name}</a><span class="arrow" aria-hidden="true"> ↗</span></span>
+                  <span class="row-where">{m.where}</span>
+                </li>
+              ))}
+            </ol>
+          </section>
+        ))}
       </div>
-      <div id="event-map" role="img" aria-label="World map of Bitcoin events"></div>
+    </section>
+    </div>
+
+    <section class="atlas" id="atlas" aria-label="Map">
+      <div class="atlas-bar page">
+        <h2>Map</h2>
+        <p class="atlas-key"><span><i></i>Upcoming event</span><span><i class="past"></i>Past event</span><span><i class="meetup"></i>Meetup</span><span class="muted">Pins mark the city, not the venue.</span></p>
+      </div>
+      <div id="event-map" role="img" aria-label="World map of Bitcoin events and meetups"></div>
       <script type="application/json" id="map-data" set:html={mapJson}></script>
     </section>
 
+    <div class="page">
     <section class="about" id="about" aria-labelledby="about-title">
       <h2 id="about-title">How it works</h2>
       <div class="about-body">
-        <p>The list lives in <a href={`${repo}/blob/main/README.md`}>README.md</a> on GitHub, as a classic awesome list with one table row per event. This page is generated from that file, so there's no database and no second copy to keep in sync.</p>
+        <p>The list lives in <a href={`${repo}/blob/main/README.md`}>README.md</a> on GitHub, as a classic awesome list with one table row per event. This page is generated from that file, so there's no database and no second copy to keep in sync. Recurring meetups live in <a href={`${repo}/blob/main/MEETUPS.md`}>MEETUPS.md</a>, and the short descriptions come from the organizers' own pages.</p>
         <p>To add an event, add one row to the right month's table and open a pull request:</p>
         <p><code>| Oct 12–15 | [Name](https://official-page) | City, Country | Conference |</code></p>
         <p>An automatic check validates the format, the dates and duplicates. Events we've seen mentioned but can't yet confirm on an official page wait in <a href={`${repo}/blob/main/TO-VERIFY.md`}>TO-VERIFY.md</a>. The <a href={`${repo}/blob/main/CONTRIBUTING.md`}>contributing guide</a> has the details.</p>
       </div>
     </section>
+    </div>
   </main>
 
   <script is:inline>
@@ -163,32 +200,133 @@ const repo = 'https://github.com/itstomekk/awesome-bitcoin-events';
     });
     applyFilters();
 
+    // --- Fold-out details ---------------------------------------------------------
+    const pad = (n) => String(n).padStart(2, '0');
+    const compact = (iso) => iso.replaceAll('-', '');
+    const nextDay = (iso) => { const d = new Date(`${iso}T12:00:00Z`); d.setUTCDate(d.getUTCDate() + 1); return d.toISOString().slice(0, 10); };
+    const daysUntil = (iso) => Math.round((new Date(`${iso}T12:00:00Z`) - new Date(`${today}T12:00:00Z`)) / 86400000);
+
+    function fillDetails(row) {
+      const { start, end, title, where, url } = row.dataset;
+      const countdown = row.querySelector('[data-countdown]');
+      if (countdown && !countdown.textContent) {
+        const until = daysUntil(start);
+        countdown.textContent = end < today ? '· ended' : until > 1 ? `· in ${until} days` : until === 1 ? '· tomorrow' : '· happening now';
+      }
+      const gcal = row.querySelector('[data-action="gcal"]');
+      if (gcal) {
+        const params = new URLSearchParams({ action: 'TEMPLATE', text: title, dates: `${compact(start)}/${compact(nextDay(end))}`, location: where, details: url });
+        gcal.href = `https://calendar.google.com/calendar/render?${params}`;
+      }
+    }
+    function setOpen(row, open) {
+      const button = row.querySelector('.row-toggle');
+      const panel = row.querySelector('.row-details');
+      if (!button || !panel) return;
+      if (open) fillDetails(row);
+      button.setAttribute('aria-expanded', String(open));
+      button.querySelector('span').textContent = open ? '−' : '+';
+      panel.hidden = !open;
+      row.classList.toggle('is-open', open);
+    }
+    function downloadIcs(row) {
+      const { start, end, title, where, url } = row.dataset;
+      const esc = (v) => String(v).replace(/[\\,;]/g, (c) => `\\${c}`);
+      const stamp = new Date().toISOString().replace(/[-:]/g, '').slice(0, 15) + 'Z';
+      const ics = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Awesome Bitcoin Events//EN', 'BEGIN:VEVENT',
+        `UID:${row.id}@awesome-bitcoin-events`, `DTSTAMP:${stamp}`, `DTSTART;VALUE=DATE:${compact(start)}`,
+        `DTEND;VALUE=DATE:${compact(nextDay(end))}`, `SUMMARY:${esc(title)}`, `LOCATION:${esc(where)}`, `URL:${url}`,
+        `DESCRIPTION:${esc(url)}`, 'END:VEVENT', 'END:VCALENDAR'].join('\r\n');
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(new Blob([ics], { type: 'text/calendar' }));
+      link.download = `${row.id}.ics`;
+      link.click();
+      setTimeout(() => URL.revokeObjectURL(link.href), 1000);
+    }
+
+    document.querySelector('#list').addEventListener('click', (e) => {
+      const row = e.target.closest('[data-event-card]');
+      if (!row) return;
+      const action = e.target.closest('[data-action]')?.dataset.action;
+      if (action === 'ics') return downloadIcs(row);
+      if (action === 'map') return showOnMap(row.id);
+      if (action === 'copy') {
+        const link = `${location.origin}${location.pathname}#${row.id}`;
+        history.replaceState(null, '', `#${row.id}`);
+        navigator.clipboard?.writeText(link);
+        e.target.textContent = 'Link copied';
+        setTimeout(() => { e.target.textContent = 'Copy link'; }, 1500);
+        return;
+      }
+      // Clicking anywhere on the row (except its links and buttons) toggles the details.
+      if (e.target.closest('a, .row-details') && !e.target.closest('.row-toggle')) return;
+      setOpen(row, row.querySelector('.row-toggle').getAttribute('aria-expanded') !== 'true');
+    });
+
+    // --- Events / Meetups switch ------------------------------------------------------
+    const viewTabs = [...document.querySelectorAll('[data-view]')];
+    function setView(view) {
+      viewTabs.forEach((tab) => tab.setAttribute('aria-selected', String(tab.dataset.view === view)));
+      document.querySelector('#list').hidden = view !== 'events';
+      document.querySelector('#meetups').hidden = view !== 'meetups';
+    }
+    viewTabs.forEach((tab) => tab.addEventListener('click', () => {
+      setView(tab.dataset.view);
+      history.replaceState(null, '', tab.dataset.view === 'meetups' ? '#meetups' : location.pathname);
+    }));
+
+    // --- Map --------------------------------------------------------------------------
+    const markers = new Map();
+    let eventMap = null;
+    function showOnMap(id) {
+      const marker = markers.get(id);
+      if (!eventMap || !marker) return;
+      document.querySelector('#atlas').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+      eventMap.setView(marker.getLatLng(), 6);
+      marker.openPopup();
+    }
     const mapNode = document.querySelector('#event-map');
     const mapData = JSON.parse(document.querySelector('#map-data').textContent);
     if (mapNode && window.L && mapData.length) {
       const css = getComputedStyle(document.documentElement);
-      const accent = css.getPropertyValue('--color-accent').trim();
-      const pastColour = css.getPropertyValue('--color-past').trim();
-      const ink = css.getPropertyValue('--color-ink').trim();
-      const eventMap = window.L.map(mapNode, { scrollWheelZoom: false, worldCopyJump: true });
+      const colour = (name) => css.getPropertyValue(name).trim();
+      eventMap = window.L.map(mapNode, { scrollWheelZoom: false, worldCopyJump: true });
       window.L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 18,
         attribution: '&copy; OpenStreetMap contributors'
       }).addTo(eventMap);
       const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
+      const rank = (p) => (p.kind === 'meetup' ? 1 : p.end < today ? 0 : 2); // draw upcoming events on top
       const bounds = [];
-      // Past pins first so upcoming ones draw on top.
-      [...mapData].sort((a, b) => (a.end < today) === (b.end < today) ? 0 : a.end < today ? -1 : 1).forEach((event) => {
-        const past = event.end < today;
-        window.L.circleMarker([event.latitude, event.longitude], {
-          radius: past ? 4 : 6, color: past ? pastColour : ink, weight: past ? 0 : 1.5,
-          fillColor: past ? pastColour : accent, fillOpacity: past ? 0.7 : 1
-        }).addTo(eventMap).bindPopup(`<strong>${escapeHtml(event.title)}</strong><br>${escapeHtml(event.dates)}<br>${escapeHtml(event.where)}<br><a href="${escapeHtml(event.url)}" target="_blank" rel="noreferrer">Official page ↗</a>`);
-        bounds.push([event.latitude, event.longitude]);
+      [...mapData].sort((a, b) => rank(a) - rank(b)).forEach((p) => {
+        const past = p.kind === 'event' && p.end < today;
+        const fill = p.kind === 'meetup' ? colour('--color-meetup') : past ? colour('--color-past') : colour('--color-accent');
+        const marker = window.L.circleMarker([p.latitude, p.longitude], {
+          radius: p.kind === 'meetup' ? 4 : past ? 4 : 6, color: past || p.kind === 'meetup' ? fill : colour('--color-ink'),
+          weight: past || p.kind === 'meetup' ? 0 : 1.5, fillColor: fill, fillOpacity: past ? 0.7 : 0.95
+        }).addTo(eventMap).bindPopup(`<strong>${escapeHtml(p.title)}</strong><br>${escapeHtml(p.dates)}<br>${escapeHtml(p.where)}<br><a href="${escapeHtml(p.url)}" target="_blank" rel="noreferrer">Official page ↗</a>`);
+        markers.set(p.id, marker);
+        bounds.push([p.latitude, p.longitude]);
       });
-      eventMap.fitBounds(bounds, { padding: [24, 24], maxZoom: 4 });
+      eventMap.fitBounds(bounds, { padding: [24, 24], maxZoom: 3 });
     } else if (mapNode) {
       mapNode.innerHTML = '<p class="map-empty">The map could not load. The list above has every event.</p>';
     }
+
+    // --- Deep links: #meetups opens the meetups view; #<event-id> opens that event -----
+    function openFromHash() {
+      const id = decodeURIComponent(location.hash.slice(1));
+      if (!id) return;
+      if (id === 'meetups') return setView('meetups');
+      if (id === 'list') return setView('events');
+      const row = document.getElementById(id);
+      if (!row || !row.matches('[data-event-card]')) return;
+      setView('events');
+      if (row.hidden) setStatus('all');
+      setOpen(row, true);
+      row.scrollIntoView({ block: 'center' });
+    }
+    openFromHash();
+    window.addEventListener('hashchange', openFromHash);
   </script>
 </BaseLayout>
