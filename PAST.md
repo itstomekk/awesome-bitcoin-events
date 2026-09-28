@@ -259,4 +259,5 @@ Archive of events from [README.md](README.md) that have already taken place. The
 | Date | Event | Location | Type |
 | --- | --- | --- | --- |
 | Dec 3–5 | [Africa Bitcoin Conference](https://www.afrobitcoin.org/) | Mauritius | Conference |
+| Dec 8–9 | [Bitcoin MENA 2025](https://mena.b.tc/) | Abu Dhabi, United Arab Emirates | Conference |
 | Dec 15–17 | [bitcoin++ stands sovereign](https://btcplusplus.dev/conf/taipei) | Taipei, Taiwan | Conference |

@@ -1,6 +1,6 @@
 # Handoff
 
-Updated: 2026-09-28. Kept in `.claude/` so the repo root stays clean for contributors.
+Updated: 2026-09-28. Agents: read this file first. The workflow skill is in `.claude/skills/add-bitcoin-event/SKILL.md`.
 
 ## Current truth
 
@@ -9,10 +9,10 @@ Updated: 2026-09-28. Kept in `.claude/` so the repo root stays clean for contrib
 - **Commands:** `npm run check` (validate), `npm test`, `npm run archive` (move ended events to PAST.md), `npm run dev`.
 - **CI** (`.github/workflows/pages.yml`): check, test, awesome-lint (only content rules fail; the GitHub-settings rule warns), build, and deploy on main. `links.yml` runs a weekly link check that opens an issue.
 - The README carries `<!--lint disable table-pipe-alignment-->` so contributors don't have to pad table pipes. awesome-lint otherwise passes; its one expected warning is about "bitcoin++".
-- Counts on 2026-09-28: 39 upcoming, 150 past, 16 to verify (189 listed), 146 meetups.
+- Counts on 2026-09-28: 39 upcoming, 151 past, 16 to verify (190 listed), 146 meetups.
 - **Meetups** live in `MEETUPS.md` (one table per region: `| City, Country | [Name](link) | About |`), shown on the site under a Meetups tab with blue map pins. The first batch is 45 BitDevs chapters (bitdevs.org/cities) plus 101 Meetup.com groups from BTC Map's community directory (`api.btcmap.org/v2/areas`), cleaned by hand (wrong or shared links dropped, place names fixed).
 - **Event details:** clicking a row expands it to show the full dates with weekday, a countdown, add-to-calendar (.ics / Google), show on map, copy link (`#event-id` deep links) and report-a-correction. Optional descriptions and images come from `data/details.json`, keyed by official URL and filled by `npm run enrich` (the organizer's og:description / og:image). Always review the result; hand-fixed entries use `"source": "manual"`.
-- 2026-09-28 corrections: LABITCONF 2026 is Oct 30–31 (Oct 29 is only a B2B/opening day). Bitcoin MENA 2026 moved to TO-VERIFY because mena.b.tc now only sells 2027 tickets.
+- 2026-09-28 corrections: LABITCONF 2026 is Oct 30–31 (Oct 29 is only a B2B/opening day). Bitcoin MENA has no 2026 edition: the 2025 edition (Dec 8–9, 2025) was added to PAST.md, and Bitcoin MENA 2027 (confirmed by the owner, "late 2027" at ADNEC Abu Dhabi, exact dates not announced) waits in TO-VERIFY until dates are published.
 
 ## History worth knowing
 
@@ -32,7 +32,7 @@ Follow `.claude/skills/add-bitcoin-event/SKILL.md`. Before pushing, run `npm run
 
 ## Next actions
 
-1. Verify the 15 TO-VERIFY.md leads against organizer pages; promote the confirmed ones.
+1. Verify the 16 TO-VERIFY.md leads (check mena.b.tc for Bitcoin MENA 2027 dates) against organizer pages; promote the confirmed ones.
 2. Add more verified upcoming events (target 50+) using the sources in CONTRIBUTING.md.
 3. Run `npm run archive` monthly.
 4. The owner still needs to add the `awesome` GitHub topic. After that, submit to sindresorhus/awesome.

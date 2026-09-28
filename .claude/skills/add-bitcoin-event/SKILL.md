@@ -5,7 +5,7 @@ description: Add, verify, correct or archive events in the awesome-bitcoin-event
 
 # Add or maintain events
 
-Project state and history: `.claude/HANDOFF.md`.
+Project state and history: `HANDOFF.md` in the repo root.
 
 README.md is the only source of truth. Never edit the website or generated files; there are none.
 
