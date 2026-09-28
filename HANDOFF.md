@@ -1,48 +1,23 @@
 # Handoff
 
-Updated: 2026-09-23
+Updated: 2026-09-28
 
-## Latest session — 2026-09-23 audit (comment-only PR)
+## Current truth (v3.0.0)
 
-- Owner's goal: a classic awesome list where **README.md is the canonical source of truth**. Today the opposite is true: README's table is generated from `src/content/events/**/*.md` and CI rejects hand edits.
-- Branch `claude/bitcoin-events-audit-6piqnm`: audit report `docs/audits/AUDIT-2026-09-23.md` + `AUDIT NOTE` comments in code. No data or behaviour changed (a functional-fix commit `cf7c85b` was made then reverted at the owner's request; it is recoverable).
-- Next: owner picks migration option A (pure awesome list) or B (README + derived site), see report §4–5. Don't invest more in the Astro/content-collection pipeline until then.
-- Note: the section below is from 2026-09-18 and says `data/events.json` is canonical; since commit 095a89c the canonical data is the Markdown event files.
+- **README.md is the source of truth.** It holds upcoming events, one line each, grouped by `## Year` / `### Month`, in awesome-list style. `PAST.md` is the archive (same format). `TO-VERIFY.md` holds leads without an official page, which are neither in the list nor on the site.
+- **Website** (https://itstomekk.github.io/awesome-bitcoin-events/) is Astro, built from README.md + PAST.md via `src/lib/awesome-list.js` (the single parser). Map pins come from `data/places.json` ("City, Country" → [lat, lon]). Upcoming/past is computed in the browser.
+- **CI** (`.github/workflows/pages.yml`): `npm run check`, `npm test`, `awesome-lint`, build; deploys on push to main. `links.yml` runs a weekly link check that opens an issue.
+- Counts on 2026-09-28: 21 upcoming (README), 69 past (PAST.md), 19 to verify.
+- The old system (109 YAML event files, generator, Python pipeline, detail pages) was removed in the v3 rebuild. It lives in git history at commit `2eeb4b9`.
+- `sources/` is research material only (source registry, raw scans).
 
-## Current truth (as of 2026-09-18, partly superseded)
+## How to work here
 
-GitHub files are the source of truth. There is no cPanel database or scheduler. The repository now has an Astro static frontend that builds from the versioned `data/` layer; the previous root-level frontend remains untouched as a legacy reference.
+Follow `.claude/skills/add-bitcoin-event/SKILL.md`. Checks: `npm run check && npm test && npm run build`.
 
-The data layer remains:
+## Next actions
 
-- `data/events.json` contains 109 normalized records: 61 lossless legacy migrations and 48 reviewed source-scan records.
-- `data/sources.json` contains 133 unique sources built from 142 public source records, including all 102 exported Notion source records and observed URLs from automatic verification scans.
-- `data/geo-cache.json` preserves 86 public geocoding lookups; 108 of 109 event records now have a venue or city-centre map point.
-- `data/schema/event-dataset.schema.json` defines the UI-neutral contract.
-- `sources/raw/` preserves immutable research snapshots, including the LABITCONF 2026 review and the next-five-events research.
-
-The Astro build adds:
-
-- `src/pages/index.astro` — source-aware calendar with an OpenStreetMap/Leaflet event map, upcoming-first filtering, search, year/region/type filters, and official-page-only mode.
-- `src/pages/events/[id].astro` — one static evidence/detail page for every event record.
-- `src/components/EventCard.astro`, `src/layouts/BaseLayout.astro`, and `src/lib/events.js` — shared rendering and display helpers.
-- `src/styles/global.css` — responsive Awesome Bitcoin Events visual system.
-- `.github/ISSUE_TEMPLATE/` — public event submission and correction forms.
-- `CONTRIBUTING.md` and `docs/REPOSITORY-GUIDE.md` — contributor and maintainer workflow documentation.
-- `.github/workflows/pages.yml` — Node 20 build and GitHub Pages deployment via Actions.
-
-## Verification performed
-
-- `npm run build` passes with no Astro warnings and generates 111 pages: home, 109 event routes, and 404.
-- The home build includes a Leaflet map with 108 serialized event points; one online event has no geographic point.
-- A build with `PUBLIC_BASE_PATH=/awesome-bitcoin-events` passes; generated links use `/awesome-bitcoin-events/events/.../` and no concatenated base-path links remain.
-- `python -m pytest -q` passes: 15 tests.
-- `npm audit --omit=dev --audit-level=high` reports 0 production vulnerabilities.
-- `git diff --check` passes.
-- The next five uploaded events were researched; four are promoted/confirmed as official-page records, while Copa Bitcoin remains `needs_review` because public date evidence conflicts.
-- GitHub Pages deployment is live at `https://itstomekk.github.io/awesome-bitcoin-events/`; the Actions run and Pages API both report success. Live home and LABITCONF detail content were fetched over HTTPS.
-- The automated browser sandbox timed out on the deployed page, so visual interaction QA remains unverified in this session.
-
-## Next action
-
-Review the remaining unresolved candidates against organizer-owned pages, then continue adding 20–30 manually verified current/future events from representative source types. The map now covers 108/109 records; only the online record has no geographic point. Future data and UI changes should be pushed through the same workflow and checked at the public HTTPS URL.
+1. Verify the 19 TO-VERIFY.md leads against organizer pages; promote the confirmed ones.
+2. Add more verified upcoming events (target 50+).
+3. Run `npm run archive` monthly.
+4. Later: submit to sindresorhus/awesome.

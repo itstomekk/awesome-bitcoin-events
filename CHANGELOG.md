@@ -1,5 +1,17 @@
 # Changelog
 
+## 3.0.0 — 2026-09-28
+
+README.md is now the source of truth.
+
+- Rebuilt as an awesome list: `README.md` lists upcoming events (one line each, grouped by year and month), `PAST.md` is the archive and `TO-VERIFY.md` holds leads without an official page.
+- The website is generated from README.md + PAST.md by a single parser (`src/lib/awesome-list.js`). The build fails on a malformed line. Upcoming/past is computed in the visitor's browser.
+- New commands: `npm run check` (validate the list), `npm test`, `npm run archive` (move ended events to PAST.md).
+- CI runs the validator, the tests, `awesome-lint` and the build on every PR. A weekly link check opens an issue for broken links.
+- Removed the per-event YAML files, the README generator, the JSON dataset, the Python migration/import scripts, the per-event detail pages and the v1 legacy frontend. Git history keeps all of them (last version: commit 2eeb4b9).
+- Added the CC0-1.0 licence. Leaflet now loads only on the home page, with integrity hashes.
+- Data: 11 missing countries filled in; Bitcoin FilmFest 2027 confirmed on its official site; country names normalised (USA, UK).
+
 ## 2026-09-18
 
 - Added the verified LABITCONF 2026 record and source evidence.

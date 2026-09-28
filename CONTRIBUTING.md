@@ -1,66 +1,59 @@
-# Contributing to Awesome Bitcoin Events
+# Contributing
 
-Awesome Bitcoin Events is a community-maintained directory. Anyone can suggest an event or report a correction; maintainers review the public evidence before updating the canonical records.
+Thanks for helping keep Awesome Bitcoin Events useful. The whole list lives in **[README.md](README.md)**. That file is the source of truth, and the [website](https://itstomekk.github.io/awesome-bitcoin-events/) is built from it automatically.
 
-## No-code path: use a GitHub issue form
+## Add an event (2 minutes, no tools needed)
 
-The **[event submission form](https://github.com/itstomekk/awesome-bitcoin-events/issues/new?template=event-submission.yml)** is the easiest route. Submit one event per issue and include the organizer's official page, dates, location, event type, and a short note about what the source confirms. Use the **[correction form](https://github.com/itstomekk/awesome-bitcoin-events/issues/new?template=event-correction.yml)** for changes to an existing listing.
+1. Open [README.md](README.md) on GitHub and click the ✏️ pencil icon.
+2. Find the right `## Year` and `### Month` heading (or add them), and add one line in date order:
 
-Maintainers check the source, dates, duplicate status, and whether the event is relevant to Bitcoin before adding or changing a record. A submission is not published automatically.
+   ```markdown
+   - [Event name](https://official-event-page) - Oct 12–15 · City, Country · Conference.
+   ```
 
-## Canonical Markdown records
+3. Click **Propose changes**, then **Create pull request**. An automatic check tells you, with the line number, if something is off.
 
-Dated event records live in `src/content/events/<year>/<slug>.md`. Each file is Markdown with YAML frontmatter. The public contributor fields are deliberately small:
+Don't want to edit Markdown? Use the **[event submission form](https://github.com/itstomekk/awesome-bitcoin-events/issues/new?template=event-submission.yml)** and a maintainer will add the line.
 
-```yaml
-title: Community Meetup
-start: '2026-09-22'
-end: '2026-09-22'
-location: Online
-url: https://example.org/meetup
-format: meetup
+## The line format
+
+```
+- [Name](https://official-url) - Dates · Location · Type. Optional short note.
 ```
 
-Use inclusive `YYYY-MM-DD` dates. `end` may equal `start`, but must not be earlier. New contributor records require an official HTTP(S) `url`; do not submit a null, unknown, directory, or search-result URL. Only migrated records with a maintainer-owned `maintainer` block may retain a null or unknown URL while their historical evidence is reviewed.
+| Part | Rules | Examples |
+| --- | --- | --- |
+| Name | The event's public name | `TABConf 8`, `Bitcoin Amsterdam 2026` |
+| Link | The **organizer's own page** (https). Aggregators, ticket resellers and social posts don't count. | `https://tabconf.com/` |
+| Dates | 3-letter month plus day, using the year from the heading. Use an en dash `–` or a hyphen `-` for ranges. | `Oct 24` · `Oct 12–15` · `Oct 29 – Nov 1` |
+| Location | `City, Country`, just the country, or `Online` | `Atlanta, USA` · `Hong Kong` · `Online` |
+| Type | One of: Conference, Meetup, Festival, Retreat, Unconference, Hackathon, Workshop | `Conference` |
+| Note | Optional, one short sentence after the type | `Developer-focused.` |
 
-Use exactly one of these location forms:
+The parts are separated by ` · ` (a middle dot with spaces), and the type ends with a period.
 
-- `Online`
-- `City, Country`
-- `Venue, City, Country`
+Put the event under the month it **starts** in. Within a month, keep lines sorted by start date. An event running from Dec 30 to Jan 2 goes under `### December` as `Dec 30 – Jan 2`.
 
-Do not add a region, state, or extra comma-separated component to a contributor location. If the venue is unknown, use `City, Country`. Use the organizer's own spelling for names and locations.
+## What belongs in the list
 
-The `maintainer` frontmatter block is reserved for maintainers. It contains source evidence, verification state, coordinates, legacy data, and other enriched metadata; contributors should not add or edit those fields in a normal event submission.
+- Bitcoin-focused events, or events with a substantial Bitcoin track.
+- A working official page that confirms the dates and place.
+- **No official page yet?** Add the event to [TO-VERIFY.md](TO-VERIFY.md) instead. Include where you saw it.
 
-## Generated lists
+## Corrections
 
-`README.md` contains a generated upcoming table between stable markers. `EVENTS.md` is the generated full archive with upcoming events first and past events grouped by year. Do not edit those generated sections by hand. Run:
+Edit the line directly in a pull request, or use the **[correction form](https://github.com/itstomekk/awesome-bitcoin-events/issues/new?template=event-correction.yml)**. If an event is cancelled, remove its line and mention the cancellation in the PR description.
+
+## For maintainers
 
 ```bash
 npm install
-npm run generate:event-lists
-npm run check:event-lists
+npm run check     # validate README.md + PAST.md (format, dates, order, duplicates)
+npm test          # parser tests
+npm run archive   # move events that have ended from README.md to PAST.md
+npm run dev       # preview the website locally
 ```
 
-The check command fails when either generated file is stale. GitHub Actions runs the same freshness check before building the site.
-
-## Pull requests
-
-For a technical contribution, add or edit one event Markdown file, run the generator and checks, then open a focused pull request. Do not edit `dist/`, commit private notes or credentials, or change maintainer evidence unless a maintainer asks you to do so.
-
-Before opening a pull request:
-
-```bash
-npm run generate:event-lists
-npm run check:event-lists
-npm run build
-python -m pytest -q
-git diff --check
-```
-
-The generated Astro website is a secondary map/search/filter view. The Markdown event files and their review history are the source contributors should update.
-
-## Evidence and corrections
-
-Use public organizer pages whenever possible. Directory pages and community calendars can be useful supporting evidence but should not be presented as an official event URL. If a date, venue, ticket page, or event status changes, open a correction issue rather than silently replacing evidence.
+- **Map pins:** the site looks up each `City, Country` in `data/places.json` (`"City, Country": [lat, lon]`). `npm run check` warns when a place is missing. Add it with coordinates from [OpenStreetMap](https://www.openstreetmap.org/); until then the event simply has no pin.
+- **Archiving:** run `npm run archive` every month or so and commit the result. The website already shows ended events as past, so this only keeps the README short.
+- **Code:** `src/lib/awesome-list.js` is the single parser for the format. The site (`src/pages/index.astro`), `scripts/check-list.mjs` and `scripts/archive-past.mjs` all use it.

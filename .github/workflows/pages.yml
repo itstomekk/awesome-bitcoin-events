@@ -1,10 +1,11 @@
-name: Deploy Signal Atlas to GitHub Pages
+name: Check list and deploy website
 
-# Builds the Astro site and publishes it to https://itstomekk.github.io/awesome-bitcoin-events/
-#   - pull_request: build + list check only (catches broken event files), no deploy
-#   - push to main / manual run: build and deploy
-# AUDIT NOTES: the Python test suite is not run here, and there is no scheduled run, so
-# the site's "upcoming" view only refreshes when something is pushed to main.
+# README.md (upcoming) and PAST.md (archive) are the source of truth. This workflow:
+#   - on every pull request: validates the list, runs tests, lints the README as an
+#     awesome list and builds the site (a PR with a malformed event line goes red);
+#   - on push to main (or a manual run): does the same, then publishes the site to
+#     https://itstomekk.github.io/awesome-bitcoin-events/
+# Upcoming vs past is decided in the visitor's browser, so no scheduled rebuild is needed.
 
 on:
   push:
@@ -16,13 +17,11 @@ permissions:
   contents: read
 
 concurrency:
-  group: pages
+  group: pages-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
   build:
-    permissions:
-      contents: read
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -34,11 +33,21 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
-      # Fails if README.md / EVENTS.md were not regenerated after an event file changed,
-      # or if someone edited the generated README table by hand.
-      - name: Check generated event lists
-        run: npm run check:event-lists
-      - name: Build Astro site
+      # Errors point at README.md:<line> with a plain-English fix.
+      - name: Validate event list
+        run: npm run check
+      - name: Run tests
+        run: npm test
+      # Official awesome-list linter (badge, contents, list item style). Only README
+      # content rules fail the build. Its awesome-github rule checks repo settings (the
+      # "awesome" topic, licence detection), so it is reported as a warning instead.
+      - name: Lint README as an awesome list
+        run: |
+          npx --yes awesome-lint README.md > lint.txt 2>&1 || true
+          cat lint.txt
+          if grep -E '✖ +[0-9]+:[0-9]+ .*remark-lint:' lint.txt | grep -v 'remark-lint:awesome-github' | grep -q .; then exit 1; fi
+          if grep -q 'remark-lint:awesome-github' lint.txt; then echo "::warning::awesome-lint GitHub-settings check failed (add the 'awesome' topic in repo settings). Not blocking."; fi
+      - name: Build website
         run: npm run build
         env:
           PUBLIC_BASE_PATH: /awesome-bitcoin-events
