@@ -10,6 +10,7 @@ Updated: 2026-09-28
 - Counts on 2026-09-28: 21 upcoming (README), 69 past (PAST.md), 19 to verify.
 - The old system (109 YAML event files, generator, Python pipeline, detail pages) was removed in the v3 rebuild. It lives in git history at commit `2eeb4b9`.
 - `sources/` is research material only (source registry, raw scans).
+- **Website design (2026-09-28):** "almanac" style, a light, dense month-by-month index (Hallmark: Index-First · Almanac theme with Bitcoin-orange accent · N6 masthead · Ft4 colophon). All design values are tokens in `src/styles/tokens.css`; page styles in `src/styles/global.css`; rows in `src/components/EventRow.astro`. Design history: `.hallmark/log.json`.
 
 ## How to work here
 

@@ -2,6 +2,9 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 ---
-<BaseLayout title="Page not found — Awesome Bitcoin Events" description="This page could not be found.">
-  <main id="main-content" class="not-found"><div class="shell"><p class="kicker"><span class="kicker-line"></span> Signal lost</p><h1>This page isn’t on the map.</h1><p>Event detail pages were retired: every event now links straight to its organizer.</p><a class="button button-primary" href={base}>Return to calendar <span aria-hidden="true">→</span></a></div></main>
+<BaseLayout title="Page not found · Awesome Bitcoin Events" description="This page could not be found.">
+  <main id="main-content" class="page not-found">
+    <h2>Nothing listed here.</h2>
+    <p>Individual event pages were retired: every event now links straight to its organizer. <a href={base}>Back to the list</a>.</p>
+  </main>
 </BaseLayout>
