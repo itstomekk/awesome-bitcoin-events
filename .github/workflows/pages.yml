@@ -38,9 +38,15 @@ jobs:
         run: npm run check
       - name: Run tests
         run: npm test
-      # Official awesome-list linter (badge, contents, list item style).
+      # Official awesome-list linter (badge, contents, list item style). It runs on a
+      # copy outside the git checkout, which skips its GitHub-settings rules (repo topics,
+      # licence detection). Those are repo settings, not list content, and would
+      # otherwise fail every PR until they're set in GitHub.
       - name: Lint README as an awesome list
-        run: npx --yes awesome-lint README.md
+        run: |
+          mkdir -p "$RUNNER_TEMP/lint"
+          cp README.md CONTRIBUTING.md LICENSE "$RUNNER_TEMP/lint/"
+          cd "$RUNNER_TEMP/lint" && npx --yes awesome-lint README.md
       - name: Build website
         run: npm run build
         env:
