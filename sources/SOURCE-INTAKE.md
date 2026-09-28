@@ -1,5 +1,7 @@
 # Source intake
 
+> **Since v3.0.0** the output of any research is either one line in README.md (when an official page confirms the event) or one row in TO-VERIFY.md (a lead without an official page). The files in this folder are research notes and snapshots only. The website does not read them.
+
 ## Input
 
 Tomek can send a URL in chat, with or without context. Preferred compact form:

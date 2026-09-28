@@ -1,0 +1,318 @@
+{
+  "Abu Dhabi, United Arab Emirates": [
+    24.45384,
+    54.3774
+  ],
+  "Amsterdam, Netherlands": [
+    52.37308,
+    4.89245
+  ],
+  "Arnhem, Netherlands": [
+    51.9854,
+    5.87925
+  ],
+  "Atlanta, USA": [
+    33.75447,
+    -84.38982
+  ],
+  "Austin, USA": [
+    30.27113,
+    -97.7437
+  ],
+  "Bali, Indonesia": [
+    -8.22713,
+    115.19192
+  ],
+  "Bangkok, Thailand": [
+    13.75249,
+    100.49351
+  ],
+  "Bedford, UK": [
+    52.13638,
+    -0.4675
+  ],
+  "Beechworth, Australia": [
+    -36.35949,
+    146.68701
+  ],
+  "Berlin, Germany": [
+    52.51739,
+    13.39513
+  ],
+  "Brescia, Italy": [
+    45.77958,
+    10.42587
+  ],
+  "Bretagne, France": [
+    48.26408,
+    -2.92024
+  ],
+  "Bristol, UK": [
+    51.44301,
+    -2.58166
+  ],
+  "Budapest, Hungary": [
+    47.49788,
+    19.04024
+  ],
+  "Buenos Aires, Argentina": [
+    -34.60956,
+    -58.38879
+  ],
+  "Busselton, Australia": [
+    -33.6445,
+    115.34888
+  ],
+  "Calgary, Canada": [
+    51.04561,
+    -114.05754
+  ],
+  "Cambridge, USA": [
+    42.36563,
+    -71.104
+  ],
+  "Cape Town, South Africa": [
+    -33.92883,
+    18.41722
+  ],
+  "Columbus, USA": [
+    39.97188,
+    -83.00115
+  ],
+  "Dallas, USA": [
+    32.77627,
+    -96.79686
+  ],
+  "Denver, USA": [
+    39.73924,
+    -104.98486
+  ],
+  "Dubai, United Arab Emirates": [
+    25.07428,
+    55.18856
+  ],
+  "Dublin, Ireland": [
+    53.34938,
+    -6.26056
+  ],
+  "El Zonte, El Salvador": [
+    13.49779,
+    -89.44074
+  ],
+  "Florianópolis, Brazil": [
+    -27.5973,
+    -48.54961
+  ],
+  "Fontainebleau, France": [
+    48.40494,
+    2.70159
+  ],
+  "Fort Worth, USA": [
+    32.75318,
+    -97.33275
+  ],
+  "Gauteng, South Africa": [
+    -25.93634,
+    28.08131
+  ],
+  "Hannover, Germany": [
+    52.37448,
+    9.73855
+  ],
+  "Helsinki, Finland": [
+    60.16662,
+    24.94354
+  ],
+  "Hong Kong": [
+    22.28183,
+    114.15828
+  ],
+  "Huanchaco, Peru": [
+    -8.08003,
+    -79.12048
+  ],
+  "Istanbul, Turkey": [
+    41.00638,
+    28.97587
+  ],
+  "Jaipur, India": [
+    26.91546,
+    75.81898
+  ],
+  "Kentfield, USA": [
+    37.94583,
+    -122.55984
+  ],
+  "Kreuzlingen, Switzerland": [
+    47.64644,
+    9.17256
+  ],
+  "Lansing, USA": [
+    42.73383,
+    -84.55463
+  ],
+  "Las Vegas, USA": [
+    36.16743,
+    -115.14841
+  ],
+  "London, UK": [
+    51.50745,
+    -0.12777
+  ],
+  "Lugano, Switzerland": [
+    46.0038,
+    8.95123
+  ],
+  "Madrid, Spain": [
+    40.41678,
+    -3.70351
+  ],
+  "Manchester, UK": [
+    53.47949,
+    -2.24511
+  ],
+  "Mauritius": [
+    -20.2535,
+    57.58957
+  ],
+  "Medellin, Colombia": [
+    6.26973,
+    -75.60256
+  ],
+  "Miami, USA": [
+    25.77416,
+    -80.1936
+  ],
+  "Naples, USA": [
+    26.1422,
+    -81.79429
+  ],
+  "Nashville, USA": [
+    36.16228,
+    -86.7743
+  ],
+  "New Hampshire, USA": [
+    43.48491,
+    -71.6554
+  ],
+  "New York City, USA": [
+    40.71273,
+    -74.00602
+  ],
+  "New York, USA": [
+    40.71273,
+    -74.00602
+  ],
+  "Oslo, Norway": [
+    59.91333,
+    10.73897
+  ],
+  "Palma, Spain": [
+    39.56958,
+    2.65007
+  ],
+  "Portland, USA": [
+    45.52025,
+    -122.67419
+  ],
+  "Poznan, Poland": [
+    52.40827,
+    16.93352
+  ],
+  "Prague, Czech Republic": [
+    50.08747,
+    14.42125
+  ],
+  "Praha, Czech Republic": [
+    50.08747,
+    14.42125
+  ],
+  "Punta Mita, Mexico": [
+    20.7814,
+    -105.52944
+  ],
+  "Queenstown, New Zealand": [
+    -45.03219,
+    168.661
+  ],
+  "Riga, Latvia": [
+    56.9494,
+    24.10518
+  ],
+  "Roatan, Honduras": [
+    16.34902,
+    -86.49775
+  ],
+  "San Salvador, El Salvador": [
+    13.69763,
+    -89.19116
+  ],
+  "Santa Monica, USA": [
+    34.01947,
+    -118.49123
+  ],
+  "Seoul, South Korea": [
+    37.56668,
+    126.97829
+  ],
+  "Sofia, Bulgaria": [
+    42.6977,
+    23.32174
+  ],
+  "Sydney, Australia": [
+    -33.86984,
+    151.20828
+  ],
+  "São Paulo, Brazil": [
+    -23.55065,
+    -46.63338
+  ],
+  "Taipei, Taiwan": [
+    25.03752,
+    121.56368
+  ],
+  "Tampa, USA": [
+    27.94499,
+    -82.45831
+  ],
+  "Teton Village, USA": [
+    43.58798,
+    -110.82799
+  ],
+  "Toronto, Canada": [
+    43.65348,
+    -79.38393
+  ],
+  "Tysons, USA": [
+    38.91913,
+    -77.22296
+  ],
+  "Uvita, Costa Rica": [
+    9.1731,
+    -83.7364
+  ],
+  "Vancouver, Canada": [
+    49.26087,
+    -123.11395
+  ],
+  "Viareggio, Italy": [
+    43.86724,
+    10.25061
+  ],
+  "Vilnius, Lithuania": [
+    54.68705,
+    25.28291
+  ],
+  "Warsaw, Poland": [
+    52.23337,
+    21.07115
+  ],
+  "Washington, USA": [
+    38.8951,
+    -77.03638
+  ],
+  "Wellington, New Zealand": [
+    -41.2888,
+    174.77721
+  ]
+}

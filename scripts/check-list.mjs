@@ -1,0 +1,31 @@
+#!/usr/bin/env node
+// Validates README.md and PAST.md: format of every event line, real dates, month
+// headings, allowed types, duplicates and date order. Run with `npm run check`.
+// CI runs this on every pull request; errors point at file:line.
+import { loadEvents, loadPlaces } from '../src/lib/load-list.js';
+
+const today = new Date().toISOString().slice(0, 10);
+const { events, errors } = loadEvents();
+const places = loadPlaces();
+
+// Warnings never fail CI: they are reminders for maintainers.
+const warnings = [];
+for (const event of events) {
+  if (event.file === 'README.md' && event.end < today) {
+    warnings.push(`${event.file}:${event.line}: "${event.title}" has ended; run \`npm run archive\` to move it to PAST.md`);
+  }
+  if (!event.online && !places[event.where]) {
+    warnings.push(`${event.file}:${event.line}: no map point for "${event.where}" (add it to data/places.json to show it on the map)`);
+  }
+  if (event.url.startsWith('http://')) {
+    warnings.push(`${event.file}:${event.line}: "${event.url}" uses http://; use https:// if the site supports it`);
+  }
+}
+
+warnings.forEach((warning) => console.warn(`warning  ${warning}`));
+if (errors.length) {
+  errors.forEach((error) => console.error(`error    ${error}`));
+  console.error(`\n${errors.length} error(s). See CONTRIBUTING.md for the list format.`);
+  process.exit(1);
+}
+console.log(`OK: ${events.length} events (${events.filter((e) => e.file === 'README.md').length} in README.md), ${warnings.length} warning(s).`);

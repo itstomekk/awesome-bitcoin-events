@@ -1,56 +1,23 @@
-# Bitcoin events data and site plan
+# Plan
 
 ## Goal
 
-Build a trustworthy, Bitcoin-focused events dataset and a polished public calendar that can grow from the same interface-neutral contract.
+A classic awesome list of Bitcoin events, where **README.md is the single source of truth** and every listed event links to its organizer. The website (search, filters, map) is generated from the README and never edited separately.
 
-A source is evidence, not truth. Every published event retains its source, raw snapshot, verification state, and review history.
+## Done (v3.0.0, 2026-09-28)
 
-## Current state
+- [x] README.md is canonical: upcoming events by year and month, in awesome-list style (badge, contents, one line per event).
+- [x] PAST.md archive in the same format; TO-VERIFY.md holds leads that have no official page yet.
+- [x] One parser (`src/lib/awesome-list.js`) shared by the website, the validator and the archive helper.
+- [x] CI on every PR: list validation with line-numbered errors, parser tests, `awesome-lint`, site build.
+- [x] Upcoming vs past decided in the browser, so the site never goes stale between deploys.
+- [x] Weekly link check that opens an issue for broken official links.
+- [x] CC0-1.0 licence.
 
-- The legacy website and root-level `events.json` remain preserved as a reference.
-- `data/events.json` is the canonical UI input: 109 normalized records, including legacy migrations and reviewed source candidates.
-- `data/sources.json` is the canonical source directory.
-- `data/geo-cache.json` stores map geocoding results and attribution for venue/city points.
-- An Astro static site now consumes the data at build time, renders a map, and deploys through GitHub Pages Actions; no external database is enabled.
+## Next
 
-## Phase 1 — source intake and data contract
-
-- [x] Create a source registry with source roles and monitoring policy.
-- [x] Review the first submitted source: Bitcoin Bundesverband.
-- [x] Define the canonical event schema and immutable raw-snapshot schema.
-- [x] Map Notion, repository, and reviewed scan sources into unique public source records.
-- [x] Losslessly migrate legacy event records into the interface-neutral dataset.
-- [x] Import reviewed collection scans with raw snapshots and source provenance.
-- [x] Automatically verify candidates against official URLs and preserve unresolved cases.
-- [ ] Add 20–30 manually verified events from 5–8 representative source types.
-- [x] Classify mapped sources as canonical, discovery, community, editorial, or unreviewed.
-
-## Phase 2 — tested ingestion
-
-- [x] Write tests before an importer is implemented.
-- [x] Save immutable raw snapshots before normalization.
-- [x] Emit normalized candidate records without modifying the legacy event list.
-- [ ] Add deterministic deduplication using official URL, event series, date range, and location.
-- [x] Validate source provenance, dates, past-event status, and duplicate merging.
-
-## Phase 3 — public site and data prototypes
-
-- [x] Build an Astro static calendar/list consumer for dates, place, type, and source confidence.
-- [x] Generate a dedicated static detail page for every event record.
-- [x] Add responsive search and year/region/type/status filters.
-- [x] Label discovery, legacy, review, and official records distinctly.
-- [ ] Review missing fields that block useful browsing and revise the schema before adding more interface surface.
-- [x] Map prototype with venue/city coordinates and an attribution-preserving public geocoding cache.
-
-## Phase 4 — monitoring and public contribution
-
-- [ ] Enable monitoring only for sources with proven value.
-- [x] Add an intake queue for user-submitted URLs and event reports.
-- [ ] Add a review workflow and change history.
-- [x] Keep the project GitHub-native: versioned JSON, raw snapshots, review history, and Pages deployment.
-- [x] Enable Pages in repository settings and verify the public HTTPS URL after the first push.
-
-## Operating rule
-
-When Tomek sends a source URL, assess it before automating it. The default output is a source review, not an unverified event import or a new cron job.
+- [ ] Verify the 19 events in TO-VERIFY.md and promote the ones with an official page.
+- [ ] Grow the upcoming list (target: 50+ verified upcoming events), using `sources/` as the research starting point.
+- [ ] Switch the 6 `http://` links to `https://` where the sites support it.
+- [ ] Optional: submit to [sindresorhus/awesome](https://github.com/sindresorhus/awesome). It requires the repo to be 30+ days old and to follow their PR checklist.
+- [ ] Optional: a recurring-meetups section (BitDevs, Bitcoin meetups by city), which would need an undated line format.
