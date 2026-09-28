@@ -19,7 +19,6 @@ const past = event.end < buildDay;
   <span class="row-title">
     <a href={event.url} target="_blank" rel="noreferrer">{event.title}</a><span class="arrow" aria-hidden="true"> ↗</span>
     <span class="row-flag" data-next-flag hidden>Next</span>
-    {event.note && <span class="row-note">{event.note}</span>}
   </span>
   <span class="row-where">{event.where}</span>
   <span class="row-type">{event.type}</span>

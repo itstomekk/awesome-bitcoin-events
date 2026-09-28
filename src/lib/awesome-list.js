@@ -5,15 +5,18 @@
 // validator and the `npm run archive` helper all use this one parser, so the list
 // format is defined in exactly one place.
 //
-// Format (see CONTRIBUTING.md):
+// Format (see CONTRIBUTING.md): a table per month, under a year heading.
 //
-//   ## 2026                       <- year heading (4 digits)
-//   ### October                   <- month heading (full English month name)
-//   - [TABConf 8](https://tabconf.com/) - Oct 12–15 · Atlanta, USA · Conference.
-//   - [Name](https://…) - Oct 29 – Nov 1 · Buenos Aires, Argentina · Conference. Optional note.
+//   ## 2026                                  <- year heading (4 digits)
+//   ### October                              <- month heading (full English month name)
 //
-// Only items under a year heading are read as events; everything else in the file
-// (intro, contents, contributing…) is ignored.
+//   | Date | Event | Location | Type |
+//   | --- | --- | --- | --- |
+//   | Oct 12–15 | [TABConf 8](https://tabconf.com/) | Atlanta, USA | Conference |
+//   | Oct 29 – Nov 1 | [LABITCONF 2026](https://www.labitconf.com/) | Buenos Aires, Argentina | Conference |
+//
+// Only table rows under a year heading are read as events; everything else in the
+// file (intro, contents, contributing…) is ignored.
 
 export const MONTHS = [
   'January', 'February', 'March', 'April', 'May', 'June',
@@ -29,10 +32,12 @@ export const EVENT_TYPES = [
 const YEAR_HEADING_RE = /^## (\d{4})\s*$/;
 const OTHER_H2_RE = /^## /;
 const MONTH_HEADING_RE = /^### (\S+)\s*$/;
-// - [Title](url) - rest
-const ITEM_RE = /^- \[(?<title>[^\]]+)\]\((?<url>[^\s)]+)\) - (?<rest>.+)$/;
-// Dates · Location · Type. Optional note
-const REST_RE = /^(?<dates>[^·]+?) · (?<where>[^·]+?) · (?<type>[A-Za-z-]+)\.(?: (?<note>.+))?$/;
+export const TABLE_HEADER = '| Date | Event | Location | Type |';
+export const TABLE_DIVIDER = '| --- | --- | --- | --- |';
+const HEADER_ROW_RE = /^\|\s*Date\s*\|/i;
+const DIVIDER_ROW_RE = /^\|[\s|:-]+\|$/;
+// | Dates | [Title](url) | Location | Type |
+const ROW_RE = /^\|\s*(?<dates>[^|]+?)\s*\|\s*\[(?<title>[^\]]+)\]\((?<url>[^\s)]+)\)\s*\|\s*(?<where>[^|]+?)\s*\|\s*(?<type>[^|]+?)\s*\|$/;
 // "Oct 12", "Oct 12–15", "Oct 29 – Nov 1" (en dash or hyphen)
 const DATES_RE = /^(?<m1>[A-Z][a-z]{2}) (?<d1>\d{1,2})(?:\s*[–-]\s*(?:(?<m2>[A-Z][a-z]{2}) )?(?<d2>\d{1,2}))?$/;
 
@@ -108,15 +113,13 @@ export function parseList(text, file = 'README.md') {
       if (month < 0) fail(`"${monthMatch[1]}" is not a month name (use e.g. "### October")`);
       return;
     }
-    if (!line.startsWith('- ')) return;
+    if (line.startsWith('- ')) return fail('events are table rows now: | Oct 12–15 | [Name](https://…) | City, Country | Type |');
+    if (!line.startsWith('|') || HEADER_ROW_RE.test(line) || DIVIDER_ROW_RE.test(line)) return;
 
-    const item = line.match(ITEM_RE);
-    if (!item) return fail('list item should start with "- [Event name](https://official-url) - "');
-    const { title, url, rest } = item.groups;
+    const row = line.match(ROW_RE);
+    if (!row) return fail('row should be: | Oct 12–15 | [Event name](https://official-url) | City, Country | Type |');
+    const { dates, title, url, where, type } = row.groups;
     if (!httpUrl(url)) return fail(`"${url}" is not an http(s) link`);
-    const parts = rest.match(REST_RE);
-    if (!parts) return fail('after the link, write "Oct 12–15 · City, Country · Type." (separated by " · ", ending with a period)');
-    const { dates, where, type, note } = parts.groups;
     if (month === null) return fail('event is not under a month heading (e.g. "### October")');
     const parsed = parseDates(dates, year);
     if (parsed.error) return fail(parsed.error);
@@ -133,7 +136,6 @@ export function parseList(text, file = 'README.md') {
       where: where.trim(),
       ...splitLocation(where.trim()),
       type,
-      note: note ? note.trim() : null,
       file,
       line: lineNo,
     });
@@ -159,4 +161,29 @@ export function checkEvents(events) {
     }
   }
   return errors;
+}
+
+// Renders events as year/month sections with one table per month. Used by
+// scripts/archive-past.mjs to rewrite the event part of README.md / PAST.md.
+export function renderSections(events, { newestYearFirst = false } = {}) {
+  const byYear = new Map();
+  for (const event of [...events].sort((a, b) => a.start.localeCompare(b.start) || a.end.localeCompare(b.end) || a.title.localeCompare(b.title))) {
+    const year = event.start.slice(0, 4);
+    const month = Number(event.start.slice(5, 7)) - 1;
+    if (!byYear.has(year)) byYear.set(year, new Map());
+    if (!byYear.get(year).has(month)) byYear.get(year).set(month, []);
+    byYear.get(year).get(month).push(event);
+  }
+  const years = [...byYear.keys()].sort();
+  if (newestYearFirst) years.reverse();
+  const lines = [];
+  for (const year of years) {
+    lines.push(`## ${year}`, '');
+    for (const [month, monthEvents] of byYear.get(year)) {
+      lines.push(`### ${MONTHS[month]}`, '', TABLE_HEADER, TABLE_DIVIDER);
+      for (const e of monthEvents) lines.push(`| ${e.dateLabel} | [${e.title}](${e.url}) | ${e.where} | ${e.type} |`);
+      lines.push('');
+    }
+  }
+  return lines;
 }

@@ -2,16 +2,14 @@
 
 These events were found on aggregator sites or calendars, but we haven't yet found an official organizer page for them. They are **not** in the main list and not on the website.
 
-To promote one, find its official page, add it to [README.md](README.md) in the list format, and delete its row here, all in the same pull request.
+To promote one, find its official page, add it to [README.md](README.md) as a table row, and delete its row here, all in the same pull request.
 
 | Dates | Event | Location | Type | Spotted on |
 | --- | --- | --- | --- | --- |
-| 2026-09-17 | Bitcoin Treasuries Unconference NYC 2026 | New York, USA | Unconference | [source](https://www.francismars.com/events/) |
 | 2026-09-22 – 2026-09-23 | Freedom Tech DC 2026 | Washington, USA | Conference | [source](https://bitcoinonly.events/) |
 | 2026-09-27 | Proof Conference 2026 | Vilnius, Lithuania | Conference | [source](https://bitcoinonly.events/) |
 | 2026-09-28 | Bitcoin Treasuries Conference 2026 | New York City, USA | Conference | [source](https://btceventsmap.com/) |
 | 2026-10-01 – 2026-10-03 | Canadian Bitcoin Conference 2026 | Toronto, Canada | Conference | [source](https://bitcoinonly.events/) |
-| 2026-10-10 – 2026-10-11 | Muslim Bitcoin Summit 2026 | London, UK | Conference | [source](https://btceventsmap.com/) |
 | 2026-10-15 – 2026-10-17 | Bitcoin Alpha 2026 | Santa Monica, USA | Conference | [source](https://bitcoinonly.events/) |
 | 2026-10-22 | The Future Of Capital Markets 2026 | Lugano, Switzerland | Conference | [source](https://bitcoinonly.events/) |
 | 2026-10-24 | Bitkiwi XVII | Wellington, New Zealand | Meetup | [source](https://bitcoinonly.events/) |
