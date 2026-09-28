@@ -133,10 +133,12 @@ Archive of events from [README.md](README.md) that have already taken place. The
 | Sep 18–20 | [Copa Bitcoin 2026](https://motivperu.ngo/en/copa-bitcoin/) | Huanchaco, Peru | Conference |
 | Sep 18–20 | [Land of 10,000 Nodes 2026](https://10knodes.com/) | Minneapolis, USA | Conference |
 | Sep 19 | [Noderunners Conference 2026](https://noderunners.network/en/conference) | Arnhem, Netherlands | Conference |
+| Sep 22–23 | [Freedom Tech DC 2026](https://www.btcpolicy.org/summit) | Washington, USA | Conference |
 | Sep 23 | [European Mining Summit 2026](https://miningsummit.eu/) | Helsinki, Finland | Conference |
 | Sep 23–24 | [Midwest Bitcoin Summit 2026](https://www.midwestbtc.com/) | Columbus, USA | Conference |
 | Sep 24 | [Socratic Seminar 162](https://bitdevs.org/2026-09-24-socratic-seminar-162) | New York City, USA | Meetup |
 | Sep 25–26 | [BTC HEL 2026](https://btchel.com/) | Helsinki, Finland | Conference |
+| Sep 27 | [PROOF Conference 2026](https://proofconference.com/en/) | Vilnius, Lithuania | Conference |
 
 ## 2025
 

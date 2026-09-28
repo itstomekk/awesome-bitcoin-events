@@ -19,6 +19,12 @@ Dates and places change. Check the official page before you book travel. Being l
 
 ## 2026
 
+### September
+
+| Date | Event | Location | Type |
+| --- | --- | --- | --- |
+| Sep 28 | [Bitcoin Treasuries Conference 2026](https://bitcointreasuries.net/conference) | New York City, USA | Conference |
+
 ### October
 
 | Date | Event | Location | Type |
@@ -39,6 +45,7 @@ Dates and places change. Check the official page before you book travel. Being l
 | Oct 24 | [Bitkiwi XVII](https://kiwibitcoinguide.org/home/bitkiwi-meetups/bitkiwi-xvii-october-2026-wellington/) | Wellington, New Zealand | Meetup |
 | Oct 25–27 | [Mita Tech Talks 2026](https://2026.mitatechtalks.com/) | Punta Mita, Mexico | Conference |
 | Oct 28–29 | [Custody & Treasury Summit 2026](https://www.meetup.com/bitcoinpark/events/314966347/) | Nashville, USA | Conference |
+| Oct 30–31 | [Bitmela 2026](https://thebitmela.com/) | Jaipur, India | Festival |
 | Oct 30–31 | [LABITCONF 2026](https://www.labitconf.com/) | Buenos Aires, Argentina | Conference |
 | Oct 31 – Nov 1 | [BTC Balkans 2026](https://btcbalkans.com/en) | Sofia, Bulgaria | Conference |
 
@@ -46,13 +53,17 @@ Dates and places change. Check the official page before you book travel. Being l
 
 | Date | Event | Location | Type |
 | --- | --- | --- | --- |
+| Nov 4 | [Bitcoin for Corporations Symposium](https://bitcoinforcorporations.com/events/amsterdam-symposium-2026/) | Amsterdam, Netherlands | Conference |
 | Nov 5–6 | [Bitcoin Amsterdam 2026](https://www.bitcoin.amsterdam/2026) | Amsterdam, Netherlands | Conference |
 | Nov 5–6 | [bitcoin++ Seoul, privacy edition](https://btcpp.dev/conf/seoul) | Seoul, South Korea | Conference |
 | Nov 7–8 | [Bitcoin Korea Conference](https://www.bitcoinkoreaconference.com/en) | Seoul, South Korea | Conference |
 | Nov 7–9 | [B-Only 2026](https://b-only.org/) | Annecy, France | Conference |
+| Nov 9–10 | [Bitcoin Veterans Summit 2026](https://bitcoinveterans.org/summit2026/) | Nashville, USA | Conference |
 | Nov 11–12 | [Bitcoin Histórico 2026](https://bitcoinhistorico.com/) | San Salvador, El Salvador | Conference |
 | Nov 19–20 | [Global Bitcoin Circular Economies Summit](https://www.bitcoinbeach.com/summit-blog/bitcoin-circular-economies-summit-2026) | El Zonte, El Salvador | Conference |
 | Nov 19–22 | [BitFest 2026](https://bitfest.uk/) | Manchester, UK | Festival |
+| Nov 20–21 | [BitBlockMine 2026](https://www.bitblockmine.com/) | Fort Worth, USA | Conference |
+| Nov 28–29 | [Bitcoin Thailand Conference 2026](https://bitcointhailand.co/) | Bangkok, Thailand | Conference |
 
 ### December
 
@@ -66,6 +77,7 @@ Dates and places change. Check the official page before you book travel. Being l
 
 | Date | Event | Location | Type |
 | --- | --- | --- | --- |
+| Jan 16 | [BitcoinDay Naples 2027](https://bitcoinday.io/) | Naples, USA | Conference |
 | Jan 29–30 | [Plan ₿ Forum El Salvador 2027](https://planb.sv/) | San Salvador, El Salvador | Conference |
 
 ### February
@@ -95,7 +107,9 @@ Dates and places change. Check the official page before you book travel. Being l
 | --- | --- | --- | --- |
 | May 6–8 | [BTC Prague 2027](https://btcprague.com/) | Prague, Czech Republic | Conference |
 | May 21–23 | [Bitcoin Ireland Conference 2027](https://www.bitcoinireland.eu/) | Dublin, Ireland | Conference |
+| May 28 | [Bitcoin Treasuries Conference UK 2027](https://www.smarterwebcompany.co.uk/bitcoin-treasuries-conference-uk-2027/) | Bristol, UK | Conference |
 | May 28–29 | [Adopting Bitcoin Arnhem 2027](https://nl27.adoptingbitcoin.org/) | Arnhem, Netherlands | Conference |
+| May 31 – Jun 2 | [Oslo Freedom Forum 2027](https://oslofreedomforum.com/event/oslo-freedom-forum-2027/buy-your-ticket-for-off-2027/) | Oslo, Norway | Conference |
 
 ### June
 

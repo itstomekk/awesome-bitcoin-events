@@ -28,9 +28,32 @@
     "source": "og",
     "fetched": "2026-09-28"
   },
+  "https://bitcoinday.io/": {
+    "description": "A single day, high signal, fast & focused Bitcoin-only event",
+    "source": "og",
+    "fetched": "2026-09-28"
+  },
   "https://bitcoinfilmfest.com/": {
     "description": "Orange-pill cinema, unfiat the culture. BFF'27 — June 24–27, 2027, Warsaw.",
     "image": "https://bitcoinfilmfest.com/assets/images/social/bff-social-default.jpg",
+    "source": "og",
+    "fetched": "2026-09-28"
+  },
+  "https://bitcoinhistorico.com/": {
+    "description": "A conference by the National Bitcoin Office of El Salvador",
+    "image": "https://bitcoinhistorico.com/wp-content/uploads/2025/08/Event-Thumbnail-Compressed-1024x576.jpg",
+    "source": "og",
+    "fetched": "2026-09-28"
+  },
+  "https://bitcointhailand.co/": {
+    "description": "November 28–29, 2026 · Samyan Mitrtown, Bangkok",
+    "image": "https://btc2026.rightshift.to/opengraph-image.jpg?792a4fbc91e9482e",
+    "source": "og",
+    "fetched": "2026-09-28"
+  },
+  "https://bitcointreasuries.net/conference": {
+    "description": "A closed-door conference on corporate bitcoin treasury strategy — allocators, executives, and strategists in one room. September 28, 2026 in New York City.",
+    "image": "https://bitcointreasuries.net/_app/immutable/assets/conference-og.DcUbDg9r.png",
     "source": "og",
     "fetched": "2026-09-28"
   },
@@ -70,6 +93,11 @@
     "source": "og",
     "fetched": "2026-09-28"
   },
+  "https://kiwibitcoinguide.org/home/bitkiwi-meetups/bitkiwi-xvii-october-2026-wellington/": {
+    "image": "https://kiwibitcoinguide.org/assets/Uploads/photo_2023-06-22_13-51-56.jpg",
+    "source": "og",
+    "fetched": "2026-09-28"
+  },
   "https://luma.com/4usxgzkv": {
     "description": "Arkade Day brings together executives, capital allocators, developers, product teams and ecosystem partners working across financial products and Bitcoin…",
     "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/cm/36949f64-378c-4831-91db-9d2bad006473.png",
@@ -90,6 +118,12 @@
   },
   "https://nl27.adoptingbitcoin.org/": {
     "description": "Adopting Bitcoin in Arnhem - coming May 2027!",
+    "source": "og",
+    "fetched": "2026-09-28"
+  },
+  "https://oslofreedomforum.com/event/oslo-freedom-forum-2027/buy-your-ticket-for-off-2027/": {
+    "description": "Enjoy 50% off 2027 Oslo Freedom Forum tickets until June 18 Standard and Patron Passes Apply to attend Standard Pass $1,000 The Standard Pass includes daytime programming and lunch Monday through Wednesday of the conference.",
+    "image": "https://oslofreedomforum.com/wp-content/uploads/2025/10/OFF-Tickets-Page-Thumbnail-V1.png",
     "source": "og",
     "fetched": "2026-09-28"
   },
@@ -114,6 +148,12 @@
   "https://thebitcoindistrict.com/bitchill": {
     "description": "Retreat on Caribbean with Bitcoiners, full of activities, workshops, networking and a bit of chill. 7-days bitcoin unconference in Honduras.",
     "image": "https://thebitcoindistrict.com/wp-content/uploads/2025/08/077355f9397b37c8d5e788fa51c1e77d8f4c7047ea997718d74bfe2f110895ac1-1024x695.png",
+    "source": "og",
+    "fetched": "2026-09-28"
+  },
+  "https://thebitmela.com/": {
+    "description": "India's first festival for what comes next for money. Two days in Jaipur, October 30–31, 2026.",
+    "image": "https://thebitmela.com/assets/og-home-v2.jpg",
     "source": "og",
     "fetched": "2026-09-28"
   },
@@ -164,6 +204,12 @@
     "source": "og",
     "fetched": "2026-09-28"
   },
+  "https://www.bitcoinireland.eu/": {
+    "description": "We are a group of individuals passionate about Bitcoin & the possibilities it may offer, both to the people of Ireland & the businesses that operate here.",
+    "image": "https://assets.cdn.filesafe.space/ZVz7K77pwRrfjH81rDpQ/media/6a6cc562951bf50880aaa8a6.png",
+    "source": "og",
+    "fetched": "2026-09-28"
+  },
   "https://www.bitcoinkoreaconference.com/en": {
     "description": "Bitcoin Korea Conference in Seoul, South Korea. Two days of Bitcoin education, workshop, lightning market, and community building",
     "image": "https://www.bitcoinkoreaconference.com/2026/2026_OG.jpg",
@@ -189,6 +235,89 @@
   "https://za27.adoptingbitcoin.org/": {
     "description": "The boots-on-the-ground Bitcoin conference for real-world adoption in Southern Africa.",
     "image": "https://cdn.prod.website-files.com/6a048dadc189bf2603d2ee72/6a0d00186853e55e2edd77c3_web-opengraph.webp",
+    "source": "og",
+    "fetched": "2026-09-28"
+  },
+  "https://www.imagineifnashville.com/": {
+    "description": "A two-day summit on the convergence of Bitcoin, AI, Energy, and Freedom Tech. Oct 5–6, 2026 — Fisher Center for the Performing Arts, Nashville.",
+    "image": "event-images/imagine-if-nashville-2026.jpg",
+    "imageSource": "screenshot",
+    "source": "og",
+    "fetched": "2026-09-28"
+  },
+  "https://tabconf.com/": {
+    "image": "event-images/tabconf-8-2026.jpg",
+    "imageSource": "screenshot",
+    "source": "screenshot",
+    "fetched": "2026-09-28"
+  },
+  "https://bitcoinevents.co.za/": {
+    "image": "event-images/blockchain-africa-conference-2026.jpg",
+    "imageSource": "screenshot",
+    "source": "screenshot",
+    "fetched": "2026-09-28"
+  },
+  "https://bitcoinbushbash.info/": {
+    "image": "event-images/bitcoin-bush-bash-busselton-2026.jpg",
+    "imageSource": "screenshot",
+    "source": "screenshot",
+    "fetched": "2026-09-28"
+  },
+  "https://www.labitconf.com/": {
+    "description": "La conferencia de Bitcoin más grande de Latinoamérica. 30 y 31 de Octubre, Costa Salguero, Buenos Aires.",
+    "image": "event-images/labitconf-2026.jpg",
+    "imageSource": "screenshot",
+    "source": "og",
+    "fetched": "2026-09-28"
+  },
+  "https://bitcoinforcorporations.com/events/amsterdam-symposium-2026/": {
+    "image": "event-images/bitcoin-for-corporations-symposium-2026.jpg",
+    "imageSource": "screenshot",
+    "source": "screenshot",
+    "fetched": "2026-09-28"
+  },
+  "https://www.bitcoin.amsterdam/2026": {
+    "description": "Join the Bitcoin Conference of the Netherlands 2026. More details coming soon!",
+    "image": "event-images/bitcoin-amsterdam-2026.jpg",
+    "imageSource": "screenshot",
+    "source": "og",
+    "fetched": "2026-09-28"
+  },
+  "https://b-only.org/": {
+    "description": "La conférence Bitcoin au coeur des Alpes",
+    "image": "event-images/b-only-2026.jpg",
+    "imageSource": "screenshot",
+    "source": "og",
+    "fetched": "2026-09-28"
+  },
+  "https://bitcoinveterans.org/summit2026/": {
+    "image": "event-images/bitcoin-veterans-summit-2026.jpg",
+    "imageSource": "screenshot",
+    "source": "screenshot",
+    "fetched": "2026-09-28"
+  },
+  "https://www.bitblockmine.com/": {
+    "image": "event-images/bitblockmine-2026.jpg",
+    "imageSource": "screenshot",
+    "source": "screenshot",
+    "fetched": "2026-09-28"
+  },
+  "https://bitcoinday.io/": {
+    "image": "event-images/bitcoinday-naples-2027.jpg",
+    "imageSource": "screenshot",
+    "source": "screenshot",
+    "fetched": "2026-09-28"
+  },
+  "https://www.smarterwebcompany.co.uk/bitcoin-treasuries-conference-uk-2027/": {
+    "image": "event-images/bitcoin-treasuries-conference-uk-2027.jpg",
+    "imageSource": "screenshot",
+    "source": "screenshot",
+    "fetched": "2026-09-28"
+  },
+  "https://nl27.adoptingbitcoin.org/": {
+    "description": "Adopting Bitcoin in Arnhem - coming May 2027!",
+    "image": "event-images/adopting-bitcoin-arnhem-2027.jpg",
+    "imageSource": "screenshot",
     "source": "og",
     "fetched": "2026-09-28"
   }
