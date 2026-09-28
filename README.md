@@ -30,17 +30,25 @@ Dates and places change. Check the official page before you book travel. Being l
 | Oct 10–11 | [Muslim Bitcoin Summit 2026](https://mslmbtcsummit.com/) | London, UK | Conference |
 | Oct 12–15 | [TABConf 8](https://tabconf.com/) | Atlanta, USA | Conference |
 | Oct 15 | [Blockchain Africa Conference 2026](https://bitcoinevents.co.za/) | Gauteng, South Africa | Conference |
+| Oct 15–17 | [Bitcoin Alpha 2026](https://bitcoinalpha.org/) | Santa Monica, USA | Conference |
 | Oct 16–18 | [Bitcoin Bush Bash - Busselton](https://bitcoinbushbash.info/) | Busselton, Australia | Conference |
+| Oct 21 | [Arkade Day 2026](https://luma.com/4usxgzkv) | Lugano, Switzerland | Conference |
+| Oct 22 | [The Future of Capital Markets 2026](https://thefutureofcapitalmarkets.com/) | Lugano, Switzerland | Conference |
 | Oct 23–24 | [Plan ₿ Forum Lugano 2026](https://planb.lugano.ch/planb-forum/) | Lugano, Switzerland | Conference |
+| Oct 24 | [Bitkiwi XVII](https://kiwibitcoinguide.org/home/bitkiwi-meetups/bitkiwi-xvii-october-2026-wellington/) | Wellington, New Zealand | Meetup |
 | Oct 25–27 | [Mita Tech Talks 2026](https://2026.mitatechtalks.com/) | Punta Mita, Mexico | Conference |
+| Oct 28–29 | [Custody & Treasury Summit 2026](https://www.meetup.com/bitcoinpark/events/314966347/) | Nashville, USA | Conference |
 | Oct 29 – Nov 1 | [LABITCONF 2026](https://www.labitconf.com/) | Buenos Aires, Argentina | Conference |
+| Oct 31 – Nov 1 | [BTC Balkans 2026](https://btcbalkans.com/en) | Sofia, Bulgaria | Conference |
 
 ### November
 
 | Date | Event | Location | Type |
 | --- | --- | --- | --- |
 | Nov 5–6 | [Bitcoin Amsterdam 2026](https://www.bitcoin.amsterdam/2026) | Amsterdam, Netherlands | Conference |
+| Nov 5–6 | [bitcoin++ Seoul, privacy edition](https://btcpp.dev/conf/seoul) | Seoul, South Korea | Conference |
 | Nov 7–8 | [Bitcoin Korea Conference](https://www.bitcoinkoreaconference.com/en) | Seoul, South Korea | Conference |
+| Nov 7–9 | [B-Only 2026](https://b-only.org/) | Annecy, France | Conference |
 | Nov 11–12 | [Bitcoin Histórico 2026](https://bitcoinhistorico.com/) | San Salvador, El Salvador | Conference |
 | Nov 19–20 | [Global Bitcoin Circular Economies Summit](https://www.bitcoinbeach.com/summit-blog/bitcoin-circular-economies-summit-2026) | El Zonte, El Salvador | Conference |
 | Nov 19–22 | [BitFest 2026](https://bitfest.uk/) | Manchester, UK | Festival |
@@ -49,21 +57,45 @@ Dates and places change. Check the official page before you book travel. Being l
 
 | Date | Event | Location | Type |
 | --- | --- | --- | --- |
+| Dec 2–5 | [Africa Bitcoin Conference 2026](https://www.afrobitcoin.org/) | Blantyre, Malawi | Conference |
 | Dec 7–8 | [Bitcoin MENA 2026](https://mena.b.tc/) | Abu Dhabi, United Arab Emirates | Conference |
 
 ## 2027
+
+### January
+
+| Date | Event | Location | Type |
+| --- | --- | --- | --- |
+| Jan 29–30 | [Plan ₿ Forum El Salvador 2027](https://planb.sv/) | San Salvador, El Salvador | Conference |
+
+### February
+
+| Date | Event | Location | Type |
+| --- | --- | --- | --- |
+| Feb 4–7 | [The Sovereign Summit 2027](https://thesovereignsummit.com/) | Miami Beach, USA | Conference |
+| Feb 20 | [Sound Money Soirée 2027](https://www.bitcoinbay.foundation/sound-money-soiree) | Tampa, USA | Festival |
+| Feb 26–27 | [Adopting Bitcoin Cape Town 2027](https://za27.adoptingbitcoin.org/) | Cape Town, South Africa | Conference |
+
+### March
+
+| Date | Event | Location | Type |
+| --- | --- | --- | --- |
+| Mar 22–24 | [Mining Disrupt 2027](https://miningdisrupt.com/) | Irving, USA | Conference |
 
 ### April
 
 | Date | Event | Location | Type |
 | --- | --- | --- | --- |
 | Apr 1–4 | [BitBlockBoom! 2027](https://www.bitblockboom.com/) | Fort Worth, USA | Conference |
+| Apr 2–3 | [Sovereignty Summit 2027](https://sovereigntysummit.nz/) | Queenstown, New Zealand | Conference |
 
 ### May
 
 | Date | Event | Location | Type |
 | --- | --- | --- | --- |
 | May 6–8 | [BTC Prague 2027](https://btcprague.com/) | Prague, Czech Republic | Conference |
+| May 21–23 | [Bitcoin Ireland Conference 2027](https://www.bitcoinireland.eu/) | Dublin, Ireland | Conference |
+| May 28–29 | [Adopting Bitcoin Arnhem 2027](https://nl27.adoptingbitcoin.org/) | Arnhem, Netherlands | Conference |
 
 ### June
 
@@ -76,6 +108,12 @@ Dates and places change. Check the official page before you book travel. Being l
 | Date | Event | Location | Type |
 | --- | --- | --- | --- |
 | Jul 15–17 | [Bitcoin 2027](https://conference.b.tc/) | Nashville, USA | Conference |
+
+### August
+
+| Date | Event | Location | Type |
+| --- | --- | --- | --- |
+| Aug 14 | [Bitcoin Beyond 66 2027](https://bitcoinbeyond66.com/) | Bodø, Norway | Conference |
 
 ## Past events
 
