@@ -1,0 +1,64 @@
+/* Hallmark · genre: editorial · macrostructure: Index-First · theme: Almanac (accent retuned to Bitcoin orange)
+ * enrichment: none (typography only) · nav: N6 masthead · footer: Ft4 colophon
+ * pre-emit critique: P5 H4 E4 S5 R5 V5
+ * Every colour, font, size and space used by the site is a token below; page CSS references
+ * these by name only.
+ */
+:root {
+  /* Paper and ink: cool pale paper (hue 245), tinted, never pure white/black. */
+  --color-paper:      oklch(95.5% 0.007 245);
+  --color-paper-2:    oklch(92%   0.010 245);
+  --color-paper-3:    oklch(87%   0.012 240);
+  --color-rule:       oklch(78%   0.012 240);
+  --color-rule-2:     oklch(40%   0.018 240);
+  --color-muted:      oklch(47%   0.014 245);
+  --color-ink-2:      oklch(24%   0.018 245);
+  --color-ink:        oklch(17%   0.020 245);
+  /* Accent: Bitcoin orange. Fill for small marks; -ink variant for text on paper (AA). */
+  --color-accent:     oklch(72%   0.170 55);
+  --color-accent-ink: oklch(50%   0.150 48);
+  --color-focus:      oklch(50%   0.150 48);
+  --color-past:       oklch(62%   0.012 245);
+
+  --font-display: "Newsreader", ui-serif, Georgia, serif;
+  --font-body:    "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono:    "IBM Plex Mono", ui-monospace, "SFMono-Regular", monospace;
+
+  --text-xs:   0.6875rem;
+  --text-sm:   0.8125rem;
+  --text-base: 0.9375rem;
+  --text-md:   1.0625rem;
+  --text-lg:   1.25rem;
+  --text-xl:   1.5rem;
+  --text-2xl:  1.875rem;
+  --text-display: clamp(2.25rem, 3.5vw + 1rem, 3.75rem);
+
+  --tracking-display: -0.014em;
+  --tracking-label:   0.06em;
+  --lh-tight: 1.1;
+  --lh-snug:  1.25;
+  --lh-normal: 1.55;
+
+  /* 4-pt spacing scale */
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs:  0.75rem;
+  --space-sm:  1rem;
+  --space-md:  1.5rem;
+  --space-lg:  2rem;
+  --space-xl:  3rem;
+  --space-2xl: 4.5rem;
+
+  --rule-hair: 1px;
+  --radius-sm: 2px;
+  --measure: 64ch;
+  --page-max: 72rem;
+  --page-gutter: clamp(1rem, 4vw, 2.5rem);
+  --map-height: clamp(18rem, 42vw, 28rem);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.87, 0, 0.13, 1);
+  --dur-fast: 120ms;
+  --dur-base: 200ms;
+}

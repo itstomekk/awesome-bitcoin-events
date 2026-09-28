@@ -1,0 +1,26 @@
+---
+// One row in the index. The data-* attributes are what the search and filters in
+// index.astro read. Status is rendered with the build date, then corrected in the
+// browser with the visitor's date.
+const { event, buildDay } = Astro.props;
+const past = event.end < buildDay;
+---
+<li
+  class:list={['row', { 'is-past': past }]}
+  data-event-card
+  data-search={`${event.title} ${event.where} ${event.type}`.toLowerCase()}
+  data-status={past ? 'past' : 'upcoming'}
+  data-end={event.end}
+  data-year={event.start.slice(0, 4)}
+  data-country={event.country || ''}
+  data-type={event.type}
+>
+  <span class="row-date">{event.dateLabel}</span>
+  <span class="row-title">
+    <a href={event.url} target="_blank" rel="noreferrer">{event.title}</a><span class="arrow" aria-hidden="true"> ↗</span>
+    <span class="row-flag" data-next-flag hidden>Next</span>
+    {event.note && <span class="row-note">{event.note}</span>}
+  </span>
+  <span class="row-where">{event.where}</span>
+  <span class="row-type">{event.type}</span>
+</li>

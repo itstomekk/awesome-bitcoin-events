@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.1.0 — 2026-09-28
+
+- Website redesign: a light "almanac" index with a newspaper-style masthead, sticky month labels, one row per event (dates · name · place · type), a "Next" flag on the next event, a greyscale map and a colophon footer. Every colour, font and spacing value is a token in `src/styles/tokens.css`.
+
 ## 3.0.0 — 2026-09-28
 
 README.md is now the source of truth.

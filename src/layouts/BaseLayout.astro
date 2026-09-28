@@ -1,59 +1,58 @@
 ---
+// Shared page shell: <head>, N6 masthead and Ft4 colophon. Pass `map` to load Leaflet
+// (only the home page needs it); it comes from unpkg, pinned to 1.9.4 with SRI hashes.
 import '../styles/global.css';
 
-// Shared page shell: <head>, header and footer. Pass `map` to load Leaflet (only the
-// home page needs it). Leaflet comes from unpkg, pinned to 1.9.4 with integrity hashes.
-const { title = 'Awesome Bitcoin Events', description = 'A curated list of Bitcoin conferences, meetups, festivals and retreats around the world.', map = false } = Astro.props;
+const {
+  title = 'Awesome Bitcoin Events',
+  description = 'A curated list of Bitcoin conferences, meetups, festivals and retreats around the world.',
+  map = false,
+  issueLine = '',
+} = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+const repo = 'https://github.com/itstomekk/awesome-bitcoin-events';
+const built = new Date().toISOString().slice(0, 10);
 ---
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#eef1f5" />
     <link rel="icon" href={`${base}favicon.svg`} type="image/svg+xml" />
-    {/* Leaflet (map library) from the unpkg CDN. AUDIT NOTE: loaded on every page although
-        only the home page has a map, and without integrity (SRI) hashes. */}
     {map && <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />}
     {map && <script is:inline src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>}
   </head>
   <body>
-    <a class="skip-link" href="#main-content">Skip to calendar</a>
-    <header class="site-header">
-      <div class="shell header-inner">
-        <a class="brand" href={base} aria-label="Awesome Bitcoin Events home">
-        <span class="brand-mark">₿</span>
-        <span class="brand-copy"><strong>Awesome Bitcoin Events</strong><small>Community list</small></span>
-        </a>
-        <nav class="site-nav" aria-label="Primary navigation">
-          <a href={`${base}#calendar`}>Calendar</a>
-          <a href={`${base}#map`}>Map</a>
-          <a href={`${base}#method`}>How it works</a>
-          <a class="nav-github" href="https://github.com/itstomekk/awesome-bitcoin-events" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-        </nav>
-      </div>
+    <a class="skip-link" href="#main-content">Skip to the list</a>
+    <header class="nav-mast page">
+      <p class="mast-line">{issueLine || 'The community list of Bitcoin events'}</p>
+      <p class="mast-name"><a href={base}>Awesome Bitcoin Events<span class="mark">.</span></a></p>
+      <nav class="mast-nav" aria-label="Primary">
+        <ul>
+          <li><a href={`${base}#list`}>The list</a></li>
+          <li><a href={`${base}#atlas`}>Map</a></li>
+          <li><a href={`${base}#about`}>How it works</a></li>
+          <li><a href={`${repo}/blob/main/CONTRIBUTING.md`}>Add an event ↗</a></li>
+        </ul>
+      </nav>
+      <hr class="mast-rule" aria-hidden="true" />
     </header>
     <slot />
-    <footer class="site-footer">
-      <div class="shell footer-grid">
-        <div>
-          <a class="brand" href={base}><span class="brand-mark">₿</span><span class="brand-copy"><strong>Awesome Bitcoin Events</strong><small>Community list</small></span></a>
-          <p class="footer-note">A curated, community-edited list of Bitcoin events around the world, built from one Markdown file.</p>
-        </div>
-        <div class="footer-links">
-          <a href={`${base}#calendar`}>Browse events</a>
-          <a href={`${base}#map`}>Explore the map</a>
-          <a href={`${base}#method`}>How it works</a>
-          <a href="https://github.com/itstomekk/awesome-bitcoin-events/blob/main/CONTRIBUTING.md" target="_blank" rel="noreferrer">Add an event ↗</a>
-        </div>
-      </div>
-      <div class="shell footer-bottom"><span>Source: README.md on GitHub. List content CC0.</span><span>Built for the open web.</span></div>
+    <footer class="foot-dense page">
+      <p>
+        Awesome Bitcoin Events. Generated on {built} from <a href={`${repo}/blob/main/README.md`}>README.md</a> and
+        <a href={`${repo}/blob/main/PAST.md`}>PAST.md</a>, the only places events are edited.
+        List content dedicated to the public domain under CC0 1.0. Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors.
+        Listing is not endorsement: check the organizer's page before you travel.
+        Corrections and additions: <a href={`${repo}/blob/main/CONTRIBUTING.md`}>CONTRIBUTING.md</a> or <a href={`${repo}/issues/new?template=event-submission.yml`}>the submission form</a>.
+      </p>
     </footer>
   </body>
 </html>
