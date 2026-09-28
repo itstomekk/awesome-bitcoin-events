@@ -5,13 +5,16 @@ description: Add, verify, correct or archive events in the awesome-bitcoin-event
 
 # Add or maintain events
 
+Project state and history: `.claude/HANDOFF.md`.
+
 README.md is the only source of truth. Never edit the website or generated files; there are none.
 
 ## Add an event
 
 1. Confirm it on the **organizer's own page** (dates, city). If there's no official page, add a row to `TO-VERIFY.md` instead and stop.
-2. Add one line under `## <year>` / `### <Month the event starts>` in README.md, in start-date order:
-   `- [Name](https://official-url) - Oct 12–15 · City, Country · Conference.`
+2. Add one table row under `## <year>` / `### <Month the event starts>` in README.md, in start-date order:
+   `| Oct 12–15 | [Name](https://official-url) | City, Country | Conference |`
+   A new month needs the heading plus `| Date | Event | Location | Type |` and `| --- | --- | --- | --- |`.
    Types: Conference, Meetup, Festival, Retreat, Unconference, Hackathon, Workshop.
    Missing year/month heading? Add it, and add the year to `## Contents`.
 3. If `City, Country` is new, add `"City, Country": [lat, lon]` to `data/places.json` (OpenStreetMap coordinates, 5 decimals).
