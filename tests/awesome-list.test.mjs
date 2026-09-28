@@ -1,7 +1,8 @@
 // Tests for the list parser (`npm test`). Uses Node's built-in test runner; no extra deps.
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { parseList, parseDates, checkEvents, splitLocation, renderSections } from '../src/lib/awesome-list.js';
+import { parseList, parseDates, checkEvents, splitLocation, renderSections, parseMeetups } from '../src/lib/awesome-list.js';
+import { loadMeetups } from '../src/lib/load-list.js';
 import { loadEvents } from '../src/lib/load-list.js';
 
 const list = (rows, month = 'October', year = 2026) => `# Title\n\n## ${year}\n\n### ${month}\n\n| Date | Event | Location | Type |\n| --- | --- | --- | --- |\n${rows.join('\n')}\n\n## Contributing\n\n| Not | an | event | table |\n`;
@@ -83,4 +84,20 @@ test('the real README.md and PAST.md are valid', () => {
   const { events, errors } = loadEvents();
   assert.deepEqual(errors, []);
   assert.ok(events.length > 0);
+});
+
+test('parses meetups by region and reports bad rows', () => {
+  const text = '# Meetups\n\n## Europe\n\n| Where | Meetup | About |\n| --- | --- | --- |\n| Prague, Czech Republic | [Bitcoin Prague](https://example.org) | Monthly meetup |\n| Oops | no link | x |\n\n## Moon\n';
+  const { meetups, errors } = parseMeetups(text);
+  assert.equal(meetups.length, 1);
+  assert.deepEqual([meetups[0].region, meetups[0].city, meetups[0].country], ['Europe', 'Prague', 'Czech Republic']);
+  assert.equal(errors.length, 2);
+  assert.match(errors[0], /MEETUPS\.md:8: row should be/);
+  assert.match(errors[1], /not a region/);
+});
+
+test('the real MEETUPS.md is valid', () => {
+  const { meetups, errors } = loadMeetups();
+  assert.deepEqual(errors, []);
+  assert.ok(meetups.length > 0);
 });

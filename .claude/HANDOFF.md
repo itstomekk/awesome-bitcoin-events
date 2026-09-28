@@ -9,7 +9,10 @@ Updated: 2026-09-28. Kept in `.claude/` so the repo root stays clean for contrib
 - **Commands:** `npm run check` (validate), `npm test`, `npm run archive` (move ended events to PAST.md), `npm run dev`.
 - **CI** (`.github/workflows/pages.yml`): check, test, awesome-lint (only content rules fail; the GitHub-settings rule warns), build, and deploy on main. `links.yml` runs a weekly link check that opens an issue.
 - The README carries `<!--lint disable table-pipe-alignment-->` so contributors don't have to pad table pipes. awesome-lint otherwise passes; its one expected warning is about "bitcoin++".
-- Counts on 2026-09-28: 40 upcoming, 150 past, 15 to verify (190 listed).
+- Counts on 2026-09-28: 39 upcoming, 150 past, 16 to verify (189 listed), 146 meetups.
+- **Meetups** live in `MEETUPS.md` (one table per region: `| City, Country | [Name](link) | About |`), shown on the site under a Meetups tab with blue map pins. The first batch is 45 BitDevs chapters (bitdevs.org/cities) plus 101 Meetup.com groups from BTC Map's community directory (`api.btcmap.org/v2/areas`), cleaned by hand (wrong or shared links dropped, place names fixed).
+- **Event details:** clicking a row expands it to show the full dates with weekday, a countdown, add-to-calendar (.ics / Google), show on map, copy link (`#event-id` deep links) and report-a-correction. Optional descriptions and images come from `data/details.json`, keyed by official URL and filled by `npm run enrich` (the organizer's og:description / og:image). Always review the result; hand-fixed entries use `"source": "manual"`.
+- 2026-09-28 corrections: LABITCONF 2026 is Oct 30–31 (Oct 29 is only a B2B/opening day). Bitcoin MENA 2026 moved to TO-VERIFY because mena.b.tc now only sells 2027 tickets.
 
 ## History worth knowing
 

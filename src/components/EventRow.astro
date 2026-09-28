@@ -1,16 +1,29 @@
 ---
-// One row in the index. The data-* attributes are what the search and filters in
-// index.astro read. Status is rendered with the build date, then corrected in the
-// browser with the visitor's date.
-const { event, buildDay } = Astro.props;
+// One row in the index, plus its fold-out details. The data-* attributes are what
+// the search, filters, calendar and map buttons in index.astro read. Status is
+// rendered with the build date, then corrected in the browser with the visitor's date.
+// `details` is the optional enrichment for this event from data/details.json.
+const { event, buildDay, details = null, hasPin = false } = Astro.props;
 const past = event.end < buildDay;
+const repo = 'https://github.com/itstomekk/awesome-bitcoin-events';
+const day = (iso) => new Date(`${iso}T12:00:00Z`);
+const long = (iso) => day(iso).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+const days = Math.round((day(event.end) - day(event.start)) / 86400000) + 1;
+const fullDates = event.start === event.end ? long(event.start) : `${long(event.start)} – ${long(event.end)}`;
+const correctionUrl = `${repo}/issues/new?template=event-correction.yml&title=${encodeURIComponent(`[Correction] ${event.title}`)}`;
+const detailsId = `details-${event.id}`;
 ---
 <li
   class:list={['row', { 'is-past': past }]}
+  id={event.id}
   data-event-card
   data-search={`${event.title} ${event.where} ${event.type}`.toLowerCase()}
   data-status={past ? 'past' : 'upcoming'}
+  data-start={event.start}
   data-end={event.end}
+  data-title={event.title}
+  data-where={event.where}
+  data-url={event.url}
   data-year={event.start.slice(0, 4)}
   data-country={event.country || ''}
   data-type={event.type}
@@ -22,4 +35,26 @@ const past = event.end < buildDay;
   </span>
   <span class="row-where">{event.where}</span>
   <span class="row-type">{event.type}</span>
+  <button class="row-toggle" type="button" aria-expanded="false" aria-controls={detailsId} aria-label={`Details for ${event.title}`}>
+    <span aria-hidden="true">+</span>
+  </button>
+  <div class="row-details" id={detailsId} hidden>
+    <div class="details-text">
+      {details?.description && <p class="details-description">{details.description}</p>}
+      <dl class="details-facts">
+        <div><dt>When</dt><dd>{fullDates} <span class="muted">· {days} {days === 1 ? 'day' : 'days'}</span> <span class="details-countdown" data-countdown></span></dd></div>
+        <div><dt>Where</dt><dd>{event.where}</dd></div>
+        <div><dt>Type</dt><dd>{event.type}</dd></div>
+      </dl>
+      <p class="details-actions">
+        <a class="action" href={event.url} target="_blank" rel="noreferrer">Official page ↗</a>
+        <button class="action" type="button" data-action="ics">Add to calendar (.ics)</button>
+        <a class="action" data-action="gcal" href="#" target="_blank" rel="noreferrer">Google Calendar ↗</a>
+        {hasPin && <button class="action" type="button" data-action="map">Show on map</button>}
+        <button class="action" type="button" data-action="copy">Copy link</button>
+        <a class="action subtle" href={correctionUrl} target="_blank" rel="noreferrer">Report a correction</a>
+      </p>
+    </div>
+    {details?.image && <img class="details-image" src={details.image} alt="" loading="lazy" referrerpolicy="no-referrer" />}
+  </div>
 </li>

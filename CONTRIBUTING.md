@@ -41,6 +41,16 @@ Don't use a `|` character inside a cell.
 
 Put the event under the month it **starts** in. Within a month, keep lines sorted by start date. An event running from Dec 30 to Jan 2 goes under `### December` as `Dec 30 – Jan 2`.
 
+## Meetups
+
+Recurring meetups live in [MEETUPS.md](MEETUPS.md), one table per region (Europe, North America, Latin America, Asia, Oceania, Africa, Middle East, Online):
+
+```markdown
+| Prague, Czech Republic | [Bitcoin Prague](https://official-link) | Monthly meetup |
+```
+
+The columns are Where (`City, Country` or `Online`), Meetup (`[Name](link)`, preferably the group's own page or Meetup.com group) and About (a few words, for example `Socratic Seminar` or `Monthly meetup`). Each link may appear only once.
+
 ## What belongs in the list
 
 - Bitcoin-focused events, or events with a substantial Bitcoin track.
@@ -77,6 +87,7 @@ npm run archive   # move events that have ended from README.md to PAST.md
 npm run dev       # preview the website locally
 ```
 
+- **Event details:** `npm run enrich` reads each upcoming event's official page and stores its short description and preview image in `data/details.json`, keyed by the event link. Review the diff before committing: some sites return cookie text or last year's blurb. For entries you write or fix by hand, set `"source": "manual"`, and the script will never overwrite them.
 - **Map pins:** the site looks up each `City, Country` in `data/places.json` (`"City, Country": [lat, lon]`). `npm run check` warns when a place is missing. Add it with coordinates from [OpenStreetMap](https://www.openstreetmap.org/); until then the event simply has no pin.
 - **Archiving:** run `npm run archive` every month or so and commit the result. The website already shows ended events as past, so this only keeps the README short.
 - **Code:** `src/lib/awesome-list.js` is the single parser for the format. The site (`src/pages/index.astro`), `scripts/check-list.mjs` and `scripts/archive-past.mjs` all use it.
