@@ -23,7 +23,7 @@ README.md is the only source of truth. Never edit the website or generated files
 
 ## Meetups and details
 
-- Recurring meetups go in `MEETUPS.md` (one table per region, `| City, Country | [Name](link) | About |`). Sources used so far: BitDevs city list, BTC Map community directory (`api.btcmap.org/v2/areas`, tags `contact:meetup`); bitcoinonly.events meetup pages have no outbound links.
+- Recurring meetups go in the `## Meetups` section of README.md, as `### <Region>` tables (one table per region, `| City, Country | [Name](link) | About |`). Sources used so far: BitDevs city list, BTC Map community directory (`api.btcmap.org/v2/areas`, tags `contact:meetup`), and the NIP-52 calendars behind Plektos and Satlantis; bitcoinonly.events meetup pages have no outbound links.
 - `npm run enrich` fills `data/details.json` for upcoming events; in this sandbox run it with `NODE_USE_ENV_PROXY=1 NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt`. Always review: some og:descriptions are ticket text or last year's blurb. Fix them by hand with `"source": "manual"`.
 
 ## Housekeeping

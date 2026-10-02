@@ -45,7 +45,7 @@ Put the event under the year it **starts** in, and keep the table sorted by star
 
 ## Meetups
 
-Recurring meetups live in [MEETUPS.md](../MEETUPS.md), one table per region (Europe, North America, Latin America, Asia, Oceania, Africa, Middle East, Online):
+Recurring meetups live in the same file, in the [Meetups](../README.md#meetups) section, one table per region (Europe, North America, Latin America, Asia, Oceania, Africa, Middle East, Online):
 
 ```markdown
 | Prague, Czech Republic | [Bitcoin Prague](https://official-link) | Monthly meetup |

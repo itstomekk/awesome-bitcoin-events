@@ -125,16 +125,32 @@ test('the real README.md and PAST.md are valid', () => {
 });
 
 test('parses meetups by region and reports bad rows', () => {
-  const text = '# Meetups\n\n## Europe\n\n| Where | Meetup | About |\n| --- | --- | --- |\n| Prague, Czech Republic | [Bitcoin Prague](https://example.org) | Monthly meetup |\n| Oops | no link | x |\n\n## Moon\n';
+  const text = [
+    '# Awesome Bitcoin Events',
+    '',
+    '## Meetups',
+    '',
+    '### Europe',
+    '',
+    '| Where | Meetup | About |',
+    '| --- | --- | --- |',
+    '| Prague, Czech Republic | [Bitcoin Prague](https://example.org) | Monthly meetup |',
+    '| Oops | no link | x |',
+    '',
+    '### Moon',
+    '',
+    '## Past events',
+    '',
+  ].join('\n');
   const { meetups, errors } = parseMeetups(text);
   assert.equal(meetups.length, 1);
   assert.deepEqual([meetups[0].region, meetups[0].city, meetups[0].country], ['Europe', 'Prague', 'Czech Republic']);
   assert.equal(errors.length, 2);
-  assert.match(errors[0], /MEETUPS\.md:8: row should be/);
+  assert.match(errors[0], /README\.md:10: row should be/);
   assert.match(errors[1], /not a region/);
 });
 
-test('the real MEETUPS.md is valid', () => {
+test('the real README meetup section is valid', () => {
   const { meetups, errors } = loadMeetups();
   assert.deepEqual(errors, []);
   assert.ok(meetups.length > 0);

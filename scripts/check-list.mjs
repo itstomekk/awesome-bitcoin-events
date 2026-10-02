@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-// Validates README.md, PAST.md and MEETUPS.md: format of every event line, real dates, month
-// headings, allowed types, duplicates and date order. Run with `npm run check`.
+// Validates README.md (event tables and the meetups section) and PAST.md: format of every line,
+// real dates, allowed types, duplicates and date order. Run with `npm run check`.
 // CI runs this on every pull request; errors point at file:line.
 import { loadEvents, loadPlaces, loadMeetups } from '../src/lib/load-list.js';
 
