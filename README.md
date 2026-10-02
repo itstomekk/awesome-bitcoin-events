@@ -32,6 +32,7 @@ Dates and places change. Check the official page before you book travel. Being l
 | Oct 15 | [Blockchain Africa Conference 2026](https://bitcoinevents.co.za/) | Gauteng, South Africa | Conference |
 | Oct 15–17 | [Bitcoin Alpha 2026](https://bitcoinalpha.org/) | Santa Monica, USA | Conference |
 | Oct 16–18 | [Bitcoin Bush Bash - Busselton](https://bitcoinbushbash.info/) | Busselton, Australia | Conference |
+| Oct 20–22 | [Bitcoin for Financial Services Summit 2026](https://www.bffs.media/summit) | Denver, USA | Conference |
 | Oct 21 | [Arkade Day 2026](https://luma.com/4usxgzkv) | Lugano, Switzerland | Conference |
 | Oct 22 | [The Future of Capital Markets 2026](https://thefutureofcapitalmarkets.com/) | Lugano, Switzerland | Conference |
 | Oct 23–24 | [Plan ₿ Forum Lugano 2026](https://planb.lugano.ch/planb-forum/) | Lugano, Switzerland | Conference |
@@ -61,11 +62,13 @@ Dates and places change. Check the official page before you book travel. Being l
 
 | Date | Event | Location | Type |
 | --- | --- | --- | --- |
+| Jan 11–13 | [Max & Stacy Bitcoin Golf Invitational 2027](https://bitcoingolfinvitational.com/) | San José Villanueva, El Salvador | Festival |
 | Jan 16 | [BitcoinDay Naples 2027](https://bitcoinday.io/) | Naples, USA | Conference |
 | Jan 29–30 | [Plan ₿ Forum El Salvador 2027](https://planb.sv/) | San Salvador, El Salvador | Conference |
 | Feb 4–7 | [The Sovereign Summit 2027](https://thesovereignsummit.com/) | Miami Beach, USA | Conference |
 | Feb 20 | [Sound Money Soirée 2027](https://www.bitcoinbay.foundation/sound-money-soiree) | Tampa, USA | Festival |
 | Feb 26–27 | [Adopting Bitcoin Cape Town 2027](https://za27.adoptingbitcoin.org/) | Cape Town, South Africa | Conference |
+| Feb 26–27 | [Heatpunk Summit 2027](https://heatpunks.org/summit) | Denver, USA | Conference |
 | Mar 22–24 | [Mining Disrupt 2027](https://miningdisrupt.com/) | Irving, USA | Conference |
 | Apr 1–4 | [BitBlockBoom! 2027](https://www.bitblockboom.com/) | Fort Worth, USA | Conference |
 | Apr 2–3 | [Sovereignty Summit 2027](https://sovereigntysummit.nz/) | Queenstown, New Zealand | Conference |
@@ -75,6 +78,7 @@ Dates and places change. Check the official page before you book travel. Being l
 | May 28–29 | [Adopting Bitcoin Arnhem 2027](https://nl27.adoptingbitcoin.org/) | Arnhem, Netherlands | Conference |
 | May 31 – Jun 2 | [Oslo Freedom Forum 2027](https://oslofreedomforum.com/event/oslo-freedom-forum-2027/buy-your-ticket-for-off-2027/) | Oslo, Norway | Conference |
 | Jun 24–27 | [Bitcoin FilmFest 2027](https://bitcoinfilmfest.com/) | Warsaw, Poland | Festival |
+| Jul 15 | [TGFB27 Conference](https://tgfb.com/conference/) | Nashville, USA | Conference |
 | Jul 15–17 | [Bitcoin 2027](https://conference.b.tc/) | Nashville, USA | Conference |
 | Aug 14 | [Bitcoin Beyond 66 2027](https://bitcoinbeyond66.com/) | Bodø, Norway | Conference |
 
