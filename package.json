@@ -10,7 +10,8 @@
     "check": "node scripts/check-list.mjs",
     "test": "node --test tests/*.test.mjs",
     "archive": "node scripts/archive-past.mjs",
-    "enrich": "node scripts/enrich-details.mjs"
+    "enrich": "node scripts/enrich-details.mjs",
+    "event-from-issue": "node scripts/issue-to-row.mjs"
   },
   "engines": {
     "node": ">=20"

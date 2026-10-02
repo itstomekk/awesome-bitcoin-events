@@ -67,6 +67,18 @@ const repo = 'https://github.com/itstomekk/awesome-bitcoin-events';
       <button type="button" role="tab" id="tab-events" aria-controls="list" aria-selected="true" data-view="events">Events</button>
       <button type="button" role="tab" id="tab-meetups" aria-controls="meetups" aria-selected="false" data-view="meetups">Meetups <span class="tab-count">{meetups.length}</span></button>
     </div>
+    </div>
+
+    <section class="atlas" id="atlas" aria-label="Map">
+      <div class="atlas-bar page">
+        <h2>Map</h2>
+        <p class="atlas-key"><span><i></i>Upcoming event</span><span><i class="past"></i>Past event</span><span><i class="meetup"></i>Meetup</span><span class="muted">Pins mark the city, not the venue.</span></p>
+      </div>
+      <div id="event-map" role="img" aria-label="World map of Bitcoin events and meetups"></div>
+      <script type="application/json" id="map-data" set:html={mapJson}></script>
+    </section>
+
+    <div class="page">
 
     <section id="list" role="tabpanel" aria-labelledby="tab-events">
       <div class="filters" role="search">
@@ -99,19 +111,11 @@ const repo = 'https://github.com/itstomekk/awesome-bitcoin-events';
     </section>
 
     <section id="meetups" role="tabpanel" aria-labelledby="tab-meetups" hidden>
-      <p class="meetups-intro">Recurring Bitcoin meetups: turn up, meet people, learn. Times change, so check the link before you go. <a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '/')}meetups/`}>Open the meetups page ↗</a></p>
+      <p class="meetups-intro">Recurring Bitcoin meetups: turn up, meet people, learn. Times change, so check the link before you go. </p>
       <MeetupList meetups={meetups} regions={meetupRegions} />
     </section>
     </div>
 
-    <section class="atlas" id="atlas" aria-label="Map">
-      <div class="atlas-bar page">
-        <h2>Map</h2>
-        <p class="atlas-key"><span><i></i>Upcoming event</span><span><i class="past"></i>Past event</span><span><i class="meetup"></i>Meetup</span><span class="muted">Pins mark the city, not the venue.</span></p>
-      </div>
-      <div id="event-map" role="img" aria-label="World map of Bitcoin events and meetups"></div>
-      <script type="application/json" id="map-data" set:html={mapJson}></script>
-    </section>
 
     <div class="page">
     <section class="about" id="about" aria-labelledby="about-title">

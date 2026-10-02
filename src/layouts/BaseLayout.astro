@@ -9,9 +9,7 @@ const {
   map = false,
   upcomingCount = null,
   countryCount = null,
-  page = 'home',
   canonical = '',
-  mast = null,
 } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 const repo = 'https://github.com/itstomekk/awesome-bitcoin-events';
@@ -43,15 +41,15 @@ const canonicalUrl = Astro.site ? new URL(`${base}${canonical}`, Astro.site).hre
     <a class="skip-link" href="#main-content">Skip to the list</a>
     <header class="nav-mast page">
       <p class="mast-line">
-        {mast ?? (upcomingCount !== null
+        {upcomingCount !== null
           ? <><span data-upcoming-count>{upcomingCount}</span> upcoming · {countryCount} countries</>
-          : 'The community list of Bitcoin events')}
+          : 'The community list of Bitcoin events'}
       </p>
       <p class="mast-name"><a href={base}>Awesome Bitcoin Events<span class="mark">.</span></a></p>
       <nav class="mast-nav" aria-label="Primary">
         <ul>
           <li><a href={`${base}#list`}>Events</a></li>
-          <li><a href={page === 'meetups' ? `${base}meetups/` : `${base}#meetups`} aria-current={page === 'meetups' ? 'page' : undefined}>Meetups</a></li>
+          <li><a href={`${base}#meetups`}>Meetups</a></li>
           <li><a href={`${base}#atlas`}>Map</a></li>
           <li><a href={`${base}#about`}>How it works</a></li>
           <li><a href={`${repo}/blob/main/.github/CONTRIBUTING.md`}>Add an event ↗</a></li>

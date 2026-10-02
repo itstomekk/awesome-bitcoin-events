@@ -24,7 +24,6 @@ Dates and places change. Check the official page before you book travel. Being l
 | Date | Event | Location | Type |
 | --- | --- | --- | --- |
 | Oct 1–3 | [bitcoin++ Berlin, payments edition](https://btcpp.dev/berlin26) | Berlin, Germany | Conference |
-| Oct 1–11 | [Bitchill s04](https://thebitcoindistrict.com/bitchill) | Roatan, Honduras | Retreat |
 | Oct 2–4 | [Watch Out, Bitcoin! 2026](http://wobitcoin.org/) | Madrid, Spain | Conference |
 | Oct 5–6 | [Bitcoin Poland 2026](https://www.bitcoin-poland.com/) | Poznan, Poland | Conference |
 | Oct 5–6 | [Imagine IF 2026](https://www.imagineifnashville.com/) | Nashville, USA | Conference |
@@ -39,6 +38,7 @@ Dates and places change. Check the official page before you book travel. Being l
 | Oct 24 | [Bitkiwi XVII](https://kiwibitcoinguide.org/home/bitkiwi-meetups/bitkiwi-xvii-october-2026-wellington/) | Wellington, New Zealand | Meetup |
 | Oct 25–27 | [Mita Tech Talks 2026](https://2026.mitatechtalks.com/) | Punta Mita, Mexico | Conference |
 | Oct 28–29 | [Custody & Treasury Summit 2026](https://www.meetup.com/bitcoinpark/events/314966347/) | Nashville, USA | Conference |
+| Oct 29 – Nov 8 | [Bitchill s04](https://thebitcoindistrict.com/bitchill) | Roatan, Honduras | Retreat |
 | Oct 30 | [AI Startup Rodeo 2026](https://aistartuprodeo.com/) | Austin, USA | Conference |
 | Oct 30–31 | [Bitmela 2026](https://thebitmela.com/) | Jaipur, India | Festival |
 | Oct 30–31 | [LABITCONF 2026](https://www.labitconf.com/) | Buenos Aires, Argentina | Conference |

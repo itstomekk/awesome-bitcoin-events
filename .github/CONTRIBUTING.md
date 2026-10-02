@@ -86,6 +86,7 @@ npm install
 npm run check     # validate README.md + PAST.md (format, dates, order, duplicates)
 npm test          # parser tests
 npm run archive   # move events that have ended from README.md to PAST.md
+npm run event-from-issue -- 123   # turn a submission issue into a README row (--dry-run to preview)
 npm run dev       # preview the website locally
 ```
 
