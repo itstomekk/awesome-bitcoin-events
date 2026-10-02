@@ -62,23 +62,19 @@ const repo = 'https://github.com/itstomekk/awesome-bitcoin-events';
 ---
 <BaseLayout title="Awesome Bitcoin Events" description="A curated list of Bitcoin conferences, meetups, festivals and retreats around the world, each linked to its organizer." map upcomingCount={upcoming.length} countryCount={countries.length}>
   <main id="main-content">
+    <section class="atlas" id="atlas" aria-label="Map">
+      <div class="atlas-frame">
+        <div id="event-map" role="img" aria-label="World map of Bitcoin events and meetups"></div>
+        <p class="atlas-key"><span><i></i>Upcoming event</span><span><i class="past"></i>Past event</span><span><i class="meetup"></i>Meetup</span></p>
+      </div>
+      <script type="application/json" id="map-data" set:html={mapJson}></script>
+    </section>
+
     <div class="page">
     <div class="view-tabs" role="tablist" aria-label="What to show">
       <button type="button" role="tab" id="tab-events" aria-controls="list" aria-selected="true" data-view="events">Events</button>
       <button type="button" role="tab" id="tab-meetups" aria-controls="meetups" aria-selected="false" data-view="meetups">Meetups <span class="tab-count">{meetups.length}</span></button>
     </div>
-    </div>
-
-    <section class="atlas" id="atlas" aria-label="Map">
-      <div class="atlas-bar page">
-        <h2>Map</h2>
-        <p class="atlas-key"><span><i></i>Upcoming event</span><span><i class="past"></i>Past event</span><span><i class="meetup"></i>Meetup</span><span class="muted">Pins mark the city, not the venue.</span></p>
-      </div>
-      <div id="event-map" role="img" aria-label="World map of Bitcoin events and meetups"></div>
-      <script type="application/json" id="map-data" set:html={mapJson}></script>
-    </section>
-
-    <div class="page">
 
     <section id="list" role="tabpanel" aria-labelledby="tab-events">
       <div class="filters" role="search">
@@ -125,6 +121,7 @@ const repo = 'https://github.com/itstomekk/awesome-bitcoin-events';
         <p>To add an event, add one row to the right year's table and open a pull request:</p>
         <p><code>| Oct 12–15 | [Name](https://official-page) | City, Country | Conference |</code></p>
         <p>An automatic check validates the format, the dates and duplicates. Events we've seen mentioned but can't yet confirm on an official page wait in <a href={`${repo}/blob/main/TO-VERIFY.md`}>TO-VERIFY.md</a>. The <a href={`${repo}/blob/main/.github/CONTRIBUTING.md`}>contributing guide</a> has the details.</p>
+        <p class="about-cta"><a class="btn-add" href={`${repo}/issues/new?template=event-submission.yml`}>Add event</a></p>
       </div>
     </section>
     </div>
@@ -280,7 +277,8 @@ const repo = 'https://github.com/itstomekk/awesome-bitcoin-events';
     if (mapNode && window.L && mapData.length) {
       const css = getComputedStyle(document.documentElement);
       const colour = (name) => css.getPropertyValue(name).trim();
-      eventMap = window.L.map(mapNode, { scrollWheelZoom: false, worldCopyJump: true });
+      eventMap = window.L.map(mapNode, { scrollWheelZoom: false, worldCopyJump: true, zoomControl: false });
+      window.L.control.zoom({ position: 'bottomleft' }).addTo(eventMap);
       window.L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 18,
         attribution: '&copy; OpenStreetMap contributors'

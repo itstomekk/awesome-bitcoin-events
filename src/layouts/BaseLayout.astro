@@ -46,15 +46,6 @@ const canonicalUrl = Astro.site ? new URL(`${base}${canonical}`, Astro.site).hre
           : 'The community list of Bitcoin events'}
       </p>
       <p class="mast-name"><a href={base}>Awesome Bitcoin Events<span class="mark">.</span></a></p>
-      <nav class="mast-nav" aria-label="Primary">
-        <ul>
-          <li><a href={`${base}#list`}>Events</a></li>
-          <li><a href={`${base}#meetups`}>Meetups</a></li>
-          <li><a href={`${base}#atlas`}>Map</a></li>
-          <li><a href={`${base}#about`}>How it works</a></li>
-          <li><a href={`${repo}/blob/main/.github/CONTRIBUTING.md`}>Add an event ↗</a></li>
-        </ul>
-      </nav>
       <hr class="mast-rule" aria-hidden="true" />
     </header>
     <slot />

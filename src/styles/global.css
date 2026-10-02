@@ -29,9 +29,6 @@ button, input, select { font: inherit; color: inherit; }
 .mast-name { margin: var(--space-2xs) 0 0; font: 600 var(--text-display)/0.95 var(--font-display); letter-spacing: var(--tracking-display); overflow-wrap: anywhere; min-width: 0; }
 .mast-name a { text-decoration: none; }
 .mast-name .mark { color: var(--color-accent-ink); }
-.mast-nav ul { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-2xs) var(--space-md); margin: var(--space-sm) 0 0; padding: 0; list-style: none; }
-.mast-nav a { font-size: var(--text-sm); font-weight: 500; text-decoration: none; white-space: nowrap; border-bottom: var(--rule-hair) solid transparent; transition: border-color var(--dur-fast) var(--ease-out); }
-.mast-nav a:hover { border-bottom-color: var(--color-ink); }
 .mast-rule { height: 4px; margin: var(--space-sm) 0 0; border: 0; border-top: var(--rule-hair) solid var(--color-rule-2); border-bottom: var(--rule-hair) solid var(--color-rule-2); }
 
 /* Events / Meetups switch ------------------------------------------------ */
@@ -97,11 +94,18 @@ button, input, select { font: inherit; color: inherit; }
 .empty { padding: var(--space-xl) 0; color: var(--color-muted); }
 .empty button { padding: 0; background: none; border: 0; color: var(--color-accent-ink); text-decoration: underline; cursor: pointer; }
 
-/* Map: full width, with a thin label bar above --------------------------- */
-.atlas { margin-top: var(--space-xl); border-top: var(--rule-hair) solid var(--color-rule-2); }
-.atlas-bar { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-2xs) var(--space-md); padding: var(--space-sm) 0; }
-.atlas-bar h2 { font: 600 var(--text-xl)/var(--lh-tight) var(--font-display); }
-.atlas-key { display: flex; flex-wrap: wrap; gap: var(--space-2xs) var(--space-md); margin: 0; color: var(--color-muted); font: 400 var(--text-xs)/1.4 var(--font-mono); }
+/* Map: full width, first thing on the page, legend overlaid on it --------- */
+.atlas { margin-top: var(--space-md); }
+.atlas-frame { position: relative; }
+.atlas-key {
+  position: absolute; top: var(--space-xs); left: var(--space-xs); z-index: 700;
+  display: flex; flex-wrap: wrap; gap: var(--space-2xs) var(--space-sm); margin: 0;
+  padding: var(--space-2xs) var(--space-xs);
+  background: color-mix(in oklab, var(--color-paper) 90%, transparent);
+  border: var(--rule-hair) solid var(--color-rule); border-radius: var(--radius-sm);
+  color: var(--color-ink-2); font: 400 var(--text-xs)/1.4 var(--font-mono);
+  pointer-events: none;
+}
 .atlas-key i { display: inline-block; width: 0.625rem; height: 0.625rem; margin-right: var(--space-3xs); border-radius: 50%; background: var(--color-accent); vertical-align: -1px; }
 .atlas-key i.past { background: var(--color-past); }
 .atlas-key i.meetup { background: var(--color-meetup); }
@@ -116,6 +120,9 @@ button, input, select { font: inherit; color: inherit; }
 .about-body p { margin: 0 0 var(--space-sm); }
 .about-body code { padding: 0 var(--space-3xs); background: var(--color-paper-2); font: 400 var(--text-sm) var(--font-mono); }
 .about-body a { color: var(--color-accent-ink); text-underline-offset: 3px; }
+.about-body .about-cta { margin: var(--space-md) 0 0; }
+.about-body a.btn-add { display: inline-block; padding: var(--space-2xs) var(--space-md); background: var(--color-ink); color: var(--color-paper); font: 500 var(--text-sm)/1.5 var(--font-body); text-decoration: none; border-radius: var(--radius-sm); transition: background var(--dur-fast) var(--ease-out); }
+.about-body a.btn-add:hover { background: var(--color-accent-ink); }
 .foot-dense { padding: var(--space-md) 0 var(--space-xl); border-top: 4px double var(--color-rule-2); color: var(--color-muted); font: 400 var(--text-xs)/1.7 var(--font-mono); }
 .foot-dense p { max-width: 90ch; margin: 0; }
 .foot-dense a { color: var(--color-ink-2); text-underline-offset: 2px; }
