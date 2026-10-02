@@ -60,7 +60,7 @@ Archive of events from [README.md](README.md) that have already taken place. The
 | Jun 4–7 | [Bitcoin FilmFest 2026](https://bitcoinfilmfest.com) | Warsaw, Poland | Festival |
 | Jun 10 | [Bitcoin Corporate Day 2026](https://www.bitcoincorporateday.com/) | Prague, Czech Republic | Conference |
 | Jun 10–13 | [BTC Prague 2026](https://btcprague.com/) | Praha, Czech Republic | Conference |
-| Jun 17–20 | [bitcoin++ works in public](https://btcplusplus.dev/conf/nairobi) | Nairobi, Kenya | Conference |
+| Jun 17–19 | [bitcoin++ works in public](https://btcplusplus.dev/conf/nairobi) | Nairobi, Kenya | Conference |
 | Jun 18–21 | [Camp Nakamoto](https://www.campnakamoto.com/) | Lake Winnipesaukee, USA | Retreat |
 | Jun 25–26 | [The Bitcoin Rodeo 2026](https://bitcoinrodeo.com/) | Calgary, Canada | Conference |
 | Jun 26 | [BFC in NYC 2026](https://nyc.bitcoinforcorporations.com/) | New York City, USA | Conference |
@@ -151,7 +151,7 @@ Archive of events from [README.md](README.md) that have already taken place. The
 | Aug 15–16 | [₿TCHEL](https://btchel.com/) | Helsinki, Finland | Conference |
 | Aug 16–17 | [Learning Bitcoin](https://www.learningbitcoin.ca/) | Vancouver, Canada | Conference |
 | Aug 28–29 | [Bitcoin Asia](https://b.tc/conference/asia) | Hong Kong | Conference |
-| Sep 1–30 | [bitcoin++ scales](https://btcplusplus.dev/conf/istanbul) | Istanbul, Turkey | Conference |
+| Sep 3–5 | [bitcoin++ scales](https://btcplusplus.dev/conf/istanbul) | Istanbul, Turkey | Conference |
 | Sep 5 | [Bitcoin Indonesia Conference + Bitcoin Bali Week](http://bitcoinweekbali.xyz) | Bali, Indonesia | Conference |
 | Sep 27 | [Bitcoin Day Tysons](https://bitcoinday.io) | Tysons, USA | Conference |
 | Sep 30 – Oct 1 | [BTCinDC](https://btcindc.com) | Washington, USA | Conference |
@@ -162,6 +162,32 @@ Archive of events from [README.md](README.md) that have already taken place. The
 | Oct 24–25 | [Plan B Forum](https://planb.lugano.ch/planb-forum/) | Lugano, Switzerland | Conference |
 | Nov 7–8 | [Satsconf](http://satsconf.com.br/) | São Paulo, Brazil | Conference |
 | Nov 14–15 | [Adopting Bitcoin El Salvador](https://sv25.adoptingbitcoin.org) | San Salvador, El Salvador | Conference |
+| Nov 15 | [bitcoin++ local edition, Durham NC](https://btcpp.dev/conf/durham) | Durham, USA | Conference |
 | Dec 3–5 | [Africa Bitcoin Conference](https://www.afrobitcoin.org/) | Mauritius | Conference |
 | Dec 8–9 | [Bitcoin MENA 2025](https://mena.b.tc/) | Abu Dhabi, United Arab Emirates | Conference |
 | Dec 15–17 | [bitcoin++ stands sovereign](https://btcplusplus.dev/conf/taipei) | Taipei, Taiwan | Conference |
+
+## 2024
+
+| Date | Event | Location | Type |
+| --- | --- | --- | --- |
+
+| Feb 22–24 | [bitcoin++ Buenos Aires 2024, payments edition](https://btcpp.dev/conf/ba24) | Buenos Aires, Argentina | Conference |
+| May 1–4 | [bitcoin++ Austin 2024, bitcoin script edition](https://btcpp.dev/conf/atx24) | Austin, USA | Conference |
+| Oct 11–13 | [bitcoin++ Berlin 2024, e-cash edition](https://btcpp.dev/conf/berlin24) | Berlin, Germany | Conference |
+
+## 2023
+
+| Date | Event | Location | Type |
+| --- | --- | --- | --- |
+
+| Apr 28–30 | [bitcoin++ Austin 2023, layer-2 edition](https://btcpp.dev/conf/atx23) | Austin, USA | Conference |
+| Oct 6–7 | [bitcoin++ Berlin 2023, nix-edition](https://btcpp.dev/conf/berlin23) | Berlin, Germany | Conference |
+
+## 2022
+
+| Date | Event | Location | Type |
+| --- | --- | --- | --- |
+
+| Jun 2–5 | [bitcoin++ Austin 2022, learn me a bitcoin edition](https://btcpp.dev/conf/atx22) | Austin, USA | Conference |
+| Dec 10–12 | [bitcoin++ CDMX 2022, onchain privacy edition](https://btcpp.dev/conf/cdmx22) | Mexico City, Mexico | Conference |
