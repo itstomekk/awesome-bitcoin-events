@@ -9,10 +9,16 @@ const {
   map = false,
   upcomingCount = null,
   countryCount = null,
+  page = 'home',
+  canonical = '',
+  mast = null,
 } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 const repo = 'https://github.com/itstomekk/awesome-bitcoin-events';
 const built = new Date().toISOString().slice(0, 10);
+// Absolute URL of this page for search engines and link previews. Omitted when the build
+// has no configured origin (a bare local build without `site`).
+const canonicalUrl = Astro.site ? new URL(`${base}${canonical}`, Astro.site).href : null;
 ---
 <!doctype html>
 <html lang="en">
@@ -25,6 +31,9 @@ const built = new Date().toISOString().slice(0, 10);
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+    {canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
+    {canonicalUrl && <meta name="twitter:card" content="summary" />}
     <meta name="theme-color" content="#eef1f5" />
     <link rel="icon" href={`${base}favicon.svg`} type="image/svg+xml" />
     {map && <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />}
@@ -34,18 +43,18 @@ const built = new Date().toISOString().slice(0, 10);
     <a class="skip-link" href="#main-content">Skip to the list</a>
     <header class="nav-mast page">
       <p class="mast-line">
-        {upcomingCount !== null
+        {mast ?? (upcomingCount !== null
           ? <><span data-upcoming-count>{upcomingCount}</span> upcoming · {countryCount} countries</>
-          : 'The community list of Bitcoin events'}
+          : 'The community list of Bitcoin events')}
       </p>
       <p class="mast-name"><a href={base}>Awesome Bitcoin Events<span class="mark">.</span></a></p>
       <nav class="mast-nav" aria-label="Primary">
         <ul>
           <li><a href={`${base}#list`}>Events</a></li>
-          <li><a href={`${base}#meetups`}>Meetups</a></li>
+          <li><a href={page === 'meetups' ? `${base}meetups/` : `${base}#meetups`} aria-current={page === 'meetups' ? 'page' : undefined}>Meetups</a></li>
           <li><a href={`${base}#atlas`}>Map</a></li>
           <li><a href={`${base}#about`}>How it works</a></li>
-          <li><a href={`${repo}/blob/main/CONTRIBUTING.md`}>Add an event ↗</a></li>
+          <li><a href={`${repo}/blob/main/.github/CONTRIBUTING.md`}>Add an event ↗</a></li>
         </ul>
       </nav>
       <hr class="mast-rule" aria-hidden="true" />
@@ -57,7 +66,7 @@ const built = new Date().toISOString().slice(0, 10);
         <a href={`${repo}/blob/main/PAST.md`}>PAST.md</a>, the only places events are edited.
         List content dedicated to the public domain under CC0 1.0. Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors.
         Listing is not endorsement: check the organizer's page before you travel.
-        Corrections and additions: <a href={`${repo}/blob/main/CONTRIBUTING.md`}>CONTRIBUTING.md</a> or <a href={`${repo}/issues/new?template=event-submission.yml`}>the submission form</a>.
+        Corrections and additions: <a href={`${repo}/blob/main/.github/CONTRIBUTING.md`}>CONTRIBUTING.md</a> or <a href={`${repo}/issues/new?template=event-submission.yml`}>the submission form</a>.
       </p>
     </footer>
   </body>

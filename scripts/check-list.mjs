@@ -39,7 +39,7 @@ for (const meetup of meetupResult.meetups) {
 warnings.forEach((warning) => console.warn(`warning  ${warning}`));
 if (errors.length) {
   errors.forEach((error) => console.error(`error    ${error}`));
-  console.error(`\n${errors.length} error(s). See CONTRIBUTING.md for the list format.`);
+  console.error(`\n${errors.length} error(s). See .github/CONTRIBUTING.md for the list format.`);
   process.exit(1);
 }
 console.log(`OK: ${events.length} events (${events.filter((e) => e.file === 'README.md').length} in README.md), ${meetupResult.meetups.length} meetups, ${warnings.length} warning(s).`);

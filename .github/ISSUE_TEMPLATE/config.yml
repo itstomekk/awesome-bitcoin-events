@@ -7,5 +7,5 @@ contact_links:
     url: https://itstomekk.github.io/awesome-bitcoin-events/
     about: The same list, with search and a map.
   - name: Read the contribution guide
-    url: https://github.com/itstomekk/awesome-bitcoin-events/blob/main/CONTRIBUTING.md
+    url: https://github.com/itstomekk/awesome-bitcoin-events/blob/main/.github/CONTRIBUTING.md
     about: The one-line event format and what belongs in the list.

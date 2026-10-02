@@ -5,18 +5,18 @@
 // validator and the `npm run archive` helper all use this one parser, so the list
 // format is defined in exactly one place.
 //
-// Format (see CONTRIBUTING.md): a table per month, under a year heading.
+// Format (see .github/CONTRIBUTING.md): one table per year.
 //
 //   ## 2026                                  <- year heading (4 digits)
-//   ### October                              <- month heading (full English month name)
 //
 //   | Date | Event | Location | Type |
 //   | --- | --- | --- | --- |
 //   | Oct 12–15 | [TABConf 8](https://tabconf.com/) | Atlanta, USA | Conference |
 //   | Oct 29 – Nov 1 | [LABITCONF 2026](https://www.labitconf.com/) | Buenos Aires, Argentina | Conference |
 //
-// Only table rows under a year heading are read as events; everything else in the
-// file (intro, contents, contributing…) is ignored.
+// The month lives in the date cell, so there are no month headings. Only table rows
+// under a year heading are read as events; everything else in the file (intro,
+// contents, contributing…) is ignored.
 
 export const MONTHS = [
   'January', 'February', 'March', 'April', 'May', 'June',
@@ -24,7 +24,7 @@ export const MONTHS = [
 ];
 const MONTH_ABBR = MONTHS.map((month) => month.slice(0, 3));
 
-// The allowed event types. Add a new one here (and in CONTRIBUTING.md) if needed.
+// The allowed event types. Add a new one here (and in .github/CONTRIBUTING.md) if needed.
 export const EVENT_TYPES = [
   'Conference', 'Meetup', 'Festival', 'Retreat', 'Unconference', 'Hackathon', 'Workshop',
 ];
@@ -96,23 +96,18 @@ export function parseList(text, file = 'README.md') {
   const events = [];
   const errors = [];
   let year = null;
-  let month = null;
   text.split(/\r?\n/).forEach((raw, index) => {
     const lineNo = index + 1;
     const line = raw.trimEnd();
     const fail = (message) => errors.push(`${file}:${lineNo}: ${message}`);
 
     const yearMatch = line.match(YEAR_HEADING_RE);
-    if (yearMatch) { year = Number(yearMatch[1]); month = null; return; }
-    if (OTHER_H2_RE.test(line)) { year = null; month = null; return; }
+    if (yearMatch) { year = Number(yearMatch[1]); return; }
+    if (OTHER_H2_RE.test(line)) { year = null; return; }
     if (year === null) return; // outside the event sections
 
     const monthMatch = line.match(MONTH_HEADING_RE);
-    if (monthMatch) {
-      month = MONTHS.indexOf(monthMatch[1]);
-      if (month < 0) fail(`"${monthMatch[1]}" is not a month name (use e.g. "### October")`);
-      return;
-    }
+    if (monthMatch) return fail(`month headings are gone - one table per year, so delete the "### ${monthMatch[1]}" line`);
     if (line.startsWith('- ')) return fail('events are table rows now: | Oct 12–15 | [Name](https://…) | City, Country | Type |');
     if (!line.startsWith('|') || HEADER_ROW_RE.test(line) || DIVIDER_ROW_RE.test(line)) return;
 
@@ -120,10 +115,8 @@ export function parseList(text, file = 'README.md') {
     if (!row) return fail('row should be: | Oct 12–15 | [Event name](https://official-url) | City, Country | Type |');
     const { dates, title, url, where, type } = row.groups;
     if (!httpUrl(url)) return fail(`"${url}" is not an http(s) link`);
-    if (month === null) return fail('event is not under a month heading (e.g. "### October")');
     const parsed = parseDates(dates, year);
     if (parsed.error) return fail(parsed.error);
-    if (parsed.startMonth !== month) return fail(`starts in ${MONTHS[parsed.startMonth]} but is listed under ${MONTHS[month]}`);
     if (!EVENT_TYPES.includes(type)) return fail(`type "${type}" should be one of: ${EVENT_TYPES.join(', ')}`);
 
     events.push({
@@ -143,7 +136,7 @@ export function parseList(text, file = 'README.md') {
   return { events, errors };
 }
 
-// Extra list-wide checks: duplicates and date order within each month.
+// Extra list-wide checks: duplicates and date order within each year.
 export function checkEvents(events) {
   const errors = [];
   const seen = new Map();
@@ -155,35 +148,30 @@ export function checkEvents(events) {
   for (let i = 1; i < events.length; i += 1) {
     const previous = events[i - 1];
     const current = events[i];
-    const sameMonth = previous.file === current.file && previous.start.slice(0, 7) === current.start.slice(0, 7);
-    if (sameMonth && current.start < previous.start) {
+    const sameYear = previous.file === current.file && previous.start.slice(0, 4) === current.start.slice(0, 4);
+    if (sameYear && current.start < previous.start) {
       errors.push(`${current.file}:${current.line}: "${current.title}" should come before "${previous.title}" (sort by start date)`);
     }
   }
   return errors;
 }
 
-// Renders events as year/month sections with one table per month. Used by
-// scripts/archive-past.mjs to rewrite the event part of README.md / PAST.md.
+// Renders events as one table per year. Used by scripts/archive-past.mjs to rewrite
+// the event part of README.md / PAST.md.
 export function renderSections(events, { newestYearFirst = false } = {}) {
   const byYear = new Map();
   for (const event of [...events].sort((a, b) => a.start.localeCompare(b.start) || a.end.localeCompare(b.end) || a.title.localeCompare(b.title))) {
     const year = event.start.slice(0, 4);
-    const month = Number(event.start.slice(5, 7)) - 1;
-    if (!byYear.has(year)) byYear.set(year, new Map());
-    if (!byYear.get(year).has(month)) byYear.get(year).set(month, []);
-    byYear.get(year).get(month).push(event);
+    if (!byYear.has(year)) byYear.set(year, []);
+    byYear.get(year).push(event);
   }
   const years = [...byYear.keys()].sort();
   if (newestYearFirst) years.reverse();
   const lines = [];
   for (const year of years) {
-    lines.push(`## ${year}`, '');
-    for (const [month, monthEvents] of byYear.get(year)) {
-      lines.push(`### ${MONTHS[month]}`, '', TABLE_HEADER, TABLE_DIVIDER);
-      for (const e of monthEvents) lines.push(`| ${e.dateLabel} | [${e.title}](${e.url}) | ${e.where} | ${e.type} |`);
-      lines.push('');
-    }
+    lines.push(`## ${year}`, '', TABLE_HEADER, TABLE_DIVIDER);
+    for (const e of byYear.get(year)) lines.push(`| ${e.dateLabel} | [${e.title}](${e.url}) | ${e.where} | ${e.type} |`);
+    lines.push('');
   }
   return lines;
 }

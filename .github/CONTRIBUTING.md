@@ -1,24 +1,26 @@
 # Contributing
 
-Thanks for helping keep Awesome Bitcoin Events useful. The whole list lives in **[README.md](README.md)**. That file is the source of truth, and the [website](https://itstomekk.github.io/awesome-bitcoin-events/) is built from it automatically.
+Thanks for helping keep Awesome Bitcoin Events useful. The whole list lives in **[README.md](../README.md)**. That file is the source of truth, and the [website](https://itstomekk.github.io/awesome-bitcoin-events/) is built from it automatically.
 
 ## Add an event (2 minutes, no tools needed)
 
-1. Open [README.md](README.md) on GitHub and click the ✏️ pencil icon.
-2. Find the right `## Year` and `### Month` heading and add one row to that month's table, in date order:
+1. Open [README.md](../README.md) on GitHub and click the ✏️ pencil icon.
+2. Find the right `## Year` heading and add one row to that year's table, in date order:
 
    ```markdown
    | Oct 12–15 | [Event name](https://official-event-page) | City, Country | Conference |
    ```
 
-   New month? Add the heading plus the two table header lines:
+   New year? Add the heading plus the two table header lines:
 
    ```markdown
-   ### November
+   ## 2028
 
    | Date | Event | Location | Type |
    | --- | --- | --- | --- |
    ```
+
+   One table per year. Don't add month headings - the month lives in the Date column.
 
 3. Click **Propose changes**, then **Create pull request**. An automatic check tells you, with the line number, if something is off.
 
@@ -39,11 +41,11 @@ Don't want to edit Markdown? Use the **[event submission form](https://github.co
 
 Don't use a `|` character inside a cell.
 
-Put the event under the month it **starts** in. Within a month, keep lines sorted by start date. An event running from Dec 30 to Jan 2 goes under `### December` as `Dec 30 – Jan 2`.
+Put the event under the year it **starts** in, and keep the table sorted by start date. An event running from Dec 30 to Jan 2 sits in that year's table as `Dec 30 – Jan 2`.
 
 ## Meetups
 
-Recurring meetups live in [MEETUPS.md](MEETUPS.md), one table per region (Europe, North America, Latin America, Asia, Oceania, Africa, Middle East, Online):
+Recurring meetups live in [MEETUPS.md](../MEETUPS.md), one table per region (Europe, North America, Latin America, Asia, Oceania, Africa, Middle East, Online):
 
 ```markdown
 | Prague, Czech Republic | [Bitcoin Prague](https://official-link) | Monthly meetup |
@@ -55,7 +57,7 @@ The columns are Where (`City, Country` or `Online`), Meetup (`[Name](link)`, pre
 
 - Bitcoin-focused events, or events with a substantial Bitcoin track.
 - A working official page that confirms the dates and place.
-- **No official page yet?** Add the event to [TO-VERIFY.md](TO-VERIFY.md) instead. Include where you saw it.
+- **No official page yet?** Add the event to [TO-VERIFY.md](../TO-VERIFY.md) instead. Include where you saw it.
 
 ## Where to find events
 

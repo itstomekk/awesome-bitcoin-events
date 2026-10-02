@@ -12,11 +12,11 @@ README.md is the only source of truth. Never edit the website or generated files
 ## Add an event
 
 1. Confirm it on the **organizer's own page** (dates, city). If there's no official page, add a row to `TO-VERIFY.md` instead and stop.
-2. Add one table row under `## <year>` / `### <Month the event starts>` in README.md, in start-date order:
+2. Add one table row under `## <year>` in README.md, in start-date order:
    `| Oct 12–15 | [Name](https://official-url) | City, Country | Conference |`
-   A new month needs the heading plus `| Date | Event | Location | Type |` and `| --- | --- | --- | --- |`.
+   One table per year. Do not add month headings - the month lives in the Date column, and `npm run check` rejects `### Month` lines. A new year needs the heading plus `| Date | Event | Location | Type |` and `| --- | --- | --- | --- |`.
    Types: Conference, Meetup, Festival, Retreat, Unconference, Hackathon, Workshop.
-   Missing year/month heading? Add it, and add the year to `## Contents`.
+   Missing year heading? Add it, and add the year to `## Contents`.
 3. If `City, Country` is new, add `"City, Country": [lat, lon]` to `data/places.json` (OpenStreetMap coordinates, 5 decimals).
 4. Run `npm run check && npm test`. Errors name the file and line.
 5. When promoting from TO-VERIFY.md, delete its row in the same commit.

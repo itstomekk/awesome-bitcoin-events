@@ -1,0 +1,22 @@
+---
+// Region-by-region list of recurring meetups. Shared by the home page's Meetups tab and
+// by /meetups, so MEETUPS.md is rendered in exactly one place.
+// `meetups` and `regions` come from loadMeetups() in src/lib/load-list.js.
+const { meetups, regions } = Astro.props;
+---
+<div class="index">
+  {regions.map((region) => (
+    <section class="month">
+      <div class="month-label"><h2>{region}</h2><span>{meetups.filter((m) => m.region === region).length} meetups</span></div>
+      <ol class="rows">
+        {meetups.filter((m) => m.region === region).map((m) => (
+          <li class="row meetup-row" id={m.id}>
+            <span class="row-date">{m.schedule}</span>
+            <span class="row-title"><a href={m.url} target="_blank" rel="noreferrer">{m.name}</a><span class="arrow" aria-hidden="true"> ↗</span></span>
+            <span class="row-where">{m.where}</span>
+          </li>
+        ))}
+      </ol>
+    </section>
+  ))}
+</div>

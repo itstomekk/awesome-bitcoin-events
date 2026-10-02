@@ -8,6 +8,7 @@
 // visitor's current date, so the site stays correct between deploys.
 import BaseLayout from '../layouts/BaseLayout.astro';
 import EventRow from '../components/EventRow.astro';
+import MeetupList from '../components/MeetupList.astro';
 import { loadEvents, loadPlaces, loadMeetups, loadDetails } from '../lib/load-list.js';
 import { MONTHS } from '../lib/awesome-list.js';
 
@@ -98,23 +99,8 @@ const repo = 'https://github.com/itstomekk/awesome-bitcoin-events';
     </section>
 
     <section id="meetups" role="tabpanel" aria-labelledby="tab-meetups" hidden>
-      <p class="meetups-intro">Recurring Bitcoin meetups: turn up, meet people, learn. Times change, so check the link before you go.</p>
-      <div class="index">
-        {meetupRegions.map((region) => (
-          <section class="month">
-            <div class="month-label"><h2>{region}</h2><span>{meetups.filter((m) => m.region === region).length} meetups</span></div>
-            <ol class="rows">
-              {meetups.filter((m) => m.region === region).map((m) => (
-                <li class="row meetup-row" id={m.id}>
-                  <span class="row-date">{m.schedule}</span>
-                  <span class="row-title"><a href={m.url} target="_blank" rel="noreferrer">{m.name}</a><span class="arrow" aria-hidden="true"> ↗</span></span>
-                  <span class="row-where">{m.where}</span>
-                </li>
-              ))}
-            </ol>
-          </section>
-        ))}
-      </div>
+      <p class="meetups-intro">Recurring Bitcoin meetups: turn up, meet people, learn. Times change, so check the link before you go. <a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '/')}meetups/`}>Open the meetups page ↗</a></p>
+      <MeetupList meetups={meetups} regions={meetupRegions} />
     </section>
     </div>
 
@@ -132,9 +118,9 @@ const repo = 'https://github.com/itstomekk/awesome-bitcoin-events';
       <h2 id="about-title">How it works</h2>
       <div class="about-body">
         <p>The list lives in <a href={`${repo}/blob/main/README.md`}>README.md</a> on GitHub, as a classic awesome list with one table row per event. This page is generated from that file, so there's no database and no second copy to keep in sync. Recurring meetups live in <a href={`${repo}/blob/main/MEETUPS.md`}>MEETUPS.md</a>, and the short descriptions come from the organizers' own pages.</p>
-        <p>To add an event, add one row to the right month's table and open a pull request:</p>
+        <p>To add an event, add one row to the right year's table and open a pull request:</p>
         <p><code>| Oct 12–15 | [Name](https://official-page) | City, Country | Conference |</code></p>
-        <p>An automatic check validates the format, the dates and duplicates. Events we've seen mentioned but can't yet confirm on an official page wait in <a href={`${repo}/blob/main/TO-VERIFY.md`}>TO-VERIFY.md</a>. The <a href={`${repo}/blob/main/CONTRIBUTING.md`}>contributing guide</a> has the details.</p>
+        <p>An automatic check validates the format, the dates and duplicates. Events we've seen mentioned but can't yet confirm on an official page wait in <a href={`${repo}/blob/main/TO-VERIFY.md`}>TO-VERIFY.md</a>. The <a href={`${repo}/blob/main/.github/CONTRIBUTING.md`}>contributing guide</a> has the details.</p>
       </div>
     </section>
     </div>

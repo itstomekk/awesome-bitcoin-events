@@ -2,7 +2,7 @@
 
 Recurring Bitcoin meetups around the world, grouped by region. Meetups change often, so check the link before you go.
 
-Missing your local meetup? Add a row to the right region's table and open a pull request. The format is in [CONTRIBUTING.md](CONTRIBUTING.md#meetups). One-off events belong in [README.md](README.md).
+Missing your local meetup? Add a row to the right region's table and open a pull request. The format is in [CONTRIBUTING.md](.github/CONTRIBUTING.md#meetups). One-off events belong in [README.md](README.md).
 
 <!--lint disable table-pipe-alignment-->
 
