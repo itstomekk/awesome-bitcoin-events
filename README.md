@@ -93,6 +93,7 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 | Linz, Austria | [Bitcoin Club Linz](https://www.bitcoin-club-linz.at/) | Monthly Stammtisch |
 | Vienna, Austria | [Bitcoin Austria](https://www.meetup.com/bitcoin-austria/) | Meetup group |
 | Vienna, Austria | [BitcoinWalk Vienna](https://bitcoinwalk.org/vienna/) | Weekly walk |
+| Antwerp, Belgium | [Belgian Bitcoin Embassy Meetup](https://belgianbitcoinembassy.org/en/) | Monthly Bitcoin meetup and education |
 | Ghent, Belgium | [Bitcoin P2P Gent](https://www.meetup.com/p2p-gent) | Meetup group |
 | Nivelles, Belgium | [BeCrypto Nivelles](https://www.meetup.com/Becrypto) | Meetup group |
 | České Budějovice, Czech Republic | [Jednadvacet](https://jednadvacet.org/) | City chapters |
@@ -112,10 +113,13 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 | Leipzig, Germany | [Bitcoin Leipzig](https://www.meetup.com/leipziger-bitcoin-stammtisch/) | Meetup group |
 | Leipzig, Germany | [BitcoinWalk Leipzig](https://bitcoinwalk.org/leipzig/) | Weekly walk |
 | Munich, Germany | [Bitcoin Munich](https://www.meetup.com/bitcoin-munich/) | Meetup group |
+| Regensburg, Germany | [Einundzwanzig Regensburg](https://www.bitcoin-regensburg.de/) | Monthly Bitcoin-only Stammtisch |
+| Rostock, Germany | [Einundzwanzig Rostock](https://21rostock.de/) | Bitcoin community with regular local meetups |
 | Schwerin, Germany | [Bitcoin Meetup Schwerin](https://21schwerin.de/) | Monthly meetup |
 | Athens, Greece | [BitDevs Athens](https://bitdevs-athens.com/) | Socratic Seminar |
 | Athens, Greece | [Greek Bitcoin Network](https://www.meetup.com/blockchaingreece-0) | Meetup group |
 | Athens, Greece | [BitcoinWalk Athens](https://bitcoinwalk.org/athens/) | Weekly walk |
+| Miskolc, Hungary | [Bitcoin Miskolc](https://bitcoinmiskolc.hu/) | Bitcoin community with recurring local meetups |
 | Rome, Italy | [Bitcoin Italia Network](https://bitcoinitalianetwork.com/) | Meetups in several cities |
 | Podgorica, Montenegro | [Bitcoin Network of Montenegro](https://www.meetup.com/bitcoin-network-of-montenegro-meetups/) | Meetup group |
 | Amsterdam, Netherlands | [BitDevs Amsterdam](https://bitdevsamsterdam.org/) | Socratic Seminar |
@@ -145,6 +149,8 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 | Manchester, UK | [BitcoinWalk Manchester](https://bitcoinwalk.org/manchester/) | Weekly walk |
 | Newcastle upon Tyne, UK | [Newcastle Bitcoin Meetup](https://www.meetup.com/newcastlebitcoinmeetup/) | Meetup group |
 | Northampton, UK | [BitcoinWalk Northampton](https://bitcoinwalk.org/northampton/) | Weekly walk |
+| Nottingham, UK | [Bitcoin Nottingham Meetup](https://www.bitcoinnottingham.org/meetups/) | Bitcoin community meetups and workshops |
+| Southend, UK | [Bitcoin Essex](https://bitcoinessex.co.uk/) | Monthly meetups around Essex, including Southend |
 
 ### North America
 
@@ -175,7 +181,9 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 | Boulder, USA | [Boulder Bitcoin](https://www.meetup.com/boulder-bitcoiners/) | Meetup group |
 | Boulder, USA | [BitcoinWalk Boulder](https://bitcoinwalk.org/boulder/) | Weekly walk |
 | Bozeman, USA | [Bozeman Bitcoin](https://www.meetup.com/bozeman-bitcoin-meetup/) | Meetup group |
+| Charleston, USA | [Charleston Bitcoin Meetup](https://bitcoincharleston.org/) | Monthly Bitcoin social meetup |
 | Charlotte, USA | [Bitcoin Charlotte](https://www.meetup.com/bitcoincharlotte/) | Meetup group |
+| Chattanooga, USA | [Bitcoin Chatt](https://bitcoinchatt.org) | Bitcoin meetup and community |
 | Chicago, USA | [BitDevs Chicago](https://chibitdevs.org/) | Socratic Seminar |
 | Dallas, USA | [Dallas Bitcoin](https://www.meetup.com/dallas-bitcoin-meetup-group) | Meetup group |
 | Denver, USA | [Bitcoin & Beer Denver](https://www.meetup.com/Bitcoin-and-Beer/) | Meetup group |
@@ -228,6 +236,7 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 | Seattle, USA | [BitDevs Seattle](https://github.com/reardencode/seattle_bitdevs) | Socratic Seminar |
 | Seattle, USA | [BitcoinWalk Seattle](https://bitcoinwalk.org/seattle/) | Weekly walk |
 | St. Charles, USA | [St. Charles Bitcoin](https://www.meetup.com/saint-charles-bitcoin-meetup-group/) | Meetup group |
+| Streetsboro, USA | [Cleveland Bitcoin Monthly Meetup](https://ClevelandBitcoin.org) | Monthly meetup alternating Cleveland and Streetsboro |
 | Tampa, USA | [BitDevs Tampa](https://www.bitcoinbay.foundation/bitdevs) | Socratic Seminar |
 | Topeka, USA | [Topeka Bitcoin](https://www.meetup.com/topeka-bitcoin-meet-up-group) | Meetup group |
 | Washington, USA | [Bitcoin District DC](https://www.meetup.com/bitcoin-district) | Meetup group |
@@ -239,6 +248,7 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 | --- | --- | --- |
 | Buenos Aires, Argentina | [BitDevs Buenos Aires](https://www.bitdevsba.org/) | Socratic Seminar |
 | Buenos Aires, Argentina | [BitcoinWalk Buenos Aires](https://bitcoinwalk.org/buenos-aires/) | Weekly walk |
+| Buenos Aires, Argentina | [La Crypta](https://www.lacrypta.ar/) | Bitcoin community with weekly coworking and gatherings |
 | Belo Horizonte, Brazil | [BitDevs Belo Horizonte](https://bhbitdevs.org/) | Socratic Seminar |
 | Brasília, Brazil | [BitDevs Brasília](https://bitdevs.bsb.br) | Socratic Seminar |
 | Curitiba, Brazil | [BitDevs Curitiba](https://curitibabitdevs.org/) | Socratic Seminar |
@@ -256,6 +266,7 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 | Guadalajara, Mexico | [BitcoinWalk Guadalajara](https://bitcoinwalk.org/guadalajara/) | Weekly walk |
 | Mexico City, Mexico | [BitDevs Mexico City](https://cdmxbitdevs.org) | Socratic Seminar |
 | Asunción, Paraguay | [Bitcoin Paraguay](https://bitcoinparaguay.org/) | BitDevs + monthly meetup |
+| Lima, Peru | [Orange Pill Peru](https://www.orangepillperu.com) | Bitcoin-only community with monthly Lima meetups |
 | San Juan, Puerto Rico | [BitDevs San Juan](https://sanjuanbitdevs.org/) | Socratic Seminar |
 
 ### Asia

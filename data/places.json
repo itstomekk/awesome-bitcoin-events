@@ -826,5 +826,15 @@
   "České Budějovice, Czech Republic": [
     48.97474,
     14.47429
-  ]
+  ],
+  "Antwerp, Belgium": [51.22111, 4.39971],
+  "Charleston, USA": [32.78844, -79.93993],
+  "Chattanooga, USA": [35.04572, -85.30949],
+  "Lima, Peru": [-12.04598, -77.03059],
+  "Miskolc, Hungary": [48.10306, 20.79004],
+  "Nottingham, UK": [52.95342, -1.14965],
+  "Regensburg, Germany": [49.01953, 12.09749],
+  "Rostock, Germany": [54.08867, 12.14002],
+  "Southend, UK": [51.53882, 0.71281],
+  "Streetsboro, USA": [41.23922, -81.34594]
 }
