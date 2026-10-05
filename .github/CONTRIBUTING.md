@@ -75,6 +75,8 @@ Use these to discover events, then confirm each one on the organizer's own page 
 - [Bitcoin Events South Africa](https://bitcoinevents.co.za/): South African events.
 - [Satlantis](https://www.satlantis.io/) and [Plektos](https://plektos.app): Nostr-based event calendars.
 - [Bitcoin Grove](https://btcgrove.com/#events): Miami Bitcoin community hub. Its official site links to the [₿Grove calendar](https://luma.com/bitcoingrove) and [Meetup group](https://www.meetup.com/bitcoin-grove/), covering ₿uilder Miami, Miami BitDevs and member events. Use those calendars for discovery; published rows still link to the group's own page, such as [₿uilder Miami](https://buildermiami.xyz/).
+- [Einundzwanzig portal](https://portal.einundzwanzig.space/): official directory of the German-speaking Einundzwanzig chapters, with a public API at `/api/meetups` (city, country, coordinates, `next_event`). A chapter with a dated upcoming event can link to its portal page; chapters with no scheduled event stay out of the list until they have one.
+- [2140 Meetups](https://2140meetups.com/): Spanish-language registry of local Bitcoin communities. A community page can be linked when it shows a meetup post from the last 90 days; registry entries with only a Telegram link are discovery leads.
 
 
 
