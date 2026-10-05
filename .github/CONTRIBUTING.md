@@ -47,6 +47,8 @@ Put the event under the year it **starts** in, and keep the table sorted by star
 
 Recurring meetups live in the same file, in the [Meetups](../README.md#meetups) section, one table per region (Europe, North America, Latin America, Asia, Oceania, Africa, Middle East, Online):
 
+If one meetup is run on more than one official page (for example its own Meetup group and the Einundzwanzig portal), keep one row and put the extra pages after the description in the About column: `Monthly Stammtisch · [Einundzwanzig portal](https://…)`. The first link stays the main one.
+
 ```markdown
 | Prague, Czech Republic | [Bitcoin Prague](https://official-link) | Monthly meetup |
 ```

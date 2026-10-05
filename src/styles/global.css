@@ -68,6 +68,7 @@ button, input, select { font: inherit; color: inherit; }
 .row-title a { text-decoration: none; background-image: linear-gradient(var(--color-accent), var(--color-accent)); background-size: 0 2px; background-position: 0 100%; background-repeat: no-repeat; transition: background-size var(--dur-base) var(--ease-out); }
 .row-title a:hover, .row-title a:focus-visible { background-size: 100% 2px; }
 .row-title .arrow { color: var(--color-muted); font-weight: 400; }
+.row-title .also { color: var(--color-muted); font-weight: 400; font-size: var(--text-sm, 0.875em); }
 .row-where { min-width: 0; color: var(--color-ink-2); font-size: var(--text-sm); }
 .row-type { color: var(--color-muted); font: 400 var(--text-xs)/1.4 var(--font-mono); letter-spacing: var(--tracking-label); text-transform: uppercase; text-align: right; }
 .row-flag { display: inline-block; margin-left: var(--space-2xs); padding: 0 var(--space-3xs); color: var(--color-accent-ink); border: var(--rule-hair) solid var(--color-accent); border-radius: var(--radius-sm); font: 500 var(--text-xs)/1.5 var(--font-mono); letter-spacing: var(--tracking-label); text-transform: uppercase; vertical-align: 0.15em; }

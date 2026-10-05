@@ -192,6 +192,9 @@ export function renderSections(events, { newestYearFirst = false } = {}) {
 export const MEETUP_REGIONS = [
   'Europe', 'North America', 'Latin America', 'Asia', 'Oceania', 'Africa', 'Middle East', 'Online',
 ];
+// A meetup that lives on more than one official page keeps the extra pages in its About cell:
+// "Monthly Stammtisch · [Einundzwanzig portal](https://…)". The first link stays the main one.
+const MEETUP_EXTRA_LINK_RE = /\s*[·•]?\s*\[([^\]]+)\]\(([^\s)]+)\)/g;
 const MEETUP_ROW_RE = /^\|\s*(?<where>[^|]+?)\s*\|\s*\[(?<name>[^\]]+)\]\((?<url>[^\s)]+)\)\s*\|\s*(?<schedule>[^|]+?)\s*\|$/;
 
 export function parseMeetups(text, file = 'README.md') {
@@ -222,9 +225,14 @@ export function parseMeetups(text, file = 'README.md') {
     if (region === null || !line.startsWith('|') || /^\|\s*Where\s*\|/i.test(line) || DIVIDER_ROW_RE.test(line)) return;
     const row = line.match(MEETUP_ROW_RE);
     if (!row) return fail('row should be: | City, Country | [Meetup name](https://…) | Monthly |');
-    const { where, name, url, schedule } = row.groups;
+    const { where, name, url } = row.groups;
+    const links = [...row.groups.schedule.matchAll(MEETUP_EXTRA_LINK_RE)].map((m) => ({ label: m[1], url: m[2] }));
+    const schedule = row.groups.schedule.replace(MEETUP_EXTRA_LINK_RE, '').replace(/\s*[·•]\s*$/, '').trim();
     if (!httpUrl(url)) return fail(`"${url}" is not an http(s) link`);
-    meetups.push({ id: `meetup-${slugify(name)}-${slugify(where)}`, name, url, where, schedule, region, ...splitLocation(where), file, line: index + 1 });
+    if (!schedule) return fail('About cell needs a short description before any extra links');
+    const badLink = links.find((l) => !httpUrl(l.url));
+    if (badLink) return fail(`"${badLink.url}" is not an http(s) link`);
+    meetups.push({ id: `meetup-${slugify(name)}-${slugify(where)}`, name, url, links, where, schedule, region, ...splitLocation(where), file, line: index + 1 });
   });
   return { meetups, errors };
 }

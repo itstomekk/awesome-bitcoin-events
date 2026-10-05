@@ -150,6 +150,17 @@ test('parses meetups by region and reports bad rows', () => {
   assert.match(errors[1], /not a region/);
 });
 
+test('a meetup row can carry extra official links in the About cell', () => {
+  const text = '## Meetups\n\n### Europe\n\n| Where | Meetup | About |\n| --- | --- | --- |\n| Munich, Germany | [Bitcoin Munich](https://a.example/) | Monthly Stammtisch · [Einundzwanzig portal](https://b.example/x) |\n| Berlin, Germany | [Bitcoin Berlin](https://c.example/) | Stammtisch |\n| Hamburg, Germany | [Bad](https://d.example/) | [Only link](https://e.example/) |\n';
+  const { meetups, errors } = parseMeetups(text);
+  assert.equal(meetups.length, 2);
+  assert.equal(meetups[0].schedule, 'Monthly Stammtisch');
+  assert.deepEqual(meetups[0].links, [{ label: 'Einundzwanzig portal', url: 'https://b.example/x' }]);
+  assert.deepEqual(meetups[1].links, []);
+  assert.equal(errors.length, 1);
+  assert.match(errors[0], /needs a short description/);
+});
+
 test('the real README meetup section is valid', () => {
   const { meetups, errors } = loadMeetups();
   assert.deepEqual(errors, []);

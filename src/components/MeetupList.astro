@@ -12,7 +12,7 @@ const { meetups, regions } = Astro.props;
         {meetups.filter((m) => m.region === region).map((m) => (
           <li class="row meetup-row" id={m.id}>
             <span class="row-date">{m.schedule}</span>
-            <span class="row-title"><a href={m.url} target="_blank" rel="noreferrer">{m.name}</a><span class="arrow" aria-hidden="true"> ↗</span></span>
+            <span class="row-title"><a href={m.url} target="_blank" rel="noreferrer">{m.name}</a><span class="arrow" aria-hidden="true"> ↗</span>{(m.links ?? []).map((l) => (<span class="also"> · <a href={l.url} target="_blank" rel="noreferrer">{l.label}</a></span>))}</span>
             <span class="row-where">{m.where}</span>
           </li>
         ))}
