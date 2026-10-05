@@ -74,6 +74,7 @@ Use these to discover events, then confirm each one on the organizer's own page 
 - [Bitcoin Bundesverband](https://bitcoin-bundesverband.de/en/events/): German events.
 - [Bitcoin Events South Africa](https://bitcoinevents.co.za/): South African events.
 - [Satlantis](https://www.satlantis.io/) and [Plektos](https://plektos.app): Nostr-based event calendars.
+- [Bitcoin Grove](https://btcgrove.com/#events): Miami Bitcoin community hub. Its official site links to the [₿Grove calendar](https://luma.com/bitcoingrove) and [Meetup group](https://www.meetup.com/bitcoin-grove/), covering ₿uilder Miami, Miami BitDevs and member events. Use those calendars for discovery; published rows still link to the group's own page, such as [₿uilder Miami](https://buildermiami.xyz/).
 
 
 

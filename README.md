@@ -201,6 +201,7 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 | Miami, USA | [Bit Miami](https://meetu.ps/c/4Xp7m/sCFz6/a) | Meetup group |
 | Miami, USA | [BitDevs Miami](https://miamibitdevs.org/) | Socratic Seminar |
 | Miami, USA | [BitcoinWalk Miami](https://bitcoinwalk.org/miami/) | Weekly walk |
+| Miami, USA | [₿uilder Miami](https://buildermiami.xyz/) | Monthly Bitcoin product, design and AI meetup |
 | Midland, USA | [Midland Texas Bitcoiners](https://www.meetup.com/bitcoin-midland/) | Meetup group |
 | Minneapolis, USA | [BitDevs Minneapolis](https://bitdevsmpls.org) | Socratic Seminar |
 | Nashville, USA | [Bitcoin Park](https://www.meetup.com/bitcoinpark/) | Meetup group |
