@@ -45,7 +45,7 @@ Put the event under the year it **starts** in, and keep the table sorted by star
 
 ## Meetups
 
-Recurring meetups live in the same file, in the [Meetups](../README.md#meetups) section, one table per region (Europe, North America, Latin America, Asia, Oceania, Africa, Middle East, Online):
+Recurring meetups live in the same file, in the [Meetups](../README.md#meetups) section, one table per region (Europe, North America, Latin America, Asia, Oceania, Africa, Middle East, Online). Use `| Online |` for a recurring meetup that has no city, such as a monthly live show.:
 
 If one meetup is run on more than one official page (for example its own Meetup group and the Einundzwanzig portal), keep one row and put the extra pages after the description in the About column: `Monthly Stammtisch · [Einundzwanzig portal](https://…)`. The first link stays the main one.
 
@@ -80,6 +80,9 @@ Use these to discover events, then confirm each one on the organizer's own page 
 - [Einundzwanzig portal](https://portal.einundzwanzig.space/): official directory of the German-speaking Einundzwanzig chapters, with a public API at `/api/meetups` (city, country, coordinates, `next_event`). A chapter with a dated upcoming event can link to its portal page; chapters with no scheduled event stay out of the list until they have one.
 - [2140 Meetups](https://2140meetups.com/): Spanish-language registry of local Bitcoin communities. A community page can be linked when it shows a meetup post from the last 90 days; registry entries with only a Telegram link are discovery leads.
 
+- [The Meetup Breakdown](https://www.themeetupbreakdown.com/): weekly UK and Ireland meetup newsletter. Good for spotting recurring meetups and their current venue; confirm each group on its own page before adding.
+- [Bitcoin Events UK](https://bitcoinevents.uk/): directory of UK and Ireland Bitcoin meetups, with a map. Lists the group's usual schedule; verify with the organiser.
+- [SpendCorn](https://spendcorn.com/): Bitcoin directory of merchants, tools and meetups; `spendcorn.com/submit` is a free no-login submission form.
 
 
 Edit the row directly in a pull request, or use the **[correction form](https://github.com/itstomekk/awesome-bitcoin-events/issues/new?template=event-correction.yml)**. If an event is cancelled, remove its row and mention the cancellation in the PR description.

@@ -209,15 +209,17 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 | Zürich, Switzerland | [Bitcoin Switzerland](https://www.meetup.com/bitcoin-meetup-switzerland/) | Meetup group |
 | Istanbul, Turkey | [Yirmibir Istanbul](https://www.meetup.com/istanbul-bitcoin-meetup-group/) | Meetup group |
 | Ashford, UK | [Kent Bitcoin](https://www.meetup.com/kentbitcoin/) | Meetup group |
+| Belfast, UK | [Belfast Bitcoin](https://nibitcoin.com/) | Monthly Bitcoin meetup on the first Tuesday, run by NI Bitcoin |
 | Cambridge, UK | [Cambridge Bitcoin](https://www.meetup.com/cambridge-bitcoin/) | Meetup group |
 | Edinburgh, UK | [BitcoinWalk Edinburgh](https://bitcoinwalk.org/edinburgh/) | Weekly walk |
+| Glasgow, UK | [Bitcoin Power](https://www.meetup.com/bitcoin-glasgow-buy-sell-learn/) | Bitcoin-only workshop on the first Wednesday |
 | Leeds, UK | [Leeds Bitcoin Network](https://www.meetup.com/leeds-bitcoin-network) | Meetup group |
 | London, UK | [BitDevs London](https://londonbitdevs.org/) | Socratic Seminar |
 | London, UK | [London Bitcoin Space](https://www.meetup.com/london-bitcoin-space/) | Meetup group |
 | London, UK | [BitcoinWalk London](https://bitcoinwalk.org/london/) | Weekly walk |
 | Manchester, UK | [Bitcoin Manchester](https://www.meetup.com/bitcoin-manchester/) | Meetup group |
 | Manchester, UK | [BitcoinWalk Manchester](https://bitcoinwalk.org/manchester/) | Weekly walk |
-| Newcastle upon Tyne, UK | [Newcastle Bitcoin Meetup](https://www.meetup.com/newcastlebitcoinmeetup/) | Meetup group |
+| Newcastle upon Tyne, UK | [Newcastle Bitcoin Meetup](https://www.meetup.com/newcastlebitcoinmeetup/) | Meetup group · [Meetup details](https://www.bitcoinnewcastle.com/) |
 | Northampton, UK | [BitcoinWalk Northampton](https://bitcoinwalk.org/northampton/) | Weekly walk |
 | Nottingham, UK | [Bitcoin Nottingham Meetup](https://www.bitcoinnottingham.org/meetups/) | Bitcoin community meetups and workshops |
 | Southend, UK | [Bitcoin Essex](https://bitcoinessex.co.uk/) | Monthly meetups around Essex, including Southend |
@@ -436,6 +438,13 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 | --- | --- | --- |
 | Port Louis, Mauritius | [BitDevs Port Louis](https://bitdevsmauritius.org/) | Socratic Seminar |
 
+
+
+### Online
+
+| Where | Meetup | About |
+| --- | --- | --- |
+| Online | [Bitcoin Shipshow](https://bitcoinship.show/) | Monthly live show where Bitcoin builders demo what they ship, first Tuesday |
 
 ## Past events
 
