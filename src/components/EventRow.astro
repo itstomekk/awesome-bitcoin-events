@@ -32,6 +32,11 @@ const COUNTRY_FLAGS = {
   'Honduras': '🇭🇳', 'Costa Rica': '🇨🇷', 'Panama': '🇵🇦', 'Colombia': '🇨🇴',
   'Chile': '🇨🇱', 'Peru': '🇵🇪', 'Uruguay': '🇺🇾', 'Paraguay': '🇵🇾',
   'Bolivia': '🇧🇴', 'Ecuador': '🇪🇨', 'Venezuela': '🇻🇪',
+  'United Arab Emirates': '🇦🇪', 'South Korea': '🇰🇷', 'Taiwan': '🇹🇼',
+  'Vietnam': '🇻🇳', 'Philippines': '🇵🇭', 'Malaysia': '🇲🇾', 'Thailand': '🇹🇭',
+  'Mauritius': '🇲🇺', 'Puerto Rico': '🇵🇷',
+  'Hong Kong': '🇭🇰', 'Indonesia': '🇮🇩', 'Kenya': '🇰🇪', 'Malawi': '🇲🇼',
+  'Cyprus': '🇨🇾', 'Montenegro': '🇲🇪', 'Cayman Islands': '🇰🇾', 'Curaçao': '🇨🇼', 'Dominican Republic': '🇩🇴',
 };
 const flag = event.country ? COUNTRY_FLAGS[event.country] : null;
 ---
@@ -55,7 +60,7 @@ const flag = event.country ? COUNTRY_FLAGS[event.country] : null;
     <a href={event.url} target="_blank" rel="noreferrer">{event.title}</a><span class="arrow" aria-hidden="true"> ↗</span>
     <span class="row-flag" data-next-flag hidden>Next</span>
   </span>
-  <span class="row-where">{flag && <span class="flag" aria-hidden="true">{flag} </span>}{event.where}</span>
+  <span class="row-where">{flag ? flag + ' ' : ''}{event.where}</span>
   <span class="row-type">{event.type}</span>
   <button class="row-toggle" type="button" aria-expanded="false" aria-controls={detailsId} aria-label={`Details for ${event.title}`}>
     <span aria-hidden="true">+</span>
