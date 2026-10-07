@@ -17,6 +17,23 @@ const imageSrc = details?.image && /^https?:\/\//i.test(details.image)
   : details?.image
     ? `${import.meta.env.BASE_URL.replace(/\/?$/, '/')}${details.image.replace(/^\/+/, '')}`
     : null;
+
+const COUNTRY_FLAGS = {
+  'USA': '🇺🇸', 'Germany': '🇩🇪', 'France': '🇫🇷', 'Poland': '🇵🇱',
+  'Spain': '🇪🇸', 'Italy': '🇮🇹', 'Netherlands': '🇳🇱', 'Switzerland': '🇨🇭',
+  'Austria': '🇦🇹', 'Czech Republic': '🇨🇿', 'UK': '🇬🇧', 'Canada': '🇨🇦',
+  'Australia': '🇦🇺', 'Japan': '🇯🇵', 'El Salvador': '🇸🇻', 'Argentina': '🇦🇷',
+  'Brazil': '🇧🇷', 'Mexico': '🇲🇽', 'India': '🇮🇳', 'South Africa': '🇿🇦',
+  'Norway': '🇳🇴', 'Sweden': '🇸🇪', 'Finland': '🇫🇮', 'Portugal': '🇵🇹',
+  'Belgium': '🇧🇪', 'Hungary': '🇭🇺', 'Romania': '🇷🇴', 'Bulgaria': '🇧🇬',
+  'Greece': '🇬🇷', 'Turkey': '🇹🇷', 'Serbia': '🇷🇸', 'Slovenia': '🇸🇮',
+  'Croatia': '🇭🇷', 'Slovakia': '🇸🇰', 'Lithuania': '🇱🇹', 'Latvia': '🇱🇻',
+  'Estonia': '🇪🇪', 'Ireland': '🇮🇪', 'Denmark': '🇩🇰', 'New Zealand': '🇳🇿',
+  'Honduras': '🇭🇳', 'Costa Rica': '🇨🇷', 'Panama': '🇵🇦', 'Colombia': '🇨🇴',
+  'Chile': '🇨🇱', 'Peru': '🇵🇪', 'Uruguay': '🇺🇾', 'Paraguay': '🇵🇾',
+  'Bolivia': '🇧🇴', 'Ecuador': '🇪🇨', 'Venezuela': '🇻🇪',
+};
+const flag = event.country ? COUNTRY_FLAGS[event.country] : null;
 ---
 <li
   class:list={['row', { 'is-past': past }]}
@@ -38,7 +55,7 @@ const imageSrc = details?.image && /^https?:\/\//i.test(details.image)
     <a href={event.url} target="_blank" rel="noreferrer">{event.title}</a><span class="arrow" aria-hidden="true"> ↗</span>
     <span class="row-flag" data-next-flag hidden>Next</span>
   </span>
-  <span class="row-where">{event.where}</span>
+  <span class="row-where">{flag && <span class="flag" aria-hidden="true">{flag} </span>}{event.where}</span>
   <span class="row-type">{event.type}</span>
   <button class="row-toggle" type="button" aria-expanded="false" aria-controls={detailsId} aria-label={`Details for ${event.title}`}>
     <span aria-hidden="true">+</span>
