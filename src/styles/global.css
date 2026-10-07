@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap');
 @import './tokens.css';
 
+/* Past events divider ---------------------------------------------------- */
+.past-divider { margin: var(--space-lg) 0 var(--space-sm); border: 0; border-top: var(--rule-hair) solid var(--color-rule); }
+.past-heading { margin: 0 0 var(--space-sm); color: var(--color-muted); font: 600 var(--text-xl)/var(--lh-tight) var(--font-display); }
+
 /* Base ------------------------------------------------------------------ */
 *, *::before, *::after { box-sizing: border-box; }
 html, body { overflow-x: clip; }

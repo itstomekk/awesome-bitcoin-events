@@ -24,15 +24,23 @@ const meetupRegions = [...new Set(meetups.map((m) => m.region))];
 const buildDay = new Date().toISOString().slice(0, 10);
 const sorted = [...events].sort((a, b) => a.start.localeCompare(b.start) || a.title.localeCompare(b.title));
 const upcoming = sorted.filter((event) => event.end >= buildDay);
+const past = sorted.filter((event) => event.end < buildDay).reverse(); // most recent first
 const years = [...new Set(sorted.map((event) => event.start.slice(0, 4)))].sort().reverse();
 const countries = [...new Set(sorted.map((event) => event.country).filter(Boolean))].sort();
 const types = [...new Set(sorted.map((event) => event.type))].sort();
-// Group rows by month ("2026-10" -> events).
-const groups = new Map();
-for (const event of sorted) {
+// Group upcoming by month (chronological).
+const upcomingGroups = new Map();
+for (const event of upcoming) {
   const key = event.start.slice(0, 7);
-  if (!groups.has(key)) groups.set(key, []);
-  groups.get(key).push(event);
+  if (!upcomingGroups.has(key)) upcomingGroups.set(key, []);
+  upcomingGroups.get(key).push(event);
+}
+// Group past by month (reverse chronological).
+const pastGroups = new Map();
+for (const event of past) {
+  const key = event.start.slice(0, 7);
+  if (!pastGroups.has(key)) pastGroups.set(key, []);
+  pastGroups.get(key).push(event);
 }
 
 const mapEvents = sorted.filter((event) => places[event.where]).map((event) => ({
@@ -95,16 +103,30 @@ const repo = 'https://github.com/itstomekk/awesome-bitcoin-events';
       </div>
 
       <noscript><p class="empty">Search and filters need JavaScript. Every event is listed below.</p></noscript>
-      <div class="index">
-        {[...groups].map(([key, group]) => (
-          <section class="month" data-month-group aria-label={`${MONTHS[Number(key.slice(5)) - 1]} ${key.slice(0, 4)}`}>
-            <div class="month-label"><h2>{MONTHS[Number(key.slice(5)) - 1]}</h2><span>{key.slice(0, 4)}</span></div>
-            <ol class="rows">{group.map((event) => <EventRow event={event} buildDay={buildDay} details={details[event.url] || null} hasPin={Boolean(places[event.where])} />)}</ol>
+            <div class="index">
+              {/* Upcoming events - chronological (oldest first) */}
+              {[...upcomingGroups].map(([key, group]) => (
+                <section class="month" data-month-group aria-label={`${MONTHS[Number(key.slice(5)) - 1]} ${key.slice(0, 4)}`}>
+                  <div class="month-label"><h2>{MONTHS[Number(key.slice(5)) - 1]}</h2><span>{key.slice(0, 4)}</span></div>
+                  <ol class="rows">{group.map((event) => <EventRow event={event} buildDay={buildDay} details={details[event.url] || null} hasPin={Boolean(places[event.where])} />)}</ol>
+                </section>
+              ))}
+              {/* Past events - reverse chronological (most recent first) */}
+              {past.length > 0 && (
+                <>
+                  <hr class="past-divider" aria-hidden="true" />
+                  <p class="past-heading">Past events</p>
+                  {[...pastGroups].map(([key, group]) => (
+                    <section class="month" data-month-group aria-label={`${MONTHS[Number(key.slice(5)) - 1]} ${key.slice(0, 4)}`}>
+                      <div class="month-label"><h2>{MONTHS[Number(key.slice(5)) - 1]}</h2><span>{key.slice(0, 4)}</span></div>
+                      <ol class="rows">{group.map((event) => <EventRow event={event} buildDay={buildDay} details={details[event.url] || null} hasPin={Boolean(places[event.where])} />)}</ol>
+                    </section>
+                  ))}
+                </>
+              )}
+              <p class="empty" id="empty-state" hidden>No events match. <button type="button" id="clear-filters">Clear the filters</button></p>
+            </div>
           </section>
-        ))}
-        <p class="empty" id="empty-state" hidden>No events match. <button type="button" id="clear-filters">Clear the filters</button></p>
-      </div>
-    </section>
 
     <section id="meetups" role="tabpanel" aria-labelledby="tab-meetups" hidden>
       <p class="meetups-intro">Recurring Bitcoin meetups: turn up, meet people, learn. Times change, so check the link before you go. </p>
