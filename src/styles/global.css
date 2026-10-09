@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap');
 @import './tokens.css';
 
+/* Flag emoji on Windows: Windows ships no flag glyphs, so "🇬🇧" shows as the letters "GB".
+   This font draws only the regional-indicator pairs (unicode-range), nothing else, and is a
+   no-op on systems that already have flag emoji. Self-hosted, Twemoji graphics (CC-BY 4.0). */
+@font-face {
+  font-family: "Twemoji Country Flags";
+  src: url('./fonts/TwemojiCountryFlags.woff2') format('woff2');
+  unicode-range: U+1F1E6-1F1FF, U+1F3F4, U+E0062-E0063, U+E0065, U+E0067, U+E006C, U+E006E, U+E0073-E0074, U+E0077, U+E007F;
+  font-display: swap;
+}
+.row-where { font-family: "Twemoji Country Flags", var(--font-body); }
+
 /* Past events divider ---------------------------------------------------- */
 .past-divider { margin: var(--space-lg) 0 var(--space-sm); border: 0; border-top: var(--rule-hair) solid var(--color-rule); }
 .past-heading { margin: 0 0 var(--space-sm); color: var(--color-muted); font: 600 var(--text-xl)/var(--lh-tight) var(--font-display); }
