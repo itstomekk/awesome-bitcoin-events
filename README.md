@@ -189,6 +189,7 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 | Arnhem, Netherlands | [Arnhem Bitcoin City](https://www.meetup.com/bitcoinmeetup/) | Meetup group |
 | Bergen, Norway | [Bergen Bitcoin Meetup](https://www.meetup.com/bergen-bitcoin-meetup/) | Meetup group |
 | Warsaw, Poland | [Dwadzieścia Jeden Warszawa](https://www.meetup.com/bitcoin-warsaw/) | Meetup group |
+| Warsaw, Poland | [BitcoinWalk Warsaw](https://bitcoinwalk.org/warszawa/) | Weekly walk |
 | Lisbon, Portugal | [Lisbon Bitcoin Maximalists](https://www.meetup.com/lisbon-bitcoin-maximalists/) | Meetup group |
 | Lisbon, Portugal | [BitcoinWalk Lisbon](https://bitcoinwalk.org/lisbon/) | Weekly walk |
 | Belgrade, Serbia | [DvadesetJedan](https://www.meetup.com/dvadeset-jedan/) | Meetup group |
