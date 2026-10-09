@@ -78,6 +78,7 @@ Dates and places change. Check the official page before you book travel. Being l
 | May 28–29 | [Adopting Bitcoin Arnhem 2027](https://nl27.adoptingbitcoin.org/) | Arnhem, Netherlands | Conference |
 | May 31 – Jun 2 | [Oslo Freedom Forum 2027](https://oslofreedomforum.com/event/oslo-freedom-forum-2027/buy-your-ticket-for-off-2027/) | Oslo, Norway | Conference |
 | Jun 24–27 | [Bitcoin FilmFest 2027](https://bitcoinfilmfest.com/) | Warsaw, Poland | Festival |
+| Jun 24–27 | [Revolution.Rocks 2027](https://revolution.rocks/) | Warsaw, Poland | Festival |
 | Jul 15 | [TGFB27 Conference](https://tgfb.com/conference/) | Nashville, USA | Conference |
 | Jul 15–17 | [Bitcoin 2027](https://conference.b.tc/) | Nashville, USA | Conference |
 | Aug 14 | [Bitcoin Beyond 66 2027](https://bitcoinbeyond66.com/) | Bodø, Norway | Conference |
