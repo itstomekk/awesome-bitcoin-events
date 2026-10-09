@@ -40,10 +40,11 @@ button, input, select { font: inherit; color: inherit; }
 
 /* N6 masthead ------------------------------------------------------------ */
 .nav-mast { padding-top: var(--space-md); text-align: center; }
-.mast-line { margin: 0; color: var(--color-muted); font: 400 var(--text-xs)/1.4 var(--font-mono); letter-spacing: var(--tracking-label); text-transform: uppercase; }
+.mast-line { margin: var(--space-xs) 0 0; color: var(--color-muted); font: 400 var(--text-xs)/1.4 var(--font-mono); letter-spacing: var(--tracking-label); text-transform: uppercase; }
 .mast-name { margin: var(--space-2xs) 0 0; font: 600 var(--text-display)/0.95 var(--font-display); letter-spacing: var(--tracking-display); overflow-wrap: anywhere; min-width: 0; }
 .mast-name a { text-decoration: none; }
-.mast-name .mark { color: var(--color-accent-ink); }
+.mast-gh { display: inline-block; width: 0.32em; height: 0.32em; margin-left: 0.14em; vertical-align: 0.08em; color: var(--color-ink-2); transition: color var(--dur-fast) var(--ease-out); }
+.mast-gh:hover, .mast-gh:focus-visible { color: var(--color-accent-ink); }
 .mast-rule { height: 4px; margin: var(--space-sm) 0 0; border: 0; border-top: var(--rule-hair) solid var(--color-rule-2); border-bottom: var(--rule-hair) solid var(--color-rule-2); }
 
 /* Events / Meetups switch ------------------------------------------------ */

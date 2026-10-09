@@ -319,6 +319,13 @@ const repo = 'https://github.com/itstomekk/awesome-bitcoin-events';
         bounds.push([p.latitude, p.longitude]);
       });
       eventMap.fitBounds(bounds, { padding: [24, 24], maxZoom: 3 });
+      // Start closer than the whole-world fit: zoom in ZOOM_BOOST levels, centred on the
+      // median of the upcoming events (falls back to every point if there are none).
+      const ZOOM_BOOST = 1;
+      const focus = mapData.filter((p) => p.kind === 'event' && p.end >= today);
+      const pts = focus.length ? focus : mapData;
+      const median = (values) => { const s = [...values].sort((a, b) => a - b); return s[Math.floor(s.length / 2)]; };
+      eventMap.setView([median(pts.map((p) => p.latitude)), median(pts.map((p) => p.longitude))], eventMap.getZoom() + ZOOM_BOOST, { animate: false });
     } else if (mapNode) {
       mapNode.innerHTML = '<p class="map-empty">The map could not load. The list above has every event.</p>';
     }
