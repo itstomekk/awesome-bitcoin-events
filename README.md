@@ -135,6 +135,7 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 | Göttingen, Germany | [Einundzwanzig Südniedersachsen](https://portal.einundzwanzig.space/de/meetup/einundzwanzig-suedniedersachsen) | Einundzwanzig Bitcoin meetup |
 | Hamburg, Germany | [Einundzwanzig Hamburg](https://portal.einundzwanzig.space/de/meetup/einundzwanzig-hamburg) | Einundzwanzig Bitcoin meetup |
 | Hamburg, Germany | [Hamburg's Bitcoin-Stammtisch: Das Original](https://www.meetup.com/bitcoin-stammtisch-das-original/) | Meetup group |
+| Hamburg, Germany | [BitcoinWalk Hamburg](https://bitcoinwalk.org/hamburg/) | Weekly walk |
 | Hannover, Germany | [Einundzwanzig Hannover](https://portal.einundzwanzig.space/de/meetup/einundzwanzig-hannover) | Einundzwanzig Bitcoin meetup |
 | Heinsberg, Germany | [Einundzwanzig Waldenrath](https://portal.einundzwanzig.space/de/meetup/einundzwanzig-waldenrath) | Einundzwanzig Bitcoin meetup |
 | Hildesheim, Germany | [Einundzwanzig Hildesheim](https://portal.einundzwanzig.space/de/meetup/einundzwanzig-hildesheim) | Einundzwanzig Bitcoin meetup |
@@ -145,6 +146,7 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 | Kempten, Germany | [Einundzwanzig Kempten](https://portal.einundzwanzig.space/de/meetup/einundzwanzig-kempten) | Einundzwanzig Bitcoin meetup |
 | Koblenz, Germany | [Einundzwanzig Koblenz](https://portal.einundzwanzig.space/de/meetup/einundzwanzig-koblenz) | Einundzwanzig Bitcoin meetup |
 | Köln, Germany | [Einundzwanzig Köln](https://portal.einundzwanzig.space/de/meetup/einundzwanzig-koeln) | Einundzwanzig Bitcoin meetup |
+| Köln, Germany | [BitcoinWalk Köln](https://bitcoinwalk.org/koeln/) | Walk |
 | Konstanz, Germany | [Einundzwanzig Konstanz](https://portal.einundzwanzig.space/de/meetup/einundzwanzig-konstanz) | Einundzwanzig Bitcoin meetup · [Meetup page](https://sites.google.com/view/21-meetup-kn/startseite) |
 | Landau, Germany | [Einundzwanzig Landau](https://portal.einundzwanzig.space/de/meetup/einundzwanzig-landau) | Einundzwanzig Bitcoin meetup |
 | Leipzig, Germany | [Bitcoin Leipzig](https://www.meetup.com/leipziger-bitcoin-stammtisch/) | Meetup group |
@@ -187,6 +189,7 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 | Lisbon, Portugal | [Lisbon Bitcoin Maximalists](https://www.meetup.com/lisbon-bitcoin-maximalists/) | Meetup group |
 | Belgrade, Serbia | [DvadesetJedan](https://www.meetup.com/dvadeset-jedan/) | Meetup group |
 | Ljubljana, Slovenia | [Bitcoin Ljubljana](https://www.meetup.com/bitcoin-ljubljana/) | Meetup group |
+| Hrpelje, Slovenia | [BitcoinWalk Hrpelje](https://bitcoinwalk.org/hrpelje/) | Weekly walk |
 | Barcelona, Spain | [Barcelona Bitcoin Only](https://www.meetup.com/bitcoin-barcelona/) | Meetup group |
 | Barcelona, Spain | [BitDevs Barcelona](https://bitdevsbarcelona.org/) | Socratic Seminar |
 | Barcelona, Spain | [BitcoinWalk Barcelona](https://bitcoinwalk.org/barcelona/) | Weekly walk |
@@ -215,6 +218,7 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 | Newcastle upon Tyne, UK | [Newcastle Bitcoin Meetup](https://www.meetup.com/newcastlebitcoinmeetup/) | Meetup group · [Meetup details](https://www.bitcoinnewcastle.com/) |
 | Nottingham, UK | [Bitcoin Nottingham Meetup](https://www.bitcoinnottingham.org/meetups/) | Bitcoin community meetups and workshops |
 | Southend, UK | [Bitcoin Essex](https://bitcoinessex.co.uk/) | Monthly meetups around Essex, including Southend |
+| Burgas, Bulgaria | [BitcoinWalk Burgas](https://bitcoinwalk.org/burgas/) | Weekly walk |
 
 ### North America
 
