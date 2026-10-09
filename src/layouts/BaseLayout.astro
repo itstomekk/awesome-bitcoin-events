@@ -40,12 +40,7 @@ const canonicalUrl = Astro.site ? new URL(`${base}${canonical}`, Astro.site).hre
   <body>
     <a class="skip-link" href="#main-content">Skip to the list</a>
     <header class="nav-mast page">
-      <p class="mast-name">
-        <a href={base}>Awesome Bitcoin Events</a>
-        <a class="mast-gh" href={repo} target="_blank" rel="noreferrer" aria-label="Awesome Bitcoin Events on GitHub" title="View on GitHub">
-          <svg viewBox="0 0 16 16" width="100%" height="100%" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-        </a>
-      </p>
+      <p class="mast-name"><a href={base}>Awesome Bitcoin Events</a><span class="mast-gh-slot"><a class="mast-gh" href={repo} target="_blank" rel="noreferrer" aria-label="Awesome Bitcoin Events on GitHub" title="View on GitHub"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a></span></p>
       <p class="mast-line">
         {upcomingCount !== null
           ? <><span data-upcoming-count>{upcomingCount}</span> upcoming · {countryCount} countries</>
@@ -63,5 +58,40 @@ const canonicalUrl = Astro.site ? new URL(`${base}${canonical}`, Astro.site).hre
         Corrections and additions: <a href={`${repo}/blob/main/.github/CONTRIBUTING.md`}>CONTRIBUTING.md</a> or <a href={`${repo}/issues/new?template=event-submission.yml`}>the submission form</a>.
       </p>
     </footer>
+    <script is:inline>
+      // The GitHub logo sits where the full stop used to be. On scroll it slides to the right
+      // while it sticks to the top of the window, and parks in the top-right corner.
+      (() => {
+        const slot = document.querySelector('.mast-gh-slot');
+        const link = document.querySelector('.mast-gh');
+        if (!slot || !link) return;
+        const END_SIZE = 22, END_PAD = 5, END_TOP = 10, END_RIGHT = 14, DISTANCE = 220;
+        link.classList.add('is-floating');
+        let queued = false;
+        function place() {
+          queued = false;
+          const r = slot.getBoundingClientRect(); // the empty slot keeps the logo's place in the title
+          const p = Math.min(1, Math.max(0, window.scrollY / DISTANCE));
+          const e = p * p * (3 - 2 * p); // ease in and out
+          const size = r.width + (END_SIZE - r.width) * e;
+          const pad = END_PAD * e;
+          const outer = size + 2 * pad;
+          const parkedX = document.documentElement.clientWidth - END_RIGHT - outer;
+          const x = r.left + (parkedX - r.left) * e;
+          const y = Math.max(r.top, END_TOP); // sticky: rides up with the title, then holds at the top gap
+          link.style.setProperty('--gh-size', size + 'px');
+          link.style.setProperty('--gh-pad', pad + 'px');
+          link.style.setProperty('--gh-x', x + 'px');
+          link.style.setProperty('--gh-y', y + 'px');
+          link.style.setProperty('--p', e.toFixed(3));
+        }
+        const queue = () => { if (!queued) { queued = true; requestAnimationFrame(place); } };
+        addEventListener('scroll', queue, { passive: true });
+        addEventListener('resize', queue);
+        addEventListener('load', queue);
+        if (document.fonts && document.fonts.ready) document.fonts.ready.then(queue);
+        place();
+      })();
+    </script>
   </body>
 </html>
