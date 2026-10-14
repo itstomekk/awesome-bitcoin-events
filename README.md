@@ -55,6 +55,7 @@ Dates and places change. Check the official page before you book travel. Being l
 | Nov 11 | [Bitcoin Bunker After Party](https://www.satlantis.io/events/1002892/bitcoin-bunker-after-party) | San Salvador, El Salvador | Meetup |
 | Nov 12 | [Bitcoin Meetup San Salvador](https://www.satlantis.io/events/1002647/bitcoin-meetup-san-salvador) | San Salvador, El Salvador | Meetup |
 | Nov 13 | [Renaissance Rodeo](https://renaissance.rodeo/) | Ilopango, El Salvador | Festival |
+| Nov 18–19 | [EmTech AI LATAM 2026](https://emtechai-latam.com/) | San Salvador, El Salvador | Conference |
 | Nov 19–20 | [Global Bitcoin Circular Economies Summit](https://www.bitcoinbeach.com/summit-blog/bitcoin-circular-economies-summit-2026) | El Zonte, El Salvador | Conference |
 | Nov 19–22 | [BitFest 2026](https://bitfest.uk/) | Manchester, UK | Festival |
 | Nov 20–21 | [BitBlockMine 2026](https://www.bitblockmine.com/) | Fort Worth, USA | Conference |
@@ -366,6 +367,7 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 | George Town, Cayman Islands | [7 Mile Bitcoin](https://www.meetup.com/7milebitcoin/) | Meetup group |
 | Willemstad, Curaçao | [BTC Curacao](https://www.meetup.com/Curacao-Crypto-Group/) | Meetup group |
 | Santo Domingo, Dominican Republic | [Bitcoin Dominicana](https://bitcoindominicana.com/) | Monthly meetup |
+| El Zonte, El Salvador | [Bitcoin Beach Meet-ups](https://www.bitcoinbeach.com/) | Monthly meetup on the last Friday, plus regular Bitcoin Beach Dinners · [next meet-up on Satlantis](https://www.satlantis.io/events/1002886/bitcoin-beach-meet-up-10) |
 | San Salvador, El Salvador | [BitDevs San Salvador](https://bitdevelsalvador.com/) | Socratic Seminar |
 | Roatan, Honduras | [Coworking Tuesdays](https://thebitcoindistrict.com/events/) | Weekly coworking and Bitcoin workshop at the Bitcoin Center, run by Bitcoin District |
 | Roatan, Honduras | [Roatan Bitcoin Bar Poker](https://rbbp.fun/) | Free Bitcoin poker tournaments |
