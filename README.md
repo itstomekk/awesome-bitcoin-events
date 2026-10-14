@@ -50,7 +50,11 @@ Dates and places change. Check the official page before you book travel. Being l
 | Nov 7–8 | [Bitcoin Korea Conference](https://www.bitcoinkoreaconference.com/en) | Seoul, South Korea | Conference |
 | Nov 7–9 | [B-Only 2026](https://b-only.org/) | Annecy, France | Conference |
 | Nov 9–10 | [Bitcoin Veterans Summit 2026](https://bitcoinveterans.org/summit2026/) | Nashville, USA | Conference |
+| Nov 10 | [Bitcoin Capital Summit - El Salvador](https://luma.com/1o5w68tp) | San Salvador, El Salvador | Conference |
 | Nov 11–12 | [Bitcoin Histórico 2026](https://bitcoinhistorico.com/) | San Salvador, El Salvador | Conference |
+| Nov 11 | [Bitcoin Bunker After Party](https://www.satlantis.io/events/1002892/bitcoin-bunker-after-party) | San Salvador, El Salvador | Meetup |
+| Nov 12 | [Bitcoin Meetup San Salvador](https://www.satlantis.io/events/1002647/bitcoin-meetup-san-salvador) | San Salvador, El Salvador | Meetup |
+| Nov 13 | [Renaissance Rodeo](https://renaissance.rodeo/) | Ilopango, El Salvador | Festival |
 | Nov 19–20 | [Global Bitcoin Circular Economies Summit](https://www.bitcoinbeach.com/summit-blog/bitcoin-circular-economies-summit-2026) | El Zonte, El Salvador | Conference |
 | Nov 19–22 | [BitFest 2026](https://bitfest.uk/) | Manchester, UK | Festival |
 | Nov 20–21 | [BitBlockMine 2026](https://www.bitblockmine.com/) | Fort Worth, USA | Conference |
