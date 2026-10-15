@@ -146,7 +146,7 @@ test('parses meetups by region and reports bad rows', () => {
   assert.equal(meetups.length, 1);
   assert.deepEqual([meetups[0].region, meetups[0].city, meetups[0].country], ['Europe', 'Prague', 'Czech Republic']);
   assert.equal(errors.length, 2);
-  assert.match(errors[0], /README\.md:10: row should be/);
+  assert.match(errors[0], /MEETUPS\.md:10: row should be/);
   assert.match(errors[1], /not a region/);
 });
 

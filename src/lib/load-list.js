@@ -29,9 +29,9 @@ export function loadPlaces(root = process.cwd()) {
   return existsSync(fullPath) ? JSON.parse(readFileSync(fullPath, 'utf8')) : {};
 }
 
-// Recurring meetups: the "## Meetups" section of README.md.
+// Recurring meetups: MEETUPS.md, one table per region.
 export function loadMeetups(root = process.cwd()) {
-  const fullPath = path.join(root, 'README.md');
+  const fullPath = path.join(root, 'MEETUPS.md');
   return existsSync(fullPath) ? parseMeetups(readFileSync(fullPath, 'utf8')) : { meetups: [], errors: [] };
 }
 
