@@ -166,3 +166,12 @@ test('the real README meetup section is valid', () => {
   assert.deepEqual(errors, []);
   assert.ok(meetups.length > 0);
 });
+
+test('a folded meetup region must state its real row count', () => {
+  const rows = '| Where | Meetup | About |\n| --- | --- | --- |\n| Prague, Czech Republic | [Bitcoin Prague](https://a.example/) | Monthly meetup |\n';
+  const ok = parseMeetups(`## Meetups\n\n### Europe\n\n<details>\n<summary>Show 1 meetup</summary>\n\n${rows}\n</details>\n`);
+  assert.deepEqual(ok.errors, []);
+  assert.equal(ok.meetups.length, 1);
+  const stale = parseMeetups(`## Meetups\n\n### Europe\n\n<details>\n<summary>Show 3 meetups</summary>\n\n${rows}\n</details>\n`);
+  assert.match(stale.errors[0], /README\.md:6: Europe has 1 meetup; change the summary to "Show 1 meetup"/);
+});

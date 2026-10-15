@@ -45,7 +45,7 @@ Put the event under the year it **starts** in, and keep the table sorted by star
 
 ## Meetups
 
-Recurring meetups live in the same file, in the [Meetups](../README.md#meetups) section, one table per region (Europe, North America, Latin America, Asia, Oceania, Africa, Middle East, Online). Use `| Online |` for a recurring meetup that has no city, such as a monthly live show.:
+Recurring meetups live in the same file, in the [Meetups](../README.md#meetups) section, one table per region (Europe, North America, Latin America, Asia, Oceania, Africa, Middle East, Online). Use `| Online |` for a recurring meetup that has no city, such as a monthly live show. Each region's table is folded inside `<details>`; when you add or remove a row, update the number in its `<summary>Show N meetups</summary>` line (`npm run check` tells you the right number):
 
 If one meetup is run on more than one official page (for example its own Meetup group and the Einundzwanzig portal), keep one row and put the extra pages after the description in the About column: `Monthly Stammtisch · [Einundzwanzig portal](https://…)`. The first link stays the main one.
 

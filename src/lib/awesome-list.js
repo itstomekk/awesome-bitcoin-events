@@ -187,7 +187,8 @@ export function renderSections(events, { newestYearFirst = false } = {}) {
 //   | --- | --- | --- |
 //   | Prague, Czech Republic | [Bitcoin Prague](https://…) | Monthly |
 //
-// A "## Region" heading still works, so older files keep parsing.
+// A "## Region" heading still works, so older files keep parsing. In README.md each region's
+// table sits inside <details> with "<summary>Show N meetups</summary>", and N is checked.
 
 export const MEETUP_REGIONS = [
   'Europe', 'North America', 'Latin America', 'Asia', 'Oceania', 'Africa', 'Middle East', 'Online',
@@ -202,6 +203,7 @@ export function parseMeetups(text, file = 'README.md') {
   const errors = [];
   let region = null;
   let inMeetups = false; // inside the "## Meetups" section of the list
+  const summaries = []; // "<summary>Show N meetups</summary>" lines of the folded region tables
   text.split(/\r?\n/).forEach((raw, index) => {
     const line = raw.trimEnd();
     const fail = (message) => errors.push(`${file}:${index + 1}: ${message}`);
@@ -222,6 +224,8 @@ export function parseMeetups(text, file = 'README.md') {
       region = null;
       return;
     }
+    const summary = line.match(/^<summary>Show (\d+) meetups?<\/summary>$/);
+    if (summary && region !== null) summaries.push({ region, count: Number(summary[1]), line: index + 1 });
     if (region === null || !line.startsWith('|') || /^\|\s*Where\s*\|/i.test(line) || DIVIDER_ROW_RE.test(line)) return;
     const row = line.match(MEETUP_ROW_RE);
     if (!row) return fail('row should be: | City, Country | [Meetup name](https://…) | Monthly |');
@@ -234,5 +238,10 @@ export function parseMeetups(text, file = 'README.md') {
     if (badLink) return fail(`"${badLink.url}" is not an http(s) link`);
     meetups.push({ id: `meetup-${slugify(name)}-${slugify(where)}`, name, url, links, where, schedule, region, ...splitLocation(where), file, line: index + 1 });
   });
+  // Each region table is folded under "<summary>Show N meetups</summary>"; keep N in step with the rows.
+  for (const { region: r, count, line } of summaries) {
+    const actual = meetups.filter((m) => m.region === r).length;
+    if (count !== actual) errors.push(`${file}:${line}: ${r} has ${actual} meetup${actual === 1 ? '' : 's'}; change the summary to "Show ${actual} meetup${actual === 1 ? '' : 's'}"`);
+  }
   return { meetups, errors };
 }

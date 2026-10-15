@@ -90,9 +90,12 @@ Dates and places change. Check the official page before you book travel. Being l
 
 ## Meetups
 
-Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more), one table per region. Times change, so check the link before you go. The website shows the same tables under its Meetups tab.
+Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more), one table per region (click a region to open it). Times change, so check the link before you go. The website shows the same tables under its Meetups tab.
 
 ### Europe
+
+<details>
+<summary>Show 128 meetups</summary>
 
 | Where | Meetup | About |
 | --- | --- | --- |
@@ -225,7 +228,12 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 | Southend, UK | [Bitcoin Essex](https://bitcoinessex.co.uk/) | Monthly meetups around Essex, including Southend |
 | Burgas, Bulgaria | [BitcoinWalk Burgas](https://bitcoinwalk.org/burgas/) | Weekly walk |
 
+</details>
+
 ### North America
+
+<details>
+<summary>Show 120 meetups</summary>
 
 | Where | Meetup | About |
 | --- | --- | --- |
@@ -350,7 +358,12 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 | Washington, USA | [Bitcoin District DC](https://www.meetup.com/bitcoin-district) | Meetup group |
 | Washington, USA | [BitDevs DC](https://dcbitdevs.com/) | Socratic Seminar |
 
+</details>
+
 ### Latin America
+
+<details>
+<summary>Show 25 meetups</summary>
 
 | Where | Meetup | About |
 | --- | --- | --- |
@@ -380,7 +393,12 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 | Lima, Peru | [Orange Pill Peru](https://www.orangepillperu.com) | Bitcoin-only community with monthly Lima meetups |
 | San Juan, Puerto Rico | [BitDevs San Juan](https://sanjuanbitdevs.org/) | Socratic Seminar |
 
+</details>
+
 ### Asia
+
+<details>
+<summary>Show 12 meetups</summary>
 
 | Where | Meetup | About |
 | --- | --- | --- |
@@ -397,7 +415,12 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 | Chiang Mai, Thailand | [Bitcoins in Chiang Mai](https://www.meetup.com/bitcoinsinchiangmai/) | Meetup group |
 | Ho Chi Minh City, Vietnam | [Bitcoin Saigon](https://www.meetup.com/Bitcoin-Saigon-Meetup/) | Meetup group |
 
+</details>
+
 ### Oceania
+
+<details>
+<summary>Show 18 meetups</summary>
 
 | Where | Meetup | About |
 | --- | --- | --- |
@@ -420,19 +443,29 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 | Christchurch, New Zealand | [The Christchurch Bitcoin Meetup](https://www.meetup.com/christchurch-bitcoin/) | Meetup group |
 | Queenstown, New Zealand | [Queenstown Bitcoin Meetup](https://www.meetup.com/queenstown-bitcoin-meetup-group/) | Meetup group |
 
+</details>
+
 ### Africa
+
+<details>
+<summary>Show 1 meetup</summary>
 
 | Where | Meetup | About |
 | --- | --- | --- |
 | Port Louis, Mauritius | [BitDevs Port Louis](https://bitdevsmauritius.org/) | Socratic Seminar |
 
-
+</details>
 
 ### Online
+
+<details>
+<summary>Show 1 meetup</summary>
 
 | Where | Meetup | About |
 | --- | --- | --- |
 | Online | [Bitcoin Shipshow](https://bitcoinship.show/) | Monthly live show where Bitcoin builders demo what they ship, first Tuesday |
+
+</details>
 
 ## Past events
 
