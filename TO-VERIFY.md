@@ -9,6 +9,7 @@ To promote one, find its official page, add it to [README.md](README.md) as a ta
 | 2026-11-06 – 2026-11-08 | Grand Rapids Drury Inn Meetup Weekend | Grand Rapids, USA | Meetup | [Nostr calendar](https://njump.me/e5b253169a44ff6b9f0d3c172e287606ecf4362509b5123494c9fc654c452431) |
 | 2026-11-13 | Bitcoin: A Competitive Advantage | Derby / London, UK (sources differ) | Conference | [source 1](https://www.francismars.com/events/) · [source 2](https://bitcoincollective.co/bitcoin-a-competitive-advantage/) |
 | 2027 (date TBA) | Bitcoin MENA 2027 | Abu Dhabi, United Arab Emirates | Conference | [official update](https://mena.b.tc/event-update) |
+| 2027-08-05 – 2027-08-08 | Bitcoin Zitadelle 2027 | Austria (venue TBA) | Conference | [Nostr save-the-date](https://njump.to/nprofile1qqs9yw9tfflempmf94fs4umcsvfnuqns2wy7ahdfptt2cft0gfkn5lsp8pmhxue69uhkc6t8dp6xu6twvuhxyetwvd5x7erjdanxvtnrdakj7mn0wd68ycmvd9jkuap0v9cxjtmkxyhhyetvv9usz8thwden5te0dehhxarj9ekh2arfdeuhwctvd3jhgtnrdakj7qgawaehxw309ahx7um5wgknqvfw09skk6tgdahxuefwvdhk6tchjvctc); no official page yet |
 | 2027-09-01 – 2027-09-03 | Origin Seoul 2027 | Seoul, South Korea | Conference | [source](https://bitcoinonly.events/origin-seoul-2027/) |
 | Weekly | BitcoinWalk Vienna | Vienna, Austria | Meetup | former page `bitcoinwalk.org/vienna` (404 since BitcoinWalk moved to a new directory) |
 | Weekly | BitcoinWalk Helsinki | Helsinki, Finland | Meetup | former page `bitcoinwalk.org/helsinki` (404 since BitcoinWalk moved to a new directory) |

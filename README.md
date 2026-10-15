@@ -30,6 +30,7 @@ Dates and places change. Check the official page before you book travel. Being l
 | Oct 10–11 | [Muslim Bitcoin Summit 2026](https://mslmbtcsummit.com/) | London, UK | Conference |
 | Oct 12–15 | [TABConf 8](https://tabconf.com/) | Atlanta, USA | Conference |
 | Oct 15 | [Blockchain Africa Conference 2026](https://bitcoinevents.co.za/) | Gauteng, South Africa | Conference |
+| Oct 15–17 | [Bitcoin Educators Academy Beirut](https://www.amityage.com/all-events/bitcoin-educators-academy-in-lebanon-beirut) | Beirut, Lebanon | Workshop |
 | Oct 15–17 | [Bitcoin Alpha 2026](https://bitcoinalpha.org/) | Santa Monica, USA | Conference |
 | Oct 16–18 | [Bitcoin Bush Bash - Busselton](https://bitcoinbushbash.info/) | Busselton, Australia | Conference |
 | Oct 20–22 | [Bitcoin for Financial Services Summit 2026](https://www.bffs.media/summit) | Denver, USA | Conference |
@@ -38,12 +39,14 @@ Dates and places change. Check the official page before you book travel. Being l
 | Oct 23–24 | [Plan ₿ Forum Lugano 2026](https://planb.lugano.ch/planb-forum/) | Lugano, Switzerland | Conference |
 | Oct 24 | [Bitkiwi XVII](https://kiwibitcoinguide.org/home/bitkiwi-meetups/bitkiwi-xvii-october-2026-wellington/) | Wellington, New Zealand | Meetup |
 | Oct 25–27 | [Mita Tech Talks 2026](https://2026.mitatechtalks.com/) | Punta Mita, Mexico | Conference |
+| Oct 26–31 | [Bitshala BOSS Summit 2026](https://bitshala.org/boss/) | Jaipur, India | Retreat |
 | Oct 28–29 | [Custody & Treasury Summit 2026](https://www.meetup.com/bitcoinpark/events/314966347/) | Nashville, USA | Conference |
 | Oct 29 – Nov 8 | [Bitchill s04](https://thebitcoindistrict.com/bitchill) | Roatan, Honduras | Retreat |
 | Oct 30 | [AI Startup Rodeo 2026](https://aistartuprodeo.com/) | Austin, USA | Conference |
 | Oct 30–31 | [Bitmela 2026](https://thebitmela.com/) | Jaipur, India | Festival |
 | Oct 30–31 | [LABITCONF 2026](https://www.labitconf.com/) | Buenos Aires, Argentina | Conference |
 | Oct 31 – Nov 1 | [BTC Balkans 2026](https://btcbalkans.com/en) | Sofia, Bulgaria | Conference |
+| Oct 31 – Nov 1 | [BCE#3 - Bitcoin White Paper Day](https://bce-bip21.fr/) | Paris, France | Conference |
 | Nov 4 | [Bitcoin for Corporations Symposium](https://bitcoinforcorporations.com/events/amsterdam-symposium-2026/) | Amsterdam, Netherlands | Conference |
 | Nov 5–6 | [Bitcoin Amsterdam 2026](https://www.bitcoin.amsterdam/2026) | Amsterdam, Netherlands | Conference |
 | Nov 5–6 | [bitcoin++ Seoul, privacy edition](https://btcpp.dev/conf/seoul) | Seoul, South Korea | Conference |
@@ -60,6 +63,8 @@ Dates and places change. Check the official page before you book travel. Being l
 | Nov 19–20 | [Global Bitcoin Circular Economies Summit](https://www.bitcoinbeach.com/summit-blog/bitcoin-circular-economies-summit-2026) | El Zonte, El Salvador | Conference |
 | Nov 19–22 | [BitFest 2026](https://bitfest.uk/) | Manchester, UK | Festival |
 | Nov 20–21 | [BitBlockMine 2026](https://www.bitblockmine.com/) | Fort Worth, USA | Conference |
+| Nov 20–22 | [Bitcoin Educators Academy Chiang Mai](https://www.amityage.com/all-events/bitcoin-educators-academy-in-thailand) | Chiang Mai, Thailand | Workshop |
+| Nov 27–28 | [Dakar Bitcoin Days IV](https://dakarbitcoindays.com/) | Dakar, Senegal | Conference |
 | Nov 27–28 | [Bitcoin Japan 2026](https://btc-jpn.com/) | Tokyo, Japan | Conference |
 | Nov 28–29 | [Bitcoin Thailand Conference 2026](https://bitcointhailand.co/) | Bangkok, Thailand | Conference |
 | Dec 2–5 | [Africa Bitcoin Conference 2026](https://www.afrobitcoin.org/) | Blantyre, Malawi | Conference |
