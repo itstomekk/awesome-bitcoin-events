@@ -176,16 +176,18 @@ export function renderSections(events, { newestYearFirst = false } = {}) {
   return lines;
 }
 
-// --- Meetups (MEETUPS.md) ----------------------------------------------------------
-// Recurring meetups, one table per region:
+// --- Meetups (the "Meetups" section of README.md) -----------------------------------
+// Recurring meetups, one table per region, as a subsection of the list itself:
 //
-//   ## Europe
+//   ## Meetups
+//
+//   ### Europe
 //
 //   | Where | Meetup | About |
 //   | --- | --- | --- |
 //   | Prague, Czech Republic | [Bitcoin Prague](https://…) | Monthly |
 //
-// A "### Region" heading inside a "## Meetups" section also parses.
+// A "## Region" heading still works, so older files keep parsing.
 
 export const MEETUP_REGIONS = [
   'Europe', 'North America', 'Latin America', 'Asia', 'Oceania', 'Africa', 'Middle East', 'Online',
@@ -195,7 +197,7 @@ export const MEETUP_REGIONS = [
 const MEETUP_EXTRA_LINK_RE = /\s*[·•]?\s*\[([^\]]+)\]\(([^\s)]+)\)/g;
 const MEETUP_ROW_RE = /^\|\s*(?<where>[^|]+?)\s*\|\s*\[(?<name>[^\]]+)\]\((?<url>[^\s)]+)\)\s*\|\s*(?<schedule>[^|]+?)\s*\|$/;
 
-export function parseMeetups(text, file = 'MEETUPS.md') {
+export function parseMeetups(text, file = 'README.md') {
   const meetups = [];
   const errors = [];
   let region = null;
