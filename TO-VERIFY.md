@@ -10,7 +10,6 @@ To promote one, find its official page, add it to [README.md](README.md) as a ta
 | 2026-11-13 | Bitcoin: A Competitive Advantage | Derby / London, UK (sources differ) | Conference | [source 1](https://www.francismars.com/events/) · [source 2](https://bitcoincollective.co/bitcoin-a-competitive-advantage/) |
 | 2027 (date TBA) | Bitcoin MENA 2027 | Abu Dhabi, United Arab Emirates | Conference | [official update](https://mena.b.tc/event-update) |
 | 2027-09-01 – 2027-09-03 | Origin Seoul 2027 | Seoul, South Korea | Conference | [source](https://bitcoinonly.events/origin-seoul-2027/) |
-| 2027-04 (dates TBA) | Discover Floripa | Florianópolis, Brazil | Festival | [official site](https://discoverfloripa.com) · bitvocation lists Oct 30 – Nov 6, 2026 |
 | Weekly | BitcoinWalk Vienna | Vienna, Austria | Meetup | former page `bitcoinwalk.org/vienna` (404 since BitcoinWalk moved to a new directory) |
 | Weekly | BitcoinWalk Helsinki | Helsinki, Finland | Meetup | former page `bitcoinwalk.org/helsinki` (404 since BitcoinWalk moved to a new directory) |
 | Weekly | BitcoinWalk Lyon | Lyon, France | Meetup | former page `bitcoinwalk.org/lyon` (404 since BitcoinWalk moved to a new directory) |

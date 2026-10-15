@@ -55,6 +55,7 @@ Dates and places change. Check the official page before you book travel. Being l
 | Nov 11 | [Bitcoin Bunker After Party](https://www.satlantis.io/events/1002892/bitcoin-bunker-after-party) | San Salvador, El Salvador | Meetup |
 | Nov 12 | [Bitcoin Meetup San Salvador](https://www.satlantis.io/events/1002647/bitcoin-meetup-san-salvador) | San Salvador, El Salvador | Meetup |
 | Nov 13 | [Renaissance Rodeo](https://renaissance.rodeo/) | Ilopango, El Salvador | Festival |
+| Nov 15 | [La Casa de Satoshi cumple 2 años](https://luma.com/lacasade-qf2y) | Mexico City, Mexico | Meetup |
 | Nov 18–19 | [EmTech AI LATAM 2026](https://emtechai-latam.com/) | San Salvador, El Salvador | Conference |
 | Nov 19–20 | [Global Bitcoin Circular Economies Summit](https://www.bitcoinbeach.com/summit-blog/bitcoin-circular-economies-summit-2026) | El Zonte, El Salvador | Conference |
 | Nov 19–22 | [BitFest 2026](https://bitfest.uk/) | Manchester, UK | Festival |
@@ -75,6 +76,7 @@ Dates and places change. Check the official page before you book travel. Being l
 | Feb 26–27 | [Adopting Bitcoin Cape Town 2027](https://za27.adoptingbitcoin.org/) | Cape Town, South Africa | Conference |
 | Feb 26–27 | [Heatpunk Summit 2027](https://heatpunks.org/summit) | Denver, USA | Conference |
 | Mar 22–24 | [Mining Disrupt 2027](https://miningdisrupt.com/) | Irving, USA | Conference |
+| Apr 1–30 | [Discover Floripa 2027](https://www.discoverfloripa.com/) | Florianópolis, Brazil | Festival |
 | Apr 1–4 | [BitBlockBoom! 2027](https://www.bitblockboom.com/) | Fort Worth, USA | Conference |
 | Apr 2–3 | [Sovereignty Summit 2027](https://sovereigntysummit.nz/) | Queenstown, New Zealand | Conference |
 | May 6–8 | [BTC Prague 2027](https://btcprague.com/) | Prague, Czech Republic | Conference |
@@ -363,7 +365,7 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 ### Latin America
 
 <details>
-<summary>Show 25 meetups</summary>
+<summary>Show 28 meetups</summary>
 
 | Where | Meetup | About |
 | --- | --- | --- |
@@ -375,6 +377,7 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 | Florianópolis, Brazil | [BitDevs Florianópolis](https://floripabitdevs.org/) | Socratic Seminar |
 | Porto Alegre, Brazil | [BitDevs Porto Alegre](https://poabitdevs.org/) | Socratic Seminar |
 | Porto Alegre, Brazil | [Porto Alegre - Go BTC](https://www.meetup.com/porto-alegre-bitcoin-meetup/) | Meetup group |
+| Santo Antônio do Pinhal, Brazil | [Bitcoin Amantikir](https://www.bitcoinamantikir.com.br/) | Bitcoin circular economy in the Mantiqueira Mountains with workshops and community events |
 | São Paulo, Brazil | [BitDevs São Paulo](https://bitdevsportugues.org) | Socratic Seminar |
 | Uberlândia, Brazil | [BitDevs Uberlândia](https://udibitdevs.org/) | Socratic Seminar |
 | George Town, Cayman Islands | [7 Mile Bitcoin](https://www.meetup.com/7milebitcoin/) | Meetup group |
@@ -384,9 +387,11 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 | San Salvador, El Salvador | [BitDevs San Salvador](https://bitdevelsalvador.com/) | Socratic Seminar |
 | Roatan, Honduras | [Coworking Tuesdays](https://thebitcoindistrict.com/events/) | Weekly coworking and Bitcoin workshop at the Bitcoin Center, run by Bitcoin District |
 | Roatan, Honduras | [Roatan Bitcoin Bar Poker](https://rbbp.fun/) | Free Bitcoin poker tournaments |
+| Kingston, Jamaica | [Kingston Bitcoin Meetup](https://community.islandbitcoin.com/events) | Monthly beginner-friendly meetup on the last Thursday, run by the Island Bitcoin community |
 | Guadalajara, Mexico | [Bitcoin y Lightning Guadalajara](https://www.meetup.com/guadalajara-bitcoin-and-lightning/) | Meetup group |
 | Guadalajara, Mexico | [BitDevs Guadalajara](https://bitdevs.btcgdl.com/) | Socratic Seminar |
 | Mexico City, Mexico | [BitDevs Mexico City](https://cdmxbitdevs.org) | Socratic Seminar |
+| Mexico City, Mexico | [La Casa de Satoshi](https://www.lacasadesatoshi.xyz/) | Bitcoin coworking space hosting meetups, BitDevs and workshops · [calendar](https://luma.com/lacasadesatoshi) |
 | Mexico City, Mexico | [Librería de Satoshi](https://www.libreriadesatoshi.com/) | Bitcoin courses and workshops in Spanish |
 | Boquete, Panama | [Einundzwanzig Panama](https://portal.einundzwanzig.space/pa/meetup/einundzwanzig-panama) | Einundzwanzig Bitcoin meetup |
 | Asunción, Paraguay | [Bitcoin Paraguay](https://bitcoinparaguay.org/) | BitDevs + monthly meetup |
