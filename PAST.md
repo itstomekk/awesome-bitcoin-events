@@ -76,6 +76,7 @@ Archive of events from [README.md](README.md) that have already taken place. The
 | Jul 31 – Aug 2 | [Lake Satoshi Retreat](https://www.lakesatoshi.com/annual-lake-satoshi-retreat) | Michigan, USA | Retreat |
 | Aug 12–13 | [Acelerando Bitcoin](https://acelerandobitcoin.com/) | Asunción, Paraguay | Conference |
 | Aug 14–15 | [Bitcoin Beyond 66](https://bitcoinbeyond66.com) | Bodø, Norway | Conference |
+| Aug 17–22 | [Bitcoin Vibecamp](https://bitcoinvibe.camp/) | Roatan, Honduras | Workshop |
 | Aug 20 | [Hackalajara 2.0](https://hackalajara.pleblab.com/) | Guadalajara, Mexico | Hackathon |
 | Aug 20–21 | [PlebLab Startup Day 2026](https://www.pleblab.dev/startup-day-guadalajara) | Guadalajara, Mexico | Conference |
 | Aug 21 | [Bitcoin Infinity Day](https://thebitcoindistrict.com/events) | Roatan, Honduras | Festival |
@@ -130,7 +131,7 @@ Archive of events from [README.md](README.md) that have already taken place. The
 | May 7–9 | [bitcoin++ dives deep](https://btcplusplus.dev/conf/atx25) | Austin, USA | Conference |
 | May 10 | [BitCare Forum](https://bitcareforum.it/) | Brescia, Italy | Conference |
 | May 22 | [Pizza Day Prague](https://pizzaday.cz/) | Prague, Czech Republic | Conference |
-| May 23–25 | [Bitcoin Filmfest 2025](https://bitcoinfilmfest.com/) | Warsaw, Poland | Festival |
+| May 22–25 | [Bitcoin FilmFest 2025](https://bitcoinfilmfest.com/25/) | Warsaw, Poland | Festival |
 | May 24 | [Bitcoin Ireland Conference](https://www.bitcoinireland.eu/) | Dublin, Ireland | Conference |
 | May 26–28 | [Oslo Freedom Forum](https://oslofreedomforum.com/) | Oslo, Norway | Conference |
 | May 27–29 | [Bitcoin 2025 Conference](https://b.tc/conference/2025) | Las Vegas, USA | Conference |
@@ -174,6 +175,7 @@ Archive of events from [README.md](README.md) that have already taken place. The
 | --- | --- | --- | --- |
 
 | Feb 22–24 | [bitcoin++ Buenos Aires 2024, payments edition](https://btcpp.dev/conf/ba24) | Buenos Aires, Argentina | Conference |
+| Apr 19–21 | [Bitcoin FilmFest 2024](https://bitcoinfilmfest.com/24/) | Warsaw, Poland | Festival |
 | May 1–4 | [bitcoin++ Austin 2024, bitcoin script edition](https://btcpp.dev/conf/atx24) | Austin, USA | Conference |
 | Oct 11–13 | [bitcoin++ Berlin 2024, e-cash edition](https://btcpp.dev/conf/berlin24) | Berlin, Germany | Conference |
 
@@ -182,6 +184,7 @@ Archive of events from [README.md](README.md) that have already taken place. The
 | Date | Event | Location | Type |
 | --- | --- | --- | --- |
 
+| Mar 24–26 | [Bitcoin FilmFest 2023](https://bitcoinfilmfest.com/23/) | Warsaw, Poland | Festival |
 | Apr 28–30 | [bitcoin++ Austin 2023, layer-2 edition](https://btcpp.dev/conf/atx23) | Austin, USA | Conference |
 | Oct 6–7 | [bitcoin++ Berlin 2023, nix-edition](https://btcpp.dev/conf/berlin23) | Berlin, Germany | Conference |
 
