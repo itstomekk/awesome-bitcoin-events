@@ -43,6 +43,7 @@ Dates and places change. Check the official page before you book travel. Being l
 | Oct 31 | [Whitepaper Day BBQ (BCC8333)](https://www.bcc8333.xyz/#whitepaper-day) | Barcelona, Spain | Meetup |
 | Oct 31 – Nov 1 | [BCE#3 - Bitcoin White Paper Day](https://bce-bip21.fr/) | Paris, France | Conference |
 | Oct 31 – Nov 1 | [BTC Balkans 2026](https://btcbalkans.com/en) | Sofia, Bulgaria | Conference |
+| Nov 2–4 | [Bitcoin Educators Academy Buenos Aires](https://www.amityage.com/all-events/bitcoin-educators-academy-in-argentina) | Buenos Aires, Argentina | Workshop |
 | Nov 4 | [Bitcoin for Corporations Symposium](https://bitcoinforcorporations.com/events/amsterdam-symposium-2026/) | Amsterdam, Netherlands | Conference |
 | Nov 5–6 | [Bitcoin Amsterdam 2026](https://www.bitcoin.amsterdam/2026) | Amsterdam, Netherlands | Conference |
 | Nov 5–6 | [bitcoin++ Seoul, privacy edition](https://btcpp.dev/conf/seoul) | Seoul, South Korea | Conference |
@@ -54,6 +55,7 @@ Dates and places change. Check the official page before you book travel. Being l
 | Nov 11–12 | [Bitcoin Histórico 2026](https://bitcoinhistorico.com/) | San Salvador, El Salvador | Conference |
 | Nov 12 | [Bitcoin Meetup San Salvador](https://www.satlantis.io/events/1002647/bitcoin-meetup-san-salvador) | San Salvador, El Salvador | Meetup |
 | Nov 13 | [Renaissance Rodeo](https://renaissance.rodeo/) | Ilopango, El Salvador | Festival |
+| Nov 13–15 | [Bitcoin Educators Academy Seoul](https://www.amityage.com/all-events/bitcoin-educators-academy-in-south-korea-seoul) | Seoul, South Korea | Workshop |
 | Nov 14 | [Bitcoin Colosseum: Community Edition](https://bitcoincolosseum.it/) | Rome, Italy | Meetup |
 | Nov 15 | [La Casa de Satoshi cumple 2 años](https://luma.com/lacasade-qf2y) | Mexico City, Mexico | Meetup |
 | Nov 18–19 | [EmTech AI LATAM 2026](https://emtechai-latam.com/) | San Salvador, El Salvador | Conference |
