@@ -10,8 +10,10 @@ To promote one, find its official page, add it to [README.md](README.md) as a ta
 | 2026-12 (date TBA) | Bitcoin Baden 2026 | Baden, Switzerland | Conference | [Bitcoin Bundesverband](https://bitcoin-bundesverband.de/en/events/) · [yard.global](https://yard.global/event/bitcoin-baden-2026/); bitcoinbaden.ch shows no 2026 date |
 | 2026-12-17 – 2026-12-18 | Naija Bitcoin Conference 2026 | Lagos, Nigeria | Conference | [Bitvocation](https://bitvocation.com/bitcoin-conferences-discounts); [naijabitcoin.org](https://naijabitcoin.org/nbo-conference/) banner says Dec 17-18, Radisson Blu, but the page is still titled 2025 |
 | 2027-12-09 (end TBA) | Bitcoin MENA 2027 | Abu Dhabi, United Arab Emirates | Conference | [official update](https://mena.b.tc/event-update) · [ticket page](https://tickets.b.tc/event) shows Dec 9, 2027 without a city |
-| 2027-08-05 – 2027-08-08 | Bitcoin Zitadelle 2027 | Austria (venue TBA) | Conference | [Nostr save-the-date](https://njump.to/nprofile1qqs9yw9tfflempmf94fs4umcsvfnuqns2wy7ahdfptt2cft0gfkn5lsp8pmhxue69uhkc6t8dp6xu6twvuhxyetwvd5x7erjdanxvtnrdakj7mn0wd68ycmvd9jkuap0v9cxjtmkxyhhyetvv9usz8thwden5te0dehhxarj9ekh2arfdeuhwctvd3jhgtnrdakj7qgawaehxw309ahx7um5wgknqvfw09skk6tgdahxuefwvdhk6tchjvctc); no official page yet |
-| 2027-09-01 – 2027-09-03 | Origin Seoul 2027 | Seoul, South Korea | Conference | [source](https://bitcoinonly.events/origin-seoul-2027/) |
+| 2027-09-01 – 2027-09-03 | Origin Seoul 2027 | Seoul, South Korea | Conference | [source](https://bitcoinonly.events/origin-seoul-2027/) · organizer's X bio says Sep 1-3, 2027; originseoulbtc.com still shows 2026 |
+| 2027 (date TBA) | Bitcoin Alive 2027 | Sydney, Australia | Conference | [official site](https://bitcoinalive.io/) says "back early 2027" |
+| 2027 (date TBA) | The Bitcoin Rodeo 2027 | Calgary, Canada | Conference | [official site](https://bitcoinrodeo.com/) says 2026 is cancelled, back in 2027 |
+| 2027 (date TBA) | Baltic Honeybadger 2027 | Riga, Latvia | Conference | organizer (Hodl Hodl) on Nostr: no 2026 edition, next in Riga in 2027; [site](https://baltichoneybadger.com/) still shows 2025 |
 | Weekly | BitcoinWalk Vienna | Vienna, Austria | Meetup | former page `bitcoinwalk.org/vienna` (404 since BitcoinWalk moved to a new directory) |
 | Weekly | BitcoinWalk Helsinki | Helsinki, Finland | Meetup | former page `bitcoinwalk.org/helsinki` (404 since BitcoinWalk moved to a new directory) |
 | Weekly | BitcoinWalk Lyon | Lyon, France | Meetup | former page `bitcoinwalk.org/lyon` (404 since BitcoinWalk moved to a new directory) |

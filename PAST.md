@@ -63,7 +63,6 @@ Archive of events from [README.md](README.md) that have already taken place. The
 | Jun 17–19 | [bitcoin++ works in public](https://btcplusplus.dev/conf/nairobi) | Nairobi, Kenya | Conference |
 | Jun 18–21 | [Camp Nakamoto](https://www.campnakamoto.com/) | Lake Winnipesaukee, USA | Retreat |
 | Jun 19–20 | [Revolution.Rocks 2026](https://revolution.rocks/) | Belgrade, Serbia | Festival |
-| Jun 25–26 | [The Bitcoin Rodeo 2026](https://bitcoinrodeo.com/) | Calgary, Canada | Conference |
 | Jun 26 | [BFC in NYC 2026](https://nyc.bitcoinforcorporations.com/) | New York City, USA | Conference |
 | Jun 26–27 | [Le Paradigme Bitcoin](https://leparadigmebitcoin.ch/) | Neuchâtel, Switzerland | Conference |
 | Jul 1–6 | [Bitcoin Alaska](https://bitcoinalaska.org/) | Juneau, USA | Conference |
