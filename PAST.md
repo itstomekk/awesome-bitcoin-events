@@ -100,6 +100,13 @@ Archive of events from [README.md](README.md) that have already taken place. The
 | Sep 25–26 | [BTC HEL 2026](https://btchel.com/) | Helsinki, Finland | Conference |
 | Sep 27 | [PROOF Conference 2026](https://proofconference.com/en/) | Vilnius, Lithuania | Conference |
 | Sep 28 | [Bitcoin Treasuries Conference 2026](https://bitcointreasuries.net/conference) | New York City, USA | Conference |
+| Oct 1–3 | [bitcoin++ Berlin, payments edition](https://btcpp.dev/berlin26) | Berlin, Germany | Conference |
+| Oct 2–4 | [Watch Out, Bitcoin! 2026](http://wobitcoin.org/) | Madrid, Spain | Conference |
+| Oct 5–6 | [Bitcoin Poland 2026](https://www.bitcoin-poland.com/) | Poznan, Poland | Conference |
+| Oct 5–6 | [Imagine IF 2026](https://www.imagineifnashville.com/) | Nashville, USA | Conference |
+| Oct 10–11 | [Muslim Bitcoin Summit 2026](https://mslmbtcsummit.com/) | London, UK | Conference |
+| Oct 12–15 | [TABConf 8](https://tabconf.com/) | Atlanta, USA | Conference |
+| Oct 15 | [Blockchain Africa Conference 2026](https://bitcoinevents.co.za/) | Gauteng, South Africa | Conference |
 
 ## 2025
 
@@ -173,7 +180,6 @@ Archive of events from [README.md](README.md) that have already taken place. The
 
 | Date | Event | Location | Type |
 | --- | --- | --- | --- |
-
 | Feb 22–24 | [bitcoin++ Buenos Aires 2024, payments edition](https://btcpp.dev/conf/ba24) | Buenos Aires, Argentina | Conference |
 | Apr 19–21 | [Bitcoin FilmFest 2024](https://bitcoinfilmfest.com/24/) | Warsaw, Poland | Festival |
 | May 1–4 | [bitcoin++ Austin 2024, bitcoin script edition](https://btcpp.dev/conf/atx24) | Austin, USA | Conference |
@@ -183,7 +189,6 @@ Archive of events from [README.md](README.md) that have already taken place. The
 
 | Date | Event | Location | Type |
 | --- | --- | --- | --- |
-
 | Mar 24–26 | [Bitcoin FilmFest 2023](https://bitcoinfilmfest.com/23/) | Warsaw, Poland | Festival |
 | Apr 28–30 | [bitcoin++ Austin 2023, layer-2 edition](https://btcpp.dev/conf/atx23) | Austin, USA | Conference |
 | Oct 6–7 | [bitcoin++ Berlin 2023, nix-edition](https://btcpp.dev/conf/berlin23) | Berlin, Germany | Conference |
@@ -192,6 +197,5 @@ Archive of events from [README.md](README.md) that have already taken place. The
 
 | Date | Event | Location | Type |
 | --- | --- | --- | --- |
-
 | Jun 2–5 | [bitcoin++ Austin 2022, learn me a bitcoin edition](https://btcpp.dev/conf/atx22) | Austin, USA | Conference |
 | Dec 10–12 | [bitcoin++ CDMX 2022, onchain privacy edition](https://btcpp.dev/conf/cdmx22) | Mexico City, Mexico | Conference |

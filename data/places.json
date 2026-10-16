@@ -979,5 +979,17 @@
   "Hanoi, Vietnam": [21.02833, 105.85404],
   "Portland, ME, USA": [43.65736, -70.25866],
   "Mount Eliza, Australia": [-38.18379, 145.08929],
-  "Birmingham, USA": [33.52068, -86.80243]
+  "Birmingham, USA": [33.52068, -86.80243],
+  "Orlando, USA": [
+    28.53834,
+    -81.37924
+  ],
+  "Turin, Italy": [
+    45.07049,
+    7.68682
+  ],
+  "State College, USA": [
+    40.79339,
+    -77.86
+  ]
 }

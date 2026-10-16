@@ -7,8 +7,9 @@ To promote one, find its official page, add it to [README.md](README.md) as a ta
 | Dates | Event | Location | Type | Spotted on |
 | --- | --- | --- | --- | --- |
 | 2026-11-06 – 2026-11-08 | Grand Rapids Drury Inn Meetup Weekend | Grand Rapids, USA | Meetup | [Nostr calendar](https://njump.me/e5b253169a44ff6b9f0d3c172e287606ecf4362509b5123494c9fc654c452431) |
-| 2026-11-13 | Bitcoin: A Competitive Advantage | Derby / London, UK (sources differ) | Conference | [source 1](https://www.francismars.com/events/) · [source 2](https://bitcoincollective.co/bitcoin-a-competitive-advantage/) |
-| 2027 (date TBA) | Bitcoin MENA 2027 | Abu Dhabi, United Arab Emirates | Conference | [official update](https://mena.b.tc/event-update) |
+| 2026-12 (date TBA) | Bitcoin Baden 2026 | Baden, Switzerland | Conference | [Bitcoin Bundesverband](https://bitcoin-bundesverband.de/en/events/) · [yard.global](https://yard.global/event/bitcoin-baden-2026/); bitcoinbaden.ch shows no 2026 date |
+| 2026-12-17 – 2026-12-18 | Naija Bitcoin Conference 2026 | Lagos, Nigeria | Conference | [Bitvocation](https://bitvocation.com/bitcoin-conferences-discounts); [naijabitcoin.org](https://naijabitcoin.org/nbo-conference/) banner says Dec 17-18, Radisson Blu, but the page is still titled 2025 |
+| 2027-12-09 (end TBA) | Bitcoin MENA 2027 | Abu Dhabi, United Arab Emirates | Conference | [official update](https://mena.b.tc/event-update) · [ticket page](https://tickets.b.tc/event) shows Dec 9, 2027 without a city |
 | 2027-08-05 – 2027-08-08 | Bitcoin Zitadelle 2027 | Austria (venue TBA) | Conference | [Nostr save-the-date](https://njump.to/nprofile1qqs9yw9tfflempmf94fs4umcsvfnuqns2wy7ahdfptt2cft0gfkn5lsp8pmhxue69uhkc6t8dp6xu6twvuhxyetwvd5x7erjdanxvtnrdakj7mn0wd68ycmvd9jkuap0v9cxjtmkxyhhyetvv9usz8thwden5te0dehhxarj9ekh2arfdeuhwctvd3jhgtnrdakj7qgawaehxw309ahx7um5wgknqvfw09skk6tgdahxuefwvdhk6tchjvctc); no official page yet |
 | 2027-09-01 – 2027-09-03 | Origin Seoul 2027 | Seoul, South Korea | Conference | [source](https://bitcoinonly.events/origin-seoul-2027/) |
 | Weekly | BitcoinWalk Vienna | Vienna, Austria | Meetup | former page `bitcoinwalk.org/vienna` (404 since BitcoinWalk moved to a new directory) |
