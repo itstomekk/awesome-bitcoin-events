@@ -67,8 +67,34 @@ const meetupPins = meetups.filter((m) => places[m.where]).map((m) => ({
 // Escapes "<" so the JSON can't close the <script> tag it is embedded in.
 const mapJson = JSON.stringify([...mapEvents, ...meetupPins]).replace(/</g, '\\u003C');
 const repo = 'https://github.com/itstomekk/awesome-bitcoin-events';
+
+// Structured data for search engines: the site, plus one schema.org Event per upcoming event
+// (eligible for Google's event rich results) and the meetups as a plain list.
+const origin = (Astro.site ? new URL(import.meta.env.BASE_URL.replace(/\/?$/, '/'), Astro.site).href : '');
+const eventLd = (event) => ({
+  '@type': 'Event',
+  name: event.title,
+  startDate: event.start,
+  endDate: event.end,
+  eventStatus: 'https://schema.org/EventScheduled',
+  eventAttendanceMode: event.online ? 'https://schema.org/OnlineEventAttendanceMode' : 'https://schema.org/OfflineEventAttendanceMode',
+  location: event.online
+    ? { '@type': 'VirtualLocation', url: event.url }
+    : { '@type': 'Place', name: event.where, address: { '@type': 'PostalAddress', ...(event.city ? { addressLocality: event.city } : {}), addressCountry: event.country } },
+  url: event.url,
+  description: details[event.url]?.description || `${event.type} in ${event.where}, ${event.dateLabel} ${event.start.slice(0, 4)}.`,
+  ...(details[event.url]?.image ? { image: details[event.url].image } : {}),
+});
+const jsonld = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    { '@type': 'WebSite', '@id': `${origin}#site`, url: origin, name: 'Awesome Bitcoin Events', inLanguage: 'en',
+      description: 'A curated list of Bitcoin conferences, meetups, festivals and retreats around the world, each linked to its organizer.' },
+    ...upcoming.map(eventLd),
+  ],
+};
 ---
-<BaseLayout title="Awesome Bitcoin Events" description="A curated list of Bitcoin conferences, meetups, festivals and retreats around the world, each linked to its organizer." map upcomingCount={upcoming.length} countryCount={countries.length}>
+<BaseLayout title="Awesome Bitcoin Events" description="A curated list of Bitcoin conferences, meetups, festivals and retreats around the world, each linked to its organizer." jsonld={jsonld} map upcomingCount={upcoming.length} countryCount={countries.length}>
   <main id="main-content">
     <section class="atlas" id="atlas" aria-label="Map">
       <div class="atlas-frame">
