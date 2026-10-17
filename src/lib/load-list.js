@@ -32,7 +32,17 @@ export function loadPlaces(root = process.cwd()) {
 // Recurring meetups: the "## Meetups" section of README.md.
 export function loadMeetups(root = process.cwd()) {
   const fullPath = path.join(root, 'README.md');
-  return existsSync(fullPath) ? parseMeetups(readFileSync(fullPath, 'utf8')) : { meetups: [], errors: [] };
+  if (!existsSync(fullPath)) return { meetups: [], errors: [] };
+  const result = parseMeetups(readFileSync(fullPath, 'utf8'));
+  // README keeps each region table sorted by country, then city; sorting here too means a row
+  // added out of order still shows up in the right place on the website.
+  const collator = new Intl.Collator('en', { sensitivity: 'base' });
+  const place = (m) => [m.country || '', m.city || ''];
+  result.meetups.sort((a, b) => {
+    const [ac, at] = place(a), [bc, bt] = place(b);
+    return collator.compare(ac, bc) || collator.compare(at, bt) || collator.compare(a.name, b.name);
+  });
+  return result;
 }
 
 // Optional extra details shown when an event row is expanded, keyed by the event's
