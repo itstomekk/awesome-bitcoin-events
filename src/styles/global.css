@@ -103,6 +103,8 @@ button, input, select { font: inherit; color: inherit; }
 .row.is-past .row-title, .row.is-past .row-date { color: var(--color-muted); }
 .row[data-event-card] { cursor: pointer; }
 .meetup-row { grid-template-columns: 9rem minmax(0, 1fr) minmax(0, 14rem); }
+/* Meetup rows reuse .row-date for the free-text "About" cell; let it wrap instead of spilling into the name column. */
+.meetup-row .row-date { min-width: 0; white-space: normal; overflow-wrap: anywhere; }
 .row-toggle { width: 2rem; height: 2rem; align-self: center; padding: 0; background: none; border: var(--rule-hair) solid var(--color-rule); border-radius: 50%; color: var(--color-ink-2); font: 400 var(--text-md)/1 var(--font-mono); cursor: pointer; transition: border-color var(--dur-fast) var(--ease-out), background-color var(--dur-fast) var(--ease-out); }
 .row-toggle:hover { border-color: var(--color-ink); background: var(--color-paper); }
 .row.is-open { background: var(--color-paper-2); }
