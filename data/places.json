@@ -1007,5 +1007,18 @@
   "Richmond, MI, USA": [
     42.8092,
     -82.75576
-  ]
+  ],
+  "Miskolctapolca, Hungary": [48.0634, 20.7489],
+  "Hradec Králové, Czech Republic": [50.2092, 15.8328],
+  "Rosenheim, Germany": [47.8558, 12.1273],
+  "Weiden, Germany": [49.6753, 12.1632],
+  "Würzburg, Germany": [49.778, 9.9435],
+  "Luxembourg, Luxembourg": [49.6116, 6.1319],
+  "Funchal, Portugal": [32.6496, -16.9087],
+  "Porto, Portugal": [41.1502, -8.6103],
+  "Burlington, USA": [44.4762, -73.2129],
+  "Golden, USA": [39.7546, -105.2206],
+  "Longmont, USA": [40.1672, -105.1019],
+  "Pensacola, USA": [30.4213, -87.2169],
+  "Tucson, USA": [32.2229, -110.9748]
 }

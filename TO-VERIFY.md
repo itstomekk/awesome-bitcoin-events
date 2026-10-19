@@ -6,14 +6,19 @@ To promote one, find its official page, add it to [README.md](README.md) as a ta
 
 | Dates | Event | Location | Type | Spotted on |
 | --- | --- | --- | --- | --- |
+| 2026 (postponed, date TBA) | Budapest Bitcoin 2026 | Budapest, Hungary | Conference | [official site](https://budapestbitcoin.com/) banner: postponed from Aug 8-9, new date not announced |
 | 2026-11-06 – 2026-11-08 | Grand Rapids Drury Inn Meetup Weekend | Grand Rapids, USA | Meetup | [Nostr calendar](https://njump.me/e5b253169a44ff6b9f0d3c172e287606ecf4362509b5123494c9fc654c452431) |
+| 2026-11-20 | Bitcoin (& crypto) Wealth Summit #2 Bordeaux | Bordeaux, France | Conference | [Eventbrite](https://www.eventbrite.com/e/bitcoin-crypto-wealth-summit-2-bordeaux-20-novembre-2026-tickets-1984371266877) by Montaigne Conseil & Patrimoine; no separate organizer page found |
 | 2026-12 (date TBA) | Bitcoin Baden 2026 | Baden, Switzerland | Conference | [Bitcoin Bundesverband](https://bitcoin-bundesverband.de/en/events/) · [yard.global](https://yard.global/event/bitcoin-baden-2026/); bitcoinbaden.ch shows no 2026 date |
 | 2026-12-17 – 2026-12-18 | Naija Bitcoin Conference 2026 | Lagos, Nigeria | Conference | [Bitvocation](https://bitvocation.com/bitcoin-conferences-discounts); [naijabitcoin.org](https://naijabitcoin.org/nbo-conference/) banner says Dec 17-18, Radisson Blu, but the page is still titled 2025 |
-| 2027-12-09 (end TBA) | Bitcoin MENA 2027 | Abu Dhabi, United Arab Emirates | Conference | [official update](https://mena.b.tc/event-update) · [ticket page](https://tickets.b.tc/event) shows Dec 9, 2027 without a city |
-| 2027-09-01 – 2027-09-03 | Origin Seoul 2027 | Seoul, South Korea | Conference | [source](https://bitcoinonly.events/origin-seoul-2027/) · organizer's X bio says Sep 1-3, 2027; originseoulbtc.com still shows 2026 |
 | 2027 (date TBA) | Bitcoin Alive 2027 | Sydney, Australia | Conference | [official site](https://bitcoinalive.io/) says "back early 2027" |
 | 2027 (date TBA) | The Bitcoin Rodeo 2027 | Calgary, Canada | Conference | [official site](https://bitcoinrodeo.com/) says 2026 is cancelled, back in 2027 |
 | 2027 (date TBA) | Baltic Honeybadger 2027 | Riga, Latvia | Conference | organizer (Hodl Hodl) on Nostr: no 2026 edition, next in Riga in 2027; [site](https://baltichoneybadger.com/) still shows 2025 |
+| 2027-04-17 | CryptoByte 2027 | Liberec, Czech Republic | Conference | [cryptobyte.cz](https://cryptobyte.cz/); Bitcoin-rooted but widened to AI and fintech, so check the Bitcoin share of the program |
+| 2027-07-15 – 2027-07-17 | Nashville 2027 Bitcoin-only side events (Pleb Party, Bitcoin Treasuries World, Bitcoin and Christ) | Nashville, USA | Conference | [Eventbrite](https://www.eventbrite.com/e/3-days-of-bitcoin-only-side-events-nashville-2027-including-pleb-party-tickets-1997169893915) by Events by Anders; side events around Bitcoin 2027, owner to decide if they belong |
+| 2027-09-01 – 2027-09-03 | Origin Seoul 2027 | Seoul, South Korea | Conference | [source](https://bitcoinonly.events/origin-seoul-2027/) · organizer's X bio says Sep 1-3, 2027; originseoulbtc.com still shows 2026 |
+| 2027-09-28 | Bitcoin Treasuries Conference 2027 | New York City, USA | Conference | [Luma](https://lu.ma/btcnyc27); [bitcointreasuries.net/conference](https://bitcointreasuries.net/conference) still shows the 2026 date |
+| 2027-12-09 (end TBA) | Bitcoin MENA 2027 | Abu Dhabi, United Arab Emirates | Conference | [official update](https://mena.b.tc/event-update) · [ticket page](https://tickets.b.tc/event) shows Dec 9, 2027 without a city |
 | Weekly | BitcoinWalk Vienna | Vienna, Austria | Meetup | former page `bitcoinwalk.org/vienna` (404 since BitcoinWalk moved to a new directory) |
 | Weekly | BitcoinWalk Helsinki | Helsinki, Finland | Meetup | former page `bitcoinwalk.org/helsinki` (404 since BitcoinWalk moved to a new directory) |
 | Weekly | BitcoinWalk Lyon | Lyon, France | Meetup | former page `bitcoinwalk.org/lyon` (404 since BitcoinWalk moved to a new directory) |
