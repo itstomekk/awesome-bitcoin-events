@@ -69,6 +69,7 @@ Dates and places change. Check the official page before you book travel. Being l
 | Nov 20–22 | [Bitcoin Educators Academy Chiang Mai](https://www.amityage.com/all-events/bitcoin-educators-academy-in-thailand) | Chiang Mai, Thailand | Workshop |
 | Nov 20 | [National Bitcoin and Digital Asset Policy 2026](https://bitcoinchiangmai.org/events/national-bitcoin-crypto-policy-2026) | Chiang Mai, Thailand | Conference |
 | Nov 20–22 | [Bitcoin Miskolc Konferencia 2026](https://bitcoinmiskolc.hu/konferencia/) | Miskolctapolca, Hungary | Conference |
+| Nov 20 | [Bitcoin (& crypto) Wealth Summit #2 Bordeaux](https://www.eventbrite.com/e/bitcoin-crypto-wealth-summit-2-bordeaux-20-novembre-2026-tickets-1984371266877) | Bordeaux, France | Conference |
 | Nov 21 | [Finding Satoshi: screening & drinks](https://www.dutchbitcoinembassy.com/en/events/finding-satoshi-2026) | The Hague, Netherlands | Meetup |
 | Nov 22 | [Sovereign Conference](https://sovereign-conference.com/) | Asunción, Paraguay | Conference |
 | Nov 22 | [Bitcoin Half Marathon 2026](https://bitcoinchiangmai.org/events/bitcoin-half-marathon-2026) | Chiang Mai, Thailand | Festival |
@@ -108,8 +109,10 @@ Dates and places change. Check the official page before you book travel. Being l
 | Jun 25 | [Revolution.Rocks 2027](https://revolution.rocks/) | Warsaw, Poland | Festival |
 | Jul 15 | [TGFB27 Conference](https://tgfb.com/conference/) | Nashville, USA | Conference |
 | Jul 15–17 | [Bitcoin 2027](https://conference.b.tc/) | Nashville, USA | Conference |
+| Jul 15–17 | [Bitcoin Nashville 2027 side events: Pleb Party, Bitcoin Treasuries World, Bitcoin and Christ](https://www.eventbrite.com/e/3-days-of-bitcoin-only-side-events-nashville-2027-including-pleb-party-tickets-1997169893915) | Nashville, USA | Festival |
 | Aug 14 | [Bitcoin Beyond 66 2027](https://bitcoinbeyond66.com/) | Bodø, Norway | Conference |
 | Aug 26–27 | [Bitcoin Asia 2027](https://asia.b.tc/2027) | Hong Kong | Conference |
+| Sep 28 | [Bitcoin Treasuries Conference 2027](https://lu.ma/btcnyc27) | New York City, USA | Conference |
 
 ## Meetups
 

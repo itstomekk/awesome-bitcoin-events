@@ -154,7 +154,6 @@ Archive of events from [README.md](README.md) that have already taken place. The
 | Aug 1 | [Bitcoin is for Everyone](http://www.bitcoinisforeveryone.com) | Portland, USA | Conference |
 | Aug 2 | [Lake Satoshi Campout](https://twitter.com/LakeSatoshi) | Lansing, USA | Conference |
 | Aug 7–8 | [bitcoin++ goes private](https://btcplusplus.dev/conf/riga) | Riga, Latvia | Conference |
-| Aug 8–9 | [Budapest Bitcoin](https://budapestbitcoin.com/) | Budapest, Hungary | Conference |
 | Aug 9–10 | [Baltic Honeybadger](https://baltichoneybadger.com/) | Riga, Latvia | Conference |
 | Aug 15–16 | [₿TCHEL](https://btchel.com/) | Helsinki, Finland | Conference |
 | Aug 16–17 | [Learning Bitcoin](https://www.learningbitcoin.ca/) | Vancouver, Canada | Conference |
