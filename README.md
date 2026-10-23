@@ -125,7 +125,7 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 ### Europe
 
 <details>
-<summary>Show 166 meetups</summary>
+<summary>Show 167 meetups</summary>
 
 | Where | Meetup | About |
 | --- | --- | --- |
@@ -293,6 +293,7 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 | Manchester, UK | [Bitcoin Manchester](https://www.meetup.com/bitcoin-manchester/) | Meetup group |
 | Manchester, UK | [BitcoinWalk Manchester](https://bitcoinwalk.org/manchester/) | Bitcoin walk |
 | Newcastle upon Tyne, UK | [Newcastle Bitcoin Meetup](https://www.meetup.com/newcastlebitcoinmeetup/) | Meetup group · [Meetup details](https://www.bitcoinnewcastle.com/) |
+| Northampton, UK | [Northants Bitcoin Network](https://northantsbitcoin.com/) | Monthly meetup |
 | Nottingham, UK | [Bitcoin Nottingham Meetup](https://www.bitcoinnottingham.org/meetups/) | Community |
 | Southend, UK | [Bitcoin Essex](https://bitcoinessex.co.uk/) | Monthly meetup |
 
@@ -501,7 +502,7 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 ### Asia
 
 <details>
-<summary>Show 18 meetups</summary>
+<summary>Show 21 meetups</summary>
 
 | Where | Meetup | About |
 | --- | --- | --- |
@@ -509,7 +510,9 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 | Bengaluru, India | [Bitshala](https://www.meetup.com/bitshala/) | Meetup group |
 | Mumbai, India | [Bitcoin4India - Mumbai](https://www.meetup.com/bitcoinforindia/) | Meetup group |
 | Bali, Indonesia | [Bitcoin House Bali](https://bitcoinindonesia.xyz/bitcoin-house-bali/) | Community · [Bitcoin Indonesia](https://bitcoinindonesia.xyz/) |
+| Bandung, Indonesia | [Bitcoin Indonesia Bandung](https://bitcoinindonesia.xyz/community/bitcoin-indonesia-events/bitcoin-meetup-bandung/) | Monthly meetup |
 | Jakarta, Indonesia | [Bitcoin Indonesia Jakarta](https://bitcoinindonesia.xyz/id/komunitas/bitcoin-indonesia-events/meetup-bitcoin-jakarta/) | Monthly meetup |
+| Malang, Indonesia | [Bitcoin Indonesia Malang](https://bitcoinindonesia.xyz/community/bitcoin-indonesia-events/bitcoin-meetup-malang/) | Meetup group |
 | Tokyo, Japan | [Tokyo Bitcoin Base](https://www.meetup.com/tokyo-bitcoin-base/) | Meetup group |
 | Tokyo, Japan | [Bitcoin Tokyo Front Desk](https://www.meetup.com/tokyo-citadel/) | Meetup group |
 | Kuala Lumpur, Malaysia | [Bitcoiner Malaysia](https://www.meetup.com/bitcoiner-malaysia) | Meetup group |
@@ -521,6 +524,7 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 | Bangkok, Thailand | [BitcoinWalk Bangkok](https://bitcoinwalk.org/bangkok/) | Bitcoin walk |
 | Chiang Mai, Thailand | [Bitcoins in Chiang Mai](https://www.meetup.com/bitcoinsinchiangmai/) | Meetup group |
 | Chiang Mai, Thailand | [Bitcoin Chiang Mai](https://www.bitcoinchiangmai.org/events) | Community |
+| Da Nang, Vietnam | [Bitcoin Đà Nẵng](https://bitcoindanang.com/) | Monthly meetup |
 | Hanoi, Vietnam | [Bitcoin Hanoi](https://www.meetup.com/bitcoin-hanoi/) | Meetup group |
 | Ho Chi Minh City, Vietnam | [Bitcoin Saigon](https://www.meetup.com/Bitcoin-Saigon-Meetup/) | Meetup group |
 
