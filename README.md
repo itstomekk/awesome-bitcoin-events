@@ -2,9 +2,19 @@
 
 > A curated list of Bitcoin conferences, meetups, festivals and retreats around the world.
 
-Every event links to its organizer's official page. Browse the same list with search, filters and a map on the **[website](https://itstomekk.github.io/awesome-bitcoin-events/)**. The website is built from this file.
+**[🌐 Website](https://itstomekk.github.io/awesome-bitcoin-events/)** · [🗺️ Meetups](https://github.com/itstomekk/awesome-bitcoin-events#meetups) · [📦 Past events](https://github.com/itstomekk/awesome-bitcoin-events/blob/main/PAST.md) · [🔍 Not yet verified](https://github.com/itstomekk/awesome-bitcoin-events/blob/main/TO-VERIFY.md) · [🤝 Contribute](https://github.com/itstomekk/awesome-bitcoin-events#contributing) · [📜 Code of Conduct](https://github.com/itstomekk/awesome-bitcoin-events/blob/main/.github/CODE_OF_CONDUCT.md) · [CC0 license](https://github.com/itstomekk/awesome-bitcoin-events/blob/main/LICENSE)
 
-**[Meetups](https://github.com/itstomekk/awesome-bitcoin-events#meetups)** · [Past events](https://github.com/itstomekk/awesome-bitcoin-events/blob/main/PAST.md) · [Not yet verified](https://github.com/itstomekk/awesome-bitcoin-events/blob/main/TO-VERIFY.md) · [Contributing](https://github.com/itstomekk/awesome-bitcoin-events/blob/main/.github/CONTRIBUTING.md) · [Code of Conduct](https://github.com/itstomekk/awesome-bitcoin-events/blob/main/.github/CODE_OF_CONDUCT.md) · [CC0 license](https://github.com/itstomekk/awesome-bitcoin-events/blob/main/LICENSE)
+![The Awesome Bitcoin Events website: a world map of upcoming events and meetups above a searchable list](.github/readme/home.jpg)
+
+👋 **Hello!** This is an open, community-edited calendar of Bitcoin events: conferences, festivals, retreats, hackathons, workshops and local meetups, all in one place. Every event links to its organizer's official page, so you get the real dates and tickets, not a reseller.
+
+Planning a trip, looking for a meetup in your city, or running an event yourself? You are in the right place. **Anyone can add or fix a row, and no tools are needed.** 🧡
+
+🟢 **Status: live and actively maintained.** The website above is published on GitHub Pages and rebuilt from this file on every change, with search, filters and a map.
+
+- 🗓️ **Upcoming events:** one table per year, below.
+- 🍻 **Meetups:** recurring local meetups by region: Europe, North America, Latin America, Asia, Oceania, Africa and Online.
+- 📦 **Past events** and 🔍 **not yet verified** leads have their own sections at the end.
 
 Dates and places change. Check the official page before you book travel. Being listed is not an endorsement.
 
@@ -13,8 +23,8 @@ Dates and places change. Check the official page before you book travel. Being l
 - [2026](#2026)
 - [2027](#2027)
 - [Meetups](#meetups)
-- [Past events](#past-events)
-- [Not yet verified](#not-yet-verified)
+- [📦 Past events](#-past-events)
+- [🔍 Not yet verified](#-not-yet-verified)
 
 <!-- Tables don't need padded, aligned pipes: one row per event is enough. -->
 <!--lint disable table-pipe-alignment-->
@@ -582,20 +592,45 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 
 </details>
 
-## Past events
+## 📦 Past events
 
 Events that have already happened are in **[PAST.md](PAST.md)**.
 
-## Not yet verified
+## 🔍 Not yet verified
 
-Events seen on aggregator sites, but whose official page we haven't found yet, are in **[TO-VERIFY.md](TO-VERIFY.md)**. Found one? Please open a pull request that moves it here.
+Events seen on aggregator sites, but whose official page we haven't found yet, are in **[TO-VERIFY.md](TO-VERIFY.md)**. Found the official page for one? Please open a pull request that moves it into the list above.
 
 ## Contributing
 
-Add an event by editing this file: add one row to the right month's table, in date order:
+This list is only as good as the people who keep it current, and **your help is very welcome**. Pick whatever is easiest:
 
-```markdown
-| Oct 12–15 | [Event name](https://official-page.example) | City, Country | Conference |
+- ✏️ **Edit a row on GitHub.** Click the pencil on this file and add one row to the right year's table, in date order. GitHub walks you through the pull request, and an automatic check tells you the line number if something is off:
+
+  ```markdown
+  | Oct 12–15 | [Event name](https://official-page.example) | City, Country | Conference |
+  ```
+
+- 📝 **Use a form.** Don't want to touch Markdown? [Submit an event](https://github.com/itstomekk/awesome-bitcoin-events/issues/new?template=event-submission.yml) and a maintainer will add the line.
+- 🛠️ **Report a correction.** A date moved, a link died, an event was cancelled? Use the [correction form](https://github.com/itstomekk/awesome-bitcoin-events/issues/new?template=event-correction.yml) or edit the row directly.
+- 🗺️ **Add your local meetup.** Recurring meetups live in the Meetups section above, one table per region.
+- 💬 **Say hello.** Questions and ideas are welcome in [GitHub issues](https://github.com/itstomekk/awesome-bitcoin-events/issues).
+
+See [CONTRIBUTING.md](.github/CONTRIBUTING.md) for the full row format, what belongs in the list and where to find events. Please read the [Code of Conduct](.github/CODE_OF_CONDUCT.md) too.
+
+### 🛠️ Development
+
+The website is a static [Astro](https://astro.build/) site built from `README.md` and `PAST.md`, so the list stays the single source of truth. Node 20 or newer is required.
+
+```bash
+npm install
+npm run check   # validate README.md and PAST.md (format, dates, order, duplicates)
+npm test        # parser tests
+npm run dev     # preview the website locally
+npm run build   # build the site into dist/
 ```
 
-See [CONTRIBUTING.md](.github/CONTRIBUTING.md) for the full format. If you'd rather not edit Markdown, **[submit the event through a form](https://github.com/itstomekk/awesome-bitcoin-events/issues/new?template=event-submission.yml)**.
+Maintainer commands such as `npm run archive` are described in the maintainers section of CONTRIBUTING.md.
+
+---
+
+Maintained by [@itstomekk](https://github.com/itstomekk). The list is released under [CC0](LICENSE), so reuse it freely. 🧡
