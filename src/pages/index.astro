@@ -163,6 +163,7 @@ const jsonld = {
         <p><span class="browse-label">By year</span>{model.hubs.years.map((hub) => <a href={`${base}${hub.path}/`}>{hub.path.slice(5)}</a>)}</p>
         <p><span class="browse-label">By type</span>{model.hubs.types.map((hub) => <a href={`${base}${hub.path}/`}>{hub.h1.replace('Bitcoin ', '')}</a>)}</p>
         <p><span class="browse-label">Meetups</span><a href={`${base}meetups/`}>All {meetups.length}</a>{model.hubs.regions.map((hub) => <a href={`${base}${hub.path}/`}>{hub.h1.replace('Bitcoin meetups in ', '')}</a>)}</p>
+        <p><span class="browse-label">Feeds</span><a href={`${base}calendar.ics`}>Calendar (.ics)</a><a href={`${base}events.json`}>Open data (JSON)</a><a href={`${base}feed.xml`}>Atom feed</a><a href={`${base}llms.txt`}>llms.txt</a><a href={`${base}index.md`}>Markdown</a></p>
         <p><span class="browse-label">By country</span>{model.hubs.countries.map((hub) => <a href={`${base}${hub.path}/`}>{hub.h1.replace('Bitcoin events and meetups in ', '')}</a>)}</p>
       </div>
     </nav>

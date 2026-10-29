@@ -24,6 +24,8 @@ export function llmsTxt(origin, model = null) {
     `- [Home page](${at('/')}): searchable, filterable list and world map of upcoming and past events and meetups.`,
     `- [Full list as Markdown](${at('/index.md')}): the whole README with upcoming events by year and every meetup by region. Best single file to read.`,
     `- [Sitemap](${at('/sitemap.xml')}): all indexable pages.`,
+    `- [Open data as JSON](${at('/events.json')}): every event and meetup with dates, locations, official links and page links (CC0).`,
+    `- [Calendar feed](${at('/calendar.ics')}): all upcoming events as an iCalendar file; [Atom feed](${at('/feed.xml')}) lists the next 50.`,
   ];
   if (model) {
     const hubs = model.pages.filter((p) => p.indexable && p.kind !== 'event');

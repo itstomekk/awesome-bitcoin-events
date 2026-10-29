@@ -46,6 +46,8 @@ const Mast = mastHeading ? 'h1' : 'p';
     {noindex && <meta name="robots" content="noindex" />}
     {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
     {markdown && !noindex && <link rel="alternate" type="text/markdown" href={`${base}${markdown}`} />}
+    {!noindex && <link rel="alternate" type="application/atom+xml" title="Upcoming Bitcoin events (Atom)" href={`${base}feed.xml`} />}
+    {!noindex && <link rel="alternate" type="text/calendar" title="Upcoming Bitcoin events (calendar)" href={`${base}calendar.ics`} />}
     {canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
     {ogImage && <meta property="og:image" content={ogImage} />}
     {ogImage && <meta property="og:image:width" content="1200" />}

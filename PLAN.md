@@ -18,7 +18,7 @@ Keep the GitHub README as the canonical, contributor-editable event list; use th
 - [ ] Verify and promote qualified entries from `TO-VERIFY.md`; do not publish uncertain dates as confirmed events. Three leads remain: Bitcoin: A Competitive Advantage, Bitcoin MENA 2027, Origin Seoul 2027.
 - [x] Technical SEO basics: canonical URLs, `og:url`, sitemap, `robots.txt` with Content-Signal, `og:image`, `llms.txt`, Markdown copy, absolute JSON-LD image URLs.
 - [x] Generated pages (`src/lib/pages-model.js`): `/events/<slug>/` for every event, plus `/country/`, `/year/`, `/type/`, `/meetups/` and `/meetups/<region>/`. Each has its own title, description, canonical, JSON-LD and breadcrumbs; indexable pages also get a Markdown copy, a build-time OG card (`/og/...png`) and a sitemap entry. Events get a `.ics` file. Past events and archive-only hubs are noindex and out of the sitemap. A daily scheduled deploy keeps that in step with the calendar.
-- [ ] Feeds: `calendar.ics`, `events.json`, `feed.xml`.
+- [x] Feeds: `/calendar.ics` (all upcoming events, subscribable), `/events.json` (whole list, CC0) and `/feed.xml` (Atom, next 50 events), linked in `<head>`, the Browse block and `llms.txt`.
 - [ ] Submit the sitemap to Google Search Console and Bing, add IndexNow.
 - [ ] Maintain reliable link health without deleting historical records automatically.
 - [ ] Keep list contributions simple and run `npm run check`, `npm test`, and `npm run build` before delivery.
