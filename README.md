@@ -113,20 +113,27 @@ Dates and places change. Check the official page before you book travel. Being l
 | Apr 2–3 | [Sovereignty Summit 2027](https://sovereigntysummit.nz/) | Queenstown, New Zealand | Conference |
 | Apr 16–17 | [Bitcoin Österreich 2027](https://www.rettedeingeld.at/bitcoin-oesterreich-2027/) | Neufeld an der Leitha, Austria | Conference |
 | Apr 23–25 | [Swiss Bitcoin Conference 2027](https://swiss-bitcoin-conference.com/) | Kreuzlingen, Switzerland | Conference |
+| May 5 | [Bitcoin Corporate Day 2027](https://www.bitcoincorporateday.com/) | Prague, Czech Republic | Conference |
 | May 6–8 | [BTC Prague 2027](https://btcprague.com/) | Prague, Czech Republic | Conference |
+| May 15 | [Bitcare Forum 2027](https://bitcareforum.it/) | Brescia, Italy | Conference |
 | May 21–23 | [Bitcoin Ireland Conference 2027](https://www.bitcoinireland.eu/) | Dublin, Ireland | Conference |
+| May 21–23 | [Bitcoin Bay Bash - Byron Bay 2027](https://bitcoinbushbash.info/byron-bay/) | Byron Bay, Australia | Conference |
 | May 28 | [Bitcoin Treasuries Conference UK 2027](https://www.smarterwebcompany.co.uk/bitcoin-treasuries-conference-uk-2027/) | Bristol, UK | Conference |
 | May 28–29 | [Adopting Bitcoin Arnhem 2027](https://nl27.adoptingbitcoin.org/) | Arnhem, Netherlands | Conference |
 | May 31 – Jun 2 | [Oslo Freedom Forum 2027](https://oslofreedomforum.com/event/oslo-freedom-forum-2027/buy-your-ticket-for-off-2027/) | Oslo, Norway | Conference |
+| Jun 15–16 | [Energy Investors Forum 2027](https://energyinvestorsforum.com/) | Dallas, USA | Conference |
 | Jun 17–20 | [Camp Nakamoto 2027](https://www.campnakamoto.com/) | Lake Winnipesaukee, USA | Retreat |
 | Jun 24–27 | [Bitcoin FilmFest 2027](https://bitcoinfilmfest.com/) | Warsaw, Poland | Festival |
 | Jun 25 | [Revolution.Rocks 2027](https://revolution.rocks/) | Warsaw, Poland | Festival |
+| Jun 25–26 | [Le Paradigme Bitcoin 2027](https://leparadigmebitcoin.ch/) | Neuchâtel, Switzerland | Conference |
 | Jul 15 | [TGFB27 Conference](https://tgfb.com/conference/) | Nashville, USA | Conference |
 | Jul 15–17 | [Bitcoin 2027](https://conference.b.tc/) | Nashville, USA | Conference |
 | Jul 15–17 | [Bitcoin Nashville 2027 side events: Pleb Party, Bitcoin Treasuries World, Bitcoin and Christ](https://www.eventbrite.com/e/3-days-of-bitcoin-only-side-events-nashville-2027-including-pleb-party-tickets-1997169893915) | Nashville, USA | Festival |
 | Aug 14 | [Bitcoin Beyond 66 2027](https://bitcoinbeyond66.com/) | Bodø, Norway | Conference |
 | Aug 26–27 | [Bitcoin Asia 2027](https://asia.b.tc/2027) | Hong Kong | Conference |
+| Sep 10–11 | [BTC HEL 2027](https://btchel.com/event/btchel-2027) | Helsinki, Finland | Conference |
 | Sep 28 | [Bitcoin Treasuries Conference 2027](https://lu.ma/btcnyc27) | New York City, USA | Conference |
+| Oct 1–3 | [Watch Out, Bitcoin! 2027](https://wobitcoin.org/) | Madrid, Spain | Conference |
 
 ## Meetups
 

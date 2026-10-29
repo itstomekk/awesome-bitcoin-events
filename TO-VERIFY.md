@@ -16,6 +16,9 @@ To promote one, find its official page, add it to [README.md](README.md) as a ta
 | 2027-04-17 | CryptoByte 2027 | Liberec, Czech Republic | Conference | [cryptobyte.cz](https://cryptobyte.cz/); Bitcoin-rooted but widened to AI and fintech, so check the Bitcoin share of the program |
 | 2027-09-01 – 2027-09-03 | Origin Seoul 2027 | Seoul, South Korea | Conference | [source](https://bitcoinonly.events/origin-seoul-2027/) · organizer's X bio says Sep 1-3, 2027; originseoulbtc.com still shows 2026 |
 | 2027-12-09 (end TBA) | Bitcoin MENA 2027 | Abu Dhabi, United Arab Emirates | Conference | [official update](https://mena.b.tc/event-update) · [ticket page](https://tickets.b.tc/event) shows Dec 9, 2027 without a city |
+| 2027-03-03 – 2027-03-07 | Monolithic Tech Summit V6 (formerly Bitcoin Ski Summit) | Jackson Hole, USA | Conference | [official page](https://www.monolithic.tech/summit2027): invite-only, now Bitcoin, AI and energy, so check fit |
+| 2027-04-24 – 2027-04-25 | Barcelona Cyphers Conference 2027 | Barcelona, Spain | Conference | [organizer](https://www.bcc8333.xyz/): "save the date", marked "[Dates to be confirmed]" |
+| 2027-11-04 | 7th Annual Canadian Bitcoin Summit | Canada (city TBD) | Conference | [organizer calendar](https://www.mybtccanada.ca/events-2-1): Nov 4, 2027, venue "TBD" |
 | Weekly | BitcoinWalk Vienna | Vienna, Austria | Meetup | former page `bitcoinwalk.org/vienna` (404 since BitcoinWalk moved to a new directory) |
 | Weekly | BitcoinWalk Helsinki | Helsinki, Finland | Meetup | former page `bitcoinwalk.org/helsinki` (404 since BitcoinWalk moved to a new directory) |
 | Weekly | BitcoinWalk Lyon | Lyon, France | Meetup | former page `bitcoinwalk.org/lyon` (404 since BitcoinWalk moved to a new directory) |
