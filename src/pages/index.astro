@@ -67,10 +67,17 @@ const meetupPins = meetups.filter((m) => places[m.where]).map((m) => ({
 // Escapes "<" so the JSON can't close the <script> tag it is embedded in.
 const mapJson = JSON.stringify([...mapEvents, ...meetupPins]).replace(/</g, '\\u003C');
 const repo = 'https://github.com/itstomekk/awesome-bitcoin-events';
+// Search-friendly title and description, built from the data so the numbers never go stale.
+const upcomingYears = [...new Set(upcoming.map((event) => event.start.slice(0, 4)))].sort();
+const yearSpan = upcomingYears.length > 1 ? `${upcomingYears[0]}–${upcomingYears.at(-1)}` : (upcomingYears[0] || '');
+const pageTitle = `Bitcoin Conferences & Meetups ${yearSpan} | Awesome Bitcoin Events`.replace('  ', ' ');
+const pageDescription = `${upcoming.length} upcoming Bitcoin conferences, festivals and retreats in ${countries.length} countries, plus ${meetups.length} local meetups. Dates, cities and official organizer links.`;
 
 // Structured data for search engines: the site, plus one schema.org Event per upcoming event
 // (eligible for Google's event rich results) and the meetups as a plain list.
 const origin = (Astro.site ? new URL(import.meta.env.BASE_URL.replace(/\/?$/, '/'), Astro.site).href : '');
+// schema.org and Google ignore relative image URLs, so locally hosted images (event-images/...) get the site origin.
+const absoluteImage = (image) => (/^https?:/i.test(image) || !Astro.site ? image : new URL(image.replace(/^\//, ''), new URL(import.meta.env.BASE_URL.replace(/\/?$/, '/'), Astro.site)).href);
 const eventLd = (event) => ({
   '@type': 'Event',
   name: event.title,
@@ -83,7 +90,7 @@ const eventLd = (event) => ({
     : { '@type': 'Place', name: event.where, address: { '@type': 'PostalAddress', ...(event.city ? { addressLocality: event.city } : {}), addressCountry: event.country } },
   url: event.url,
   description: details[event.url]?.description || `${event.type} in ${event.where}, ${event.dateLabel} ${event.start.slice(0, 4)}.`,
-  ...(details[event.url]?.image ? { image: details[event.url].image } : {}),
+  ...(details[event.url]?.image ? { image: absoluteImage(details[event.url].image) } : {}),
 });
 const jsonld = {
   '@context': 'https://schema.org',
@@ -94,7 +101,7 @@ const jsonld = {
   ],
 };
 ---
-<BaseLayout title="Awesome Bitcoin Events" description="A curated list of Bitcoin conferences, meetups, festivals and retreats around the world, each linked to its organizer." jsonld={jsonld} map upcomingCount={upcoming.length} countryCount={countries.length} markdown="index.md">
+<BaseLayout title={pageTitle} description={pageDescription} jsonld={jsonld} map upcomingCount={upcoming.length} countryCount={countries.length} markdown="index.md">
   <main id="main-content">
     <section class="atlas" id="atlas" aria-label="Map">
       <div class="atlas-frame">
