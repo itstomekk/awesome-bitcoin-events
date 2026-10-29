@@ -329,8 +329,6 @@ const jsonld = {
     const mapNode = document.querySelector('#event-map');
     const mapData = JSON.parse(document.querySelector('#map-data').textContent);
     if (mapNode && window.L && mapData.length) {
-      const css = getComputedStyle(document.documentElement);
-      const colour = (name) => css.getPropertyValue(name).trim();
       eventMap = window.L.map(mapNode, { scrollWheelZoom: false, worldCopyJump: true, zoomControl: false });
       window.L.control.zoom({ position: 'bottomleft' }).addTo(eventMap);
       window.L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -340,15 +338,26 @@ const jsonld = {
       const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
       const rank = (p) => (p.kind === 'meetup' ? 1 : p.end < today ? 0 : 2); // draw upcoming events on top
       const bounds = [];
-      [...mapData].sort((a, b) => rank(a) - rank(b)).forEach((p) => {
+      const styled = []; // every marker with its point (ids are not unique across meetups)
+      // Marker colours come from the design tokens, so they are recomputed when the design switches.
+      const markerStyle = (p) => {
+        const live = getComputedStyle(document.documentElement);
+        const tok = (name) => live.getPropertyValue(name).trim();
         const past = p.kind === 'event' && p.end < today;
-        const fill = p.kind === 'meetup' ? colour('--color-meetup') : past ? colour('--color-past') : colour('--color-accent');
-        const marker = window.L.circleMarker([p.latitude, p.longitude], {
-          radius: p.kind === 'meetup' ? 4 : past ? 4 : 6, color: past || p.kind === 'meetup' ? fill : colour('--color-ink'),
+        const fill = p.kind === 'meetup' ? tok('--color-meetup') : past ? tok('--color-past') : tok('--color-accent');
+        return {
+          radius: p.kind === 'meetup' ? 4 : past ? 4 : 6, color: past || p.kind === 'meetup' ? fill : tok('--color-ink'),
           weight: past || p.kind === 'meetup' ? 0 : 1.5, fillColor: fill, fillOpacity: past ? 0.7 : 0.95
-        }).addTo(eventMap).bindPopup(`<strong>${escapeHtml(p.title)}</strong><br>${escapeHtml(p.dates)}<br>${escapeHtml(p.where)}<br><a href="${escapeHtml(p.url)}" target="_blank" rel="noreferrer">Official page ↗</a>`);
+        };
+      };
+      [...mapData].sort((a, b) => rank(a) - rank(b)).forEach((p) => {
+        const marker = window.L.circleMarker([p.latitude, p.longitude], markerStyle(p)).addTo(eventMap).bindPopup(`<strong>${escapeHtml(p.title)}</strong><br>${escapeHtml(p.dates)}<br>${escapeHtml(p.where)}<br><a href="${escapeHtml(p.url)}" target="_blank" rel="noreferrer">Official page ↗</a>`);
         markers.set(p.id, marker);
+        styled.push([p, marker]);
         bounds.push([p.latitude, p.longitude]);
+      });
+      document.addEventListener('abe:design', () => {
+        styled.forEach(([p, m]) => m.setStyle(markerStyle(p)));
       });
       eventMap.fitBounds(bounds, { padding: [24, 24], maxZoom: 3 });
       // Start closer than the whole-world fit: zoom in ZOOM_BOOST levels, centred on the

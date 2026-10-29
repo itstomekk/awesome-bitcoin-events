@@ -2,7 +2,7 @@
 // Shared page shell: <head>, N6 masthead and Ft4 colophon. Pass `map` to load Leaflet
 // (only the home page needs it); it comes from unpkg, pinned to 1.9.4 with SRI hashes.
 import '../styles/global.css';
-import '../styles/design-family.css';
+import '../styles/design-poster.css';
 
 const {
   title = 'Awesome Bitcoin Events',
@@ -61,7 +61,40 @@ const Mast = mastHeading ? 'h1' : 'p';
     {ogImage && <meta name="twitter:image:alt" content={ogAlt} />}
     {jsonld && <script type="application/ld+json" set:html={JSON.stringify(jsonld).replace(/</g, '\\u003C')}></script>}
     <meta name="msvalidate.01" content="12104CE87C2A256D7B405ACF97ABFE79" />
-    <meta name="theme-color" content="#eef1f5" />
+    <meta name="theme-color" id="theme-color-meta" content="#eef1f5" />
+    <script is:inline>
+      // Design switcher: "classic" (default) or "poster" (the Awesome Bitcoin Culture look). Runs before
+      // first paint so there is no flash. Saved in localStorage; ?design=poster or ?design=classic
+      // picks one and remembers it. The poster fonts are only fetched when that design is on.
+      (() => {
+        const KEY = 'abe-design';
+        const FONTS = 'https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:wght@400;700&display=swap';
+        let saved = null;
+        try {
+          const q = new URLSearchParams(location.search).get('design');
+          if (q === 'poster' || q === 'classic') localStorage.setItem(KEY, q);
+          saved = localStorage.getItem(KEY);
+        } catch (e) { /* storage blocked: fall back to the query string only */ }
+        const root = document.documentElement;
+        function apply(design, persist) {
+          if (design !== 'poster') design = 'classic';
+          root.dataset.design = design;
+          if (persist) { try { localStorage.setItem(KEY, design); } catch (e) { /* ignore */ } }
+          if (design === 'poster' && !document.getElementById('poster-fonts')) {
+            const link = document.createElement('link');
+            link.id = 'poster-fonts'; link.rel = 'stylesheet'; link.href = FONTS;
+            document.head.appendChild(link);
+          }
+          const meta = document.getElementById('theme-color-meta');
+          if (meta) meta.setAttribute('content', design === 'poster' ? '#f7931a' : '#eef1f5');
+          document.querySelectorAll('[data-design-choice]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.designChoice === design)));
+          document.dispatchEvent(new CustomEvent('abe:design', { detail: design }));
+        }
+        window.abeSetDesign = (design) => apply(design, true);
+        const fromQuery = /[?&]design=poster(&|$)/.test(location.search);
+        apply(saved === 'poster' || (saved === null && fromQuery) ? 'poster' : 'classic', false);
+      })();
+    </script>
     <link rel="icon" href={`${base}favicon.svg`} type="image/svg+xml" />
     {map && <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />}
     {map && <script is:inline src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>}
@@ -75,6 +108,11 @@ const Mast = mastHeading ? 'h1' : 'p';
           ? <><span data-upcoming-count>{upcomingCount}</span> upcoming · {countryCount} countries</>
           : 'The community list of Bitcoin events'}
       </p>
+      <div class="design-switch" role="group" aria-label="Design">
+        <span class="ds-label">Design</span>
+        <button type="button" data-design-choice="classic" aria-pressed="true">Classic</button>
+        <button type="button" data-design-choice="poster" aria-pressed="false">Poster</button>
+      </div>
       <hr class="mast-rule" aria-hidden="true" />
     </header>
     <slot />
@@ -121,6 +159,12 @@ const Mast = mastHeading ? 'h1' : 'p';
         if (document.fonts && document.fonts.ready) document.fonts.ready.then(queue);
         place();
       })();
+    </script>
+    <script is:inline>
+      document.querySelectorAll('[data-design-choice]').forEach((b) => {
+        b.setAttribute('aria-pressed', String(b.dataset.designChoice === document.documentElement.dataset.design));
+        b.addEventListener('click', () => window.abeSetDesign && window.abeSetDesign(b.dataset.designChoice));
+      });
     </script>
     <script data-goatcounter="https://awesomebtcevents.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   </body>

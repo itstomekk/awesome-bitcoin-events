@@ -1,0 +1,212 @@
+/* Poster design: Awesome Bitcoin Events dressed in the Awesome Bitcoin Culture language (cream paper,
+ * near-black ink, 2px rules, flat Bitcoin-orange bars, Archivo Black + Space Mono, square corners).
+ * Every rule is scoped to html[data-design="poster"], so the default (Classic) look is untouched.
+ * The attribute is set by the inline script in BaseLayout.astro from the visitor's saved choice
+ * (localStorage "abe-design") or ?design=poster, and flipped by the switcher in the masthead.
+ * Loaded after global.css so it wins on equal specificity; the media blocks stay last. */
+html[data-design="poster"] {
+  --color-paper:      #f2f0e9;
+  --color-paper-2:    #e6e3d8;
+  --color-paper-3:    #d9d5c6;
+  --color-rule:       rgba(17, 17, 17, 0.28);
+  --color-rule-2:     #111;
+  --color-muted:      rgba(17, 17, 17, 0.62);
+  --color-ink-2:      #1d1c19;
+  --color-ink:        #111;
+  --color-accent:     #f7931a;
+  --color-accent-ink: #111;
+  --color-focus:      #111;
+  --color-past:       #9a968a;
+  --color-meetup:     #1f9bdc;       /* Culture's Podcasts blue */
+
+  --font-display: "Archivo Black", "Arial Black", Impact, "Helvetica Neue", Arial, sans-serif;
+  --font-body:    "Space Mono", ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+  --font-mono:    "Space Mono", ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+
+  --text-xs:   0.6875rem;
+  --text-sm:   0.75rem;
+  --text-base: 0.8125rem;
+  --text-md:   0.9375rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.375rem;
+  --text-2xl:  1.75rem;
+  --text-display: clamp(1.75rem, 3.2vw + 0.6rem, 3.25rem);
+  --tracking-display: 0.005em;
+  --tracking-label: 0.06em;
+  --radius-sm: 0;
+  --page-gutter: clamp(1rem, 4vw, 2rem);
+}
+html[data-design="poster"] *,
+html[data-design="poster"] *::before,
+html[data-design="poster"] *::after { border-radius: 0; }
+html[data-design="poster"] body { line-height: 1.45; }
+html[data-design="poster"] ::selection { background: #111; color: #f7931a; }
+html[data-design="poster"] :focus-visible { outline: 3px solid #111; outline-offset: 2px; }
+
+/* Masthead = Culture's top bar: a flat orange band with the title in uppercase display type ------ */
+html[data-design="poster"] .nav-mast {
+  width: 100%; max-width: none; margin: 0; padding: 0.6rem var(--page-gutter) 0.55rem;
+  background: var(--color-accent); color: #111; border-bottom: 2px solid #111;
+  text-align: left; display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 1.25rem;
+}
+html[data-design="poster"] .mast-name { margin: 0 auto 0 0; font: 400 clamp(1.05rem, 2.2vw, 1.5rem)/1 var(--font-display); letter-spacing: 0.01em; text-transform: uppercase; white-space: nowrap; }
+html[data-design="poster"] .mast-name a { display: inline-flex; align-items: center; gap: 0.6rem; }
+html[data-design="poster"] .mast-icon { width: 1.35em; height: 1.35em; margin: 0; vertical-align: 0; }
+html[data-design="poster"] .mast-line { order: 2; margin: 0; color: #111; font: 700 0.6875rem/1 var(--font-body); letter-spacing: 0.06em; text-transform: uppercase; }
+html[data-design="poster"] .mast-rule { display: none; }
+html[data-design="poster"] .mast-gh-slot { width: 1.05rem; height: 1.05rem; margin-left: 0.6rem; }
+html[data-design="poster"] .mast-gh { color: #111; }
+html[data-design="poster"] .mast-gh:hover,
+html[data-design="poster"] .mast-gh:focus-visible { color: #111; }
+html[data-design="poster"] .mast-gh.is-floating { background: color-mix(in oklab, var(--color-accent) calc(var(--p, 0) * 100%), transparent); box-shadow: none; border-radius: 0; }
+
+/* Map: flat band with a hard rule under it, legend as a black label block ------------------------ */
+html[data-design="poster"] .atlas { margin-top: 0; }
+html[data-design="poster"] #event-map { border-top: 0; border-bottom: 2px solid #111; background: var(--color-paper-2); }
+html[data-design="poster"] #event-map .leaflet-tile-pane { filter: grayscale(1) contrast(0.95) brightness(1.02) sepia(0.12); }
+html[data-design="poster"] .atlas-key { top: 0; left: 0; gap: 0.25rem 1rem; padding: 0.4rem 0.7rem; background: #111; color: #f2f0e9; border: 0; font: 700 0.6875rem/1.3 var(--font-body); letter-spacing: 0.04em; text-transform: uppercase; }
+html[data-design="poster"] .atlas-key i { border-radius: 0; width: 0.6rem; height: 0.6rem; }
+html[data-design="poster"] .leaflet-bar,
+html[data-design="poster"] .leaflet-bar a { border-radius: 0 !important; }
+html[data-design="poster"] .leaflet-bar { border: 2px solid #111 !important; box-shadow: none !important; }
+html[data-design="poster"] .leaflet-bar a { background: var(--color-paper); color: #111; }
+html[data-design="poster"] .leaflet-popup-content-wrapper,
+html[data-design="poster"] .leaflet-popup-tip { border-radius: 0; box-shadow: none; border: 2px solid #111; background: var(--color-paper); }
+html[data-design="poster"] .leaflet-container { font-family: var(--font-body); }
+
+/* Tabs: Culture's rail tabs turned horizontal: a coloured edge, flat colour fill when active ----- */
+html[data-design="poster"] .view-tabs { gap: 0; padding: 0; border-bottom: 2px solid #111; }
+html[data-design="poster"] .view-tabs button {
+  padding: 0.7rem 1.25rem; border: 0; border-right: 2px solid #111; border-bottom: 0; border-left: 7px solid var(--color-accent);
+  font: 700 0.75rem/1 var(--font-body); letter-spacing: 0.06em; text-transform: uppercase; color: #111; background: transparent;
+}
+html[data-design="poster"] .view-tabs button + button { border-left-color: var(--color-meetup); }
+html[data-design="poster"] .view-tabs button:hover { background: color-mix(in srgb, var(--color-accent) 26%, transparent); }
+html[data-design="poster"] .view-tabs button + button:hover { background: color-mix(in srgb, var(--color-meetup) 22%, transparent); }
+html[data-design="poster"] .view-tabs button[aria-selected="true"] { background: var(--color-accent); color: #111; }
+html[data-design="poster"] .view-tabs button + button[aria-selected="true"] { background: var(--color-meetup); color: #111; }
+html[data-design="poster"] .view-tabs .tab-count { color: inherit; opacity: 0.8; font: 700 0.6875rem/1 var(--font-body); vertical-align: 0; margin-left: 0.35rem; }
+
+/* Filters: borderless underline controls like Culture's search ---------------------------------- */
+html[data-design="poster"] .filters { top: 0; padding: 0.55rem 3rem 0.55rem 0; background: var(--color-paper); border-top: 0; border-bottom: 2px solid #111; gap: 0.4rem 1.1rem; }
+html[data-design="poster"] .filters input[type="search"],
+html[data-design="poster"] .filters select {
+  background: transparent; border: 0; border-bottom: 2px solid rgba(17, 17, 17, 0.45); border-radius: 0;
+  padding: 0.5rem 0.4rem 0.35rem 0; font: 700 0.6875rem/1.2 var(--font-body); text-transform: uppercase; letter-spacing: 0.03em; color: #111;
+}
+html[data-design="poster"] .filters input[type="search"]::placeholder { color: #111; opacity: 0.8; }
+html[data-design="poster"] .filters input[type="search"]:focus,
+html[data-design="poster"] .filters select:focus { border-bottom-color: #111; outline: 0; }
+html[data-design="poster"] .filters input[type="search"]:hover,
+html[data-design="poster"] .filters select:hover { border-color: #111; }
+html[data-design="poster"] .status-tabs { gap: 0; border: 2px solid #111; }
+html[data-design="poster"] .status-tabs button { padding: 0.35rem 0.7rem; border: 0; font: 700 0.6875rem/1 var(--font-body); text-transform: uppercase; letter-spacing: 0.04em; color: #111; }
+html[data-design="poster"] .status-tabs button + button { border-left: 2px solid #111; }
+html[data-design="poster"] .status-tabs button[aria-pressed="true"] { background: #111; color: var(--color-accent); border-bottom: 0; }
+html[data-design="poster"] .result-count { color: #111; font: 700 0.6875rem/1.4 var(--font-body); text-transform: uppercase; letter-spacing: 0.04em; }
+
+/* Index: a black section strip per month (Culture's "PAINTERS 40" header), hard 2px rules -------- */
+html[data-design="poster"] .month { display: block; padding-top: 0; border-bottom: 2px solid #111; }
+html[data-design="poster"] .month-label { position: sticky; top: 3.6rem; z-index: 3; display: flex; align-items: baseline; justify-content: space-between; padding: 0.4rem 0.9rem; margin: 0; background: #111; color: #f2f0e9; }
+html[data-design="poster"] .month-label h2 { font: 700 0.8125rem/1.2 var(--font-body); letter-spacing: 0.08em; text-transform: uppercase; }
+html[data-design="poster"] .month-label span { display: inline; margin: 0; color: var(--color-accent); font: 700 0.6875rem/1.2 var(--font-body); letter-spacing: 0.06em; text-transform: uppercase; }
+html[data-design="poster"] .rows { border-left: 7px solid var(--color-accent); }
+html[data-design="poster"] .row { padding: 0.8rem 0.9rem; border-top: 2px solid rgba(17, 17, 17, 0.14); align-items: center; }
+html[data-design="poster"] .rows .row:first-child { border-top: 0; }
+html[data-design="poster"] .row:hover { background: color-mix(in srgb, var(--color-accent) 22%, transparent); }
+html[data-design="poster"] .row-date { font: 700 0.75rem/1.3 var(--font-body); color: #111; text-transform: uppercase; letter-spacing: 0.02em; }
+html[data-design="poster"] .row-title { font: 400 var(--text-lg)/1.15 var(--font-display); text-transform: uppercase; letter-spacing: 0.005em; }
+html[data-design="poster"] .row-title a { background-image: linear-gradient(#111, #111); background-size: 0 3px; }
+html[data-design="poster"] .row-where { font: 400 0.75rem/1.35 var(--font-body); color: #111; }
+html[data-design="poster"] .row-type { color: #111; font: 700 0.6875rem/1.2 var(--font-body); }
+html[data-design="poster"] .row-flag { color: #111; background: var(--color-accent); border: 0; padding: 0.1rem 0.4rem; font: 700 0.6875rem/1.4 var(--font-body); }
+html[data-design="poster"] .row.is-past .row-title,
+html[data-design="poster"] .row.is-past .row-date { color: var(--color-muted); }
+html[data-design="poster"] .row-toggle { width: 1.9rem; height: 1.9rem; border: 2px solid #111; color: #111; font: 700 1rem/1 var(--font-body); }
+html[data-design="poster"] .row-toggle:hover { background: #111; color: var(--color-accent); border-color: #111; }
+html[data-design="poster"] .row.is-open { background: var(--color-paper-2); }
+html[data-design="poster"] #meetups .rows { border-left-color: var(--color-meetup); }
+html[data-design="poster"] #meetups .row:hover { background: color-mix(in srgb, var(--color-meetup) 20%, transparent); }
+html[data-design="poster"] .meetups-intro { padding: 0.6rem 0.9rem; color: #111; border-top: 0; border-bottom: 2px solid #111; font-size: 0.75rem; }
+html[data-design="poster"] .details-description { font: 400 0.8125rem/1.5 var(--font-body); color: #111; }
+html[data-design="poster"] .details-facts dt { color: #111; opacity: 0.7; font: 700 0.6875rem/1.8 var(--font-body); }
+html[data-design="poster"] .details-countdown { color: #111; background: var(--color-accent); padding: 0 0.35rem; font-weight: 700; }
+html[data-design="poster"] .details-image { border: 2px solid #111; }
+html[data-design="poster"] .action { padding: 0.45rem 0.8rem; background: transparent; border: 2px solid #111; color: #111; font: 700 0.6875rem/1.2 var(--font-body); text-transform: uppercase; letter-spacing: 0.04em; }
+html[data-design="poster"] .action:hover { background: #111; color: var(--color-accent); }
+html[data-design="poster"] .action.primary { background: #111; color: var(--color-accent); border-color: #111; }
+html[data-design="poster"] .action.primary:hover { background: var(--color-accent); color: #111; }
+html[data-design="poster"] .action.subtle { border-color: transparent; color: #111; opacity: 0.7; }
+
+/* About + footer: ink strip, orange links ------------------------------------------------------- */
+html[data-design="poster"] .about h2 { font: 400 1rem/1.2 var(--font-display); text-transform: uppercase; }
+html[data-design="poster"] .about-body a { color: #111; text-decoration-color: var(--color-accent); text-decoration-thickness: 2px; }
+html[data-design="poster"] .about-body a.btn-add { background: #111; color: var(--color-accent); font: 700 0.75rem/1.4 var(--font-body); text-transform: uppercase; letter-spacing: 0.04em; }
+html[data-design="poster"] .about-body a.btn-add:hover { background: var(--color-accent); color: #111; }
+html[data-design="poster"] .foot-dense { width: 100%; max-width: none; margin: 0; padding: 1.1rem var(--page-gutter) 2.2rem; background: #111; color: rgba(242, 240, 233, 0.78); border-top: 2px solid #111; font: 400 0.6875rem/1.7 var(--font-body); }
+html[data-design="poster"] .foot-dense p { max-width: 100ch; }
+html[data-design="poster"] .foot-dense a { color: var(--color-accent); }
+
+/* Generated pages (event, hub) -------------------------------------------------------------------- */
+html[data-design="poster"] .crumbs ol { color: #111; font: 700 0.6875rem/1.6 var(--font-body); }
+html[data-design="poster"] .crumbs li + li::before { color: #111; }
+html[data-design="poster"] .crumbs a { color: #111; text-decoration-color: var(--color-accent); text-decoration-thickness: 2px; }
+html[data-design="poster"] .event-page h1,
+html[data-design="poster"] .hub-page h1 { font: 400 var(--text-display)/1.02 var(--font-display); text-transform: uppercase; letter-spacing: 0.005em; }
+html[data-design="poster"] .event-lead { font: 400 0.9375rem/1.5 var(--font-body); color: #111; }
+html[data-design="poster"] .event-facts { border-top: 2px solid #111; border-bottom: 2px solid #111; }
+html[data-design="poster"] .event-facts dd { font-size: 0.875rem; }
+html[data-design="poster"] .related h2 { border-bottom: 2px solid #111; font: 400 1rem/1.2 var(--font-display); text-transform: uppercase; }
+html[data-design="poster"] .related .count { color: #111; font: 700 0.6875rem/1 var(--font-body); }
+html[data-design="poster"] .related .more a,
+html[data-design="poster"] .back a { color: #111; text-decoration-color: var(--color-accent); text-decoration-thickness: 2px; }
+html[data-design="poster"] .back { border-top: 2px solid #111; }
+html[data-design="poster"] .event-image { border: 2px solid #111; }
+html[data-design="poster"] .browse { border-top: 2px solid #111; }
+html[data-design="poster"] .browse h2 { font: 400 1rem/1.2 var(--font-display); text-transform: uppercase; }
+html[data-design="poster"] .browse-label { color: #111; opacity: 0.7; font: 700 0.6875rem/1.8 var(--font-body); }
+html[data-design="poster"] .browse-body a { color: #111; text-decoration-color: var(--color-accent); }
+html[data-design="poster"] .browse-body a:hover { background: var(--color-accent); }
+html[data-design="poster"] .not-found h2 { font: 400 1.75rem/1.1 var(--font-display); text-transform: uppercase; }
+html[data-design="poster"] .not-found a { color: #111; text-decoration-color: var(--color-accent); }
+
+
+/* Full-bleed bands like Culture: the masthead, map, tabs, filters and rows share one gutter ------ */
+html[data-design="poster"] .page { width: 100%; max-width: none; margin-inline: 0; padding-inline: 0; }
+html[data-design="poster"] .nav-mast.page { padding-inline: var(--page-gutter); }
+html[data-design="poster"] main > .page,
+html[data-design="poster"] main.page { padding-inline: 0; }
+html[data-design="poster"] .view-tabs { padding-left: 0; }
+html[data-design="poster"] .filters { padding-left: var(--page-gutter); padding-right: 3.5rem; }
+html[data-design="poster"] .meetups-intro { padding-left: var(--page-gutter); }
+html[data-design="poster"] .row { padding-inline: var(--page-gutter) 0.9rem; }
+html[data-design="poster"] .month-label { padding-inline: var(--page-gutter) 0.9rem; }
+html[data-design="poster"] .about,
+html[data-design="poster"] .browse { padding-inline: var(--page-gutter); }
+html[data-design="poster"] .sub-page,
+html[data-design="poster"] .crumbs { padding-inline: var(--page-gutter); }
+html[data-design="poster"] .sub-page { max-width: 72rem; margin-inline: 0; }
+html[data-design="poster"] .row-type { justify-self: end; padding: 0.15rem 0.45rem; border: 2px solid #111; font: 700 0.625rem/1.2 var(--font-body); letter-spacing: 0.05em; text-transform: uppercase; white-space: nowrap; }
+html[data-design="poster"] .row.is-past .row-type { border-color: var(--color-past); color: var(--color-muted); }
+html[data-design="poster"] .row-where { font-size: 0.8125rem; }
+html[data-design="poster"] .atlas-key i.past { background: #6f6b60; }
+html[data-design="poster"] .mast-gh.is-floating { z-index: 2000; }
+
+html[data-design="poster"] .design-switch { order: 3; margin: 0; gap: 0; border: 2px solid #111; align-items: stretch; }
+html[data-design="poster"] .ds-label { padding: 0.28rem 0.55rem; color: #111; font-weight: 700; border-right: 2px solid #111; }
+html[data-design="poster"] .design-switch button { padding: 0.28rem 0.6rem; border: 0; color: #111; font-weight: 700; }
+html[data-design="poster"] .design-switch button + button { border-left: 2px solid #111; }
+html[data-design="poster"] .design-switch button:hover { background: rgba(17, 17, 17, 0.14); color: #111; }
+html[data-design="poster"] .design-switch button[aria-pressed="true"] { background: #111; color: var(--color-accent); }
+
+@media (max-width: 40rem) {
+  html[data-design="poster"] .nav-mast { padding-top: 0.5rem; }
+  html[data-design="poster"] .mast-name { white-space: normal; }
+  html[data-design="poster"] .month-label { top: 0; position: static; }
+  html[data-design="poster"] .rows { border-left-width: 5px; }
+  html[data-design="poster"] .row,
+html[data-design="poster"] .month-label { padding-inline: var(--page-gutter) 0.6rem; }
+  html[data-design="poster"] .row-type { justify-self: start; }
+  html[data-design="poster"] .filters { padding-right: 3rem; }
+  html[data-design="poster"] .view-tabs button { flex: 1 1 0; padding: 0.7rem 0.6rem; }
+}
