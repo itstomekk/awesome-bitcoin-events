@@ -1,0 +1,105 @@
+---
+// Every generated page except the home page: one per event (events/<slug>/), plus the hubs
+// country/<x>/, year/<yyyy>/, type/<x>/, meetups/ and meetups/<region>/. The model lives in
+// src/lib/pages-model.js; this file only lays it out.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PlainEventRows from '../components/PlainEventRows.astro';
+import PlainMeetupRows from '../components/PlainMeetupRows.astro';
+import { getModel } from '../lib/site-model.js';
+import { pageLd, fullDates, googleCalendarUrl, REPO } from '../lib/pages-model.js';
+import { flagFor } from '../lib/flags.js';
+
+export function getStaticPaths() {
+  return getModel().pages.map((page) => ({ params: { slug: page.path }, props: { path: page.path } }));
+}
+
+const model = getModel();
+const page = model.pages.find((p) => p.path === Astro.props.path);
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+const e = page.event;
+const jsonld = pageLd(page, model.ctx);
+const ogImagePath = page.indexable ? `og/${page.path}.png` : 'og.jpg';
+const ogImageAlt = page.indexable ? `${page.h1}: Awesome Bitcoin Events` : undefined;
+const meetupsByRegion = page.kind === 'meetups' ? [...new Set(page.meetups.map((m) => m.region))].map((region) => ({ region, items: page.meetups.filter((m) => m.region === region) })) : [];
+const correctionUrl = e ? `${REPO}/issues/new?template=event-correction.yml&title=${encodeURIComponent(`[Correction] ${e.title}`)}` : '';
+const flag = e ? flagFor(e.country) : '';
+const days = e ? Math.round((new Date(`${e.end}T12:00:00Z`) - new Date(`${e.start}T12:00:00Z`)) / 86400000) + 1 : 0;
+---
+<BaseLayout
+  title={page.title}
+  description={page.description}
+  canonical={`${page.path}/`}
+  jsonld={jsonld}
+  noindex={!page.indexable}
+  markdown={page.indexable ? `${page.path}/index.md` : ''}
+  ogImagePath={ogImagePath}
+  {...(ogImageAlt ? { ogImageAlt } : {})}
+  mastHeading={false}
+>
+  <main id="main-content" class="page sub-page">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <ol>
+        {page.crumbs.map((c, i) => (
+          <li>{i < page.crumbs.length - 1 ? <a href={`${base}${c.path ? `${c.path}/` : ''}`}>{c.name}</a> : <span aria-current="page">{c.name}</span>}</li>
+        ))}
+      </ol>
+    </nav>
+
+    {e ? (
+      <article class="event-page">
+        <h1>{e.title}</h1>
+        <p class="event-lead">
+          {page.lead}
+        </p>
+        <dl class="details-facts event-facts">
+          <div><dt>When</dt><dd><time datetime={e.start}>{fullDates(e)}</time> <span class="muted">· {days} {days === 1 ? 'day' : 'days'}</span></dd></div>
+          <div><dt>Where</dt><dd>{flag ? `${flag} ` : ''}{e.where}</dd></div>
+          <div><dt>Type</dt><dd>{e.type}</dd></div>
+          <div><dt>Status</dt><dd>{e.past ? 'Past event' : 'Upcoming'}</dd></div>
+        </dl>
+        <p class="details-actions">
+          <a class="action primary" href={e.url} target="_blank" rel="noreferrer">Official page ↗</a>
+          <a class="action" href={`${base}${e.path}/event.ics`}>Add to calendar (.ics)</a>
+          <a class="action" href={googleCalendarUrl(e)} target="_blank" rel="noreferrer">Google Calendar ↗</a>
+          <a class="action" href={`${base}#${e.id}`}>See in the full list</a>
+          <a class="action subtle" href={correctionUrl} target="_blank" rel="noreferrer">Report a correction</a>
+        </p>
+        <p class="event-note">Awesome Bitcoin Events links to the organizer's own page and does not sell tickets. Listing is not endorsement: check the organizer's page before you travel.</p>
+        {e.detail?.image && /^https?:/i.test(e.detail.image) && <img class="event-image" src={e.detail.image} alt="" loading="lazy" referrerpolicy="no-referrer" />}
+        {e.detail?.image && !/^https?:/i.test(e.detail.image) && <img class="event-image" src={`${base}${e.detail.image.replace(/^\/+/, '')}`} alt="" loading="lazy" />}
+
+        {page.related.editions.length > 0 && (
+          <section class="related"><h2>Other editions</h2><PlainEventRows events={page.related.editions} base={base} /></section>
+        )}
+        {page.related.sameCountry.length > 0 && (
+          <section class="related"><h2>More upcoming events in {e.country}</h2><PlainEventRows events={page.related.sameCountry} base={base} />
+            <p class="more"><a href={`${base}country/${page.related.countrySlug}/`}>All Bitcoin events and meetups in {e.country} →</a></p></section>
+        )}
+        {page.related.meetups.length > 0 && (
+          <section class="related"><h2>Meetups in {e.country}</h2><PlainMeetupRows meetups={page.related.meetups} />
+            {page.related.meetupCount > page.related.meetups.length && <p class="more"><a href={`${base}country/${page.related.countrySlug}/`}>All {page.related.meetupCount} meetups in {e.country} →</a></p>}</section>
+        )}
+        {page.related.sameMonth.length > 0 && (
+          <section class="related"><h2>Also in {new Date(`${e.start}T12:00:00Z`).toLocaleDateString('en-GB', { month: 'long', year: 'numeric', timeZone: 'UTC' })}</h2><PlainEventRows events={page.related.sameMonth} base={base} /></section>
+        )}
+      </article>
+    ) : (
+      <article class="hub-page">
+        <h1>{page.h1}</h1>
+        <p class="event-lead">{page.intro}</p>
+        {page.kind === 'meetups' ? (
+          meetupsByRegion.map(({ region, items }) => (
+            <section class="related"><h2><a href={`${base}meetups/${region.toLowerCase().replace(/[^a-z0-9]+/g, '-')}/`}>{region}</a> <span class="count">{items.length}</span></h2><PlainMeetupRows meetups={items} /></section>
+          ))
+        ) : (
+          <>
+            {page.events.length > 0 && <section class="related"><h2>Upcoming events <span class="count">{page.events.length}</span></h2><PlainEventRows events={page.events} base={base} /></section>}
+            {page.meetups.length > 0 && <section class="related"><h2>Meetups <span class="count">{page.meetups.length}</span></h2><PlainMeetupRows meetups={page.meetups} /></section>}
+            {page.pastEvents.length > 0 && <section class="related"><h2>Past events <span class="count">{page.pastEvents.length}</span></h2><PlainEventRows events={page.pastEvents} base={base} /></section>}
+          </>
+        )}
+      </article>
+    )}
+    <p class="back"><a href={base}>← All Bitcoin events</a> · <a href={`${base}meetups/`}>All meetups</a></p>
+  </main>
+</BaseLayout>

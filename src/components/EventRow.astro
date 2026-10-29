@@ -3,7 +3,8 @@
 // the search, filters, calendar and map buttons in index.astro read. Status is
 // rendered with the build date, then corrected in the browser with the visitor's date.
 // `details` is the optional enrichment for this event from data/details.json.
-const { event, buildDay, details = null, hasPin = false } = Astro.props;
+import { flagFor } from '../lib/flags.js';
+const { event, buildDay, details = null, hasPin = false, eventPath = '' } = Astro.props;
 const past = event.end < buildDay;
 const repo = 'https://github.com/itstomekk/awesome-bitcoin-events';
 const day = (iso) => new Date(`${iso}T12:00:00Z`);
@@ -18,27 +19,7 @@ const imageSrc = details?.image && /^https?:\/\//i.test(details.image)
     ? `${import.meta.env.BASE_URL.replace(/\/?$/, '/')}${details.image.replace(/^\/+/, '')}`
     : null;
 
-const COUNTRY_FLAGS = {
-  'USA': '🇺🇸', 'Germany': '🇩🇪', 'France': '🇫🇷', 'Poland': '🇵🇱',
-  'Spain': '🇪🇸', 'Italy': '🇮🇹', 'Netherlands': '🇳🇱', 'Switzerland': '🇨🇭',
-  'Austria': '🇦🇹', 'Czech Republic': '🇨🇿', 'UK': '🇬🇧', 'Canada': '🇨🇦',
-  'Australia': '🇦🇺', 'Japan': '🇯🇵', 'El Salvador': '🇸🇻', 'Argentina': '🇦🇷',
-  'Brazil': '🇧🇷', 'Mexico': '🇲🇽', 'India': '🇮🇳', 'South Africa': '🇿🇦',
-  'Norway': '🇳🇴', 'Sweden': '🇸🇪', 'Finland': '🇫🇮', 'Portugal': '🇵🇹',
-  'Belgium': '🇧🇪', 'Hungary': '🇭🇺', 'Romania': '🇷🇴', 'Bulgaria': '🇧🇬',
-  'Greece': '🇬🇷', 'Turkey': '🇹🇷', 'Serbia': '🇷🇸', 'Slovenia': '🇸🇮',
-  'Croatia': '🇭🇷', 'Slovakia': '🇸🇰', 'Lithuania': '🇱🇹', 'Latvia': '🇱🇻',
-  'Estonia': '🇪🇪', 'Ireland': '🇮🇪', 'Denmark': '🇩🇰', 'New Zealand': '🇳🇿',
-  'Honduras': '🇭🇳', 'Costa Rica': '🇨🇷', 'Panama': '🇵🇦', 'Colombia': '🇨🇴',
-  'Chile': '🇨🇱', 'Peru': '🇵🇪', 'Uruguay': '🇺🇾', 'Paraguay': '🇵🇾',
-  'Bolivia': '🇧🇴', 'Ecuador': '🇪🇨', 'Venezuela': '🇻🇪',
-  'United Arab Emirates': '🇦🇪', 'South Korea': '🇰🇷', 'Taiwan': '🇹🇼',
-  'Vietnam': '🇻🇳', 'Philippines': '🇵🇭', 'Malaysia': '🇲🇾', 'Thailand': '🇹🇭',
-  'Mauritius': '🇲🇺', 'Puerto Rico': '🇵🇷',
-  'Hong Kong': '🇭🇰', 'Indonesia': '🇮🇩', 'Kenya': '🇰🇪', 'Malawi': '🇲🇼',
-  'Cyprus': '🇨🇾', 'Montenegro': '🇲🇪', 'Cayman Islands': '🇰🇾', 'Curaçao': '🇨🇼', 'Dominican Republic': '🇩🇴',
-};
-const flag = event.country ? COUNTRY_FLAGS[event.country] : null;
+const flag = flagFor(event.country) || null;
 ---
 <li
   class:list={['row', { 'is-past': past }]}
@@ -75,6 +56,7 @@ const flag = event.country ? COUNTRY_FLAGS[event.country] : null;
       </dl>
       <p class="details-actions">
         <a class="action" href={event.url} target="_blank" rel="noreferrer">Official page ↗</a>
+        {eventPath && <a class="action" href={eventPath}>Event page</a>}
         <button class="action" type="button" data-action="ics">Add to calendar (.ics)</button>
         <a class="action" data-action="gcal" href="#" target="_blank" rel="noreferrer">Google Calendar ↗</a>
         {hasPin && <button class="action" type="button" data-action="map">Show on map</button>}

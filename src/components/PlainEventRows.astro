@@ -1,0 +1,16 @@
+---
+// Event rows for generated pages: same look as the home list, but no fold-out. The title goes
+// to the event's own page on this site; the arrow goes to the organizer.
+import { flagFor } from '../lib/flags.js';
+const { events, base } = Astro.props;
+---
+<ol class="rows">
+  {events.map((e) => (
+    <li class:list={['row', 'is-plain', { 'is-past': e.past }]}>
+      <span class="row-date">{e.dateLabel} {e.start.slice(0, 4)}</span>
+      <span class="row-title"><a href={`${base}${e.path}/`}>{e.title}</a> <a class="arrow" href={e.url} target="_blank" rel="noreferrer" aria-label={`${e.title}: official page`}>↗</a></span>
+      <span class="row-where">{flagFor(e.country) ? flagFor(e.country) + ' ' : ''}{e.where}</span>
+      <span class="row-type">{e.type}</span>
+    </li>
+  ))}
+</ol>
