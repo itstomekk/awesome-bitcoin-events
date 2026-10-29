@@ -3,7 +3,7 @@
 // row fails here as well as in `npm run check`.
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { buildModel, assignSlugs, registrableDomain, eventIcs, googleCalendarUrl, pageLd, pageMarkdown, sitemapXml } from '../src/lib/pages-model.js';
+import { buildModel, assignSlugs, registrableDomain, eventIcs, calendarIcs, eventsJson, atomFeed, googleCalendarUrl, pageLd, pageMarkdown, sitemapXml } from '../src/lib/pages-model.js';
 import { cardText } from '../src/lib/og-card.js';
 
 const origin = 'https://example.org/';
@@ -87,4 +87,32 @@ test('card text swaps the Bitcoin sign and strips glyphs the fonts lack', () => 
   assert.equal(cardText('Plan ₿ Forum'), 'Plan B Forum');
   assert.equal(cardText('Bitcoin Histórico'), 'Bitcoin Histórico');
   assert.equal(cardText('Bitcoin 比特币'), 'Bitcoin');
+});
+
+test('calendar.ics holds every upcoming event once, with the same UIDs as the per-event files', () => {
+  const ics = calendarIcs(model);
+  assert.equal((ics.match(/BEGIN:VEVENT/g) || []).length, model.upcoming.length);
+  const uids = [...ics.matchAll(/UID:(\S+)\r\n/g)].map((m) => m[1]);
+  assert.equal(new Set(uids).size, uids.length);
+  const one = eventIcs(model.upcoming[0], { origin, stamp: '2026-10-29' });
+  assert.ok(ics.includes(one.match(/UID:\S+/)[0]));
+  assert.ok(ics.split('\r\n').every((line) => Buffer.byteLength(line) <= 75));
+});
+
+test('events.json is valid, complete and CC0', () => {
+  const data = JSON.parse(eventsJson(model));
+  assert.equal(data.license, 'CC0-1.0');
+  assert.equal(data.events.length, model.events.length);
+  assert.equal(data.meetups.length, model.meetups.length);
+  assert.equal(data.counts.upcoming, model.upcoming.length);
+  assert.ok(data.events.every((e) => /^https?:/.test(e.official_url) && e.page_url.startsWith(origin)));
+  assert.ok(data.events.every((e) => ['past', 'upcoming'].includes(e.status)));
+});
+
+test('Atom feed lists at most 50 upcoming events with unique ids and escaped text', () => {
+  const xml = atomFeed(model);
+  const ids = [...xml.matchAll(/<entry>\s*<id>([^<]+)<\/id>/g)].map((m) => m[1]);
+  assert.equal(ids.length, Math.min(50, model.upcoming.length));
+  assert.equal(new Set(ids).size, ids.length);
+  assert.doesNotMatch(xml, /&(?!amp;|lt;|gt;|quot;)/);
 });

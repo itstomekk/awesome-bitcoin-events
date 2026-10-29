@@ -86,12 +86,8 @@ function fold(line) {
   return out.join('\r\n ');
 }
 
-export function eventIcs(event, { origin, stamp }) {
-  const lines = [
-    'BEGIN:VCALENDAR',
-    'VERSION:2.0',
-    `PRODID:-//${SITE_NAME}//EN`,
-    'CALSCALE:GREGORIAN',
+function veventLines(event, { origin, stamp }) {
+  return [
     'BEGIN:VEVENT',
     `UID:${event.slug}-${event.start}@${new URL(origin).hostname}`,
     `DTSTAMP:${compact(stamp)}T000000Z`,
@@ -102,9 +98,26 @@ export function eventIcs(event, { origin, stamp }) {
     `URL:${event.url}`,
     `DESCRIPTION:${icsEscape(`${event.type} in ${event.where}. Official page: ${event.url}`)}`,
     'END:VEVENT',
-    'END:VCALENDAR',
   ];
-  return `${lines.map(fold).join('\r\n')}\r\n`;
+}
+
+const calendarWrap = (body, extra = []) => `${['BEGIN:VCALENDAR', 'VERSION:2.0', `PRODID:-//${SITE_NAME}//EN`, 'CALSCALE:GREGORIAN', ...extra, ...body, 'END:VCALENDAR'].map(fold).join('\r\n')}\r\n`;
+
+// One event: events/<slug>/event.ics
+export function eventIcs(event, opts) {
+  return calendarWrap(veventLines(event, opts));
+}
+
+// Subscribable calendar of every upcoming event: calendar.ics. The same UIDs as the per-event
+// files, so a calendar app that has both does not duplicate an event.
+export function calendarIcs(model) {
+  const opts = { origin: model.ctx.origin, stamp: model.ctx.buildDay };
+  return calendarWrap(model.upcoming.flatMap((e) => veventLines(e, opts)), [
+    `X-WR-CALNAME:${SITE_NAME}`,
+    'X-WR-CALDESC:Upcoming Bitcoin conferences, festivals, retreats and workshops worldwide',
+    'REFRESH-INTERVAL;VALUE=DURATION:P1D',
+    'X-PUBLISHED-TTL:PT24H',
+  ]);
 }
 
 export function googleCalendarUrl(event) {
@@ -369,6 +382,74 @@ export function pageMarkdown(page, { urlOf }) {
   }
   lines.push(`Source list: ${urlOf('index.md').replace(/\/$/, '')}`, '');
   return lines.join('\n');
+}
+
+// --- open data and feeds ---------------------------------------------------------------
+// events.json: the whole list as plain JSON (CC0), generated from README.md and PAST.md.
+export function eventsJson(model) {
+  const { urlOf } = model.ctx;
+  const file = (path) => urlOf(path).replace(/\/$/, '');
+  return JSON.stringify({
+    name: SITE_NAME,
+    license: 'CC0-1.0',
+    source: `${REPO}/blob/main/README.md`,
+    generated: model.ctx.buildDay,
+    counts: { events: model.events.length, upcoming: model.upcoming.length, meetups: model.meetups.length },
+    events: model.events.map((e) => ({
+      id: e.id,
+      title: e.title,
+      start: e.start,
+      end: e.end,
+      location: e.where,
+      city: e.city,
+      country: e.country,
+      online: e.online,
+      type: e.type,
+      status: e.past ? 'past' : 'upcoming',
+      official_url: e.url,
+      page_url: urlOf(e.path),
+      calendar_url: file(`${e.path}/event.ics`),
+      ...(e.detail?.description ? { description: e.detail.description } : {}),
+    })),
+    meetups: model.meetups.map((m) => ({
+      id: m.id,
+      name: m.name,
+      region: m.region,
+      location: m.where,
+      city: m.city,
+      country: m.country,
+      about: m.schedule,
+      official_url: m.url,
+      other_links: m.links ?? [],
+    })),
+  }, null, 2) + '\n';
+}
+
+const xmlEscape = (v) => String(v).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+
+// feed.xml: Atom feed of the next 50 upcoming events. The list has no "added on" dates, so an
+// entry appears when an event enters the next-50 window and keeps its id afterwards.
+export function atomFeed(model, limit = 50) {
+  const { urlOf, origin, buildDay } = model.ctx;
+  const host = new URL(origin).hostname;
+  const entries = model.upcoming.slice(0, limit).map((e) => `  <entry>
+    <id>tag:${host},${e.start.slice(0, 4)}:${e.slug}</id>
+    <title>${xmlEscape(e.title)}</title>
+    <link rel="alternate" href="${urlOf(e.path)}"/>
+    <updated>${buildDay}T00:00:00Z</updated>
+    <summary>${xmlEscape(`${e.type} · ${e.dateLabel} ${e.start.slice(0, 4)} · ${e.where}`)}</summary>
+  </entry>`);
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>${origin}</id>
+  <title>${SITE_NAME}: upcoming events</title>
+  <subtitle>The next ${Math.min(limit, model.upcoming.length)} Bitcoin events on the list</subtitle>
+  <link rel="self" href="${urlOf('feed.xml').replace(/\/$/, '')}"/>
+  <link rel="alternate" href="${origin}"/>
+  <updated>${buildDay}T00:00:00Z</updated>
+${entries.join('\n')}
+</feed>
+`;
 }
 
 // --- sitemap ------------------------------------------------------------------------
