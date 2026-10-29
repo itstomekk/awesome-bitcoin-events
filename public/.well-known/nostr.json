@@ -1,0 +1,13 @@
+{
+ "names": {
+  "_": "a8cda40d112aac3343d95f7ea33babc590d123cf70d3e8ac30ba16a219bc0470"
+ },
+ "relays": {
+  "a8cda40d112aac3343d95f7ea33babc590d123cf70d3e8ac30ba16a219bc0470": [
+   "wss://relay.damus.io",
+   "wss://nos.lol",
+   "wss://relay.primal.net",
+   "wss://nostr.mom"
+  ]
+ }
+}
