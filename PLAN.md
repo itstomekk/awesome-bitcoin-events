@@ -11,12 +11,15 @@ Keep the GitHub README as the canonical, contributor-editable event list; use th
 - [x] GitHub issue forms support event submissions and corrections.
 - [x] Astro builds the static site from the lists and deploys through GitHub Pages.
 - [x] Every event link points at the organizer's own page, and `TO-VERIFY.md` holds the rest.
-- [x] Recurring meetups have a dedicated `/meetups` page as well as a tab on the home page.
+- [x] Recurring meetups are a tab on the home page. There is no separate `/meetups` page yet (planned, see priorities).
 
 ## Priorities
 
 - [ ] Verify and promote qualified entries from `TO-VERIFY.md`; do not publish uncertain dates as confirmed events. Three leads remain: Bitcoin: A Competitive Advantage, Bitcoin MENA 2027, Origin Seoul 2027.
-- [ ] Improve technical SEO and sharing metadata: canonical URLs and `og:url` are done; sitemap, `robots.txt`, `og:image` and search indexing are still open.
+- [x] Technical SEO basics: canonical URLs, `og:url`, sitemap, `robots.txt` with Content-Signal, `og:image`, `llms.txt`, Markdown copy, absolute JSON-LD image URLs.
+- [ ] Per-event, meetup, country and year pages, each with its own title, description, canonical, Event JSON-LD, Markdown copy, OG card and sitemap entry.
+- [ ] Feeds: `calendar.ics`, `events.json`, `feed.xml`.
+- [ ] Submit the sitemap to Google Search Console and Bing, add IndexNow.
 - [ ] Maintain reliable link health without deleting historical records automatically.
 - [ ] Keep list contributions simple and run `npm run check`, `npm test`, and `npm run build` before delivery.
 
