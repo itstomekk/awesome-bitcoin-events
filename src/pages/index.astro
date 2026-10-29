@@ -11,6 +11,7 @@ import EventRow from '../components/EventRow.astro';
 import MeetupList from '../components/MeetupList.astro';
 import { loadEvents, loadPlaces, loadMeetups, loadDetails } from '../lib/load-list.js';
 import { MONTHS } from '../lib/awesome-list.js';
+import { getModel } from '../lib/site-model.js';
 
 const { events, errors } = loadEvents();
 if (errors.length) throw new Error(`The event list has errors (run \`npm run check\`):\n${errors.join('\n')}`);
@@ -67,37 +68,25 @@ const meetupPins = meetups.filter((m) => places[m.where]).map((m) => ({
 // Escapes "<" so the JSON can't close the <script> tag it is embedded in.
 const mapJson = JSON.stringify([...mapEvents, ...meetupPins]).replace(/</g, '\\u003C');
 const repo = 'https://github.com/itstomekk/awesome-bitcoin-events';
+const model = getModel();
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+const pathById = new Map(model.events.map((event) => [event.id, `${base}${event.path}/`]));
 // Search-friendly title and description, built from the data so the numbers never go stale.
 const upcomingYears = [...new Set(upcoming.map((event) => event.start.slice(0, 4)))].sort();
 const yearSpan = upcomingYears.length > 1 ? `${upcomingYears[0]}–${upcomingYears.at(-1)}` : (upcomingYears[0] || '');
 const pageTitle = `Bitcoin Conferences & Meetups ${yearSpan} | Awesome Bitcoin Events`.replace('  ', ' ');
 const pageDescription = `${upcoming.length} upcoming Bitcoin conferences, festivals and retreats in ${countries.length} countries, plus ${meetups.length} local meetups. Dates, cities and official organizer links.`;
 
-// Structured data for search engines: the site, plus one schema.org Event per upcoming event
-// (eligible for Google's event rich results) and the meetups as a plain list.
-const origin = (Astro.site ? new URL(import.meta.env.BASE_URL.replace(/\/?$/, '/'), Astro.site).href : '');
-// schema.org and Google ignore relative image URLs, so locally hosted images (event-images/...) get the site origin.
-const absoluteImage = (image) => (/^https?:/i.test(image) || !Astro.site ? image : new URL(image.replace(/^\//, ''), new URL(import.meta.env.BASE_URL.replace(/\/?$/, '/'), Astro.site)).href);
-const eventLd = (event) => ({
-  '@type': 'Event',
-  name: event.title,
-  startDate: event.start,
-  endDate: event.end,
-  eventStatus: 'https://schema.org/EventScheduled',
-  eventAttendanceMode: event.online ? 'https://schema.org/OnlineEventAttendanceMode' : 'https://schema.org/OfflineEventAttendanceMode',
-  location: event.online
-    ? { '@type': 'VirtualLocation', url: event.url }
-    : { '@type': 'Place', name: event.where, address: { '@type': 'PostalAddress', ...(event.city ? { addressLocality: event.city } : {}), addressCountry: event.country } },
-  url: event.url,
-  description: details[event.url]?.description || `${event.type} in ${event.where}, ${event.dateLabel} ${event.start.slice(0, 4)}.`,
-  ...(details[event.url]?.image ? { image: absoluteImage(details[event.url].image) } : {}),
-});
+// Structured data for search engines: the site, plus an ItemList that points at each upcoming
+// event's own page. The full schema.org Event markup lives on those pages (src/lib/pages-model.js).
+const origin = (Astro.site ? new URL(base, Astro.site).href : '');
 const jsonld = {
   '@context': 'https://schema.org',
   '@graph': [
     { '@type': 'WebSite', '@id': `${origin}#site`, url: origin, name: 'Awesome Bitcoin Events', inLanguage: 'en',
       description: 'A curated list of Bitcoin conferences, meetups, festivals and retreats around the world, each linked to its organizer.' },
-    ...upcoming.map(eventLd),
+    { '@type': 'ItemList', name: 'Upcoming Bitcoin events', numberOfItems: upcoming.length,
+      itemListElement: upcoming.map((event, index) => ({ '@type': 'ListItem', position: index + 1, name: event.title, url: Astro.site ? new URL(pathById.get(event.id), Astro.site).href : pathById.get(event.id) })) },
   ],
 };
 ---
@@ -141,7 +130,7 @@ const jsonld = {
               {[...upcomingGroups].map(([key, group]) => (
                 <section class="month" data-month-group aria-label={`${MONTHS[Number(key.slice(5)) - 1]} ${key.slice(0, 4)}`}>
                   <div class="month-label"><h2>{MONTHS[Number(key.slice(5)) - 1]}</h2><span>{key.slice(0, 4)}</span></div>
-                  <ol class="rows">{group.map((event) => <EventRow event={event} buildDay={buildDay} details={details[event.url] || null} hasPin={Boolean(places[event.where])} />)}</ol>
+                  <ol class="rows">{group.map((event) => <EventRow event={event} buildDay={buildDay} details={details[event.url] || null} hasPin={Boolean(places[event.where])} eventPath={pathById.get(event.id)} />)}</ol>
                 </section>
               ))}
               {/* Past events - reverse chronological (most recent first) */}
@@ -152,7 +141,7 @@ const jsonld = {
                   {[...pastGroups].map(([key, group]) => (
                     <section class="month" data-month-group aria-label={`${MONTHS[Number(key.slice(5)) - 1]} ${key.slice(0, 4)}`}>
                       <div class="month-label"><h2>{MONTHS[Number(key.slice(5)) - 1]}</h2><span>{key.slice(0, 4)}</span></div>
-                      <ol class="rows">{group.map((event) => <EventRow event={event} buildDay={buildDay} details={details[event.url] || null} hasPin={Boolean(places[event.where])} />)}</ol>
+                      <ol class="rows">{group.map((event) => <EventRow event={event} buildDay={buildDay} details={details[event.url] || null} hasPin={Boolean(places[event.where])} eventPath={pathById.get(event.id)} />)}</ol>
                     </section>
                   ))}
                 </>
@@ -168,6 +157,16 @@ const jsonld = {
 
 
     <div class="page">
+    <nav class="browse" id="browse" aria-labelledby="browse-title">
+      <h2 id="browse-title">Browse</h2>
+      <div class="browse-body">
+        <p><span class="browse-label">By year</span>{model.hubs.years.map((hub) => <a href={`${base}${hub.path}/`}>{hub.path.slice(5)}</a>)}</p>
+        <p><span class="browse-label">By type</span>{model.hubs.types.map((hub) => <a href={`${base}${hub.path}/`}>{hub.h1.replace('Bitcoin ', '')}</a>)}</p>
+        <p><span class="browse-label">Meetups</span><a href={`${base}meetups/`}>All {meetups.length}</a>{model.hubs.regions.map((hub) => <a href={`${base}${hub.path}/`}>{hub.h1.replace('Bitcoin meetups in ', '')}</a>)}</p>
+        <p><span class="browse-label">By country</span>{model.hubs.countries.map((hub) => <a href={`${base}${hub.path}/`}>{hub.h1.replace('Bitcoin events and meetups in ', '')}</a>)}</p>
+      </div>
+    </nav>
+
     <section class="about" id="about" aria-labelledby="about-title">
       <h2 id="about-title">How it works</h2>
       <div class="about-body">

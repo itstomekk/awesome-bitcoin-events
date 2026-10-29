@@ -1,8 +1,9 @@
-// sitemap.xml: the site is one page (events are rows, not pages); lastmod is the build day.
-export function GET({ site }) {
-  const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
-  const loc = site ? new URL(base, site).href : base;
-  const today = new Date().toISOString().slice(0, 10);
-  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url><loc>${loc}</loc><lastmod>${today}</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>\n</urlset>\n`;
-  return new Response(xml, { headers: { 'Content-Type': 'application/xml; charset=utf-8' } });
+// sitemap.xml: the home page plus every indexable generated page (upcoming events, country,
+// year, type and meetup pages). Past events and archive-only hubs are noindex and left out.
+// No <lastmod>: the list has no per-page edit date, and a build stamp would be misleading.
+import { getModel } from '../lib/site-model.js';
+import { sitemapXml } from '../lib/pages-model.js';
+
+export function GET() {
+  return new Response(sitemapXml(getModel()), { headers: { 'Content-Type': 'application/xml; charset=utf-8' } });
 }
