@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for helping keep Awesome Bitcoin Events useful. The whole list lives in **[README.md](../README.md)**. That file is the source of truth, and the [website](https://itstomekk.github.io/awesome-bitcoin-events/) is built from it automatically.
+Thanks for helping keep Awesome Bitcoin Events useful. The whole list lives in **[README.md](../README.md)**. That file is the source of truth, and the [website](https://awesomebitcoinevents.com/) is built from it automatically.
 
 ## Add an event (2 minutes, no tools needed)
 

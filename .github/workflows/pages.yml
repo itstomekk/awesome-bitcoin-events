@@ -4,7 +4,7 @@ name: Check list and deploy website
 #   - on every pull request: validates the list, runs tests, lints the README as an
 #     awesome list and builds the site (a PR with a malformed event line goes red);
 #   - on push to main (or a manual run): does the same, then publishes the site to
-#     https://itstomekk.github.io/awesome-bitcoin-events/
+#     https://awesomebitcoinevents.com/
 # Upcoming vs past is decided in the visitor's browser, so no scheduled rebuild is needed.
 
 on:
@@ -49,8 +49,6 @@ jobs:
           if grep -q 'remark-lint:awesome-github' lint.txt; then echo "::warning::awesome-lint GitHub-settings check failed (add the 'awesome' topic in repo settings). Not blocking."; fi
       - name: Build website
         run: npm run build
-        env:
-          PUBLIC_BASE_PATH: /awesome-bitcoin-events
       - name: Upload Pages artifact
         if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3

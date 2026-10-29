@@ -2,7 +2,7 @@
 
 > A curated list of Bitcoin conferences, meetups, festivals and retreats around the world.
 
-**[🌐 Website](https://itstomekk.github.io/awesome-bitcoin-events/)** · [🗺️ Meetups](https://github.com/itstomekk/awesome-bitcoin-events#meetups) · [📦 Past events](https://github.com/itstomekk/awesome-bitcoin-events/blob/main/PAST.md) · [🔍 Not yet verified](https://github.com/itstomekk/awesome-bitcoin-events/blob/main/TO-VERIFY.md) · [🤝 Contribute](https://github.com/itstomekk/awesome-bitcoin-events#contributing) · [📜 Code of Conduct](https://github.com/itstomekk/awesome-bitcoin-events/blob/main/.github/CODE_OF_CONDUCT.md) · [CC0 license](https://github.com/itstomekk/awesome-bitcoin-events/blob/main/LICENSE)
+**[🌐 Website](https://awesomebitcoinevents.com/)** · [🗺️ Meetups](https://github.com/itstomekk/awesome-bitcoin-events#meetups) · [📦 Past events](https://github.com/itstomekk/awesome-bitcoin-events/blob/main/PAST.md) · [🔍 Not yet verified](https://github.com/itstomekk/awesome-bitcoin-events/blob/main/TO-VERIFY.md) · [🤝 Contribute](https://github.com/itstomekk/awesome-bitcoin-events#contributing) · [📜 Code of Conduct](https://github.com/itstomekk/awesome-bitcoin-events/blob/main/.github/CODE_OF_CONDUCT.md) · [CC0 license](https://github.com/itstomekk/awesome-bitcoin-events/blob/main/LICENSE)
 
 ![The Awesome Bitcoin Events website: a world map of upcoming events and meetups above a searchable list](.github/readme/home.jpg)
 

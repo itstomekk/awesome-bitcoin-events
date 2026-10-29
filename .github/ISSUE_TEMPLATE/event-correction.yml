@@ -15,7 +15,7 @@ body:
     attributes:
       label: Event name or page URL
       description: Include the event title or its Awesome Bitcoin Events detail URL.
-      placeholder: LABITCONF 2026 or https://itstomekk.github.io/awesome-bitcoin-events/events/...
+      placeholder: LABITCONF 2026 or https://awesomebitcoinevents.com/events/...
     validations:
       required: true
 
