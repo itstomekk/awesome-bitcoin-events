@@ -111,6 +111,8 @@ Dates and places change. Check the official page before you book travel. Being l
 | Apr 1–4 | [BitBlockBoom! 2027](https://www.bitblockboom.com/) | Fort Worth, USA | Conference |
 | Apr 1–30 | [Discover Floripa 2027](https://www.discoverfloripa.com/) | Florianópolis, Brazil | Festival |
 | Apr 2–3 | [Sovereignty Summit 2027](https://sovereigntysummit.nz/) | Queenstown, New Zealand | Conference |
+| Apr 8 | [Bitcoin Poland Business Day 2027](https://www.bitcoin-poland.com/) | Krakow, Poland | Conference |
+| Apr 9 | [Bitcoin Poland Community Side Event 2027](https://www.bitcoin-poland.com/) | Krakow, Poland | Meetup |
 | Apr 16–17 | [Bitcoin Österreich 2027](https://www.rettedeingeld.at/bitcoin-oesterreich-2027/) | Neufeld an der Leitha, Austria | Conference |
 | Apr 23–25 | [Swiss Bitcoin Conference 2027](https://swiss-bitcoin-conference.com/) | Kreuzlingen, Switzerland | Conference |
 | May 5 | [Bitcoin Corporate Day 2027](https://www.bitcoincorporateday.com/) | Prague, Czech Republic | Conference |
@@ -136,6 +138,7 @@ Dates and places change. Check the official page before you book travel. Being l
 | Sep 28 | [Bitcoin Treasuries Conference 2027](https://lu.ma/btcnyc27) | New York City, USA | Conference |
 | Oct 1–3 | [Watch Out, Bitcoin! 2027](https://wobitcoin.org/) | Madrid, Spain | Conference |
 | Oct 8–9 | [BSE27 Bitcoin Social Experience](https://www.bsebtc.co.uk/bse27) | Bury St Edmunds, UK | Conference |
+| Oct 22–23 | [Bitcoin Poland Conference 2027](https://www.bitcoin-poland.com/) | Poznan, Poland | Conference |
 | Dec 9–10 | [Bitcoin MENA 2027](https://tickets.b.tc/event/bitcoin-mena-2027) | Abu Dhabi, United Arab Emirates | Conference |
 
 ## Meetups
