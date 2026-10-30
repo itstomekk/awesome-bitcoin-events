@@ -4,7 +4,7 @@
    amount, so one request serves every donation; Alby signs a public receipt for each payment. */
 (function () {
   "use strict";
-  var C = {"goal": "c304b36d584fce31f57cea827c17fd7be39f3ebcad09c20f7fa5958e7a7f685a", "profile": "a8cda40d112aac3343d95f7ea33babc590d123cf70d3e8ac30ba16a219bc0470", "target": 100000, "lnurl": "https://getalby.com/.well-known/lnurlp/itstomekk", "zapper": "79f00d3f5a19ec806189fcab03c1be4ff81d18ee4f653c88fac41fe03570f432", "relays": ["wss://relay.damus.io", "wss://nos.lol", "wss://relay.primal.net", "wss://nostr.mom"], "nevent": "nevent1qqsvxp9nd4vyln33747w4qnuzl7hhcul86726zwzpal6t9vw0flkskszyz5vmfqdzy42cv6rm90hagem40zep5freacd869vxzapdgsehsz8qqg5waehxw309aex2mrp0yhxgctdw4eju6t0qyxhwumn8ghj7mn0wvhxcmmvqyt8wumn8ghj7un9d3shjtnswf5k6ctv9ehx2aqccpndw", "npub": "npub14rx6grg392krxs7etal2xwatckgdzg70wrf73tpshgt2yxduq3cqls9c3f", "amounts": [1000, 5000, 21000, 100000], "locale": "en-US", "text": {"kick": "Support the list", "title": "Keep it running", "sats": "sats", "zap": "Zap", "close": "Close", "amountAria": "Amount in sats", "otherLabel": "Other amount in sats", "otherPh": "other", "openInvoice": "Open the invoice in your Lightning wallet", "openWallet": "Open wallet", "copy": "Copy invoice", "copied": "Copied", "browserWallet": "Pay with browser wallet", "scan": "Scan with any Lightning wallet. Waiting for payment…", "paid": "Paid. Thank you! ⚡", "creating": "Creating invoice…", "range": "Amount not accepted, try another", "fail": "Could not create an invoice, try again", "webFail": "The browser wallet did not pay. Scan the code instead.", "first": "Be the first to zap", "one": "1 zap so far", "many": "{n} zaps so far", "tipGoal": "Support the list: {n} of {t} sats raised", "tipTotal": "Support the list: {n} sats raised", "lede": "Awesome Bitcoin Events is free, open source and curated by hand. Zaps pay for the domain, hosting and curation time.", "fine": "Paid to <b>itstomekk@getalby.com</b> as an anonymous zap on our <a href=\"https://njump.me/{nevent}\" target=\"_blank\" rel=\"noopener\">Nostr goal</a>. On Nostr? Zap the goal or follow <a href=\"https://njump.me/{npub}\" target=\"_blank\" rel=\"noopener\">@awesomebitcoinevents</a>."}, "zapRequest": "{\"id\":\"fc5499aa79e9ef5d79adad834087b1a8d7e70f40a888274647e799518862b62e\",\"pubkey\":\"40bfd5b4e7d5f7274955d88b7754174c12c74e7c5fdd75a052d8d4485132a693\",\"created_at\":1793376180,\"kind\":9734,\"tags\":[[\"p\",\"a8cda40d112aac3343d95f7ea33babc590d123cf70d3e8ac30ba16a219bc0470\"],[\"e\",\"c304b36d584fce31f57cea827c17fd7be39f3ebcad09c20f7fa5958e7a7f685a\"],[\"relays\",\"wss://relay.damus.io\",\"wss://nos.lol\",\"wss://relay.primal.net\",\"wss://nostr.mom\"]],\"content\":\"\",\"sig\":\"f2d965a2787498b27cdee894ba37cb98c048d541501e86532e83fdd6398ae5ca2d5d47abee2de11234d66abebb02182c938be705f796e8184a6658811f4f76e7\"}"};
+  var C = {"goal": "c304b36d584fce31f57cea827c17fd7be39f3ebcad09c20f7fa5958e7a7f685a", "profile": "a8cda40d112aac3343d95f7ea33babc590d123cf70d3e8ac30ba16a219bc0470", "target": 100000, "lnurl": "https://getalby.com/.well-known/lnurlp/itstomekk", "zapper": "79f00d3f5a19ec806189fcab03c1be4ff81d18ee4f653c88fac41fe03570f432", "relays": ["wss://relay.damus.io", "wss://nos.lol", "wss://relay.primal.net", "wss://nostr.mom"], "nevent": "nevent1qqsvxp9nd4vyln33747w4qnuzl7hhcul86726zwzpal6t9vw0flkskszyz5vmfqdzy42cv6rm90hagem40zep5freacd869vxzapdgsehsz8qqg5waehxw309aex2mrp0yhxgctdw4eju6t0qyxhwumn8ghj7mn0wvhxcmmvqyt8wumn8ghj7un9d3shjtnswf5k6ctv9ehx2aqccpndw", "npub": "npub14rx6grg392krxs7etal2xwatckgdzg70wrf73tpshgt2yxduq3cqls9c3f", "amounts": [1000, 5000, 21000, 100000], "locale": "en-US", "since": 0, "hashes": ["#support"], "text": {"kick": "Support the list", "title": "Keep it running", "sats": "sats", "zap": "Zap", "close": "Close", "amountAria": "Amount in sats", "otherLabel": "Other amount in sats", "otherPh": "other", "openInvoice": "Open the invoice in your Lightning wallet", "openWallet": "Open wallet", "copy": "Copy invoice", "copied": "Copied", "browserWallet": "Pay with browser wallet", "scan": "Scan with any Lightning wallet. Waiting for payment…", "paid": "Paid. Thank you! ⚡", "creating": "Creating invoice…", "range": "Amount not accepted, try another", "fail": "Could not create an invoice, try again", "webFail": "The browser wallet did not pay. Scan the code instead.", "first": "Be the first to zap", "one": "1 zap so far", "many": "{n} zaps so far", "tipGoal": "Support the list: {n} of {t} sats raised", "tipTotal": "Support the list: {n} sats raised", "lede": "Awesome Bitcoin Events is free, open source and curated by hand. Zaps pay for the domain, hosting and curation time.", "fine": "Paid to <b>itstomekk@getalby.com</b> as an anonymous zap on our <a href=\"https://njump.me/{nevent}\" target=\"_blank\" rel=\"noopener\">Nostr goal</a>. On Nostr? Zap the goal or follow <a href=\"https://njump.me/{npub}\" target=\"_blank\" rel=\"noopener\">@awesomebitcoinevents</a>."}, "zapRequest": "{\"id\":\"fc5499aa79e9ef5d79adad834087b1a8d7e70f40a888274647e799518862b62e\",\"pubkey\":\"40bfd5b4e7d5f7274955d88b7754174c12c74e7c5fdd75a052d8d4485132a693\",\"created_at\":1793376180,\"kind\":9734,\"tags\":[[\"p\",\"a8cda40d112aac3343d95f7ea33babc590d123cf70d3e8ac30ba16a219bc0470\"],[\"e\",\"c304b36d584fce31f57cea827c17fd7be39f3ebcad09c20f7fa5958e7a7f685a\"],[\"relays\",\"wss://relay.damus.io\",\"wss://nos.lol\",\"wss://relay.primal.net\",\"wss://nostr.mom\"]],\"content\":\"\",\"sig\":\"f2d965a2787498b27cdee894ba37cb98c048d541501e86532e83fdd6398ae5ca2d5d47abee2de11234d66abebb02182c938be705f796e8184a6658811f4f76e7\"}"};
   var GOAL = C.goal;            // goal event id (NIP-75) or null: then every zap to PROFILE is counted
   var PROFILE = C.profile;      // hex pubkey the zap request pays
   var TARGET = C.target;        // sats, or 0 for no goal bar
@@ -18,6 +18,7 @@
   var T = C.text;
   var QR_URL = new URL("vendor/qrcode.js", (document.currentScript && document.currentScript.src) || location.href).href;
   var LOCALE = C.locale || "en-US";
+  var SINCE = C.since || 0;     // only count receipts newer than this unix time (profile mode)
 
   var btn = document.getElementById("sup");
   if (!btn) return;
@@ -40,7 +41,7 @@
     var pr = null, onGoal = false;
     (ev.tags || []).forEach(function (t) { if (t[0] === "bolt11") pr = t[1]; if (GOAL ? (t[0] === "e" && t[1] === GOAL) : (t[0] === "p" && t[1] === PROFILE)) onGoal = true; });
     var sats = bolt11Sats(pr);
-    if (!onGoal || !sats) return false;
+    if (!onGoal || !sats || ev.created_at < SINCE) return false;
     seen[ev.id] = 1; raised = (raised || 0) + sats; count++;
     return true;
   }
@@ -48,9 +49,9 @@
   function paint() {
     btn.style.setProperty("--p", pct().toFixed(1) + "%");
     var t = btn.querySelector(".supn");
-    if (raised != null) {
-      t.textContent = TARGET ? short(raised) + " / " + short(TARGET) : short(raised);
-      btn.title = TARGET ? T.tipGoal.replace("{n}", fmt(raised)).replace("{t}", fmt(TARGET)) : T.tipTotal.replace("{n}", fmt(raised));
+    if (raised != null && TARGET) {
+      t.textContent = short(raised) + " / " + short(TARGET);
+      btn.title = T.tipGoal.replace("{n}", fmt(raised)).replace("{t}", fmt(TARGET));
     }
     var d = document.getElementById("supDlg");
     if (d) {
@@ -68,7 +69,7 @@
       try { ws = new WebSocket(url); } catch (e) { return; }
       socks.push(ws);
       var timer = setTimeout(function () { if (!live) ws.close(); }, 8000);
-      ws.onopen = function () { ws.send(JSON.stringify(["REQ", "g", (GOAL ? { kinds: [9735], "#e": [GOAL], limit: 1000 } : { kinds: [9735], "#p": [PROFILE], limit: 1000 })])); };
+      ws.onopen = function () { ws.send(JSON.stringify(["REQ", "g", (GOAL ? { kinds: [9735], "#e": [GOAL], limit: 1000 } : { kinds: [9735], "#p": [PROFILE], since: SINCE, limit: 1000 })])); };
       ws.onmessage = function (m) {
         var msg; try { msg = JSON.parse(m.data); } catch (e) { return; }
         if (msg[0] === "EVENT" && msg[1] === "g") { if (addReceipt(msg[2])) paint(); }
@@ -101,7 +102,7 @@
           '<button type="button" class="sup-x" data-x aria-label="' + T.close + '"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button></div>' +
         '<div class="sup-body">' +
           '<p class="sup-lede">' + T.lede + '</p>' +
-          '<div class="sup-goal"><p><b class="sup-raised">…</b>' + (TARGET ? ' / ' + fmt(TARGET) : '') + ' ' + T.sats + '</p>' + (TARGET ? '<div class="sup-bar"><i></i></div>' : '') + '<p class="sup-count"></p></div>' +
+          '<div class="sup-goal"><p><b class="sup-raised">…</b>' + (TARGET ? ' / ' + fmt(TARGET) : '') + ' ' + (TARGET ? T.sats : (T.raisedLabel || T.sats)) + '</p>' + (TARGET ? '<div class="sup-bar"><i></i></div>' : '') + '<p class="sup-count"></p></div>' +
           '<div class="sup-pick" role="group" aria-label="' + T.amountAria + '">' +
             AMOUNTS.map(function (a) { return '<button type="button" data-a="' + a + '">' + short(a) + '</button>'; }).join("") +
             '<label class="sup-own"><span class="vh">' + T.otherLabel + '</span><input type="number" min="1" step="1" inputmode="numeric" placeholder="' + T.otherPh + '"></label>' +
@@ -214,6 +215,10 @@
   }
 
   btn.addEventListener("click", open);
-  load(false);
-  if (location.hash === "#support") open();
+  if (TARGET) load(false); // goal mode shows the running total on the button; profile mode loads it when the dialog opens
+  document.addEventListener("click", function (e) { // any link marked data-support opens the dialog
+    var a = e.target.closest && e.target.closest("[data-support]");
+    if (a) { e.preventDefault(); open(); }
+  });
+  if ((C.hashes || ["#support"]).indexOf(location.hash) >= 0) open();
 })();
