@@ -111,8 +111,8 @@ Dates and places change. Check the official page before you book travel. Being l
 | Apr 1–4 | [BitBlockBoom! 2027](https://www.bitblockboom.com/) | Fort Worth, USA | Conference |
 | Apr 1–30 | [Discover Floripa 2027](https://www.discoverfloripa.com/) | Florianópolis, Brazil | Festival |
 | Apr 2–3 | [Sovereignty Summit 2027](https://sovereigntysummit.nz/) | Queenstown, New Zealand | Conference |
-| Apr 8 | [Bitcoin Poland Business Day 2027](https://www.bitcoin-poland.com/) | Krakow, Poland | Conference |
-| Apr 9 | [Bitcoin Poland Community Side Event 2027](https://www.bitcoin-poland.com/) | Krakow, Poland | Meetup |
+| Apr 8 | [Bitcoin Poland Business Day 2027](https://www.bitcoin-poland.com/#krakow-business-day) | Krakow, Poland | Conference |
+| Apr 9 | [Bitcoin Poland Community Side Event 2027](https://www.bitcoin-poland.com/#krakow-community-side-event) | Krakow, Poland | Meetup |
 | Apr 16–17 | [Bitcoin Österreich 2027](https://www.rettedeingeld.at/bitcoin-oesterreich-2027/) | Neufeld an der Leitha, Austria | Conference |
 | Apr 23–25 | [Swiss Bitcoin Conference 2027](https://swiss-bitcoin-conference.com/) | Kreuzlingen, Switzerland | Conference |
 | May 5 | [Bitcoin Corporate Day 2027](https://www.bitcoincorporateday.com/) | Prague, Czech Republic | Conference |
