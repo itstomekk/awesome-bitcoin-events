@@ -138,7 +138,7 @@ Dates and places change. Check the official page before you book travel. Being l
 | Sep 28 | [Bitcoin Treasuries Conference 2027](https://lu.ma/btcnyc27) | New York City, USA | Conference |
 | Oct 1–3 | [Watch Out, Bitcoin! 2027](https://wobitcoin.org/) | Madrid, Spain | Conference |
 | Oct 8–9 | [BSE27 Bitcoin Social Experience](https://www.bsebtc.co.uk/bse27) | Bury St Edmunds, UK | Conference |
-| Oct 22–23 | [Bitcoin Poland Conference 2027](https://www.bitcoin-poland.com/) | Poznan, Poland | Conference |
+| Oct 22–23 | [Bitcoin Poland Conference 2027](https://www.bitcoin-poland.com/#poznan-conference) | Poznan, Poland | Conference |
 | Dec 9–10 | [Bitcoin MENA 2027](https://tickets.b.tc/event/bitcoin-mena-2027) | Abu Dhabi, United Arab Emirates | Conference |
 
 ## Meetups

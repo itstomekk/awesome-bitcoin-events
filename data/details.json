@@ -182,7 +182,28 @@
     "fetched": "2026-09-28"
   },
   "https://www.bitcoin-poland.com/": {
-    "description": "Bitcoin Poland. 2027: Bitcoin Business Day in Kraków (8 April), community side event (9 April) and the main conference in Poznań (22-23 October).",
+    "description": "Hard money. Bright future. October 5-6, 2026 at the Poznań Congress Center.",
+    "source": "og",
+    "fetched": "2026-09-28"
+  },
+  "https://www.bitcoin-poland.com/#poznan-conference": {
+    "description": "Bitcoin Poland Conference, 22-23 October 2027 in Poznań. Organizer-announced dates; details coming soon.",
+    "image": "event-images/bitcoin-poland-conference-2027.jpg",
+    "imageSource": "composite",
+    "source": "manual",
+    "fetched": "2026-10-30"
+  },
+  "https://www.bitcoin-poland.com/#krakow-business-day": {
+    "description": "Bitcoin Business Day in Kraków on 8 April 2027, announced by the Bitcoin Poland organizers. Details coming soon.",
+    "image": "event-images/bitcoin-poland-business-day-2027.jpg",
+    "imageSource": "composite",
+    "source": "manual",
+    "fetched": "2026-10-30"
+  },
+  "https://www.bitcoin-poland.com/#krakow-community-side-event": {
+    "description": "Community side event of Bitcoin Poland in Kraków on 9 April 2027. Details coming soon.",
+    "image": "event-images/bitcoin-poland-community-side-event-2027.jpg",
+    "imageSource": "composite",
     "source": "manual",
     "fetched": "2026-10-30"
   },
