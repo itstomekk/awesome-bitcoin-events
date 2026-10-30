@@ -114,6 +114,7 @@ Dates and places change. Check the official page before you book travel. Being l
 | Apr 8 | [Bitcoin Poland Business Day 2027](https://www.bitcoin-poland.com/#krakow-business-day) | Krakow, Poland | Conference |
 | Apr 9 | [Bitcoin Poland Community Side Event 2027](https://www.bitcoin-poland.com/#krakow-community-side-event) | Krakow, Poland | Meetup |
 | Apr 16–17 | [Bitcoin Österreich 2027](https://www.rettedeingeld.at/bitcoin-oesterreich-2027/) | Neufeld an der Leitha, Austria | Conference |
+| Apr 17 | [CryptoByte 2027](https://cryptobyte.cz/) | Liberec, Czech Republic | Conference |
 | Apr 23–25 | [Swiss Bitcoin Conference 2027](https://swiss-bitcoin-conference.com/) | Kreuzlingen, Switzerland | Conference |
 | May 5 | [Bitcoin Corporate Day 2027](https://www.bitcoincorporateday.com/) | Prague, Czech Republic | Conference |
 | May 6–8 | [BTC Prague 2027](https://btcprague.com/) | Prague, Czech Republic | Conference |
