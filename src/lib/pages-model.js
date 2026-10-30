@@ -33,6 +33,13 @@ function clip(text, max) {
   return `${cut.slice(0, cut.lastIndexOf(' ') > max * 0.6 ? cut.lastIndexOf(' ') : cut.length).replace(/[ ,;:.–-]+$/, '')}…`;
 }
 
+// Search results show about 60 characters of a title. Take the first candidate that fits, most
+// informative first; the last one is the fallback when none fit.
+const TITLE_MAX = 62;
+function fitTitle(...candidates) {
+  return candidates.find((c) => c.length <= TITLE_MAX) ?? candidates.at(-1);
+}
+
 // "co.uk"-style suffixes are rare in this list; this is enough to group editions of one organizer.
 export function registrableDomain(url) {
   try {
@@ -174,15 +181,25 @@ export function buildModel({ root = process.cwd(), origin, buildDay }) {
     const where = e.online ? 'online' : `in ${e.where}`;
     // Organizer blurbs like "More details coming soon!" say nothing: fall back to the template.
     const blurb = e.detail?.description;
-    const useful = blurb && blurb.length >= 40 && !/coming soon|tba|to be announced/i.test(blurb);
-    const descriptionText = useful
+    const useful = blurb && blurb.length >= 40 && !/coming soon|tba|to be announced/i.test(blurb) && !/^(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.? \d/i.test(blurb);
+    // A short organizer blurb ("The Bitcoin conference in the Alps") is a poor snippet on its own: add the facts.
+    const facts = `${e.title}: Bitcoin ${kind} ${where}, ${e.dateLabel} ${e.start.slice(0, 4)}. Dates, location, calendar file and the organizer's official page.`;
+    const descriptionText = useful && blurb.length >= 100
       ? clip(blurb, 158)
-      : clip(`${e.title}: Bitcoin ${kind} ${where}, ${e.dateLabel} ${e.start.slice(0, 4)}. Dates, location, calendar file and the organizer's official page.`, 158);
+      : useful
+        ? clip(`${e.title}: ${blurb.replace(/[.\s]+$/, '')}. Bitcoin ${kind} ${where}, ${e.dateLabel} ${e.start.slice(0, 4)}. Official page and calendar file.`, 158)
+        : clip(facts, 158);
     pages.push({
       kind: 'event',
       path: e.path,
       event: e,
-      title: `${e.title} · ${e.dateLabel} ${e.start.slice(0, 4)}, ${e.where} | ${SITE_NAME}`,
+      title: fitTitle(
+        `${e.title} · ${e.dateLabel} ${e.start.slice(0, 4)}, ${e.where} | ${SITE_NAME}`,
+        `${e.title} · ${e.dateLabel} ${e.start.slice(0, 4)} | ${SITE_NAME}`,
+        `${e.title} | ${SITE_NAME}`,
+        clip(e.title, TITLE_MAX),
+      ),
+      fullTitle: `${e.title} · ${e.dateLabel} ${e.start.slice(0, 4)}, ${e.where} | ${SITE_NAME}`,
       description: descriptionText,
       lead: useful ? blurb : `${e.type} ${where}, ${e.dateLabel} ${e.start.slice(0, 4)}.`,
       h1: e.title,
@@ -199,6 +216,11 @@ export function buildModel({ root = process.cwd(), origin, buildDay }) {
       },
     });
   }
+
+  // A shortened title can collide with another event of the same name: keep the full one for those.
+  const seenTitles = new Map();
+  for (const pg of pages) seenTitles.set(pg.title, (seenTitles.get(pg.title) || 0) + 1);
+  for (const pg of pages) if (seenTitles.get(pg.title) > 1 && pg.fullTitle) pg.title = pg.fullTitle;
 
   // Listing pages -------------------------------------------------------------------
   const listing = ({ kind, path, title, h1, description, intro, evs, mts, crumbs, og }) => ({
@@ -227,7 +249,7 @@ export function buildModel({ root = process.cwd(), origin, buildDay }) {
     pages.push(listing({
       kind: 'country',
       path: `country/${countrySlug.get(country)}`,
-      title: `Bitcoin Events & Meetups in ${country} | ${SITE_NAME}`,
+      title: fitTitle(`Bitcoin Events & Meetups in ${country} | ${SITE_NAME}`, `Bitcoin Events & Meetups in ${country}`),
       h1: `Bitcoin events and meetups in ${country}`,
       description: `${bits.join(' and ')} in ${country}. Dates, cities and links to the organizers' official pages.`,
       intro: `${bits.join(' and ')} in ${country}, each linking to the organizer's own page.`,
@@ -245,7 +267,7 @@ export function buildModel({ root = process.cwd(), origin, buildDay }) {
     pages.push(listing({
       kind: 'year',
       path: `year/${year}`,
-      title: `Bitcoin Conferences & Events ${year}: Dates and Cities | ${SITE_NAME}`,
+      title: fitTitle(`Bitcoin Conferences & Events ${year}: Dates and Cities | ${SITE_NAME}`, `Bitcoin Conferences & Events ${year} | ${SITE_NAME}`),
       h1: `Bitcoin events in ${year}`,
       description: `${plural(evs.length, 'Bitcoin event')} in ${year} across ${plural(countries, 'country', 'countries')}: conferences, festivals, retreats and workshops, with dates, cities and official links.`,
       intro: `${plural(evs.length, 'Bitcoin event')} in ${year} across ${plural(countries, 'country', 'countries')}${nUp ? `, ${nUp} of them still ahead` : ''}.`,
@@ -264,7 +286,7 @@ export function buildModel({ root = process.cwd(), origin, buildDay }) {
     pages.push(listing({
       kind: 'type',
       path: `type/${slugify(word)}`,
-      title: `Bitcoin ${word[0].toUpperCase()}${word.slice(1)} Worldwide: Dates and Cities | ${SITE_NAME}`,
+      title: fitTitle(`Bitcoin ${word[0].toUpperCase()}${word.slice(1)} Worldwide: Dates and Cities | ${SITE_NAME}`, `Bitcoin ${word[0].toUpperCase()}${word.slice(1)} Worldwide | ${SITE_NAME}`),
       h1: `Bitcoin ${word}`,
       description: `${plural(nUp, `upcoming Bitcoin ${type.toLowerCase()}`, `upcoming Bitcoin ${word}`)} and ${plural(evs.length - nUp, 'past one')} worldwide, with dates, cities and links to the organizers' official pages.`,
       intro: `${plural(nUp, `upcoming Bitcoin ${type.toLowerCase()}`, `upcoming Bitcoin ${word}`)} worldwide.`,
@@ -278,7 +300,7 @@ export function buildModel({ root = process.cwd(), origin, buildDay }) {
   pages.push(listing({
     kind: 'meetups',
     path: 'meetups',
-    title: `Bitcoin Meetups Worldwide: ${meetups.length} Local Groups | ${SITE_NAME}`,
+    title: fitTitle(`Bitcoin Meetups Worldwide: ${meetups.length} Local Groups | ${SITE_NAME}`, `Bitcoin Meetup Groups Worldwide | ${SITE_NAME}`),
     h1: 'Bitcoin meetups worldwide',
     description: `${meetups.length} recurring Bitcoin meetups in ${new Set(meetups.map((m) => m.country).filter(Boolean)).size} countries, from monthly Stammtisch to Socratic seminars, each linked to its organizer.`,
     intro: `${meetups.length} recurring Bitcoin meetups, grouped by region. Every link goes to the group's own page.`,
@@ -292,7 +314,7 @@ export function buildModel({ root = process.cwd(), origin, buildDay }) {
       ...listing({
         kind: 'meetups-region',
         path: `meetups/${slugify(region)}`,
-        title: `Bitcoin Meetups in ${region}: ${mts.length} Local Groups | ${SITE_NAME}`,
+        title: fitTitle(`Bitcoin Meetups in ${region}: ${mts.length} Local Groups | ${SITE_NAME}`, `Bitcoin Meetups in ${region} | ${SITE_NAME}`, `Bitcoin Meetups in ${region}`),
         h1: `Bitcoin meetups in ${region}`,
         description: `${plural(mts.length, 'recurring Bitcoin meetup')} in ${region} across ${plural(new Set(mts.map((m) => m.country).filter(Boolean)).size, 'country', 'countries')}, each linked to its organizer.`,
         intro: `${plural(mts.length, 'recurring Bitcoin meetup')} in ${region}.`,

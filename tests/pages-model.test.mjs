@@ -116,3 +116,11 @@ test('Atom feed lists at most 50 upcoming events with unique ids and escaped tex
   assert.equal(new Set(ids).size, ids.length);
   assert.doesNotMatch(xml, /&(?!amp;|lt;|gt;|quot;)/);
 });
+
+test('search snippets: titles fit about 65 characters and descriptions are long enough to be useful', () => {
+  const indexable = model.pages.filter((p) => p.indexable);
+  const longTitles = indexable.filter((p) => p.title.length > 65);
+  assert.deepEqual(longTitles.map((p) => `${p.title.length} ${p.path}`), []);
+  const short = indexable.filter((p) => p.description.length < 70);
+  assert.deepEqual(short.map((p) => `${p.description.length} ${p.path}`), []);
+});
