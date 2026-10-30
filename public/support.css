@@ -1,0 +1,57 @@
+/* Support button (masthead) and its zap dialog. Page tokens only, so it follows Classic and Poster. */
+.supb{--p:0%;display:inline-flex;align-items:center;gap:.4rem;margin:var(--space-xs) 0 0 var(--space-md);padding:.3rem .65rem;cursor:pointer;
+  font:700 var(--text-xs)/1.2 var(--font-mono);letter-spacing:var(--tracking-label);text-transform:uppercase;
+  color:var(--color-ink);background:linear-gradient(var(--color-accent),var(--color-accent)) left bottom/var(--p) 3px no-repeat;border:2px solid var(--color-rule-2)}
+.supb svg{width:.95em;height:.95em;fill:currentColor}
+.supb:hover,.supb:focus-visible{background:var(--color-ink);color:var(--color-paper)}
+.supn{font-weight:400;opacity:.85}
+.supn:empty{display:none}
+html[data-design="poster"] .supb{order:4;margin:0;background-color:#111;color:var(--color-accent);border-color:#111;background-image:linear-gradient(#fff,#fff);background-size:var(--p) 3px;background-repeat:no-repeat;background-position:left bottom}
+html[data-design="poster"] .supb:hover,html[data-design="poster"] .supb:focus-visible{background:transparent;color:#111}
+@media (max-width:420px){.supn{display:none}}
+html.sup-open{overflow:hidden}
+.sup{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:16px;font-family:var(--font-mono)}
+.sup[hidden]{display:none}
+.sup-scrim{position:absolute;inset:0;background:rgba(10,9,8,.6);opacity:0;transition:opacity .25s ease}
+.sup.is-in .sup-scrim{opacity:1}
+.sup-card{position:relative;width:min(440px,100%);max-height:calc(100dvh - 32px);overflow-y:auto;overscroll-behavior:contain;background:var(--color-paper);color:var(--color-ink);border:2px solid var(--color-rule-2);outline:0;
+  transform:translateY(14px);opacity:0;transition:transform .28s cubic-bezier(.2,.8,.2,1),opacity .2s ease}
+.sup.is-in .sup-card{transform:none;opacity:1}
+.sup-head{position:relative;background:var(--color-accent);color:#111;padding:22px 24px 20px;border-bottom:2px solid var(--color-rule-2)}
+.sup-kick{margin:0 0 6px;font:700 11px/1.3 var(--font-mono);text-transform:uppercase;letter-spacing:.07em}
+.sup-head h2{margin:0;font:400 clamp(34px,9vw,46px)/.9 var(--font-display);text-transform:uppercase;letter-spacing:-.01em}
+.sup-x{position:absolute;top:12px;right:12px;width:38px;height:38px;display:grid;place-items:center;padding:0;cursor:pointer;background:#111;color:var(--color-accent);border:2px solid #111}
+.sup-x svg{width:18px;height:18px;stroke:currentColor;stroke-width:3.2;fill:none;stroke-linecap:square}
+.sup-x:hover{background:transparent;color:#111}
+.sup-body{padding:20px 24px 22px}
+.sup-lede{margin:0 0 18px;font-size:14px;line-height:1.5}
+.sup-goal p{margin:0;font-size:13px;text-transform:uppercase;letter-spacing:.03em}
+.sup-goal b{font:400 22px/1 var(--font-display)}
+.sup-bar{height:10px;margin:8px 0 6px;border:2px solid var(--color-rule-2);background:transparent}
+.sup-bar i{display:block;height:100%;width:0;background:var(--color-accent);transition:width .6s ease}
+.sup-count{opacity:.7;font-size:11.5px!important}
+.sup-pick{display:flex;flex-wrap:wrap;margin:18px 0 12px}
+.sup-pick button,.sup-own input{font:700 13px/1 var(--font-mono);height:40px;border:2px solid var(--color-rule-2);margin:0 -2px -2px 0;background:transparent;color:var(--color-ink)}
+.sup-pick button{flex:1 1 0;min-width:58px;cursor:pointer}
+.sup-pick button[aria-pressed="true"]{background:var(--color-ink);color:var(--color-paper)}
+.sup-pick button:hover{background:rgba(127,127,127,.18)}
+.sup-pick button[aria-pressed="true"]:hover{background:var(--color-ink)}
+.sup-own{flex:1.4 1 0;min-width:84px;display:flex}
+.sup-own input{width:100%;padding:0 10px;text-align:center;-moz-appearance:textfield}
+.sup-own input::-webkit-inner-spin-button{display:none}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.sup-go{display:block;width:100%;margin:4px 0 0;padding:13px 14px;cursor:pointer;font:700 13px/1 var(--font-mono);text-transform:uppercase;letter-spacing:.05em;background:var(--color-accent);color:#111;border:2px solid var(--color-rule-2)}
+.sup-go:hover{background:var(--color-ink);color:var(--color-paper)}
+.sup-go:disabled{cursor:progress;opacity:.8}
+.sup-pay{margin-top:4px;text-align:center}
+.sup-qr{display:block;width:min(240px,70vw);margin:0 auto;background:#fff;border:2px solid var(--color-rule-2);line-height:0}
+.sup-qr svg{width:100%;height:auto;display:block}
+.sup-pay.is-paid .sup-qr{opacity:.25}
+.sup-acts{display:flex;justify-content:center;flex-wrap:wrap;margin:10px 0 0}
+.sup-acts a,.sup-acts button{font:700 11px/1 var(--font-mono);text-transform:uppercase;letter-spacing:.04em;padding:9px 10px;border:2px solid var(--color-rule-2);margin:0 -2px -2px 0;background:transparent;color:var(--color-ink);text-decoration:none;cursor:pointer}
+.sup-acts a:hover,.sup-acts button:hover{background:var(--color-ink);color:var(--color-paper)}
+.sup-st{margin:12px 0 0;font-size:12.5px}
+.sup-pay.is-paid .sup-st{font:400 20px/1.1 var(--font-display);text-transform:uppercase}
+.sup-fine{margin:18px 0 0;font-size:11.5px;line-height:1.5;opacity:.8}
+.sup-fine a{color:inherit}
+

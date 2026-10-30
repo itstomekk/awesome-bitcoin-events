@@ -647,3 +647,5 @@ Maintainer commands such as `npm run archive` are described in the maintainers s
 ---
 
 Maintained by [@itstomekk](https://github.com/itstomekk). The list is released under [CC0](LICENSE), so reuse it freely. 🧡
+
+⚡ Zaps keep the list running: [Support the list](https://awesomebitcoinevents.com/#support) · [Nostr](https://njump.me/npub14rx6grg392krxs7etal2xwatckgdzg70wrf73tpshgt2yxduq3cqls9c3f)
