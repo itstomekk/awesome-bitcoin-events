@@ -269,7 +269,23 @@ const jsonld = {
       button.querySelector('span').textContent = open ? '−' : '+';
       panel.hidden = !open;
       row.classList.toggle('is-open', open);
+      syncAddress(row, open);
     }
+    // The address bar shows the event's own page (events/<slug>/), the way Awesome Bitcoin Culture
+    // shows /a/<id>/: a copied address carries that page's own link-preview card. The page itself
+    // still opens the list row for #<id>, so both forms land in the same place.
+    function homePath() {
+      const first = document.querySelector('[data-path]');
+      return first ? first.dataset.path.replace(/events\/[^/]+\/$/, '') : location.pathname;
+    }
+    function syncAddress(row, open) {
+      if (!/^https?:$/.test(location.protocol) || !row.dataset.path) return;
+      try {
+        if (open) history.replaceState(null, '', row.dataset.path);
+        else if (location.pathname === row.dataset.path) history.replaceState(null, '', homePath());
+      } catch (_) { /* file:// preview: leave the address as is */ }
+    }
+    const smoothOrNot = () => (matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth');
     function downloadIcs(row) {
       const { start, end, title, where, url } = row.dataset;
       const esc = (v) => String(v).replace(/[\\,;]/g, (c) => `\\${c}`);
@@ -292,8 +308,7 @@ const jsonld = {
       if (action === 'ics') return downloadIcs(row);
       if (action === 'map') return showOnMap(row.id);
       if (action === 'copy') {
-        const link = `${location.origin}${location.pathname}#${row.id}`;
-        history.replaceState(null, '', `#${row.id}`);
+        const link = row.dataset.path ? `${location.origin}${row.dataset.path}` : `${location.origin}${location.pathname}#${row.id}`;
         navigator.clipboard?.writeText(link);
         e.target.textContent = 'Link copied';
         setTimeout(() => { e.target.textContent = 'Copy link'; }, 1500);
@@ -313,7 +328,7 @@ const jsonld = {
     }
     viewTabs.forEach((tab) => tab.addEventListener('click', () => {
       setView(tab.dataset.view);
-      history.replaceState(null, '', tab.dataset.view === 'meetups' ? '#meetups' : location.pathname);
+      history.replaceState(null, '', tab.dataset.view === 'meetups' ? `${homePath()}#meetups` : homePath());
     }));
 
     // --- Map --------------------------------------------------------------------------
@@ -382,7 +397,7 @@ const jsonld = {
       setView('events');
       if (row.hidden) setStatus('all');
       setOpen(row, true);
-      row.scrollIntoView({ block: 'center' });
+      row.scrollIntoView({ block: 'center', behavior: smoothOrNot() });
     }
     openFromHash();
     window.addEventListener('hashchange', openFromHash);

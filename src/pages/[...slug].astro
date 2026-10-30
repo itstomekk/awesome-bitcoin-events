@@ -8,6 +8,7 @@ import PlainMeetupRows from '../components/PlainMeetupRows.astro';
 import { getModel } from '../lib/site-model.js';
 import { pageLd, fullDates, googleCalendarUrl, REPO } from '../lib/pages-model.js';
 import { flagFor } from '../lib/flags.js';
+import { hasEventCard } from '../lib/event-card.js';
 
 export function getStaticPaths() {
   return getModel().pages.map((page) => ({ params: { slug: page.path }, props: { path: page.path } }));
@@ -18,8 +19,11 @@ const page = model.pages.find((p) => p.path === Astro.props.path);
 const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 const e = page.event;
 const jsonld = pageLd(page, model.ctx);
-const ogImagePath = page.indexable ? `og/${page.path}.png` : 'og.jpg';
-const ogImageAlt = page.indexable ? `${page.h1}: Awesome Bitcoin Events` : undefined;
+// Event pages with committed art get og/events/<slug>.jpg (past ones too); other indexable pages get a
+// .png card; the rest share og.jpg.
+const eventCard = e && hasEventCard(e.slug);
+const ogImagePath = eventCard ? `og/${page.path}.jpg` : page.indexable ? `og/${page.path}.png` : 'og.jpg';
+const ogImageAlt = eventCard || page.indexable ? `${page.h1}: Awesome Bitcoin Events` : undefined;
 const meetupsByRegion = page.kind === 'meetups' ? [...new Set(page.meetups.map((m) => m.region))].map((region) => ({ region, items: page.meetups.filter((m) => m.region === region) })) : [];
 const correctionUrl = e ? `${REPO}/issues/new?template=event-correction.yml&title=${encodeURIComponent(`[Correction] ${e.title}`)}` : '';
 const flag = e ? flagFor(e.country) : '';

@@ -25,6 +25,7 @@ const flag = flagFor(event.country) || null;
   class:list={['row', { 'is-past': past }]}
   id={event.id}
   data-event-card
+  data-path={eventPath || undefined}
   data-search={`${event.title} ${event.where} ${event.type}`.toLowerCase()}
   data-status={past ? 'past' : 'upcoming'}
   data-start={event.start}

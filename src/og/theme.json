@@ -1,0 +1,1235 @@
+{
+ "6th-annual-canadian-bitcoin-summit": {
+  "color": "#333974",
+  "style": "cine-dark"
+ },
+ "acelerando-bitcoin": {
+  "color": "#291653",
+  "logo": true,
+  "style": "cards-dark"
+ },
+ "adopting-bitcoin-arnhem-2027": {
+  "color": "#f7931a",
+  "style": "flat-dark"
+ },
+ "adopting-bitcoin-cape-town": {
+  "color": "#9f732f",
+  "logo": true,
+  "style": "cine-bright"
+ },
+ "adopting-bitcoin-cape-town-2026": {
+  "color": "#f3deae",
+  "logo": true,
+  "style": "cards-bright"
+ },
+ "adopting-bitcoin-cape-town-2027": {
+  "color": "#a37531",
+  "logo": true,
+  "style": "flat-bright"
+ },
+ "adopting-bitcoin-el-salvador": {
+  "color": "#e4c95c",
+  "logo": true,
+  "style": "cine-dark"
+ },
+ "africa-bitcoin-conference": {
+  "color": "#f39223",
+  "logo": true,
+  "style": "cards-dark"
+ },
+ "africa-bitcoin-conference-2026": {
+  "color": "#f39223",
+  "logo": true,
+  "style": "flat-dark"
+ },
+ "african-bitcoin-circular-economy-summit-2027": {
+  "color": "#a37531",
+  "logo": true,
+  "style": "cine-bright"
+ },
+ "agentic-dollars-on-bitcoin-hackathon": {
+  "color": "#e71e27",
+  "logo": true,
+  "style": "cards-bright"
+ },
+ "ai-startup-rodeo-2026": {
+  "color": "#9ff3d5",
+  "logo": true,
+  "style": "flat-bright"
+ },
+ "arkade-day-2026": {
+  "color": "#f7931a",
+  "style": "cine-dark"
+ },
+ "b-only-2026": {
+  "color": "#f7931a",
+  "style": "cards-dark"
+ },
+ "baltic-honeybadger": {
+  "color": "#982b1e",
+  "logo": true,
+  "style": "flat-dark"
+ },
+ "bcc8333-barcelona-cyphers-conference-2026": {
+  "color": "#8b3709",
+  "style": "cine-bright"
+ },
+ "bce-3-bitcoin-white-paper-day": {
+  "color": "#d8821a",
+  "logo": true,
+  "style": "cards-bright"
+ },
+ "bfc-in-nyc-2026": {
+  "color": "#f7931a",
+  "style": "flat-bright"
+ },
+ "bitblockboom": {
+  "color": "#ef3e36",
+  "logo": true,
+  "style": "cine-dark"
+ },
+ "bitblockboom-2026": {
+  "color": "#ef3e36",
+  "logo": true,
+  "style": "cards-dark"
+ },
+ "bitblockboom-2027": {
+  "color": "#ef3e36",
+  "logo": true,
+  "style": "flat-dark"
+ },
+ "bitblockmine-2026": {
+  "color": "#ef3e36",
+  "logo": true,
+  "style": "cine-bright"
+ },
+ "bitcare-forum": {
+  "color": "#814519",
+  "logo": true,
+  "style": "cards-bright"
+ },
+ "bitcare-forum-2026": {
+  "color": "#814519",
+  "logo": true,
+  "style": "flat-bright"
+ },
+ "bitcare-forum-2027": {
+  "color": "#814519",
+  "logo": true,
+  "style": "cine-dark"
+ },
+ "bitchill-island-retreat": {
+  "color": "#f56f09",
+  "logo": true,
+  "style": "cards-dark"
+ },
+ "bitchill-s03": {
+  "color": "#f7931a",
+  "style": "flat-dark"
+ },
+ "bitchill-s04": {
+  "color": "#f56f09",
+  "logo": true,
+  "style": "cine-bright"
+ },
+ "bitcoin-2025-conference": {
+  "color": "#f7931a",
+  "logo": true,
+  "style": "cards-bright"
+ },
+ "bitcoin-2026": {
+  "color": "#f7931a",
+  "logo": true,
+  "style": "flat-bright"
+ },
+ "bitcoin-2027": {
+  "color": "#f7931a",
+  "logo": true,
+  "style": "cine-dark"
+ },
+ "bitcoin-alaska": {
+  "color": "#dd8b19",
+  "logo": true,
+  "style": "cards-dark"
+ },
+ "bitcoin-alive": {
+  "color": "#1fc7c5",
+  "style": "flat-dark"
+ },
+ "bitcoin-alpha-2026": {
+  "color": "#101a2b",
+  "logo": true,
+  "style": "cine-bright"
+ },
+ "bitcoin-amsterdam-2026": {
+  "color": "#955b09",
+  "logo": true,
+  "style": "cards-bright"
+ },
+ "bitcoin-asia": {
+  "color": "#762add",
+  "logo": true,
+  "style": "flat-bright"
+ },
+ "bitcoin-asia-2026": {
+  "color": "#762add",
+  "logo": true,
+  "style": "cine-dark"
+ },
+ "bitcoin-asia-2027": {
+  "color": "#762add",
+  "logo": true,
+  "style": "cards-dark"
+ },
+ "bitcoin-austin-2022-learn-me-a-bitcoin-edition": {
+  "color": "#f4b400",
+  "logo": true,
+  "style": "flat-dark"
+ },
+ "bitcoin-austin-2023-layer-2-edition": {
+  "color": "#f4b400",
+  "logo": true,
+  "style": "cine-bright"
+ },
+ "bitcoin-austin-2024-bitcoin-script-edition": {
+  "color": "#f4b400",
+  "logo": true,
+  "style": "cards-bright"
+ },
+ "bitcoin-bay-bash-byron-bay": {
+  "color": "#da821b",
+  "logo": true,
+  "style": "flat-bright"
+ },
+ "bitcoin-bay-bash-byron-bay-2027": {
+  "color": "#da821b",
+  "logo": true,
+  "style": "cine-dark"
+ },
+ "bitcoin-berlin-2023-nix-edition": {
+  "color": "#f4b400",
+  "logo": true,
+  "style": "cards-dark"
+ },
+ "bitcoin-berlin-2024-e-cash-edition": {
+  "color": "#f4b400",
+  "logo": true,
+  "style": "flat-dark"
+ },
+ "bitcoin-berlin-payments-edition": {
+  "color": "#f4b400",
+  "logo": true,
+  "style": "cine-bright"
+ },
+ "bitcoin-beyond-66": {
+  "color": "#0a424a",
+  "style": "cards-bright"
+ },
+ "bitcoin-beyond-66-2027": {
+  "color": "#0a424a",
+  "style": "flat-bright"
+ },
+ "bitcoin-buenos-aires-2024-payments-edition": {
+  "color": "#f4b400",
+  "logo": true,
+  "style": "cine-dark"
+ },
+ "bitcoin-bunker-after-party": {
+  "color": "#4542b4",
+  "logo": true,
+  "style": "cards-dark"
+ },
+ "bitcoin-bush-bash-beechworth": {
+  "color": "#da821b",
+  "logo": true,
+  "style": "flat-dark"
+ },
+ "bitcoin-bush-bash-busselton": {
+  "color": "#da821b",
+  "logo": true,
+  "style": "cine-bright"
+ },
+ "bitcoin-bush-bash-palm-cove": {
+  "color": "#da821b",
+  "logo": true,
+  "style": "cards-bright"
+ },
+ "bitcoin-capital-summit-2026": {
+  "color": "#f7931a",
+  "style": "flat-bright"
+ },
+ "bitcoin-capital-summit-el-salvador": {
+  "color": "#f7931a",
+  "style": "cine-dark"
+ },
+ "bitcoin-catches-some-waves": {
+  "color": "#f7931a",
+  "style": "cards-dark"
+ },
+ "bitcoin-cdmx-2022-onchain-privacy-edition": {
+  "color": "#f4b400",
+  "logo": true,
+  "style": "flat-dark"
+ },
+ "bitcoin-colosseum-community-edition": {
+  "color": "#96371f",
+  "style": "cine-bright"
+ },
+ "bitcoin-copenhagen-2026": {
+  "color": "#f7931a",
+  "style": "cards-bright"
+ },
+ "bitcoin-corporate-day": {
+  "color": "#491563",
+  "style": "flat-bright"
+ },
+ "bitcoin-corporate-day-2026": {
+  "color": "#491563",
+  "style": "cine-dark"
+ },
+ "bitcoin-corporate-day-2027": {
+  "color": "#491563",
+  "style": "cards-dark"
+ },
+ "bitcoin-crypto-wealth-summit-2-bordeaux": {
+  "color": "#f6682f",
+  "style": "flat-dark"
+ },
+ "bitcoin-day-naples": {
+  "color": "#5ca39c",
+  "style": "cine-bright"
+ },
+ "bitcoin-day-naples-2026": {
+  "color": "#5ca39c",
+  "style": "cards-bright"
+ },
+ "bitcoin-day-tampa": {
+  "color": "#5ca39c",
+  "style": "flat-bright"
+ },
+ "bitcoin-day-tysons": {
+  "color": "#5ca39c",
+  "style": "cine-dark"
+ },
+ "bitcoin-dives-deep": {
+  "color": "#f7931a",
+  "style": "cards-dark"
+ },
+ "bitcoin-economic-forum": {
+  "color": "#aa6615",
+  "style": "flat-dark"
+ },
+ "bitcoin-economic-forum-2026": {
+  "color": "#aa6615",
+  "style": "cine-bright"
+ },
+ "bitcoin-educators-academy-beirut": {
+  "color": "#f7931a",
+  "style": "cards-bright"
+ },
+ "bitcoin-educators-academy-buenos-aires": {
+  "color": "#25424e",
+  "style": "flat-bright"
+ },
+ "bitcoin-educators-academy-chiang-mai": {
+  "color": "#f7931a",
+  "style": "cine-dark"
+ },
+ "bitcoin-educators-academy-roatan": {
+  "color": "#d79c55",
+  "style": "cards-dark"
+ },
+ "bitcoin-educators-academy-seoul": {
+  "color": "#f7931a",
+  "style": "flat-dark"
+ },
+ "bitcoin-filmfest-2023": {
+  "color": "#0090dc",
+  "logo": true,
+  "style": "cine-bright"
+ },
+ "bitcoin-filmfest-2024": {
+  "color": "#0090dc",
+  "logo": true,
+  "style": "cards-bright"
+ },
+ "bitcoin-filmfest-2025": {
+  "color": "#0090dc",
+  "logo": true,
+  "style": "flat-bright"
+ },
+ "bitcoin-filmfest-2026": {
+  "color": "#0090dc",
+  "logo": true,
+  "style": "cine-dark"
+ },
+ "bitcoin-filmfest-2027": {
+  "color": "#0090dc",
+  "logo": true,
+  "style": "cards-dark"
+ },
+ "bitcoin-finds-consensus": {
+  "color": "#f7931a",
+  "style": "flat-dark"
+ },
+ "bitcoin-florianopolis-exploits-edition": {
+  "color": "#f4b400",
+  "logo": true,
+  "style": "cine-bright"
+ },
+ "bitcoin-for-corporations-2026": {
+  "color": "#f7931a",
+  "style": "cards-bright"
+ },
+ "bitcoin-for-corporations-2027": {
+  "color": "#f7931a",
+  "style": "flat-bright"
+ },
+ "bitcoin-for-corporations-microstrategy-world": {
+  "color": "#f7931a",
+  "style": "cine-dark"
+ },
+ "bitcoin-for-corporations-symposium": {
+  "color": "#a94408",
+  "logo": true,
+  "style": "cards-dark"
+ },
+ "bitcoin-for-financial-services-summit-2026": {
+  "color": "#113240",
+  "style": "flat-dark"
+ },
+ "bitcoin-freedom-festival": {
+  "color": "#a4633a",
+  "style": "cine-bright"
+ },
+ "bitcoin-goes-private": {
+  "color": "#f7931a",
+  "style": "cards-bright"
+ },
+ "bitcoin-half-marathon-2026": {
+  "color": "#f7931a",
+  "logo": true,
+  "style": "flat-bright"
+ },
+ "bitcoin-herbst-2026": {
+  "color": "#70513c",
+  "style": "cine-dark"
+ },
+ "bitcoin-historico-2026": {
+  "color": "#e1a94a",
+  "logo": true,
+  "style": "cards-dark"
+ },
+ "bitcoin-indonesia-conference-bitcoin-bali-week": {
+  "color": "#f69219",
+  "logo": true,
+  "style": "flat-dark"
+ },
+ "bitcoin-indonesia-x-my-first-bitcoin-unconference": {
+  "color": "#f97316",
+  "style": "cine-bright"
+ },
+ "bitcoin-infinite-games": {
+  "color": "#d89a2d",
+  "logo": true,
+  "style": "cards-bright"
+ },
+ "bitcoin-infinity-day": {
+  "color": "#f56f09",
+  "logo": true,
+  "style": "flat-bright"
+ },
+ "bitcoin-investor-week": {
+  "color": "#f7931a",
+  "style": "cine-dark"
+ },
+ "bitcoin-investor-week-2026": {
+  "color": "#351300",
+  "logo": true,
+  "style": "cards-dark"
+ },
+ "bitcoin-ireland-2026": {
+  "color": "#3b9a79",
+  "style": "flat-dark"
+ },
+ "bitcoin-ireland-conference": {
+  "color": "#3b9a79",
+  "style": "cine-bright"
+ },
+ "bitcoin-ireland-conference-2027": {
+  "color": "#3b9a79",
+  "style": "cards-bright"
+ },
+ "bitcoin-is-for-everyone": {
+  "color": "#ef8f59",
+  "style": "flat-bright"
+ },
+ "bitcoin-is-for-everyone-2026": {
+  "color": "#ef8f59",
+  "style": "cine-dark"
+ },
+ "bitcoin-japan-2026": {
+  "color": "#f37521",
+  "logo": true,
+  "style": "cards-dark"
+ },
+ "bitcoin-korea-conference": {
+  "color": "#ec0064",
+  "logo": true,
+  "style": "flat-dark"
+ },
+ "bitcoin-local-edition-durham-nc": {
+  "color": "#f4b400",
+  "logo": true,
+  "style": "cine-bright"
+ },
+ "bitcoin-medellin": {
+  "color": "#7e581e",
+  "style": "cards-bright"
+ },
+ "bitcoin-medellin-2026": {
+  "color": "#f7931a",
+  "style": "flat-bright"
+ },
+ "bitcoin-meets-burgenland-2026": {
+  "color": "#f7931a",
+  "style": "cine-dark"
+ },
+ "bitcoin-meetup-san-salvador": {
+  "color": "#f7931a",
+  "style": "cards-dark"
+ },
+ "bitcoin-mena-2025": {
+  "color": "#8b6327",
+  "logo": true,
+  "style": "flat-dark"
+ },
+ "bitcoin-mena-2027": {
+  "color": "#966328",
+  "style": "cine-bright"
+ },
+ "bitcoin-miskolc-konferencia-2026": {
+  "color": "#f7931a",
+  "style": "cards-bright"
+ },
+ "bitcoin-nashville-2027-side-events-pleb-party-bitcoin-treasuries-world-bitcoin-and-christ": {
+  "color": "#f6682f",
+  "style": "flat-bright"
+ },
+ "bitcoin-oasis": {
+  "color": "#f7931a",
+  "style": "cine-dark"
+ },
+ "bitcoin-osterreich-2027": {
+  "color": "#144683",
+  "logo": true,
+  "style": "cards-dark"
+ },
+ "bitcoin-poland-2026": {
+  "color": "#f69119",
+  "logo": true,
+  "style": "flat-dark"
+ },
+ "bitcoin-poland-business-day-2027": {
+  "color": "#f69119",
+  "logo": true,
+  "style": "cine-bright"
+ },
+ "bitcoin-poland-community-side-event-2027": {
+  "color": "#f69119",
+  "logo": true,
+  "style": "cards-bright"
+ },
+ "bitcoin-poland-conference-2027": {
+  "color": "#f69119",
+  "logo": true,
+  "style": "flat-bright"
+ },
+ "bitcoin-policy-institute-summit": {
+  "color": "#3b00c7",
+  "logo": true,
+  "style": "cine-dark"
+ },
+ "bitcoin-renaissance": {
+  "color": "#f7931a",
+  "style": "cards-dark"
+ },
+ "bitcoin-scales": {
+  "color": "#f7931a",
+  "style": "flat-dark"
+ },
+ "bitcoin-seoul-conference": {
+  "color": "#f7931a",
+  "style": "cine-bright"
+ },
+ "bitcoin-seoul-privacy-edition": {
+  "color": "#f4b400",
+  "logo": true,
+  "style": "cards-bright"
+ },
+ "bitcoin-ski-summit": {
+  "color": "#f7931a",
+  "style": "flat-bright"
+ },
+ "bitcoin-ski-summit-2026": {
+  "color": "#f7931a",
+  "style": "cine-dark"
+ },
+ "bitcoin-stands-sovereign": {
+  "color": "#f7931a",
+  "style": "cards-dark"
+ },
+ "bitcoin-stirs-controversy": {
+  "color": "#f7931a",
+  "style": "flat-dark"
+ },
+ "bitcoin-strategic-reserve-summit": {
+  "color": "#86cadc",
+  "style": "cine-bright"
+ },
+ "bitcoin-symposium-2026": {
+  "color": "#f7931a",
+  "style": "cards-bright"
+ },
+ "bitcoin-takeover": {
+  "color": "#f7931a",
+  "style": "flat-bright"
+ },
+ "bitcoin-takeover-2026": {
+  "color": "#a56c45",
+  "style": "cine-dark"
+ },
+ "bitcoin-talks-economically": {
+  "color": "#f7931a",
+  "style": "cards-dark"
+ },
+ "bitcoin-thailand-conference-2026": {
+  "color": "#7e3909",
+  "style": "flat-dark"
+ },
+ "bitcoin-treasuries-conference-2026": {
+  "color": "#72500f",
+  "logo": true,
+  "style": "cine-bright"
+ },
+ "bitcoin-treasuries-conference-2027": {
+  "color": "#f7931a",
+  "style": "cards-bright"
+ },
+ "bitcoin-treasuries-conference-uk-2027": {
+  "color": "#9d4f1e",
+  "logo": true,
+  "style": "flat-bright"
+ },
+ "bitcoin-treasuries-digital-conference": {
+  "color": "#72500f",
+  "style": "cine-dark"
+ },
+ "bitcoin-treasuries-unconference-nyc-2026": {
+  "color": "#72500f",
+  "style": "cards-dark"
+ },
+ "bitcoin-treasuries-unconference-uk": {
+  "color": "#9d4f1e",
+  "logo": true,
+  "style": "flat-dark"
+ },
+ "bitcoin-veterans-summit-2026": {
+  "color": "#995a0f",
+  "logo": true,
+  "style": "cine-bright"
+ },
+ "bitcoin-vibecamp": {
+  "color": "#041c2e",
+  "logo": true,
+  "style": "cards-bright"
+ },
+ "bitcoin-works-in-public": {
+  "color": "#f7931a",
+  "style": "flat-bright"
+ },
+ "bitcoin-zitadelle": {
+  "color": "#8a5527",
+  "style": "cine-dark"
+ },
+ "bitcoin-zitadelle-2027": {
+  "color": "#0e4c8c",
+  "style": "cards-dark"
+ },
+ "bitcoinday-naples-2027": {
+  "color": "#5ca39c",
+  "style": "flat-dark"
+ },
+ "bitfest-2026": {
+  "color": "#f3a95a",
+  "logo": true,
+  "style": "cine-bright"
+ },
+ "bitkiwi-xv": {
+  "color": "#5807e4",
+  "style": "cards-bright"
+ },
+ "bitkiwi-xvi": {
+  "color": "#f69621",
+  "logo": true,
+  "style": "flat-bright"
+ },
+ "bitkiwi-xvii": {
+  "color": "#f69621",
+  "logo": true,
+  "style": "cine-dark"
+ },
+ "bitmela-2026": {
+  "color": "#dd2224",
+  "logo": true,
+  "style": "cards-dark"
+ },
+ "bitshala-boss-summit-2026": {
+  "color": "#3c2534",
+  "style": "flat-dark"
+ },
+ "blockchain-africa-conference-2026": {
+  "color": "#ed1a3b",
+  "logo": true,
+  "style": "cine-bright"
+ },
+ "bse-bitcoin-sovereignty-economics": {
+  "color": "#f59622",
+  "logo": true,
+  "style": "cards-bright"
+ },
+ "bse27-bitcoin-social-experience": {
+  "color": "#f59622",
+  "logo": true,
+  "style": "flat-bright"
+ },
+ "btc-balkans-2026": {
+  "color": "#182e58",
+  "style": "cine-dark"
+ },
+ "btc-hel-2026": {
+  "color": "#f7931a",
+  "logo": true,
+  "style": "cards-dark"
+ },
+ "btc-hel-2027": {
+  "color": "#f7931a",
+  "logo": true,
+  "style": "flat-dark"
+ },
+ "btc-prague": {
+  "color": "#ee8746",
+  "logo": true,
+  "style": "cine-bright"
+ },
+ "btc-prague-2026": {
+  "color": "#ee8746",
+  "logo": true,
+  "style": "cards-bright"
+ },
+ "btc-prague-2027": {
+  "color": "#ee8746",
+  "logo": true,
+  "style": "flat-bright"
+ },
+ "btc-vortex": {
+  "color": "#f7931a",
+  "style": "cine-dark"
+ },
+ "btchel": {
+  "color": "#f7931a",
+  "logo": true,
+  "style": "cards-dark"
+ },
+ "btcindc": {
+  "color": "#a80934",
+  "logo": true,
+  "style": "flat-dark"
+ },
+ "btcindc-2026": {
+  "color": "#a80934",
+  "logo": true,
+  "style": "cine-bright"
+ },
+ "bthechange-2026": {
+  "color": "#ed904b",
+  "style": "cards-bright"
+ },
+ "bush-bash": {
+  "color": "#da821b",
+  "logo": true,
+  "style": "flat-bright"
+ },
+ "camp-nakamoto": {
+  "color": "#cf7c48",
+  "logo": true,
+  "style": "cine-dark"
+ },
+ "camp-nakamoto-2027": {
+  "color": "#cf7c48",
+  "logo": true,
+  "style": "cards-dark"
+ },
+ "cheatcode-2026": {
+  "color": "#f7931a",
+  "style": "flat-dark"
+ },
+ "cheatcode-conference": {
+  "color": "#f7931a",
+  "style": "cine-bright"
+ },
+ "code-orange-workshop-2026": {
+  "color": "#f7931a",
+  "logo": true,
+  "style": "cards-bright"
+ },
+ "competitive-advantage-2026": {
+  "color": "#e17760",
+  "style": "flat-bright"
+ },
+ "copa-bitcoin-2026": {
+  "color": "#ec9a19",
+  "logo": true,
+  "style": "cine-dark"
+ },
+ "cryptobyte-2027": {
+  "color": "#f7931a",
+  "style": "cine-bright"
+ },
+ "custody-treasury-summit-2026": {
+  "color": "#f7931a",
+  "style": "cards-dark"
+ },
+ "dakar-bitcoin-days-iv": {
+  "color": "#038276",
+  "logo": true,
+  "style": "flat-dark"
+ },
+ "discover-floripa-2027": {
+  "color": "#0b5536",
+  "logo": true,
+  "style": "cine-bright"
+ },
+ "emtech-ai-latam-2026": {
+  "color": "#1c0a3f",
+  "style": "cards-bright"
+ },
+ "energy-investors-forum-2026": {
+  "color": "#161440",
+  "logo": true,
+  "style": "flat-bright"
+ },
+ "energy-investors-forum-2027": {
+  "color": "#161440",
+  "logo": true,
+  "style": "cine-dark"
+ },
+ "european-mining-summit-2026": {
+  "color": "#f7931a",
+  "style": "cards-dark"
+ },
+ "finding-satoshi-screening-drinks": {
+  "color": "#634635",
+  "logo": true,
+  "style": "flat-dark"
+ },
+ "free-energy-summit-2026": {
+  "color": "#e3c70f",
+  "style": "cine-bright"
+ },
+ "freedom-southeast-asia-2026": {
+  "color": "#591f0b",
+  "logo": true,
+  "style": "cards-bright"
+ },
+ "freedom-tech-dc-2026": {
+  "color": "#6c71ae",
+  "logo": true,
+  "style": "flat-bright"
+ },
+ "global-bitcoin-circular-economies-summit": {
+  "color": "#af641d",
+  "logo": true,
+  "style": "cine-dark"
+ },
+ "grassroots-bitcoin-2026": {
+  "color": "#e3ac80",
+  "style": "cards-dark"
+ },
+ "hackalajara-2-0": {
+  "color": "#0d3d38",
+  "logo": true,
+  "style": "flat-dark"
+ },
+ "heatpunk-summit-2026": {
+  "color": "#a48139",
+  "logo": true,
+  "style": "cine-bright"
+ },
+ "heatpunk-summit-2027": {
+  "color": "#a48139",
+  "logo": true,
+  "style": "cards-bright"
+ },
+ "imagine-if-2026": {
+  "color": "#7958ed",
+  "logo": true,
+  "style": "flat-bright"
+ },
+ "kansas-city-sovereign-assembly-2026": {
+  "color": "#f7931a",
+  "style": "cine-dark"
+ },
+ "la-casa-de-satoshi-cumple-2-anos": {
+  "color": "#f7931a",
+  "style": "cards-dark"
+ },
+ "labitconf-2026": {
+  "color": "#f7931a",
+  "logo": true,
+  "style": "flat-dark"
+ },
+ "labitconf-b2b-cdmx": {
+  "color": "#f7931a",
+  "style": "cine-bright"
+ },
+ "lake-satoshi-campout": {
+  "color": "#83593e",
+  "style": "cards-bright"
+ },
+ "lake-satoshi-retreat": {
+  "color": "#08a0a2",
+  "style": "flat-bright"
+ },
+ "land-of-10-000-nodes-2026": {
+  "color": "#f7931a",
+  "style": "cine-dark"
+ },
+ "le-paradigme-bitcoin": {
+  "color": "#f7931a",
+  "style": "cards-dark"
+ },
+ "le-paradigme-bitcoin-2027": {
+  "color": "#f7931a",
+  "style": "flat-dark"
+ },
+ "learning-bitcoin": {
+  "color": "#d1882b",
+  "logo": true,
+  "style": "cine-bright"
+ },
+ "learning-bitcoin-2026": {
+  "color": "#d1882b",
+  "logo": true,
+  "style": "cards-bright"
+ },
+ "lightning-strikes": {
+  "color": "#f7931a",
+  "style": "flat-bright"
+ },
+ "mad-bitcoin-summit": {
+  "color": "#f7931a",
+  "logo": true,
+  "style": "cine-dark"
+ },
+ "mallorca-blockchain-days-2026": {
+  "color": "#f7931a",
+  "style": "cards-dark"
+ },
+ "mallorca-blockchain-days-v": {
+  "color": "#f7931a",
+  "style": "flat-dark"
+ },
+ "massadoption": {
+  "color": "#cf7c48",
+  "logo": true,
+  "style": "cine-bright"
+ },
+ "max-stacy-bitcoin-golf-invitational-2027": {
+  "color": "#0c2840",
+  "logo": true,
+  "style": "cards-bright"
+ },
+ "midwest-bitcoin-summit-2026": {
+  "color": "#f59037",
+  "logo": true,
+  "style": "flat-bright"
+ },
+ "mining-disrupt": {
+  "color": "#53a797",
+  "logo": true,
+  "style": "cine-dark"
+ },
+ "mining-disrupt-2027": {
+  "color": "#53a797",
+  "logo": true,
+  "style": "cards-dark"
+ },
+ "mit-bitcoin-expo": {
+  "color": "#f7931a",
+  "style": "flat-dark"
+ },
+ "mit-bitcoin-expo-2026": {
+  "color": "#81536c",
+  "style": "cine-bright"
+ },
+ "mita-tech-talks-2026": {
+  "color": "#00b5c9",
+  "logo": true,
+  "style": "cards-bright"
+ },
+ "muslim-bitcoin-summit-2026": {
+  "color": "#935d10",
+  "style": "flat-bright"
+ },
+ "nashville-energy-mining-summit": {
+  "color": "#d19261",
+  "style": "cine-dark"
+ },
+ "nashville-energy-mining-summit-2026": {
+  "color": "#19465b",
+  "style": "cards-dark"
+ },
+ "national-bitcoin-and-digital-asset-policy-2026": {
+  "color": "#f7931a",
+  "logo": true,
+  "style": "flat-dark"
+ },
+ "noderunners-conference-2026": {
+  "color": "#86420d",
+  "style": "cine-bright"
+ },
+ "nostr-valley-iii": {
+  "color": "#052044",
+  "logo": true,
+  "style": "cards-bright"
+ },
+ "opnext": {
+  "color": "#6db27a",
+  "style": "flat-bright"
+ },
+ "opnext-2026": {
+  "color": "#6db27a",
+  "style": "cine-dark"
+ },
+ "opt-out-conf": {
+  "color": "#f7931a",
+  "style": "cards-dark"
+ },
+ "origin-seoul-2026": {
+  "color": "#3e629a",
+  "logo": true,
+  "style": "flat-dark"
+ },
+ "oslo-freedom-forum": {
+  "color": "#1d5779",
+  "style": "cine-bright"
+ },
+ "oslo-freedom-forum-2026": {
+  "color": "#1d5779",
+  "style": "cards-bright"
+ },
+ "oslo-freedom-forum-2027": {
+  "color": "#16376e",
+  "style": "flat-bright"
+ },
+ "pizza-day-prague": {
+  "color": "#911c0b",
+  "logo": true,
+  "style": "cine-dark"
+ },
+ "pizza-day-prague-2026": {
+  "color": "#911c0b",
+  "logo": true,
+  "style": "cards-dark"
+ },
+ "plan-b-forum": {
+  "color": "#77242e",
+  "style": "flat-dark"
+ },
+ "plan-b-forum-el-salvador-2026": {
+  "color": "#1744b4",
+  "logo": true,
+  "style": "cine-bright"
+ },
+ "plan-b-forum-el-salvador-2027": {
+  "color": "#1744b4",
+  "logo": true,
+  "style": "cards-bright"
+ },
+ "plan-b-forum-lugano-2026": {
+  "color": "#77242e",
+  "style": "flat-bright"
+ },
+ "plan-b-week-lugano-2026": {
+  "color": "#924336",
+  "logo": true,
+  "style": "cine-dark"
+ },
+ "pleblab-startup-day-2026": {
+  "color": "#f7931a",
+  "style": "cards-dark"
+ },
+ "proof-conference-2026": {
+  "color": "#533890",
+  "style": "flat-dark"
+ },
+ "renaissance-rodeo": {
+  "color": "#dfc29b",
+  "logo": true,
+  "style": "cine-bright"
+ },
+ "revolution-rocks-2026": {
+  "color": "#f7931a",
+  "style": "cards-bright"
+ },
+ "revolution-rocks-2027": {
+  "color": "#f7931a",
+  "style": "flat-bright"
+ },
+ "satoshi-christmas-flea-market-saigon-2026": {
+  "color": "#a37733",
+  "style": "cine-dark"
+ },
+ "satoship": {
+  "color": "#f7931a",
+  "style": "cards-dark"
+ },
+ "satoship-2027": {
+  "color": "#5895cd",
+  "style": "flat-dark"
+ },
+ "satsconf": {
+  "color": "#696396",
+  "logo": true,
+  "style": "cine-bright"
+ },
+ "socratic-seminar-162": {
+  "color": "#f7931a",
+  "style": "cards-bright"
+ },
+ "sound-money-soiree": {
+  "color": "#8b4d26",
+  "style": "flat-bright"
+ },
+ "sound-money-soiree-2026": {
+  "color": "#8b4d26",
+  "style": "cine-dark"
+ },
+ "sound-money-soiree-2027": {
+  "color": "#8b4d26",
+  "style": "cards-dark"
+ },
+ "sovereign-conference": {
+  "color": "#e38718",
+  "logo": true,
+  "style": "flat-dark"
+ },
+ "sovereignty-summit-2027": {
+  "color": "#111e32",
+  "style": "cine-bright"
+ },
+ "swiss-bitcoin-conference": {
+  "color": "#f79c25",
+  "logo": true,
+  "style": "cards-bright"
+ },
+ "swiss-bitcoin-conference-2026": {
+  "color": "#f79c25",
+  "logo": true,
+  "style": "flat-bright"
+ },
+ "swiss-bitcoin-conference-2027": {
+  "color": "#f79c25",
+  "logo": true,
+  "style": "cine-dark"
+ },
+ "tabconf": {
+  "color": "#f7931a",
+  "style": "cards-dark"
+ },
+ "tabconf-8": {
+  "color": "#f7931a",
+  "style": "flat-dark"
+ },
+ "texas-energy-mining-summit-2026": {
+  "color": "#f7931a",
+  "style": "cine-bright"
+ },
+ "tgfb27-conference": {
+  "color": "#182e41",
+  "logo": true,
+  "style": "cards-bright"
+ },
+ "thank-god-for-bitcoin-conference-2026": {
+  "color": "#182e41",
+  "logo": true,
+  "style": "flat-bright"
+ },
+ "the-bitcoin-rodeo": {
+  "color": "#f7931a",
+  "style": "cine-dark"
+ },
+ "the-future-of-capital-markets-2026": {
+  "color": "#132d4d",
+  "style": "cards-dark"
+ },
+ "the-sovereign-summit-2027": {
+  "color": "#131e33",
+  "logo": true,
+  "style": "flat-dark"
+ },
+ "timechain-summit-2026": {
+  "color": "#f7931a",
+  "style": "cine-bright"
+ },
+ "tuscany-lightning-summit": {
+  "color": "#966750",
+  "style": "cards-bright"
+ },
+ "tuscany-lightning-summit-2026": {
+  "color": "#966750",
+  "style": "flat-bright"
+ },
+ "unconfiscatable": {
+  "color": "#f7931a",
+  "logo": true,
+  "style": "cine-dark"
+ },
+ "v4v-chicago-2026": {
+  "color": "#ef9e3a",
+  "logo": true,
+  "style": "cards-dark"
+ },
+ "watch-out-bitcoin": {
+  "color": "#f7931a",
+  "style": "flat-dark"
+ },
+ "watch-out-bitcoin-2026": {
+  "color": "#f7931a",
+  "style": "cine-bright"
+ },
+ "watch-out-bitcoin-2027": {
+  "color": "#f7931a",
+  "style": "cards-bright"
+ },
+ "whitepaper-day-2026-by-northants-bitcoin": {
+  "color": "#4542b4",
+  "logo": true,
+  "style": "flat-bright"
+ },
+ "whitepaper-day-bbq-bcc8333": {
+  "color": "#8b3709",
+  "style": "cine-dark"
+ },
+ "women-in-bitcoin-summit": {
+  "color": "#f48737",
+  "logo": true,
+  "style": "cards-dark"
+ },
+ "women-of-bitcoin-summit-2027": {
+  "color": "#f48737",
+  "logo": true,
+  "style": "flat-dark"
+ }
+}
