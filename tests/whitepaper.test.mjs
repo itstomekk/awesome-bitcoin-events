@@ -31,3 +31,15 @@ test('the embedded paper text is the real fragment, not the layout placeholder',
   assert.match(html, /<h2[^>]*>/);
   assert.ok(!/SAMPLE PLACEHOLDER/.test(html));
 });
+
+test('/bitcoin-whitepaper/ is the indexable page: no generated page takes its path, sitemap and llms.txt list it', () => {
+  const page = read('../src/pages/bitcoin-whitepaper.astro').toString('utf8');
+  assert.ok(page.includes(SHA));
+  assert.ok(!/\bnoindex\b/.test(page.replace(/\/\/.*$/gm, '')));
+  assert.match(page, /https:\/\/dwadziesciajeden\.pl\/bitcoin-whitepaper\//);
+  const model = buildModel({ origin: 'https://example.org/', buildDay: '2026-10-29' });
+  assert.ok(!model.pages.some((p) => p.path === 'bitcoin-whitepaper'));
+  assert.ok(sitemapXml(model, ['bitcoin-whitepaper']).includes('<loc>https://example.org/bitcoin-whitepaper/</loc>'));
+  assert.ok(!sitemapXml(model, ['bitcoin-whitepaper']).includes('bitcoin.pdf'));
+  assert.equal(createHash('sha256').update(read('../public/whitepaper-18-og.jpg')).digest('hex').length, 64);
+});

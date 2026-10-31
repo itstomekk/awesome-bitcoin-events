@@ -1,0 +1,151 @@
+---
+// /bitcoin-whitepaper/: the Bitcoin white paper as readable text in the site's own layout (masthead,
+// breadcrumb, colophon, Classic and Poster designs), with the original PDF (public/bitcoin.pdf,
+// byte-for-byte) as a download card. The paper text is src/data/whitepaper-en.frag, shared with the
+// bare /whitepaper/ copy; the figures are public/whitepaper/figures/. Static page: it wins over the
+// [...slug] catch-all, and no generated page may use the path "bitcoin-whitepaper"
+// (tests/whitepaper.test.mjs). Indexable and in sitemap.xml and llms.txt.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import frag from '../data/whitepaper-en.frag?raw';
+
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+const pdf = `${base}bitcoin.pdf`;
+const SHA = 'b1674191a88ec5cdd733e4240a81803105dc412d6c6708d53ab94fc248f4f553';
+const PL = 'https://dwadziesciajeden.pl/bitcoin-whitepaper/';
+
+// Table of contents from the paper's own headings; the heading and byline are rendered by this page.
+const toc = [...frag.matchAll(/<h2 id="([^"]+)">([^<]+)<\/h2>/g)].map((m) => ({ id: m[1], label: m[2].trim() }));
+const body = frag
+  .replace(/<h1>[\s\S]*?<\/h1>\s*/, '')
+  .replace(/<p class="wp-author">[\s\S]*?<\/p>\s*/, '')
+  .replaceAll('src="figures/', `src="${base}whitepaper/figures/`);
+
+const title = 'Bitcoin white paper: A Peer-to-Peer Electronic Cash System · Satoshi Nakamoto';
+const description = 'The Bitcoin white paper by Satoshi Nakamoto, published 31 October 2008, as readable text with figures and the unmodified original PDF. 18 years on.';
+const jsonld = {
+  '@context': 'https://schema.org',
+  '@type': 'ScholarlyArticle',
+  name: 'Bitcoin: A Peer-to-Peer Electronic Cash System',
+  author: { '@type': 'Person', name: 'Satoshi Nakamoto' },
+  datePublished: '2008-10-31',
+  inLanguage: 'en',
+  url: 'https://awesomebitcoinevents.com/bitcoin-whitepaper/',
+  encoding: { '@type': 'MediaObject', contentUrl: 'https://awesomebitcoinevents.com/bitcoin.pdf', encodingFormat: 'application/pdf' },
+};
+---
+<BaseLayout
+  title={title}
+  description={description}
+  canonical="bitcoin-whitepaper/"
+  jsonld={jsonld}
+  ogImagePath="whitepaper-18-og.jpg"
+  ogImageAlt="18 years of the Bitcoin white paper, 31.10.2008 to 31.10.2026: a page of the paper, a birthday cake with candles 1 and 8, party hat and confetti"
+  mastHeading={false}
+>
+  <main id="main-content" class="page sub-page">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <ol>
+        <li><a href={base}>Awesome Bitcoin Events</a></li>
+        <li><span aria-current="page">Bitcoin white paper</span></li>
+      </ol>
+    </nav>
+
+    <article class="event-page bwp">
+      <h1>Bitcoin: A Peer-to-Peer Electronic Cash System</h1>
+      <p class="bwp-by">Satoshi Nakamoto · <a href="http://www.bitcoin.org">www.bitcoin.org</a></p>
+      <p class="event-lead">
+        Eighteen years ago, on 31 October 2008, Satoshi Nakamoto shared this nine-page paper. Every Bitcoin meetup and conference on this list traces back to it. Read it here, or keep the original PDF.
+      </p>
+
+      <aside class="bwp-card" aria-label="PDF download">
+        <dl class="details-facts">
+          <div><dt>File</dt><dd>bitcoin.pdf · 9 pages · 180 KB</dd></div>
+          <div><dt>Copy</dt><dd>Original, unmodified</dd></div>
+          <div><dt>SHA-256</dt><dd><code class="bwp-sha">{SHA}</code></dd></div>
+        </dl>
+        <p class="details-actions">
+          <a class="action primary" href={pdf} download>Download the PDF</a>
+          <a class="action" href={pdf}>Open in the browser</a>
+          <a class="action subtle" href={base}>See upcoming events</a>
+        </p>
+      </aside>
+
+      <nav class="bwp-toc" aria-labelledby="bwp-toc-h">
+        <h2 id="bwp-toc-h">Contents</h2>
+        <ol>
+          {toc.map((t) => <li><a href={`#${t.id}`}>{t.label.replace(/^\d+\.\s*/, '')}</a></li>)}
+        </ol>
+      </nav>
+
+      <div class="bwp-text" set:html={body} />
+
+      <p class="bwp-pl">
+        A Polish reading version is on <a href={PL} target="_blank" rel="noopener">dwadziesciajeden.pl/bitcoin-whitepaper</a>. Translation by meeDamian.
+      </p>
+    </article>
+    <p class="back"><a href={base}>← All Bitcoin events</a> · <a href={`${base}meetups/`}>All meetups</a></p>
+  </main>
+</BaseLayout>
+
+<style is:global>
+  .bwp .bwp-by { margin: calc(-1 * var(--space-xs)) 0 var(--space-sm); color: var(--color-muted); font: 400 var(--text-sm)/1.5 var(--font-mono); letter-spacing: var(--tracking-label); text-transform: uppercase; }
+  .bwp .bwp-by a { color: inherit; text-underline-offset: 3px; }
+  .bwp-card { max-width: 46rem; margin: var(--space-md) 0 var(--space-lg); padding: var(--space-sm) var(--space-sm) var(--space-md); background: var(--color-paper-2); border-top: var(--rule-hair) solid var(--color-rule-2); border-bottom: var(--rule-hair) solid var(--color-rule); }
+  .bwp-card .details-facts div { grid-template-columns: 5rem minmax(0, 1fr); }
+  .bwp-card .details-facts dd { font-size: var(--text-base); min-width: 0; }
+  .bwp-sha { display: block; overflow-wrap: anywhere; font: 400 var(--text-xs)/1.5 var(--font-mono); color: var(--color-ink-2); }
+  .bwp-toc { max-width: 46rem; margin: 0 0 var(--space-lg); }
+  .bwp-toc h2 { margin: 0 0 var(--space-xs); padding-bottom: var(--space-2xs); border-bottom: var(--rule-hair) solid var(--color-rule-2); font: 600 var(--text-xl)/var(--lh-tight) var(--font-display); }
+  .bwp-toc ol { margin: 0; padding: 0; list-style: none; columns: 2; column-gap: var(--space-lg); counter-reset: bwp; font-size: var(--text-base); }
+  .bwp-toc li { counter-increment: bwp; break-inside: avoid; padding: var(--space-3xs) 0; }
+  .bwp-toc li::before { content: counter(bwp) "."; display: inline-block; min-width: 2rem; color: var(--color-muted); font: 400 var(--text-xs)/1 var(--font-mono); }
+  .bwp-toc li:last-child::before { content: ""; }
+  .bwp-toc a { color: var(--color-ink-2); text-underline-offset: 3px; }
+  .bwp-toc a:hover { color: var(--color-accent-ink); }
+
+  .bwp-text { max-width: 46rem; font: 400 var(--text-md)/1.65 var(--font-body); color: var(--color-ink); overflow-wrap: break-word; }
+  .bwp-text h2 { margin: var(--space-lg) 0 var(--space-xs); padding-bottom: var(--space-2xs); border-bottom: var(--rule-hair) solid var(--color-rule-2); font: 600 var(--text-xl)/var(--lh-tight) var(--font-display); letter-spacing: var(--tracking-display); scroll-margin-top: var(--space-md); }
+  .bwp-text h3 { margin: var(--space-md) 0 var(--space-2xs); font: 600 var(--text-lg)/var(--lh-snug) var(--font-display); }
+  .bwp-text p { margin: 0 0 var(--space-sm); }
+  .bwp-text a { color: var(--color-accent-ink); text-underline-offset: 3px; overflow-wrap: anywhere; }
+  .bwp-text a:hover { color: var(--color-ink); }
+  .bwp-text sup, .bwp-text sub { line-height: 0; }
+  .bwp-text .wp-abstract { margin: 0 0 var(--space-md); padding: var(--space-xs) var(--space-sm); background: var(--color-paper-2); border-left: 3px solid var(--color-accent); }
+  .bwp-text .wp-abstract p { margin: 0; font-size: var(--text-base); }
+  .bwp-text .wp-fig { margin: var(--space-md) 0; text-align: center; }
+  .bwp-text .wp-fig img { display: block; max-width: 100%; height: auto; margin: 0 auto; padding: 6px; box-sizing: border-box; background: #fff; border: var(--rule-hair) solid var(--color-rule); }
+  .bwp-text .wp-fig figcaption { margin-top: var(--space-2xs); color: var(--color-muted); font: 400 var(--text-xs)/1.5 var(--font-mono); }
+  .bwp-text math[display="block"] { display: block; max-width: 100%; margin: var(--space-sm) 0; overflow-x: auto; overflow-y: hidden; font-size: 1.12em; }
+  .bwp-text pre { max-width: 100%; margin: var(--space-sm) 0; padding: var(--space-xs) var(--space-sm); overflow-x: auto; background: var(--color-paper-2); border-left: 3px solid var(--color-rule-2); font: 400 var(--text-sm)/1.5 var(--font-mono); }
+  .bwp-text code { font-family: var(--font-mono); font-size: 0.92em; }
+  .bwp-text table { display: block; max-width: 100%; margin: var(--space-sm) 0; overflow-x: auto; border-collapse: collapse; font-size: var(--text-base); }
+  .bwp-text th, .bwp-text td { padding: var(--space-3xs) var(--space-xs); border-bottom: var(--rule-hair) solid var(--color-rule); text-align: left; }
+  .bwp-text ol, .bwp-text ul { margin: 0 0 var(--space-sm); padding-left: 1.6em; }
+  .bwp-text li { margin-bottom: var(--space-3xs); }
+  .bwp-text li::marker { color: var(--color-muted); font-family: var(--font-mono); font-size: 0.9em; }
+  .bwp-text .wp-refs, .bwp-text .wp-fns { font-size: var(--text-base); overflow-wrap: anywhere; }
+  .bwp-text .wp-fnref a { text-decoration: none; }
+  .bwp-pl { max-width: 46rem; margin: var(--space-xl) 0 0; padding-top: var(--space-sm); border-top: var(--rule-hair) solid var(--color-rule); color: var(--color-muted); font-size: var(--text-sm); }
+  .bwp-pl a { color: var(--color-accent-ink); text-underline-offset: 3px; overflow-wrap: anywhere; }
+
+  html[data-design="poster"] .bwp .bwp-by { color: #111; font: 700 0.75rem/1.5 var(--font-body); }
+  html[data-design="poster"] .bwp-card { background: var(--color-accent); border: 2px solid #111; }
+  html[data-design="poster"] .bwp-card .details-facts dt { color: #111; }
+  html[data-design="poster"] .bwp-sha { color: #111; }
+  html[data-design="poster"] .bwp-toc h2, html[data-design="poster"] .bwp-text h2 { border-bottom: 2px solid #111; font: 400 var(--text-lg)/1.2 var(--font-display); text-transform: uppercase; letter-spacing: 0.005em; }
+  html[data-design="poster"] .bwp-text h3 { font: 400 var(--text-md)/1.25 var(--font-display); text-transform: uppercase; }
+  html[data-design="poster"] .bwp-text { line-height: 1.7; }
+  html[data-design="poster"] .bwp-text a, html[data-design="poster"] .bwp-toc a, html[data-design="poster"] .bwp-pl a { color: #111; text-decoration-color: var(--color-accent); text-decoration-thickness: 2px; }
+  html[data-design="poster"] .bwp-text .wp-abstract { background: var(--color-paper-2); border: 2px solid #111; border-left-width: 6px; }
+  html[data-design="poster"] .bwp-text .wp-fig img { border: 2px solid #111; }
+  html[data-design="poster"] .bwp-text .wp-fig figcaption { color: #111; font: 700 0.6875rem/1.5 var(--font-body); }
+  html[data-design="poster"] .bwp-text pre { border: 2px solid #111; border-left-width: 6px; }
+  html[data-design="poster"] .bwp-text th, html[data-design="poster"] .bwp-text td { border-bottom: 2px solid #111; }
+  html[data-design="poster"] .bwp-pl { border-top: 2px solid #111; color: #111; }
+
+  @media (max-width: 40rem) {
+    .bwp-toc ol { columns: 1; }
+    .bwp-card .details-facts div { grid-template-columns: minmax(0, 1fr); gap: 0; }
+    .bwp-card .details-actions .action { white-space: normal; }
+  }
+</style>

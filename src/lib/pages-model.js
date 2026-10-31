@@ -475,8 +475,8 @@ ${entries.join('\n')}
 }
 
 // --- sitemap ------------------------------------------------------------------------
-export function sitemapXml(model) {
+export function sitemapXml(model, extraPaths = []) {
   const { urlOf } = model.ctx;
-  const urls = [urlOf(''), ...model.pages.filter((p) => p.indexable).map((p) => urlOf(p.path))];
+  const urls = [urlOf(''), ...model.pages.filter((p) => p.indexable).map((p) => urlOf(p.path)), ...extraPaths.map((p) => urlOf(p))];
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${u}</loc></url>`).join('\n')}\n</urlset>\n`;
 }
