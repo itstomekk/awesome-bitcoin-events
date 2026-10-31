@@ -1,0 +1,137 @@
+---
+// /whitepaper/: the Bitcoin white paper as readable HTML (src/data/whitepaper-en.frag, embedded
+// verbatim) with the original PDF (public/bitcoin.pdf, byte-for-byte) linked at the top and in a
+// slim thank-you bar at the end. Figures live in public/whitepaper/figures/ and resolve relatively
+// ("figures/fig-N.png" from /whitepaper/). A static page, so it wins over the [...slug] catch-all; the
+// generated pages never use the path "whitepaper" (tests/whitepaper.test.mjs). noindex and absent
+// from sitemap.xml/llms.txt: it is a courtesy copy, not part of the list.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import paper from '../data/whitepaper-en.frag?raw';
+
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+const pdf = `${base}bitcoin.pdf`;
+const SHA = 'b1674191a88ec5cdd733e4240a81803105dc412d6c6708d53ab94fc248f4f553';
+---
+<BaseLayout
+  title="Bitcoin: A Peer-to-Peer Electronic Cash System · Satoshi Nakamoto"
+  description="The Bitcoin white paper by Satoshi Nakamoto (2008) as readable text, with the unmodified original PDF."
+  canonical="whitepaper/"
+  noindex
+  bare
+>
+  <div class="wp-top">
+    <span class="wp-kicker">Bitcoin white paper · 2008</span>
+    <a class="wp-btn" href={pdf}>Original PDF</a>
+  </div>
+  <main id="main-content" class="wp">
+    <article class="wp-text" set:html={paper} />
+  </main>
+  <footer class="wp-bar">
+    <p class="wp-thanks"><strong>Thank you, Satoshi.</strong> Many copies, no single keeper.</p>
+    <p class="wp-links">
+      <a href={pdf} download>Original PDF</a>
+      <span class="wp-sep" aria-hidden="true">/</span>
+      <span title={`SHA-256 ${SHA}`}>Unmodified · SHA-256 b167…f553</span>
+      <span class="wp-sep" aria-hidden="true">/</span>
+      <a class="wp-home" href={base}>Awesome Bitcoin Events</a>
+    </p>
+  </footer>
+</BaseLayout>
+
+<style is:global>
+  /* Classic (default): paper, Newsreader headings, Hanken Grotesk text, mono labels, and the
+     colophon's double rule above the bar. */
+  body.bare { background: var(--color-paper); }
+  .wp-top { display: flex; align-items: center; justify-content: space-between; gap: var(--space-xs); padding: var(--space-xs) var(--page-gutter); border-bottom: var(--rule-hair) solid var(--color-rule); }
+  .wp-kicker { color: var(--color-muted); font: 400 var(--text-xs)/1.4 var(--font-mono); letter-spacing: var(--tracking-label); text-transform: uppercase; }
+  .wp-btn { display: inline-block; padding: var(--space-3xs) var(--space-sm); background: var(--color-ink); color: var(--color-paper); font: 500 var(--text-sm)/1.5 var(--font-body); text-decoration: none; border-radius: var(--radius-sm); white-space: nowrap; transition: background var(--dur-fast) var(--ease-out); }
+  .wp-btn:hover { background: var(--color-accent-ink); }
+
+  .wp { padding: var(--space-xl) var(--page-gutter) var(--space-2xl); }
+  .wp-text { max-width: 70ch; margin-inline: auto; font: 400 var(--text-md)/1.65 var(--font-body); color: var(--color-ink); overflow-wrap: break-word; hyphens: auto; }
+  .wp-text > :first-child { margin-top: 0; }
+  .wp-text h1 { margin: 0 0 var(--space-2xs); font: 600 var(--text-display)/var(--lh-tight) var(--font-display); letter-spacing: var(--tracking-display); text-wrap: balance; }
+  .wp-text h2 { margin: var(--space-xl) 0 var(--space-xs); padding-top: var(--space-sm); border-top: var(--rule-hair) solid var(--color-rule); font: 600 var(--text-xl)/var(--lh-snug) var(--font-display); letter-spacing: var(--tracking-display); text-wrap: balance; }
+  .wp-text h3 { margin: var(--space-md) 0 var(--space-2xs); font: 600 var(--text-lg)/var(--lh-snug) var(--font-display); }
+  .wp-text h4 { margin: var(--space-sm) 0 var(--space-3xs); font: 500 var(--text-md)/var(--lh-snug) var(--font-body); }
+  .wp-text p { margin: 0 0 var(--space-sm); }
+  .wp-text .byline, .wp-text .author, .wp-text .meta { color: var(--color-muted); font: 400 var(--text-sm)/1.5 var(--font-mono); }
+  .wp-text a { color: var(--color-accent-ink); text-underline-offset: 2px; overflow-wrap: anywhere; }
+  .wp-text a:hover { color: var(--color-ink); }
+  .wp-text sup, .wp-text sub { line-height: 0; }
+  .wp-text ul, .wp-text ol { margin: 0 0 var(--space-sm); padding-left: 1.6em; }
+  .wp-text li { margin-bottom: var(--space-3xs); padding-left: 0.2em; }
+  .wp-text li::marker { color: var(--color-muted); font-family: var(--font-mono); font-size: 0.9em; }
+  .wp-text blockquote { margin: 0 0 var(--space-sm); padding-left: var(--space-sm); border-left: 3px solid var(--color-accent); color: var(--color-ink-2); }
+  .wp-text figure { margin: var(--space-md) 0; text-align: center; }
+  .wp-text img, .wp-text svg, .wp-text video { max-width: 100%; height: auto; }
+  .wp-text figure img, .wp-text figure svg { display: block; margin-inline: auto; }
+  .wp-text figcaption { margin-top: var(--space-2xs); color: var(--color-muted); font: 400 var(--text-xs)/1.5 var(--font-mono); letter-spacing: 0.02em; }
+  .wp-text pre, .wp-text .equation, .wp-text .eq, .wp-text math[display="block"] { display: block; margin: var(--space-sm) 0; padding: var(--space-xs) var(--space-sm); overflow-x: auto; background: var(--color-paper-2); border-left: 3px solid var(--color-rule-2); font: 400 var(--text-base)/1.6 var(--font-mono); white-space: pre-wrap; overflow-wrap: anywhere; }
+  .wp-text code, .wp-text var { font-family: var(--font-mono); font-size: 0.92em; }
+  .wp-text var { font-style: italic; }
+  .wp-text table { display: block; max-width: 100%; margin: var(--space-sm) 0; overflow-x: auto; border-collapse: collapse; font-size: var(--text-base); }
+  .wp-text th, .wp-text td { padding: var(--space-3xs) var(--space-xs); border-bottom: var(--rule-hair) solid var(--color-rule); text-align: left; }
+  .wp-text hr { margin: var(--space-lg) 0; border: 0; border-top: var(--rule-hair) solid var(--color-rule); }
+  .wp-text .references, .wp-text #references, .wp-text [id^="ref"] { font-size: var(--text-base); }
+
+  .wp-bar { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: var(--space-3xs) var(--space-md); padding: var(--space-xs) var(--page-gutter); background: var(--color-paper-2); border-top: 4px double var(--color-rule-2); color: var(--color-muted); font: 400 var(--text-xs)/1.7 var(--font-mono); }
+  .wp-bar p { margin: 0; }
+  .wp-thanks { color: var(--color-ink-2); font: 400 var(--text-sm)/1.5 var(--font-body); }
+  .wp-thanks strong { margin-right: var(--space-2xs); color: var(--color-ink); font: 600 var(--text-md)/1.3 var(--font-display); }
+  .wp-links a { color: var(--color-ink-2); text-underline-offset: 2px; }
+  .wp-links a:hover { color: var(--color-accent-ink); }
+  .wp-links .wp-home { color: var(--color-muted); }
+  .wp-sep { margin: 0 var(--space-2xs); opacity: 0.5; }
+  .wp-links span[title] { cursor: help; }
+
+  /* Poster: cream paper, 2px ink rules, Archivo Black uppercase headings, Space Mono text,
+     flat orange accents, ink bar with orange links. */
+  html[data-design="poster"] .wp-top { background: var(--color-accent); border-bottom: 2px solid #111; }
+  html[data-design="poster"] .wp-kicker { color: #111; font: 700 0.6875rem/1 var(--font-body); }
+  html[data-design="poster"] .wp-btn { background: #111; color: var(--color-accent); border: 2px solid #111; font: 700 0.6875rem/1.4 var(--font-body); text-transform: uppercase; letter-spacing: 0.04em; }
+  html[data-design="poster"] .wp-btn:hover { background: var(--color-paper); color: #111; }
+  html[data-design="poster"] .wp-text { font: 400 var(--text-md)/1.7 var(--font-body); hyphens: none; }
+  html[data-design="poster"] .wp-text h1 { font: 400 var(--text-display)/1.02 var(--font-display); text-transform: uppercase; letter-spacing: 0.005em; }
+  html[data-design="poster"] .wp-text h2 { border-top: 2px solid #111; font: 400 var(--text-lg)/1.2 var(--font-display); text-transform: uppercase; letter-spacing: 0.005em; }
+  html[data-design="poster"] .wp-text h3 { font: 400 var(--text-md)/1.25 var(--font-display); text-transform: uppercase; }
+  html[data-design="poster"] .wp-text h4 { font: 700 var(--text-base)/1.3 var(--font-body); }
+  html[data-design="poster"] .wp-text .byline, html[data-design="poster"] .wp-text .author, html[data-design="poster"] .wp-text .meta { color: #111; font: 700 var(--text-sm)/1.5 var(--font-body); }
+  html[data-design="poster"] .wp-text a { color: #111; text-decoration-color: var(--color-accent); text-decoration-thickness: 2px; }
+  html[data-design="poster"] .wp-text a:hover { background: var(--color-accent); }
+  html[data-design="poster"] .wp-text li::marker { color: #111; font-weight: 700; }
+  html[data-design="poster"] .wp-text blockquote { border-left: 4px solid #111; color: #111; }
+  html[data-design="poster"] .wp-text figure img, html[data-design="poster"] .wp-text figure svg { border: 2px solid #111; background: #fff; }
+  html[data-design="poster"] .wp-text figcaption { color: #111; font: 700 0.6875rem/1.5 var(--font-body); }
+  html[data-design="poster"] .wp-text pre, html[data-design="poster"] .wp-text .equation, html[data-design="poster"] .wp-text .eq, html[data-design="poster"] .wp-text math[display="block"] { background: var(--color-paper-2); border: 2px solid #111; border-left-width: 6px; font-size: var(--text-sm); }
+  html[data-design="poster"] .wp-text th, html[data-design="poster"] .wp-text td { border-bottom: 2px solid #111; }
+  html[data-design="poster"] .wp-text hr { border-top: 2px solid #111; }
+  html[data-design="poster"] .wp-bar { background: #111; border-top: 2px solid #111; color: rgba(242, 240, 233, 0.78); font: 400 0.6875rem/1.7 var(--font-body); }
+  html[data-design="poster"] .wp-thanks { color: rgba(242, 240, 233, 0.78); font: 400 0.6875rem/1.7 var(--font-body); }
+  html[data-design="poster"] .wp-thanks strong { color: var(--color-accent); font: 400 0.875rem/1.3 var(--font-display); text-transform: uppercase; }
+  html[data-design="poster"] .wp-links a { color: var(--color-accent); }
+  html[data-design="poster"] .wp-links a:hover { color: #fff; }
+  html[data-design="poster"] .wp-links .wp-home { color: rgba(242, 240, 233, 0.78); }
+
+  @media (max-width: 40rem) {
+    .wp { padding-top: var(--space-md); padding-bottom: var(--space-xl); }
+    .wp-text h2 { margin-top: var(--space-lg); }
+    .wp-bar { padding-block: var(--space-2xs); gap: 0; }
+    .wp-links { font-size: var(--text-xs); }
+  }
+  @media print { .wp-top, .wp-bar { display: none; } }
+/* Shared rules for the white paper fragment (text/<lang>.html). Paste inside each
+   site's own <style>, after its .wp rules; uses inherited colours and fonts only. */
+.wp-paper .wp-author, .wp-paper .wp-translator { text-align: center; }
+.wp-paper .wp-translator { font-size: .9em; opacity: .85; }
+.wp-paper .wp-abstract { margin: 1.4em 0 1.8em; padding: .9em 1.1em; border-left: 3px solid currentColor; font-size: .96em; }
+.wp-paper .wp-abstract p { margin: 0; }
+.wp-paper .wp-fig { margin: 1.75em auto; text-align: center; }
+.wp-paper .wp-fig img { display: block; max-width: 100%; height: auto; margin: 0 auto; background: #fff; padding: 6px; box-sizing: border-box; }
+.wp-paper .wp-fig figcaption { font-size: .85em; margin-top: .4em; }
+.wp-paper math[display="block"] { display: block; margin: 1.2em 0; max-width: 100%; overflow-x: auto; overflow-y: hidden; font-size: 1.12em; }
+.wp-paper pre { max-width: 100%; overflow-x: auto; font-size: .82em; line-height: 1.45; padding: .8em 1em; }
+.wp-paper .wp-refs, .wp-paper .wp-fns { font-size: .92em; overflow-wrap: anywhere; }
+.wp-paper .wp-tnote { margin-top: 2em; font-size: .92em; }
+.wp-paper .wp-fnref a { text-decoration: none; }
+</style>
