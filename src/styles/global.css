@@ -41,6 +41,8 @@ button, input, select { font: inherit; color: inherit; }
 /* N6 masthead ------------------------------------------------------------ */
 .nav-mast { padding-top: var(--space-md); text-align: center; }
 .mast-line { margin: var(--space-xs) 0 0; color: var(--color-muted); font: 400 var(--text-xs)/1.4 var(--font-mono); letter-spacing: var(--tracking-label); text-transform: uppercase; }
+.mast-line a { color: var(--color-ink-2); text-underline-offset: 3px; }
+.mast-line a:hover { color: var(--color-accent-ink); }
 .mast-name { margin: var(--space-2xs) 0 0; font: 600 var(--text-display)/0.95 var(--font-display); letter-spacing: var(--tracking-display); overflow-wrap: anywhere; min-width: 0; }
 .mast-name a { text-decoration: none; }
 .mast-icon { display: inline-block; width: 0.78em; height: 0.78em; margin-right: 0.22em; vertical-align: -0.08em; }

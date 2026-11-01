@@ -4,7 +4,8 @@
 // slim thank-you bar at the end. Figures live in public/whitepaper/figures/ and resolve relatively
 // ("figures/fig-N.png" from /whitepaper/). A static page, so it wins over the [...slug] catch-all; the
 // generated pages never use the path "whitepaper" (tests/whitepaper.test.mjs). noindex and absent
-// from sitemap.xml/llms.txt: it is a courtesy copy, not part of the list.
+// from sitemap.xml/llms.txt: it is a courtesy copy, not part of the list. Its rel=canonical points
+// at /bitcoin-whitepaper/ (GitHub Pages cannot 301), so the old URL keeps working for old links.
 import BaseLayout from '../layouts/BaseLayout.astro';
 import paper from '../data/whitepaper-en.frag?raw';
 
@@ -15,7 +16,7 @@ const SHA = 'b1674191a88ec5cdd733e4240a81803105dc412d6c6708d53ab94fc248f4f553';
 <BaseLayout
   title="Bitcoin: A Peer-to-Peer Electronic Cash System · Satoshi Nakamoto"
   description="The Bitcoin white paper by Satoshi Nakamoto (2008) as readable text, with the unmodified original PDF."
-  canonical="whitepaper/"
+  canonical="bitcoin-whitepaper/"
   noindex
   bare
 >
@@ -32,6 +33,8 @@ const SHA = 'b1674191a88ec5cdd733e4240a81803105dc412d6c6708d53ab94fc248f4f553';
       <a href={pdf} download>Original PDF</a>
       <span class="wp-sep" aria-hidden="true">/</span>
       <span title={`SHA-256 ${SHA}`}>Unmodified · SHA-256 b167…f553</span>
+      <span class="wp-sep" aria-hidden="true">/</span>
+      <a href={`${base}bitcoin-whitepaper/`}>Full page with contents</a>
       <span class="wp-sep" aria-hidden="true">/</span>
       <a class="wp-home" href={base}>Awesome Bitcoin Events</a>
     </p>

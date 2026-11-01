@@ -43,3 +43,13 @@ test('/bitcoin-whitepaper/ is the indexable page: no generated page takes its pa
   assert.ok(!sitemapXml(model, ['bitcoin-whitepaper']).includes('bitcoin.pdf'));
   assert.equal(createHash('sha256').update(read('../public/whitepaper-18-og.jpg')).digest('hex').length, 64);
 });
+
+test('old /whitepaper/ canonicalises to /bitcoin-whitepaper/, the new page has its own share card, and the site links to it', () => {
+  const old = read('../src/pages/whitepaper.astro').toString('utf8');
+  assert.match(old, /canonical="bitcoin-whitepaper\/"/);
+  const page = read('../src/pages/bitcoin-whitepaper.astro').toString('utf8');
+  assert.match(page, /ogImagePath="whitepaper-18-abe-og\.jpg"/);
+  assert.ok(read('../public/whitepaper-18-abe-og.jpg').length > 20000);
+  assert.match(read('../src/layouts/BaseLayout.astro').toString('utf8'), /mast-paper" href=\{`\$\{base\}bitcoin-whitepaper\/`\}/);
+  assert.match(read('../src/pages/index.astro').toString('utf8'), /browse-label">Read<\/span><a href=\{`\$\{base\}bitcoin-whitepaper\/`\}/);
+});
