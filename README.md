@@ -83,6 +83,7 @@ Dates and places change. Check the official page before you book travel. Being l
 | Nov 20 | [Bitcoin (& crypto) Wealth Summit #2 Bordeaux](https://www.eventbrite.com/e/bitcoin-crypto-wealth-summit-2-bordeaux-20-novembre-2026-tickets-1984371266877) | Bordeaux, France | Conference |
 | Nov 20–21 | [Bitcoin Herbst 2026](https://razue.github.io/bitcoin_metropole_kempten/) | Kempten, Germany | Conference |
 | Nov 21 | [Finding Satoshi: screening & drinks](https://www.dutchbitcoinembassy.com/en/events/finding-satoshi-2026) | The Hague, Netherlands | Meetup |
+| Nov 21 | [Freedom Fest UK 2026](https://freedomfest.now/) | Manchester, UK | Festival |
 | Nov 22 | [Sovereign Conference](https://sovereign-conference.com/) | Asunción, Paraguay | Conference |
 | Nov 22 | [Bitcoin Half Marathon 2026](https://bitcoinchiangmai.org/events/bitcoin-half-marathon-2026) | Chiang Mai, Thailand | Festival |
 | Nov 22 | [Code Orange Workshop 2026](https://www.bitcoinchiangmai.org/events/code-orange-workshop-2026) | Chiang Mai, Thailand | Workshop |
