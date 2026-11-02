@@ -97,7 +97,7 @@ const jsonld = {
     <section class="atlas" id="atlas" aria-label="Map">
       <div class="atlas-frame">
         <div id="event-map" role="img" aria-label="World map of Bitcoin events and meetups"></div>
-        <p class="atlas-key"><span><i></i>Upcoming event</span><span><i class="past"></i>Past event</span><span><i class="meetup"></i>Meetup</span></p>
+        <p class="atlas-key"><span><i class="x"></i>Upcoming event</span><span><i class="x past"></i>Past event</span><span><i class="meetup"></i>Meetup</span></p>
       </div>
       <script type="application/json" id="map-data" set:html={mapJson}></script>
     </section>
@@ -384,24 +384,29 @@ const jsonld = {
       const rank = (p) => (p.kind === 'meetup' ? 0 : p.end < today ? 1 : 2);
       const bounds = [];
       const styled = []; // every marker with its point (ids are not unique across meetups)
-      // Events are bold hollow rings; meetups are wider faded discs, so a meetup under an
-      // event still shows around the ring. Colours come from the design tokens, so they
-      // are recomputed when the design switches.
+      // Events are a heavy X with a solid centre dot (an SVG icon that ignores the pointer,
+      // drawn over an invisible circle that takes hover and click). Meetups are solid
+      // blue discs. Colours come from the design tokens.
       const markerStyle = (p) => {
         const live = getComputedStyle(document.documentElement);
         const tok = (name) => live.getPropertyValue(name).trim();
         if (p.kind === 'meetup') {
           const blue = tok('--color-meetup');
-          return { radius: 1.6, weight: 0, color: blue, fillColor: blue, fillOpacity: 1 };
+          return { radius: 6.4, weight: 0, color: blue, fillColor: blue, fillOpacity: 1 };
         }
         const past = p.end < today;
         const ring = past ? tok('--color-past') : tok('--color-accent');
-        // fillOpacity 0 keeps the inside empty but still clickable.
-        return { radius: past ? 5 : 6, weight: past ? 2 : 3, color: ring, opacity: past ? 0.8 : 1, fillColor: ring, fillOpacity: 0 };
+        // The hit circle is invisible; fillOpacity 0 still takes the pointer.
+        return { radius: past ? 7.2 : 9, weight: 0, opacity: 0, color: ring, fillColor: ring, fillOpacity: 0 };
       };
-      const dotStyle = (p) => {
-        const { color, opacity } = markerStyle(p);
-        return { radius: 1.5, weight: 0, fillColor: color, fillOpacity: opacity ?? 1, interactive: false };
+      // Upcoming: 18 px X, 4.5 px strokes, 8 px dot. Past: 80% of that, slightly faded.
+      const xIcon = (p) => {
+        const past = p.end < today;
+        const k = past ? 0.8 : 1;
+        const s = 18 * k, w = 4.5 * k, r = 4 * k, a = w / 2, b = s - w / 2;
+        const color = markerStyle(p).color;
+        const html = `<svg width="${s}" height="${s}" viewBox="0 0 ${s} ${s}" style="display:block;overflow:visible;opacity:${past ? 0.8 : 1}"><path d="M${a} ${a}L${b} ${b}M${b} ${a}L${a} ${b}" stroke="${color}" stroke-width="${w}" stroke-linecap="round"/><circle cx="${s / 2}" cy="${s / 2}" r="${r}" fill="${color}"/></svg>`;
+        return window.L.divIcon({ className: 'event-x', html, iconSize: [s, s], iconAnchor: [s / 2, s / 2] });
       };
       [...mapData].sort((a, b) => rank(a) - rank(b)).forEach((p) => {
         const marker = window.L.circleMarker([p.latitude, p.longitude], markerStyle(p)).addTo(eventMap).bindPopup(`<strong>${escapeHtml(p.title)}</strong><br>${escapeHtml(p.dates)}<br>${escapeHtml(p.where)}<br><a href="${escapeHtml(p.url)}" target="_blank" rel="noreferrer">Official page ↗</a>`, { autoPan: false });
@@ -412,9 +417,8 @@ const jsonld = {
           marker.getPopup().options.autoPan = false;
           if (stuck === marker) stuck = null;
         });
-        // Events get a small solid centre inside the hollow ring. It ignores the pointer,
-        // so hovering or clicking it reaches the ring underneath.
-        if (p.kind === 'event') marker.dot = window.L.circleMarker([p.latitude, p.longitude], dotStyle(p)).addTo(eventMap);
+        // The visible X ignores the pointer, so hovering or clicking reaches the circle under it.
+        if (p.kind === 'event') marker.dot = window.L.marker([p.latitude, p.longitude], { icon: xIcon(p), interactive: false, keyboard: false, zIndexOffset: p.end < today ? 0 : 1000 }).addTo(eventMap);
         markers.set(p.id, marker);
         styled.push([p, marker]);
         bounds.push([p.latitude, p.longitude]);
