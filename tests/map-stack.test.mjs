@@ -7,7 +7,7 @@ import vm from 'node:vm';
 const source = readFileSync(new URL('../public/map-stack.js', import.meta.url), 'utf8');
 const sandbox = {};
 vm.runInNewContext(source.replace('(globalThis)', '(this)'), sandbox);
-const { stack, stackPlaces, GAP } = sandbox.abeStack;
+const { stack, layout, GAP } = sandbox.abeStack;
 
 const dist = ([ax, ay], [bx, by]) => Math.hypot(ax - bx, ay - by);
 
@@ -33,22 +33,34 @@ test('the first pin takes the centre; the pile stays tight, not a ring', () => {
   for (let i = 1; i < d.length; i++) assert.ok(d[i] >= d[i - 1] - 0.3);
 });
 
-test('priority decides who gets the centre; other cities are untouched', () => {
+test('priority decides who keeps its place; far-away pins are untouched', () => {
   const items = [
-    { point: { latitude: 1, longitude: 1 }, radius: 8, priority: 1 },
-    { point: { latitude: 1, longitude: 1 }, radius: 6, priority: 0 },
-    { point: { latitude: 2, longitude: 2 }, radius: 5, priority: 2 },
+    { x: 0, y: 0, radius: 8, priority: 1 },
+    { x: 0, y: 0, radius: 6, priority: 0 },
+    { x: 500, y: 500, radius: 5, priority: 2 },
   ];
-  stackPlaces(items);
-  assert.deepEqual([items[1].dx, items[1].dy], [0, 0]);
-  assert.notDeepEqual([items[0].dx, items[0].dy], [0, 0]);
-  assert.deepEqual([items[2].dx, items[2].dy], [0, 0]);
+  const at = layout(items);
+  assert.deepEqual([...at[1]], [0, 0]);
+  assert.notDeepEqual([...at[0]], [0, 0]);
+  assert.deepEqual([...at[2]], [0, 0]);
+});
+
+test('pins from different places never touch once the zoom brings them together', () => {
+  // A dense band of pins a few pixels apart, like nearby cities on a zoomed-out map.
+  const items = Array.from({ length: 80 }, (_, i) => ({ x: (i % 10) * 4, y: Math.floor(i / 10) * 3, radius: i % 3 ? 6.4 : 9, priority: i % 3 }));
+  const at = layout(items);
+  const pos = items.map((it, i) => [it.x + at[i][0], it.y + at[i][1]]);
+  for (let i = 0; i < pos.length; i++) {
+    for (let j = i + 1; j < pos.length; j++) {
+      assert.ok(dist(pos[i], pos[j]) >= GAP * Math.max(items[i].radius, items[j].radius) - 0.02, `${i},${j}`);
+    }
+  }
 });
 
 test('the home page loads the stacker and re-applies it on zoom', () => {
   const page = readFileSync(new URL('../src/pages/index.astro', import.meta.url), 'utf8');
   assert.match(page, /map-stack\.js/);
-  assert.match(page, /abeStack\.stackPlaces\(/);
+  assert.match(page, /abeStack\.layout\(/);
   assert.match(page, /on\('zoomend'/);
 });
 

@@ -423,18 +423,23 @@ const jsonld = {
         styled.push([p, marker]);
         bounds.push([p.latitude, p.longitude]);
       });
-      // Pins in one city pile up around its centre (public/map-stack.js): upcoming events
-      // win the centre, then meetups, then past events. Offsets are screen pixels, so
-      // they are re-applied on every zoom.
-      const piles = window.abeStack ? window.abeStack.stackPlaces(styled.map(([p, m]) => ({
+      // Pins never touch (public/map-stack.js): at each zoom, every pin is laid out in
+      // screen pixels from its real place; upcoming events keep their spot first, then
+      // meetups, then past events, and the rest move just far enough away.
+      const pins = styled.map(([p, m]) => ({
         point: p, marker: m, radius: markerStyle(p).radius, priority: p.kind === 'meetup' ? 1 : p.end < today ? 2 : 0,
-      }))).filter((item) => item.dx || item.dy) : [];
-      const spread = () => piles.forEach(({ point, marker, dx, dy }) => {
-        const at = eventMap.latLngToLayerPoint([point.latitude, point.longitude]);
-        const moved = eventMap.layerPointToLatLng(at.add([dx, dy]));
-        marker.setLatLng(moved);
-        if (marker.dot) marker.dot.setLatLng(moved);
-      });
+      }));
+      const spread = () => {
+        if (!window.abeStack) return;
+        // project/unproject, not latLngToLayerPoint: those round to whole pixels.
+        const at = pins.map(({ point }) => eventMap.project([point.latitude, point.longitude]));
+        const offsets = window.abeStack.layout(pins.map(({ radius, priority }, i) => ({ x: at[i].x, y: at[i].y, radius, priority })));
+        pins.forEach(({ marker }, i) => {
+          const moved = eventMap.unproject(at[i].add(offsets[i]));
+          marker.setLatLng(moved);
+          if (marker.dot) marker.dot.setLatLng(moved);
+        });
+      };
       eventMap.on('zoomend', spread);
       eventMap.fitBounds(bounds, { padding: [24, 24], maxZoom: 3 });
       // Start closer than the whole-world fit: zoom in ZOOM_BOOST levels, centred on the
@@ -444,6 +449,7 @@ const jsonld = {
       const pts = focus.length ? focus : mapData;
       const median = (values) => { const s = [...values].sort((a, b) => a - b); return s[Math.floor(s.length / 2)]; };
       eventMap.setView([median(pts.map((p) => p.latitude)), median(pts.map((p) => p.longitude))], eventMap.getZoom() + ZOOM_BOOST, { animate: false });
+      spread();
     } else if (mapNode) {
       mapNode.innerHTML = '<p class="map-empty">The map could not load. The list above has every event.</p>';
     }
