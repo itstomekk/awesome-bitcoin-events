@@ -50,6 +50,6 @@ test('old /whitepaper/ canonicalises to /bitcoin-whitepaper/, the new page has i
   const page = read('../src/pages/bitcoin-whitepaper.astro').toString('utf8');
   assert.match(page, /ogImagePath="whitepaper-18-abe-og\.jpg"/);
   assert.ok(read('../public/whitepaper-18-abe-og.jpg').length > 20000);
-  assert.match(read('../src/layouts/BaseLayout.astro').toString('utf8'), /mast-paper" href=\{`\$\{base\}bitcoin-whitepaper\/`\}/);
+  assert.match(read('../src/layouts/BaseLayout.astro').toString('utf8'), /foot-paper" href=\{`\$\{base\}bitcoin-whitepaper\/`\}/);
   assert.match(read('../src/pages/index.astro').toString('utf8'), /browse-label">Read<\/span><a href=\{`\$\{base\}bitcoin-whitepaper\/`\}/);
 });

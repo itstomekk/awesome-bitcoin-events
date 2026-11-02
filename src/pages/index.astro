@@ -75,7 +75,8 @@ const pathById = new Map(model.events.map((event) => [event.id, `${base}${event.
 const upcomingYears = [...new Set(upcoming.map((event) => event.start.slice(0, 4)))].sort();
 const yearSpan = upcomingYears.length > 1 ? `${upcomingYears[0]}–${upcomingYears.at(-1)}` : (upcomingYears[0] || '');
 const pageTitle = `Bitcoin Conferences & Meetups ${yearSpan} | Awesome Bitcoin Events`.replace('  ', ' ');
-const pageDescription = `${upcoming.length} upcoming Bitcoin conferences, festivals and retreats in ${countries.length} countries, plus ${meetups.length} local meetups. Dates, cities and official organizer links.`;
+// Evergreen on purpose: no counts, so search snippets don't go stale between rebuilds.
+const pageDescription = 'The most comprehensive open directory of Bitcoin events: conferences, festivals and retreats. All Bitcoin events are here, with dates, cities and official organizer links.';
 
 // Structured data for search engines: the site, plus an ItemList that points at each upcoming
 // event's own page. The full schema.org Event markup lives on those pages (src/lib/pages-model.js).
@@ -84,13 +85,13 @@ const jsonld = {
   '@context': 'https://schema.org',
   '@graph': [
     { '@type': 'WebSite', '@id': `${origin}#site`, url: origin, name: 'Awesome Bitcoin Events', inLanguage: 'en',
-      description: 'A curated list of Bitcoin conferences, meetups, festivals and retreats around the world, each linked to its organizer.' },
+      description: 'The most comprehensive open directory of Bitcoin events: conferences, festivals and retreats. All Bitcoin events are here, with dates, cities and official organizer links.' },
     { '@type': 'ItemList', name: 'Upcoming Bitcoin events', numberOfItems: upcoming.length,
       itemListElement: upcoming.map((event, index) => ({ '@type': 'ListItem', position: index + 1, name: event.title, url: Astro.site ? new URL(pathById.get(event.id), Astro.site).href : pathById.get(event.id) })) },
   ],
 };
 ---
-<BaseLayout title={pageTitle} description={pageDescription} jsonld={jsonld} map upcomingCount={upcoming.length} countryCount={countries.length} markdown="index.md">
+<BaseLayout title={pageTitle} description={pageDescription} jsonld={jsonld} map upcomingCount={upcoming.length} pastCount={sorted.length - upcoming.length} meetupCount={meetups.length} countryCount={countries.length} markdown="index.md">
   <main id="main-content">
     <section class="atlas" id="atlas" aria-label="Map">
       <div class="atlas-frame">
@@ -201,6 +202,7 @@ const jsonld = {
       if (!past) nextMarked = true;
     });
     document.querySelectorAll('[data-upcoming-count]').forEach((node) => { node.textContent = upcomingCount; });
+    document.querySelectorAll('[data-past-count]').forEach((node) => { node.textContent = rows.length - upcomingCount; });
 
     const search = document.querySelector('#event-search');
     const groups = [...document.querySelectorAll('[data-month-group]')];

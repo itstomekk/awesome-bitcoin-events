@@ -1,4 +1,4 @@
-/* Support button (masthead) and its zap dialog. Page tokens only, so it follows Classic and Poster. */
+/* Support button (bottom of the page, in the colophon) and its zap dialog. Page tokens only, so it follows Classic and Poster. */
 .supb{--p:0%;display:inline-flex;align-items:center;gap:.4rem;margin:var(--space-xs) 0 0 var(--space-md);padding:.3rem .65rem;cursor:pointer;
   font:700 var(--text-xs)/1.2 var(--font-mono);letter-spacing:var(--tracking-label);text-transform:uppercase;
   color:var(--color-ink);background:linear-gradient(var(--color-accent),var(--color-accent)) left bottom/var(--p) 3px no-repeat;border:2px solid var(--color-rule-2)}
@@ -6,7 +6,7 @@
 .supb:hover,.supb:focus-visible{background:var(--color-ink);color:var(--color-paper)}
 .supn{font-weight:400;opacity:.85}
 .supn:empty{display:none}
-html[data-design="poster"] .supb{order:4;margin:0;background-color:#111;color:var(--color-accent);border-color:#111;background-image:linear-gradient(#fff,#fff);background-size:var(--p) 3px;background-repeat:no-repeat;background-position:left bottom}
+html[data-design="poster"] .supb{background-color:#111;color:var(--color-accent);border-color:#111;background-image:linear-gradient(#fff,#fff);background-size:var(--p) 3px;background-repeat:no-repeat;background-position:left bottom}
 html[data-design="poster"] .supb:hover,html[data-design="poster"] .supb:focus-visible{background:transparent;color:#111}
 @media (max-width:420px){.supn{display:none}}
 html.sup-open{overflow:hidden}

@@ -6,10 +6,12 @@ import '../styles/design-poster.css';
 
 const {
   title = 'Awesome Bitcoin Events',
-  description = 'A curated list of Bitcoin conferences, meetups, festivals and retreats around the world.',
+  description = 'The most comprehensive open directory of Bitcoin events: conferences, festivals, retreats and meetups.',
   map = false,
   upcomingCount = null,
   countryCount = null,
+  pastCount = null,
+  meetupCount = null,
   canonical = '',
   jsonld = null,
   noindex = false,
@@ -109,15 +111,14 @@ const Mast = mastHeading ? 'h1' : 'p';
       <Mast class="mast-name"><a href={base}><img class="mast-icon" src={`${base}icon.svg`} alt="" />Awesome Bitcoin Events</a><span class="mast-gh-slot"><a class="mast-gh" href={repo} target="_blank" rel="noreferrer" aria-label="Awesome Bitcoin Events on GitHub" title="View on GitHub"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a></span></Mast>
       <p class="mast-line">
         {upcomingCount !== null
-          ? <><span data-upcoming-count>{upcomingCount}</span> upcoming · {countryCount} countries · <a class="mast-paper" href={`${base}bitcoin-whitepaper/`}>Bitcoin white paper</a></>
+          ? <><span data-upcoming-count>{upcomingCount}</span> upcoming · <span data-past-count>{pastCount}</span> past · {countryCount} countries · {meetupCount} meetups</>
           : 'The community list of Bitcoin events'}
       </p>
       <div class="design-switch" role="group" aria-label="Design">
-        <span class="ds-label">Design</span>
-        <button type="button" data-design-choice="classic" aria-pressed="true">Classic</button>
-        <button type="button" data-design-choice="poster" aria-pressed="false">Poster</button>
+        <svg class="ds-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg>
+        <button type="button" data-design-choice="classic" aria-pressed="true" title="Classic design">Classic</button>
+        <button type="button" data-design-choice="poster" aria-pressed="false" title="Poster design">Poster</button>
       </div>
-      <button type="button" id="sup" class="supb" aria-haspopup="dialog" title="Support the list with a Lightning zap"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M13.5 2 4 13.5h6.5L9 22l11-12.5h-6.8z" /></svg><span>Support</span><span class="supn"></span></button>
       <hr class="mast-rule" aria-hidden="true" />
     </header>}
     <slot />
@@ -128,7 +129,9 @@ const Mast = mastHeading ? 'h1' : 'p';
         List content dedicated to the public domain under CC0 1.0. Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors.
         Listing is not endorsement: check the organizer's page before you travel.
         Corrections and additions: <a href={`${repo}/blob/main/.github/CONTRIBUTING.md`}>CONTRIBUTING.md</a> or <a href={`${repo}/issues/new?template=event-submission.yml`}>the submission form</a>.
+        Read the <a class="foot-paper" href={`${base}bitcoin-whitepaper/`}>Bitcoin white paper</a>.
       </p>
+      <button type="button" id="sup" class="supb" aria-haspopup="dialog" title="Support the list with a Lightning zap"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M13.5 2 4 13.5h6.5L9 22l11-12.5h-6.8z" /></svg><span>Support</span><span class="supn"></span></button>
     </footer>}
     <script is:inline>
       // The GitHub logo sits where the full stop used to be. On scroll it slides to the right
