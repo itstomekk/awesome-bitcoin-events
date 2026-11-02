@@ -384,31 +384,33 @@ const jsonld = {
       const rank = (p) => (p.kind === 'meetup' ? 0 : p.end < today ? 1 : 2);
       const bounds = [];
       const styled = []; // every marker with its point (ids are not unique across meetups)
-      // Events are a heavy X with a solid centre dot (an SVG icon that ignores the pointer,
-      // drawn over an invisible circle that takes hover and click). Meetups are solid
-      // blue discs. Colours come from the design tokens.
-      const X_SIZE = 14.4; // upcoming X width in px; the hit circle is as wide
+      // Events are a four-point star turned 45 degrees, fully opaque with a 1 px black
+      // outline (an SVG icon that ignores the pointer, drawn over an invisible circle that
+      // takes hover and click). Meetups are see-through blue discs. Colours come from the
+      // design tokens.
+      const X_SIZE = 18; // upcoming star width in px; the hit circle is as wide
       const markerStyle = (p) => {
         const live = getComputedStyle(document.documentElement);
         const tok = (name) => live.getPropertyValue(name).trim();
         if (p.kind === 'meetup') {
           const blue = tok('--color-meetup');
-          return { radius: 6.4, weight: 0, color: blue, fillColor: blue, fillOpacity: 0.8 };
+          return { radius: 8.8, weight: 0, color: blue, fillColor: blue, fillOpacity: 0.55 };
         }
         const past = p.end < today;
         const ring = past ? tok('--color-past') : tok('--color-accent');
         // The hit circle is invisible; fillOpacity 0 still takes the pointer.
         return { radius: (past ? 0.8 : 1) * X_SIZE / 2, weight: 0, opacity: 0, color: ring, fillColor: ring, fillOpacity: 0 };
       };
-      // Upcoming: 14.4 px X (80% of the earlier 18 px), strokes and dot in proportion.
-      // Past: 80% of that. The X marks get their 80% opacity from the marker pane as a
-      // whole (global.css), so a pile of overlapping X marks stays 80%, not solid.
+      // Upcoming: 18 px star, inner corners at 30% of the tips. Past: grey, 80% of that.
       const xIcon = (p) => {
         const past = p.end < today;
-        const k = (past ? 0.8 : 1) * (X_SIZE / 18);
-        const s = 18 * k, w = 4.5 * k, r = 4 * k, a = w / 2, b = s - w / 2;
+        const s = (past ? 0.8 : 1) * X_SIZE, c = s / 2;
+        const points = Array.from({ length: 8 }, (_, i) => {
+          const r = (i % 2 ? 0.3 : 1) * c, angle = -Math.PI / 4 + (i * Math.PI) / 4;
+          return `${(c + r * Math.cos(angle)).toFixed(2)} ${(c + r * Math.sin(angle)).toFixed(2)}`;
+        });
         const color = markerStyle(p).color;
-        const html = `<svg width="${s}" height="${s}" viewBox="0 0 ${s} ${s}" style="display:block;overflow:visible"><path d="M${a} ${a}L${b} ${b}M${b} ${a}L${a} ${b}" stroke="${color}" stroke-width="${w}" stroke-linecap="round"/><circle cx="${s / 2}" cy="${s / 2}" r="${r}" fill="${color}"/></svg>`;
+        const html = `<svg width="${s}" height="${s}" viewBox="0 0 ${s} ${s}" style="display:block;overflow:visible"><path d="M${points.join('L')}Z" fill="${color}" stroke="#000" stroke-width="2" stroke-linejoin="round" paint-order="stroke"/></svg>`;
         return window.L.divIcon({ className: 'event-x', html, iconSize: [s, s], iconAnchor: [s / 2, s / 2] });
       };
       [...mapData].sort((a, b) => rank(a) - rank(b)).forEach((p) => {
