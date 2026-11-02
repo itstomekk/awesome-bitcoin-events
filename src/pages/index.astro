@@ -182,6 +182,7 @@ const jsonld = {
     </div>
   </main>
 
+  <script is:inline src={`${base}map-stack.js`}></script>
   <script is:inline>
     // Upcoming vs past is decided here with the visitor's date, so the page stays correct
     // even if the site hasn't been rebuilt since an event ended.
@@ -352,19 +353,24 @@ const jsonld = {
         attribution: '&copy; OpenStreetMap contributors'
       }).addTo(eventMap);
       const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
-      const rank = (p) => (p.kind === 'meetup' ? 1 : p.end < today ? 0 : 2); // draw upcoming events on top
+      // Draw order, bottom to top: meetups, past events, upcoming events.
+      const rank = (p) => (p.kind === 'meetup' ? 0 : p.end < today ? 1 : 2);
       const bounds = [];
       const styled = []; // every marker with its point (ids are not unique across meetups)
-      // Marker colours come from the design tokens, so they are recomputed when the design switches.
+      // Events are bold hollow rings; meetups are wider faded discs, so a meetup under an
+      // event still shows around the ring. Colours come from the design tokens, so they
+      // are recomputed when the design switches.
       const markerStyle = (p) => {
         const live = getComputedStyle(document.documentElement);
         const tok = (name) => live.getPropertyValue(name).trim();
-        const past = p.kind === 'event' && p.end < today;
-        const fill = p.kind === 'meetup' ? tok('--color-meetup') : past ? tok('--color-past') : tok('--color-accent');
-        return {
-          radius: p.kind === 'meetup' ? 4 : past ? 4 : 6, color: past || p.kind === 'meetup' ? fill : tok('--color-ink'),
-          weight: past || p.kind === 'meetup' ? 0 : 1.5, fillColor: fill, fillOpacity: past ? 0.7 : 0.95
-        };
+        if (p.kind === 'meetup') {
+          const blue = tok('--color-meetup');
+          return { radius: 8, weight: 0, color: blue, fillColor: blue, fillOpacity: 0.35 };
+        }
+        const past = p.end < today;
+        const ring = past ? tok('--color-past') : tok('--color-accent');
+        // fillOpacity 0 keeps the inside empty but still clickable.
+        return { radius: past ? 5 : 6, weight: past ? 2 : 3, color: ring, opacity: past ? 0.8 : 1, fillColor: ring, fillOpacity: 0 };
       };
       [...mapData].sort((a, b) => rank(a) - rank(b)).forEach((p) => {
         const marker = window.L.circleMarker([p.latitude, p.longitude], markerStyle(p)).addTo(eventMap).bindPopup(`<strong>${escapeHtml(p.title)}</strong><br>${escapeHtml(p.dates)}<br>${escapeHtml(p.where)}<br><a href="${escapeHtml(p.url)}" target="_blank" rel="noreferrer">Official page ↗</a>`);
@@ -375,6 +381,17 @@ const jsonld = {
       document.addEventListener('abe:design', () => {
         styled.forEach(([p, m]) => m.setStyle(markerStyle(p)));
       });
+      // Pins in one city pile up around its centre (public/map-stack.js): upcoming events
+      // win the centre, then meetups, then past events. Offsets are screen pixels, so
+      // they are re-applied on every zoom.
+      const piles = window.abeStack ? window.abeStack.stackPlaces(styled.map(([p, m]) => ({
+        point: p, marker: m, radius: markerStyle(p).radius, priority: p.kind === 'meetup' ? 1 : p.end < today ? 2 : 0,
+      }))).filter((item) => item.dx || item.dy) : [];
+      const spread = () => piles.forEach(({ point, marker, dx, dy }) => {
+        const at = eventMap.latLngToLayerPoint([point.latitude, point.longitude]);
+        marker.setLatLng(eventMap.layerPointToLatLng(at.add([dx, dy])));
+      });
+      eventMap.on('zoomend', spread);
       eventMap.fitBounds(bounds, { padding: [24, 24], maxZoom: 3 });
       // Start closer than the whole-world fit: zoom in ZOOM_BOOST levels, centred on the
       // median of the upcoming events (falls back to every point if there are none).

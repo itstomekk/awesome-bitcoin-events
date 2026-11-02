@@ -148,9 +148,10 @@ html:not([data-design]) .design-switch { display: none; }
   color: var(--color-ink-2); font: 400 var(--text-xs)/1.4 var(--font-mono);
   pointer-events: none;
 }
-.atlas-key i { display: inline-block; width: 0.625rem; height: 0.625rem; margin-right: var(--space-3xs); border-radius: 50%; background: var(--color-accent); vertical-align: -1px; }
-.atlas-key i.past { background: var(--color-past); }
-.atlas-key i.meetup { background: var(--color-meetup); }
+/* Swatches match the map pins: events are bold hollow rings, meetups wider faded discs. */
+.atlas-key i { display: inline-block; box-sizing: border-box; width: 0.625rem; height: 0.625rem; margin-right: var(--space-3xs); border-radius: 50%; background: transparent; border: 2px solid var(--color-accent); vertical-align: -1px; }
+.atlas-key i.past { border-color: var(--color-past); }
+.atlas-key i.meetup { width: 0.75rem; height: 0.75rem; border: 0; background: color-mix(in srgb, var(--color-meetup) 35%, transparent); vertical-align: -2px; }
 #event-map { width: 100%; height: var(--map-height); background: var(--color-paper-2); border-top: var(--rule-hair) solid var(--color-rule); border-bottom: var(--rule-hair) solid var(--color-rule); }
 #event-map .leaflet-tile-pane { filter: grayscale(1) contrast(0.92) brightness(1.04); }
 .map-empty { padding: var(--space-md); color: var(--color-muted); }

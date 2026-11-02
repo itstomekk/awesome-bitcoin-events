@@ -191,7 +191,7 @@ html[data-design="poster"] .sub-page { max-width: 72rem; margin-inline: 0; }
 html[data-design="poster"] .row-type { justify-self: end; padding: 0.15rem 0.45rem; border: 2px solid #111; font: 700 0.625rem/1.2 var(--font-body); letter-spacing: 0.05em; text-transform: uppercase; white-space: nowrap; }
 html[data-design="poster"] .row.is-past .row-type { border-color: var(--color-past); color: var(--color-muted); }
 html[data-design="poster"] .row-where { font-size: 0.8125rem; }
-html[data-design="poster"] .atlas-key i.past { background: #6f6b60; }
+html[data-design="poster"] .atlas-key i.past { border-color: #6f6b60; }
 html[data-design="poster"] .mast-gh.is-floating { z-index: 2000; }
 
 html[data-design="poster"] .design-switch { order: 3; margin: 0; gap: 0; border: 2px solid #111; align-items: stretch; }
