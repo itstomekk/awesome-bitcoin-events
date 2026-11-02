@@ -139,7 +139,10 @@ const jsonld = {
               {past.length > 0 && (
                 <>
                   <hr class="past-divider" aria-hidden="true" />
-                  <p class="past-heading">Past events</p>
+                  <div class="past-head">
+                    <p class="past-heading">Past events</p>
+                    <a class="btn-submit" id="submit-dock" href={`${repo}/issues/new?template=event-submission.yml`}><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" /></svg>Submit an event</a>
+                  </div>
                   {[...pastGroups].map(([key, group]) => (
                     <section class="month" data-month-group aria-label={`${MONTHS[Number(key.slice(5)) - 1]} ${key.slice(0, 4)}`}>
                       <div class="month-label"><h2>{MONTHS[Number(key.slice(5)) - 1]}</h2><span>{key.slice(0, 4)}</span></div>
@@ -186,7 +189,7 @@ const jsonld = {
     </div>
   </main>
 
-  <a class="fab-add" href={`${repo}/issues/new?template=event-submission.yml`} aria-label="Add event" hidden><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" /></svg></a>
+  <a class="fab-add is-off" href={`${repo}/issues/new?template=event-submission.yml`} aria-label="Add event" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" /></svg></a>
 
   <script is:inline src={`${base}map-stack.js`}></script>
   <script is:inline>
@@ -329,21 +332,31 @@ const jsonld = {
     });
 
     // --- Floating "Add event" button ---------------------------------------------------
-    // A fixed + at bottom-right that appears only while the Events list is on screen and the
-    // Events view is active; hidden on the Meetups tab or when the list is scrolled out of
-    // view. The regular "Add event" link in How it works stays.
+    // A fixed + at bottom-right rides along while the upcoming events scroll by. When the
+    // "Past events" block comes up, the + lands in it: the floating button fades out and the
+    // bigger "Submit an event" button next to the Past events heading takes over, so the +
+    // never follows the reader all the way down. Hidden on the Meetups tab and above the list.
     const fabAdd = document.querySelector('.fab-add');
+    const dock = document.querySelector('#submit-dock');
+    const listNode = document.querySelector('#list');
     let fabEvents = true;
-    let fabListVisible = false;
+    let fabQueued = false;
     function updateFab() {
-      if (fabAdd) fabAdd.hidden = !(fabEvents && fabListVisible);
+      fabQueued = false;
+      if (!fabAdd) return;
+      const list = listNode.getBoundingClientRect();
+      const listOnScreen = !listNode.hidden && list.top < innerHeight && list.bottom > 0;
+      // Docked once the Submit button's top edge is inside the window (or scrolled past).
+      const docked = dock ? dock.getBoundingClientRect().top < innerHeight - 24 : false;
+      const show = fabEvents && listOnScreen && !docked;
+      fabAdd.classList.toggle('is-off', !show);
+      fabAdd.tabIndex = show ? 0 : -1;
+      if (dock) dock.classList.toggle('is-landed', docked);
     }
-    if (fabAdd && 'IntersectionObserver' in window) {
-      new IntersectionObserver((entries) => {
-        fabListVisible = entries.some((entry) => entry.isIntersecting);
-        updateFab();
-      }, { threshold: 0 }).observe(document.querySelector('#list'));
-    }
+    const queueFab = () => { if (!fabQueued) { fabQueued = true; requestAnimationFrame(updateFab); } };
+    addEventListener('scroll', queueFab, { passive: true });
+    addEventListener('resize', queueFab);
+    updateFab();
 
     // --- Events / Meetups switch ------------------------------------------------------
     const viewTabs = [...document.querySelectorAll('[data-view]')];

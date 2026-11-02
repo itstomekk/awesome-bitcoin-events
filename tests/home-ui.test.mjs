@@ -12,9 +12,12 @@ const supportCss = readFileSync(new URL('../public/support.css', import.meta.url
 
 test('the masthead shows the project logo as the floating GitHub link and no left title logo', () => {
   assert.doesNotMatch(layout, /mast-icon/);
-  assert.match(layout, /class="mast-gh"[^>]*><img src=\{`\$\{base\}icon\.svg`\}/);
-  // The floating logo keeps a rounded-square clip, not the GitHub mark's circle.
-  assert.match(globalCss, /border-radius: 27%;/);
+  // The bare orange pin (public/mark.svg), not the dark app-icon tile, and no halo behind it.
+  assert.match(layout, /class="mast-gh"[^>]*><img src=\{`\$\{base\}mark\.svg`\}/);
+  const mark = readFileSync(new URL('../public/mark.svg', import.meta.url), 'utf8');
+  assert.doesNotMatch(mark, /<rect/);
+  assert.match(globalCss, /\.mast-gh\.is-floating \{[^}]*background: none;/);
+  assert.doesNotMatch(globalCss, /\.mast-gh\.is-floating \{[^}]*box-shadow/);
   assert.match(globalCss, /\.mast-gh svg, \.mast-gh img \{/);
 });
 
@@ -36,12 +39,16 @@ test('the past-event legend swatch has no black outline', () => {
   assert.match(globalCss, /\.atlas-key i\.x\.past\s*\{[^}]*background:\s*transparent/);
 });
 
-test('the floating Add-event button is wired to the list visibility', () => {
-  assert.match(page, /class="fab-add"/);
+test('the floating + lands in a bigger Submit button in the Past events block', () => {
+  assert.match(page, /class="fab-add is-off"/);
   assert.match(page, /aria-label="Add event"/);
-  assert.match(page, /IntersectionObserver/);
   assert.match(page, /fabEvents = view === 'events'/);
-  assert.match(globalCss, /\.fab-add\s*\{/);
+  // The docked button sits in the Past events heading and links to the same form.
+  assert.match(page, /<div class="past-head">\s*<p class="past-heading">Past events<\/p>\s*<a class="btn-submit" id="submit-dock" href=\{`\$\{repo\}\/issues\/new\?template=event-submission\.yml`\}/);
+  // Once the dock is on screen the + switches off, so it never follows to the bottom.
+  assert.match(page, /const show = fabEvents && listOnScreen && !docked;/);
+  assert.match(globalCss, /\.fab-add\.is-off \{[^}]*visibility: hidden/);
+  assert.match(globalCss, /\.btn-submit\.is-landed \{/);
 });
 
 test('the home Support button is a full-width bar filled by --p and shows sats on mobile', () => {
