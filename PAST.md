@@ -22,7 +22,7 @@ Archive of events from [README.md](README.md) that have already taken place. The
 | Mar 4–5 | [Women in Bitcoin Summit](https://womenofbitcoin.io/) | Online | Conference |
 | Mar 4–8 | [Bitcoin Ski Summit 2026](https://www.monolithic.tech/v5-bitcoin-ski-summit-2026) | Teton Village, USA | Conference |
 | Mar 4–22 | [Bitcoin Infinite Games](https://bitcoingames.lovable.app/) | Roatan, Honduras | Festival |
-| Mar 7 | [Bitkiwi XV](https://www.meetup.com/bitcoin-wellington/events/312824862/) | Christchurch, New Zealand | Meetup |
+| Mar 7 | [Bitkiwi XV](https://www.meetup.com/bitcoin-wellington/events/312824862/) | Christchurch, New Zealand | Other |
 | Mar 12–13 | [Bitcoin Takeover 2026](https://bitcoinpark.com/takeover/) | Austin, USA | Conference |
 | Mar 13–15 | [Bitcoin Bush Bash - Beechworth](https://bitcoinbushbash.info/beechworth/) | Beechworth, Australia | Conference |
 | Mar 19 | [Bitcoin Treasuries Digital Conference](https://bitcointreasuries.media) | Online | Conference |
@@ -71,7 +71,7 @@ Archive of events from [README.md](README.md) that have already taken place. The
 | Jul 22–24 | [bitcoin++ finds consensus](https://btcplusplus.dev/conf/toronto) | Toronto, Canada | Conference |
 | Jul 23–24 | [Energy Investors Forum 2026](https://energyinvestorsforum.com/) | Irving, USA | Conference |
 | Jul 24–26 | [Bitcoin Bush Bash - Palm Cove](https://bitcoinbushbash.info/palm-cove/) | Palm Cove, Australia | Conference |
-| Jul 25 | [Bitkiwi XVI](https://kiwibitcoinguide.org/home/bitkiwi-meetups/bitkiwi-xvi-july-2026-auckland/) | Auckland, New Zealand | Meetup |
+| Jul 25 | [Bitkiwi XVI](https://kiwibitcoinguide.org/home/bitkiwi-meetups/bitkiwi-xvi-july-2026-auckland/) | Auckland, New Zealand | Other |
 | Jul 31 – Aug 2 | [Lake Satoshi Retreat](https://www.lakesatoshi.com/annual-lake-satoshi-retreat) | Michigan, USA | Retreat |
 | Aug 12–13 | [Acelerando Bitcoin](https://acelerandobitcoin.com/) | Asunción, Paraguay | Conference |
 | Aug 14–15 | [Bitcoin Beyond 66](https://bitcoinbeyond66.com) | Bodø, Norway | Conference |
@@ -95,7 +95,7 @@ Archive of events from [README.md](README.md) that have already taken place. The
 | Sep 22–23 | [Freedom Tech DC 2026](https://www.btcpolicy.org/summit) | Washington, USA | Conference |
 | Sep 23 | [European Mining Summit 2026](https://miningsummit.eu/) | Helsinki, Finland | Conference |
 | Sep 23–24 | [Midwest Bitcoin Summit 2026](https://www.midwestbtc.com/) | Columbus, USA | Conference |
-| Sep 24 | [Socratic Seminar 162](https://bitdevs.org/2026-09-24-socratic-seminar-162) | New York City, USA | Meetup |
+| Sep 24 | [Socratic Seminar 162](https://bitdevs.org/2026-09-24-socratic-seminar-162) | New York City, USA | Other |
 | Sep 25–26 | [BTC HEL 2026](https://btchel.com/) | Helsinki, Finland | Conference |
 | Sep 27 | [PROOF Conference 2026](https://proofconference.com/en/) | Vilnius, Lithuania | Conference |
 | Sep 28 | [Bitcoin Treasuries Conference 2026](https://bitcointreasuries.net/conference) | New York City, USA | Conference |

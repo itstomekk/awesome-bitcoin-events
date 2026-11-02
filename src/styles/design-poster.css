@@ -192,6 +192,7 @@ html[data-design="poster"] .row-type { justify-self: end; padding: 0.15rem 0.45r
 html[data-design="poster"] .row.is-past .row-type { border-color: var(--color-past); color: var(--color-muted); }
 html[data-design="poster"] .row-where { font-size: 0.8125rem; }
 html[data-design="poster"] .atlas-key i.past { border-color: #6f6b60; }
+html[data-design="poster"] .atlas-key i.meetup { width: 0.25rem; height: 0.25rem; margin-inline: 0.17rem 0.42rem; vertical-align: 1px; background: var(--color-meetup); }
 html[data-design="poster"] .mast-gh.is-floating { z-index: 2000; }
 
 html[data-design="poster"] .design-switch { border: 2px solid #111; border-radius: 0; background: var(--color-accent); font-weight: 700; }

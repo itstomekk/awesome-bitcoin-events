@@ -8,7 +8,7 @@ const { meetups } = Astro.props;
     <li class="row meetup-row is-plain">
       <span class="row-date">{m.schedule}</span>
       <span class="row-title"><a href={m.url} target="_blank" rel="noreferrer">{m.name}</a><span class="arrow" aria-hidden="true"> ↗</span>{(m.links ?? []).map((l) => (<span class="also"> · <a href={l.url} target="_blank" rel="noreferrer">{l.label}</a></span>))}</span>
-      <span class="row-where">{flagFor(m.country) ? flagFor(m.country) + ' ' : ''}{m.where}</span>
+      <span class="row-where">{flagFor(m.country, m.where) ? flagFor(m.country, m.where) + ' ' : ''}{m.where}</span>
     </li>
   ))}
 </ol>

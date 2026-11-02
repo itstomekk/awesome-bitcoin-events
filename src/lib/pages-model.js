@@ -277,10 +277,11 @@ export function buildModel({ root = process.cwd(), origin, buildDay }) {
     }));
   }
 
-  const TYPE_PLURAL = { Conference: 'conferences', Meetup: 'meetups', Festival: 'festivals', Retreat: 'retreats', Unconference: 'unconferences', Hackathon: 'hackathons', Workshop: 'workshops' };
+  const TYPE_PLURAL = { Conference: 'conferences', Festival: 'festivals', Retreat: 'retreats', Unconference: 'unconferences', Hackathon: 'hackathons', Workshop: 'workshops' };
   for (const type of EVENT_TYPES) {
     const evs = events.filter((e) => e.type === type);
-    if (!evs.length) continue;
+    // 'Other' is a catch-all, not a topic worth its own page.
+    if (!evs.length || type === 'Other') continue;
     const nUp = evs.filter((e) => !e.past).length;
     const word = TYPE_PLURAL[type] || `${type.toLowerCase()}s`;
     pages.push(listing({

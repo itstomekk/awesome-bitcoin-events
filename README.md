@@ -43,7 +43,7 @@ Dates and places change. Check the official page before you book travel. Being l
 | Oct 21 | [Arkade Day 2026](https://luma.com/4usxgzkv) | Lugano, Switzerland | Conference |
 | Oct 22 | [The Future of Capital Markets 2026](https://thefutureofcapitalmarkets.com/) | Lugano, Switzerland | Conference |
 | Oct 23–24 | [Plan ₿ Forum Lugano 2026](https://planb.lugano.ch/planb-forum/) | Lugano, Switzerland | Conference |
-| Oct 24 | [Bitkiwi XVII](https://kiwibitcoinguide.org/home/bitkiwi-meetups/bitkiwi-xvii-october-2026-wellington/) | Wellington, New Zealand | Meetup |
+| Oct 24 | [Bitkiwi XVII](https://kiwibitcoinguide.org/home/bitkiwi-meetups/bitkiwi-xvii-october-2026-wellington/) | Wellington, New Zealand | Other |
 | Oct 25–27 | [Mita Tech Talks 2026](https://2026.mitatechtalks.com/) | Punta Mita, Mexico | Conference |
 | Oct 26–31 | [Bitshala BOSS Summit 2026](https://bitshala.org/boss/) | Jaipur, India | Retreat |
 | Oct 28–29 | [Custody & Treasury Summit 2026](https://www.meetup.com/bitcoinpark/events/314966347/) | Nashville, USA | Conference |
@@ -51,10 +51,10 @@ Dates and places change. Check the official page before you book travel. Being l
 | Oct 30 | [AI Startup Rodeo 2026](https://aistartuprodeo.com/) | Austin, USA | Conference |
 | Oct 30–31 | [Bitmela 2026](https://thebitmela.com/) | Jaipur, India | Festival |
 | Oct 30–31 | [LABITCONF 2026](https://www.labitconf.com/) | Buenos Aires, Argentina | Conference |
-| Oct 31 | [Whitepaper Day BBQ (BCC8333)](https://www.bcc8333.xyz/#whitepaper-day) | Barcelona, Spain | Meetup |
+| Oct 31 | [Whitepaper Day BBQ (BCC8333)](https://www.bcc8333.xyz/#whitepaper-day) | Barcelona, Spain | Other |
 | Oct 31 – Nov 1 | [BCE#3 - Bitcoin White Paper Day](https://bce-bip21.fr/) | Paris, France | Conference |
 | Oct 31 – Nov 1 | [BTC Balkans 2026](https://btcbalkans.com/en) | Sofia, Bulgaria | Conference |
-| Oct 31 | [Whitepaper Day 2026 by Northants Bitcoin](https://www.satlantis.io/events/1002878/whitepaper-day-2026-by-northants-bitcoin) | Walton, UK | Meetup |
+| Oct 31 | [Whitepaper Day 2026 by Northants Bitcoin](https://www.satlantis.io/events/1002878/whitepaper-day-2026-by-northants-bitcoin) | Walton, UK | Other |
 | Nov 2–4 | [Bitcoin Educators Academy Buenos Aires](https://www.amityage.com/all-events/bitcoin-educators-academy-in-argentina) | Buenos Aires, Argentina | Workshop |
 | Nov 3 | [6th Annual Canadian Bitcoin Summit](https://www.mybtccanada.ca/events-2-1/6th-annual-canadian-bitcoin-consortium-summit) | Toronto, Canada | Conference |
 | Nov 4 | [Bitcoin for Corporations Symposium](https://bitcoinforcorporations.com/events/amsterdam-symposium-2026/) | Amsterdam, Netherlands | Conference |
@@ -64,13 +64,13 @@ Dates and places change. Check the official page before you book travel. Being l
 | Nov 7–9 | [B-Only 2026](https://b-only.org/) | Annecy, France | Conference |
 | Nov 9–10 | [Bitcoin Veterans Summit 2026](https://bitcoinveterans.org/summit2026/) | Nashville, USA | Conference |
 | Nov 10 | [Bitcoin Capital Summit - El Salvador](https://luma.com/1o5w68tp) | San Salvador, El Salvador | Conference |
-| Nov 11 | [Bitcoin Bunker After Party](https://www.satlantis.io/events/1002892/bitcoin-bunker-after-party) | San Salvador, El Salvador | Meetup |
+| Nov 11 | [Bitcoin Bunker After Party](https://www.satlantis.io/events/1002892/bitcoin-bunker-after-party) | San Salvador, El Salvador | Other |
 | Nov 11–12 | [Bitcoin Histórico 2026](https://bitcoinhistorico.com/) | San Salvador, El Salvador | Conference |
-| Nov 12 | [Bitcoin Meetup San Salvador](https://www.satlantis.io/events/1002647/bitcoin-meetup-san-salvador) | San Salvador, El Salvador | Meetup |
+| Nov 12 | [Bitcoin Meetup San Salvador](https://www.satlantis.io/events/1002647/bitcoin-meetup-san-salvador) | San Salvador, El Salvador | Other |
 | Nov 13 | [Renaissance Rodeo](https://renaissance.rodeo/) | Ilopango, El Salvador | Festival |
 | Nov 13–15 | [Bitcoin Educators Academy Seoul](https://www.amityage.com/all-events/bitcoin-educators-academy-in-south-korea-seoul) | Seoul, South Korea | Workshop |
-| Nov 14 | [Bitcoin Colosseum: Community Edition](https://bitcoincolosseum.it/) | Rome, Italy | Meetup |
-| Nov 15 | [La Casa de Satoshi cumple 2 años](https://luma.com/lacasade-qf2y) | Mexico City, Mexico | Meetup |
+| Nov 14 | [Bitcoin Colosseum: Community Edition](https://bitcoincolosseum.it/) | Rome, Italy | Other |
+| Nov 15 | [La Casa de Satoshi cumple 2 años](https://luma.com/lacasade-qf2y) | Mexico City, Mexico | Other |
 | Nov 18–19 | [EmTech AI LATAM 2026](https://emtechai-latam.com/) | San Salvador, El Salvador | Conference |
 | Nov 19 | [Freedom Southeast Asia 2026](https://freedomsea.org/) | Chiang Mai, Thailand | Conference |
 | Nov 19–20 | [Global Bitcoin Circular Economies Summit](https://www.bitcoinbeach.com/summit-blog/bitcoin-circular-economies-summit-2026) | El Zonte, El Salvador | Conference |
@@ -82,7 +82,7 @@ Dates and places change. Check the official page before you book travel. Being l
 | Nov 20–22 | [Bitcoin Miskolc Konferencia 2026](https://bitcoinmiskolc.hu/konferencia/) | Miskolctapolca, Hungary | Conference |
 | Nov 20 | [Bitcoin (& crypto) Wealth Summit #2 Bordeaux](https://www.eventbrite.com/e/bitcoin-crypto-wealth-summit-2-bordeaux-20-novembre-2026-tickets-1984371266877) | Bordeaux, France | Conference |
 | Nov 20–21 | [Bitcoin Herbst 2026](https://razue.github.io/bitcoin_metropole_kempten/) | Kempten, Germany | Conference |
-| Nov 21 | [Finding Satoshi: screening & drinks](https://www.dutchbitcoinembassy.com/en/events/finding-satoshi-2026) | The Hague, Netherlands | Meetup |
+| Nov 21 | [Finding Satoshi: screening & drinks](https://www.dutchbitcoinembassy.com/en/events/finding-satoshi-2026) | The Hague, Netherlands | Other |
 | Nov 21 | [Freedom Fest UK 2026](https://freedomfest.now/) | Manchester, UK | Festival |
 | Nov 22 | [Sovereign Conference](https://sovereign-conference.com/) | Asunción, Paraguay | Conference |
 | Nov 22 | [Bitcoin Half Marathon 2026](https://bitcoinchiangmai.org/events/bitcoin-half-marathon-2026) | Chiang Mai, Thailand | Festival |
@@ -113,7 +113,7 @@ Dates and places change. Check the official page before you book travel. Being l
 | Apr 1–30 | [Discover Floripa 2027](https://www.discoverfloripa.com/) | Florianópolis, Brazil | Festival |
 | Apr 2–3 | [Sovereignty Summit 2027](https://sovereigntysummit.nz/) | Queenstown, New Zealand | Conference |
 | Apr 8 | [Bitcoin Poland Business Day 2027](https://www.bitcoin-poland.com/#krakow-business-day) | Krakow, Poland | Conference |
-| Apr 9 | [Bitcoin Poland Community Side Event 2027](https://www.bitcoin-poland.com/#krakow-community-side-event) | Krakow, Poland | Meetup |
+| Apr 9 | [Bitcoin Poland Community Side Event 2027](https://www.bitcoin-poland.com/#krakow-community-side-event) | Krakow, Poland | Other |
 | Apr 16–17 | [Bitcoin Österreich 2027](https://www.rettedeingeld.at/bitcoin-oesterreich-2027/) | Neufeld an der Leitha, Austria | Conference |
 | Apr 17 | [CryptoByte 2027](https://cryptobyte.cz/) | Liberec, Czech Republic | Conference |
 | Apr 23–25 | [Swiss Bitcoin Conference 2027](https://swiss-bitcoin-conference.com/) | Kreuzlingen, Switzerland | Conference |

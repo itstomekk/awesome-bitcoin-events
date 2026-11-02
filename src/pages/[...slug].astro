@@ -26,7 +26,7 @@ const ogImagePath = eventCard ? `og/${page.path}.jpg` : page.indexable ? `og/${p
 const ogImageAlt = eventCard || page.indexable ? `${page.h1}: Awesome Bitcoin Events` : undefined;
 const meetupsByRegion = page.kind === 'meetups' ? [...new Set(page.meetups.map((m) => m.region))].map((region) => ({ region, items: page.meetups.filter((m) => m.region === region) })) : [];
 const correctionUrl = e ? `${REPO}/issues/new?template=event-correction.yml&title=${encodeURIComponent(`[Correction] ${e.title}`)}` : '';
-const flag = e ? flagFor(e.country) : '';
+const flag = e ? flagFor(e.country, e.where) : '';
 const days = e ? Math.round((new Date(`${e.end}T12:00:00Z`) - new Date(`${e.start}T12:00:00Z`)) / 86400000) + 1 : 0;
 ---
 <BaseLayout

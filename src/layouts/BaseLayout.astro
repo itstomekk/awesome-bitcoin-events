@@ -25,6 +25,8 @@ const {
   // Chrome-free page (the white paper viewer): no masthead, colophon or Support button; the page
   // supplies its own bar. Head, design switcher script and analytics stay.
   bare = false,
+  // The home page folds the colophon into its How it works section, so it passes false.
+  footer = true,
 } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 const repo = 'https://github.com/itstomekk/awesome-bitcoin-events';
@@ -122,7 +124,7 @@ const Mast = mastHeading ? 'h1' : 'p';
       <hr class="mast-rule" aria-hidden="true" />
     </header>}
     <slot />
-    {!bare && <footer class="foot-dense page">
+    {!bare && footer && <footer class="foot-dense page">
       <p>
         Awesome Bitcoin Events. Generated on {built} from <a href={`${repo}/blob/main/README.md`}>README.md</a> and
         <a href={`${repo}/blob/main/PAST.md`}>PAST.md</a>, the only places events are edited.

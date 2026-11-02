@@ -86,7 +86,7 @@ test('an online event becomes "Online"', () => {
 
 test('rejects a type outside the allowed list and a bad URL', () => {
   const fields = parseIssueForm(BODY);
-  assert.match(buildRow({ ...fields, 'Event type': 'Other' }).error, /must be one of/);
+  assert.match(buildRow({ ...fields, 'Event type': 'Meetup' }).error, /must be one of/);
   assert.match(buildRow({ ...fields, 'Official event URL': 'example.com' }).error, /not http\(s\)/);
 });
 

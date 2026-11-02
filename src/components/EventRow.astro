@@ -19,7 +19,7 @@ const imageSrc = details?.image && /^https?:\/\//i.test(details.image)
     ? `${import.meta.env.BASE_URL.replace(/\/?$/, '/')}${details.image.replace(/^\/+/, '')}`
     : null;
 
-const flag = flagFor(event.country) || null;
+const flag = flagFor(event.country, event.where) || null;
 ---
 <li
   class:list={['row', { 'is-past': past }]}

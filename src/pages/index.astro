@@ -70,6 +70,7 @@ const mapJson = JSON.stringify([...mapEvents, ...meetupPins]).replace(/</g, '\\u
 const repo = 'https://github.com/itstomekk/awesome-bitcoin-events';
 const model = getModel();
 const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+const built = new Date().toISOString().slice(0, 10);
 const pathById = new Map(model.events.map((event) => [event.id, `${base}${event.path}/`]));
 // Search-friendly title and description, built from the data so the numbers never go stale.
 const upcomingYears = [...new Set(upcoming.map((event) => event.start.slice(0, 4)))].sort();
@@ -91,7 +92,7 @@ const jsonld = {
   ],
 };
 ---
-<BaseLayout title={pageTitle} description={pageDescription} jsonld={jsonld} map upcomingCount={upcoming.length} pastCount={sorted.length - upcoming.length} meetupCount={meetups.length} countryCount={countries.length} markdown="index.md">
+<BaseLayout title={pageTitle} description={pageDescription} jsonld={jsonld} map footer={false} upcomingCount={upcoming.length} pastCount={sorted.length - upcoming.length} meetupCount={meetups.length} countryCount={countries.length} markdown="index.md">
   <main id="main-content">
     <section class="atlas" id="atlas" aria-label="Map">
       <div class="atlas-frame">
@@ -177,7 +178,9 @@ const jsonld = {
         <p>To add an event, add one row to the right year's table and open a pull request:</p>
         <p><code>| Oct 12–15 | [Name](https://official-page) | City, Country | Conference |</code></p>
         <p>An automatic check validates the format, the dates and duplicates. Events we've seen mentioned but can't yet confirm on an official page wait in <a href={`${repo}/blob/main/TO-VERIFY.md`}>TO-VERIFY.md</a>. The <a href={`${repo}/blob/main/.github/CONTRIBUTING.md`}>contributing guide</a> has the details.</p>
+        <p class="about-fine">Generated on {built} from <a href={`${repo}/blob/main/README.md`}>README.md</a> and <a href={`${repo}/blob/main/PAST.md`}>PAST.md</a>. List content is dedicated to the public domain under CC0 1.0. Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors. Listing is not endorsement: check the organizer's page before you travel. While you're here, read the <a class="foot-paper" href={`${base}bitcoin-whitepaper/`}>Bitcoin white paper</a>.</p>
         <p class="about-cta"><a class="btn-add" href={`${repo}/issues/new?template=event-submission.yml`}>Add event</a></p>
+        <p class="about-support"><button type="button" id="sup" class="supb" aria-haspopup="dialog" title="Support the list with a Lightning zap"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M13.5 2 4 13.5h6.5L9 22l11-12.5h-6.8z" /></svg><span>Support</span><span class="supn"></span></button></p>
       </div>
     </section>
     </div>
@@ -376,7 +379,7 @@ const jsonld = {
         const tok = (name) => live.getPropertyValue(name).trim();
         if (p.kind === 'meetup') {
           const blue = tok('--color-meetup');
-          return { radius: 8, weight: 0, color: blue, fillColor: blue, fillOpacity: 0.35 };
+          return { radius: 1.6, weight: 0, color: blue, fillColor: blue, fillOpacity: 1 };
         }
         const past = p.end < today;
         const ring = past ? tok('--color-past') : tok('--color-accent');

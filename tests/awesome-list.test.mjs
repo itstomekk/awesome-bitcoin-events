@@ -12,7 +12,7 @@ const listWithMonth = (rows, month = 'October', year = 2026) => `# Title\n\n## $
 
 test('parses a single-day, multi-day and cross-month event', () => {
   const { events, errors } = parseList(list([
-    '| Oct 24 | [One Day](https://a.example) | Wellington, New Zealand | Meetup |',
+    '| Oct 24 | [One Day](https://a.example) | Wellington, New Zealand | Other |',
     '| Oct 12–15 | [Multi](https://b.example/) | Atlanta, USA | Conference |',
     '| Oct 29 – Nov 1 | [Cross](https://c.example) | Buenos Aires, Argentina | Conference |',
   ]));

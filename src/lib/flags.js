@@ -20,4 +20,6 @@ export const COUNTRY_FLAGS = {
   'Cyprus': '🇨🇾', 'Montenegro': '🇲🇪', 'Cayman Islands': '🇰🇾', 'Curaçao': '🇨🇼', 'Dominican Republic': '🇩🇴',
 };
 
-export const flagFor = (country) => (country ? COUNTRY_FLAGS[country] || '' : '');
+// Online events and meetups have no country, so they fly the pirate flag.
+export const ONLINE_FLAG = '🏴‍☠️';
+export const flagFor = (country, where = '') => (country ? COUNTRY_FLAGS[country] || '' : where === 'Online' ? ONLINE_FLAG : '');

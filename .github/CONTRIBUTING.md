@@ -37,7 +37,7 @@ Don't want to edit Markdown? Use the **[event submission form](https://github.co
 | Date | 3-letter month plus day, using the year from the heading. Use an en dash `–` or a hyphen `-` for ranges. | `Oct 24` · `Oct 12–15` · `Oct 29 – Nov 1` |
 | Event | `[Name](link)`. The link is the **organizer's own page** (https). Aggregators, ticket resellers and social posts don't count. | `[TABConf 8](https://tabconf.com/)` |
 | Location | `City, Country`, just the country, or `Online` | `Atlanta, USA` · `Hong Kong` · `Online` |
-| Type | One of: Conference, Meetup, Festival, Retreat, Unconference, Hackathon, Workshop | `Conference` |
+| Type | One of: Conference, Festival, Retreat, Unconference, Hackathon, Workshop, Other (recurring meetups go in the Meetups section) | `Conference` |
 
 Don't use a `|` character inside a cell.
 

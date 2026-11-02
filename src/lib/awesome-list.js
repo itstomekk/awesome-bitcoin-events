@@ -26,7 +26,7 @@ const MONTH_ABBR = MONTHS.map((month) => month.slice(0, 3));
 
 // The allowed event types. Add a new one here (and in .github/CONTRIBUTING.md) if needed.
 export const EVENT_TYPES = [
-  'Conference', 'Meetup', 'Festival', 'Retreat', 'Unconference', 'Hackathon', 'Workshop',
+  'Conference', 'Festival', 'Retreat', 'Unconference', 'Hackathon', 'Workshop', 'Other',
 ];
 
 const YEAR_HEADING_RE = /^## (\d{4})\s*$/;
