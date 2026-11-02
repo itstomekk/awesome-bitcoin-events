@@ -387,6 +387,7 @@ const jsonld = {
       // Events are a heavy X with a solid centre dot (an SVG icon that ignores the pointer,
       // drawn over an invisible circle that takes hover and click). Meetups are solid
       // blue discs. Colours come from the design tokens.
+      const X_SIZE = 14.4; // upcoming X width in px; the hit circle is as wide
       const markerStyle = (p) => {
         const live = getComputedStyle(document.documentElement);
         const tok = (name) => live.getPropertyValue(name).trim();
@@ -397,15 +398,17 @@ const jsonld = {
         const past = p.end < today;
         const ring = past ? tok('--color-past') : tok('--color-accent');
         // The hit circle is invisible; fillOpacity 0 still takes the pointer.
-        return { radius: past ? 7.2 : 9, weight: 0, opacity: 0, color: ring, fillColor: ring, fillOpacity: 0 };
+        return { radius: (past ? 0.8 : 1) * X_SIZE / 2, weight: 0, opacity: 0, color: ring, fillColor: ring, fillOpacity: 0 };
       };
-      // Upcoming: 18 px X, 4.5 px strokes, 8 px dot. Past: 80% of that. Every pin is 80% opaque.
+      // Upcoming: 14.4 px X (80% of the earlier 18 px), strokes and dot in proportion.
+      // Past: 80% of that. The X marks get their 80% opacity from the marker pane as a
+      // whole (global.css), so a pile of overlapping X marks stays 80%, not solid.
       const xIcon = (p) => {
         const past = p.end < today;
-        const k = past ? 0.8 : 1;
+        const k = (past ? 0.8 : 1) * (X_SIZE / 18);
         const s = 18 * k, w = 4.5 * k, r = 4 * k, a = w / 2, b = s - w / 2;
         const color = markerStyle(p).color;
-        const html = `<svg width="${s}" height="${s}" viewBox="0 0 ${s} ${s}" style="display:block;overflow:visible;opacity:0.8"><path d="M${a} ${a}L${b} ${b}M${b} ${a}L${a} ${b}" stroke="${color}" stroke-width="${w}" stroke-linecap="round"/><circle cx="${s / 2}" cy="${s / 2}" r="${r}" fill="${color}"/></svg>`;
+        const html = `<svg width="${s}" height="${s}" viewBox="0 0 ${s} ${s}" style="display:block;overflow:visible"><path d="M${a} ${a}L${b} ${b}M${b} ${a}L${a} ${b}" stroke="${color}" stroke-width="${w}" stroke-linecap="round"/><circle cx="${s / 2}" cy="${s / 2}" r="${r}" fill="${color}"/></svg>`;
         return window.L.divIcon({ className: 'event-x', html, iconSize: [s, s], iconAnchor: [s / 2, s / 2] });
       };
       [...mapData].sort((a, b) => rank(a) - rank(b)).forEach((p) => {
