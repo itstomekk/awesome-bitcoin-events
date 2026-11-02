@@ -361,6 +361,19 @@ const jsonld = {
     const mapData = JSON.parse(document.querySelector('#map-data').textContent);
     if (mapNode && window.L && mapData.length) {
       eventMap = window.L.map(mapNode, { scrollWheelZoom: false, worldCopyJump: true, zoomControl: false });
+      // Plain scrolling keeps scrolling the page; Ctrl (or Cmd) + wheel zooms the map around
+      // the pointer instead of zooming the browser. Wheel deltas are summed so a trackpad
+      // pinch, which fires many small ctrl+wheel events, still moves one level at a time.
+      let wheelSum = 0;
+      mapNode.addEventListener('wheel', (e) => {
+        if (!e.ctrlKey && !e.metaKey) return;
+        e.preventDefault();
+        wheelSum += e.deltaMode === 1 ? e.deltaY * 33 : e.deltaY;
+        if (Math.abs(wheelSum) < 50) return;
+        const zoom = eventMap.getZoom() + (wheelSum < 0 ? 1 : -1);
+        wheelSum = 0;
+        eventMap.setZoomAround(eventMap.mouseEventToContainerPoint(e), Math.max(eventMap.getMinZoom(), Math.min(eventMap.getMaxZoom(), zoom)));
+      }, { passive: false });
       window.L.control.zoom({ position: 'bottomleft' }).addTo(eventMap);
       window.L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 18,
@@ -405,9 +418,6 @@ const jsonld = {
         markers.set(p.id, marker);
         styled.push([p, marker]);
         bounds.push([p.latitude, p.longitude]);
-      });
-      document.addEventListener('abe:design', () => {
-        styled.forEach(([p, m]) => { m.setStyle(markerStyle(p)); if (m.dot) m.dot.setStyle(dotStyle(p)); });
       });
       // Pins in one city pile up around its centre (public/map-stack.js): upcoming events
       // win the centre, then meetups, then past events. Offsets are screen pixels, so

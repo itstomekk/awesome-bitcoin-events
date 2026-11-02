@@ -6,8 +6,6 @@
 .supb:hover,.supb:focus-visible{background:var(--color-ink);color:var(--color-paper)}
 .supn{font-weight:400;opacity:.85}
 .supn:empty{display:none}
-html[data-design="poster"] .supb{background-color:#111;color:var(--color-accent);border-color:#111;background-image:linear-gradient(#fff,#fff);background-size:var(--p) 3px;background-repeat:no-repeat;background-position:left bottom}
-html[data-design="poster"] .supb:hover,html[data-design="poster"] .supb:focus-visible{background:transparent;color:#111}
 @media (max-width:420px){.supn{display:none}}
 html.sup-open{overflow:hidden}
 .sup{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:16px;font-family:var(--font-mono)}

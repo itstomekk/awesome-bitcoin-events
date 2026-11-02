@@ -62,14 +62,6 @@ button, input, select { font: inherit; color: inherit; }
 }
 .mast-rule { height: 4px; margin: var(--space-sm) 0 0; border: 0; border-top: var(--rule-hair) solid var(--color-rule-2); border-bottom: var(--rule-hair) solid var(--color-rule-2); }
 
-/* Design switcher (Classic / Poster): a small pill in the page's top-left corner. Hidden until
-   the head script has set data-design. */
-html:not([data-design]) .design-switch { display: none; }
-.design-switch { position: absolute; top: var(--space-2xs); left: var(--space-xs); z-index: 1000; display: inline-flex; align-items: center; gap: 0; padding: 1px; border: var(--rule-hair) solid var(--color-rule-2); border-radius: 999px; background: var(--color-paper); font: 400 0.625rem/1 var(--font-mono); letter-spacing: var(--tracking-label); text-transform: uppercase; }
-.ds-icon { width: 0.8rem; height: 0.8rem; margin: 0 0.2rem 0 0.25rem; color: var(--color-muted); }
-.design-switch button { padding: 0.2rem 0.45rem; background: none; border: 0; border-radius: 999px; color: var(--color-muted); font: inherit; letter-spacing: inherit; text-transform: inherit; cursor: pointer; }
-.design-switch button:hover { color: var(--color-ink); }
-.design-switch button[aria-pressed="true"] { background: var(--color-ink); color: var(--color-paper); }
 /* Support button and white paper link live at the very bottom, in the colophon. */
 .foot-dense .supb { margin: var(--space-sm) 0 0; }
 /* Home page: the colophon is the last paragraph of How it works, Support closes the page. */
