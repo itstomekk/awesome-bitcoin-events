@@ -11,8 +11,8 @@ const { stack, stackPlaces, GAP } = sandbox.abeStack;
 
 const dist = ([ax, ay], [bx, by]) => Math.hypot(ax - bx, ay - by);
 
-test('centres may come no closer than half the larger radius', () => {
-  assert.equal(GAP, 0.5);
+test('centres may come no closer than three times the larger radius', () => {
+  assert.equal(GAP, 3);
   for (const radii of [[6, 6], [6, 8, 8, 5], Array(12).fill(6), [6, 6, 8, 8, 8, 8, 5, 5, 5, 5, 5, 5]]) {
     const at = stack(radii);
     for (let i = 0; i < at.length; i++) {
@@ -26,8 +26,8 @@ test('centres may come no closer than half the larger radius', () => {
 test('the first pin takes the centre; the pile stays tight, not a ring', () => {
   const at = stack(Array(12).fill(6));
   assert.deepEqual([...at[0]], [0, 0]);
-  // Twelve pins 3px apart fit within about two gaps of the centre.
-  assert.ok(Math.max(...at.map((p) => dist(p, [0, 0]))) <= 7, JSON.stringify(at));
+  // Twelve pins fit within about two gaps of the centre.
+  assert.ok(Math.max(...at.map((p) => dist(p, [0, 0]))) <= 2 * GAP * 6, JSON.stringify(at));
   // Each pin is as close to the centre as possible: never farther than the next one.
   const d = at.map((p) => dist(p, [0, 0]));
   for (let i = 1; i < d.length; i++) assert.ok(d[i] >= d[i - 1] - 0.3);

@@ -149,9 +149,9 @@ button, input, select { font: inherit; color: inherit; }
   pointer-events: none;
 }
 /* Swatches match the map pins: events a heavy X with a centre dot, meetups solid discs. */
-.atlas-key i { display: inline-block; margin-right: var(--space-3xs); vertical-align: -2px; }
+.atlas-key i { display: inline-block; margin-right: var(--space-3xs); vertical-align: -2px; opacity: 0.8; }
 .atlas-key i.x { width: 0.75rem; height: 0.75rem; background: var(--color-accent); -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cpath d='M2.25 2.25L15.75 15.75M15.75 2.25L2.25 15.75' stroke='%23000' stroke-width='4.5' stroke-linecap='round'/%3E%3Ccircle cx='9' cy='9' r='4'/%3E%3C/svg%3E") center / contain no-repeat; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cpath d='M2.25 2.25L15.75 15.75M15.75 2.25L2.25 15.75' stroke='%23000' stroke-width='4.5' stroke-linecap='round'/%3E%3Ccircle cx='9' cy='9' r='4'/%3E%3C/svg%3E") center / contain no-repeat; }
-.atlas-key i.x.past { width: 0.6rem; height: 0.6rem; background: var(--color-past); opacity: 0.8; vertical-align: -1px; }
+.atlas-key i.x.past { width: 0.6rem; height: 0.6rem; background: var(--color-past); vertical-align: -1px; }
 .atlas-key i.meetup { width: 0.8rem; height: 0.8rem; border-radius: 50%; background: var(--color-meetup); vertical-align: -2px; }
 #event-map { width: 100%; height: var(--map-height); background: var(--color-paper-2); border-top: var(--rule-hair) solid var(--color-rule); border-bottom: var(--rule-hair) solid var(--color-rule); }
 #event-map .leaflet-tile-pane { filter: grayscale(1) contrast(0.92) brightness(1.04); }

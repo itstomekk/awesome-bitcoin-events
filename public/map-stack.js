@@ -2,15 +2,15 @@
 //
 // Every pin in a place competes for the centre. Pins are placed one by one in priority
 // order (upcoming events, then meetups, then past events); each takes the free spot
-// nearest the centre whose distance to every pin already placed is at least half the
-// larger of the two radii. The result is a tight pile, not a ring: the first pin sits
-// on the place, the rest crowd around it as close as the rule allows.
+// nearest the centre whose distance to every pin already placed is at least three times
+// the larger of the two radii, so pins never touch. The first pin sits on the place, the
+// rest crowd around it as close as the rule allows.
 //
 // Offsets are in screen pixels, so the pile looks the same at every zoom level.
 // Plain script (no modules): the home page loads it before its inline map code, and
 // tests/map-stack.test.mjs runs it in a sandbox.
 (function (root) {
-  const GAP = 0.5; // closest two centres may get, as a share of the larger radius
+  const GAP = 3; // closest two centres may get, as a multiple of the larger radius
   const STEP = 0.25; // search resolution, pixels
 
   // Candidate spots ordered by distance from the centre: the centre, then rings
