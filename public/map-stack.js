@@ -1,17 +1,17 @@
-// Keeps map pins from touching, at every zoom level.
+// Keeps map pins of one kind from piling on top of each other, at every zoom level.
 //
 // The page hands over every pin as a screen position (pixels at the current zoom) plus
-// its radius and priority. Pins are placed one by one in priority order (upcoming
-// events, then meetups, then past events); each takes the free spot nearest its own
-// place whose distance to every pin already placed is at least three times the larger
-// of the two radii. Pins in one city pile up around it; pins from nearby cities push
-// each other apart only when the zoom brings them close. The page reruns this on every
-// zoom, so zooming in lets pins drift back towards their real places.
+// its radius, priority and group (event X marks, meetup discs). Groups ignore each
+// other: an X may sit on a disc. Within a group, pins are placed one by one in priority
+// order (upcoming events before past ones); each takes the free spot nearest its own
+// place whose distance to every pin already placed is at least half the larger of the
+// two radii (`GAP`). The page reruns this on every zoom, so zooming in lets pins drift
+// back to their real places.
 //
 // Plain script (no modules): the home page loads it before its inline map code, and
 // tests/map-stack.test.mjs runs it in a sandbox.
 (function (root) {
-  const GAP = 3; // closest two centres may get, as a multiple of the larger radius
+  const GAP = 0.5; // closest two centres may get, as a multiple of the larger radius
 
   // items: [{ x, y, radius, priority }] in screen pixels (lower priority = placed first).
   // Returns [dx, dy] per item, same order.
@@ -20,7 +20,7 @@
   // edge of some placed pin's keep-out circle, so candidates are sampled on those edges
   // (`angles` per circle), nearest first. Search widens until a free spot is found. A grid
   // of cells one keep-out wide keeps every check to the 3x3 cells around a point.
-  function layout(items, gap = GAP, angles = 48) {
+  function place(items, gap = GAP, angles = 48) {
     const order = items.map((_, i) => i).sort((a, b) => items[a].priority - items[b].priority || a - b);
     const cell = Math.max(1, gap * Math.max(0, ...items.map((item) => item.radius)));
     const grid = new Map();
@@ -82,8 +82,24 @@
     return out;
   }
 
+  // items may carry a `group`; only pins in the same group keep apart.
+  function layout(items, gap = GAP, angles = 48) {
+    const groups = new Map();
+    items.forEach((item, i) => {
+      const key = item.group ?? '';
+      if (!groups.has(key)) groups.set(key, []);
+      groups.get(key).push(i);
+    });
+    const out = new Array(items.length);
+    for (const members of groups.values()) {
+      const at = place(members.map((i) => items[i]), gap, angles);
+      members.forEach((i, k) => { out[i] = at[k]; });
+    }
+    return out;
+  }
+
   // Pins that all share one place, given by radius in priority order (finer search).
-  const stack = (radii, gap = GAP) => layout(radii.map((radius, priority) => ({ x: 0, y: 0, radius, priority })), gap, 720);
+  const stack = (radii, gap = GAP) => place(radii.map((radius, priority) => ({ x: 0, y: 0, radius, priority })), gap, 720);
 
   root.abeStack = { GAP, layout, stack };
 })(globalThis);

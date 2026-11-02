@@ -11,8 +11,8 @@ const { stack, layout, GAP } = sandbox.abeStack;
 
 const dist = ([ax, ay], [bx, by]) => Math.hypot(ax - bx, ay - by);
 
-test('centres may come no closer than three times the larger radius', () => {
-  assert.equal(GAP, 3);
+test('centres may come no closer than half the larger radius', () => {
+  assert.equal(GAP, 0.5);
   for (const radii of [[6, 6], [6, 8, 8, 5], Array(12).fill(6), [6, 6, 8, 8, 8, 8, 5, 5, 5, 5, 5, 5]]) {
     const at = stack(radii);
     for (let i = 0; i < at.length; i++) {
@@ -45,7 +45,7 @@ test('priority decides who keeps its place; far-away pins are untouched', () => 
   assert.deepEqual([...at[2]], [0, 0]);
 });
 
-test('pins from different places never touch once the zoom brings them together', () => {
+test('pins from different places keep apart once the zoom brings them together', () => {
   // A dense band of pins a few pixels apart, like nearby cities on a zoomed-out map.
   const items = Array.from({ length: 80 }, (_, i) => ({ x: (i % 10) * 4, y: Math.floor(i / 10) * 3, radius: i % 3 ? 6.4 : 9, priority: i % 3 }));
   const at = layout(items);
@@ -55,6 +55,21 @@ test('pins from different places never touch once the zoom brings them together'
       assert.ok(dist(pos[i], pos[j]) >= GAP * Math.max(items[i].radius, items[j].radius) - 0.02, `${i},${j}`);
     }
   }
+});
+
+test('X marks and discs ignore each other; each kind keeps its own spacing', () => {
+  const items = [
+    { x: 0, y: 0, radius: 9, priority: 0, group: 'x' },
+    { x: 0, y: 0, radius: 6.4, priority: 1, group: 'disc' },
+    { x: 1, y: 0, radius: 9, priority: 2, group: 'x' },
+    { x: 1, y: 0, radius: 6.4, priority: 1, group: 'disc' },
+  ];
+  const at = layout(items);
+  assert.deepEqual([...at[0]], [0, 0]);
+  assert.deepEqual([...at[1]], [0, 0]);
+  const pos = items.map((it, i) => [it.x + at[i][0], it.y + at[i][1]]);
+  assert.ok(dist(pos[0], pos[2]) >= GAP * 9 - 0.02);
+  assert.ok(dist(pos[1], pos[3]) >= GAP * 6.4 - 0.02);
 });
 
 test('the home page loads the stacker and re-applies it on zoom', () => {
