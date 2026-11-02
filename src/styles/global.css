@@ -48,7 +48,7 @@ button, input, select { font: inherit; color: inherit; }
 .mast-icon { display: inline-block; width: 0.78em; height: 0.78em; margin-right: 0.22em; vertical-align: -0.08em; }
 /* GitHub mark in the title, sitting where the full stop was. The slot keeps its place in the
    line; the script lifts the link out (.is-floating) and moves it to the top-right on scroll. */
-.mast-gh-slot { display: inline-block; width: 0.34em; height: 0.34em; margin-left: 0.05em; vertical-align: baseline; }
+.mast-gh-slot { display: inline-block; width: 0.34em; height: 0.34em; margin-left: 0.05em; vertical-align: calc(-0.2 * 0.34em); } /* 20% of its own height below the baseline, like a full stop */
 .mast-gh { display: block; width: 100%; height: 100%; color: var(--color-accent-ink); transition: color var(--dur-fast) var(--ease-out); }
 .mast-gh svg { display: block; width: 100%; height: 100%; }
 .mast-gh:hover, .mast-gh:focus-visible { color: var(--color-ink); }

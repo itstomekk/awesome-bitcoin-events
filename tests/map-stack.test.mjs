@@ -51,3 +51,10 @@ test('the home page loads the stacker and re-applies it on zoom', () => {
   assert.match(page, /abeStack\.stackPlaces\(/);
   assert.match(page, /on\('zoomend'/);
 });
+
+test('map popups open on hover and stick on click', () => {
+  const page = readFileSync(new URL('../src/pages/index.astro', import.meta.url), 'utf8');
+  assert.match(page, /on\('mouseover'/);
+  assert.match(page, /on\('mouseout', \(\) => \{ if \(stuck !== marker\)/);
+  assert.match(page, /on\('click', \(\) => stick\(marker\)\)/);
+});

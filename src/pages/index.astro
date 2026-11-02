@@ -336,12 +336,21 @@ const jsonld = {
     // --- Map --------------------------------------------------------------------------
     const markers = new Map();
     let eventMap = null;
+    // Popups open on hover and close when the pointer leaves; a click makes one stick
+    // (until the map is clicked or another dot is clicked). Hover popups don't pan the
+    // map, sticky ones do, so they never end up cut off at the edge.
+    let stuck = null;
+    function stick(marker) {
+      stuck = marker;
+      marker.getPopup().options.autoPan = true;
+      marker.openPopup();
+    }
     function showOnMap(id) {
       const marker = markers.get(id);
       if (!eventMap || !marker) return;
       document.querySelector('#atlas').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
       eventMap.setView(marker.getLatLng(), 6);
-      marker.openPopup();
+      stick(marker);
     }
     const mapNode = document.querySelector('#event-map');
     const mapData = JSON.parse(document.querySelector('#map-data').textContent);
@@ -372,14 +381,28 @@ const jsonld = {
         // fillOpacity 0 keeps the inside empty but still clickable.
         return { radius: past ? 5 : 6, weight: past ? 2 : 3, color: ring, opacity: past ? 0.8 : 1, fillColor: ring, fillOpacity: 0 };
       };
+      const dotStyle = (p) => {
+        const { color, opacity } = markerStyle(p);
+        return { radius: 1.5, weight: 0, fillColor: color, fillOpacity: opacity ?? 1, interactive: false };
+      };
       [...mapData].sort((a, b) => rank(a) - rank(b)).forEach((p) => {
-        const marker = window.L.circleMarker([p.latitude, p.longitude], markerStyle(p)).addTo(eventMap).bindPopup(`<strong>${escapeHtml(p.title)}</strong><br>${escapeHtml(p.dates)}<br>${escapeHtml(p.where)}<br><a href="${escapeHtml(p.url)}" target="_blank" rel="noreferrer">Official page ↗</a>`);
+        const marker = window.L.circleMarker([p.latitude, p.longitude], markerStyle(p)).addTo(eventMap).bindPopup(`<strong>${escapeHtml(p.title)}</strong><br>${escapeHtml(p.dates)}<br>${escapeHtml(p.where)}<br><a href="${escapeHtml(p.url)}" target="_blank" rel="noreferrer">Official page ↗</a>`, { autoPan: false });
+        marker.on('mouseover', () => { if (!stuck) marker.openPopup(); });
+        marker.on('mouseout', () => { if (stuck !== marker) marker.closePopup(); });
+        marker.on('click', () => stick(marker));
+        marker.on('popupclose', () => {
+          marker.getPopup().options.autoPan = false;
+          if (stuck === marker) stuck = null;
+        });
+        // Events get a small solid centre inside the hollow ring. It ignores the pointer,
+        // so hovering or clicking it reaches the ring underneath.
+        if (p.kind === 'event') marker.dot = window.L.circleMarker([p.latitude, p.longitude], dotStyle(p)).addTo(eventMap);
         markers.set(p.id, marker);
         styled.push([p, marker]);
         bounds.push([p.latitude, p.longitude]);
       });
       document.addEventListener('abe:design', () => {
-        styled.forEach(([p, m]) => m.setStyle(markerStyle(p)));
+        styled.forEach(([p, m]) => { m.setStyle(markerStyle(p)); if (m.dot) m.dot.setStyle(dotStyle(p)); });
       });
       // Pins in one city pile up around its centre (public/map-stack.js): upcoming events
       // win the centre, then meetups, then past events. Offsets are screen pixels, so
@@ -389,7 +412,9 @@ const jsonld = {
       }))).filter((item) => item.dx || item.dy) : [];
       const spread = () => piles.forEach(({ point, marker, dx, dy }) => {
         const at = eventMap.latLngToLayerPoint([point.latitude, point.longitude]);
-        marker.setLatLng(eventMap.layerPointToLatLng(at.add([dx, dy])));
+        const moved = eventMap.layerPointToLatLng(at.add([dx, dy]));
+        marker.setLatLng(moved);
+        if (marker.dot) marker.dot.setLatLng(moved);
       });
       eventMap.on('zoomend', spread);
       eventMap.fitBounds(bounds, { padding: [24, 24], maxZoom: 3 });
