@@ -180,11 +180,13 @@ const jsonld = {
         <p>An automatic check validates the format, the dates and duplicates. Events we've seen mentioned but can't yet confirm on an official page wait in <a href={`${repo}/blob/main/TO-VERIFY.md`}>TO-VERIFY.md</a>. The <a href={`${repo}/blob/main/.github/CONTRIBUTING.md`}>contributing guide</a> has the details.</p>
         <p class="about-fine">Generated on {built} from <a href={`${repo}/blob/main/README.md`}>README.md</a> and <a href={`${repo}/blob/main/PAST.md`}>PAST.md</a>. List content is dedicated to the public domain under CC0 1.0. Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors. Listing is not endorsement: check the organizer's page before you travel. While you're here, read the <a class="foot-paper" href={`${base}bitcoin-whitepaper/`}>Bitcoin white paper</a>.</p>
         <p class="about-cta"><a class="btn-add" href={`${repo}/issues/new?template=event-submission.yml`}>Add event</a></p>
-        <p class="about-support"><button type="button" id="sup" class="supb" aria-haspopup="dialog" title="Support the list with a Lightning zap"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M13.5 2 4 13.5h6.5L9 22l11-12.5h-6.8z" /></svg><span>Support</span><span class="supn"></span></button></p>
       </div>
     </section>
+    <p class="about-support"><button type="button" id="sup" class="supb" aria-haspopup="dialog" title="Support the list with a Lightning zap"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M13.5 2 4 13.5h6.5L9 22l11-12.5h-6.8z" /></svg><span>Support</span><span class="supn"></span></button></p>
     </div>
   </main>
+
+  <a class="fab-add" href={`${repo}/issues/new?template=event-submission.yml`} aria-label="Add event" hidden><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" /></svg></a>
 
   <script is:inline src={`${base}map-stack.js`}></script>
   <script is:inline>
@@ -326,12 +328,31 @@ const jsonld = {
       setOpen(row, row.querySelector('.row-toggle').getAttribute('aria-expanded') !== 'true');
     });
 
+    // --- Floating "Add event" button ---------------------------------------------------
+    // A fixed + at bottom-right that appears only while the Events list is on screen and the
+    // Events view is active; hidden on the Meetups tab or when the list is scrolled out of
+    // view. The regular "Add event" link in How it works stays.
+    const fabAdd = document.querySelector('.fab-add');
+    let fabEvents = true;
+    let fabListVisible = false;
+    function updateFab() {
+      if (fabAdd) fabAdd.hidden = !(fabEvents && fabListVisible);
+    }
+    if (fabAdd && 'IntersectionObserver' in window) {
+      new IntersectionObserver((entries) => {
+        fabListVisible = entries.some((entry) => entry.isIntersecting);
+        updateFab();
+      }, { threshold: 0 }).observe(document.querySelector('#list'));
+    }
+
     // --- Events / Meetups switch ------------------------------------------------------
     const viewTabs = [...document.querySelectorAll('[data-view]')];
     function setView(view) {
       viewTabs.forEach((tab) => tab.setAttribute('aria-selected', String(tab.dataset.view === view)));
       document.querySelector('#list').hidden = view !== 'events';
       document.querySelector('#meetups').hidden = view !== 'meetups';
+      fabEvents = view === 'events';
+      updateFab();
     }
     viewTabs.forEach((tab) => tab.addEventListener('click', () => {
       setView(tab.dataset.view);
@@ -388,7 +409,12 @@ const jsonld = {
       // outline (an SVG icon that ignores the pointer, drawn over an invisible circle that
       // takes hover and click). Meetups are see-through blue discs. Colours come from the
       // design tokens.
-      const X_SIZE = 18; // upcoming star width in px; the hit circle is as wide
+      const X_SIZE = 18;    // upcoming star width in px
+      const X_OUTLINE = 1;  // half of the 2 px black outline, so the star's real edge is s/2 + 1
+      const CITY_ZOOM = 10; // city-level zoom: event stars must not overlap, not just half a radius apart
+      const CITY_GAP = 2.2; // full separation plus a small margin, event stars only, at CITY_ZOOM and up
+      const starSize = (p) => (p.end < today ? 0.8 : 1) * X_SIZE;   // s/2 is the star's bounding radius
+      const starExtent = (p) => starSize(p) / 2 + X_OUTLINE;        // full visual radius, outline included
       const markerStyle = (p) => {
         const live = getComputedStyle(document.documentElement);
         const tok = (name) => live.getPropertyValue(name).trim();
@@ -396,21 +422,23 @@ const jsonld = {
           const blue = tok('--color-meetup');
           return { radius: 8.8, weight: 0, color: blue, fillColor: blue, fillOpacity: 0.55 };
         }
-        const past = p.end < today;
-        const ring = past ? tok('--color-past') : tok('--color-accent');
-        // The hit circle is invisible; fillOpacity 0 still takes the pointer.
-        return { radius: (past ? 0.8 : 1) * X_SIZE / 2, weight: 0, opacity: 0, color: ring, fillColor: ring, fillOpacity: 0 };
+        const ring = p.end < today ? tok('--color-past') : tok('--color-accent');
+        // The hit circle is invisible; fillOpacity 0 still takes the pointer. It is as wide as the
+        // star's real edge (outline included) so hovering a tip outline still hits the pin.
+        return { radius: starExtent(p), weight: 0, opacity: 0, color: ring, fillColor: ring, fillOpacity: 0 };
       };
-      // Upcoming: 18 px star, inner corners at 30% of the tips. Past: grey, 80% of that.
+      // Upcoming: 18 px star, inner corners at 30% of the tips, 1 px black outline. Past: grey,
+      // 80% of that, no outline.
       const xIcon = (p) => {
         const past = p.end < today;
-        const s = (past ? 0.8 : 1) * X_SIZE, c = s / 2;
+        const s = starSize(p), c = s / 2;
         const points = Array.from({ length: 8 }, (_, i) => {
           const r = (i % 2 ? 0.3 : 1) * c, angle = -Math.PI / 4 + (i * Math.PI) / 4;
           return `${(c + r * Math.cos(angle)).toFixed(2)} ${(c + r * Math.sin(angle)).toFixed(2)}`;
         });
         const color = markerStyle(p).color;
-        const html = `<svg width="${s}" height="${s}" viewBox="0 0 ${s} ${s}" style="display:block;overflow:visible"><path d="M${points.join('L')}Z" fill="${color}" stroke="#000" stroke-width="2" stroke-linejoin="round" paint-order="stroke"/></svg>`;
+        const stroke = past ? '' : 'stroke="#000" stroke-width="2" stroke-linejoin="round" paint-order="stroke"';
+        const html = `<svg width="${s}" height="${s}" viewBox="0 0 ${s} ${s}" style="display:block;overflow:visible"><path d="M${points.join('L')}Z" fill="${color}" ${stroke}/></svg>`;
         return window.L.divIcon({ className: 'event-x', html, iconSize: [s, s], iconAnchor: [s / 2, s / 2] });
       };
       [...mapData].sort((a, b) => rank(a) - rank(b)).forEach((p) => {
@@ -431,6 +459,10 @@ const jsonld = {
       // Pins of one kind never pile up (public/map-stack.js): at each zoom, X marks and
       // meetup discs are laid out separately in screen pixels from their real places,
       // centres at least half a radius apart; upcoming events keep their spot first.
+      // Zoomed out, pins of one kind keep at least half a radius apart (GAP 0.5, unchanged).
+      // Zoomed in to a city, event stars must not overlap at all: their keep-out grows to their
+      // full real size (outline included) with a conservative margin. Meetups keep the half-radius
+      // rule at every zoom; an event star may still sit on a meetup disc and vice versa.
       const pins = styled.map(([p, m]) => ({
         point: p, marker: m, radius: markerStyle(p).radius, priority: p.kind === 'meetup' ? 1 : p.end < today ? 2 : 0,
         group: p.kind === 'meetup' ? 'disc' : 'x',
@@ -438,8 +470,18 @@ const jsonld = {
       const spread = () => {
         if (!window.abeStack) return;
         // project/unproject, not latLngToLayerPoint: those round to whole pixels.
+        const zoom = eventMap.getZoom();
+        const city = zoom >= CITY_ZOOM;
         const at = pins.map(({ point }) => eventMap.project([point.latitude, point.longitude]));
-        const offsets = window.abeStack.layout(pins.map(({ radius, priority, group }, i) => ({ x: at[i].x, y: at[i].y, radius, priority, group })));
+        const offsets = window.abeStack.layout(
+          pins.map(({ radius, priority, group }, i) => ({
+            x: at[i].x, y: at[i].y,
+            // Away from city zoom the event radius drops the outline so the old half-radius spacing holds.
+            radius: group === 'x' && !city ? radius - X_OUTLINE : radius,
+            priority, group,
+          })),
+          (group) => (group === 'x' && city ? CITY_GAP : 0.5)
+        );
         pins.forEach(({ marker }, i) => {
           const moved = eventMap.unproject(at[i].add(offsets[i]));
           marker.setLatLng(moved);

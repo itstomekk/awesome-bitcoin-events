@@ -72,6 +72,19 @@ test('X marks and discs ignore each other; each kind keeps its own spacing', () 
   assert.ok(dist(pos[1], pos[3]) >= GAP * 6.4 - 0.02);
 });
 
+test('layout accepts a per-group gap, so event stars can use full separation at city zoom', () => {
+  const items = [
+    { x: 0, y: 0, radius: 10, priority: 0, group: 'x' },
+    { x: 0, y: 0, radius: 10, priority: 1, group: 'x' },
+    { x: 0, y: 0, radius: 8.8, priority: 0, group: 'disc' },
+    { x: 0, y: 0, radius: 8.8, priority: 1, group: 'disc' },
+  ];
+  const at = layout(items, (g) => (g === 'x' ? 2.2 : 0.5));
+  const pos = items.map((it, i) => [it.x + at[i][0], it.y + at[i][1]]);
+  assert.ok(dist(pos[0], pos[1]) >= 2.2 * 10 - 0.02, 'two event stars fully separate at city zoom');
+  assert.ok(dist(pos[2], pos[3]) >= 0.5 * 8.8 - 0.02, 'meetup discs keep the half-radius rule');
+});
+
 test('the home page loads the stacker and re-applies it on zoom', () => {
   const page = readFileSync(new URL('../src/pages/index.astro', import.meta.url), 'utf8');
   assert.match(page, /map-stack\.js/);

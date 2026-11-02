@@ -83,6 +83,8 @@
   }
 
   // items may carry a `group`; only pins in the same group keep apart.
+  // `gap` is a number for every group, or a function (group) => number so each group can
+  // use its own spacing (e.g. event stars need full separation at city zoom, discs don't).
   function layout(items, gap = GAP, angles = 48) {
     const groups = new Map();
     items.forEach((item, i) => {
@@ -91,8 +93,9 @@
       groups.get(key).push(i);
     });
     const out = new Array(items.length);
-    for (const members of groups.values()) {
-      const at = place(members.map((i) => items[i]), gap, angles);
+    for (const [key, members] of groups) {
+      const g = typeof gap === 'function' ? (gap(key) ?? GAP) : gap;
+      const at = place(members.map((i) => items[i]), g, angles);
       members.forEach((i, k) => { out[i] = at[k]; });
     }
     return out;
