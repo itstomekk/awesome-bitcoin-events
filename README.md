@@ -87,6 +87,7 @@ Dates and places change. Check the official page before you book travel. Being l
 | Nov 22 | [Sovereign Conference](https://sovereign-conference.com/) | Asunción, Paraguay | Conference |
 | Nov 22 | [Bitcoin Half Marathon 2026](https://bitcoinchiangmai.org/events/bitcoin-half-marathon-2026) | Chiang Mai, Thailand | Festival |
 | Nov 22 | [Code Orange Workshop 2026](https://www.bitcoinchiangmai.org/events/code-orange-workshop-2026) | Chiang Mai, Thailand | Workshop |
+| Nov 24 | [What is Bitcoin, Anyway?](https://www.meetup.com/bitcoin-chattanooga/events/317304105/) | Chickamauga, USA | Workshop |
 | Nov 27–28 | [Bitcoin Japan 2026](https://btc-jpn.com/) | Tokyo, Japan | Conference |
 | Nov 27–28 | [Dakar Bitcoin Days IV](https://dakarbitcoindays.com/) | Dakar, Senegal | Conference |
 | Nov 28–29 | [Bitcoin Thailand Conference 2026](https://bitcointhailand.co/) | Bangkok, Thailand | Conference |
@@ -152,7 +153,7 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 ### Europe
 
 <details>
-<summary>Show 167 meetups</summary>
+<summary>Show 168 meetups</summary>
 
 | Where | Meetup | About |
 | --- | --- | --- |
@@ -235,6 +236,7 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 | Mönchengladbach, Germany | [Einundzwanzig Mönchengladbach](https://portal.einundzwanzig.space/de/meetup/einundzwanzig-moenchengladbach) | Einundzwanzig Bitcoin meetup |
 | Mühldorf am Inn, Germany | [Einundzwanzig Mühldorf am Inn](https://portal.einundzwanzig.space/de/meetup/einundzwanzig-muehldorf-am-inn) | Einundzwanzig Bitcoin meetup |
 | Munich, Germany | [Bitcoin Munich](https://www.meetup.com/bitcoin-munich/) | Meetup group · [Einundzwanzig portal](https://portal.einundzwanzig.space/de/meetup/bitcoin-muenchen) |
+| Munich, Germany | [BitcoinWalk Munich](https://bitcoinwalk.org/munich/) | Bitcoin walk |
 | Münster, Germany | [Einundzwanzig Münster](https://portal.einundzwanzig.space/de/meetup/einundzwanzig-muenster) | Einundzwanzig Bitcoin meetup |
 | Neubrandenburg, Germany | [Einundzwanzig Neubrandenburg](https://portal.einundzwanzig.space/de/meetup/einundzwanzig-neubrandenburg) | Einundzwanzig Bitcoin meetup |
 | Neumarkt in der Oberpfalz, Germany | [21Neumarkt](https://portal.einundzwanzig.space/de/meetup/21neumarkt) | Einundzwanzig Bitcoin meetup |
@@ -329,7 +331,7 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 ### North America
 
 <details>
-<summary>Show 152 meetups</summary>
+<summary>Show 155 meetups</summary>
 
 | Where | Meetup | About |
 | --- | --- | --- |
@@ -362,6 +364,7 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 | Austin, USA | [Austin Bitcoin Club](https://www.austinbitcoinclub.com/) | Monthly meetup |
 | Austin, USA | [Bitcoin Builders Club](https://bitcoinbuilderatx.com/) | Monthly meetup |
 | Bend, USA | [Bend Bitcoin Meetup](https://www.meetup.com/bend-bitcoin-meetup/) | Meetup group |
+| Bend, USA | [Coffee and ₿itcoin](https://www.meetup.com/coffee-and-bitcoin/) | Weekly meetup |
 | Birmingham, USA | [Magic City Bitcoin](https://www.meetup.com/magic-city-bitcoin/) | Meetup group |
 | Bismarck, USA | [Bismarck Bitcoin](https://www.meetup.com/bismarck-bitcoin-meetup/) | Meetup group |
 | Boca Raton, USA | [Bitcoin Boca](https://www.meetup.com/bitcoinboca/) | Meetup group |
@@ -378,6 +381,7 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 | Chicago, USA | [BitDevs Chicago](https://chibitdevs.org/) | Socratic Seminar |
 | Chicago, USA | [Chicago Bitcoin Collective](https://www.chicagobitcoincollective.com/) | Community |
 | Cincinnati, USA | [Cincinnati Bitcoin](https://www.meetup.com/cincinnati-bitcoin/) | Meetup group |
+| Cleveland, TN, USA | [Bitcoin Remnant](https://www.meetup.com/bitcoin-chattanooga/) | Monthly meetup |
 | Columbia, USA | [Columbia Bitcoin Meetup Group](https://www.meetup.com/columbia-bitcoin-meetup-group/) | Meetup group |
 | Columbus, USA | [Columbus Bitcoin](https://www.meetup.com/columbusbitcoin/) | Meetup group |
 | Dallas, USA | [Dallas Bitcoin](https://www.meetup.com/dallas-bitcoin-meetup-group) | Meetup group |
@@ -450,6 +454,7 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 | Port Orange, USA | [Bitcoin Central FL](https://www.meetup.com/bitcoin_central_fl/) | Meetup group |
 | Portland, USA | [BitDevs Portland](https://www.meetup.com/portlandbitdevs/) | Socratic Seminar |
 | Portland, USA | [Portland Bitcoin Group](https://www.meetup.com/Portland-Bitcoin-Group/) | Meetup group |
+| Portland, USA | [BitcoinWalk Portland](https://bitcoinwalk.org/portland/) | Bitcoin walk |
 | Portland, ME, USA | [Dirigo Bitcoin](https://dirigobtc.org/) | Community |
 | Providence, USA | [Rhode Island Bitcoiners](https://www.meetup.com/ribitcoiners/) | Meetup group |
 | Raleigh, USA | [BitDevs Raleigh](https://trianglebitdevs.org/) | Socratic Seminar |
@@ -529,7 +534,7 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 ### Asia
 
 <details>
-<summary>Show 21 meetups</summary>
+<summary>Show 22 meetups</summary>
 
 | Where | Meetup | About |
 | --- | --- | --- |
@@ -543,6 +548,7 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 | Tokyo, Japan | [Tokyo Bitcoin Base](https://www.meetup.com/tokyo-bitcoin-base/) | Meetup group |
 | Tokyo, Japan | [Bitcoin Tokyo Front Desk](https://www.meetup.com/tokyo-citadel/) | Meetup group |
 | Kuala Lumpur, Malaysia | [Bitcoiner Malaysia](https://www.meetup.com/bitcoiner-malaysia) | Meetup group |
+| Cebu City, Philippines | [Bitcoin Cebu](https://bitcoincebu.com/) | Meetup group |
 | Makati, Philippines | [Philippine Bitcoiners](https://www.meetup.com/philippine-bitcoiners/) | Meetup group |
 | Busan, South Korea | [Bitcoin in Pusan](https://bitcoinpusan.space/) | Monthly meetup |
 | Seoul, South Korea | [Seoul Bitcoin Meetup](https://www.meetup.com/seoulbitcoin/) | Meetup group |
