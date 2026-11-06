@@ -107,6 +107,7 @@ Dates and places change. Check the official page before you book travel. Being l
 | Feb 26–27 | [Adopting Bitcoin Cape Town 2027](https://za27.adoptingbitcoin.org/) | Cape Town, South Africa | Conference |
 | Feb 26–27 | [Heatpunk Summit 2027](https://heatpunks.org/summit) | Denver, USA | Conference |
 | Mar 10–11 | [Women of Bitcoin Summit 2027](https://womenofbitcoin.io/) | Online | Conference |
+| Mar 13–14 | [Costa Rica Freedom Forum 2027](https://linktr.ee/crfreedomforum) | Santa Teresa, Costa Rica | Conference |
 | Mar 19–21 | [Satoship 2027](https://www.satoship.ch/) | Rapperswil-Jona, Switzerland | Conference |
 | Mar 22–24 | [Mining Disrupt 2027](https://miningdisrupt.com/) | Irving, USA | Conference |
 | Mar 31 – Apr 1 | [Bitcoin for Corporations 2027](https://www.strategy.com/world27/bitcoin-for-corporations) | Orlando, USA | Conference |
