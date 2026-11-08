@@ -76,7 +76,6 @@ Dates and places change. Check the official page before you book travel. Being l
 | Nov 19–20 | [Global Bitcoin Circular Economies Summit](https://www.bitcoinbeach.com/summit-blog/bitcoin-circular-economies-summit-2026) | El Zonte, El Salvador | Conference |
 | Nov 19–22 | [BitFest 2026](https://bitfest.uk/) | Manchester, UK | Festival |
 | Nov 20 | [Competitive Advantage 2026](https://www.tickettailor.com/events/bitcoincollective/2193215) | London, UK | Conference |
-| Nov 20–21 | [BitBlockMine 2026](https://www.bitblockmine.com/) | Fort Worth, USA | Conference |
 | Nov 20–22 | [Bitcoin Educators Academy Chiang Mai](https://www.amityage.com/all-events/bitcoin-educators-academy-in-thailand) | Chiang Mai, Thailand | Workshop |
 | Nov 20 | [National Bitcoin and Digital Asset Policy 2026](https://bitcoinchiangmai.org/events/national-bitcoin-crypto-policy-2026) | Chiang Mai, Thailand | Conference |
 | Nov 20–22 | [Bitcoin Miskolc Konferencia 2026](https://bitcoinmiskolc.hu/konferencia/) | Miskolctapolca, Hungary | Conference |
