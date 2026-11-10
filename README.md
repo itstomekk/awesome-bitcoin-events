@@ -92,6 +92,7 @@ Dates and places change. Check the official page before you book travel. Being l
 | Nov 28–29 | [Bitcoin Thailand Conference 2026](https://bitcointhailand.co/) | Bangkok, Thailand | Conference |
 | Dec 2–5 | [Africa Bitcoin Conference 2026](https://www.afrobitcoin.org/) | Blantyre, Malawi | Conference |
 | Dec 13 | [Satoshi Christmas Flea Market Saigon 2026](https://bitcoinsaigon.org/support-satoshi-flea-market-saigon-christmas-2026/) | Ho Chi Minh City, Vietnam | Festival |
+| Dec 18–19 | [BTCinDC Online 2026](https://btcindc.com) | Online | Conference |
 
 ## 2027
 
