@@ -156,7 +156,7 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 ### Europe
 
 <details>
-<summary>Show 168 meetups</summary>
+<summary>Show 170 meetups</summary>
 
 | Where | Meetup | About |
 | --- | --- | --- |
@@ -179,6 +179,7 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 | České Budějovice, Czech Republic | [Jednadvacet](https://jednadvacet.org/) | Community |
 | Jihlava, Czech Republic | [Jednadvacet Jihlava](https://portal.einundzwanzig.space/cz/meetup/jednadvacet-jihlava) | Einundzwanzig Bitcoin meetup |
 | Kyjov, Czech Republic | [Jednadvacet Kyjov](https://portal.einundzwanzig.space/cz/meetup/jednadvacet-kyjov) | Einundzwanzig Bitcoin meetup |
+| Plzeň, Czech Republic | [Jednadvacet Plzeň](https://portal.einundzwanzig.space/cz/meetup/btc-beer-plzen) | Einundzwanzig Bitcoin meetup |
 | Prague, Czech Republic | [Einundzwanzig Prag](https://portal.einundzwanzig.space/cz/meetup/einundzwanzig-prag) | Einundzwanzig Bitcoin meetup |
 | Teplice, Czech Republic | [Jednadvacet Teplice](https://portal.einundzwanzig.space/cz/meetup/btc-meet-up) | Einundzwanzig Bitcoin meetup |
 | Helsinki, Finland | [Salamaverkko Bitcoin Meetup](https://www.meetup.com/salamaverkko/) | Meetup group |
@@ -269,6 +270,7 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 | Athens, Greece | [Greek Bitcoin Network](https://www.meetup.com/blockchaingreece-0) | Meetup group |
 | Athens, Greece | [Hellenic Bitcoin Social Meetup](https://www.meetup.com/hellenicbitcoin/) | Monthly meetup |
 | Miskolc, Hungary | [Bitcoin Miskolc](https://bitcoinmiskolc.hu/) | Community |
+| Monfalcone, Italy | [BitcoinWalk Monfalcone](https://bitcoinwalk.org/monfalcone/) | Bitcoin walk |
 | Rome, Italy | [Bitcoin Italia Network](https://bitcoinitalianetwork.com/) | Community |
 | Luxembourg, Luxembourg | [Meetup Bitcoin Blockchain Luxembourg](https://www.meetup.com/meetup-bitcoins-blockchains-luxembourg/) | Monthly meetup |
 | Podgorica, Montenegro | [Bitcoin Network of Montenegro](https://www.meetup.com/bitcoin-network-of-montenegro-meetups/) | Meetup group |
@@ -334,7 +336,7 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 ### North America
 
 <details>
-<summary>Show 155 meetups</summary>
+<summary>Show 156 meetups</summary>
 
 | Where | Meetup | About |
 | --- | --- | --- |
@@ -423,6 +425,7 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 | Lexington, USA | [Lexington Bitcoin](https://www.meetup.com/lexingtonbitcoin/) | Meetup group |
 | Long Beach, USA | [Long Beach Hodlers](https://www.meetup.com/long-beach-hodlers/) | Meetup group |
 | Longmont, USA | [Longmont Bitcoin](https://www.meetup.com/longmont-bitcoin/) | Meetup group |
+| Longview, USA | [East Texas Bitcoin Community](https://www.easttexasbitcoincommunity.com/) | Community |
 | Los Angeles, USA | [BitDevs Los Angeles](https://bitdevsla.org/) | Socratic Seminar |
 | Los Angeles, USA | [BitPlebs Los Angeles](https://www.meetup.com/bitplebsla/) | Meetup group |
 | Louisville, USA | [BitDevs Louisville](https://loubitdevs.org/) | Socratic Seminar |
@@ -499,7 +502,7 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 ### Latin America
 
 <details>
-<summary>Show 28 meetups</summary>
+<summary>Show 30 meetups</summary>
 
 | Where | Meetup | About |
 | --- | --- | --- |
@@ -515,10 +518,12 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 | São Paulo, Brazil | [BitDevs São Paulo](https://bitdevsportugues.org) | Socratic Seminar |
 | Uberlândia, Brazil | [BitDevs Uberlândia](https://udibitdevs.org/) | Socratic Seminar |
 | George Town, Cayman Islands | [7 Mile Bitcoin](https://www.meetup.com/7milebitcoin/) | Meetup group |
+| Bogotá, Colombia | [ColombiaP2P](https://colombiap2p.com/) | Community |
 | Willemstad, Curaçao | [BTC Curacao](https://www.meetup.com/Curacao-Crypto-Group/) | Meetup group |
 | Santo Domingo, Dominican Republic | [Bitcoin Dominicana](https://bitcoindominicana.com/) | Monthly meetup |
 | El Zonte, El Salvador | [Bitcoin Beach Meet-ups](https://www.bitcoinbeach.com/) | Monthly meetup · [next meet-up on Satlantis](https://www.satlantis.io/events/1002886/bitcoin-beach-meet-up-10) |
 | San Salvador, El Salvador | [BitDevs San Salvador](https://bitdevelsalvador.com/) | Socratic Seminar |
+| Guatemala City, Guatemala | [Bullish Guate](https://www.bullishguate.com/) | Community |
 | Roatan, Honduras | [Coworking Tuesdays](https://thebitcoindistrict.com/events/) | Community |
 | Roatan, Honduras | [Roatan Bitcoin Bar Poker](https://rbbp.fun/) | Community |
 | Kingston, Jamaica | [Kingston Bitcoin Meetup](https://community.islandbitcoin.com/events) | Monthly meetup |
