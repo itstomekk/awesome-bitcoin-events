@@ -91,6 +91,7 @@ Dates and places change. Check the official page before you book travel. Being l
 | Nov 27–28 | [Dakar Bitcoin Days IV](https://dakarbitcoindays.com/) | Dakar, Senegal | Conference |
 | Nov 28–29 | [Bitcoin Thailand Conference 2026](https://bitcointhailand.co/) | Bangkok, Thailand | Conference |
 | Dec 2–5 | [Africa Bitcoin Conference 2026](https://www.afrobitcoin.org/) | Blantyre, Malawi | Conference |
+| Dec 10 | [Bitcoin Apes Cascais Holiday Celebration 2026](https://bitcoincascais.com/) | Cascais, Portugal | Other |
 | Dec 13 | [Satoshi Christmas Flea Market Saigon 2026](https://bitcoinsaigon.org/support-satoshi-flea-market-saigon-christmas-2026/) | Ho Chi Minh City, Vietnam | Festival |
 | Dec 18–19 | [BTCinDC Online 2026](https://btcindc.com) | Online | Conference |
 
@@ -107,6 +108,7 @@ Dates and places change. Check the official page before you book travel. Being l
 | Feb 25 | [African Bitcoin Circular Economy Summit 2027](https://za27.adoptingbitcoin.org/bce-summit.html) | Cape Town, South Africa | Conference |
 | Feb 26–27 | [Adopting Bitcoin Cape Town 2027](https://za27.adoptingbitcoin.org/) | Cape Town, South Africa | Conference |
 | Feb 26–27 | [Heatpunk Summit 2027](https://heatpunks.org/summit) | Denver, USA | Conference |
+| Feb 27 | [MusicSnake: Bitcoin Unplugged at PubKey](https://www.cryptosnake.com/events/musicsnake) | New York City, USA | Other |
 | Mar 10–11 | [Women of Bitcoin Summit 2027](https://womenofbitcoin.io/) | Online | Conference |
 | Mar 13–14 | [Costa Rica Freedom Forum 2027](https://linktr.ee/crfreedomforum) | Santa Teresa, Costa Rica | Conference |
 | Mar 19–21 | [Satoship 2027](https://www.satoship.ch/) | Rapperswil-Jona, Switzerland | Conference |
@@ -114,6 +116,7 @@ Dates and places change. Check the official page before you book travel. Being l
 | Mar 31 – Apr 1 | [Bitcoin for Corporations 2027](https://www.strategy.com/world27/bitcoin-for-corporations) | Orlando, USA | Conference |
 | Apr 1–4 | [BitBlockBoom! 2027](https://www.bitblockboom.com/) | Fort Worth, USA | Conference |
 | Apr 1–30 | [Discover Floripa 2027](https://www.discoverfloripa.com/) | Florianópolis, Brazil | Festival |
+| Apr 1 | [Run For Hal: Sovereignty Summit 2027](https://bitcoinrunners.org/events/queenstown/) | Queenstown, New Zealand | Other |
 | Apr 2–3 | [Sovereignty Summit 2027](https://sovereigntysummit.nz/) | Queenstown, New Zealand | Conference |
 | Apr 8 | [Bitcoin Poland Business Day 2027](https://www.bitcoin-poland.com/#krakow-business-day) | Krakow, Poland | Conference |
 | Apr 9 | [Bitcoin Poland Community Side Event 2027](https://www.bitcoin-poland.com/#krakow-community-side-event) | Krakow, Poland | Other |
