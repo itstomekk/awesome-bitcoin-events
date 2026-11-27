@@ -140,7 +140,6 @@ Dates and places change. Check the official page before you book travel. Being l
 | Jul 15 | [TGFB27 Conference](https://tgfb.com/conference/) | Nashville, USA | Conference |
 | Jul 15–17 | [Bitcoin 2027](https://conference.b.tc/) | Nashville, USA | Conference |
 | Jul 15–17 | [Bitcoin Nashville 2027 side events: Pleb Party, Bitcoin Treasuries World, Bitcoin and Christ](https://www.eventbrite.com/e/3-days-of-bitcoin-only-side-events-nashville-2027-including-pleb-party-tickets-1997169893915) | Nashville, USA | Festival |
-| Aug 5–8 | [Bitcoin Zitadelle 2027](https://bitcoin-zitadelle.at/) | Frankenfels, Austria | Retreat |
 | Aug 14 | [Bitcoin Beyond 66 2027](https://bitcoinbeyond66.com/) | Bodø, Norway | Conference |
 | Aug 26–27 | [Bitcoin Asia 2027](https://asia.b.tc/2027) | Hong Kong | Conference |
 | Sep 10–11 | [BTC HEL 2027](https://btchel.com/event/btchel-2027) | Helsinki, Finland | Conference |
