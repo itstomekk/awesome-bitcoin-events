@@ -639,6 +639,10 @@
   "logo": true,
   "style": "cards-bright"
  },
+ "bitcoin-white-rootstock-jaipur-edition": {
+  "color": "#f7931a",
+  "style": "cine-dark"
+ },
  "bitcoin-works-in-public": {
   "color": "#f7931a",
   "style": "flat-bright"

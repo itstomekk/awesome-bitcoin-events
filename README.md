@@ -88,6 +88,7 @@ Dates and places change. Check the official page before you book travel. Being l
 | Nov 24 | [What is Bitcoin, Anyway?](https://www.meetup.com/bitcoin-chattanooga/events/317304105/) | Chickamauga, USA | Workshop |
 | Nov 27–28 | [Bitcoin Japan 2026](https://btc-jpn.com/) | Tokyo, Japan | Conference |
 | Nov 27–28 | [Dakar Bitcoin Days IV](https://dakarbitcoindays.com/) | Dakar, Senegal | Conference |
+| Nov 28 | [Bitcoin White <> Rootstock - Jaipur Edition](https://luma.com/2esfukvn) | Jaipur, India | Other |
 | Nov 28–29 | [Bitcoin Thailand Conference 2026](https://bitcointhailand.co/) | Bangkok, Thailand | Conference |
 | Dec 2–5 | [Africa Bitcoin Conference 2026](https://www.afrobitcoin.org/) | Blantyre, Malawi | Conference |
 | Dec 10 | [Bitcoin Apes Cascais Holiday Celebration 2026](https://bitcoincascais.com/) | Cascais, Portugal | Other |
