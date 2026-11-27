@@ -100,7 +100,7 @@ Dates and places change. Check the official page before you book travel. Being l
 | --- | --- | --- | --- |
 | Jan 11–13 | [Max & Stacy Bitcoin Golf Invitational 2027](https://bitcoingolfinvitational.com/) | San José Villanueva, El Salvador | Festival |
 | Jan 16 | [BitcoinDay Naples 2027](https://bitcoinday.io/) | Naples, USA | Conference |
-| Jan 16–26 | [Bitchill s04](https://thebitcoindistrict.com/bitchill) | Roatan, Honduras | Retreat |
+| Jan 16–27 | [Bitchill s04](https://thebitcoindistrict.com/bitchill) | Roatan, Honduras | Retreat |
 | Jan 29–30 | [Plan ₿ Forum El Salvador 2027](https://planb.sv/) | San Salvador, El Salvador | Conference |
 | Jan 30 | [Digital Dissident devroom at FOSDEM 2027](https://digitaldissident.tech/) | Brussels, Belgium | Other |
 | Feb 4–7 | [The Sovereign Summit 2027](https://thesovereignsummit.com/) | Miami Beach, USA | Conference |
