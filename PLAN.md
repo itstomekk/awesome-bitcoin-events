@@ -21,6 +21,7 @@ Keep the GitHub README as the canonical, contributor-editable event list; use th
 - [x] Feeds: `/calendar.ics` (all upcoming events, subscribable), `/events.json` (whole list, CC0) and `/feed.xml` (Atom, next 50 events), linked in `<head>`, the Browse block and `llms.txt`.
 - [x] Search engines (2026-10-29): Google Search Console URL-prefix property `https://awesomebitcoinevents.com/` (verified by `public/google13edf74c50675ea1.html`, keep it), Bing Webmaster Tools site (verified by the `msvalidate.01` meta tag in `BaseLayout.astro`, keep it), sitemap submitted to both, IndexNow key file in `public/`. Still to do: URL-inspection indexing request for the home page, and resubmit changed URLs to IndexNow after big list updates.
 - [ ] Maintain reliable link health without deleting historical records automatically.
+  - [x] Issue #26: replace the Belgian Bitcoin Embassy `/en/` URL with its working homepage, as approved by Tomek. Leave the two historical 404s and the slow/reachable meetup URLs unchanged.
 - [ ] Keep list contributions simple and run `npm run check`, `npm test`, and `npm run build` before delivery.
 
 ## Operating rules

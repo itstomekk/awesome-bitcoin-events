@@ -168,7 +168,7 @@ Recurring local meetups (BitDevs Socratic Seminars, city meetup groups and more)
 | Salzburg, Austria | [Einundzwanzig Salzburg](https://portal.einundzwanzig.space/at/meetup/einundzwanzig-salzburg) | Einundzwanzig Bitcoin meetup |
 | Schärding, Austria | [Einundzwanzig Schärding](https://portal.einundzwanzig.space/at/meetup/einundzwanzig-schaerding) | Einundzwanzig Bitcoin meetup |
 | Vienna, Austria | [Bitcoin Austria](https://www.meetup.com/bitcoin-austria/) | Meetup group |
-| Antwerp, Belgium | [Belgian Bitcoin Embassy Meetup](https://belgianbitcoinembassy.org/en/) | Monthly meetup |
+| Antwerp, Belgium | [Belgian Bitcoin Embassy Meetup](https://belgianbitcoinembassy.org/) | Monthly meetup |
 | Ghent, Belgium | [Bitcoin P2P Gent](https://www.meetup.com/p2p-gent) | Meetup group |
 | Nivelles, Belgium | [BeCrypto Nivelles](https://www.meetup.com/Becrypto) | Meetup group |
 | Burgas, Bulgaria | [BitcoinWalk Burgas](https://bitcoinwalk.org/burgas/) | Bitcoin walk |
