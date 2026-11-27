@@ -47,7 +47,6 @@ Dates and places change. Check the official page before you book travel. Being l
 | Oct 25–27 | [Mita Tech Talks 2026](https://2026.mitatechtalks.com/) | Punta Mita, Mexico | Conference |
 | Oct 26–31 | [Bitshala BOSS Summit 2026](https://bitshala.org/boss/) | Jaipur, India | Retreat |
 | Oct 28–29 | [Custody & Treasury Summit 2026](https://www.meetup.com/bitcoinpark/events/314966347/) | Nashville, USA | Conference |
-| Oct 29 – Nov 8 | [Bitchill s04](https://thebitcoindistrict.com/bitchill) | Roatan, Honduras | Retreat |
 | Oct 30 | [AI Startup Rodeo 2026](https://aistartuprodeo.com/) | Austin, USA | Conference |
 | Oct 30–31 | [Bitmela 2026](https://thebitmela.com/) | Jaipur, India | Festival |
 | Oct 30–31 | [LABITCONF 2026](https://www.labitconf.com/) | Buenos Aires, Argentina | Conference |
@@ -101,6 +100,7 @@ Dates and places change. Check the official page before you book travel. Being l
 | --- | --- | --- | --- |
 | Jan 11–13 | [Max & Stacy Bitcoin Golf Invitational 2027](https://bitcoingolfinvitational.com/) | San José Villanueva, El Salvador | Festival |
 | Jan 16 | [BitcoinDay Naples 2027](https://bitcoinday.io/) | Naples, USA | Conference |
+| Jan 16–26 | [Bitchill s04](https://thebitcoindistrict.com/bitchill) | Roatan, Honduras | Retreat |
 | Jan 29–30 | [Plan ₿ Forum El Salvador 2027](https://planb.sv/) | San Salvador, El Salvador | Conference |
 | Jan 30 | [Digital Dissident devroom at FOSDEM 2027](https://digitaldissident.tech/) | Brussels, Belgium | Other |
 | Feb 4–7 | [The Sovereign Summit 2027](https://thesovereignsummit.com/) | Miami Beach, USA | Conference |
