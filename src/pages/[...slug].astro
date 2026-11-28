@@ -68,6 +68,7 @@ const days = e ? Math.round((new Date(`${e.end}T12:00:00Z`) - new Date(`${e.star
           <a class="action" href={`${base}#${e.id}`}>See in the full list</a>
           <a class="action subtle" href={correctionUrl} target="_blank" rel="noreferrer">Report a correction</a>
         </p>
+        {e.slug === 'cryptobyte-2027' && <p><a href="https://youtu.be/QQzRtHgFgq4" target="_blank" rel="noopener noreferrer">Watch the CryptoByte 2026 aftermovie ↗</a></p>}
         <p class="event-note">Awesome Bitcoin Events links to the organizer's own page and does not sell tickets. Listing is not endorsement: check the organizer's page before you travel.</p>
         {e.detail?.image && /^https?:/i.test(e.detail.image) && <img class="event-image" src={e.detail.image} alt="" loading="lazy" referrerpolicy="no-referrer" />}
         {e.detail?.image && !/^https?:/i.test(e.detail.image) && <img class="event-image" src={`${base}${e.detail.image.replace(/^\/+/, '')}`} alt="" loading="lazy" />}
